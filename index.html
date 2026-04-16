@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>K-Startup 추천 대시보드 — 신혼생활</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #000000;
+    --muted: #666666;
+    --line: #000000;
+    --line-soft: #e5e5e5;
+    --hover: #f5f5f5;
+    --soft-bg: #fafafa;
+    --c-green: #16a34a;
+    --c-yellow: #eab308;
+    --c-orange: #ea580c;
+    --c-red: #dc2626;
+    --c-blue: #2563eb;
+    --c-violet: #7c3aed;
+  }
+  .sym-g { color: var(--c-green); }
+  .sym-y { color: var(--c-yellow); }
+  .sym-o { color: var(--c-orange); }
+  .sym-r { color: var(--c-red); }
+  .sym-b { color: var(--c-blue); }
+  .sym-v { color: var(--c-violet); }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Noto Sans KR", "Helvetica Neue", sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 1100px; margin: 0 auto; padding: 48px 24px 80px; }
+
+  header { border-bottom: 2px solid var(--line); padding-bottom: 24px; margin-bottom: 32px; }
+  h1 { margin: 0 0 6px; font-size: 32px; font-weight: 800; letter-spacing: -0.02em; }
+  .meta { color: var(--muted); font-size: 13px; }
+  .meta strong { color: var(--fg); font-weight: 600; }
+
+  .warn {
+    border: 1px solid var(--line);
+    padding: 10px 14px;
+    margin-top: 14px;
+    font-size: 12px;
+    font-family: "SF Mono", Menlo, monospace;
+  }
+
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin: 24px 0 0;
+    border: 1px solid var(--line);
+  }
+  .stat {
+    padding: 14px 10px;
+    border-right: 1px solid var(--line);
+    text-align: center;
+  }
+  .stat:last-child { border-right: none; }
+  .stat .num { font-size: 22px; font-weight: 800; letter-spacing: -0.02em; }
+  .stat .label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin-top: 2px; font-weight: 600; }
+
+  .filters {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin: 28px 0 0;
+  }
+  .filter-btn {
+    background: var(--bg);
+    border: 1px solid var(--line);
+    color: var(--fg);
+    padding: 7px 14px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: inherit;
+    transition: background 0.1s;
+  }
+  .filter-btn:hover { background: var(--hover); }
+  .filter-btn.active { background: var(--fg); color: var(--bg); }
+  .filter-btn .cnt {
+    font-family: "SF Mono", Menlo, monospace;
+    font-size: 10px;
+    opacity: 0.7;
+    margin-left: 4px;
+  }
+
+  section { margin-top: 36px; }
+  h2 {
+    font-size: 14px;
+    margin: 0 0 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--line);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  h2 .action-right {
+    font-size: 11px;
+    text-transform: none;
+    letter-spacing: 0;
+    font-weight: 500;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 0;
+    border-top: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+  }
+  .card {
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    padding: 18px 20px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    background: var(--bg);
+    transition: background 0.1s;
+  }
+  .card:hover { background: var(--hover); }
+
+  .card-tier-marker {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--fg);
+  }
+  .card.tier-yellow .card-tier-marker { background: repeating-linear-gradient(45deg, var(--fg), var(--fg) 3px, var(--bg) 3px, var(--bg) 6px); }
+  .card.tier-orange .card-tier-marker { background: repeating-linear-gradient(0deg, var(--fg), var(--fg) 6px, var(--bg) 6px, var(--bg) 9px); }
+  .card.tier-user .card-tier-marker { background: repeating-linear-gradient(90deg, var(--fg), var(--fg) 4px, var(--bg) 4px, var(--bg) 8px); }
+
+  .card-title { font-weight: 700; font-size: 15px; line-height: 1.35; letter-spacing: -0.01em; }
+  .card-title a {
+    color: var(--fg);
+    text-decoration: none;
+    background-image: linear-gradient(var(--fg), var(--fg));
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0 1px;
+    transition: background-size 0.2s;
+  }
+  .card-title a:hover { background-size: 100% 1px; }
+  .card-title .no-link { color: var(--fg); }
+
+  .card-meta { display: flex; flex-wrap: wrap; gap: 6px; font-size: 11px; }
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border: 1px solid var(--line);
+    font-weight: 600;
+    font-family: "SF Mono", Menlo, monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .badge.solid { background: var(--fg); color: var(--bg); }
+  .badge.deadline-urgent { background: var(--fg); color: var(--bg); }
+  .badge.status-inprogress { background: var(--fg); color: var(--bg); }
+
+  .card-agency { font-size: 11px; color: var(--muted); font-family: "SF Mono", Menlo, monospace; }
+  .card-note {
+    font-size: 13px;
+    color: var(--fg);
+    border-top: 1px dashed var(--line-soft);
+    padding-top: 10px;
+    margin-top: 2px;
+  }
+  .card-connect {
+    font-size: 12.5px;
+    color: var(--fg);
+    background: var(--soft-bg);
+    border-left: 2px solid var(--fg);
+    padding: 8px 10px;
+  }
+  .card-connect .tag {
+    display: inline-block;
+    font-family: "SF Mono", Menlo, monospace;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    margin-right: 6px;
+    text-transform: uppercase;
+  }
+
+  .card-actions {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-top: 6px;
+    padding-top: 10px;
+    border-top: 1px dashed var(--line-soft);
+  }
+  .act-btn {
+    background: var(--bg);
+    border: 1px solid var(--line);
+    color: var(--fg);
+    padding: 4px 10px;
+    font-size: 11px;
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  .act-btn:hover { background: var(--fg); color: var(--bg); }
+  .act-btn.danger:hover { background: var(--c-red); color: var(--bg); border-color: var(--c-red); }
+
+  .empty {
+    border: 1px dashed var(--line);
+    padding: 32px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+  }
+
+  /* Modal form */
+  .modal-back {
+    position: fixed; inset: 0;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+  }
+  .modal-back.open { display: flex; }
+  .modal {
+    background: var(--bg);
+    border: 2px solid var(--line);
+    padding: 28px;
+    width: min(520px, 90vw);
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+  .modal h3 { margin: 0 0 20px; font-size: 18px; border-bottom: 1px solid var(--line); padding-bottom: 10px; }
+  .form-row { margin-bottom: 16px; }
+  .form-row label { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 6px; font-weight: 700; }
+  .form-row input, .form-row textarea, .form-row select {
+    width: 100%;
+    border: 1px solid var(--line);
+    padding: 8px 10px;
+    font-family: inherit;
+    font-size: 13px;
+    background: var(--bg);
+    color: var(--fg);
+  }
+  .form-row textarea { min-height: 60px; resize: vertical; }
+  .form-actions { display: flex; gap: 8px; justify-content: flex-end; margin-top: 20px; }
+  .form-actions button {
+    padding: 8px 16px;
+    font-family: inherit;
+    font-size: 12px;
+    border: 1px solid var(--line);
+    cursor: pointer;
+    background: var(--bg);
+    color: var(--fg);
+    font-weight: 600;
+  }
+  .form-actions button.primary { background: var(--fg); color: var(--bg); }
+
+  footer {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 11px;
+    font-family: "SF Mono", Menlo, monospace;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  footer a { color: var(--fg); text-decoration: underline; }
+
+  @media (max-width: 640px) {
+    .container { padding: 24px 16px 60px; }
+    h1 { font-size: 24px; }
+    .stats { grid-template-columns: repeat(3, 1fr); }
+    .stat { border-bottom: 1px solid var(--line); }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>K-Startup 추천·진행 대시보드</h1>
+    <div class="meta">
+      마지막 갱신 <strong id="last-updated">2026-04-15</strong> (KST) · 신혼생활(sinhon.life) · 소재지 <strong>인천</strong> · 이중 트랙(예비 / 초기)
+    </div>
+    <div class="warn">ℹ p3~p10 캐시 히트 — 키워드 보완 스캔 16종으로 recall 보완 완료. 신규 6건 편입.</div>
+
+    <div class="stats" id="stats-bar"></div>
+
+    <div class="filters" id="filters"></div>
+  </header>
+
+  <section>
+    <h2 id="section-title">
+      <span id="section-title-text">전체 공고</span>
+      <span class="action-right" id="section-action"></span>
+    </h2>
+    <div class="grid" id="card-grid"></div>
+  </section>
+
+  <footer>
+    <div>sinhon-kstartup-matcher v2 · 매일 18:00 KST 자동 갱신 · 사용자 데이터는 브라우저에 저장됩니다</div>
+    <div><a href="recommendations.json">raw data</a></div>
+  </footer>
+</div>
+
+<!-- User posting form -->
+<div class="modal-back" id="modal-back">
+  <div class="modal">
+    <h3 id="modal-title">+ 내 사업 추가</h3>
+    <form id="user-form">
+      <input type="hidden" id="u-id">
+      <div class="form-row">
+        <label for="u-title">제목 *</label>
+        <input type="text" id="u-title" required placeholder="예: 인천시 청년창업 바우처 2차">
+      </div>
+      <div class="form-row">
+        <label for="u-agency">주관기관</label>
+        <input type="text" id="u-agency" placeholder="예: 인천테크노파크">
+      </div>
+      <div class="form-row">
+        <label for="u-deadline">마감일 *</label>
+        <input type="date" id="u-deadline" required>
+      </div>
+      <div class="form-row">
+        <label for="u-url">링크 (선택)</label>
+        <input type="url" id="u-url" placeholder="https://...">
+      </div>
+      <div class="form-row">
+        <label for="u-tier">카테고리</label>
+        <select id="u-tier">
+          <option value="user">+ 내 사업 (기본)</option>
+          <option value="green">● 1순위 강력 추천</option>
+          <option value="yellow">◐ 2순위 검토</option>
+          <option value="orange">○ 3순위 AI 포지셔닝</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label for="u-note">메모</label>
+        <textarea id="u-note"></textarea>
+      </div>
+      <div class="form-row">
+        <label for="u-connect">신혼생활 연결 포인트</label>
+        <textarea id="u-connect"></textarea>
+      </div>
+      <div class="form-actions">
+        <button type="button" id="form-cancel">취소</button>
+        <button type="submit" class="primary">저장</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script>
+// ===== 자동 생성되는 공고 풀 (매일 18:00 덮어쓰기) =====
+const TODAY = "2026-04-15";
+const items = [
+  // ===== 🟢 1순위 =====
+  {pbancSn:"177212", title:"2026년 상반기 남동구 청년창업지원센터 입주기업 추가모집 공고", agency:"남동구 청년창업지원센터", deadline:"2026-05-15", tier:"green", note:"인천 남동구 전용 — 자기 지역 홈그라운드. 청년창업자 요건 확인 필요", first_seen:"2026-04-15", connect:"XCom 본사를 남동구로 이전·입주 → 인천 홈그라운드 확보 + 보육·멘토링 무료 활용. 이후 인천 지자체 공고에서 우대 포인트로 재활용 가능."},
+  {pbancSn:"176892", title:"「모두의 창업 프로젝트」통합 모집공고", agency:"창업진흥원", deadline:"2026-05-15", tier:"green", note:"전국 대상, 예비(와이프)+초기(허파랑) 이중 트랙 동시 검토", first_seen:"2026-04-15", connect:"'신혼부부 2인 팀이 만든 신혼부부 플랫폼' 스토리. 와이프는 예비창업 트랙, 허파랑은 초기창업 트랙으로 동일 아이템 이중 제출해 합격 확률 2배."},
+  // ===== 🟡 2순위 =====
+  {pbancSn:"177132", title:"사회적기업 창업지원사업 창업팀 모집", agency:"한국사회적기업진흥원", deadline:"2026-04-17", tier:"yellow", note:"전국 대상 · 초기창업형(업력 5년 이내) — D-2 임박!", first_seen:"2026-04-15", connect:"신혼생활을 '신혼부부 라이프스타일 문제를 해결하는 임팩트 B2C 플랫폼'으로 리프레임. 초기창업형으로 허파랑(XCom) 단독 지원, 정체성 유지."},
+  {pbancSn:"177056", title:"2026 SVC Seoul(글로벌 창업허브) 멤버십(확장형) 참여기업 모집공고", agency:"창업진흥원", deadline:"2026-04-17", tier:"yellow", note:"서울 마포 글로벌 창업허브 — 공간 미입주 가능 여부 확인 필요 — D-2 임박!", first_seen:"2026-04-15", connect:"허니문·웨딩 해외 제휴(발리/하와이/세부 리조트)로 글로벌 상품 라인 확장 시 필요한 해외 파트너 네트워킹. 공간 미입주 가능 확인 필수."},
+  {pbancSn:"176801", title:"2026년 프리 팁스 창업기업 모집 공고", agency:"창업진흥원", deadline:"2026-04-20", tier:"yellow", note:"전국 초기창업 가능, 보육기관 추천 필요 — D-5", first_seen:"2026-04-15", connect:"Claude API 기반 신혼 AI 비서를 'R&D 아이템'으로 포지셔닝. 보육기관 추천이 관문 → 남동구 센터 입주 후 추천 받는 경로 검토."},
+  {pbancSn:"177062", title:"2026년 인천스타트업파크 TRYOUT 대학 실증사업 참여기업 모집공고", agency:"인천테크노파크", deadline:"2026-04-20", tier:"yellow", note:"인천 홈그라운드 실증사업 — D-5", first_seen:"2026-04-15", connect:"인천 소재 대학(인하대·인천대) 20대 후반~30대 초반 예비신혼 타겟층과 직접 AI 신혼준비 비서 베타 테스트. 실사용 데이터 확보 + 인천 밸류체인 편입."},
+  {pbancSn:"177213", title:"모두의창업 프로젝트 설명회 (단국대)", agency:"단국대학교", deadline:"2026-04-22", tier:"yellow", note:"예비창업자 대상 설명회 — 와이프 트랙 정보 수집용", first_seen:"2026-04-15", connect:"와이프 예창패 트랙 전략 확정 전 정보 수집. 심사 기준·합격 사례·Q&A 파악 → 모두의 창업 프로젝트(176892) 지원서 품질 업그레이드."},
+  {pbancSn:"177179", title:"2026년 ICCE x INNOPOLIS 창업스쿨 16기 모집", agency:"인천창조경제혁신센터", deadline:"2026-04-24", tier:"yellow", note:"인천창조경제혁신센터 주관 창업스쿨 🆕", first_seen:"2026-04-15", connect:"인천 홈그라운드 창업스쿨로 ICCE 네트워크 확보. 향후 인천창조경제혁신센터 주관 공고(한중싱, 골든팬더 등) 지원 시 신뢰도 사전 구축 가능."},
+  {pbancSn:"177148", title:"2026년 The GS Challenge FUTURE RETAIL 4 오픈이노베이션", agency:"서울창조경제혁신센터", deadline:"2026-04-24", tier:"yellow", note:"GS 리테일 오픈이노베이션 — B2C 커머스 시너지 🆕", first_seen:"2026-04-15", connect:"GS25·GS더프레시 등 유통망과 신혼부부 타겟 B2C 커머스 시너지 탐색. sinhon.life 앱 내 GS 제휴 상품(혼수·생필품) 연동 가능성 제안."},
+  {pbancSn:"177167", title:"2026년 「모두의 창업 프로젝트」 설명회 (광운대)", agency:"광운대학교", deadline:"2026-04-25", tier:"yellow", note:"모두의창업 설명회 — 서울권 정보 수집 🆕", first_seen:"2026-04-15", connect:"모두의창업 통합공고(176892) 본 지원 전 설명회 참석으로 서울권 심사 트렌드·요건 확인. 배우자 예비창업 트랙 전략 수립에 추가 활용."},
+  {pbancSn:"177005", title:"청년창업 인큐베이팅 Track A : 예비창업트랙 (스파크랩)", agency:"스파크랩", deadline:"2026-04-27", tier:"yellow", note:"스파크랩 전국 액셀러레이팅 — 배우자 예비창업 트랙 🆕", first_seen:"2026-04-15", connect:"글로벌 VC 스파크랩 인큐베이팅으로 sinhon.life 초기 투자 유치 경로 확보. 배우자 예비창업 트랙으로 이중 지원 전략 구성."},
+  {pbancSn:"177007", title:"청년창업 인큐베이팅 Track B : 초기창업트랙 (스파크랩)", agency:"스파크랩", deadline:"2026-04-27", tier:"yellow", note:"스파크랩 전국 액셀러레이팅 — 허파랑 초기창업 트랙 🆕", first_seen:"2026-04-15", connect:"스파크랩 초기창업트랙으로 허파랑 직접 지원. 글로벌 VC 네트워크 + 투자 연계로 sinhon.life 시리즈A 전 레버리지 확보."},
+  {pbancSn:"177217", title:"'스테이블코인 AML 규제 동향' 비대면 교육 참가자 모집", agency:"서울핀테크랩", deadline:"2026-04-29", tier:"yellow", note:"비대면 교육, 지역 무관 — D-14", first_seen:"2026-04-15", connect:"sinhon.life 결제/금융 기능 확장 시 규제 이해도 확보용. 비대면이라 비용·이동 부담 없이 핀테크 네트워크 입문 가능."},
+  {pbancSn:"177046", title:"신한금융 베트남 X 서울창업허브 오픈이노베이션", agency:"서울경제진흥원", deadline:"2026-05-06", tier:"yellow", note:"베트남 진출 + 서울 입주 요건 확인", first_seen:"2026-04-15", connect:"한·베 국제결혼 + 다문화 신혼가정 세그먼트로 확장 스토리. 신한 베트남 결제망 + 현지 웨딩 콘텐츠 제휴. 베트남 진출 요건 허들 검토 필수."},
+  {pbancSn:"177165", title:"2026 골든팬더 글로벌 혁신창업경진대회 동아시아예선", agency:"인천창조경제혁신센터", deadline:"2026-05-06", tier:"yellow", note:"인천 홈그라운드 + 동아시아 글로벌 경진대회 🆕", first_seen:"2026-04-15", connect:"인천 홈그라운드 + 글로벌 경진대회. sinhon.life의 K-웨딩 플랫폼을 동아시아(중국·싱가포르) 한인 커플 시장 확장 스토리로 포지셔닝."},
+  {pbancSn:"176076", title:"2026년 팁스(TIPS) 창업기업 지원계획 수정 공고", agency:"창업진흥원", deadline:"2026-12-31", tier:"yellow", note:"팁스 수정공고 (참고용)", first_seen:"2026-04-15", connect:"프리팁스(176801) 통과 후 본팁스(5억+) 진입 로드맵. 당장 지원 대상이 아니라 일정·요건 캘린더 관리용 북마크."},
+  {pbancSn:"175783", title:"2026년 중앙부처 및 지자체 창업지원사업 통합공고", agency:"창업진흥원", deadline:"2026-12-31", tier:"yellow", note:"정보성 통합공고 (수시 참조, 예창패/초창패 일정 추적)", first_seen:"2026-04-15", connect:"예창패(와이프)·초창패(허파랑) 본공고 타이밍을 놓치지 않기 위한 정보성 참조 문서. 정기적으로 훑어 캘린더 업데이트."},
+  // ===== 🟠 3순위 =====
+  {pbancSn:"176974", title:"초격차 스타트업 모두의 챌린지 AX - 버티컬 분야", agency:"창업진흥원", deadline:"2026-04-21", tier:"orange", note:"AI 포지셔닝 필요 — 신혼 버티컬 AX 서술 — D-6", first_seen:"2026-04-15", connect:"'신혼부부 라이프스타일 버티컬 SaaS' = AI 웨딩 컨설턴트/예산 설계/일정 관리 → AX(AI 수직화) 스토리로 직행. 버티컬 분야에 꼭 맞는 포지셔닝."},
+  {pbancSn:"176977", title:"초격차 스타트업 모두의 챌린지 AX - LLM 분야", agency:"창업진흥원", deadline:"2026-04-21", tier:"orange", note:"Claude API(LLM) 직접 매칭 — D-6", first_seen:"2026-04-15", connect:"가장 직접 매칭 — Claude API(LLM)로 신혼 예산/일정/예복/허니문 코디 AI 비서를 실제 구현 중이라는 점이 정확히 심사 기준에 부합."},
+  {pbancSn:"176958", title:"DIPS Link-up - 4대 도메인 AX 프로그램", agency:"창업진흥원", deadline:"2026-04-28", tier:"orange", note:"4대 도메인 중 라이프스타일/커머스 버티컬 선택 — D-13", first_seen:"2026-04-15", connect:"4대 도메인 중 '라이프스타일/커머스' 선택. 신혼 세그먼트의 결혼준비~육아 데이터로 AX 수직화 + 대기업 링크업(호텔·예식장·가전 체인) 기대."},
+  {pbancSn:"177166", title:"2026 한중싱 인공지능 창업 경진대회", agency:"인천창조경제혁신센터", deadline:"2026-05-06", tier:"orange", note:"인천 주관 AI 경진대회 — 홈그라운드 우대 가능", first_seen:"2026-04-15", connect:"인천 주관 + AI 수직화 + 글로벌(중·싱가포르) = 3중 매칭. 한·중 신혼여행 루트 + 싱가포르 허니문 AI 큐레이터로 확장 스토리."}
+];
+
+// ===== localStorage 상태 관리 =====
+const STORAGE_KEY = 'sinhon_kstartup_state_v1';
+let state = loadState();
+
+function loadState() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) return { statuses: {}, userItems: [] };
+    const s = JSON.parse(raw);
+    if (!s.statuses) s.statuses = {};
+    if (!s.userItems) s.userItems = [];
+    return s;
+  } catch (e) {
+    return { statuses: {}, userItems: [] };
+  }
+}
+function saveState() {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+}
+
+// 모든 항목 (자동 공고 풀 + 사용자 추가 사업)을 하나의 배열로
+function allItems() {
+  const withFlag = items.map(i => ({...i, _source: 'auto', _id: i.pbancSn}));
+  const user = state.userItems.map(u => ({...u, _source: 'user', _id: u.id}));
+  return [...withFlag, ...user];
+}
+
+// 상태 조회 — 'pool' | 'in_progress' | 'completed'
+function getStatus(id) {
+  const entry = state.statuses[id];
+  return entry ? entry.status : 'pool';
+}
+function setStatus(id, status, item) {
+  if (status === 'pool') {
+    delete state.statuses[id];
+  } else {
+    // 자동 공고가 미래에 JSON에서 사라져도 진행중/완료 스냅샷이 남도록 item 정보 저장
+    state.statuses[id] = {
+      status,
+      snapshot: item ? {
+        id, title: item.title, agency: item.agency, deadline: item.deadline,
+        tier: item.tier, note: item.note, connect: item.connect,
+        pbancSn: item.pbancSn, url: item.url, _source: item._source
+      } : (state.statuses[id] && state.statuses[id].snapshot),
+      moved_at: new Date().toISOString().split('T')[0]
+    };
+  }
+  saveState();
+}
+
+// 진행중/완료 목록은 스냅샷 우선 + 현재 풀에 있으면 최신 데이터로 덮어쓰기
+function statusedItems(targetStatus) {
+  const live = Object.fromEntries(allItems().map(i => [i._id, i]));
+  return Object.entries(state.statuses)
+    .filter(([_, v]) => v.status === targetStatus)
+    .map(([id, v]) => {
+      const liveItem = live[id];
+      const base = liveItem || v.snapshot;
+      return {...base, _id: id, _source: base._source || (liveItem ? 'auto' : 'snapshot'), _moved_at: v.moved_at};
+    });
+}
+
+// ===== D-n 계산 =====
+function daysUntil(deadline) {
+  const d1 = new Date(TODAY + "T00:00:00+09:00");
+  const d2 = new Date(deadline + "T00:00:00+09:00");
+  return Math.round((d2 - d1) / 86400000);
+}
+function dNote(days) {
+  if (days < 0) return `D+${-days} 마감`;
+  if (days === 0) return "D-DAY";
+  return `D-${days}`;
+}
+
+// ===== 티어 라벨 =====
+function tierSymbol(t) {
+  return {
+    green: '<span class="sym-g">●</span> 1순위',
+    yellow: '<span class="sym-y">◐</span> 2순위',
+    orange: '<span class="sym-o">○</span> AI',
+    user: '<span class="sym-v">◆</span> 내 사업'
+  }[t] || t;
+}
+
+// ===== 상태 바 =====
+function renderStats() {
+  const poolItems = allItems().filter(i => getStatus(i._id) === 'pool');
+  const greenN = poolItems.filter(i => i.tier === 'green').length;
+  const yellowN = poolItems.filter(i => i.tier === 'yellow').length;
+  const orangeN = poolItems.filter(i => i.tier === 'orange').length;
+  const inprogN = Object.values(state.statuses).filter(v => v.status === 'in_progress').length;
+  const doneN = Object.values(state.statuses).filter(v => v.status === 'completed').length;
+  document.getElementById('stats-bar').innerHTML = `
+    <div class="stat"><div class="num">${poolItems.length}</div><div class="label">Total</div></div>
+    <div class="stat"><div class="num">${greenN}</div><div class="label"><span class="sym-g">●</span> 1순위</div></div>
+    <div class="stat"><div class="num">${yellowN}</div><div class="label"><span class="sym-y">◐</span> 2순위</div></div>
+    <div class="stat"><div class="num">${orangeN}</div><div class="label"><span class="sym-o">○</span> AI</div></div>
+    <div class="stat"><div class="num">${inprogN}</div><div class="label"><span class="sym-b">▶</span> 진행중</div></div>
+    <div class="stat"><div class="num">${doneN}</div><div class="label"><span class="sym-g">✓</span> 완료</div></div>
+    <div class="stat"><div class="num">38</div><div class="label"><span class="sym-r">×</span> 제외</div></div>
+  `;
+}
+
+// ===== 필터 버튼 =====
+function renderFilters(activeFilter) {
+  const poolItems = allItems().filter(i => getStatus(i._id) === 'pool');
+  const counts = {
+    all: poolItems.length,
+    green: poolItems.filter(i => i.tier === 'green').length,
+    yellow: poolItems.filter(i => i.tier === 'yellow').length,
+    orange: poolItems.filter(i => i.tier === 'orange').length,
+    user: state.userItems.filter(u => getStatus(u.id) === 'pool').length,
+    new: poolItems.filter(i => i.first_seen === TODAY).length,
+    urgent: poolItems.filter(i => { const d = daysUntil(i.deadline); return d >= 0 && d <= 3; }).length,
+    in_progress: Object.values(state.statuses).filter(v => v.status === 'in_progress').length,
+    completed: Object.values(state.statuses).filter(v => v.status === 'completed').length
+  };
+  const buttons = [
+    ['all', '전체'],
+    ['green', '<span class="sym-g">●</span> 1순위'],
+    ['yellow', '<span class="sym-y">◐</span> 2순위'],
+    ['orange', '<span class="sym-o">○</span> AI'],
+    ['user', '<span class="sym-v">◆</span> 내 사업'],
+    ['new', 'NEW'],
+    ['urgent', '⏰ D-3'],
+    ['in_progress', '<span class="sym-b">▶</span> 진행중'],
+    ['completed', '<span class="sym-g">✓</span> 지원완료']
+  ];
+  document.getElementById('filters').innerHTML = buttons.map(([key, label]) =>
+    `<button class="filter-btn ${key === activeFilter ? 'active' : ''}" data-filter="${key}">${label} <span class="cnt">${counts[key]}</span></button>`
+  ).join('');
+}
+
+// ===== 메인 렌더 =====
+let currentFilter = 'all';
+
+function render(filter) {
+  currentFilter = filter;
+  renderStats();
+  renderFilters(filter);
+
+  const title = document.getElementById('section-title-text');
+  const action = document.getElementById('section-action');
+  const grid = document.getElementById('card-grid');
+
+  let list;
+  let sectionTitle;
+  let actionHtml = '';
+
+  if (filter === 'in_progress') {
+    list = statusedItems('in_progress');
+    sectionTitle = '<span class="sym-b">▶</span> 진행중 — 지원서 작성/제출 단계';
+  } else if (filter === 'completed') {
+    list = statusedItems('completed');
+    sectionTitle = '<span class="sym-g">✓</span> 지원 완료 (실제 미지원 건은 삭제 가능)';
+  } else if (filter === 'user') {
+    list = state.userItems
+      .filter(u => getStatus(u.id) === 'pool')
+      .map(u => ({...u, _source: 'user', _id: u.id}));
+    sectionTitle = '<span class="sym-v">◆</span> 내 사업';
+    actionHtml = '<button class="act-btn" onclick="openAddModal()">+ 사업 추가</button>';
+  } else {
+    let pool = allItems().filter(i => getStatus(i._id) === 'pool');
+    if (filter === 'green' || filter === 'yellow' || filter === 'orange') {
+      pool = pool.filter(i => i.tier === filter);
+    } else if (filter === 'new') {
+      pool = pool.filter(i => i.first_seen === TODAY);
+    } else if (filter === 'urgent') {
+      pool = pool.filter(i => { const d = daysUntil(i.deadline); return d >= 0 && d <= 3; });
+    }
+    list = pool;
+    const labels = {
+      all: '전체 공고',
+      green: '<span class="sym-g">●</span> 1순위 강력 추천',
+      yellow: '<span class="sym-y">◐</span> 2순위 검토 추천',
+      orange: '<span class="sym-o">○</span> 3순위 AI 포지셔닝',
+      new: 'NEW 오늘 신규',
+      urgent: '⏰ 임박 마감 (D-0 ~ D-3)'
+    };
+    sectionTitle = labels[filter] || '전체 공고';
+    if (filter === 'all') actionHtml = '<button class="act-btn" onclick="openAddModal()">+ 내 사업 추가</button>';
+  }
+
+  title.innerHTML = sectionTitle;
+  action.innerHTML = actionHtml;
+
+  list.sort((a,b) => (a.deadline || '').localeCompare(b.deadline || ''));
+
+  if (list.length === 0) {
+    grid.innerHTML = '<div class="empty">해당 조건의 공고가 없습니다.</div>';
+    return;
+  }
+
+  grid.innerHTML = list.map(it => renderCard(it, filter)).join('');
+}
+
+function renderCard(it, filter) {
+  const id = it._id;
+  const status = getStatus(id);
+  const days = daysUntil(it.deadline);
+  const urgent = days >= 0 && days <= 3;
+  const isNew = it.first_seen === TODAY;
+  const tier = it.tier || 'user';
+
+  // URL
+  let url = '';
+  if (it.pbancSn) url = `https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=${it.pbancSn}`;
+  else if (it.url) url = it.url;
+
+  const titleHtml = url
+    ? `<a href="${url}" target="_blank" rel="noopener">${it.title}</a>`
+    : `<span class="no-link">${it.title}</span>`;
+
+  // Actions
+  let actions = '';
+  if (status === 'pool') {
+    actions = `<button class="act-btn" onclick="moveTo('${id}','in_progress')">▶ 진행중으로</button>`;
+    if (it._source === 'user') {
+      actions += `<button class="act-btn" onclick="editUser('${id}')">편집</button>`;
+      actions += `<button class="act-btn danger" onclick="deleteUser('${id}')">삭제</button>`;
+    }
+  } else if (status === 'in_progress') {
+    actions = `<button class="act-btn" onclick="moveTo('${id}','completed')">✓ 지원완료로</button>
+               <button class="act-btn" onclick="moveTo('${id}','pool')">↶ 되돌리기</button>`;
+    if (it._source === 'user') {
+      actions += `<button class="act-btn" onclick="editUser('${id}')">편집</button>`;
+    }
+  } else if (status === 'completed') {
+    actions = `<button class="act-btn" onclick="moveTo('${id}','in_progress')">↶ 진행중으로</button>
+               <button class="act-btn danger" onclick="removeCompleted('${id}')">🗑 삭제 (미지원)</button>`;
+  }
+
+  // Status badge
+  let statusBadge = '';
+  if (status === 'in_progress') statusBadge = `<span class="badge status-inprogress"><span class="sym-b" style="filter:brightness(2)">▶</span> 진행중</span>`;
+  else if (status === 'completed') statusBadge = `<span class="badge"><span class="sym-g">✓</span> 지원완료</span>`;
+
+  return `
+    <div class="card tier-${tier}">
+      <div class="card-tier-marker"></div>
+      <div class="card-title">${titleHtml}</div>
+      <div class="card-meta">
+        <span class="badge solid">${tierSymbol(tier)}</span>
+        <span class="badge ${urgent ? 'deadline-urgent' : ''}">${it.deadline} · ${dNote(days)}</span>
+        ${isNew && it._source === 'auto' ? '<span class="badge">NEW</span>' : ''}
+        ${statusBadge}
+      </div>
+      ${it.agency ? `<div class="card-agency">${it.agency}</div>` : ''}
+      ${it.note ? `<div class="card-note">${it.note}</div>` : ''}
+      ${it.connect ? `<div class="card-connect"><span class="tag">▸ 신혼생활 연결</span>${it.connect}</div>` : ''}
+      ${actions ? `<div class="card-actions">${actions}</div>` : ''}
+    </div>`;
+}
+
+// ===== 액션 =====
+function moveTo(id, status) {
+  const item = allItems().find(i => i._id === id);
+  setStatus(id, status, item);
+  render(currentFilter);
+}
+function removeCompleted(id) {
+  if (!confirm('이 공고를 기록에서 완전히 삭제할까요?\n(실제 지원하지 않은 경우 체크 해제 용도)')) return;
+  delete state.statuses[id];
+  saveState();
+  render(currentFilter);
+}
+
+// ===== 사용자 사업 관리 =====
+function openAddModal(id) {
+  document.getElementById('user-form').reset();
+  document.getElementById('u-id').value = '';
+  document.getElementById('modal-title').textContent = '+ 내 사업 추가';
+  if (id) {
+    const u = state.userItems.find(x => x.id === id);
+    if (u) {
+      document.getElementById('modal-title').textContent = '✎ 내 사업 편집';
+      document.getElementById('u-id').value = u.id;
+      document.getElementById('u-title').value = u.title;
+      document.getElementById('u-agency').value = u.agency || '';
+      document.getElementById('u-deadline').value = u.deadline;
+      document.getElementById('u-url').value = u.url || '';
+      document.getElementById('u-tier').value = u.tier || 'user';
+      document.getElementById('u-note').value = u.note || '';
+      document.getElementById('u-connect').value = u.connect || '';
+    }
+  }
+  document.getElementById('modal-back').classList.add('open');
+}
+function closeModal() { document.getElementById('modal-back').classList.remove('open'); }
+function editUser(id) { openAddModal(id); }
+function deleteUser(id) {
+  if (!confirm('이 사업을 삭제할까요?')) return;
+  state.userItems = state.userItems.filter(u => u.id !== id);
+  delete state.statuses[id];
+  saveState();
+  render(currentFilter);
+}
+
+document.getElementById('user-form').addEventListener('submit', e => {
+  e.preventDefault();
+  const id = document.getElementById('u-id').value || ('user_' + Date.now());
+  const data = {
+    id,
+    title: document.getElementById('u-title').value.trim(),
+    agency: document.getElementById('u-agency').value.trim(),
+    deadline: document.getElementById('u-deadline').value,
+    url: document.getElementById('u-url').value.trim(),
+    tier: document.getElementById('u-tier').value,
+    note: document.getElementById('u-note').value.trim(),
+    connect: document.getElementById('u-connect').value.trim(),
+    first_seen: new Date().toISOString().split('T')[0]
+  };
+  const idx = state.userItems.findIndex(u => u.id === id);
+  if (idx >= 0) state.userItems[idx] = data;
+  else state.userItems.push(data);
+  saveState();
+  closeModal();
+  render(currentFilter);
+});
+
+document.getElementById('form-cancel').addEventListener('click', closeModal);
+document.getElementById('modal-back').addEventListener('click', e => {
+  if (e.target.id === 'modal-back') closeModal();
+});
+
+// 필터 버튼 이벤트 위임
+document.getElementById('filters').addEventListener('click', e => {
+  const btn = e.target.closest('.filter-btn');
+  if (btn) render(btn.dataset.filter);
+});
+
+render('all');
+</script>
+</body>
+</html>
