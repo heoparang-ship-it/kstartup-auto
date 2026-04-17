@@ -3,165 +3,563 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>K-Startup 추천 대시보드 — 신혼생활</title>
+<title>K-Startup 추천·진행 대시보드 — 신혼생활</title>
 <style>
-  :root{--bg:#fff;--fg:#000;--muted:#666;--line:#000;--line-soft:#e5e5e5;--hover:#f5f5f5;--soft-bg:#fafafa}
-  *{box-sizing:border-box}html,body{margin:0;padding:0}
+  :root{
+    --bg:#fff; --fg:#111; --muted:#6b7280; --line:#111; --line-soft:#e5e7eb;
+    --hover:#f9fafb; --soft-bg:#fafafa;
+    --c-green:#16a34a; --c-green-soft:#dcfce7;
+    --c-yellow:#eab308; --c-yellow-soft:#fef9c3;
+    --c-orange:#ea580c; --c-orange-soft:#ffedd5;
+    --c-red:#dc2626; --c-red-soft:#fee2e2;
+    --c-blue:#2563eb; --c-blue-soft:#dbeafe;
+    --c-violet:#7c3aed; --c-violet-soft:#ede9fe;
+    --c-gray:#6b7280;
+  }
+  *{box-sizing:border-box} html,body{margin:0;padding:0}
   body{font-family:-apple-system,BlinkMacSystemFont,"Pretendard","Noto Sans KR",sans-serif;background:var(--bg);color:var(--fg);line-height:1.55;-webkit-font-smoothing:antialiased}
-  .container{max-width:1100px;margin:0 auto;padding:48px 24px 80px}
-  header{border-bottom:2px solid var(--line);padding-bottom:24px;margin-bottom:32px}
-  h1{margin:0 0 6px;font-size:32px;font-weight:800;letter-spacing:-0.02em}
-  .meta{color:var(--muted);font-size:13px}.meta strong{color:var(--fg);font-weight:600}
-  .stats{display:grid;grid-template-columns:repeat(6,1fr);margin:24px 0 0;border:1px solid var(--line)}
+  .container{max-width:1180px;margin:0 auto;padding:40px 24px 80px}
+
+  /* Header */
+  header{border-bottom:2px solid var(--line);padding-bottom:20px;margin-bottom:28px}
+  h1{margin:0 0 8px;font-size:30px;font-weight:800;letter-spacing:-0.02em}
+  .meta{color:var(--muted);font-size:13px}
+  .meta strong{color:var(--fg);font-weight:600}
+  .meta .reload-at{margin-left:8px;color:var(--c-blue);font-family:"SF Mono",Menlo,monospace;font-size:12px}
+
+  /* History toggle */
+  .history-toggle{margin-top:10px;display:inline-flex;align-items:center;gap:6px;cursor:pointer;font-size:12px;color:var(--muted);user-select:none;border:none;background:none;padding:0;font-family:inherit}
+  .history-toggle:hover{color:var(--fg)}
+  .history-panel{display:none;margin-top:10px;border:1px solid var(--line-soft);padding:10px 14px;font-size:12px;font-family:"SF Mono",Menlo,monospace;background:var(--soft-bg)}
+  .history-panel.open{display:block}
+  .history-row{display:grid;grid-template-columns:130px 70px 70px 80px 1fr;gap:10px;padding:4px 0;border-bottom:1px dashed var(--line-soft)}
+  .history-row:last-child{border-bottom:none}
+  .history-row .h-date{color:var(--fg);font-weight:600}
+  .history-row .h-new{color:var(--c-green)}
+  .history-row .h-exp{color:var(--c-red)}
+
+  /* Stats bar */
+  .stats{display:grid;grid-template-columns:repeat(7,1fr);margin:20px 0 0;border:1px solid var(--line)}
   .stat{padding:14px 10px;border-right:1px solid var(--line);text-align:center}
   .stat:last-child{border-right:none}
-  .stat .num{font-size:22px;font-weight:800}.stat .label{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:0.06em;margin-top:2px;font-weight:600}
-  .filters{display:flex;gap:6px;flex-wrap:wrap;margin:28px 0 0}
-  .filter-btn{background:var(--bg);border:1px solid var(--line);color:var(--fg);padding:7px 14px;cursor:pointer;font-size:12px;font-weight:500;font-family:inherit;transition:background 0.1s}
-  .filter-btn:hover{background:var(--hover)}.filter-btn.active{background:var(--fg);color:var(--bg)}
+  .stat .num{font-size:22px;font-weight:800;letter-spacing:-0.02em}
+  .stat .label{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:0.06em;margin-top:2px;font-weight:600}
+  .stat.green .num{color:var(--c-green)}
+  .stat.yellow .num{color:var(--c-yellow)}
+  .stat.orange .num{color:var(--c-orange)}
+  .stat.blue .num{color:var(--c-blue)}
+
+  /* Filters */
+  .filters{display:flex;gap:6px;flex-wrap:wrap;margin:22px 0 0}
+  .filter-btn{background:var(--bg);border:1px solid var(--line);color:var(--fg);padding:7px 14px;cursor:pointer;font-size:12px;font-weight:500;font-family:inherit;transition:all 0.1s;border-radius:4px}
+  .filter-btn:hover{background:var(--hover)}
+  .filter-btn.active{background:var(--fg);color:var(--bg)}
+  .filter-btn.active.green{background:var(--c-green);border-color:var(--c-green)}
+  .filter-btn.active.yellow{background:var(--c-yellow);border-color:var(--c-yellow);color:#111}
+  .filter-btn.active.orange{background:var(--c-orange);border-color:var(--c-orange)}
+  .filter-btn.active.blue{background:var(--c-blue);border-color:var(--c-blue)}
+  .filter-btn.active.violet{background:var(--c-violet);border-color:var(--c-violet)}
   .filter-btn .cnt{font-family:"SF Mono",Menlo,monospace;font-size:10px;opacity:0.7;margin-left:4px}
-  section{margin-top:36px}
-  h2{font-size:14px;margin:0 0 16px;padding-bottom:10px;border-bottom:1px solid var(--line);text-transform:uppercase;letter-spacing:0.1em;font-weight:700}
-  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:0;border-top:1px solid var(--line);border-left:1px solid var(--line)}
-  .card{border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 20px 16px;display:flex;flex-direction:column;gap:10px;position:relative;background:var(--bg);transition:background 0.1s}
+
+  /* Section */
+  section{margin-top:30px}
+  h2{font-size:14px;margin:0 0 12px;padding-bottom:8px;border-bottom:1px solid var(--line);text-transform:uppercase;letter-spacing:0.1em;font-weight:700;display:flex;justify-content:space-between;align-items:center;gap:10px}
+
+  /* Bulk toolbar */
+  .bulk-toolbar{display:none;gap:8px;align-items:center;margin:10px 0;padding:10px 14px;background:var(--c-blue-soft);border:1px solid var(--c-blue);border-radius:4px;font-size:13px}
+  .bulk-toolbar.active{display:flex}
+  .bulk-toolbar .bulk-count{font-weight:700;color:var(--c-blue)}
+  .bulk-toolbar button{padding:6px 12px;border:1px solid var(--c-blue);background:#fff;color:var(--c-blue);cursor:pointer;font-size:12px;font-weight:600;font-family:inherit;border-radius:3px}
+  .bulk-toolbar button.primary{background:var(--c-blue);color:#fff}
+  .bulk-toolbar button:hover{filter:brightness(0.95)}
+
+  /* Grid */
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:0;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+
+  /* Card */
+  .card{border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:16px 18px 14px 26px;display:flex;flex-direction:column;gap:8px;position:relative;background:var(--bg);transition:background 0.1s}
   .card:hover{background:var(--hover)}
-  .card-tier{position:absolute;top:0;left:0;width:4px;height:100%;background:var(--fg)}
-  .card.tier-yellow .card-tier{background:repeating-linear-gradient(45deg,var(--fg),var(--fg) 3px,var(--bg) 3px,var(--bg) 6px)}
-  .card.tier-orange .card-tier{background:repeating-linear-gradient(0deg,var(--fg),var(--fg) 6px,var(--bg) 6px,var(--bg) 9px)}
-  .card-title{font-weight:700;font-size:15px;line-height:1.35}
-  .card-title a{color:var(--fg);text-decoration:none;background-image:linear-gradient(var(--fg),var(--fg));background-position:0 100%;background-repeat:no-repeat;background-size:0 1px;transition:background-size 0.2s}
-  .card-title a:hover{background-size:100% 1px}
-  .card-meta{display:flex;flex-wrap:wrap;gap:6px;font-size:11px}
-  .badge{display:inline-block;padding:2px 8px;border:1px solid var(--line);font-weight:600;font-family:"SF Mono",Menlo,monospace;text-transform:uppercase;letter-spacing:0.04em}
-  .badge.solid{background:var(--fg);color:var(--bg)}
-  .badge.urgent{background:var(--fg);color:var(--bg)}
+  .card.selected{background:var(--c-blue-soft)}
+
+  /* Tier color bar (left) */
+  .card-tier-bar{position:absolute;top:0;left:0;width:6px;height:100%;background:var(--c-gray)}
+  .card.tier-green .card-tier-bar{background:var(--c-green)}
+  .card.tier-yellow .card-tier-bar{background:var(--c-yellow)}
+  .card.tier-orange .card-tier-bar{background:var(--c-orange)}
+  .card.tier-user .card-tier-bar{background:var(--c-violet)}
+  .card.status-inprogress .card-tier-bar{background:var(--c-blue)}
+  .card.status-completed .card-tier-bar{background:#111}
+
+  /* Top row: checkbox + title */
+  .card-top{display:flex;gap:10px;align-items:flex-start}
+  .card-checkbox{margin-top:3px;width:16px;height:16px;flex-shrink:0;accent-color:var(--c-blue);cursor:pointer}
+  .card-title{font-weight:700;font-size:15px;line-height:1.35;letter-spacing:-0.01em;flex:1}
+  .card-title a{color:var(--fg);text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.15s}
+  .card-title a:hover{border-bottom-color:var(--fg)}
+  .card-title .no-link{color:var(--fg)}
+
+  /* Meta badges */
+  .card-meta{display:flex;flex-wrap:wrap;gap:5px;font-size:11px}
+  .badge{display:inline-block;padding:2px 8px;border:1px solid var(--line);font-weight:600;font-family:"SF Mono",Menlo,monospace;text-transform:uppercase;letter-spacing:0.04em;border-radius:3px}
+  .badge.tier-green{background:var(--c-green);color:#fff;border-color:var(--c-green)}
+  .badge.tier-yellow{background:var(--c-yellow);color:#111;border-color:var(--c-yellow)}
+  .badge.tier-orange{background:var(--c-orange);color:#fff;border-color:var(--c-orange)}
+  .badge.tier-user{background:var(--c-violet);color:#fff;border-color:var(--c-violet)}
+  .badge.deadline-urgent{background:var(--c-red);color:#fff;border-color:var(--c-red)}
+  .badge.status-inprogress{background:var(--c-blue);color:#fff;border-color:var(--c-blue)}
+  .badge.status-completed{background:#111;color:#fff}
+  .badge.new-flag{background:#fff;color:var(--c-red);border-color:var(--c-red)}
+
   .card-agency{font-size:11px;color:var(--muted);font-family:"SF Mono",Menlo,monospace}
-  .card-note{font-size:13px;color:var(--fg);border-top:1px dashed var(--line-soft);padding-top:10px;margin-top:2px}
-  .card-connect{font-size:12.5px;background:var(--soft-bg);border-left:2px solid var(--fg);padding:8px 10px}
-  .card-connect .tag{font-family:"SF Mono",Menlo,monospace;font-size:10px;font-weight:700;letter-spacing:0.08em;margin-right:6px;text-transform:uppercase}
-  .empty{border:1px dashed var(--line);padding:32px;text-align:center;color:var(--muted);font-size:13px}
+  .card-note{font-size:12.5px;color:var(--fg);border-top:1px dashed var(--line-soft);padding-top:8px;margin-top:2px}
+
+  /* Deep summary (collapsible) */
+  .card-deep{border-top:1px dashed var(--line-soft);padding-top:8px;margin-top:2px}
+  .deep-toggle{background:none;border:none;padding:6px 0;cursor:pointer;font-size:12px;font-weight:600;color:var(--c-blue);font-family:inherit;display:flex;align-items:center;gap:4px;width:100%;text-align:left}
+  .deep-toggle:hover{color:var(--fg)}
+  .deep-toggle .chev{transition:transform 0.15s;display:inline-block}
+  .deep-toggle.open .chev{transform:rotate(90deg)}
+  .deep-content{display:none;margin-top:8px;font-size:12.5px;padding:10px 12px;background:var(--soft-bg);border-left:3px solid var(--c-blue);border-radius:2px}
+  .deep-content.open{display:block}
+  .deep-section{margin-bottom:10px}
+  .deep-section:last-child{margin-bottom:0}
+  .deep-h{font-size:10px;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+  .deep-fit{line-height:1.5;color:var(--fg)}
+  .deep-list{margin:0;padding-left:18px;line-height:1.6}
+  .deep-list li{margin-bottom:2px}
+  .deep-diff{display:inline-block;padding:2px 8px;font-family:"SF Mono",Menlo,monospace;font-size:11px;font-weight:700;border-radius:3px;text-transform:uppercase}
+  .deep-diff.low{background:var(--c-green-soft);color:var(--c-green)}
+  .deep-diff.medium{background:var(--c-yellow-soft);color:#8a6d00}
+  .deep-diff.high{background:var(--c-red-soft);color:var(--c-red)}
+  .deep-next{padding:8px 10px;background:#fff;border:1px dashed var(--c-blue);font-weight:600;color:var(--c-blue)}
+
+  /* Actions */
+  .card-actions{display:flex;gap:5px;flex-wrap:wrap;margin-top:4px;padding-top:8px;border-top:1px dashed var(--line-soft)}
+  .act-btn{background:var(--bg);border:1px solid var(--line);color:var(--fg);padding:4px 10px;font-size:11px;font-family:inherit;cursor:pointer;font-weight:500;border-radius:3px}
+  .act-btn:hover{background:var(--fg);color:var(--bg)}
+  .act-btn.primary{background:var(--c-blue);color:#fff;border-color:var(--c-blue)}
+  .act-btn.primary:hover{filter:brightness(1.1)}
+  .act-btn.danger:hover{background:var(--c-red);color:#fff;border-color:var(--c-red)}
+
+  .empty{border:1px dashed var(--line);padding:32px;text-align:center;color:var(--muted);font-size:13px;grid-column:1/-1}
   .loading{text-align:center;padding:60px;color:var(--muted);font-size:14px}
-  footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:11px;font-family:"SF Mono",Menlo,monospace;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+  footer{margin-top:50px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:11px;font-family:"SF Mono",Menlo,monospace;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
   footer a{color:var(--fg);text-decoration:underline}
-  @media(max-width:640px){.container{padding:24px 16px 60px}h1{font-size:24px}.stats{grid-template-columns:repeat(3,1fr)}.stat{border-bottom:1px solid var(--line)}}
+
+  @media(max-width:720px){
+    .container{padding:24px 14px 60px}
+    h1{font-size:22px}
+    .stats{grid-template-columns:repeat(4,1fr)}
+    .stat{border-bottom:1px solid var(--line)}
+    .grid{grid-template-columns:1fr}
+    .history-row{grid-template-columns:110px 60px 60px 1fr}
+    .history-row .h-red{display:none}
+  }
 </style>
 </head>
 <body>
 <div class="container">
   <header>
-    <h1>K-Startup 추천 대시보드</h1>
+    <h1>K-Startup 추천·진행 대시보드</h1>
     <div class="meta">
-      마지막 갱신 <strong id="last-updated">—</strong> · 신혼생활(sinhon.life) · 소재지 <strong>인천</strong>
+      마지막 갱신 <strong id="last-updated">—</strong>
+      <span class="reload-at" id="reload-at"></span>
+      · 신혼생활(sinhon.life) · 소재지 <strong>인천</strong> · 이중 트랙(예비/초기)
     </div>
+    <button class="history-toggle" id="history-toggle">▸ 최근 7일 갱신 이력 <span id="history-count"></span></button>
+    <div class="history-panel" id="history-panel"></div>
     <div class="stats" id="stats-bar"></div>
     <div class="filters" id="filters"></div>
   </header>
+
+  <div class="bulk-toolbar" id="bulk-toolbar">
+    <span class="bulk-count"><span id="bulk-n">0</span>건 선택됨</span>
+    <button class="primary" onclick="bulkMove('in_progress')">▶ 진행중으로 일괄 이동</button>
+    <button onclick="bulkMove('completed')">✓ 지원완료로</button>
+    <button onclick="clearSelection()">선택 해제</button>
+  </div>
+
   <section>
-    <h2 id="section-title">전체 공고</h2>
+    <h2 id="section-title">
+      <span id="section-title-text">전체 공고</span>
+      <span id="section-action"></span>
+    </h2>
     <div id="card-grid" class="loading">데이터 로딩 중...</div>
   </section>
+
   <footer>
-    <div>kstartup-auto v3 · GitHub Actions 매일 자동 갱신</div>
+    <div>kstartup-auto v3 · GitHub Actions 매일 KST 09:00 자동 갱신 · 사용자 상태는 브라우저(localStorage)에 저장</div>
     <div><a href="recommendations.json">raw data</a></div>
   </footer>
 </div>
+
 <script>
 const KSTD = new Date().toLocaleDateString('sv-SE', {timeZone:'Asia/Seoul'});
+const STORAGE_KEY = 'sinhon_kstartup_state_v2';
 
 let DATA = [];
+let POOL = null;          // 전체 JSON 객체 (history 포함)
+let state = loadState();
 let currentFilter = 'all';
+let selectedIds = new Set();
 
-async function init() {
-  try {
-    const r = await fetch('recommendations.json');
-    const pool = await r.json();
-    DATA = pool.items || [];
-    document.getElementById('last-updated').textContent = pool.last_updated || '—';
-    render('all');
-  } catch(e) {
-    document.getElementById('card-grid').innerHTML = '<div class="empty">recommendations.json 로드 실패</div>';
+function loadState(){
+  try{
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if(!raw) return {statuses:{}, openDeeps:{}};
+    const s = JSON.parse(raw);
+    if(!s.statuses) s.statuses = {};
+    if(!s.openDeeps) s.openDeeps = {};
+    return s;
+  }catch(e){ return {statuses:{}, openDeeps:{}}; }
+}
+function saveState(){ localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }
+
+function getStatus(id){ return (state.statuses[id]||{}).status || 'pool'; }
+function setStatus(id, status, item){
+  if(status === 'pool'){
+    delete state.statuses[id];
+  }else{
+    state.statuses[id] = {
+      status,
+      snapshot: item ? {
+        pbancSn:item.pbancSn, title:item.title, agency:item.agency, deadline:item.deadline,
+        tier:item.tier, note:item.note, url:item.url, deep_summary:item.deep_summary
+      } : (state.statuses[id]||{}).snapshot,
+      moved_at_kst: new Date().toISOString()
+    };
   }
+  saveState();
 }
 
-function daysUntil(dl) {
-  if (!dl) return 999;
+function allItems(){
+  // auto items (from JSON) + snapshot-only items (status 가진건데 JSON에서 사라진 것)
+  const live = DATA.map(i => ({...i, _id:i.pbancSn, _source:'auto'}));
+  const liveIds = new Set(live.map(i=>i._id));
+  const ghosts = Object.entries(state.statuses)
+    .filter(([id,v]) => !liveIds.has(id) && v.snapshot)
+    .map(([id,v]) => ({...v.snapshot, _id:id, _source:'snapshot'}));
+  return [...live, ...ghosts];
+}
+
+function statusedItems(target){
+  return allItems().filter(i => getStatus(i._id) === target);
+}
+
+function daysUntil(dl){
+  if(!dl) return 999;
   const d1 = new Date(KSTD+'T00:00:00+09:00');
   const d2 = new Date(dl+'T00:00:00+09:00');
   return Math.round((d2-d1)/86400000);
 }
-function dLabel(d) {
-  if (d<0) return `D+${-d}`;
-  if (d===0) return 'D-DAY';
+function dLabel(d){
+  if(d===999) return '마감 미정';
+  if(d<0) return `D+${-d} 마감`;
+  if(d===0) return 'D-DAY';
   return `D-${d}`;
 }
-function tierLabel(t) {
-  return {green:'● 1순위', yellow:'◐ 2순위', orange:'○ AI'}[t] || t;
+function tierLabelText(t){
+  return {green:'● 1순위', yellow:'◐ 2순위', orange:'○ AI', user:'◆ 내 사업'}[t] || t;
 }
 
-function render(filter) {
-  currentFilter = filter;
-  const greens = DATA.filter(i=>i.tier==='green');
-  const yellows = DATA.filter(i=>i.tier==='yellow');
-  const oranges = DATA.filter(i=>i.tier==='orange');
-  const newToday = DATA.filter(i=>i.first_seen===KSTD);
-  const urgent = DATA.filter(i=>{const d=daysUntil(i.deadline);return d>=0&&d<=3;});
+function formatKstTimestamp(iso){
+  if(!iso) return '';
+  // "2026-04-17T18:32:05+09:00" → "2026-04-17 18:32 KST"
+  try{
+    const m = iso.match(/(\d{4}-\d{2}-\d{2})T(\d{2}):(\d{2})/);
+    if(m) return `${m[1]} ${m[2]}:${m[3]} KST`;
+  }catch(e){}
+  return iso;
+}
 
-  // Stats
-  document.getElementById('stats-bar').innerHTML = `
-    <div class="stat"><div class="num">${DATA.length}</div><div class="label">Total</div></div>
-    <div class="stat"><div class="num">${greens.length}</div><div class="label">● 1순위</div></div>
-    <div class="stat"><div class="num">${yellows.length}</div><div class="label">◐ 2순위</div></div>
-    <div class="stat"><div class="num">${oranges.length}</div><div class="label">○ AI</div></div>
-    <div class="stat"><div class="num">${newToday.length}</div><div class="label">NEW</div></div>
-    <div class="stat"><div class="num">${urgent.length}</div><div class="label">⏰ 임박</div></div>`;
+function esc(s){ if(!s) return ''; const d=document.createElement('div'); d.textContent=s; return d.innerHTML; }
 
-  // Filters
-  const counts = {all:DATA.length, green:greens.length, yellow:yellows.length, orange:oranges.length, 'new':newToday.length, urgent:urgent.length};
-  const btns = [['all','전체'],['green','● 1순위'],['yellow','◐ 2순위'],['orange','○ AI'],['new','NEW'],['urgent','⏰ D-3']];
-  document.getElementById('filters').innerHTML = btns.map(([k,l])=>
-    `<button class="filter-btn ${k===filter?'active':''}" onclick="render('${k}')">${l} <span class="cnt">${counts[k]}</span></button>`
-  ).join('');
-
-  // Filter items
-  let list = DATA;
-  if (filter==='green'||filter==='yellow'||filter==='orange') list=DATA.filter(i=>i.tier===filter);
-  else if (filter==='new') list=newToday;
-  else if (filter==='urgent') list=urgent;
-
-  list = [...list].sort((a,b)=>(a.deadline||'9999').localeCompare(b.deadline||'9999'));
-
-  const titles = {all:'전체 공고',green:'● 1순위 강력 추천',yellow:'◐ 2순위 검토',orange:'○ AI 포지셔닝','new':'NEW 오늘 신규',urgent:'⏰ 임박 마감'};
-  document.getElementById('section-title').textContent = titles[filter]||'전체 공고';
-
-  const grid = document.getElementById('card-grid');
-  grid.className = 'grid';
-  if (!list.length) { grid.innerHTML='<div class="empty">해당 조건의 공고가 없습니다.</div>'; grid.className=''; return; }
-
-  grid.innerHTML = list.map(it => {
-    const d = daysUntil(it.deadline);
-    const urg = d>=0 && d<=3;
-    const isNew = it.first_seen === KSTD;
-    const url = it.url || (it.pbancSn ? `https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=${it.pbancSn}` : '');
-    const titleHtml = url ? `<a href="${url}" target="_blank">${esc(it.title)}</a>` : esc(it.title);
-    const dlText = it.deadline ? `${it.deadline} · ${dLabel(d)}` : '마감일 미확인';
-
-    return `<div class="card tier-${it.tier||'yellow'}">
-      <div class="card-tier"></div>
-      <div class="card-title">${titleHtml}</div>
-      <div class="card-meta">
-        <span class="badge solid">${tierLabel(it.tier)}</span>
-        <span class="badge ${urg?'urgent':''}">${dlText}</span>
-        ${isNew?'<span class="badge">NEW</span>':''}
-      </div>
-      ${it.agency?`<div class="card-agency">${esc(it.agency)}</div>`:''}
-      ${it.note?`<div class="card-note">${esc(it.note)}</div>`:''}
-      ${it.connect?`<div class="card-connect"><span class="tag">▸ 연결</span>${esc(it.connect)}</div>`:''}
+// ── History panel ──
+function renderHistory(){
+  const history = (POOL && POOL.history) || [];
+  const last7 = history.slice(-7).reverse();
+  document.getElementById('history-count').textContent = `(${last7.length}회)`;
+  const panel = document.getElementById('history-panel');
+  if(!last7.length){
+    panel.innerHTML = '<div style="color:var(--muted)">히스토리 기록 없음 (다음 갱신부터 누적됩니다)</div>';
+    return;
+  }
+  panel.innerHTML = last7.map(h => {
+    const at = h.at_kst ? formatKstTimestamp(h.at_kst) : h.date;
+    const ds = h.deep_summary_generated || 0;
+    return `<div class="history-row">
+      <span class="h-date">${at}</span>
+      <span class="h-new">+${h.new||0}</span>
+      <span class="h-exp">-${h.expired||0}</span>
+      <span class="h-red">풀 ${h.total||0}</span>
+      <span>🔴${h.red_excluded||0} 제외${ds?` · 🤖 요약 ${ds}건`:''}</span>
     </div>`;
   }).join('');
 }
 
-function esc(s) { if(!s)return''; const d=document.createElement('div'); d.textContent=s; return d.innerHTML; }
+document.getElementById('history-toggle').addEventListener('click', function(){
+  const panel = document.getElementById('history-panel');
+  panel.classList.toggle('open');
+  this.textContent = (panel.classList.contains('open') ? '▾' : '▸') + ' 최근 7일 갱신 이력 ';
+  const cnt = document.createElement('span');
+  cnt.id = 'history-count';
+  cnt.textContent = document.getElementById('history-count').textContent;
+  this.appendChild(cnt);
+});
 
+// ── Stats & Filters ──
+function renderStats(){
+  const pool = allItems().filter(i => getStatus(i._id) === 'pool');
+  const g = pool.filter(i=>i.tier==='green').length;
+  const y = pool.filter(i=>i.tier==='yellow').length;
+  const o = pool.filter(i=>i.tier==='orange').length;
+  const inprog = Object.values(state.statuses).filter(v=>v.status==='in_progress').length;
+  const done = Object.values(state.statuses).filter(v=>v.status==='completed').length;
+  const redCnt = (POOL && POOL.red_count_today) || 0;
+  document.getElementById('stats-bar').innerHTML = `
+    <div class="stat"><div class="num">${pool.length}</div><div class="label">Total</div></div>
+    <div class="stat green"><div class="num">${g}</div><div class="label">● 1순위</div></div>
+    <div class="stat yellow"><div class="num">${y}</div><div class="label">◐ 2순위</div></div>
+    <div class="stat orange"><div class="num">${o}</div><div class="label">○ AI</div></div>
+    <div class="stat blue"><div class="num">${inprog}</div><div class="label">▶ 진행중</div></div>
+    <div class="stat"><div class="num">${done}</div><div class="label">✓ 완료</div></div>
+    <div class="stat"><div class="num" style="color:var(--c-red)">${redCnt}</div><div class="label">× 제외</div></div>
+  `;
+}
+
+function renderFilters(f){
+  const pool = allItems().filter(i => getStatus(i._id) === 'pool');
+  const counts = {
+    all: pool.length,
+    green: pool.filter(i=>i.tier==='green').length,
+    yellow: pool.filter(i=>i.tier==='yellow').length,
+    orange: pool.filter(i=>i.tier==='orange').length,
+    new: pool.filter(i=>i.first_seen===KSTD).length,
+    urgent: pool.filter(i=>{const d=daysUntil(i.deadline); return d>=0&&d<=3;}).length,
+    in_progress: Object.values(state.statuses).filter(v=>v.status==='in_progress').length,
+    completed: Object.values(state.statuses).filter(v=>v.status==='completed').length
+  };
+  const btns = [
+    ['all','전체',''],
+    ['green','● 1순위','green'],
+    ['yellow','◐ 2순위','yellow'],
+    ['orange','○ AI','orange'],
+    ['new','NEW',''],
+    ['urgent','⏰ D-3',''],
+    ['in_progress','▶ 진행중','blue'],
+    ['completed','✓ 완료','']
+  ];
+  document.getElementById('filters').innerHTML = btns.map(([k,l,cls]) =>
+    `<button class="filter-btn ${cls} ${k===f?'active':''}" data-filter="${k}">${l} <span class="cnt">${counts[k]}</span></button>`
+  ).join('');
+}
+
+// ── Render main ──
+function render(filter){
+  currentFilter = filter;
+  renderStats();
+  renderFilters(filter);
+  updateBulkToolbar();
+
+  let list;
+  let titleText = '전체 공고';
+  if(filter==='in_progress'){ list = statusedItems('in_progress'); titleText = '▶ 진행중 — 지원서 작성/제출 단계'; }
+  else if(filter==='completed'){ list = statusedItems('completed'); titleText = '✓ 지원 완료'; }
+  else{
+    let pool = allItems().filter(i => getStatus(i._id) === 'pool');
+    if(['green','yellow','orange'].includes(filter)) pool = pool.filter(i=>i.tier===filter);
+    else if(filter==='new') pool = pool.filter(i=>i.first_seen===KSTD);
+    else if(filter==='urgent') pool = pool.filter(i=>{const d=daysUntil(i.deadline); return d>=0&&d<=3;});
+    const labels = {all:'전체 공고',green:'● 1순위 강력 추천',yellow:'◐ 2순위 검토',orange:'○ AI 포지셔닝',new:'NEW 오늘 신규',urgent:'⏰ 임박 마감 (D-0~D-3)'};
+    titleText = labels[filter] || '전체 공고';
+    list = pool;
+  }
+
+  document.getElementById('section-title-text').textContent = titleText;
+  list.sort((a,b) => (a.deadline||'9999').localeCompare(b.deadline||'9999'));
+
+  const grid = document.getElementById('card-grid');
+  grid.className = 'grid';
+  if(!list.length){ grid.innerHTML = '<div class="empty">해당 조건의 공고가 없습니다.</div>'; return; }
+  grid.innerHTML = list.map(it => renderCard(it)).join('');
+}
+
+function renderCard(it){
+  const id = it._id;
+  const status = getStatus(id);
+  const d = daysUntil(it.deadline);
+  const urg = d>=0 && d<=3;
+  const isNew = it.first_seen === KSTD && it._source === 'auto';
+  const tier = it.tier || 'user';
+  const url = it.url || (it.pbancSn ? `https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=${it.pbancSn}` : '');
+  const titleHtml = url ? `<a href="${url}" target="_blank" rel="noopener">${esc(it.title)}</a>` : `<span class="no-link">${esc(it.title)}</span>`;
+  const dlText = it.deadline ? `${it.deadline} · ${dLabel(d)}` : dLabel(d);
+  const selected = selectedIds.has(id) ? 'selected' : '';
+  const checked = selectedIds.has(id) ? 'checked' : '';
+
+  // Actions
+  let actions = '';
+  if(status === 'pool'){
+    actions = `<button class="act-btn primary" onclick="moveTo('${id}','in_progress')">▶ 진행중</button>`;
+  }else if(status === 'in_progress'){
+    actions = `<button class="act-btn" onclick="moveTo('${id}','completed')">✓ 지원완료</button>
+               <button class="act-btn" onclick="moveTo('${id}','pool')">↶ 되돌리기</button>`;
+  }else if(status === 'completed'){
+    actions = `<button class="act-btn" onclick="moveTo('${id}','in_progress')">↶ 진행중으로</button>
+               <button class="act-btn danger" onclick="removeCompleted('${id}')">🗑 삭제</button>`;
+  }
+
+  let statusBadge = '';
+  if(status === 'in_progress') statusBadge = '<span class="badge status-inprogress">▶ 진행중</span>';
+  else if(status === 'completed') statusBadge = '<span class="badge status-completed">✓ 완료</span>';
+
+  // Deep summary
+  let deepHtml = '';
+  if(it.deep_summary && typeof it.deep_summary === 'object'){
+    const ds = it.deep_summary;
+    const open = state.openDeeps[id] ? 'open' : '';
+    const diffMap = {low:'난이도 LOW', medium:'난이도 MED', high:'난이도 HIGH'};
+    const strategies = Array.isArray(ds.strategy) ? ds.strategy.map(s => `<li>${esc(s)}</li>`).join('') : '';
+    const checks = Array.isArray(ds.checkpoints) ? ds.checkpoints.map(s => `<li>${esc(s)}</li>`).join('') : '';
+    deepHtml = `
+      <div class="card-deep">
+        <button class="deep-toggle ${open}" onclick="toggleDeep('${id}')">
+          <span class="chev">▸</span>
+          <span>상세 검토 가이드</span>
+        </button>
+        <div class="deep-content ${open}" id="deep-${id}">
+          <div class="deep-section">
+            <div class="deep-h">▸ 적합도 (Why)</div>
+            <div class="deep-fit">${esc(ds.fit||'')}</div>
+          </div>
+          <div class="deep-section">
+            <div class="deep-h">▸ 지원 전략</div>
+            <ol class="deep-list">${strategies}</ol>
+          </div>
+          <div class="deep-section">
+            <div class="deep-h">▸ 체크포인트</div>
+            <ul class="deep-list">${checks}</ul>
+          </div>
+          <div class="deep-section">
+            <span class="deep-diff ${ds.difficulty||'medium'}">${diffMap[ds.difficulty]||'난이도 MED'}</span>
+          </div>
+          <div class="deep-section">
+            <div class="deep-h">▸ 다음 액션</div>
+            <div class="deep-next">${esc(ds.next_action||'')}</div>
+          </div>
+        </div>
+      </div>`;
+  }else{
+    // deep_summary가 아직 없음 — 다음 자동 갱신 시 생성됨을 알림
+    deepHtml = `<div class="card-deep" style="color:var(--muted);font-size:11.5px;padding:6px 0">
+      <em>💭 상세 가이드는 다음 자동 갱신 때 생성됩니다 (Haiku)</em>
+    </div>`;
+  }
+
+  return `<div class="card tier-${tier} status-${status} ${selected}" data-id="${id}">
+    <div class="card-tier-bar"></div>
+    <div class="card-top">
+      <input type="checkbox" class="card-checkbox" data-id="${id}" ${checked} onclick="toggleSelect('${id}', this.checked)">
+      <div class="card-title">${titleHtml}</div>
+    </div>
+    <div class="card-meta">
+      <span class="badge tier-${tier}">${tierLabelText(tier)}</span>
+      <span class="badge ${urg?'deadline-urgent':''}">${dlText}</span>
+      ${isNew ? '<span class="badge new-flag">NEW</span>' : ''}
+      ${statusBadge}
+    </div>
+    ${it.agency ? `<div class="card-agency">${esc(it.agency)}</div>` : ''}
+    ${it.note ? `<div class="card-note">${esc(it.note)}</div>` : ''}
+    ${deepHtml}
+    ${actions ? `<div class="card-actions">${actions}</div>` : ''}
+  </div>`;
+}
+
+// ── Actions ──
+function moveTo(id, status){
+  const item = allItems().find(i => i._id === id);
+  setStatus(id, status, item);
+  selectedIds.delete(id);
+  render(currentFilter);
+}
+function removeCompleted(id){
+  if(!confirm('이 공고를 완전히 기록에서 삭제할까요?')) return;
+  delete state.statuses[id];
+  saveState();
+  render(currentFilter);
+}
+
+function toggleDeep(id){
+  state.openDeeps[id] = !state.openDeeps[id];
+  saveState();
+  const btn = document.querySelector(`.deep-toggle[onclick*="'${id}'"]`);
+  const content = document.getElementById('deep-'+id);
+  if(btn && content){
+    btn.classList.toggle('open', state.openDeeps[id]);
+    content.classList.toggle('open', state.openDeeps[id]);
+  }
+}
+
+// ── Selection / Bulk ──
+function toggleSelect(id, checked){
+  if(checked) selectedIds.add(id); else selectedIds.delete(id);
+  const card = document.querySelector(`.card[data-id="${id}"]`);
+  if(card) card.classList.toggle('selected', checked);
+  updateBulkToolbar();
+}
+function clearSelection(){
+  selectedIds.clear();
+  render(currentFilter);
+}
+function updateBulkToolbar(){
+  const bar = document.getElementById('bulk-toolbar');
+  const n = selectedIds.size;
+  document.getElementById('bulk-n').textContent = n;
+  bar.classList.toggle('active', n > 0);
+}
+function bulkMove(status){
+  if(!selectedIds.size) return;
+  const items = allItems();
+  selectedIds.forEach(id => {
+    const item = items.find(i => i._id === id);
+    setStatus(id, status, item);
+  });
+  const n = selectedIds.size;
+  selectedIds.clear();
+  render(currentFilter);
+  const label = status==='in_progress' ? '진행중' : '지원완료';
+  // 간단 토스트
+  const toast = document.createElement('div');
+  toast.style.cssText = 'position:fixed;bottom:30px;left:50%;transform:translateX(-50%);background:var(--c-blue);color:#fff;padding:12px 24px;border-radius:6px;font-weight:600;z-index:999;box-shadow:0 4px 12px rgba(0,0,0,0.15)';
+  toast.textContent = `${n}건을 ${label}으로 이동했습니다`;
+  document.body.appendChild(toast);
+  setTimeout(() => toast.remove(), 2500);
+}
+
+// 필터 버튼 이벤트 위임
+document.getElementById('filters').addEventListener('click', e => {
+  const btn = e.target.closest('.filter-btn');
+  if(btn) render(btn.dataset.filter);
+});
+
+// ── Init ──
+async function init(){
+  try{
+    const r = await fetch('recommendations.json?_=' + Date.now());
+    POOL = await r.json();
+    DATA = POOL.items || [];
+    document.getElementById('last-updated').textContent = POOL.last_updated || '—';
+    if(POOL.updated_at_kst){
+      document.getElementById('reload-at').textContent = formatKstTimestamp(POOL.updated_at_kst);
+    }
+    renderHistory();
+    render('all');
+  }catch(e){
+    document.getElementById('card-grid').innerHTML = '<div class="empty">recommendations.json 로드 실패: ' + esc(e.message) + '</div>';
+    console.error(e);
+  }
+}
 init();
 </script>
 </body>
