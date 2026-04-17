@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "last_updated": "2026-04-17",
   "items": [
     {
@@ -22,7 +22,22 @@
       "tier": "green",
       "note": "핵심 매칭 (예비창업)",
       "first_seen": "2026-04-17",
-      "last_seen": "2026-04-17"
+      "last_seen": "2026-04-17",
+      "deep_summary": {
+        "fit": "sinhon.life의 배우자(예비창업자)가 이 사업에 정확히 부합합니다. Next.js + Claude API 기반의 기술 플랫폼이므로 '기술기반' 요건을 충족하며, 신혼 라이프스타일이라는 틈새시장 AI 서비스로 초기 사업화 자금이 시급한 단계입니다.",
+        "strategy": [
+          "배우자를 예비창업자로 명시하고 사업자등록 준비 상태 강조 (법인화 전 지원대상 확인)",
+          "Next.js + Claude API 기술스택 및 PWA 개발 완료 현황을 기술혁신성으로 포지셔닝",
+          "신혼부부 타겟 AI 비서 기능으로 시장 차별성 입증 (경쟁사 대비 기술 우위)"
+        ],
+        "checkpoints": [
+          "예비창업자 정의 확인: 사업자등록 전/후 조건 및 지원 제외 요건",
+          "지역 제한 확인: 인천 소재 법인(XCom)과 예비창업자 관할지역 일치도",
+          "기술기반 인증: 기술보증기금/관련 기관 기술평가 필요 여부 및 준비 자료"
+        ],
+        "difficulty": "medium",
+        "next_action": "공고 주관기관·마감일 확인 및 예비창업자 자격요건 확인"
+      }
     },
     {
       "pbancSn": "177065",
@@ -33,7 +48,22 @@
       "tier": "green",
       "note": "핵심 매칭 (예비창업)",
       "first_seen": "2026-04-17",
-      "last_seen": "2026-04-17"
+      "last_seen": "2026-04-17",
+      "deep_summary": {
+        "fit": "sinhon.life의 배우자(예비창업)가 Next.js + Claude API 기술을 신혼부부 라이프스타일 도메인에 사업화하는 상황과 정확히 부합. 기술이전 기반 사업화자금은 이미 검증된 기술 스택을 활용한 신규 사업 론칭에 최적화되어 있으며, 신혼층 대상 디지털 솔루션의 초기 자금 확보에 직결.",
+        "strategy": [
+          "배우자 사업자등록(예정) 기반 예비창업가 자격 확인 및 확보",
+          "Claude API·Next.js 기술이전 계약서 또는 라이선스 증빙자료 사전 준비",
+          "sinhon.life 핵심 기능(AI 비서, 신혼준비 매칭)을 기술이전 사업화 모델로 재정의한 사업계획서 작성"
+        ],
+        "checkpoints": [
+          "배우자 사업자등록 일정 및 예비창업가 자격 충족 여부 확인",
+          "기술이전 근거(Anthropic Claude API 라이선스, Next.js 프레임워크 사용 권) 증빙 가능성",
+          "주관기관·마감일 확정 (공고 상세 확인 필요)"
+        ],
+        "difficulty": "medium",
+        "next_action": "배우자 사업자등록 추진 일정 수립"
+      }
     },
     {
       "pbancSn": "177066",
@@ -66,7 +96,22 @@
       "tier": "green",
       "note": "핵심 매칭 (유니콘 브릿지)",
       "first_seen": "2026-04-17",
-      "last_seen": "2026-04-17"
+      "last_seen": "2026-04-17",
+      "deep_summary": {
+        "fit": "유니콘 브릿지는 스케일링 단계 스타트업의 글로벌 진출과 투자유치를 집중 지원하는 프로그램으로, sinhon.life의 Next.js 기반 PWA 기술력과 B2C 플랫폼 성장성을 국제 네트워크에 노출할 수 있는 기회입니다. 신혼부부 라이프스타일이라는 뉘샹 마켓에서 한국 콘텐츠/서비스의 글로벌 확장 가능성을 입증할 수 있습니다.",
+        "strategy": [
+          "트랙 A 포지셔닝: 법인 3년 이내 초기창업 요건 재확인 후 허파랑 대표 명의 지원서 작성 (기술 + 팀 강점 강조)",
+          "아이티센 연계점 파악: IT 인프라/기술 지원사의 특성상 PWA·API·클라우드 아키텍처 고도화 목표 명시",
+          "글로벌 시장 시뮬레이션: 동남아·일본 신혼시장 진출 로드맵 첨부 (CPC 광고모델의 국가별 확장 전략)"
+        ],
+        "checkpoints": [
+          "마감일 및 신청 플랫폼(온라인) 공식 확인 - 미상 상태이므로 주관기관 확인 필수",
+          "법인 설립일 증명(XCom) 및 트랙 A 자격 충족 여부(3년 이내 법인) 확인",
+          "인천 소재지 요건 및 기업 규모(직원수·매출) 기준 확인"
+        ],
+        "difficulty": "medium",
+        "next_action": "주관기관 및 공식 모집 페이지 검색"
+      }
     },
     {
       "pbancSn": "177213",
@@ -77,7 +122,22 @@
       "tier": "green",
       "note": "핵심 매칭 (모두의창업)",
       "first_seen": "2026-04-17",
-      "last_seen": "2026-04-17"
+      "last_seen": "2026-04-17",
+      "deep_summary": {
+        "fit": "모두의창업은 초기창업자 대상 종합지원 프로젝트로, sinhon.life의 허파랑(법인 3년 이내 트랙 A)과 배우자(예비창업 트랙 B)를 동시에 수용할 수 있는 정부지원사업입니다. 신혼부부 라이프스타일 시장의 성장성과 이중 트랙 구조가 프로젝트의 포용 취지와 정확히 부합합니다.",
+        "strategy": [
+          "공고 주관기관·마감일·트랙별 선발기준 즉시 확인 (모두의창업 공식사이트 또는 중소벤처기업부)",
+          "트랙 A(허파랑)과 트랙 B(배우자) 중 적격 트랙 판단 후 해당 제출 서류 리스트 체크",
+          "설명회 참석 등록 및 법인등기부·사업계획서 사전 준비"
+        ],
+        "checkpoints": [
+          "모두의창업 공식 마감일 및 최종 모집 여부 확인 (현재 '미확인' 상태 - 긴급)",
+          "허파랑(법인대표) vs 배우자(예비창업) 중 어느 트랙이 선발 대상인지 확인",
+          "인천 소재 기업 지원 시 지역 제한 조건 여부 검토"
+        ],
+        "difficulty": "medium",
+        "next_action": "모두의창업 공식사이트 접속 공고 확인"
+      }
     },
     {
       "pbancSn": "177212",
@@ -88,7 +148,22 @@
       "tier": "green",
       "note": "인천 지역 매칭 (남동구)",
       "first_seen": "2026-04-17",
-      "last_seen": "2026-04-17"
+      "last_seen": "2026-04-17",
+      "deep_summary": {
+        "fit": "sinhon.life는 인천 소재 XCom 법인의 초기창업(허파랑 대표, 3년 이내)으로서 남동구 청년창업지센터의 지역 기반 요구조건을 완벽히 충족하며, B2C 디지털 플랫폼 사업모델이 센터의 혁신기술 기반 창업 선호도와 정렬됩니다.",
+        "strategy": [
+          "센터 입주 전 마감일·모집 대상(트랙 A/B 구분), 선발기준(기술성/시장성 가중치) 확인 및 사업계획서 신혼라이프스타일 시장 기회 명시",
+          "허파랑 대표 신분증·사업자등록증·법인등기부·최근 3개월 재무현황 사전 준비",
+          "배우자 예비창업 트랙B 지원 시 창업 의지서·협력구조 문서 추가 준비로 이중 트랙 전략 강화"
+        ],
+        "checkpoints": [
+          "마감일 확인 필수 (보통 공고 30-40일 진행, 서류 10-15일 소요)",
+          "남동구 거주·사업 요건 확인 (허파랑 인천 거주, 법인 소재지 남동구 여부)",
+          "입주 공간 규모·임차료 지원액·센터 네트워크 (멘토링·네트워킹·자금연계) 사전 검토"
+        ],
+        "difficulty": "low",
+        "next_action": "남동구청 홈페이지에서 공고 상세 마감일·선발기준 확인"
+      }
     },
     {
       "pbancSn": "176922",
@@ -110,7 +185,22 @@
       "tier": "green",
       "note": "핵심 매칭 (모두의 창업)",
       "first_seen": "2026-04-17",
-      "last_seen": "2026-04-17"
+      "last_seen": "2026-04-17",
+      "deep_summary": {
+        "fit": "sinhon.life는 신혼생활 라이프스타일 영역의 초기 B2C 플랫폼으로, '모두의 창업'이 추구하는 생활밀착형 사업모델과 정확히 부합합니다. 신혼부부라는 명확한 타겟층과 무료+광고+제휴 수수료 BM은 일반인 수익화 창업의 대표 사례이며, 인천 지역 기반 초기창업(법인 3년 이내) 트랙이 공고의 핵심 대상층입니다.",
+        "strategy": [
+          "설명회 참석 시 신혼부부 시장 규모(연 결혼 10만쌍+)와 현재 AI 비서 활용 차별성 강조",
+          "신청서에서 '신혼생활 문제 해결 플랫폼'보다 '일상 소비 결정 도우미' 포지셔닝으로 광고/제휴 수익 가능성 부각",
+          "배우자 예비창업(트랙 B) 동시 활용 가능성 검토하여 최대 지원 규모 확보"
+        ],
+        "checkpoints": [
+          "공고의 정확한 마감일, 선정 기준(지역/업종/성장단계) 확인 필수",
+          "법인 설립일(3년 이내 확인)과 대표자 자격 재점검(허파랑 vs 배우자 신청 트랙 선택)",
+          "지원금 규모, 사업비 사용처 제한, 보조금 관리기간 등 재무 조건 사전 검토"
+        ],
+        "difficulty": "medium",
+        "next_action": "공고 주관기관·마감일·세부 조건 확인"
+      }
     },
     {
       "pbancSn": "176718",
@@ -195,6 +285,28 @@
       "agency": "",
       "deadline": "",
       "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=176892",
+      "tier": "green",
+      "note": "핵심 매칭 (모두의 창업)",
+      "first_seen": "2026-04-17",
+      "last_seen": "2026-04-17"
+    },
+    {
+      "pbancSn": "177201",
+      "title": "수원대학교 모두의 창업 사업설명회 개최",
+      "agency": "",
+      "deadline": "",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177201",
+      "tier": "green",
+      "note": "핵심 매칭 (모두의 창업)",
+      "first_seen": "2026-04-17",
+      "last_seen": "2026-04-17"
+    },
+    {
+      "pbancSn": "177255",
+      "title": "[인천]모두의 창업  설명회",
+      "agency": "인천",
+      "deadline": "",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177255",
       "tier": "green",
       "note": "핵심 매칭 (모두의 창업)",
       "first_seen": "2026-04-17",
@@ -980,20 +1092,123 @@
       "note": "검토 매칭 (사회적기업)",
       "first_seen": "2026-04-17",
       "last_seen": "2026-04-17"
+    },
+    {
+      "pbancSn": "177146",
+      "title": "2026 꿈터플러스 제4회 대학생 창업 아이디어 경진대회",
+      "agency": "",
+      "deadline": "",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177146",
+      "tier": "yellow",
+      "note": "검토 매칭 (경진대회)",
+      "first_seen": "2026-04-17",
+      "last_seen": "2026-04-17"
+    },
+    {
+      "pbancSn": "177228",
+      "title": "[국비지원교육]디지털드로잉 기반 창작캐릭터 IP 상품화 전문과정 교육생 모집",
+      "agency": "국비지원교육",
+      "deadline": "",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177228",
+      "tier": "yellow",
+      "note": "검토 매칭 (디지털)",
+      "first_seen": "2026-04-17",
+      "last_seen": "2026-04-17"
+    },
+    {
+      "pbancSn": "177238",
+      "title": "2026년 군위 청년(예비)창업 지원사업 (예비)청년창업자 모집 공고",
+      "agency": "",
+      "deadline": "",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177238",
+      "tier": "yellow",
+      "note": "검토 매칭 (청년창업)",
+      "first_seen": "2026-04-17",
+      "last_seen": "2026-04-17"
+    },
+    {
+      "pbancSn": "177252",
+      "title": "2026년 3회차 지식재산 무료 초청교육 수요조사",
+      "agency": "",
+      "deadline": "",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177252",
+      "tier": "yellow",
+      "note": "검토 매칭 (교육)",
+      "first_seen": "2026-04-17",
+      "last_seen": "2026-04-17"
+    },
+    {
+      "pbancSn": "177261",
+      "title": "2026년 '인천 라이징스타 6기' 글로벌 스케일업 프로그램 지원기업 모집 통합공고",
+      "agency": "",
+      "deadline": "",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177261",
+      "tier": "yellow",
+      "note": "검토 매칭 (글로벌)",
+      "first_seen": "2026-04-17",
+      "last_seen": "2026-04-17"
+    },
+    {
+      "pbancSn": "177260",
+      "title": "2026년 과학기술 창업경진대회 공고 「올해의 K-스타트업 2026 연구자리그 연계」",
+      "agency": "",
+      "deadline": "",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177260",
+      "tier": "yellow",
+      "note": "검토 매칭 (경진대회)",
+      "first_seen": "2026-04-17",
+      "last_seen": "2026-04-17"
+    },
+    {
+      "pbancSn": "177234",
+      "title": "2026년 G-Star 오픈이노베이션 커넥팅 데이",
+      "agency": "",
+      "deadline": "",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177234",
+      "tier": "yellow",
+      "note": "검토 매칭 (오픈이노베이션)",
+      "first_seen": "2026-04-17",
+      "last_seen": "2026-04-17"
     }
   ],
-  "red_count_today": 226,
+  "red_count_today": 248,
   "_meta": {
     "expired": [],
-    "new_added": [],
+    "new_added": [
+      "2026 꿈터플러스 제4회 대학생 창업 아이디어 경진대회",
+      "수원대학교 모두의 창업 사업설명회 개최",
+      "[국비지원교육]디지털드로잉 기반 창작캐릭터 IP 상품화 전문과정 교육생 모집",
+      "2026년 군위 청년(예비)창업 지원사업 (예비)청년창업자 모집 공고",
+      "2026년 3회차 지식재산 무료 초청교육 수요조사",
+      "[인천]모두의 창업  설명회",
+      "2026년 '인천 라이징스타 6기' 글로벌 스케일업 프로그램 지원기업 모집 통합공고",
+      "2026년 과학기술 창업경진대회 공고 「올해의 K-스타트업 2026 연구자리그 연계」",
+      "2026년 G-Star 오픈이노베이션 커넥팅 데이"
+    ],
+    "deep_summary": {
+      "generated": 6,
+      "attempted": 10
+    },
     "stats": {
-      "green": 18,
-      "yellow": 60,
+      "green": 20,
+      "yellow": 67,
       "orange": 11,
-      "red_excluded": 226,
+      "red_excluded": 248,
       "expired_removed": 0,
-      "total_pool": 89,
-      "rss_total": 315
+      "total_pool": 98,
+      "rss_total": 346
     }
-  }
+  },
+  "history": [
+    {
+      "date": "2026-04-17",
+      "at_kst": "2026-04-17T12:00:40+09:00",
+      "new": 9,
+      "expired": 0,
+      "total": 98,
+      "red_excluded": 248,
+      "deep_summary_generated": 6
+    }
+  ],
+  "updated_at_kst": "2026-04-17T12:00:40+09:00"
 }
