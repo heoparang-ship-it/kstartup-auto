@@ -2,8 +2,9 @@ name: Daily K-Startup Update
 
 on:
   schedule:
-    # 매일 KST 09:00 (UTC 00:00)
-    - cron: '0 0 * * *'
+    # 평일(월~금) KST 09:00 + 18:00 (UTC 00:00, 09:00)
+    # 토·일은 K-Startup 신규 공고 미갱신 → 제외
+    - cron: '0 0,9 * * 1-5'
   workflow_dispatch:  # 수동 실행 가능
 
 permissions:
