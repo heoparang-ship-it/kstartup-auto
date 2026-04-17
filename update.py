@@ -39,7 +39,8 @@ DEEP_SUMMARY_SYSTEM = """당신은 sinhon.life (B2C 신혼부부 라이프스타
 - 소재지: 인천 (허파랑 대표, XCom 법인)
 - 이중 트랙: 트랙 A 초기창업(허파랑, 법인 3년 이내) / 트랙 B 예비창업(배우자, 사업자 전)
 
-공고를 분석해 다음 JSON 스키마에 정확히 맞춰 응답하세요. 다른 텍스트 없이 순수 JSON만 출력하세요:
+공고를 분석해 다음 JSON 스키마에 정확히 맞춰 응답하세요.
+반드시 `{` 로 시작하고 `}` 로 끝나는 순수 JSON만 출력하세요. 코드펜스(```), 설명 문장, 전후 공백 절대 금지.
 
 {
   "fit": "왜 sinhon.life와 맞는지 구체적으로 2-3문장. 공고의 특징 + 신혼생활의 어떤 포인트와 연결되는지 명시",
@@ -101,20 +102,38 @@ def prune_history(history: list, now_kst: datetime) -> list:
 
 # ── Haiku deep_summary 생성 ───────────────────────────────────
 def _parse_json_response(text: str):
-    text = (text or "").strip()
-    if text.startswith("```"):
-        lines = text.split("\n")
-        lines = [l for l in lines if not l.startswith("```")]
-        text = "\n".join(lines).strip()
+    raw = (text or "").strip()
+    candidates = [raw]
+
+    # 코드펜스 제거: ```json\n{...}\n``` 또는 ```\n{...}\n```
+    stripped = raw
+    if stripped.startswith("```"):
+        # 첫 줄 제거 (```json 또는 ```)
+        stripped = stripped.split("\n", 1)[1] if "\n" in stripped else stripped[3:]
+        # 끝 ``` 제거
+        stripped = stripped.rstrip()
+        if stripped.endswith("```"):
+            stripped = stripped[:-3].rstrip()
+        candidates.append(stripped)
+
+    # 최후: 첫 { 부터 마지막 } 까지 잘라내기
     try:
-        data = json.loads(text)
-    except Exception:
+        s = raw.index("{")
+        e = raw.rindex("}") + 1
+        candidates.append(raw[s:e])
+    except ValueError:
+        pass
+
+    data = None
+    for cand in candidates:
         try:
-            start = text.index("{")
-            end = text.rindex("}") + 1
-            data = json.loads(text[start:end])
+            data = json.loads(cand)
+            break
         except Exception:
-            return None
+            continue
+    if data is None:
+        return None
+
     required = {"fit", "strategy", "checkpoints", "difficulty", "next_action"}
     if not required.issubset(data.keys()):
         return None
