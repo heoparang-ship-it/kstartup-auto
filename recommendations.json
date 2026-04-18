@@ -1,7 +1,7 @@
 {
   "schema_version": 4,
   "last_updated": "2026-04-19",
-  "red_count_today": 230,
+  "red_count_today": 0,
   "reds_today": [
     {
       "pbancSn": "177116",
@@ -932,6 +932,36 @@
           }
         },
         "risk_flags": []
+      },
+      "deep_summary": {
+        "fit": "글로벌 팁스는 해외 VC 투자 유치 + 해외법인 설립을 핵심 요건으로 하는데, sinhon.life의 M09_global(sinhon.global 3단계 로드맵)에서 12~18개월 내 베트남·필리핀 현지화 및 동남아 파트너 연계가 구체적으로 설계되어 있어 정확히 부합. 또한 대표 허파랑의 K-드라마 배경과 50만 팔로워 채널(이영림)은 'K-웨딩 해외 관광상품화'라는 차별화된 글로벌 비즈니스 모델로 해외 VC의 관심을 집중시킬 수 있는 강점.",
+        "strategy": [
+          "해외 VC 타겟팅: 베트남·필리핀 결혼이민자·국제결혼 시장을 다루는 동남아 VC + 관광·라이프스타일 펀드 피칭 준비 (M09_global G1, G2 로드맵 제시)",
+          "해외법인 설립 선제: 베트남·필리픽 현지 파트너 선점 계약 → 해외법인 설립 신청 전 완료 (지원 조건 '해외법인 설립 완료 또는 희망' 만족)",
+          "당사자성 스토리텔링: 'K-드라마가 만든 한국 로망 → K-웨딩 관광 전환' 내러티브 + 2025년 신혼부부 1차 경험 기반 감정엔진 활용 (M02_spine 진정성 + M03_flywheel B축)"
+        ],
+        "checkpoints": [
+          "해외 VC 투자유치 여부 확인: 최소 30만불(약 4억원) 이상 해외 기관 투자자로부터의 선투자 계약 또는 LOI 확보 필요 여부 (공고 핵심 자격)",
+          "해외법인 설립 요건: 베트남·필리핀 등에서 법인 설립(또는 설립 예정 확인)이 가능한 현지 파트너/법인 등록 준비 상태 점검",
+          "업력 확인: 법인 XCom 설립일 기준 7년 이내(신산업 분야 10년 이내) 충족 여부 + 신산업 분야(AI·콘텐츠기술) 해당 증빙 자료 준비"
+        ],
+        "difficulty": "high",
+        "next_action": "해외 VC/DGB대여 관계자 3사 연락 및 투자 관심도 사전 조사",
+        "master_anchor": "M09_global (00_MASTER §9)",
+        "evidence_quote": "해외 VC 등으로부터 30만불 이상 투자를 유치하고 해외법인 설립을 완료하였거나 희망하는 업력 7년 이내 창업기업",
+        "risk_notes": [
+          "글로벌 팁스는 30만불(약 4억원) 이상 실제 해외 투자 유치가 사전조건일 가능성 높음 — 현재 자체 자본금 구조로는 미충족 가능성 검토 필수",
+          "해외법인 설립은 법적·세무·회계 비용 발생 — M10_team_budget의 지재권 항목과 별도 예산 필요 (베트남·필리핀 법인설립 비용 500만~1,500만원)",
+          "공고 '신청 자격' 상세 확인 필수 — 신산업 분야 해당 여부(AI 비서 기술 vs 콘텐츠 플랫폼) 분류에 따라 업력 요건(7년 vs 10년)이 변경될 수 있음"
+        ],
+        "_modules_used": [
+          "M01_identity",
+          "M02_spine",
+          "M09_global",
+          "M10_team_budget",
+          "M03_flywheel"
+        ],
+        "_schema": "v4"
       }
     },
     {
@@ -1394,6 +1424,36 @@
           }
         },
         "risk_flags": []
+      },
+      "deep_summary": {
+        "fit": "sinhon.life의 Claude API 기반 정책 번역 엔진(M05_ai_tech)이 LLM 응용 기술 범주에 정확히 부합하며, '2030 당사자 언어로 정보비대칭 해소'는 AI 서비스 기획·구현의 실제 사용사례(M02_spine 당사자성)로 심사위원을 설득할 수 있다. 10년 미만 스타트업 자격(초기창업자 트랙 허파랑 3년 이내)을 충족하고, 전국 지원 대상에서 인천 소재 법인이 eligible하다.",
+        "strategy": [
+          "LLM 수직 포지셔닝: '정책 원문→2030 언어 번역' Claude API 파이프라인을 AI 바우처 사업화 사례로 제시, 프롬프트 엔지니어링 자동화 기술 강조",
+          "당사자 검증 스토리: 허파랑·이영림 신혼 당사자가 정책 언어 벽을 직접 경험한 후 AI로 해결한 여정을 기획서 Executive Summary에 배치",
+          "3축 플라이휠 중 A축(앱)·C축(업체 수익화) 데이터 기반 수익성 시뮬레이션 제시 — MAU→CPC 전환 경로가 LLM 효율성 개선으로 스케일되는 구조 표현"
+        ],
+        "checkpoints": [
+          "법인 등기 확인: 주식회사 엑스컴 설립일 기준 2026-04-21 현재 10년 미만 충족 여부 재확인 (3년 이내 초기창업자 트랙 우대)",
+          "정부지원사업 중복 지원 여부: 동일 AI 서비스(Claude API 기반 정책 번역)에 대해 AI 바우처·예창패 등 다른 공고와의 중복 제한 규정 확인",
+          "기술 증명 자료: Claude API 사용료 영수증, Next.js 14 App Router 배포 스크린샷, 프롬프트 엔지니어링 시스템 문서 등 LLM 응용 기술 구체성 입증"
+        ],
+        "difficulty": "medium",
+        "next_action": "Claude API 사용료 지출 증명서 + 정책 번역 엔진 시스템 아키텍처 문서 수집",
+        "master_anchor": "M05_ai_tech",
+        "evidence_quote": "LLM 및 생성형 AI 응용 기술, AI 서비스 기획 및 구현에 필요한 기술 등을 보유한 창업 10년 이내 스타트업",
+        "risk_notes": [
+          "모두의챌린지 AX는 선정형 공고로 경쟁 심화 예상 — 단순 아이디어 아닌 실제 사용자 데이터(MAU·사연 수집량·업체 문의 건수)가 필수",
+          "LLM 분야 평가에서 'Claude API 활용'보다 '독자 프롬프트 최적화·fine-tuning 전략'이 기술성 강화로 평가될 수 있으므로 AI 팀 역량 강조 필요",
+          "당사자성(M02_spine)만으로는 LLM 기술창업 공고에 부족할 수 있음 — 정책 번역 정확도·처리 속도·오류율 등 정량 성능 지표 선행 확보 권장"
+        ],
+        "_modules_used": [
+          "M01_identity",
+          "M02_spine",
+          "M05_ai_tech",
+          "M10_team_budget",
+          "M03_flywheel"
+        ],
+        "_schema": "v4"
       }
     },
     {
@@ -1543,6 +1603,36 @@
           }
         },
         "risk_flags": []
+      },
+      "deep_summary": {
+        "fit": "sinhon.life는 B축(인스타) 감정·사연 콘텐츠 2차가공 엔진(M06_content_engine)과 A축 AI 정책번역 유틸을 동시 개발하는 기술·콘텐츠 하이브리드 창업사업으로, 예비창업자(배우자 명의) + 1년미만 초기창업(허파랑) 트랙 이중 자격과 콘텐츠 사업화 요구사항을 모두 만족. 대구 거주 요건 미충족이 유일 리스크이나, 전국 모집 공고에서 수도권→지역 비즈니스 확장 거점 스토리로 전환 가능.",
+        "strategy": [
+          "당사자성 스파인(M02_spine) 강조: '2030 신혼부부 정책정보 비대칭 체감→직접 구축' 진정성을 콘텐츠 사업화 배경으로 제시, 감정 콘텐츠 기획력이 단순 유튜버가 아닌 문제 해결형 임을 입증",
+          "콘텐츠 2차가공 기술 구체화: Claude API 기반 자동 템플릿, 타인 사연 동의 확보 프로세스, 허파랑 유튜브(56만 조회)·이영림 채널(50만 팔로워) 자체 유통망을 '검증된 감정 콘텐츠→사용자 획득 플라이휠' 근거로 제시",
+          "예산 시나리오 S2(5,000만원 콘텐츠진흥·문체부) 또는 S3(1억원 초기창업) 타겟: 촬영·편집 정규채용, 음악저작권·모션그래픽 외주, 메타 광고, 상표등록·해외출원을 사업화 핵심으로 명시"
+        ],
+        "checkpoints": [
+          "배우자(이영림) 명의 예비창업자 자격 입증서류(신청자는 허파랑이므로, 공고가 '대표자 + 배우자 동반 지원' 허용 여부 확인 필수)",
+          "대구 지역 거주 요건 여부 확인: 공고 원문에서 '전국' 명시되나, 사후 거점 의무 설립·대구 거주 조항 숨겨진 조건 재확인",
+          "2026년 창업일자 증명: 사업자등록증(법인 3년 이내 '초기창업' 요건) + 상표 출원 증명서(sinhon.life 보유) + 도메인 등록증 + 콘텐츠 선행 제작물(유튜브 링크, 인스타 프로필) 사전 준비"
+        ],
+        "difficulty": "medium",
+        "next_action": "대구콘텐츠코리아랩 담당자에 지역 거주/거점 요건 전화 확인",
+        "master_anchor": "M06_content_engine + M02_spine",
+        "evidence_quote": "콘텐츠 창업 원스톱 지원 | 예비창업자 및 2026년 창업기업",
+        "risk_notes": [
+          "전국 모집이나 대구 거점 거주 의무화 가능성 높음 (지역진흥원 특성상): 사전 문의 필수",
+          "콘텐츠 사업화 증명(유튜브·인스타 채널 검증 가능) 있으나, '기술창업'(Claude API 자동화) 부분이 콘텐츠 사업 범주에 포함되는지 심사기준 모호 → 진흥원 Q&A 확인",
+          "배우자 동반 지원 가능 여부 확인 필수: 공고가 '1명 대표자' 규정할 경우 허파랑 단독 신청으로 이영림은 팀원 표기만 가능"
+        ],
+        "_modules_used": [
+          "M01_identity",
+          "M02_spine",
+          "M06_content_engine",
+          "M10_team_budget",
+          "M03_flywheel"
+        ],
+        "_schema": "v4"
       }
     },
     {
@@ -1690,6 +1780,37 @@
           }
         },
         "risk_flags": []
+      },
+      "deep_summary": {
+        "fit": "G-Space는 전국 단위 예비/초기창업(3년 이내) 기업 지원으로, M02_spine의 '당사자 창업자(허파랑, 법인 3년 이내)' 요건과 정확히 일치하며, M10_team_budget의 '초기창업패키지·예창패 시나리오(S3 1억원)'와 직결되는 사업화 지원 티어입니다. 전국 지원으로 법인 소재지(인천) 제약 없고, 예비창업 트랙 B(배우자 명의)까지 이중 지원 가능성을 열어줍니다.",
+        "strategy": [
+          "M02_spine: 당사자성 강조—'신혼부부가 직접 겪은 정책 언어 벽'을 사업화 동기(자체 마스터플래닝 3년→플랫폼 구축)로 정위치시켜, 심사위원의 '진정성·검증성·대체불가능성' 설득",
+          "M03_flywheel A축(Claude API 정책번역 유틸) 중심 포지셔닝—기술창업(AI비서) + 콘텐츠(B축 감정수집) + 수익화(C축 CPC/프리미엄)의 3축이 1개 공고로 '사업화'의 완성도를 보여주는 구조화",
+          "M10_team_budget: S3시나리오(1억원 초기창업패키지) 예산 청구 근거—촬영정규채용 + Claude API 외주 + 메타광고 + 상표등록 지재권의 구체적 비목을 공고 지원 양식에 매칭"
+        ],
+        "checkpoints": [
+          "허파랑 대표 개인 신원·학력·경력 증명(드라마 주연·유튜브 50만+팔로워 이력)과 '법인 등기 3년 이내 확인'—공고 자격 '초기창업기업' 정의상 법인설립일 기준",
+          "법인 XCom 등기부등본·정관·주주현황 확인—인천 소재 법인이 맞는지, 허파랑이 대표인지, 배우자(이영림) 별도 트랙 B 지원 시 2개 법인 구분 필수",
+          "지원 신청 시점의 공식 공고문('붙임 1') 다운로드 및 세부 가점·제외사항 확인—'green 티어'의 경남창조경제혁신센터 내규상 특정 산업 제외(도박·주류 등) 여부, 지역별 자금제한 확인",
+          "사업계획서 양식 및 필수 제출물(사업기술서·재무예측·팀 이력서)의 사전 템플릿 수집—3년 수익화 로드맵(무료→CPC 300~1,000원 전환→프리미엄 수익화)의 수치화 필수"
+        ],
+        "difficulty": "medium",
+        "next_action": "공고 붙임 1 모집공고문 다운로드·세부자격 확인",
+        "master_anchor": "M10_team_budget (S3 시나리오) + M02_spine (당사자성)",
+        "evidence_quote": "예비창업자 및 창업 후 3년 이내 초기창업기업",
+        "risk_notes": [
+          "경남창조경제혁신센터 '전국' 공고지만, 대표·법인 위치가 경남 외 지역(인천)일 경우 심사에서 지역 인센티브 미적용 가능성 확인 필수",
+          "S3 예산(1억원)은 이 공고의 예상 지원규모가 아닐 수 있음—공고문 '지원금액' 별도 확인 필수. 만약 3,000~5,000만원 대면 M10_team_budget의 S1/S2 재조정 필요",
+          "'사업화' 단계 지원이므로, 단순 아이디어·프로토타입이 아닌 '시장 검증 근거'(MAU수, 수익화 증거, 파트너 회의록 등) 요구 가능성 높음—인스타 커뮤니티·베타테스트 증거 자료 미리 정리"
+        ],
+        "_modules_used": [
+          "M01_identity",
+          "M02_spine",
+          "M10_team_budget",
+          "M03_flywheel",
+          "M04_problem"
+        ],
+        "_schema": "v4"
       }
     },
     {
@@ -1797,6 +1918,65 @@
         "next_action": "지금 즉시 공고문 PDF 다운로드 → 48시간 안에 신청 가능한지 판단 → GO면 오늘 저녁까지 사업계획서 초안 1차 드래프트, NO-GO면 AX-LLM(176977, 동일 마감)로 옵션 재평가",
         "_schema": "v4",
         "_source": "opus-manual-v7.2"
+      },
+      "classify_evidence": {
+        "summary_reason": "structured GREEN (전국/사업화)",
+        "category_hints": [
+          "ai",
+          "budget"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": ""
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-04-21",
+            "detail": ""
+          },
+          "region": {
+            "pass": true,
+            "value": "전국",
+            "detail": "region=전국"
+          },
+          "biz_enyy": {
+            "pass": true,
+            "value": "10년미만",
+            "detail": "업력 허용 매칭 (10년미만)"
+          },
+          "exclude_target": {
+            "pass": true,
+            "value": "공고문 참조",
+            "detail": ""
+          },
+          "industry": {
+            "pass": true,
+            "detail": ""
+          },
+          "qualification": {
+            "pass": true,
+            "detail": ""
+          },
+          "stage": {
+            "pass": true,
+            "detail": ""
+          },
+          "nature": {
+            "pass": true,
+            "detail": ""
+          },
+          "region_keyword": {
+            "pass": true,
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "positive_hit": {
+            "pass": true,
+            "detail": "structured GREEN (전국/사업화)"
+          }
+        },
+        "risk_flags": []
       }
     },
     {
@@ -1971,7 +2151,7 @@
       "deadline": "2026-04-22",
       "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=176922",
       "tier": "green",
-      "note": "structured GREEN (전국/사업화)",
+      "note": "인천 앵커 매칭 (인천테크노파크)",
       "first_seen": "2026-04-17",
       "last_seen": "2026-04-19",
       "deep_summary": {
@@ -2013,7 +2193,7 @@
       },
       "last_changed_at": "2026-04-18",
       "classify_evidence": {
-        "summary_reason": "structured GREEN (전국/사업화)",
+        "summary_reason": "인천 앵커 매칭 (인천테크노파크)",
         "category_hints": [
           "ai",
           "incheon",
@@ -2068,7 +2248,7 @@
           },
           "positive_hit": {
             "pass": true,
-            "detail": "structured GREEN (전국/사업화)"
+            "detail": "인천 앵커 매칭 (인천테크노파크)"
           }
         },
         "risk_flags": [
@@ -2178,6 +2358,72 @@
       "tier": "green",
       "note": "structured GREEN (전국/사업화)",
       "evidence": {
+        "summary_reason": "structured GREEN (전국/사업화)",
+        "category_hints": [
+          "ai",
+          "social",
+          "budget"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": ""
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-04-22",
+            "detail": ""
+          },
+          "region": {
+            "pass": true,
+            "value": "전국",
+            "detail": "region=전국"
+          },
+          "biz_enyy": {
+            "pass": true,
+            "value": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
+            "detail": "업력 허용 매칭 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "exclude_target": {
+            "pass": true,
+            "value": "AX트랙 : 공고문에 명시된 제외 대상에 따름\r\n1) 국세 및 지방세를 체납한 기업\r\n2) 금융기관등으로부터 채무불이행으로 규제 중인 자 또는 ",
+            "detail": ""
+          },
+          "industry": {
+            "pass": true,
+            "detail": ""
+          },
+          "qualification": {
+            "pass": true,
+            "detail": ""
+          },
+          "stage": {
+            "pass": true,
+            "detail": ""
+          },
+          "nature": {
+            "pass": true,
+            "detail": ""
+          },
+          "region_keyword": {
+            "pass": true,
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "positive_hit": {
+            "pass": true,
+            "detail": "structured GREEN (전국/사업화)"
+          }
+        },
+        "risk_flags": [
+          {
+            "type": "exclude_target_long",
+            "severity": "low",
+            "msg": "신청 제외 대상이 길게 기술됨 (233자) — 본문 정독 필수"
+          }
+        ]
+      },
+      "classify_evidence": {
         "summary_reason": "structured GREEN (전국/사업화)",
         "category_hints": [
           "ai",
@@ -2566,6 +2812,36 @@
           }
         },
         "risk_flags": []
+      },
+      "deep_summary": {
+        "fit": "수원대 '모두의 창업'은 예비/초기창업자(3년 이내) 대상 교육·네트워킹 허브이며, sinhon.life는 M10_team_budget에서 명시한 'S2 5,000만원 콘텐츠진흥·문체부·모두의창업' 시나리오의 직접 진입구입니다. 사업설명회 참석을 통해 모두의창업 펀드 자격 확인 및 네트워킹으로 후속 지원 신청 기초를 다질 수 있습니다.",
+        "strategy": [
+          "허파랑(초기창업자·법인 3년 이내) + 배우자 명의 예비창업자 이중트랙(00_MASTER §1 M01_identity) 활용해 모두의창업 일반·기술 분야 중복 신청 검토",
+          "사업설명회에서 M03_flywheel(감정→유틸→수익화 3축)을 '콘텐츠 기반 BM플랫폼'으로 포지셔닝해 심사위원 접촉—당사자성(M02_spine '우리는 겪었다')과 검증된 팀(허파랑 56만 유튜브, 이영림 50만 팔로워) 스토리 선제 전달",
+          "설명회 후 모두의창업 담당자와 별도 면담 → S2 예산(5,000만원) 안에서 촬영·편집 정규채용 + Claude API 외주비 구성안 협의"
+        ],
+        "checkpoints": [
+          "허파랑 법인설립일 확인 (3년 미만 필수, 현재 요건 충족 재확인)",
+          "배우자 명의 예비창업자 등록 또는 등록 예정 일정 확인 (이중트랙 가능성)",
+          "수원대 모두의창업 지원 신청 시 인천 소재지(XCom) → 경기 수원 수혜 규정 확인 (지역 제약 여부)"
+        ],
+        "difficulty": "low",
+        "next_action": "수원대 창업지원단 담당자 연락 (설명회 일시·신청 방법 확인)",
+        "master_anchor": "M10_team_budget (S2 시나리오·모두의창업 직결)",
+        "evidence_quote": "예비창업자 및 업력 3년 이내 기창업자 누구나",
+        "risk_notes": [
+          "사업설명회는 '정보 수집' 단계—펀드 실제 지원은 추후 신청 심사 필요 (설명회 참석만으로는 지원금 보장 없음)",
+          "모두의창업 예산이 S2(5,000만원) 범위 내인지 공고에서 미명시—설명회에서 펀드 규모·시점 구체적 확인 필수",
+          "인천 법인이 경기 지원 사업 참여 시 자격 제약 가능성 (구체 문의 필수)"
+        ],
+        "_modules_used": [
+          "M01_identity",
+          "M02_spine",
+          "M10_team_budget",
+          "M03_flywheel",
+          "M04_problem"
+        ],
+        "_schema": "v4"
       }
     },
     {
@@ -2715,6 +2991,36 @@
           }
         },
         "risk_flags": []
+      },
+      "deep_summary": {
+        "fit": "sinhon.life의 Claude API 기반 정책 번역 엔진(M05_ai_tech)이 '지역주도형 AI대전환'의 핵심 취지(AI 솔루션 사업화)와 정확히 부합. 2019년 이후 창업 7년 미만 요건을 법인 XCom(3년 이내, 당사자성 스파인 M02)이 명확히 충족하며, 전국 공모이므로 인천 소재지 제약 없음.",
+        "strategy": [
+          "포지셔닝: '정책 원문→2030 당사자 언어 번역 파이프라인'을 '지역경제 DX 모델(신혼부부 정책 접근성 향상)'로 리프레이밍하여 AI솔루션 사업화 실적으로 제시",
+          "Claude API 사용 사례(MAU 기반 AI 유틸 M03_flywheel A축) + 이영림 50만 팔로워 채널 검증(B축 감정엔진)을 '확장 가능한 B2C AI 플랫폼'으로 패키징",
+          "신청가능일 확인 후(법인 설립증 기준 2023~2026 범위 내) 울산창조경제센터에 '인천 기업의 전국확산 로드맵' 및 'AI 솔루션 고도화 예산안(Claude API 비용, 모델 파인튜닝)' 사전협의"
+        ],
+        "checkpoints": [
+          "법인 XCom 설립일 확인('23~'26 범위 내 필수): 창업증명서/법인등기부등본 준비",
+          "AI 솔루션 보유 근거 제시: Claude API 통합·프롬프트 엔지니어링 기술 명시, GitHub/시연 영상 준비",
+          "울산지역 연관성 여부 확인(공고 세부조건 검토): 지역 제약 없으면 전국 지원 진행, 있으면 제외"
+        ],
+        "difficulty": "medium",
+        "next_action": "법인 설립일 확인 + 공고 세부조건(지역제약/기술요구) 리딩",
+        "master_anchor": "M05_ai_tech",
+        "evidence_quote": "AI 솔루션 보유한 창업기업 / 사업화",
+        "risk_notes": [
+          "울산창조경제센터 주관이므로 지역 기업 우대 조건 숨겨진 가능성 → 공고 문항 세부 검토 필수",
+          "AI 솔루션 '개발 완료·시장진출' 수준 증명 요구 가능 → MVP 이상 기술검증 자료(프로토타입 화면·API 로그) 미리 정리",
+          "'정책 번역기'는 B2C 감정/라이프스타일 카테고리로 인식될 가능성 → 지원금 신청 시 'AI 기반 자동 정보처리 솔루션'으로 기술화 강조 필수"
+        ],
+        "_modules_used": [
+          "M01_identity",
+          "M02_spine",
+          "M05_ai_tech",
+          "M10_team_budget",
+          "M03_flywheel"
+        ],
+        "_schema": "v4"
       }
     },
     {
@@ -2828,6 +3134,71 @@
         "next_action": "인천창조경제혁신센터 홈페이지에서 16기 공고문 PDF 전문 다운로드 → 커리큘럼 일정표 확인 → 트랙 A/B 결정 → 신청서 초안 작성 시작(마감 4/24)",
         "_schema": "v4",
         "_source": "opus-manual-v7.2"
+      },
+      "classify_evidence": {
+        "summary_reason": "인천 앵커 매칭 (인천창조경제혁신센터)",
+        "category_hints": [
+          "incheon",
+          "budget"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": ""
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-04-24",
+            "detail": ""
+          },
+          "region": {
+            "pass": true,
+            "value": "인천",
+            "detail": "region=인천"
+          },
+          "biz_enyy": {
+            "pass": true,
+            "value": "예비창업자,7년미만",
+            "detail": "업력 허용 매칭 (7년미만,예비창업자)"
+          },
+          "exclude_target": {
+            "pass": true,
+            "value": "? 지원 제외 업종\r\n소상공인 분야 (예: 도소매업, 유통업, 요식업, 미용업 프랜차이즈 등) 및「중소기업창업 지원법」 시행령 제4조에 따라 창",
+            "detail": ""
+          },
+          "industry": {
+            "pass": true,
+            "detail": ""
+          },
+          "qualification": {
+            "pass": true,
+            "detail": ""
+          },
+          "stage": {
+            "pass": true,
+            "detail": ""
+          },
+          "nature": {
+            "pass": true,
+            "detail": ""
+          },
+          "region_keyword": {
+            "pass": true,
+            "detail": "지역 허용 (structured=인천)"
+          },
+          "positive_hit": {
+            "pass": true,
+            "detail": "인천 앵커 매칭 (인천창조경제혁신센터)"
+          }
+        },
+        "risk_flags": [
+          {
+            "type": "exclude_target_long",
+            "severity": "low",
+            "msg": "신청 제외 대상이 길게 기술됨 (304자) — 본문 정독 필수"
+          }
+        ]
       }
     },
     {
@@ -2941,6 +3312,71 @@
         "next_action": "이 공고는 스킵 결정 → 대시보드에서 📌 비활성화 플래그 체크. 대신 마감 4/24 전후에 같은 주체(ICCE)가 올릴 다른 공고(모두의 창업, Univ.X 등)에 집중",
         "_schema": "v4",
         "_source": "opus-manual-v7.2"
+      },
+      "classify_evidence": {
+        "summary_reason": "인천 앵커 매칭 (인천창조경제혁신센터)",
+        "category_hints": [
+          "incheon",
+          "budget"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": ""
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-04-24",
+            "detail": ""
+          },
+          "region": {
+            "pass": true,
+            "value": "전국",
+            "detail": "region=전국"
+          },
+          "biz_enyy": {
+            "pass": true,
+            "value": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
+            "detail": "업력 허용 매칭 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "exclude_target": {
+            "pass": true,
+            "value": "공고문 내 &apos;모집 제외&apos; 참조",
+            "detail": ""
+          },
+          "industry": {
+            "pass": true,
+            "detail": "우회됨: 업종 한정 (항공우주) / 인천 앵커(인천창조경제혁신센터)"
+          },
+          "qualification": {
+            "pass": true,
+            "detail": ""
+          },
+          "stage": {
+            "pass": true,
+            "detail": ""
+          },
+          "nature": {
+            "pass": true,
+            "detail": ""
+          },
+          "region_keyword": {
+            "pass": true,
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "positive_hit": {
+            "pass": true,
+            "detail": "인천 앵커 매칭 (인천창조경제혁신센터)"
+          }
+        },
+        "risk_flags": [
+          {
+            "type": "industry_bypass",
+            "severity": "low",
+            "msg": "업종 키워드 '업종 한정 (항공우주)'이 검출됐으나 인천 앵커(인천창조경제혁신센터)로 우회. 적용 영역 예시일 가능성 — 공고 본문 확인 권장"
+          }
+        ]
       }
     },
     {
@@ -2950,7 +3386,7 @@
       "deadline": "2026-04-27",
       "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177263",
       "tier": "green",
-      "note": "인천 매칭 (인천테크노파크)",
+      "note": "인천 앵커 매칭 (인천테크노파크)",
       "first_seen": "2026-04-18",
       "last_seen": "2026-04-19",
       "structured": {
@@ -2974,7 +3410,7 @@
         "apply_guide": "bizok.incheon.go.kr/open_content/support.do?act=detail&policyno=6907"
       },
       "classify_evidence": {
-        "summary_reason": "인천 매칭 (인천테크노파크)",
+        "summary_reason": "인천 앵커 매칭 (인천테크노파크)",
         "category_hints": [
           "ai",
           "incheon",
@@ -3028,7 +3464,7 @@
           },
           "positive_hit": {
             "pass": true,
-            "detail": "인천 매칭 (인천테크노파크)"
+            "detail": "인천 앵커 매칭 (인천테크노파크)"
           }
         },
         "risk_flags": [
@@ -3104,6 +3540,37 @@
             "msg": "신청 제외 대상이 길게 기술됨 (128자) — 본문 정독 필수"
           }
         ]
+      },
+      "deep_summary": {
+        "fit": "Univ. X는 '북미 시장 진출 + AI 디지털 기술혁신 + 인천 본사'를 핵심 요건으로 하는데, sinhon.life는 Claude API 기반 AI 번역 엔진(TRL 5 이상 원천기술)을 보유한 인천 법인이며, K-웨딩 글로벌 확장(sinhon.global)으로 북미·동남아 상용화를 구체적 로드맵 중입니다(M05_ai_tech + M09_global + M07_incheon의 결합점). 북미 대학 인프라를 통한 기술 검증은 G1~G3 글로벌 MVP 현지화와 정확히 부합합니다.",
+        "strategy": [
+          "Claude API 정책 번역 파이프라인을 '북미 영문 신혼정보 자동화 엔진'으로 포지셔닝 — TRL 5 단계 원천기술 근거 제시(프롬프트 엔지니어링 문서화)",
+          "sinhon.global 베타(12~18개월) 타이밍을 Univ. X 프로그램 기간과 동기화 — 북미 대학 파트너십을 영문 UX/현지화 검증 랩으로 활용",
+          "North American 결혼이민자·K-웨딩 관광객 데이터셋을 Univ. X 참여 성과물로 공시 — '北美 신혼 라이프스타일 시장 진출 사전 검증 완료' 공신력 확보"
+        ],
+        "checkpoints": [
+          "인천 본사 설립일 확인 — 법인 XCom 인천 소재 등기부등본 최신본 (영문 사본 준비)",
+          "Claude API + Next.js 14 기술스택이 TRL 5 이상으로 평가받을 근거 — 기술검증 보고서/프로토타입 영상/논문 또는 제3자 평가서 확보 필수",
+          "북미 시장 진출 의지 문서화 — sinhon.global 로드맵 상세본(G1 12~18개월, 영문·베트남어·중국어 베타)을 공고상 '조기 상용화' 증거로 제시",
+          "신청 제외 대상 128자 전체 숙독 — 특히 'TRL 단계 요건' '인천 본사 1년 이상 운영' 등 Hard Requirement 재확인 (XCom 창립 기간이 3년 미만이므로 업력 요건과 중복 확인)"
+        ],
+        "difficulty": "medium",
+        "next_action": "XCom 인천 등기부등본·Claude API TRL 근거자료 정리",
+        "master_anchor": "M05_ai_tech + M09_global + M07_incheon",
+        "evidence_quote": "북미 대학의 특화 인프라를 활용한 기술 검증 등을 통해 조기 상용화",
+        "risk_notes": [
+          "TRL 5 '시스템 검증 단계' 판정이 엄격 — 학술·공식 기술평가서 없으면 탈락 가능성 높음. 사전에 인천테크노파크 TRL 담당자와 프로토타입 기술 수준 상담 필수",
+          "공고에서 '신청 제외 대상이 길게 기술됨(128자)' 주의신호 — 본문의 제외 조항(예: 영리목적·위조 신청·정부지원 중복 수령 등)을 100% 숙독하고, 특히 '北美 진출 의지 없음' 또는 '인천 본사 1년 미만'이 명시 제외사항인지 확인",
+          "Univ. X는 기술혁신 중심이므로 B2C 라이프스타일(신혼정보) 측면보다 AI 알고리즘·플랫폼 기술 우수성을 강조해야 함 — sinhon.life 커뮤니티 성장률보다 'Claude API 번역 엔진의 북미 적응성·정확도' 같은 기술 수치 강조 필수"
+        ],
+        "_modules_used": [
+          "M01_identity",
+          "M02_spine",
+          "M05_ai_tech",
+          "M07_incheon",
+          "M09_global"
+        ],
+        "_schema": "v4"
       }
     },
     {
@@ -3113,7 +3580,7 @@
       "deadline": "2026-04-27",
       "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177262",
       "tier": "green",
-      "note": "인천 매칭 (인천테크노파크)",
+      "note": "인천 앵커 매칭 (인천테크노파크)",
       "first_seen": "2026-04-18",
       "last_seen": "2026-04-19",
       "structured": {
@@ -3137,7 +3604,7 @@
         "apply_guide": "bizok.incheon.go.kr/open_content/support.do?act=detail&policyno=6886"
       },
       "classify_evidence": {
-        "summary_reason": "인천 매칭 (인천테크노파크)",
+        "summary_reason": "인천 앵커 매칭 (인천테크노파크)",
         "category_hints": [
           "incheon",
           "global"
@@ -3190,7 +3657,7 @@
           },
           "positive_hit": {
             "pass": true,
-            "detail": "인천 매칭 (인천테크노파크)"
+            "detail": "인천 앵커 매칭 (인천테크노파크)"
           }
         },
         "risk_flags": [
@@ -3265,6 +3732,36 @@
             "msg": "신청 제외 대상이 길게 기술됨 (185자) — 본문 정독 필수"
           }
         ]
+      },
+      "deep_summary": {
+        "fit": "sinhon.life는 인천 거주 당사자 신혼부부 플랫폼(M07_incheon)으로서 B2C 디지털 플랫폼 기반 기술혁신기업이며, M09_global 로드맵의 sinhon.global(동남아·글로벌 확장)이 북미 진출 단계 이전의 검증된 글로벌 확장 전략을 보유하고 있어 인천 앵커 매칭 프로그램의 '글로벌 진출 제품·서비스 보유' 요건을 충족합니다.",
+        "strategy": [
+          "당사자성(M02_spine) 강조: 허파랑·이영림 부부가 2025년 결혼 후 실제 인천으로 이주한 검증된 로컬 당사자 → 인천 앵커의 신뢰도 극대화",
+          "글로벌 로드맵 재포지셔닝: G1(국내 외국인) → G2(동남아) → G3(북미 K-웨딩 관광) 단계 중 G2 현지화 검증 후 북미 시장 진출 근거 제시",
+          "테크놀로지 스택 명시: Claude API 기반 AI 비서 + AWS 아키텍처(M01_identity)를 국제 UX/다국어 지원으로 확장 가능함을 기술적 증거로 제출"
+        ],
+        "checkpoints": [
+          "인천 본사 거주지 확인: 대표 허파랑·이영림이 현재 인천 거주 중이며 남동구 청년창업지원센터 요건(18~39세·남동구 거주) 재검증 필수",
+          "글로벌 제품·서비스 정의 확인: sinhon.global 도메인·베타 계획이 '북미 시장'(미국·캐나다)을 명시하는지, 또는 동남아 먼저 검증 후 북미 진출인지 공고 단계와 맞춤 필요",
+          "신청 제외 대상 상세 검토: 공고 본문(185자)의 제외 대상(예: 투자 회수 완료, 정부 지원금 중복 제한 등) 읽고 법인 XCom 이전 지원사업 내역·투자 상황 정확히 기록"
+        ],
+        "difficulty": "medium",
+        "next_action": "공고 원문 신청 제외 대상 185자 완전 정독 및 정리",
+        "master_anchor": "M07_incheon + M09_global",
+        "evidence_quote": "인천 관내 본사를 둔 글로벌 진출 제품·서비스 보유 디지털 분야 기술혁신기업",
+        "risk_notes": [
+          "북미 시장 진출은 M09_global 로드맵(G1동남아→G2현지화→G3북미)의 단계 3단계라 즉시성 부족 → 지원 시 G2 검증 기간 단축 또는 북미 진출 단계 우선화 계획 추가 필요",
+          "관외 기업 60일 이전 조건: 현재 인천 거주 이후 법인 본사 이전 등기·사업자 등록지 변경 시간 확보 필수",
+          "성실한 참여 조건 엄격: 국내·현지 프로그램 전체 일정 참석 요구 → 대표/팀 가용성(실제 북미 출장 가능성) 미리 확인"
+        ],
+        "_modules_used": [
+          "M01_identity",
+          "M02_spine",
+          "M07_incheon",
+          "M09_global",
+          "M03_flywheel"
+        ],
+        "_schema": "v4"
       }
     },
     {
@@ -3424,7 +3921,7 @@
       "deadline": "2026-04-29",
       "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=176992",
       "tier": "green",
-      "note": "인천 매칭 (인천창조경제혁신센터)",
+      "note": "인천 앵커 매칭 (인천창조경제혁신센터)",
       "first_seen": "2026-04-17",
       "last_seen": "2026-04-19",
       "structured": {
@@ -3449,7 +3946,7 @@
       },
       "last_changed_at": "2026-04-18",
       "classify_evidence": {
-        "summary_reason": "인천 매칭 (인천창조경제혁신센터)",
+        "summary_reason": "인천 앵커 매칭 (인천창조경제혁신센터)",
         "category_hints": [
           "incheon",
           "global"
@@ -3502,7 +3999,7 @@
           },
           "positive_hit": {
             "pass": true,
-            "detail": "인천 매칭 (인천창조경제혁신센터)"
+            "detail": "인천 앵커 매칭 (인천창조경제혁신센터)"
           }
         },
         "risk_flags": []
@@ -3574,7 +4071,7 @@
       "deadline": "2026-04-29",
       "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177101",
       "tier": "green",
-      "note": "structured GREEN (인천/사업화)",
+      "note": "인천 앵커 매칭 (인천테크노파크)",
       "first_seen": "2026-04-17",
       "last_seen": "2026-04-19",
       "structured": {
@@ -3599,7 +4096,7 @@
       },
       "last_changed_at": "2026-04-18",
       "classify_evidence": {
-        "summary_reason": "structured GREEN (인천/사업화)",
+        "summary_reason": "인천 앵커 매칭 (인천테크노파크)",
         "category_hints": [
           "content",
           "incheon",
@@ -3653,7 +4150,7 @@
           },
           "positive_hit": {
             "pass": true,
-            "detail": "structured GREEN (인천/사업화)"
+            "detail": "인천 앵커 매칭 (인천테크노파크)"
           }
         },
         "risk_flags": [
@@ -5106,7 +5603,7 @@
       "deadline": "2026-05-06",
       "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177165",
       "tier": "green",
-      "note": "인천 매칭 (인천창조경제혁신센터)",
+      "note": "인천 앵커 매칭 (인천창조경제혁신센터)",
       "first_seen": "2026-04-17",
       "last_seen": "2026-04-19",
       "structured": {
@@ -5131,7 +5628,7 @@
       },
       "last_changed_at": "2026-04-18",
       "classify_evidence": {
-        "summary_reason": "인천 매칭 (인천창조경제혁신센터)",
+        "summary_reason": "인천 앵커 매칭 (인천창조경제혁신센터)",
         "category_hints": [
           "incheon",
           "global"
@@ -5184,7 +5681,7 @@
           },
           "positive_hit": {
             "pass": true,
-            "detail": "인천 매칭 (인천창조경제혁신센터)"
+            "detail": "인천 앵커 매칭 (인천창조경제혁신센터)"
           }
         },
         "risk_flags": []
@@ -5256,7 +5753,7 @@
       "deadline": "2026-05-06",
       "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177166",
       "tier": "green",
-      "note": "인천 매칭 (인천창조경제혁신센터)",
+      "note": "인천 앵커 매칭 (인천창조경제혁신센터)",
       "first_seen": "2026-04-17",
       "last_seen": "2026-04-19",
       "structured": {
@@ -5281,7 +5778,7 @@
       },
       "last_changed_at": "2026-04-18",
       "classify_evidence": {
-        "summary_reason": "인천 매칭 (인천창조경제혁신센터)",
+        "summary_reason": "인천 앵커 매칭 (인천창조경제혁신센터)",
         "category_hints": [
           "ai",
           "incheon",
@@ -5335,7 +5832,7 @@
           },
           "positive_hit": {
             "pass": true,
-            "detail": "인천 매칭 (인천창조경제혁신센터)"
+            "detail": "인천 앵커 매칭 (인천창조경제혁신센터)"
           }
         },
         "risk_flags": []
@@ -7156,7 +7653,7 @@
       "deadline": "2026-11-30",
       "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=176208",
       "tier": "green",
-      "note": "인천 매칭 (인천창조경제혁신센터)",
+      "note": "인천 앵커 매칭 (인천창조경제혁신센터)",
       "first_seen": "2026-04-17",
       "last_seen": "2026-04-19",
       "structured": {
@@ -7181,7 +7678,7 @@
       },
       "last_changed_at": "2026-04-18",
       "classify_evidence": {
-        "summary_reason": "인천 매칭 (인천창조경제혁신센터)",
+        "summary_reason": "인천 앵커 매칭 (인천창조경제혁신센터)",
         "category_hints": [
           "incheon",
           "budget"
@@ -7234,7 +7731,7 @@
           },
           "positive_hit": {
             "pass": true,
-            "detail": "인천 매칭 (인천창조경제혁신센터)"
+            "detail": "인천 앵커 매칭 (인천창조경제혁신센터)"
           }
         },
         "risk_flags": []
@@ -7330,6 +7827,65 @@
       "tier": "green",
       "note": "structured GREEN (전국/융자ㆍ보증)",
       "evidence": {
+        "summary_reason": "structured GREEN (전국/융자ㆍ보증)",
+        "category_hints": [
+          "social",
+          "budget"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": ""
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-11-30",
+            "detail": ""
+          },
+          "region": {
+            "pass": true,
+            "value": "전국",
+            "detail": "region=전국"
+          },
+          "biz_enyy": {
+            "pass": true,
+            "value": "2년미만,3년미만,5년미만,7년미만,10년미만",
+            "detail": "업력 허용 매칭 (10년미만,2년미만,3년미만,5년미만,7년미만)"
+          },
+          "exclude_target": {
+            "pass": true,
+            "value": "- 신청일 기준 법인 설립 1년 미만인 기업\r\n- 전기 재무제표 기준으로 완전자본잠식 상태인 기업",
+            "detail": ""
+          },
+          "industry": {
+            "pass": true,
+            "detail": ""
+          },
+          "qualification": {
+            "pass": true,
+            "detail": ""
+          },
+          "stage": {
+            "pass": true,
+            "detail": ""
+          },
+          "nature": {
+            "pass": true,
+            "detail": ""
+          },
+          "region_keyword": {
+            "pass": true,
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "positive_hit": {
+            "pass": true,
+            "detail": "structured GREEN (전국/융자ㆍ보증)"
+          }
+        },
+        "risk_flags": []
+      },
+      "classify_evidence": {
         "summary_reason": "structured GREEN (전국/융자ㆍ보증)",
         "category_hints": [
           "social",
@@ -7979,6 +8535,280 @@
           "positive_hit": {
             "pass": true,
             "detail": "structured GREEN (전국/사업화)"
+          }
+        },
+        "risk_flags": []
+      }
+    },
+    {
+      "pbancSn": "176653",
+      "title": "[무료/초기 창업자 집중] 메타코드M 유튜브 채널 AI 스타트업 인터뷰 참여자 모집합니다",
+      "agency": "(주)메타코드에이치",
+      "deadline": "2026-04-30",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=176653",
+      "tier": "orange",
+      "note": "AI 포지셔닝 (AI 스타트업)",
+      "first_seen": "2026-04-18",
+      "last_seen": "2026-04-19",
+      "structured": {
+        "pbanc_sn_int": 176653,
+        "integrated": false,
+        "recruiting": true,
+        "start_date": "2026-03-11",
+        "end_date": "2026-04-30",
+        "agency_type": "교육기관",
+        "biz_class": "행사ㆍ네트워크",
+        "region": "전국",
+        "biz_enyy": "1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
+        "age_range": "만 20세 이상 ~ 만 39세 이하,만 40세 이상",
+        "apply_target": "대학생,일반인,대학,연구기관,일반기업,1인 창조기업",
+        "apply_target_desc": "메타코드M 유튜브 채널 인터뷰에 관심 있는 스타트업 대표 및 관계자 누구나",
+        "exclude_target": "",
+        "preferential": "",
+        "content": "메타코드에서는 AI 기술을 통해 도약을 도모하는 스타트업에게 메타코드M 유튜브 채널을 통한 인터뷰를 통해, 현재 제공하는 기술 및 서비스를 소개할 수 있는 자리를 마련했습니다. 이번 자리에 역량 있는 스타트업 관계자 분들의 많은 관심과 참여를 바랍니다.",
+        "integrated_name": "[무료/초기 창업자 집중] 메타코드M 유튜브 채널 AI 스타트업 인터뷰 참여자 모집합니다",
+        "apply_online": "https://forms.gle/zhoL1v5cxGrGNT9t9",
+        "apply_guide": ""
+      },
+      "classify_evidence": {
+        "summary_reason": "AI 포지셔닝 (AI 스타트업)",
+        "category_hints": [
+          "ai"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": ""
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-04-30",
+            "detail": ""
+          },
+          "region": {
+            "pass": true,
+            "value": "전국",
+            "detail": "region=전국"
+          },
+          "biz_enyy": {
+            "pass": true,
+            "value": "1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
+            "detail": "업력 허용 매칭 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만)"
+          },
+          "exclude_target": {
+            "pass": true,
+            "value": "",
+            "detail": ""
+          },
+          "industry": {
+            "pass": true,
+            "detail": ""
+          },
+          "qualification": {
+            "pass": true,
+            "detail": ""
+          },
+          "stage": {
+            "pass": true,
+            "detail": ""
+          },
+          "nature": {
+            "pass": true,
+            "detail": ""
+          },
+          "region_keyword": {
+            "pass": true,
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "positive_hit": {
+            "pass": true,
+            "detail": "AI 포지셔닝 (AI 스타트업)"
+          }
+        },
+        "risk_flags": []
+      },
+      "evidence": {
+        "summary_reason": "AI 포지셔닝 (AI 스타트업)",
+        "category_hints": [
+          "ai"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": ""
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-04-30",
+            "detail": ""
+          },
+          "region": {
+            "pass": true,
+            "value": "전국",
+            "detail": "region=전국"
+          },
+          "biz_enyy": {
+            "pass": true,
+            "value": "1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
+            "detail": "업력 허용 매칭 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만)"
+          },
+          "exclude_target": {
+            "pass": true,
+            "value": "",
+            "detail": ""
+          },
+          "industry": {
+            "pass": true,
+            "detail": ""
+          },
+          "qualification": {
+            "pass": true,
+            "detail": ""
+          },
+          "stage": {
+            "pass": true,
+            "detail": ""
+          },
+          "nature": {
+            "pass": true,
+            "detail": ""
+          },
+          "region_keyword": {
+            "pass": true,
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "positive_hit": {
+            "pass": true,
+            "detail": "AI 포지셔닝 (AI 스타트업)"
+          }
+        },
+        "risk_flags": []
+      }
+    },
+    {
+      "pbancSn": "177106",
+      "title": "2026년 AI전환(AX) 지원사업 참여 컨소시엄 모집",
+      "agency": "",
+      "deadline": "",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177106",
+      "tier": "orange",
+      "note": "AX 포지셔닝 강매칭 (AX)",
+      "first_seen": "2026-04-17",
+      "last_seen": "2026-04-17",
+      "classify_evidence": {
+        "summary_reason": "AX 포지셔닝 강매칭 (AX)",
+        "category_hints": [
+          "ai"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "?",
+            "detail": ""
+          },
+          "deadline": {
+            "pass": true,
+            "value": "",
+            "detail": ""
+          },
+          "region": {
+            "pass": true,
+            "value": "",
+            "detail": "region="
+          },
+          "biz_enyy": {
+            "pass": true,
+            "value": "",
+            "detail": "(biz_enyy 비어있음)"
+          },
+          "exclude_target": {
+            "pass": true,
+            "value": "",
+            "detail": ""
+          },
+          "industry": {
+            "pass": true,
+            "detail": ""
+          },
+          "qualification": {
+            "pass": true,
+            "detail": ""
+          },
+          "stage": {
+            "pass": true,
+            "detail": ""
+          },
+          "nature": {
+            "pass": true,
+            "detail": ""
+          },
+          "region_keyword": {
+            "pass": true,
+            "detail": ""
+          },
+          "positive_hit": {
+            "pass": true,
+            "detail": "AX 포지셔닝 강매칭 (AX)"
+          }
+        },
+        "risk_flags": []
+      },
+      "evidence": {
+        "summary_reason": "AX 포지셔닝 강매칭 (AX)",
+        "category_hints": [
+          "ai"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "?",
+            "detail": ""
+          },
+          "deadline": {
+            "pass": true,
+            "value": "",
+            "detail": ""
+          },
+          "region": {
+            "pass": true,
+            "value": "",
+            "detail": "region="
+          },
+          "biz_enyy": {
+            "pass": true,
+            "value": "",
+            "detail": "(biz_enyy 비어있음)"
+          },
+          "exclude_target": {
+            "pass": true,
+            "value": "",
+            "detail": ""
+          },
+          "industry": {
+            "pass": true,
+            "detail": ""
+          },
+          "qualification": {
+            "pass": true,
+            "detail": ""
+          },
+          "stage": {
+            "pass": true,
+            "detail": ""
+          },
+          "nature": {
+            "pass": true,
+            "detail": ""
+          },
+          "region_keyword": {
+            "pass": true,
+            "detail": ""
+          },
+          "positive_hit": {
+            "pass": true,
+            "detail": "AX 포지셔닝 강매칭 (AX)"
           }
         },
         "risk_flags": []
@@ -8746,6 +9576,70 @@
       "tier": "yellow",
       "note": "검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)",
       "evidence": {
+        "summary_reason": "검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)",
+        "category_hints": [
+          "budget"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": ""
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-04-22",
+            "detail": ""
+          },
+          "region": {
+            "pass": true,
+            "value": "전국",
+            "detail": "region=전국"
+          },
+          "biz_enyy": {
+            "pass": true,
+            "value": "예비창업자",
+            "detail": "업력 허용 매칭 (예비창업자)"
+          },
+          "exclude_target": {
+            "pass": true,
+            "value": "",
+            "detail": ""
+          },
+          "industry": {
+            "pass": true,
+            "detail": ""
+          },
+          "qualification": {
+            "pass": true,
+            "detail": ""
+          },
+          "stage": {
+            "pass": true,
+            "detail": ""
+          },
+          "nature": {
+            "pass": true,
+            "detail": ""
+          },
+          "region_keyword": {
+            "pass": true,
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "positive_hit": {
+            "pass": true,
+            "detail": "검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)"
+          }
+        },
+        "risk_flags": [
+          {
+            "type": "apply_target_narrow",
+            "severity": "med",
+            "msg": "신청 가능 대상이 좁음 (대학생,일반인) — 엑스컴 자격 재확인"
+          }
+        ]
+      },
+      "classify_evidence": {
         "summary_reason": "검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)",
         "category_hints": [
           "budget"
@@ -10710,6 +11604,64 @@
           }
         },
         "risk_flags": []
+      },
+      "classify_evidence": {
+        "summary_reason": "검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)",
+        "category_hints": [
+          "social"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": ""
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-04-30",
+            "detail": ""
+          },
+          "region": {
+            "pass": true,
+            "value": "전국",
+            "detail": "region=전국"
+          },
+          "biz_enyy": {
+            "pass": true,
+            "value": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
+            "detail": "업력 허용 매칭 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "exclude_target": {
+            "pass": true,
+            "value": "",
+            "detail": ""
+          },
+          "industry": {
+            "pass": true,
+            "detail": ""
+          },
+          "qualification": {
+            "pass": true,
+            "detail": ""
+          },
+          "stage": {
+            "pass": true,
+            "detail": ""
+          },
+          "nature": {
+            "pass": true,
+            "detail": ""
+          },
+          "region_keyword": {
+            "pass": true,
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "positive_hit": {
+            "pass": true,
+            "detail": "검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)"
+          }
+        },
+        "risk_flags": []
       }
     },
     {
@@ -11340,6 +12292,70 @@
       "tier": "yellow",
       "note": "검토 매칭 (인천/시설ㆍ공간ㆍ보육)",
       "evidence": {
+        "summary_reason": "검토 매칭 (인천/시설ㆍ공간ㆍ보육)",
+        "category_hints": [
+          "budget"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": ""
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-05-03",
+            "detail": ""
+          },
+          "region": {
+            "pass": true,
+            "value": "인천",
+            "detail": "region=인천"
+          },
+          "biz_enyy": {
+            "pass": true,
+            "value": "예비창업자",
+            "detail": "업력 허용 매칭 (예비창업자)"
+          },
+          "exclude_target": {
+            "pass": true,
+            "value": "1. ｢창업·벤처 녹색융합클러스터 운영규정｣제9조제1항에 따른 입주대상에 해당하지 않는 경우\r\n2. ｢창업·벤처 녹색융합클러스터 운영규정｣제9조",
+            "detail": ""
+          },
+          "industry": {
+            "pass": true,
+            "detail": ""
+          },
+          "qualification": {
+            "pass": true,
+            "detail": ""
+          },
+          "stage": {
+            "pass": true,
+            "detail": ""
+          },
+          "nature": {
+            "pass": true,
+            "detail": ""
+          },
+          "region_keyword": {
+            "pass": true,
+            "detail": "지역 허용 (structured=인천)"
+          },
+          "positive_hit": {
+            "pass": true,
+            "detail": "검토 매칭 (인천/시설ㆍ공간ㆍ보육)"
+          }
+        },
+        "risk_flags": [
+          {
+            "type": "exclude_target_long",
+            "severity": "low",
+            "msg": "신청 제외 대상이 길게 기술됨 (121자) — 본문 정독 필수"
+          }
+        ]
+      },
+      "classify_evidence": {
         "summary_reason": "검토 매칭 (인천/시설ㆍ공간ㆍ보육)",
         "category_hints": [
           "budget"
@@ -14088,6 +15104,64 @@
           }
         },
         "risk_flags": []
+      },
+      "classify_evidence": {
+        "summary_reason": "검토 매칭 (전국/인력)",
+        "category_hints": [
+          "budget"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": ""
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-09-30",
+            "detail": ""
+          },
+          "region": {
+            "pass": true,
+            "value": "전국",
+            "detail": "region=전국"
+          },
+          "biz_enyy": {
+            "pass": true,
+            "value": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
+            "detail": "업력 허용 매칭 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "exclude_target": {
+            "pass": true,
+            "value": "",
+            "detail": ""
+          },
+          "industry": {
+            "pass": true,
+            "detail": ""
+          },
+          "qualification": {
+            "pass": true,
+            "detail": ""
+          },
+          "stage": {
+            "pass": true,
+            "detail": ""
+          },
+          "nature": {
+            "pass": true,
+            "detail": ""
+          },
+          "region_keyword": {
+            "pass": true,
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "positive_hit": {
+            "pass": true,
+            "detail": "검토 매칭 (전국/인력)"
+          }
+        },
+        "risk_flags": []
       }
     },
     {
@@ -14559,6 +15633,70 @@
       "tier": "yellow",
       "note": "검토 매칭 (전국/시설ㆍ공간ㆍ보육)",
       "evidence": {
+        "summary_reason": "검토 매칭 (전국/시설ㆍ공간ㆍ보육)",
+        "category_hints": [
+          "budget"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": ""
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-11-30",
+            "detail": ""
+          },
+          "region": {
+            "pass": true,
+            "value": "전국",
+            "detail": "region=전국"
+          },
+          "biz_enyy": {
+            "pass": true,
+            "value": "예비창업자",
+            "detail": "업력 허용 매칭 (예비창업자)"
+          },
+          "exclude_target": {
+            "pass": true,
+            "value": "1. ｢창업·벤처 녹색융합클러스터 운영규정｣제9조제1항에 따른 입주대상에 해당하지 않는 경우\r\n2. ｢창업·벤처 녹색융합클러스터 운영규정｣제9조",
+            "detail": ""
+          },
+          "industry": {
+            "pass": true,
+            "detail": ""
+          },
+          "qualification": {
+            "pass": true,
+            "detail": ""
+          },
+          "stage": {
+            "pass": true,
+            "detail": ""
+          },
+          "nature": {
+            "pass": true,
+            "detail": ""
+          },
+          "region_keyword": {
+            "pass": true,
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "positive_hit": {
+            "pass": true,
+            "detail": "검토 매칭 (전국/시설ㆍ공간ㆍ보육)"
+          }
+        },
+        "risk_flags": [
+          {
+            "type": "exclude_target_long",
+            "severity": "low",
+            "msg": "신청 제외 대상이 길게 기술됨 (121자) — 본문 정독 필수"
+          }
+        ]
+      },
+      "classify_evidence": {
         "summary_reason": "검토 매칭 (전국/시설ㆍ공간ㆍ보육)",
         "category_hints": [
           "budget"
@@ -15350,315 +16488,39 @@
         },
         "risk_flags": []
       }
-    },
-    {
-      "pbancSn": "176653",
-      "title": "[무료/초기 창업자 집중] 메타코드M 유튜브 채널 AI 스타트업 인터뷰 참여자 모집합니다",
-      "agency": "(주)메타코드에이치",
-      "deadline": "2026-04-30",
-      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=176653",
-      "tier": "orange",
-      "note": "AI 포지셔닝 (AI 스타트업)",
-      "first_seen": "2026-04-18",
-      "last_seen": "2026-04-19",
-      "structured": {
-        "pbanc_sn_int": 176653,
-        "integrated": false,
-        "recruiting": true,
-        "start_date": "2026-03-11",
-        "end_date": "2026-04-30",
-        "agency_type": "교육기관",
-        "biz_class": "행사ㆍ네트워크",
-        "region": "전국",
-        "biz_enyy": "1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
-        "age_range": "만 20세 이상 ~ 만 39세 이하,만 40세 이상",
-        "apply_target": "대학생,일반인,대학,연구기관,일반기업,1인 창조기업",
-        "apply_target_desc": "메타코드M 유튜브 채널 인터뷰에 관심 있는 스타트업 대표 및 관계자 누구나",
-        "exclude_target": "",
-        "preferential": "",
-        "content": "메타코드에서는 AI 기술을 통해 도약을 도모하는 스타트업에게 메타코드M 유튜브 채널을 통한 인터뷰를 통해, 현재 제공하는 기술 및 서비스를 소개할 수 있는 자리를 마련했습니다. 이번 자리에 역량 있는 스타트업 관계자 분들의 많은 관심과 참여를 바랍니다.",
-        "integrated_name": "[무료/초기 창업자 집중] 메타코드M 유튜브 채널 AI 스타트업 인터뷰 참여자 모집합니다",
-        "apply_online": "https://forms.gle/zhoL1v5cxGrGNT9t9",
-        "apply_guide": ""
-      },
-      "classify_evidence": {
-        "summary_reason": "AI 포지셔닝 (AI 스타트업)",
-        "category_hints": [
-          "ai"
-        ],
-        "rule_checks": {
-          "recruiting": {
-            "pass": true,
-            "value": "True",
-            "detail": ""
-          },
-          "deadline": {
-            "pass": true,
-            "value": "2026-04-30",
-            "detail": ""
-          },
-          "region": {
-            "pass": true,
-            "value": "전국",
-            "detail": "region=전국"
-          },
-          "biz_enyy": {
-            "pass": true,
-            "value": "1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
-            "detail": "업력 허용 매칭 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만)"
-          },
-          "exclude_target": {
-            "pass": true,
-            "value": "",
-            "detail": ""
-          },
-          "industry": {
-            "pass": true,
-            "detail": ""
-          },
-          "qualification": {
-            "pass": true,
-            "detail": ""
-          },
-          "stage": {
-            "pass": true,
-            "detail": ""
-          },
-          "nature": {
-            "pass": true,
-            "detail": ""
-          },
-          "region_keyword": {
-            "pass": true,
-            "detail": "지역 허용 (structured=전국)"
-          },
-          "positive_hit": {
-            "pass": true,
-            "detail": "AI 포지셔닝 (AI 스타트업)"
-          }
-        },
-        "risk_flags": []
-      },
-      "evidence": {
-        "summary_reason": "AI 포지셔닝 (AI 스타트업)",
-        "category_hints": [
-          "ai"
-        ],
-        "rule_checks": {
-          "recruiting": {
-            "pass": true,
-            "value": "True",
-            "detail": ""
-          },
-          "deadline": {
-            "pass": true,
-            "value": "2026-04-30",
-            "detail": ""
-          },
-          "region": {
-            "pass": true,
-            "value": "전국",
-            "detail": "region=전국"
-          },
-          "biz_enyy": {
-            "pass": true,
-            "value": "1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
-            "detail": "업력 허용 매칭 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만)"
-          },
-          "exclude_target": {
-            "pass": true,
-            "value": "",
-            "detail": ""
-          },
-          "industry": {
-            "pass": true,
-            "detail": ""
-          },
-          "qualification": {
-            "pass": true,
-            "detail": ""
-          },
-          "stage": {
-            "pass": true,
-            "detail": ""
-          },
-          "nature": {
-            "pass": true,
-            "detail": ""
-          },
-          "region_keyword": {
-            "pass": true,
-            "detail": "지역 허용 (structured=전국)"
-          },
-          "positive_hit": {
-            "pass": true,
-            "detail": "AI 포지셔닝 (AI 스타트업)"
-          }
-        },
-        "risk_flags": []
-      }
-    },
-    {
-      "pbancSn": "177106",
-      "title": "2026년 AI전환(AX) 지원사업 참여 컨소시엄 모집",
-      "agency": "",
-      "deadline": "",
-      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177106",
-      "tier": "orange",
-      "note": "AI 포지셔닝 (AX)",
-      "first_seen": "2026-04-17",
-      "last_seen": "2026-04-17",
-      "classify_evidence": {
-        "summary_reason": "AI 포지셔닝 (AX)",
-        "category_hints": [
-          "ai"
-        ],
-        "rule_checks": {
-          "recruiting": {
-            "pass": true,
-            "value": "?",
-            "detail": ""
-          },
-          "deadline": {
-            "pass": true,
-            "value": "",
-            "detail": ""
-          },
-          "region": {
-            "pass": true,
-            "value": "",
-            "detail": "region="
-          },
-          "biz_enyy": {
-            "pass": true,
-            "value": "",
-            "detail": "(biz_enyy 비어있음)"
-          },
-          "exclude_target": {
-            "pass": true,
-            "value": "",
-            "detail": ""
-          },
-          "industry": {
-            "pass": true,
-            "detail": ""
-          },
-          "qualification": {
-            "pass": true,
-            "detail": ""
-          },
-          "stage": {
-            "pass": true,
-            "detail": ""
-          },
-          "nature": {
-            "pass": true,
-            "detail": ""
-          },
-          "region_keyword": {
-            "pass": true,
-            "detail": ""
-          },
-          "positive_hit": {
-            "pass": true,
-            "detail": "AI 포지셔닝 (AX)"
-          }
-        },
-        "risk_flags": []
-      },
-      "evidence": {
-        "summary_reason": "AX 포지셔닝 강매칭 (AX)",
-        "category_hints": [
-          "ai"
-        ],
-        "rule_checks": {
-          "recruiting": {
-            "pass": true,
-            "value": "?",
-            "detail": ""
-          },
-          "deadline": {
-            "pass": true,
-            "value": "",
-            "detail": ""
-          },
-          "region": {
-            "pass": true,
-            "value": "",
-            "detail": "region="
-          },
-          "biz_enyy": {
-            "pass": true,
-            "value": "",
-            "detail": "(biz_enyy 비어있음)"
-          },
-          "exclude_target": {
-            "pass": true,
-            "value": "",
-            "detail": ""
-          },
-          "industry": {
-            "pass": true,
-            "detail": ""
-          },
-          "qualification": {
-            "pass": true,
-            "detail": ""
-          },
-          "stage": {
-            "pass": true,
-            "detail": ""
-          },
-          "nature": {
-            "pass": true,
-            "detail": ""
-          },
-          "region_keyword": {
-            "pass": true,
-            "detail": ""
-          },
-          "positive_hit": {
-            "pass": true,
-            "detail": "AX 포지셔닝 강매칭 (AX)"
-          }
-        },
-        "risk_flags": []
-      }
     }
   ],
   "_meta": {
-    "version": "v7.2",
-    "source": "nidview JSON (kisedKstartupService/announcementInformation)",
-    "expired_titles": [
-      "[인천]모두의 창업  설명회"
-    ],
-    "new_added_titles": [
-      "2026년 ICCE x INNOPOLIS 창업스쿨 16기 모집",
-      "2026년 ESG 오픈이노베이션 혁신파트너 모집공고",
-      "소셜벤처 Scale-up 파트너 <SE 컨설턴트 멘토링> 참여기업 모집",
-      "2026년 사회적기업 시설·운영비 지원사업 참여기업 모집(~11/30)",
-      "[인천창조경제혁신센터x대한항공] 『2026년 대한항공 항공우주 오픈이노베이션』 참여기업 모집",
-      "2026년 창창한 창업스쿨 교육생 모집",
-      "초격차 스타트업 프로젝트 모두의 챌린지 AX - 버티컬 분야 참여기업 모집공고",
-      "2026 여성발명진흥 사업 위한 전문가 평가위원 Pool 모집 공고",
-      "2026년 창업·벤처 녹색융합클러스터 그린아이디어랩 비상주오피스 이용자 모집",
-      "2026년 창업·벤처 녹색융합클러스터 그린아이디어랩 상주오피스 이용자 모집"
-    ],
-    "needs_review_count": 0,
+    "expired": [],
+    "new_added": [],
+    "updated_today": [],
+    "deep_summary": {
+      "generated": 8,
+      "attempted": 10,
+      "force_regenerate": false
+    },
     "stats": {
       "green": 49,
       "yellow": 51,
       "orange": 2,
-      "needs_review": 0,
-      "red_excluded": 230,
-      "expired_removed": 1,
-      "total_pool": 102
-    },
-    "sonnet_injected": [
-      "177179",
-      "176974",
-      "177043"
-    ],
-    "patch_note": "v7.2: false-red 교정 (인천 앵커 우회, AX 강매칭 우회, 생물자원·해양수산자원 신규 업종한정) + Opus-grade deep_summary 주입 3건 (177179 ICCE 창업스쿨, 176974 AX-버티컬, 177043 대한항공 OI)"
-  }
+      "red_excluded": 0,
+      "expired_removed": 0,
+      "total_pool": 102,
+      "rss_total": 0
+    }
+  },
+  "history": [
+    {
+      "date": "2026-04-19",
+      "at_kst": "2026-04-19T01:13:25+09:00",
+      "new": 0,
+      "updated": 0,
+      "expired": 0,
+      "total": 102,
+      "red_excluded": 0,
+      "deep_summary_generated": 8,
+      "force_regenerate": false
+    }
+  ],
+  "updated_at_kst": "2026-04-19T01:13:25+09:00"
 }
