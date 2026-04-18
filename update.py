@@ -228,6 +228,7 @@ def main():
 
     red_count = 0
     new_added = []
+    updated_titles = []  # v6: tier/deadline/title/note 중 하나라도 바뀐 기존 공고
 
     for crawled_item in crawled:
         sn = crawled_item["pbancSn"]
@@ -242,9 +243,34 @@ def main():
         if sn in kept_by_sn:
             existing = kept_by_sn[sn]
             existing["last_seen"] = TODAY
+            # v6 변경 감지: tier/deadline/title/note/agency 중 하나라도 바뀌면
+            # last_changed_at = TODAY 로 마킹 → 대시보드가 🔄 UPDATED 표시
+            changed = False
+            new_deadline = crawled_item.get("deadline", "") or existing.get("deadline", "")
+            new_title = crawled_item.get("title", "") or existing.get("title", "")
+            new_agency = crawled_item.get("agency", "") or existing.get("agency", "")
+            if existing.get("tier") != tier:
+                changed = True
+            if existing.get("deadline", "") != new_deadline and new_deadline:
+                changed = True
+            if existing.get("title", "") != new_title and new_title:
+                changed = True
+            if existing.get("note", "") != reason:
+                changed = True
+            if existing.get("agency", "") != new_agency and new_agency:
+                changed = True
             existing["tier"] = tier
-            if crawled_item.get("agency") and not existing.get("agency"):
-                existing["agency"] = crawled_item["agency"]
+            existing["note"] = reason
+            existing["deadline"] = new_deadline
+            existing["title"] = new_title
+            if new_agency:
+                existing["agency"] = new_agency
+            # v6 구조화 필드 리프레시 (region/biz_class 등 최신값 유지)
+            if crawled_item.get("structured"):
+                existing["structured"] = crawled_item["structured"]
+            if changed:
+                existing["last_changed_at"] = TODAY
+                updated_titles.append(existing.get("title", ""))
         else:
             new_item = {
                 "pbancSn": sn,
@@ -256,6 +282,8 @@ def main():
                 "note": reason,
                 "first_seen": TODAY,
                 "last_seen": TODAY,
+                # v6: 구조화 필드 보존 (대시보드·필터·후속 분석 활용)
+                "structured": crawled_item.get("structured", {}),
             }
             kept_items.append(new_item)
             new_added.append(new_item["title"])
@@ -275,6 +303,7 @@ def main():
         "date": TODAY,
         "at_kst": now_kst.strftime("%Y-%m-%dT%H:%M:%S+09:00"),
         "new": len(new_added),
+        "updated": len(updated_titles),   # v6: 🔄 UPDATED 개수
         "expired": len(expired_titles),
         "total": len(kept_items),
         "red_excluded": red_count,
@@ -295,6 +324,7 @@ def main():
     pool["_meta"] = {
         "expired": expired_titles,
         "new_added": new_added,
+        "updated_today": updated_titles,   # v6: 🔄 UPDATED 리스트
         "deep_summary": {"generated": ds_succ, "attempted": ds_attempt},
         "stats": {
             "green": sum(1 for i in kept_items if i.get("tier") == "green"),
@@ -310,8 +340,8 @@ def main():
 
     stats = pool["_meta"]["stats"]
     print(f"\n{'='*50}", file=sys.stderr)
-    print(f"[결과] RSS {stats['rss_total']} → 🟢{stats['green']} 🟡{stats['yellow']} 🟠{stats['orange']} 🔴{stats['red_excluded']} | "
-          f"신규 {len(new_added)} · 만료 {stats['expired_removed']} · 풀 {stats['total_pool']} · "
+    print(f"[결과] nidview {stats['rss_total']} → 🟢{stats['green']} 🟡{stats['yellow']} 🟠{stats['orange']} 🔴{stats['red_excluded']} | "
+          f"신규 {len(new_added)} · 수정 {len(updated_titles)} · 만료 {stats['expired_removed']} · 풀 {stats['total_pool']} · "
           f"Haiku {ds_succ}/{ds_attempt}건", file=sys.stderr)
 
 
