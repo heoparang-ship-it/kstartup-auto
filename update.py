@@ -271,7 +271,7 @@ def generate_deep_summary(client, item: dict, evidence: dict, manifest: dict):
         f"- 지원대상: {(structured.get('apply_target_desc', '') or '')[:300]}\n"
         f"- 카테고리 힌트: {', '.join(evidence.get('category_hints', []))}\n"
         f"- 주의신호: {', '.join(_format_risk_flags(evidence.get('risk_flags', [])))}\n\n"
-        f"JSON만 응답하세요. 백틱(```)으로 감싸지 마세요. 응답은 반드시 { 로 시작해서 } 로 끝나야 합니다."
+        "JSON만 응답하세요. 백틱(```)으로 감싸지 마세요. 응답은 반드시 { 로 시작해서 } 로 끝나야 합니다."
     )
     try:
         resp = client.messages.create(
