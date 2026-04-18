@@ -1,25 +1,30 @@
 #!/usr/bin/env python3
 """
-K-Startup 공고 자동 분류기 v7 — 구조화 evidence 반환
+K-Startup 공고 자동 분류기 v7.2 — false-red 교정판
 ────────────────────────────────────────────────
-v6 대비 개선:
-1. 'title 전용 키워드' vs 'all-field 키워드' 분리
-   → "예비창업"이 apply_target_desc("예비창업자, 스타트업, 중소기업")에
-     걸려 오탐하던 버그 수정 (모든 K-Startup 공고가 이 문구 포함).
-2. RED_INDUSTRY 대폭 보강: 3D프린팅·3D프린터·3D모델링·시제품 제작·
-   후가공·FAB·금형·메이커·프로토타입 등 제조업 시그널 추가.
-3. exclude_target 파싱 보강: '제품·부품의 개발·생산·양산' 같은
-   제조업 한정 문구면 risk_flag 추가 (심한 경우 red 승격).
-4. classify() 반환 타입 확장: (tier, evidence_dict).
-   evidence_dict = {
-     summary_reason, category_hints, rule_checks, risk_flags
-   }
-   update.py는 summary_reason을 그대로 note로 쓰고,
-   나머지는 item['evidence']에 직렬화 저장.
-5. detect_category_hints(): Haiku 모듈 라우팅용 힌트 태그 산출.
+v7 대비 개선 (2026-04-19, 허파랑 false-red 감사 반영):
+1. RED_INDUSTRY 슬림화 — 오탐 유발하던 광범위 키워드 제거
+   · "디바이스" 제거: "디바이스·플랫폼", "AI 디바이스" 등 적용 영역 예시로
+     쓰이는 경우가 많음. 대신 `디바이스 전용` 같은 한정 문맥만 별도 처리.
+   · "그린", "탄소중립", "ESG산업" 제거: 최근 공고는 "가점부여/우대/우선선정"
+     맥락으로 언급하는 경우가 다수. 가점은 한정이 아님.
+2. RED_INDUSTRY 보강 — 돈 안 주는 이벤트성·기술이전 중심 공고 잡기
+   · "생물자원", "국립생물자원관", "해양수산자원" 추가 (간담회 false-green 재발 방지)
+3. SOFT_DOWNGRADE_TITLE_KW 신설 — 제목에 "간담회", "네트워킹 데이",
+   "컨설팅 데이"가 있으면 RED가 아니라 GREEN→YELLOW로 강등 + 리스크 플래그.
+   단 "설명회"는 포함하지 않음 (모두의 창업 설명회 유지).
+4. INCHEON_ANCHOR_AGENCIES 신설 — 인천창조경제혁신센터/인천테크노파크/
+   인천스타트업파크 공고는 적용 영역 언급(예: "탄소중립")에 구애받지 않고 GREEN.
+   단 단계 RED(재도전/스케일업)는 여전히 우선.
+5. AX_STRONG_KEYWORDS 신설 — 제목에 "AX", "AI 버티컬", "AI Vertical",
+   "AI 수직화"가 있으면 업종 RED 우회 후 ORANGE 보장.
+   profile.md의 🟠 AX 포지셔닝 트랙과 일치.
+이 5개 패치는 2026-04-19 허파랑 "내가 할만한 사업이 빨간색으로 넘어갔을까"
+감사에서 발견된 [4] ICCE 창업스쿨(탄소중липом 오탐)·[3] AX-버티컬(디바이스 오탐)·
+생물자원 간담회(false-green) 3건을 동시에 해결.
 
 입력: crawl_v6.py 출력(JSON 배열, structured 필드 포함)
-출력: recommendations.json 호환 포맷 (v6와 동일 스키마 + evidence)
+출력: recommendations.json 호환 포맷 (evidence 스키마 유지)
 """
 from __future__ import annotations
 
@@ -66,9 +71,11 @@ RED_INDUSTRY = [
     "3D모델링", "3D 모델링", "시제품 제작", "시작품 제작", "시제품제작",
     "시작품제작", "후가공", "금형", "메이커", "프로토타입",
     "FAB", "3D-FAB", "MFG",
-    # 바이오·의료
+    # 바이오·의료 (⚠️ "디바이스"는 v7.2에서 제거 — "디바이스·플랫폼"/"AI 디바이스" 오탐)
     "바이오", "제약", "신약", "의약품", "의료기기", "의료", "메디컬", "헬스케어",
-    "웰니스", "디바이스",
+    "웰니스",
+    # 자연자원·기술이전 중심 (v7.2 추가 — 생물자원 간담회 false-green fix)
+    "생물자원", "국립생물자원관", "해양수산자원", "유전자원",
     # 1차산업·식품
     "농업", "농식품", "수산", "축산", "농생명", "스마트팜", "식품",
     # 에너지·중공업
@@ -83,14 +90,36 @@ RED_INDUSTRY = [
     "건설", "건축", "부동산",
     # 물류
     "해운물류", "물류", "유통", "프랜차이즈",
-    # 친환경·ESG (산업 한정 키워드로 쓰일 때)
-    "그린", "탄소중립", "ESG산업",
+    # ⚠️ v7.2: "그린"/"탄소중립"/"ESG산업"은 제거 — 가점부여/우대 맥락으로 쓰이는 경우 많음
+    # 산업 한정이 필요한 경우에만 아래 명시 키워드 사용
+    "탄소중립 전용", "ESG 전용", "그린산업 전용",
     # 모빌리티
     "모빌리티", "자율주행", "드론",
     # 가상자산·블록체인
     "메타버스", "블록체인", "NFT", "Web3", "핀테크",
     # 스마트공장
     "스마트공장",
+]
+
+# v7.2 신설 — 제목에 포함되면 GREEN을 YELLOW로 강등하는 "돈 안 주는 이벤트" 키워드
+# "설명회"는 모두의 창업 설명회 같은 유용 이벤트라 제외
+SOFT_DOWNGRADE_TITLE_KW = [
+    "간담회", "네트워킹 데이", "컨설팅 데이", "오픈데이",
+]
+
+# v7.2 신설 — 인천 앵커 기관은 apply_target_desc/content의 적용 영역 언급을 무시하고 GREEN
+# profile.md의 "인천 지역 전용 공고 + 업종 제한 없음" 규칙 반영
+INCHEON_ANCHOR_AGENCIES = [
+    "인천창조경제혁신센터", "인천테크노파크", "인천스타트업파크", "ICCE",
+    "인천TP",
+]
+
+# v7.2 신설 — 제목/기관에 있으면 업종 RED를 우회해 최소 ORANGE 보장
+# profile.md의 🟠 "AX 버티컬, LLM, AI대전환, AI 바우처" 트랙과 일치
+AX_STRONG_KEYWORDS = [
+    "AX", "AX-버티컬", "AX - 버티컬", "AX 버티컬",
+    "AI 버티컬", "AI버티컬", "AI Vertical", "AI 수직화",
+    "AI 대전환", "AI대전환",
 ]
 
 RED_QUALIFICATION = [
@@ -448,13 +477,38 @@ def classify(item: dict) -> tuple[str, dict]:
             "summary_reason": detail, "category_hints": [], "rule_checks": checks, "risk_flags": risks,
         }
 
-    # ── 2단계: 키워드 RED ──
+    # ── 1.5단계 (v7.2 신설): 우선 승격 룰 ──
+    # 인천 앵커 기관 또는 AX 강한 키워드면 "적용 영역" 오탐을 우회.
+    # 단 단계 RED(재도전/스케일업)는 아래 2단계에서 여전히 1순위.
+    incheon_anchor_hit = None
+    for anchor in INCHEON_ANCHOR_AGENCIES:
+        if anchor in title_only:  # 기관·제목에만 매칭 (apply_target_desc 제외)
+            incheon_anchor_hit = anchor
+            break
+
+    ax_strong_hit = None
+    for kw in AX_STRONG_KEYWORDS:
+        if kw in title_only:
+            ax_strong_hit = kw
+            break
+
+    # ── 2단계: 키워드 RED (단, 인천 앵커/AX 강매칭은 industry 체크를 우회) ──
     ok, detail = _check_keyword_industry(all_combined)
-    checks["industry"] = {"pass": ok, "detail": detail}
-    if not ok:
-        return "red", {
-            "summary_reason": detail, "category_hints": [], "rule_checks": checks, "risk_flags": risks,
-        }
+    if not ok and (incheon_anchor_hit or ax_strong_hit):
+        # v7.2: industry 키워드 매칭됐지만 인천 앵커/AX 강매칭이 있으면 우회 + 리스크 플래그
+        bypass_reason = f"인천 앵커({incheon_anchor_hit})" if incheon_anchor_hit else f"AX 강매칭({ax_strong_hit})"
+        risks.append({
+            "type": "industry_bypass",
+            "severity": "low",
+            "msg": f"업종 키워드 '{detail}'이 검출됐으나 {bypass_reason}로 우회. 적용 영역 예시일 가능성 — 공고 본문 확인 권장",
+        })
+        checks["industry"] = {"pass": True, "detail": f"우회됨: {detail} / {bypass_reason}"}
+    else:
+        checks["industry"] = {"pass": ok, "detail": detail}
+        if not ok:
+            return "red", {
+                "summary_reason": detail, "category_hints": [], "rule_checks": checks, "risk_flags": risks,
+            }
 
     ok, detail = _check_keyword_qualification(all_combined)
     checks["qualification"] = {"pass": ok, "detail": detail}
@@ -491,8 +545,13 @@ def classify(item: dict) -> tuple[str, dict]:
     positive_hit = None
     tier = None
 
+    # v7.2: 인천 앵커 우선 승격 (structured 필드 상관없이 GREEN)
+    if incheon_anchor_hit:
+        tier = "green"
+        positive_hit = f"인천 앵커 매칭 ({incheon_anchor_hit})"
+
     # structured GREEN
-    if region in GREEN_REGIONS and biz_class in GREEN_BIZ_CLASS:
+    if tier is None and region in GREEN_REGIONS and biz_class in GREEN_BIZ_CLASS:
         tier = "green"
         positive_hit = f"structured GREEN ({region}/{biz_class})"
 
@@ -511,6 +570,11 @@ def classify(item: dict) -> tuple[str, dict]:
                 tier = "green"
                 positive_hit = f"인천 매칭 ({kw})"
                 break
+
+    # v7.2: AX 강매칭은 GREEN 판정 없을 때 ORANGE 보장
+    if tier is None and ax_strong_hit:
+        tier = "orange"
+        positive_hit = f"AX 포지셔닝 강매칭 ({ax_strong_hit})"
 
     # YELLOW
     if tier is None:
@@ -537,6 +601,20 @@ def classify(item: dict) -> tuple[str, dict]:
     if tier is None:
         tier = "red"
         positive_hit = "기본 제외 (긍정 매칭 없음)"
+
+    # v7.2: 돈 안 주는 이벤트성 공고는 GREEN/ORANGE → YELLOW 강등
+    if tier in ("green", "orange"):
+        for kw in SOFT_DOWNGRADE_TITLE_KW:
+            if kw in title_only:
+                original_tier = tier
+                tier = "yellow"
+                positive_hit = f"{positive_hit} / ⚠️ 이벤트성 '{kw}'로 {original_tier}→yellow 강등"
+                risks.append({
+                    "type": "soft_downgrade_event",
+                    "severity": "med",
+                    "msg": f"제목 '{kw}'는 사업비 없는 네트워킹/상담 이벤트일 가능성 — 공고 본문에서 사업비·바우처·시설제공 여부 확인",
+                })
+                break
 
     checks["positive_hit"] = {"pass": tier != "red", "detail": positive_hit or ""}
 
