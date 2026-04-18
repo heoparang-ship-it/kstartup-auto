@@ -153,6 +153,37 @@
   .deep-diff.high{background:var(--c-red-soft);color:var(--c-red)}
   .deep-next{padding:8px 10px;background:#fff;border:1px dashed var(--c-blue);font-weight:600;color:var(--c-blue)}
 
+  /* v4: 분류 체크리스트 (rule_checks) */
+  .deep-rules{display:grid;grid-template-columns:1fr 1fr;gap:2px 10px;font-size:11.5px;font-family:"SF Mono",Menlo,monospace}
+  .deep-rules .rule{display:flex;gap:4px;align-items:flex-start;line-height:1.5;padding:2px 0}
+  .deep-rules .rule.pass{color:#185c2f}
+  .deep-rules .rule.fail{color:#8f1818}
+  .deep-rules .rule .rk{font-weight:700;min-width:72px;text-transform:uppercase;letter-spacing:0.04em;font-size:10.5px;color:var(--muted)}
+  .deep-rules .rule .rv{flex:1;word-break:break-word}
+  .deep-rules .rule.fail .rv{font-weight:600}
+  @media(max-width:640px){.deep-rules{grid-template-columns:1fr}}
+
+  /* v4: 마스터팩 앵커 칩 */
+  .deep-anchor{display:inline-block;padding:2px 8px;background:#111;color:#fff;font-family:"SF Mono",Menlo,monospace;font-size:10.5px;font-weight:700;letter-spacing:0.04em;border-radius:3px;margin-left:6px;vertical-align:middle}
+
+  /* v4: 공고 원문 근거 인용 */
+  .deep-cite{padding:6px 10px;background:#fff;border-left:3px solid var(--c-yellow);font-style:italic;color:var(--fg);font-size:12px;line-height:1.5}
+  .deep-cite:before{content:"❝ ";color:var(--c-yellow);font-weight:700;font-style:normal}
+  .deep-cite:after{content:" ❞";color:var(--c-yellow);font-weight:700;font-style:normal}
+
+  /* v4: 주의사항 (risk_notes + risk_flags) */
+  .deep-risks{padding:6px 10px;background:var(--c-red-soft);border-left:3px solid var(--c-red);color:#7a1212}
+  .deep-risks ul{margin:0;padding-left:18px}
+  .deep-risks li{margin-bottom:2px}
+  .deep-flag{display:inline-block;padding:1px 6px;background:#fff;border:1px solid var(--c-red);color:var(--c-red);font-family:"SF Mono",Menlo,monospace;font-size:10px;font-weight:700;border-radius:3px;margin-right:4px;letter-spacing:0.04em}
+
+  /* v4: 사용된 모듈 footer */
+  .deep-modules{font-family:"SF Mono",Menlo,monospace;font-size:10px;color:var(--muted);letter-spacing:0.04em;padding-top:6px;border-top:1px dotted var(--line-soft);margin-top:4px}
+  .deep-modules .mod{display:inline-block;padding:1px 5px;background:var(--soft-bg);border:1px solid var(--line-soft);border-radius:2px;margin-right:3px}
+
+  /* v4: 단순 요약 (쿠키 없을 때 placeholder 개선) */
+  .deep-pending{color:var(--muted);font-size:11.5px;padding:6px 0;font-style:italic}
+
   /* Actions */
   .card-actions{display:flex;gap:5px;flex-wrap:wrap;margin-top:4px;padding-top:8px;border-top:1px dashed var(--line-soft)}
   .act-btn{background:var(--bg);border:1px solid var(--line);color:var(--fg);padding:4px 10px;font-size:11px;font-family:inherit;cursor:pointer;font-weight:500;border-radius:3px}
@@ -210,7 +241,7 @@
   </section>
 
   <footer>
-    <div>kstartup-auto v6 · GitHub Actions 평일 KST 09:00 + 18:00 자동 갱신 · nidview JSON 전수 스캔 · 사용자 상태는 브라우저(localStorage)에 저장</div>
+    <div>kstartup-auto v7 (founder-gov-radar) · GitHub Actions 평일 KST 09:00 + 18:00 자동 갱신 · nidview JSON 전수 스캔 · 마스터팩 기반 검토 가이드 · 사용자 상태는 브라우저(localStorage)에 저장</div>
     <div><a href="recommendations.json">raw data</a></div>
   </footer>
 </div>
@@ -246,7 +277,8 @@ function setStatus(id, status, item){
       status,
       snapshot: item ? {
         pbancSn:item.pbancSn, title:item.title, agency:item.agency, deadline:item.deadline,
-        tier:item.tier, note:item.note, url:item.url, deep_summary:item.deep_summary
+        tier:item.tier, note:item.note, url:item.url, deep_summary:item.deep_summary,
+        classify_evidence:item.classify_evidence
       } : (state.statuses[id]||{}).snapshot,
       moved_at_kst: new Date().toISOString()
     };
@@ -466,7 +498,55 @@ function renderCard(it){
   if(status === 'in_progress') statusBadge = '<span class="badge status-inprogress">▶ 진행중</span>';
   else if(status === 'completed') statusBadge = '<span class="badge status-completed">✓ 완료</span>';
 
-  // Deep summary
+  // ── Deep summary (v4: 마스터팩 근거 + 분류 체크리스트 + 주의사항) ──
+  const ev = it.classify_evidence || null;
+  let rulesHtml = '';
+  if(ev && ev.rule_checks){
+    const rkLabel = {
+      recruiting: '모집',
+      deadline: '마감',
+      region: '지역',
+      biz_enyy: '업력',
+      exclude_target: '대상',
+      industry: '업종',
+      qualification: '자격',
+      stage: '단계',
+      nature: '성격',
+      region_keyword: '지역어',
+      positive_hit: '매칭',
+    };
+    const primaryKeys = ['recruiting', 'deadline', 'region', 'biz_enyy', 'exclude_target'];
+    const rc = ev.rule_checks;
+    const rows = [];
+    // 주요 5개 항상 표시
+    for(const k of primaryKeys){
+      const v = rc[k];
+      if(!v) continue;
+      const pass = v.pass;
+      const cls = pass ? 'pass' : 'fail';
+      const icon = pass ? '✓' : '✗';
+      const val = v.detail || v.value || '';
+      rows.push(`<div class="rule ${cls}"><span>${icon}</span><span class="rk">${rkLabel[k]||k}</span><span class="rv">${esc(val)}</span></div>`);
+    }
+    // 나머지 중 fail인 것만 추가 표시 (제외 사유 가시화)
+    for(const [k, v] of Object.entries(rc)){
+      if(primaryKeys.includes(k)) continue;
+      if(!v || v.pass) continue;
+      const val = v.detail || v.value || '';
+      rows.push(`<div class="rule fail"><span>✗</span><span class="rk">${rkLabel[k]||k}</span><span class="rv">${esc(val)}</span></div>`);
+    }
+    rulesHtml = `
+      <div class="deep-section">
+        <div class="deep-h">▸ 분류 기준 (rule-based)</div>
+        <div class="deep-rules">${rows.join('')}</div>
+      </div>`;
+  }
+
+  let flagsHtml = '';
+  if(ev && Array.isArray(ev.risk_flags) && ev.risk_flags.length){
+    flagsHtml = ev.risk_flags.map(f => `<span class="deep-flag">${esc(f)}</span>`).join('');
+  }
+
   let deepHtml = '';
   if(it.deep_summary && typeof it.deep_summary === 'object'){
     const ds = it.deep_summary;
@@ -474,6 +554,28 @@ function renderCard(it){
     const diffMap = {low:'난이도 LOW', medium:'난이도 MED', high:'난이도 HIGH'};
     const strategies = Array.isArray(ds.strategy) ? ds.strategy.map(s => `<li>${esc(s)}</li>`).join('') : '';
     const checks = Array.isArray(ds.checkpoints) ? ds.checkpoints.map(s => `<li>${esc(s)}</li>`).join('') : '';
+    const anchor = ds.master_anchor ? `<span class="deep-anchor">📖 ${esc(ds.master_anchor)}</span>` : '';
+    const citeHtml = ds.evidence_quote ? `
+          <div class="deep-section">
+            <div class="deep-h">▸ 공고 원문 근거</div>
+            <div class="deep-cite">${esc(ds.evidence_quote)}</div>
+          </div>` : '';
+    const risks = Array.isArray(ds.risk_notes) ? ds.risk_notes : [];
+    const riskItems = risks.map(s => `<li>${esc(s)}</li>`).join('');
+    const risksHtml = (risks.length || flagsHtml) ? `
+          <div class="deep-section">
+            <div class="deep-h">▸ 주의사항</div>
+            <div class="deep-risks">
+              ${flagsHtml ? `<div style="margin-bottom:6px">${flagsHtml}</div>` : ''}
+              ${risks.length ? `<ul>${riskItems}</ul>` : ''}
+            </div>
+          </div>` : '';
+    const modsUsed = Array.isArray(ds._modules_used) ? ds._modules_used : [];
+    const modsHtml = modsUsed.length ? `
+          <div class="deep-modules">
+            주입된 마스터팩 모듈: ${modsUsed.map(m => `<span class="mod">${esc(m)}</span>`).join('')}
+          </div>` : '';
+
     deepHtml = `
       <div class="card-deep">
         <button class="deep-toggle ${open}" onclick="toggleDeep('${id}')">
@@ -481,10 +583,12 @@ function renderCard(it){
           <span>상세 검토 가이드</span>
         </button>
         <div class="deep-content ${open}" id="deep-${id}">
+          ${rulesHtml}
           <div class="deep-section">
-            <div class="deep-h">▸ 적합도 (Why)</div>
+            <div class="deep-h">▸ 적합도 (Why) ${anchor}</div>
             <div class="deep-fit">${esc(ds.fit||'')}</div>
           </div>
+          ${citeHtml}
           <div class="deep-section">
             <div class="deep-h">▸ 지원 전략</div>
             <ol class="deep-list">${strategies}</ol>
@@ -493,6 +597,7 @@ function renderCard(it){
             <div class="deep-h">▸ 체크포인트</div>
             <ul class="deep-list">${checks}</ul>
           </div>
+          ${risksHtml}
           <div class="deep-section">
             <span class="deep-diff ${ds.difficulty||'medium'}">${diffMap[ds.difficulty]||'난이도 MED'}</span>
           </div>
@@ -500,13 +605,26 @@ function renderCard(it){
             <div class="deep-h">▸ 다음 액션</div>
             <div class="deep-next">${esc(ds.next_action||'')}</div>
           </div>
+          ${modsHtml}
+        </div>
+      </div>`;
+  }else if(rulesHtml){
+    // deep_summary는 없지만 classify_evidence는 있을 때 — 최소한 분류 체크리스트라도 보여주기
+    const open = state.openDeeps[id] ? 'open' : '';
+    deepHtml = `
+      <div class="card-deep">
+        <button class="deep-toggle ${open}" onclick="toggleDeep('${id}')">
+          <span class="chev">▸</span>
+          <span>분류 근거 (상세 가이드 생성 대기중)</span>
+        </button>
+        <div class="deep-content ${open}" id="deep-${id}">
+          ${rulesHtml}
+          ${flagsHtml ? `<div class="deep-section"><div class="deep-h">▸ 주의신호</div><div>${flagsHtml}</div></div>` : ''}
+          <div class="deep-pending">💭 마스터팩 기반 상세 가이드는 다음 자동 갱신 때 생성됩니다 (Haiku)</div>
         </div>
       </div>`;
   }else{
-    // deep_summary가 아직 없음 — 다음 자동 갱신 시 생성됨을 알림
-    deepHtml = `<div class="card-deep" style="color:var(--muted);font-size:11.5px;padding:6px 0">
-      <em>💭 상세 가이드는 다음 자동 갱신 때 생성됩니다 (Haiku)</em>
-    </div>`;
+    deepHtml = `<div class="card-deep"><div class="deep-pending">💭 상세 가이드는 다음 자동 갱신 때 생성됩니다 (Haiku)</div></div>`;
   }
 
   return `<div class="card tier-${tier} status-${status} ${selected}" data-id="${id}">

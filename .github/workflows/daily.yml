@@ -5,7 +5,20 @@ on:
     # 평일(월~금) KST 09:00 + 18:00 (UTC 00:00, 09:00)
     # 토·일은 K-Startup 신규 공고 미갱신 → 제외
     - cron: '0 0,9 * * 1-5'
-  workflow_dispatch:  # 수동 실행 가능
+  workflow_dispatch:
+    inputs:
+      force_regenerate:
+        description: 'pool 전체 deep_summary 강제 재생성 (백필용, 비용 ~$0.3)'
+        required: false
+        default: 'false'
+        type: choice
+        options: ['false', 'true']
+      skip_crawl:
+        description: '크롤 스킵 (pool 재분류 + Haiku만 실행)'
+        required: false
+        default: 'false'
+        type: choice
+        options: ['false', 'true']
 
 permissions:
   contents: write
@@ -26,7 +39,14 @@ jobs:
       - name: Run update
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: python update.py
+          FORCE_REGEN: ${{ github.event.inputs.force_regenerate }}
+          SKIP_CRAWL: ${{ github.event.inputs.skip_crawl }}
+        run: |
+          ARGS=""
+          if [ "$FORCE_REGEN" = "true" ]; then ARGS="$ARGS --force-regenerate"; fi
+          if [ "$SKIP_CRAWL" = "true" ]; then ARGS="$ARGS --skip-crawl"; fi
+          echo "Running: python update.py $ARGS"
+          python update.py $ARGS
 
       - name: Commit & push changes
         run: |
