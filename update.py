@@ -37,6 +37,7 @@ HAIKU_MODEL = "claude-haiku-4-5-20251001"
 HAIKU_MAX_NEW_PER_RUN = 10            # 일반 실행: 신규 최대 10건
 HAIKU_MAX_BACKFILL_PER_RUN = 150      # --force-regenerate: 최대 150건
 HAIKU_TIMEOUT_S = 60
+HAIKU_MAX_TOKENS = 1400               # v7.2: 900→1400 — JSON 잘림 방지
 
 BASE_SYSTEM_PREFIX = """당신은 허파랑 대표(법인 XCom)의 정부지원사업 컨설턴트입니다.
 sinhon.life(B2C 신혼부부 라이프스타일 플랫폼)의 정체성·당사자성·플라이휠을 숙지한 상태로,
@@ -186,6 +187,22 @@ def prune_history(history: list, now_kst: datetime) -> list:
 
 
 # ── Haiku deep_summary 생성 ───────────────────────────────────
+def _format_risk_flags(flags):
+    """v7.2: risk_flags는 list[dict] 형식 ({type,severity,msg}). 표시용 문자열로 변환."""
+    out = []
+    for f in flags or []:
+        if isinstance(f, dict):
+            msg = f.get("msg") or f.get("type") or ""
+            sev = f.get("severity", "")
+            if sev:
+                out.append(f"[{sev}] {msg}")
+            else:
+                out.append(msg)
+        else:
+            out.append(str(f))
+    return out
+
+
 def _parse_json_response(text: str):
     raw = (text or "").strip()
     candidates = [raw]
@@ -220,8 +237,13 @@ def _parse_json_response(text: str):
         return None
     if not isinstance(data.get("strategy"), list) or not isinstance(data.get("checkpoints"), list):
         return None
-    if data.get("difficulty") not in ("low", "medium", "high"):
-        data["difficulty"] = "medium"
+    diff = str(data.get("difficulty", "")).strip().lower()
+    # easy/hard 동의어 허용 (Opus/Haiku 모델이 혼용)
+    diff_map = {"easy": "low", "쉬움": "low", "낮음": "low",
+                "medium": "medium", "보통": "medium", "중간": "medium",
+                "hard": "high", "어려움": "high", "높음": "high",
+                "low": "low", "high": "high"}
+    data["difficulty"] = diff_map.get(diff, "medium")
     # v4 신규 필드는 선택적 — 없으면 기본값
     data.setdefault("master_anchor", "")
     data.setdefault("evidence_quote", "")
@@ -248,13 +270,13 @@ def generate_deep_summary(client, item: dict, evidence: dict, manifest: dict):
         f"- 업력: {structured.get('biz_enyy', '')}\n"
         f"- 지원대상: {(structured.get('apply_target_desc', '') or '')[:300]}\n"
         f"- 카테고리 힌트: {', '.join(evidence.get('category_hints', []))}\n"
-        f"- 주의신호: {', '.join(evidence.get('risk_flags', []))}\n\n"
-        f"JSON만 응답하세요."
+        f"- 주의신호: {', '.join(_format_risk_flags(evidence.get('risk_flags', [])))}\n\n"
+        f"JSON만 응답하세요. 백틱(```)으로 감싸지 마세요. 응답은 반드시 { 로 시작해서 } 로 끝나야 합니다."
     )
     try:
         resp = client.messages.create(
             model=HAIKU_MODEL,
-            max_tokens=900,
+            max_tokens=HAIKU_MAX_TOKENS,
             system=system_prompt,
             messages=[{"role": "user", "content": user_msg}],
             timeout=HAIKU_TIMEOUT_S,
