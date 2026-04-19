@@ -1,12 +1,22 @@
-# 신혼생활 매칭 기준 (Single Source of Truth) — v2
+# 신혼생활 매칭 기준 (Single Source of Truth) — v3
 
 > 이 문서는 founder-gov-radar 스킬이 공고 티어를 판정하는 **유일한 기준 문서**입니다.
 > 기준을 바꾸려면 이 파일만 수정하세요. 다음 실행 시 전체 풀이 자동 재분류됩니다.
 
+> **v3 변경점 (2026-04-19)** — classify.py **v8.3** 짝
+> 1. **green 티어 감사 루틴 추가** — 5축 통과 후에도 agency / integrated_conditions /
+>    exclude_target을 한 번 더 스캔해 지자체 산하 의심 기관·행사성 공고·협소 대상을
+>    적발하면 yellow로 강등. `audit_flags[]`에 기록.
+> 2. **Region 축 agency 조기 차단** — `_is_local_agency_suspect()` 신규.
+>    (재)·재단법인·○○진흥원·테크노파크·창조경제혁신센터 패턴 + 비수도권 지역명이면
+>    `structured.region='전국'`이어도 orange로 덮어씀. 인천·국가기관 면제.
+> 3. **키워드 버전 스탬프** — classify.py 출력 `_meta.version` / `keywords_version` /
+>    `keyword_counts`와 이 profile.md `§키워드 카운트`가 일치해야 정상.
+>
 > **v2 변경점 (2026-04-19)**
-> 1. 🔴 티어 제거 → 모든 모집중 공고는 🟢/🟡/🟠 3티어에 전원 배치한다. (아이디어·리포지셔닝 풀 보존)
-> 2. 🟢 1순위는 "지원 확신도 최상" 공고만 남기도록 엄격화. 5축(지역·단계·업종·자금성격·자격) 모두 green이거나 1축만 yellow인 경우만.
-> 3. 기존 🔴 조건은 "어느 축이 orange인지"를 axis_scores/exclusion_flags에 기록하고 🟠 3순위로 내린다.
+> 1. 🔴 티어 제거 → 모든 모집중 공고는 🟢/🟡/🟠 3티어에 전원 배치한다.
+> 2. 🟢 1순위는 "지원 확신도 최상" 공고만 남기도록 엄격화. 5축 모두 green이거나 1축만 yellow.
+> 3. 기존 🔴 조건은 `axis_scores`/`exclusion_flags`에 기록하고 🟠 3순위로 내린다.
 > 4. 제외는 실제 마감·비모집만. (사용자가 아이디어를 낼 수 있도록 공고 자체는 남긴다.)
 
 ## 정체성 (매칭 컨텍스트)
@@ -67,6 +77,18 @@
 - **특수 자격**: 특별귀화 추천·여성전용·재학생 전용
 - **행사·인증·홍보 성격**: "설명회/간담회" 개최 공고, "벤처확인 인증준비", "언론 홍보 지원사업", "기술자료 임치" 등
 
+### 🟢 → 🟡 감사 강등 규칙 (v3 신규)
+
+5축 통과로 green 잠정 판정을 받아도, 아래 4개 범주 중 하나라도 걸리면 자동 yellow로 강등됩니다.
+`classify_evidence.audit_flags[]`에 기록되어 카드에서 사유 확인 가능.
+
+| 범주 | 체크 대상 필드 | 감지 패턴 예시 |
+|---|---|---|
+| **local_agency_suspect** | `agency` | (재)·재단법인·진흥원·테크노파크·창조경제혁신센터·창업보육센터·청년센터 (단 인천/창업진흥원/NIPA 등 국가기관은 면제) |
+| **event_suspect** | `integrated_conditions`, `integrated_name` | "설명회 개최", "간담회 개최", "포럼 개최", "세미나 개최", "기념식", "시상식", "성과공유회" |
+| **narrow_target_suspect** | `apply_target_desc`, `exclude_target` | "재학 중인 대학(원)생", "시민만", "구민만", "여성만", "외국인등록증 소지자", "체류자격 F-" |
+| **disguised_funding** | combined_audit + `apply_target_desc` | "인증 취득 지원", "인증서 발급", "기술임치 계약", "언론 보도 지원", "PR 지원" |
+
 ### 유틸리티 규칙
 - R&D 공고는 industry=yellow(하드웨어 리스크 표시)로 통과시키되, title에 "R&D/기술개발" 포함 시 risk_flag로 경고
 - exclude_target 장문(120자+)은 qualification=yellow + risk_flag
@@ -79,8 +101,29 @@
 - "초창패" = 초기창업패키지 (트랙 A 핵심 타겟)
 - "positive_strong" = 🟢 진입 선행 조건
 - "all_axes_green" = 5축 모두 green
+- "audit_flags" = v3 신규, green → yellow 강등 사유 기록 배열
+
+## 키워드 카운트 (v3 — classify.py v8.3와 싱크 필수)
+
+`recommendations.json._meta.keyword_counts`와 이 섹션이 **일치**해야 분류기가 기대대로 동작합니다.
+매주 일요일 자동 감사 태스크가 이 카운트를 비교하고, 불일치 시 경고합니다.
+
+| 키워드 그룹 | 기대 카운트 (v8.3 / 2026-04-19) | 용도 |
+|---|---|---|
+| RED_REGIONS_EXCLUSIVE | 23 | 비수도권 시/도 이름 (orange) |
+| GYEONGGI_CITIES_EXCLUSIVE | 29 | 경기 시/군 단독 (orange) |
+| RED_INDUSTRY | 89 | 부적합 업종 (orange) |
+| RED_QUALIFICATION | 36 | 자격 한정 (orange) |
+| RED_STAGE | 16 | 업력 초과·재창업 등 (orange) |
+| RED_NATURE | 59 | 행사·인증·홍보·수행기관 모집 (orange) |
+| RED_SEOUL_FACILITY | 22 | 서울 전담 시설/기관 (orange) |
+| GREEN_KEYWORDS_TITLE_ONLY | 10 | TIPS·창업패키지 등 (🟢 진입 트리거) |
+| GREEN_INCHEON | 12 | 인천 기관 (🟢 진입 트리거) |
+| YELLOW_KEYWORDS | 30 | 검토 가능 키워드 (🟡) |
+| ORANGE_KEYWORDS | 20 | AI 리포지셔닝 키워드 (🟠) |
 
 ## 변경 이력
 
+- **2026-04-19 v3**: green 감사 루틴 추가, Region 축 agency 조기 차단, 버전 스탬프. classify_v8.py **v8.3** 짝.
 - **2026-04-19 v2**: 🔴 제거, 3티어 전원 수용, 5축 점수 체계 도입. classify_v8.py가 짝.
 - **2026-04-18 v1**: 초기 작성. 🔴 제외 기반 4티어 스킴.
