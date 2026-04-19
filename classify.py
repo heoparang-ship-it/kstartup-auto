@@ -1,30 +1,27 @@
 #!/usr/bin/env python3
 """
-K-Startup 공고 자동 분류기 v7.2 — false-red 교정판
-────────────────────────────────────────────────
-v7 대비 개선 (2026-04-19, 허파랑 false-red 감사 반영):
-1. RED_INDUSTRY 슬림화 — 오탐 유발하던 광범위 키워드 제거
-   · "디바이스" 제거: "디바이스·플랫폼", "AI 디바이스" 등 적용 영역 예시로
-     쓰이는 경우가 많음. 대신 `디바이스 전용` 같은 한정 문맥만 별도 처리.
-   · "그린", "탄소중립", "ESG산업" 제거: 최근 공고는 "가점부여/우대/우선선정"
-     맥락으로 언급하는 경우가 다수. 가점은 한정이 아님.
-2. RED_INDUSTRY 보강 — 돈 안 주는 이벤트성·기술이전 중심 공고 잡기
-   · "생물자원", "국립생물자원관", "해양수산자원" 추가 (간담회 false-green 재발 방지)
-3. SOFT_DOWNGRADE_TITLE_KW 신설 — 제목에 "간담회", "네트워킹 데이",
-   "컨설팅 데이"가 있으면 RED가 아니라 GREEN→YELLOW로 강등 + 리스크 플래그.
-   단 "설명회"는 포함하지 않음 (모두의 창업 설명회 유지).
-4. INCHEON_ANCHOR_AGENCIES 신설 — 인천창조경제혁신센터/인천테크노파크/
-   인천스타트업파크 공고는 적용 영역 언급(예: "탄소중립")에 구애받지 않고 GREEN.
-   단 단계 RED(재도전/스케일업)는 여전히 우선.
-5. AX_STRONG_KEYWORDS 신설 — 제목에 "AX", "AI 버티컬", "AI Vertical",
-   "AI 수직화"가 있으면 업종 RED 우회 후 ORANGE 보장.
-   profile.md의 🟠 AX 포지셔닝 트랙과 일치.
-이 5개 패치는 2026-04-19 허파랑 "내가 할만한 사업이 빨간색으로 넘어갔을까"
-감사에서 발견된 [4] ICCE 창업스쿨(탄소중липом 오탐)·[3] AX-버티컬(디바이스 오탐)·
-생물자원 간담회(false-green) 3건을 동시에 해결.
+K-Startup 공고 자동 분류기 v8 — 3티어 전원 수용 + 1순위 정밀화
+════════════════════════════════════════════════════════════════
 
-입력: crawl_v6.py 출력(JSON 배열, structured 필드 포함)
-출력: recommendations.json 호환 포맷 (evidence 스키마 유지)
+v7 대비 변경점:
+1. **red 제거**: 마감·비모집만 실제 필터, 나머지는 전원 green/yellow/orange에 배치.
+   → 사용자가 "존재하는 공고를 임의로 없애지말고 아이디어 낼 수 있으니 남겨달라" 요청 반영.
+2. **1순위(green) 엄격화**: 지역·단계·업종·자금성격·자격 5축이 모두 부합 + 긍정 키워드 매칭된 공고만.
+3. **3순위(orange) 확장**: 기존 red 포함 — 업종 한정·서울 단독·여성전용 등도 orange에 수용.
+   각 항목에 exclusion_flags[]로 "왜 3순위인지" 구조화해 카드에서 표시.
+4. **axis_scores**: 5축 점수(green=0, yellow=1, orange=2) 반환 → UI에서 배지 렌더링.
+5. classify() 반환 스키마:
+   (tier, {
+     summary_reason, category_hints,
+     rule_checks (기존 유지, read-only),
+     risk_flags,
+     axis_scores: {region, stage, industry, nature, qualification},
+     exclusion_flags: [{axis, severity, msg}],
+     tier_logic: "green/yellow/orange 결정 이유 한줄"
+   })
+
+입력: crawl_v6.py / update.py가 넘기는 item dict (structured 포함)
+출력: classify()는 (tier, evidence) 튜플. 스크립트로 돌리면 recommendations.json 생성.
 """
 from __future__ import annotations
 
@@ -37,91 +34,49 @@ KST = timezone(timedelta(hours=9))
 TODAY = datetime.now(KST).strftime("%Y-%m-%d")
 
 # ══════════════════════════════════════════════════════════════
-# 구조화 필드 필터 세트 (nidview API 값 기반)
+# 공통 상수 (v7에서 재사용)
 # ══════════════════════════════════════════════════════════════
 
 GREEN_REGIONS = {"전국", "인천"}
-
 RED_REGIONS_EXCLUSIVE = {
     "부산", "대구", "대전", "광주", "울산", "세종",
     "강원", "충북", "충남", "전북", "전남",
     "경북", "경남", "제주",
+    # v8.2: 전체 도 이름 (agency·integrated_name에 "전라남도","경상북도" 등으로 자주 등장)
+    "전라남도", "전라북도", "경상남도", "경상북도",
+    "충청남도", "충청북도", "강원도", "제주도", "제주특별",
 }
-
-RED_BIZ_CLASS: set[str] = set()
-
 GREEN_BIZ_CLASS = {"사업화", "정책자금", "융자ㆍ보증"}
 YELLOW_BIZ_CLASS = {"멘토링ㆍ컨설팅ㆍ교육", "시설ㆍ공간ㆍ보육", "창업교육",
                     "기술개발(R&D)", "기술개발(R&amp;D)", "인력",
                     "판로ㆍ해외진출", "글로벌"}
-
 ACCEPTABLE_BIZ_ENYY = {
     "예비창업자", "1년미만", "2년미만", "3년미만",
     "5년미만", "7년미만", "10년미만",
 }
-
-# ══════════════════════════════════════════════════════════════
-# 문자열 매칭 키워드 (all-fields 대상)
-# ══════════════════════════════════════════════════════════════
-
-# 업종 한정(제조·하드웨어·특정 산업) — title/agency/desc 어디 나와도 RED
 RED_INDUSTRY = [
-    # 하드웨어·제조
     "반도체", "팹리스", "3D프린팅", "3D 프린팅", "3D프린터", "3D 프린터",
     "3D모델링", "3D 모델링", "시제품 제작", "시작품 제작", "시제품제작",
     "시작품제작", "후가공", "금형", "메이커", "프로토타입",
     "FAB", "3D-FAB", "MFG",
-    # 바이오·의료 (⚠️ "디바이스"는 v7.2에서 제거 — "디바이스·플랫폼"/"AI 디바이스" 오탐)
     "바이오", "제약", "신약", "의약품", "의료기기", "의료", "메디컬", "헬스케어",
-    "웰니스",
-    # 자연자원·기술이전 중심 (v7.2 추가 — 생물자원 간담회 false-green fix)
-    "생물자원", "국립생물자원관", "해양수산자원", "유전자원",
-    # 1차산업·식품
+    "웰니스", "디바이스",
     "농업", "농식품", "수산", "축산", "농생명", "스마트팜", "식품",
-    # 에너지·중공업
     "에너지", "방산", "로봇", "항공우주", "원자력", "조선", "화학", "철강",
     "자동차부품", "UAM", "우주", "위성",
-    # 관광·엔터테인먼트
     "관광", "게임", "e스포츠", "스포츠산업",
-    # 공예·전통
     "가구", "세라믹", "패션", "전통문화", "전통시장", "전통주", "한복", "뷰티",
     "화장품", "섬유",
-    # 건설·부동산
     "건설", "건축", "부동산",
-    # 물류
     "해운물류", "물류", "유통", "프랜차이즈",
-    # ⚠️ v7.2: "그린"/"탄소중립"/"ESG산업"은 제거 — 가점부여/우대 맥락으로 쓰이는 경우 많음
-    # 산업 한정이 필요한 경우에만 아래 명시 키워드 사용
-    "탄소중립 전용", "ESG 전용", "그린산업 전용",
-    # 모빌리티
+    "그린", "탄소중립", "ESG산업",
     "모빌리티", "자율주행", "드론",
-    # 가상자산·블록체인
     "메타버스", "블록체인", "NFT", "Web3", "핀테크",
-    # 스마트공장
     "스마트공장",
+    # v8.2: 딥테크 특수 도메인 (허파랑 팀 SaaS·콘텐츠와 부합 낮음)
+    "양자컴퓨팅", "양자 컴퓨팅", "Quantum", "quantum",
+    "양자기술", "양자 기술", "양자암호", "양자센싱",
 ]
-
-# v7.2 신설 — 제목에 포함되면 GREEN을 YELLOW로 강등하는 "돈 안 주는 이벤트" 키워드
-# "설명회"는 모두의 창업 설명회 같은 유용 이벤트라 제외
-SOFT_DOWNGRADE_TITLE_KW = [
-    "간담회", "네트워킹 데이", "컨설팅 데이", "오픈데이",
-]
-
-# v7.2 신설 — 인천 앵커 기관은 apply_target_desc/content의 적용 영역 언급을 무시하고 GREEN
-# profile.md의 "인천 지역 전용 공고 + 업종 제한 없음" 규칙 반영
-INCHEON_ANCHOR_AGENCIES = [
-    "인천창조경제혁신센터", "인천테크노파크", "인천스타트업파크", "ICCE",
-    "인천TP",
-]
-
-# v7.2 신설 — 제목/기관에 있으면 업종 RED를 우회해 최소 ORANGE 보장
-# profile.md의 🟠 "AX 버티컬, LLM, AI대전환, AI 바우처" 트랙과 일치
-AX_STRONG_KEYWORDS = [
-    "AX", "AX-버티컬", "AX - 버티컬", "AX 버티컬",
-    "AI 버티컬", "AI버티컬", "AI Vertical", "AI 수직화",
-    "AI 대전환", "AI대전환",
-]
-
 RED_QUALIFICATION = [
     "OASIS", "이민자", "외국인", "여성전용", "여성창업", "여성기업",
     "제대군인", "자립청년", "소상공인전용",
@@ -130,18 +85,16 @@ RED_QUALIFICATION = [
     "고졸전형", "특성화고", "마이스터고",
     "농업인", "어업인", "임업인",
     "사회적기업가 육성", "협동조합 전용", "마을기업 전용", "자활기업",
+    # v8.2: 특수신분·귀화·학생 한정
+    "특별귀화", "귀화 추천", "우수인재 특별", "해외 우수인재",
+    "재학생 전용", "대학(원)생 전용", "학부생 전용",
 ]
-# ⚠️ "다문화"/"사회적기업"은 단독 키워드로는 RED로 보지 않는다
-#    — 공고에 "다문화 대응"·"사회적기업 우대" 정도로 쓰이면 오히려 M08 이벤트 트랙과 매치.
-#    단, "다문화가정 전용"·"사회적기업가 육성" 같이 명시적 전용 공고만 RED.
-
 RED_STAGE = [
     "후속지원", "Series A", "Series B", "Series C", "IPO",
     "수출실적", "업력 3년 초과", "업력 5년 초과", "업력 7년 초과",
     "재도전", "재창업", "도약패키지", "성장도약",
     "스케일업", "scale-up", "Scale-Up",
 ]
-
 RED_NATURE = [
     "수행기관", "수행사", "운영기관 모집", "위탁운영",
     "B2G", "공공시장 진출", "공공조달", "조달시장",
@@ -155,9 +108,15 @@ RED_NATURE = [
     "투자조합 결성", "출자기관",
     "우수기업 인증", "인증심사", "적합성 인증",
     "특허출원", "특허등록",
+    # v8.2: 자금 지원이 아닌 행사·인증·홍보 (★ green 진입 차단용)
+    "설명회", "간담회", "세미나 개최", "포럼 개최", "투자설명회",
+    "벤처확인", "벤처인증", "인증준비", "이노비즈 인증", "메인비즈",
+    "언론 홍보", "언론홍보", "홍보 지원사업", "언론 보도", "보도자료 지원",
+    "KBI", "홍보영상 제작", "광고 제작 지원",
+    # v8.2: 기술임치·자문·알림 서비스 (자금 지원 아님)
+    "기술임치", "기술자료 임치", "임치 계약", "임치 지원",
+    "통합공고 요약", "알림신청", "알림 신청", "무상 제공", "무료로 제공",
 ]
-
-# exclude_target(신청 제외 대상) 문구 중 제조업 한정 시그널
 EXCLUDE_TARGET_MFG_SIGNALS = [
     "제품의 개발, 생산 및 양산",
     "제품·부품의 개발, 생산 및 양산",
@@ -170,7 +129,6 @@ EXCLUDE_TARGET_MFG_SIGNALS = [
     "제조업 한정",
     "양산을 목적",
 ]
-
 SEOUL_25_GU = [
     "강남구", "서초구", "관악구", "은평구", "노원구", "동작구",
     "성북구", "성동구", "마포구", "용산구", "종로구",
@@ -178,15 +136,23 @@ SEOUL_25_GU = [
     "구로구", "금천구", "도봉구", "강북구", "중랑구",
     "강서구", "강동구", "송파구",
 ]
-
 RED_SEOUL_FACILITY = [
     "서울창업허브", "서울 입주", "성수 입주", "마포 입주", "강남 입주",
     "서울 소재", "서초 소재", "성수동", "역삼동", "선릉",
-    "판교", "성남", "파주",
     "서울숲", "합정", "홍대입구", "신촌",
     "서울 캠퍼스", "서울캠퍼스",
+    # v8.2: 서울 전담 기관 (agency에서 자주 등장)
+    "서울경제진흥원", "서울산업진흥원", "SBA", "서울시청",
+    "서울특별시", "서울시 경제정책실",
 ]
-
+# v8.2: 경기도 시/군 단독 — 허파랑 팀 인천 본거지와 무관
+GYEONGGI_CITIES_EXCLUSIVE = [
+    "수원", "성남", "고양", "용인", "부천", "안산", "안양",
+    "남양주", "화성", "평택", "의정부", "시흥", "파주", "광명",
+    "김포", "광주시", "군포", "오산", "하남", "이천", "안성",
+    "의왕", "양주", "구리", "포천", "여주",
+    "판교", "동탄", "광교",
+]
 SEOUL_UNIVERSITY = [
     "서울대", "연세대", "고려대", "성균관대", "한양대학교 서울",
     "이화여대", "중앙대", "경희대학교 서울", "한국외대", "건국대",
@@ -196,13 +162,7 @@ SEOUL_UNIVERSITY = [
     "서울여대", "성공회대", "총신대", "서강대", "가톨릭대",
 ]
 
-# ══════════════════════════════════════════════════════════════
-# 긍정 키워드
-# ⚠️ TITLE_ONLY 그룹은 title + integrated_name + agency 에서만 매칭한다.
-#    apply_target_desc ("예비창업자, 스타트업, 중소기업") 에 걸리면 오탐.
-# ══════════════════════════════════════════════════════════════
-
-# title/integrated_name/agency 에서만 매칭 (apply_target_desc 제외)
+# 긍정 매칭 (green 타이어 요구조건)
 GREEN_KEYWORDS_TITLE_ONLY = [
     "예비창업패키지", "초기창업패키지",
     "예비창업", "초기창업",
@@ -210,15 +170,12 @@ GREEN_KEYWORDS_TITLE_ONLY = [
     "유니콘 브릿지", "유니콘브릿지",
     "K-Startup 챌린지", "K-스타트업 챌린지",
 ]
-
-# 인천 관련은 어느 필드에 나오든 GREEN
 GREEN_INCHEON = [
     "인천창조경제혁신센터", "인천테크노파크", "인천스타트업파크",
     "남동구", "인천 청년", "인천창업",
     "인천글로벌스케일업", "ICCE", "인천TP",
     "연수구 창업", "미추홀", "인천경제자유구역",
 ]
-
 YELLOW_KEYWORDS = [
     "액셀러레이팅", "액셀러레이터", "청년창업", "IP디딤돌", "IP 디딤돌",
     "콘텐츠", "IT", "디지털", "플랫폼", "SaaS", "B2C",
@@ -230,7 +187,6 @@ YELLOW_KEYWORDS = [
     "마케팅바우처", "마케팅 바우처",
     "임팩트", "소셜벤처", "소셜 벤처",
 ]
-
 ORANGE_KEYWORDS = [
     "AX", "LLM", "AI대전환", "AI 대전환", "AI바우처", "AI 바우처",
     "AI 실증", "인공지능", "클라우드", "데이터",
@@ -240,7 +196,6 @@ ORANGE_KEYWORDS = [
     "생성형 AI", "생성형AI", "GenAI",
 ]
 
-# Haiku 모듈 라우팅 힌트 (카테고리 감지 → 주입할 M-모듈 선택)
 CATEGORY_HINT_MAP = {
     "ai": ["AI", "AX", "LLM", "인공지능", "AI바우처", "AI 바우처", "생성형", "딥테크", "클라우드"],
     "content": ["콘텐츠", "미디어", "방송", "1인미디어", "크리에이터", "문체부", "콘텐츠진흥"],
@@ -253,19 +208,15 @@ CATEGORY_HINT_MAP = {
 
 
 # ══════════════════════════════════════════════════════════════
-# 분류 헬퍼
+# 헬퍼
 # ══════════════════════════════════════════════════════════════
 
 def _title_text(item: dict) -> str:
-    """title/integrated_name/agency 만 결합 (apply_target_desc 제외)."""
     s = item.get("structured", {}) or {}
     return f"{item.get('title','')} {s.get('integrated_name','')} {item.get('agency','')}"
 
 
 def _all_text(item: dict) -> str:
-    """title + agency + apply_target_desc + integrated_name 결합.
-    ⚠️ content/exclude_target은 제외 (너무 많은 false positive).
-    """
     s = item.get("structured", {}) or {}
     return (
         f"{item.get('title','')} {item.get('agency','')} "
@@ -273,18 +224,14 @@ def _all_text(item: dict) -> str:
     )
 
 
-def detect_category_hints(item: dict) -> list[str]:
-    """Haiku 모듈 선택용 카테고리 힌트 리스트."""
+def detect_category_hints(item: dict) -> list:
     text = _all_text(item)
     s = item.get("structured", {}) or {}
     biz_class = (s.get("biz_class") or "").strip()
-
     hints = []
     for cat, kws in CATEGORY_HINT_MAP.items():
         if any(kw in text for kw in kws):
             hints.append(cat)
-
-    # biz_class 기반 보강
     if biz_class in GREEN_BIZ_CLASS:
         if "budget" not in hints:
             hints.append("budget")
@@ -294,389 +241,355 @@ def detect_category_hints(item: dict) -> list[str]:
     if "R&D" in biz_class or "R&amp;D" in biz_class or "기술개발" in biz_class:
         if "rnd" not in hints:
             hints.append("rnd")
-
     return hints
 
 
-def _check_struct_recruiting(s: dict) -> tuple[bool, str]:
-    if s.get("recruiting") is False:
-        return False, "모집 종료 (recruiting=N)"
-    return True, ""
+# ══════════════════════════════════════════════════════════════
+# 5축 점수 계산
+# ══════════════════════════════════════════════════════════════
 
+def _score_region(item: dict, combined: str, struct_region: str) -> tuple[str, str]:
+    """region 축 점수. (level, detail)
 
-def _check_struct_deadline(s: dict) -> tuple[bool, str]:
-    end = s.get("end_date") or ""
-    if end and end < TODAY:
-        return False, f"마감일 경과 ({end})"
-    return True, ""
-
-
-def _check_struct_region(s: dict) -> tuple[bool, str]:
-    region = (s.get("region") or "").strip()
-    if region in RED_REGIONS_EXCLUSIVE:
-        return False, f"지역 한정 ({region})"
-    return True, ""
-
-
-def _check_struct_biz_enyy(s: dict) -> tuple[bool, str]:
-    enyy = (s.get("biz_enyy") or "").strip()
-    if not enyy:
-        return True, "(biz_enyy 비어있음)"
-    parts = {p.strip() for p in enyy.split(",") if p.strip()}
-    if parts and not (parts & ACCEPTABLE_BIZ_ENYY):
-        return False, f"업력 불일치 ({enyy})"
-    matched = parts & ACCEPTABLE_BIZ_ENYY
-    return True, f"업력 허용 매칭 ({','.join(sorted(matched))})"
-
-
-def _check_struct_exclude_target(s: dict) -> tuple[bool, str]:
-    """신청 제외 대상 체크.
-    단순 키워드(대기업/중견기업/공공기관/휴·폐업)와 제조업 한정 시그널을 함께 감지.
+    v8.1 강화:
+    - agency("(재)부산디자인진흥원" 등 지자체 재단) + 비수도권 지역명 → orange
+    - apply_target_desc의 "○○ 소재"/"○○ 관내"/"○○ 사업장" + 비수도권 → orange
+    - structured.region == "전국"이라도 agency/desc에서 지역 한정이 드러나면 덮어쓴다
     """
-    excl = (s.get("exclude_target") or "").strip()
-    if not excl:
-        return True, ""
-    # 명시적 제외 키워드
-    for kw in ("대기업", "중견기업", "공공기관 재직자", "휴·폐업", "휴폐업"):
-        if kw in excl:
-            return False, f"제외대상 명시 ({kw})"
-    # 제조업 한정 시그널
-    for kw in EXCLUDE_TARGET_MFG_SIGNALS:
-        if kw in excl:
-            return False, f"제조업 한정 ({kw[:20]}...)"
-    return True, ""
+    s = item.get("structured", {}) or {}
+    agency = item.get("agency", "") or ""
+    desc = (s.get("apply_target_desc", "") or "")[:400]
+    integrated = s.get("integrated_name", "") or ""
 
-
-def _check_keyword_industry(combined: str) -> tuple[bool, str]:
-    for kw in RED_INDUSTRY:
+    # 🟢 green: 인천 관련 키워드 어디든 있으면 최우선
+    for kw in GREEN_INCHEON:
         if kw in combined:
-            return False, f"업종 한정 ({kw})"
-    return True, ""
+            return "green", f"인천 매칭 ({kw})"
 
+    # 🟠 agency/desc에서 비수도권 지역 한정 감지 (structured.region="전국" 덮어씀)
+    for region_kw in RED_REGIONS_EXCLUSIVE:
+        # agency에 "(재)○○진흥원", "○○테크노파크" 등
+        if region_kw in agency:
+            return "orange", f"기관 지역 한정 (agency: {agency[:30]})"
+        # desc에 "○○ 소재", "○○ 관내", "○○에 사업장"
+        patterns = [f"{region_kw} 소재", f"{region_kw}에 사업", f"{region_kw} 관내",
+                    f"{region_kw} 지역", f"{region_kw}광역시", f"{region_kw}시 소재",
+                    f"{region_kw}도 소재"]
+        for pat in patterns:
+            if pat in desc or pat in integrated:
+                return "orange", f"지역 한정 desc: '{pat}'"
+        # integrated_name에 지역명 포함 + 전국이 안 들어감
+        if region_kw in integrated and "전국" not in integrated:
+            return "orange", f"사업명에 지역 포함 ({region_kw})"
 
-def _check_keyword_qualification(combined: str) -> tuple[bool, str]:
-    for kw in RED_QUALIFICATION:
-        if kw in combined:
-            return False, f"자격 한정 ({kw})"
-    return True, ""
+    # v8.2: 경기도 시/군 단독 (agency 또는 사업명에 포함) — struct_region="전국" 덮어씀
+    for city in GYEONGGI_CITIES_EXCLUSIVE:
+        if city in agency:
+            return "orange", f"경기 시 기관 ({city} in agency)"
+        # 사업명이나 desc에 도시명이 들어 있고, 전국 키워드 없음
+        city_patterns = [f"{city}시 소재", f"{city} 소재", f"{city}시 창업",
+                         f"{city}시 청년", f"{city}시 사업장", f"{city}시 관내"]
+        for pat in city_patterns:
+            if pat in desc or pat in integrated:
+                return "orange", f"경기 시 한정 desc: '{pat}'"
 
+    # structured.region 기반 green/orange
+    if struct_region in GREEN_REGIONS:
+        # structured가 전국/인천이어도 agency에서 걸렸으면 위에서 orange됐을 것
+        return "green", f"지역 허용 (structured={struct_region})"
 
-def _check_keyword_stage(combined: str) -> tuple[bool, str]:
-    for kw in RED_STAGE:
-        if kw in combined:
-            return False, f"단계 불일치 ({kw})"
-    return True, ""
-
-
-def _check_keyword_nature(combined: str) -> tuple[bool, str]:
-    for kw in RED_NATURE:
-        if kw in combined:
-            return False, f"성격 불일치 ({kw})"
-    return True, ""
-
-
-def _check_region_keyword(combined: str, struct_region: str) -> tuple[bool, str]:
-    """서울/경기 단독 판정."""
+    # 🟠 서울 단독 계열
     for kw in RED_SEOUL_FACILITY:
         if kw in combined:
-            return False, f"서울 시설/지자체 ({kw})"
+            return "orange", f"서울 시설/지자체 ({kw})"
     for gu in SEOUL_25_GU:
         if gu in combined:
-            return False, f"서울 구 단독 ({gu})"
+            return "orange", f"서울 구 단독 ({gu})"
     for uni in SEOUL_UNIVERSITY:
         if uni in combined:
-            return False, f"서울 대학 ({uni})"
-
-    if struct_region in GREEN_REGIONS:
-        return True, f"지역 허용 (structured={struct_region})"
-
+            return "orange", f"서울 대학 ({uni})"
+    if struct_region in RED_REGIONS_EXCLUSIVE:
+        return "orange", f"지역 한정 ({struct_region})"
     if "서울" in combined:
         for safe in ("오픈이노베이션", "온라인", "비대면", "화상", "전국"):
             if safe in combined:
-                return True, f"서울 언급 있으나 {safe} 포함"
-        return False, "서울 단독 (인천 미포함)"
+                return "yellow", f"서울 언급 있으나 {safe} 포함"
+        return "orange", "서울 단독 (인천 미포함)"
     if "경기" in combined and "인천" not in combined:
-        return False, "경기 단독 (인천 미포함)"
-    return True, ""
+        return "orange", "경기 단독 (인천 미포함)"
+    # v8.2: combined 전체에서 경기 시 단독 잡기 (agency/integrated 외에도 title 전체)
+    for city in GYEONGGI_CITIES_EXCLUSIVE:
+        if city in combined and "인천" not in combined and "전국" not in combined:
+            return "orange", f"경기 시 단독 combined ({city})"
+    return "yellow", "지역 정보 애매"
+
+
+def _score_stage(item: dict, combined: str) -> tuple[str, str]:
+    s = item.get("structured", {}) or {}
+    enyy = (s.get("biz_enyy") or "").strip()
+    # orange: 후속지원·재창업·업력 초과 등
+    for kw in RED_STAGE:
+        if kw in combined:
+            return "orange", f"단계 불일치 ({kw})"
+    # green: biz_enyy가 허용 범위
+    if enyy:
+        parts = {p.strip() for p in enyy.split(",") if p.strip()}
+        if parts & ACCEPTABLE_BIZ_ENYY:
+            matched = parts & ACCEPTABLE_BIZ_ENYY
+            return "green", f"업력 허용 ({','.join(sorted(matched))})"
+        else:
+            return "orange", f"업력 불일치 ({enyy})"
+    # enyy 비었을 때 → 키워드로 판정
+    if any(kw in combined for kw in ("예비창업", "초기창업", "7년 이내", "7년이내")):
+        return "green", "키워드 단계 매칭"
+    # 기본 yellow (애매)
+    return "yellow", "단계 정보 없음"
+
+
+def _score_industry(item: dict, combined: str) -> tuple[str, str]:
+    # orange: 업종 한정
+    for kw in RED_INDUSTRY:
+        if kw in combined:
+            return "orange", f"업종 한정 ({kw})"
+    s = item.get("structured", {}) or {}
+    # exclude_target에 제조업 한정 시그널
+    excl = (s.get("exclude_target") or "").strip()
+    for kw in EXCLUDE_TARGET_MFG_SIGNALS:
+        if kw in excl:
+            return "orange", f"제조업 한정 exclude_target ({kw[:20]})"
+    # R&D 공고: 하드웨어 리스크 있지만 업종 한정은 아님 → yellow
+    biz_class = (s.get("biz_class") or "").strip()
+    if "R&D" in biz_class or "R&amp;D" in biz_class or "기술개발" in biz_class:
+        return "yellow", f"R&D 공고 — 하드웨어 리스크 ({biz_class})"
+    return "green", "업종 제한 없음"
+
+
+def _score_nature(item: dict, combined: str) -> tuple[str, str]:
+    # orange: 수행기관·멘토모집·입찰·B2G 등 (애초에 지원하는 공고가 아님)
+    for kw in RED_NATURE:
+        if kw in combined:
+            return "orange", f"성격 불일치 ({kw})"
+    s = item.get("structured", {}) or {}
+    biz_class = (s.get("biz_class") or "").strip()
+    if biz_class in GREEN_BIZ_CLASS:
+        return "green", f"직접 자금성 ({biz_class})"
+    if biz_class in YELLOW_BIZ_CLASS:
+        return "yellow", f"간접 지원성 ({biz_class})"
+    return "yellow", f"성격 분류 애매 (biz_class='{biz_class}')"
+
+
+def _score_qualification(item: dict, combined: str) -> tuple[str, str]:
+    s = item.get("structured", {}) or {}
+    excl = (s.get("exclude_target") or "").strip()
+    # orange: 자격 한정
+    for kw in RED_QUALIFICATION:
+        if kw in combined:
+            return "orange", f"자격 한정 ({kw})"
+    # orange: exclude_target에 명시적 제외
+    for kw in ("대기업", "중견기업", "공공기관 재직자", "휴·폐업", "휴폐업"):
+        if kw in excl:
+            return "orange", f"제외대상 명시 ({kw})"
+    # yellow: exclude_target이 길면 조심
+    if excl and len(excl) > 120:
+        return "yellow", f"exclude_target 장문 ({len(excl)}자)"
+    return "green", "자격 제한 없음"
 
 
 # ══════════════════════════════════════════════════════════════
-# 메인 분류 로직
+# 메인 분류
 # ══════════════════════════════════════════════════════════════
 
 def classify(item: dict) -> tuple[str, dict]:
-    """
-    공고 1건 분류 → (tier, evidence_dict).
-    evidence_dict 스키마:
-      {
-        "summary_reason": str,             # 한 줄 사유 (legacy note 호환)
-        "category_hints": [str, ...],      # 모듈 라우팅용
-        "rule_checks": {                   # 표로 렌더링
-          "region":        {"pass": bool, "value": str, "detail": str},
-          "deadline":      {"pass": bool, "value": str, "detail": str},
-          "biz_enyy":      {"pass": bool, "value": str, "detail": str},
-          "exclude_target":{"pass": bool, "value": str, "detail": str},
-          "industry":      {"pass": bool, "detail": str},
-          "qualification": {"pass": bool, "detail": str},
-          "stage":         {"pass": bool, "detail": str},
-          "nature":        {"pass": bool, "detail": str},
-          "region_keyword":{"pass": bool, "detail": str},
-          "positive_hit":  {"pass": bool, "detail": str},
-        },
-        "risk_flags": [                    # 경고 뱃지
-          {"type": str, "severity": "low|med|high", "msg": str}
-        ]
-      }
+    """v8: 3티어(green/yellow/orange)만 반환. red 없음.
+
+    마감·비모집은 여전히 "expired" 반환 (update.py에서 따로 처리).
     """
     title = item.get("title", "")
     agency = item.get("agency", "")
     s = item.get("structured", {}) or {}
-
     all_combined = _all_text(item)
     title_only = _title_text(item)
 
     checks = {}
     risks = []
 
-    # ── 1단계: 구조화 RED ──
-    ok, detail = _check_struct_recruiting(s)
-    checks["recruiting"] = {"pass": ok, "value": str(s.get("recruiting", "?")), "detail": detail}
-    if not ok:
-        return "red", {
-            "summary_reason": detail,
-            "category_hints": [],
-            "rule_checks": checks,
-            "risk_flags": risks,
+    # ── 선필터: 마감·비모집 ─────────────────────────────────────
+    if s.get("recruiting") is False:
+        return "expired", {
+            "summary_reason": "모집 종료 (recruiting=N)",
+            "category_hints": [], "rule_checks": {}, "risk_flags": [],
+            "axis_scores": {}, "exclusion_flags": [], "tier_logic": "expired"
+        }
+    end = s.get("end_date") or ""
+    if end and end < TODAY:
+        return "expired", {
+            "summary_reason": f"마감일 경과 ({end})",
+            "category_hints": [], "rule_checks": {}, "risk_flags": [],
+            "axis_scores": {}, "exclusion_flags": [], "tier_logic": "expired"
         }
 
-    ok, detail = _check_struct_deadline(s)
-    checks["deadline"] = {"pass": ok, "value": s.get("end_date", ""), "detail": detail}
-    if not ok:
-        return "red", {
-            "summary_reason": detail, "category_hints": [], "rule_checks": checks, "risk_flags": risks,
-        }
+    # ── 5축 점수 계산 ───────────────────────────────────────────
+    struct_region = (s.get("region") or "").strip()
+    axis_region_level, axis_region_detail = _score_region(item, all_combined, struct_region)
+    axis_stage_level, axis_stage_detail = _score_stage(item, all_combined)
+    axis_industry_level, axis_industry_detail = _score_industry(item, all_combined)
+    axis_nature_level, axis_nature_detail = _score_nature(item, all_combined)
+    axis_qual_level, axis_qual_detail = _score_qualification(item, all_combined)
 
-    ok, detail = _check_struct_region(s)
-    checks["region"] = {"pass": ok, "value": s.get("region", ""), "detail": detail or f"region={s.get('region','')}"}
-    if not ok:
-        return "red", {
-            "summary_reason": detail, "category_hints": [], "rule_checks": checks, "risk_flags": risks,
-        }
+    axis_scores = {
+        "region":        {"level": axis_region_level,   "detail": axis_region_detail},
+        "stage":         {"level": axis_stage_level,    "detail": axis_stage_detail},
+        "industry":      {"level": axis_industry_level, "detail": axis_industry_detail},
+        "nature":        {"level": axis_nature_level,   "detail": axis_nature_detail},
+        "qualification": {"level": axis_qual_level,     "detail": axis_qual_detail},
+    }
+    exclusion_flags = [
+        {"axis": k, "severity": "high" if v["level"] == "orange" else "low", "msg": v["detail"]}
+        for k, v in axis_scores.items() if v["level"] == "orange"
+    ]
 
-    ok, detail = _check_struct_biz_enyy(s)
-    checks["biz_enyy"] = {"pass": ok, "value": s.get("biz_enyy", ""), "detail": detail}
-    if not ok:
-        return "red", {
-            "summary_reason": detail, "category_hints": [], "rule_checks": checks, "risk_flags": risks,
-        }
-
-    ok, detail = _check_struct_exclude_target(s)
-    checks["exclude_target"] = {"pass": ok, "value": (s.get("exclude_target", "") or "")[:80], "detail": detail}
-    if not ok:
-        return "red", {
-            "summary_reason": detail, "category_hints": [], "rule_checks": checks, "risk_flags": risks,
-        }
-
-    # ── 1.5단계 (v7.2 신설): 우선 승격 룰 ──
-    # 인천 앵커 기관 또는 AX 강한 키워드면 "적용 영역" 오탐을 우회.
-    # 단 단계 RED(재도전/스케일업)는 아래 2단계에서 여전히 1순위.
-    incheon_anchor_hit = None
-    for anchor in INCHEON_ANCHOR_AGENCIES:
-        if anchor in title_only:  # 기관·제목에만 매칭 (apply_target_desc 제외)
-            incheon_anchor_hit = anchor
-            break
-
-    ax_strong_hit = None
-    for kw in AX_STRONG_KEYWORDS:
-        if kw in title_only:
-            ax_strong_hit = kw
-            break
-
-    # ── 2단계: 키워드 RED (단, 인천 앵커/AX 강매칭은 industry 체크를 우회) ──
-    ok, detail = _check_keyword_industry(all_combined)
-    if not ok and (incheon_anchor_hit or ax_strong_hit):
-        # v7.2: industry 키워드 매칭됐지만 인천 앵커/AX 강매칭이 있으면 우회 + 리스크 플래그
-        bypass_reason = f"인천 앵커({incheon_anchor_hit})" if incheon_anchor_hit else f"AX 강매칭({ax_strong_hit})"
-        risks.append({
-            "type": "industry_bypass",
-            "severity": "low",
-            "msg": f"업종 키워드 '{detail}'이 검출됐으나 {bypass_reason}로 우회. 적용 영역 예시일 가능성 — 공고 본문 확인 권장",
-        })
-        checks["industry"] = {"pass": True, "detail": f"우회됨: {detail} / {bypass_reason}"}
-    else:
-        checks["industry"] = {"pass": ok, "detail": detail}
-        if not ok:
-            return "red", {
-                "summary_reason": detail, "category_hints": [], "rule_checks": checks, "risk_flags": risks,
-            }
-
-    ok, detail = _check_keyword_qualification(all_combined)
-    checks["qualification"] = {"pass": ok, "detail": detail}
-    if not ok:
-        return "red", {
-            "summary_reason": detail, "category_hints": [], "rule_checks": checks, "risk_flags": risks,
-        }
-
-    ok, detail = _check_keyword_stage(all_combined)
-    checks["stage"] = {"pass": ok, "detail": detail}
-    if not ok:
-        return "red", {
-            "summary_reason": detail, "category_hints": [], "rule_checks": checks, "risk_flags": risks,
-        }
-
-    ok, detail = _check_keyword_nature(all_combined)
-    checks["nature"] = {"pass": ok, "detail": detail}
-    if not ok:
-        return "red", {
-            "summary_reason": detail, "category_hints": [], "rule_checks": checks, "risk_flags": risks,
-        }
-
-    ok, detail = _check_region_keyword(all_combined, (s.get("region") or "").strip())
-    checks["region_keyword"] = {"pass": ok, "detail": detail}
-    if not ok:
-        return "red", {
-            "summary_reason": detail, "category_hints": [], "rule_checks": checks, "risk_flags": risks,
-        }
-
-    # ── 3단계: 긍정 매칭 ──
-    region = (s.get("region") or "").strip()
+    # ── 긍정 매칭(green 조건) ──────────────────────────────────
+    positive_hit = None
+    positive_strong = False  # title_only 또는 인천 매칭 or GREEN_BIZ_CLASS + 지역 OK
     biz_class = (s.get("biz_class") or "").strip()
 
-    positive_hit = None
-    tier = None
+    # 우선순위 1: structured 완전 매칭 (GREEN 지역 + GREEN 자금성)
+    if struct_region in GREEN_REGIONS and biz_class in GREEN_BIZ_CLASS:
+        positive_hit = f"structured 완전 매칭 ({struct_region}/{biz_class})"
+        positive_strong = True
 
-    # v7.2: 인천 앵커 우선 승격 (structured 필드 상관없이 GREEN)
-    if incheon_anchor_hit:
-        tier = "green"
-        positive_hit = f"인천 앵커 매칭 ({incheon_anchor_hit})"
-
-    # structured GREEN
-    if tier is None and region in GREEN_REGIONS and biz_class in GREEN_BIZ_CLASS:
-        tier = "green"
-        positive_hit = f"structured GREEN ({region}/{biz_class})"
-
-    # 키워드 GREEN (title_only 매칭만!)
-    if tier is None:
+    # 우선순위 2: title 핵심 키워드
+    if positive_hit is None:
         for kw in GREEN_KEYWORDS_TITLE_ONLY:
             if kw in title_only:
-                tier = "green"
                 positive_hit = f"핵심 매칭 ({kw}) — title"
+                positive_strong = True
                 break
 
-    # 인천 GREEN (어느 필드든)
-    if tier is None:
+    # 우선순위 3: 인천 매칭
+    if positive_hit is None:
         for kw in GREEN_INCHEON:
             if kw in all_combined:
-                tier = "green"
                 positive_hit = f"인천 매칭 ({kw})"
+                positive_strong = True
                 break
 
-    # v7.2: AX 강매칭은 GREEN 판정 없을 때 ORANGE 보장
-    if tier is None and ax_strong_hit:
-        tier = "orange"
-        positive_hit = f"AX 포지셔닝 강매칭 ({ax_strong_hit})"
-
-    # YELLOW
-    if tier is None:
-        if region in GREEN_REGIONS and biz_class in YELLOW_BIZ_CLASS:
-            tier = "yellow"
-            positive_hit = f"검토 매칭 ({region}/{biz_class})"
-
-    if tier is None:
+    # yellow 후보
+    yellow_hit = None
+    if struct_region in GREEN_REGIONS and biz_class in YELLOW_BIZ_CLASS:
+        yellow_hit = f"검토 매칭 ({struct_region}/{biz_class})"
+    if yellow_hit is None:
         for kw in YELLOW_KEYWORDS:
             if kw in all_combined:
-                tier = "yellow"
-                positive_hit = f"검토 매칭 ({kw})"
+                yellow_hit = f"검토 매칭 ({kw})"
                 break
 
-    # ORANGE (AI)
-    if tier is None:
-        for kw in ORANGE_KEYWORDS:
-            if kw in all_combined:
-                tier = "orange"
-                positive_hit = f"AI 포지셔닝 ({kw})"
-                break
+    # orange AI 후보 (AI 리포지셔닝)
+    ai_hit = None
+    for kw in ORANGE_KEYWORDS:
+        if kw in all_combined:
+            ai_hit = f"AI 포지셔닝 가능 ({kw})"
+            break
 
-    # Default RED
-    if tier is None:
-        tier = "red"
-        positive_hit = "기본 제외 (긍정 매칭 없음)"
+    # ── 티어 결정 ───────────────────────────────────────────────
+    all_axes_green = all(v["level"] == "green" for v in axis_scores.values())
+    has_orange_axis = any(v["level"] == "orange" for v in axis_scores.values())
+    yellow_axes_count = sum(1 for v in axis_scores.values() if v["level"] == "yellow")
 
-    # v7.2: 돈 안 주는 이벤트성 공고는 GREEN/ORANGE → YELLOW 강등
-    if tier in ("green", "orange"):
-        for kw in SOFT_DOWNGRADE_TITLE_KW:
-            if kw in title_only:
-                original_tier = tier
-                tier = "yellow"
-                positive_hit = f"{positive_hit} / ⚠️ 이벤트성 '{kw}'로 {original_tier}→yellow 강등"
-                risks.append({
-                    "type": "soft_downgrade_event",
-                    "severity": "med",
-                    "msg": f"제목 '{kw}'는 사업비 없는 네트워킹/상담 이벤트일 가능성 — 공고 본문에서 사업비·바우처·시설제공 여부 확인",
-                })
-                break
+    tier = None
+    tier_logic = ""
 
-    checks["positive_hit"] = {"pass": tier != "red", "detail": positive_hit or ""}
+    if positive_strong and all_axes_green:
+        tier = "green"
+        tier_logic = "1순위: 5축 모두 green + 강한 긍정 매칭"
+    elif positive_strong and not has_orange_axis and yellow_axes_count <= 1:
+        tier = "green"
+        tier_logic = "1순위: 강한 긍정 매칭 + 1축만 yellow (지원 가능)"
+    elif not has_orange_axis:
+        # 모든 축 green/yellow — 지원 가능
+        tier = "yellow"
+        reason = yellow_hit or positive_hit or "중립 매칭 — 직접 지원 가능"
+        tier_logic = f"2순위: 모든 축 green/yellow, {reason}"
+    else:
+        # 최소 1축 orange — 3순위 (아이디어·리포지셔닝 풀)
+        tier = "orange"
+        if ai_hit:
+            tier_logic = f"3순위 (AI 리포지셔닝): {ai_hit}"
+        elif positive_strong:
+            tier_logic = f"3순위 (조건 충족하나 일부 축 제약): {positive_hit}"
+        elif yellow_hit:
+            tier_logic = f"3순위 (아이디어·우회 가능): {yellow_hit}"
+        else:
+            primary_excl = exclusion_flags[0] if exclusion_flags else None
+            reason = primary_excl["msg"] if primary_excl else "직접 매칭 약함"
+            tier_logic = f"3순위 (참고용): {reason}"
 
-    # ── 4단계: 리스크 플래그 추가 생성 (RED로 안 떨어진 경우에도) ──
-    # biz_class가 R&D면 → 하드웨어 공고 가능성 경고
+    summary_reason = positive_hit or yellow_hit or ai_hit or tier_logic
+
+    # ── 기존 rule_checks (backward-compat UI용) ─────────────────
+    checks["recruiting"] = {"pass": True, "value": str(s.get("recruiting", "?")), "detail": "모집 중"}
+    checks["deadline"] = {"pass": True, "value": end, "detail": "마감 전"}
+    checks["region"] = {"pass": axis_region_level != "orange", "value": struct_region, "detail": axis_region_detail}
+    checks["biz_enyy"] = {"pass": axis_stage_level != "orange", "value": s.get("biz_enyy", ""), "detail": axis_stage_detail}
+    checks["exclude_target"] = {"pass": axis_qual_level != "orange", "value": (s.get("exclude_target", "") or "")[:80], "detail": axis_qual_detail}
+    checks["industry"] = {"pass": axis_industry_level != "orange", "detail": axis_industry_detail}
+    checks["qualification"] = {"pass": axis_qual_level != "orange", "detail": axis_qual_detail}
+    checks["stage"] = {"pass": axis_stage_level != "orange", "detail": axis_stage_detail}
+    checks["nature"] = {"pass": axis_nature_level != "orange", "detail": axis_nature_detail}
+    checks["region_keyword"] = {"pass": axis_region_level != "orange", "detail": axis_region_detail}
+    checks["positive_hit"] = {"pass": tier != "orange" or bool(positive_hit) or bool(ai_hit), "detail": summary_reason}
+
+    # ── risk_flags ────────────────────────────────────────────
     if "R&D" in biz_class or "R&amp;D" in biz_class or "기술개발" in biz_class:
         risks.append({
-            "type": "rnd_hardware_risk",
-            "severity": "med",
-            "msg": "R&D 공고는 하드웨어·제조 시제품 중심일 수 있음 — 공고문에서 지원대상 상세 확인 필요",
+            "type": "rnd_hardware_risk", "severity": "med",
+            "msg": "R&D 공고 — 하드웨어/제조 시제품 중심일 가능성",
         })
-    # title에 '기술개발'/'R&D'가 있으면 강화
     if "R&D" in title or "기술개발" in title:
         risks.append({
-            "type": "title_rnd",
-            "severity": "high",
-            "msg": "제목에 R&D/기술개발 포함 — SaaS/플랫폼 성격과 부합하지 않을 수 있음",
+            "type": "title_rnd", "severity": "high",
+            "msg": "제목에 R&D/기술개발 포함 — SaaS와 부합 여부 재확인",
         })
-    # exclude_target 내용이 길면 위험 플래그
     excl = (s.get("exclude_target") or "").strip()
     if excl and len(excl) > 100:
         risks.append({
-            "type": "exclude_target_long",
-            "severity": "low",
-            "msg": f"신청 제외 대상이 길게 기술됨 ({len(excl)}자) — 본문 정독 필수",
+            "type": "exclude_target_long", "severity": "low",
+            "msg": f"신청 제외 대상 장문 ({len(excl)}자) — 정독 필수",
         })
-    # apply_target에 '1인 창조기업' 외에 '대학/연구기관'만 있으면 B2C 플랫폼과 거리
     apply_target = (s.get("apply_target") or "")
     if apply_target and "일반기업" not in apply_target and "1인 창조기업" not in apply_target:
         risks.append({
-            "type": "apply_target_narrow",
-            "severity": "med",
-            "msg": f"신청 가능 대상이 좁음 ({apply_target[:40]}) — 엑스컴 자격 재확인",
+            "type": "apply_target_narrow", "severity": "med",
+            "msg": f"신청 대상 좁음 ({apply_target[:40]})",
         })
 
     category_hints = detect_category_hints(item)
 
     return tier, {
-        "summary_reason": positive_hit or "",
+        "summary_reason": summary_reason,
         "category_hints": category_hints,
         "rule_checks": checks,
         "risk_flags": risks,
+        "axis_scores": axis_scores,
+        "exclusion_flags": exclusion_flags,
+        "tier_logic": tier_logic,
     }
 
 
 # ══════════════════════════════════════════════════════════════
-# 풀 머지 / 입출력 (standalone 실행용 — update.py 경로 아님)
+# 스크립트 실행 (crawl_results.json → recommendations.json)
 # ══════════════════════════════════════════════════════════════
 
 def main():
     if len(sys.argv) < 2:
-        print("Usage: python classify.py <crawl_results.json> [existing_pool.json] > recommendations.json",
+        print("Usage: python classify_v8.py <crawl_results.json> [existing_pool.json] > recommendations.json",
               file=sys.stderr)
         sys.exit(1)
 
     with open(sys.argv[1], "r", encoding="utf-8") as f:
         crawled = json.load(f)
 
-    existing_pool = {
-        "schema_version": 3, "last_updated": "",
-        "items": [], "red_count_today": 0, "reds_today": []
-    }
+    existing_pool = {"schema_version": 4, "last_updated": "", "items": []}
     if len(sys.argv) >= 3:
         try:
             with open(sys.argv[2], "r", encoding="utf-8") as f:
@@ -688,70 +601,61 @@ def main():
         it.get("pbancSn", ""): it for it in existing_pool.get("items", []) if it.get("pbancSn")
     }
 
-    expired_titles = []
     stale_cutoff = (datetime.now(KST) - timedelta(days=14)).strftime("%Y-%m-%d")
-    kept_items = []
-    for it in existing_pool.get("items", []):
-        dl = it.get("deadline", "")
-        ls = it.get("last_seen", "")
-        if dl and dl < TODAY:
-            expired_titles.append(it.get("title", ""))
-        elif ls and ls < stale_cutoff:
-            expired_titles.append(it.get("title", "") + " (stale)")
-        else:
-            kept_items.append(it)
+    expired_titles = []
 
     all_candidates = crawled if isinstance(crawled, list) else crawled.get("items", [])
 
-    for it in kept_items:
-        tier, ev = classify(it)
-        it["_tier"] = tier
-        it["_evidence"] = ev
+    final_items = []
+    expired_count = 0
+    stats = {"green": 0, "yellow": 0, "orange": 0, "expired": 0}
 
-    new_items = []
+    seen_sns = set()
     for it in all_candidates:
         sn = it.get("pbancSn", "")
+        if not sn or sn in seen_sns:
+            continue
+        seen_sns.add(sn)
+
         tier, ev = classify(it)
+        if tier == "expired":
+            expired_count += 1
+            expired_titles.append(it.get("title", ""))
+            continue
+
+        stats[tier] = stats.get(tier, 0) + 1
+
+        # merge with existing (preserve deep_summary etc)
         if sn in existing_by_sn:
-            existing_by_sn[sn]["last_seen"] = TODAY
-            existing_by_sn[sn]["_tier"] = tier
-            existing_by_sn[sn]["_evidence"] = ev
-            if it.get("deadline"):
-                existing_by_sn[sn]["deadline"] = it["deadline"]
-            if it.get("structured"):
-                existing_by_sn[sn]["structured"] = it["structured"]
+            merged = dict(existing_by_sn[sn])
+            merged.update({
+                "pbancSn": sn,
+                "title": it.get("title") or merged.get("title", ""),
+                "agency": it.get("agency") or merged.get("agency", ""),
+                "deadline": it.get("deadline") or merged.get("deadline", ""),
+                "url": it.get("url") or merged.get("url", ""),
+                "tier": tier,
+                "note": ev.get("summary_reason", ""),
+                "classify_evidence": ev,
+                "structured": it.get("structured") or merged.get("structured", {}),
+                "last_seen": TODAY,
+            })
+            merged.setdefault("first_seen", TODAY)
+            final_items.append(merged)
         else:
-            it["first_seen"] = TODAY
-            it["last_seen"] = TODAY
-            it["_tier"] = tier
-            it["_evidence"] = ev
-            new_items.append(it)
-
-    final_items = []
-    red_count = 0
-    reds_list = []
-    new_added = []
-
-    for it in kept_items + new_items:
-        tier = it.pop("_tier", "red")
-        evidence = it.pop("_evidence", {})
-        reason = evidence.get("summary_reason", "")
-        if tier == "red":
-            red_count += 1
-            reds_list.append({
-                "pbancSn": it.get("pbancSn", ""),
+            final_items.append({
+                "pbancSn": sn,
                 "title": it.get("title", ""),
                 "agency": it.get("agency", ""),
-                "reason": reason,
+                "deadline": it.get("deadline", ""),
+                "url": it.get("url", ""),
+                "tier": tier,
+                "note": ev.get("summary_reason", ""),
+                "classify_evidence": ev,
+                "structured": it.get("structured", {}),
+                "first_seen": TODAY,
+                "last_seen": TODAY,
             })
-        else:
-            it["tier"] = tier
-            if not it.get("note"):
-                it["note"] = reason
-            it["evidence"] = evidence
-            final_items.append(it)
-            if it.get("first_seen") == TODAY:
-                new_added.append(it.get("title", ""))
 
     tier_order = {"green": 0, "yellow": 1, "orange": 2}
     final_items.sort(key=lambda x: (
@@ -760,24 +664,20 @@ def main():
     ))
 
     result = {
-        "schema_version": 4,
+        "schema_version": 5,  # v8 3-tier scheme
         "last_updated": TODAY,
-        "red_count_today": red_count,
-        "reds_today": reds_list[:100],
         "items": final_items,
+        "history": existing_pool.get("history", []),
         "_meta": {
-            "version": "v7",
+            "version": "v8",
+            "scheme": "3-tier, no red filter, all recruiting items kept",
             "source": "nidview JSON (kisedKstartupService/announcementInformation)",
             "expired_titles": expired_titles,
-            "new_added_titles": new_added,
-            "needs_review_count": 0,
             "stats": {
-                "green": sum(1 for i in final_items if i.get("tier") == "green"),
-                "yellow": sum(1 for i in final_items if i.get("tier") == "yellow"),
-                "orange": sum(1 for i in final_items if i.get("tier") == "orange"),
-                "needs_review": 0,
-                "red_excluded": red_count,
-                "expired_removed": len(expired_titles),
+                "green": stats["green"],
+                "yellow": stats["yellow"],
+                "orange": stats["orange"],
+                "expired_removed": expired_count,
                 "total_pool": len(final_items),
             },
         },
