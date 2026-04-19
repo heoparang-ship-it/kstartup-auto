@@ -1,8 +1,21 @@
-# 신혼생활 매칭 기준 (Single Source of Truth) — v3
+# 신혼생활 매칭 기준 (Single Source of Truth) — v4
 
 > 이 문서는 founder-gov-radar 스킬이 공고 티어를 판정하는 **유일한 기준 문서**입니다.
 > 기준을 바꾸려면 이 파일만 수정하세요. 다음 실행 시 전체 풀이 자동 재분류됩니다.
 
+> **v4 변경점 (2026-04-19 주간 감사)** — classify.py **v8.4** 짝
+> 1. **green 티어 주간 감사 — 10건 적출 후 RED 키워드 보강**
+>    - RED_QUALIFICATION +11: 비수도권 소재 / 20대 예비창업·창업가 / 녹색융합클러스터 /
+>      대·중견기업 및 기관 / 대학·출연연 소속 / 공공기술 활용 사업화 / 예비사회적기업 /
+>      사회적협동조합 / 팁스 운영사로부터 / 소상공인시장진흥공단
+>    - RED_INDUSTRY +1: 캐릭터 콘텐츠
+>    - RED_NATURE +3: [붙임1] 상 사업 명단 / 사업 명단에 참여한 / 각 지원사업 모집 공고문 참고
+> 2. 적출 사유 요약: ① 인천(수도권) 자격 박탈 공고(프리팁스), ② 연령 한정(아산두어스 20대),
+>    ③ 대중견기업/클러스터 입주(ESG OI), ④ 선행 명단 한정(DIPS Link-up),
+>    ⑤ 캐릭터 콘텐츠 업종(인천콘텐츠랩), ⑥ 대학·출연연 소속(전략기술 딥테크),
+>    ⑦ 사회적기업 인증(열매나눔), ⑧ 소상공인(립스), ⑨ TIPS 운영사 추천 선행(TIPS 본공고),
+>    ⑩ 안내성 통합공고(중앙부처 통합공고)
+>
 > **v3 변경점 (2026-04-19)** — classify.py **v8.3** 짝
 > 1. **green 티어 감사 루틴 추가** — 5축 통과 후에도 agency / integrated_conditions /
 >    exclude_target을 한 번 더 스캔해 지자체 산하 의심 기관·행사성 공고·협소 대상을
@@ -103,19 +116,19 @@
 - "all_axes_green" = 5축 모두 green
 - "audit_flags" = v3 신규, green → yellow 강등 사유 기록 배열
 
-## 키워드 카운트 (v3 — classify.py v8.3와 싱크 필수)
+## 키워드 카운트 (v4 — classify.py v8.4와 싱크 필수)
 
 `recommendations.json._meta.keyword_counts`와 이 섹션이 **일치**해야 분류기가 기대대로 동작합니다.
 매주 일요일 자동 감사 태스크가 이 카운트를 비교하고, 불일치 시 경고합니다.
 
-| 키워드 그룹 | 기대 카운트 (v8.3 / 2026-04-19) | 용도 |
+| 키워드 그룹 | 기대 카운트 (v8.4 / 2026-04-19) | 용도 |
 |---|---|---|
 | RED_REGIONS_EXCLUSIVE | 23 | 비수도권 시/도 이름 (orange) |
 | GYEONGGI_CITIES_EXCLUSIVE | 29 | 경기 시/군 단독 (orange) |
-| RED_INDUSTRY | 89 | 부적합 업종 (orange) |
-| RED_QUALIFICATION | 36 | 자격 한정 (orange) |
+| RED_INDUSTRY | 90 | 부적합 업종 (orange) |
+| RED_QUALIFICATION | 47 | 자격 한정 (orange) |
 | RED_STAGE | 16 | 업력 초과·재창업 등 (orange) |
-| RED_NATURE | 59 | 행사·인증·홍보·수행기관 모집 (orange) |
+| RED_NATURE | 62 | 행사·인증·홍보·수행기관 모집 (orange) |
 | RED_SEOUL_FACILITY | 22 | 서울 전담 시설/기관 (orange) |
 | GREEN_KEYWORDS_TITLE_ONLY | 10 | TIPS·창업패키지 등 (🟢 진입 트리거) |
 | GREEN_INCHEON | 12 | 인천 기관 (🟢 진입 트리거) |
@@ -124,6 +137,7 @@
 
 ## 변경 이력
 
-- **2026-04-19 v3**: green 감사 루틴 추가, Region 축 agency 조기 차단, 버전 스탬프. classify_v8.py **v8.3** 짝.
+- **2026-04-19 v4**: 주간 green 감사 — 21건 중 10건 적출 → RED_QUALIFICATION +11, RED_INDUSTRY +1, RED_NATURE +3. classify.py **v8.4** 짝.
+- **2026-04-19 v3**: green 감사 루틴 추가, Region 축 agency 조기 차단, 버전 스탬프. classify.py **v8.3** 짝.
 - **2026-04-19 v2**: 🔴 제거, 3티어 전원 수용, 5축 점수 체계 도입. classify_v8.py가 짝.
 - **2026-04-18 v1**: 초기 작성. 🔴 제외 기반 4티어 스킴.
