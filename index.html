@@ -111,6 +111,29 @@
   .badge.new-flag{background:#fff;color:var(--c-red);border-color:var(--c-red)}
   .badge.updated-flag{background:#fff;color:var(--c-blue);border-color:var(--c-blue)}
 
+  /* v8: 5축 점수 미니 배지 (region/stage/industry/nature/qualification) */
+  .axis-strip{display:inline-flex;gap:3px;align-items:center;padding:2px 6px;border:1px solid var(--line-soft);border-radius:3px;font-family:"SF Mono",Menlo,monospace;font-size:9.5px;color:var(--muted);letter-spacing:0.04em}
+  .axis-dot{width:10px;height:10px;border-radius:50%;border:1px solid rgba(0,0,0,0.08);cursor:help}
+  .axis-dot.green{background:var(--c-green)}
+  .axis-dot.yellow{background:var(--c-yellow)}
+  .axis-dot.orange{background:var(--c-orange)}
+  .axis-dot.unknown{background:#ddd}
+  .axis-label{font-weight:700;text-transform:uppercase;color:var(--muted);margin-right:2px}
+
+  /* v8: tier_logic 한줄 (카드 meta 아래) */
+  .tier-logic{font-size:11.5px;color:var(--muted);padding:2px 0;font-style:italic;line-height:1.4}
+  .tier-logic.green{color:#185c2f}
+  .tier-logic.yellow{color:#8a6d00}
+  .tier-logic.orange{color:#8a3a0c}
+
+  /* v8: axis score 상세 표 (deep section 내) */
+  .axis-table{display:grid;grid-template-columns:80px 1fr;gap:4px 10px;font-size:11.5px;font-family:"SF Mono",Menlo,monospace;padding:6px 10px;background:#fff;border:1px solid var(--line-soft);border-radius:3px}
+  .axis-table .ax-k{font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:0.04em}
+  .axis-table .ax-v{color:var(--fg)}
+  .axis-table .ax-v.green{color:#185c2f}
+  .axis-table .ax-v.yellow{color:#8a6d00}
+  .axis-table .ax-v.orange{color:#8a3a0c;font-weight:600}
+
   /* Diff summary banner (C-style: 🆕 신규 · 🔄 수정 · ⏰ 임박) */
   .diff-banner{display:flex;gap:0;margin:18px 0 0;border:2px solid var(--line);border-radius:4px;overflow:hidden;font-size:13px}
   .diff-chip{flex:1;padding:12px 16px;cursor:pointer;background:var(--bg);border-right:1px solid var(--line-soft);display:flex;align-items:center;justify-content:center;gap:8px;font-weight:600;transition:background 0.12s;font-family:inherit}
@@ -183,11 +206,6 @@
 
   /* v4: 단순 요약 (쿠키 없을 때 placeholder 개선) */
   .deep-pending{color:var(--muted);font-size:11.5px;padding:6px 0;font-style:italic}
-
-  /* v7.2: 카드 메타 난이도 배지 (날짜 배지 옆) */
-  .badge.diff-low{background:var(--c-green-soft);color:#166534;border-color:#86efac}
-  .badge.diff-medium{background:var(--c-yellow-soft);color:#8a6d00;border-color:#fcd34d}
-  .badge.diff-high{background:var(--c-red-soft);color:#991b1b;border-color:#fca5a5}
 
   /* Actions */
   .card-actions{display:flex;gap:5px;flex-wrap:wrap;margin-top:4px;padding-top:8px;border-top:1px dashed var(--line-soft)}
@@ -318,7 +336,7 @@ function dLabel(d){
   return `D-${d}`;
 }
 function tierLabelText(t){
-  return {green:'● 1순위', yellow:'◐ 2순위', orange:'○ AI', user:'◆ 내 사업'}[t] || t;
+  return {green:'● 1순위', yellow:'◐ 2순위', orange:'○ 3순위', user:'◆ 내 사업'}[t] || t;
 }
 
 function formatKstTimestamp(iso){
@@ -351,7 +369,7 @@ function renderHistory(){
       <span class="h-new">+${h.new||0}</span>
       <span class="h-exp">-${h.expired||0}</span>
       <span class="h-red">풀 ${h.total||0}</span>
-      <span>🔴${h.red_excluded||0} 제외${ds?` · 🤖 요약 ${ds}건`:''}</span>
+      <span>×${h.red_excluded||h.expired||0} 마감${ds?` · 🤖 요약 ${ds}건`:''}</span>
     </div>`;
   }).join('');
 }
@@ -374,15 +392,16 @@ function renderStats(){
   const o = pool.filter(i=>i.tier==='orange').length;
   const inprog = Object.values(state.statuses).filter(v=>v.status==='in_progress').length;
   const done = Object.values(state.statuses).filter(v=>v.status==='completed').length;
-  const redCnt = (POOL && POOL.red_count_today) || 0;
+  // v8: red 티어 사라짐 → _meta.stats.expired_removed 사용
+  const redCnt = (POOL && POOL._meta && POOL._meta.stats && POOL._meta.stats.expired_removed) || (POOL && POOL.red_count_today) || 0;
   document.getElementById('stats-bar').innerHTML = `
     <div class="stat"><div class="num">${pool.length}</div><div class="label">Total</div></div>
     <div class="stat green"><div class="num">${g}</div><div class="label">● 1순위</div></div>
     <div class="stat yellow"><div class="num">${y}</div><div class="label">◐ 2순위</div></div>
-    <div class="stat orange"><div class="num">${o}</div><div class="label">○ AI</div></div>
+    <div class="stat orange"><div class="num">${o}</div><div class="label">○ 3순위</div></div>
     <div class="stat blue"><div class="num">${inprog}</div><div class="label">▶ 진행중</div></div>
     <div class="stat"><div class="num">${done}</div><div class="label">✓ 완료</div></div>
-    <div class="stat"><div class="num" style="color:var(--c-red)">${redCnt}</div><div class="label">× 제외</div></div>
+    <div class="stat"><div class="num" style="color:var(--c-red)">${redCnt}</div><div class="label">× 마감</div></div>
   `;
 }
 
@@ -403,7 +422,7 @@ function renderFilters(f){
     ['all','전체',''],
     ['green','● 1순위','green'],
     ['yellow','◐ 2순위','yellow'],
-    ['orange','○ AI','orange'],
+    ['orange','○ 3순위','orange'],
     ['new','🆕 NEW',''],
     ['updated','🔄 UPDATED',''],
     ['urgent','⏰ D-3',''],
@@ -453,9 +472,9 @@ function render(filter){
     else if(filter==='urgent') pool = pool.filter(i=>{const d=daysUntil(i.deadline); return d>=0&&d<=7;});
     const labels = {
       all:'전체 공고',
-      green:'● 1순위 강력 추천',
-      yellow:'◐ 2순위 검토',
-      orange:'○ AI 포지셔닝',
+      green:'● 1순위 강력 추천 (5축 매칭)',
+      yellow:'◐ 2순위 검토 (지원 가능, 강매칭 아님)',
+      orange:'○ 3순위 아이디어·리포지셔닝 풀',
       new:'🆕 오늘 신규로 올라온 공고',
       updated:'🔄 오늘 정보가 수정된 공고',
       urgent:'⏰ 임박 마감 (D-0 ~ D-7)'
@@ -484,13 +503,6 @@ function renderCard(it){
   const url = it.url || (it.pbancSn ? `https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=${it.pbancSn}` : '');
   const titleHtml = url ? `<a href="${url}" target="_blank" rel="noopener">${esc(it.title)}</a>` : `<span class="no-link">${esc(it.title)}</span>`;
   const dlText = it.deadline ? `${it.deadline} · ${dLabel(d)}` : dLabel(d);
-  // v7.2: 카드 메타에 난이도 배지 (deep_summary.difficulty)
-  const ds0 = it.deep_summary || {};
-  const diffKey = ds0.difficulty;
-  const diffMapBadge = {low:'🟢 쉬움', medium:'🟡 보통', high:'🔴 어려움'};
-  const diffBadge = diffMapBadge[diffKey]
-    ? `<span class="badge diff-${diffKey}">${diffMapBadge[diffKey]}</span>`
-    : '';
   const selected = selectedIds.has(id) ? 'selected' : '';
   const checked = selectedIds.has(id) ? 'checked' : '';
 
@@ -552,6 +564,22 @@ function renderCard(it){
         <div class="deep-h">▸ 분류 기준 (rule-based)</div>
         <div class="deep-rules">${rows.join('')}</div>
       </div>`;
+
+    // v8: 5축 점수 상세 테이블
+    if(ev.axis_scores){
+      const axOrder2 = [['region','지역'],['stage','단계'],['industry','업종'],['nature','성격'],['qualification','자격']];
+      const axRows = axOrder2.map(([k, label]) => {
+        const v = ev.axis_scores[k];
+        const lv = (v && v.level) || 'unknown';
+        const detail = (v && v.detail) || '—';
+        return `<div class="ax-k">${label}</div><div class="ax-v ${lv}">[${lv.toUpperCase()}] ${esc(detail)}</div>`;
+      }).join('');
+      rulesHtml += `
+        <div class="deep-section">
+          <div class="deep-h">▸ 5축 점수 (v8)</div>
+          <div class="axis-table">${axRows}</div>
+        </div>`;
+    }
   }
 
   let flagsHtml = '';
@@ -639,6 +667,23 @@ function renderCard(it){
     deepHtml = `<div class="card-deep"><div class="deep-pending">💭 상세 가이드는 다음 자동 갱신 때 생성됩니다 (Haiku)</div></div>`;
   }
 
+  // v8: 5축 점수 미니 스트립
+  let axisStrip = '';
+  if(ev && ev.axis_scores){
+    const axOrder = [['region','지역'],['stage','단계'],['industry','업종'],['nature','성격'],['qualification','자격']];
+    const dots = axOrder.map(([k, label]) => {
+      const v = ev.axis_scores[k];
+      const lv = (v && v.level) || 'unknown';
+      const detail = v && v.detail ? `${label}: ${v.detail}` : label;
+      return `<span class="axis-dot ${lv}" title="${esc(detail)}"></span>`;
+    }).join('');
+    axisStrip = `<span class="axis-strip"><span class="axis-label">5축</span>${dots}</span>`;
+  }
+
+  // v8: tier_logic 한줄
+  const tierLogicText = (ev && ev.tier_logic) || '';
+  const tierLogicHtml = tierLogicText ? `<div class="tier-logic ${tier}">${esc(tierLogicText)}</div>` : '';
+
   return `<div class="card tier-${tier} status-${status} ${selected}" data-id="${id}">
     <div class="card-tier-bar"></div>
     <div class="card-top">
@@ -648,11 +693,12 @@ function renderCard(it){
     <div class="card-meta">
       <span class="badge tier-${tier}">${tierLabelText(tier)}</span>
       <span class="badge ${urg?'deadline-urgent':''}">${dlText}</span>
-      ${diffBadge}
+      ${axisStrip}
       ${isNew ? '<span class="badge new-flag">🆕 NEW</span>' : ''}
       ${isUpdated ? '<span class="badge updated-flag">🔄 UPDATED</span>' : ''}
       ${statusBadge}
     </div>
+    ${tierLogicHtml}
     ${it.agency ? `<div class="card-agency">${esc(it.agency)}</div>` : ''}
     ${it.note ? `<div class="card-note">${esc(it.note)}</div>` : ''}
     ${deepHtml}
