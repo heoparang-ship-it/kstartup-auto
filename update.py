@@ -34,7 +34,7 @@ HISTORY_MAX_DAYS = 30
 
 # ── Haiku deep_summary 설정 ──
 HAIKU_MODEL = "claude-haiku-4-5-20251001"
-HAIKU_MAX_NEW_PER_RUN = 10            # 일반 실행: 신규 최대 10건 (백필 완료 후 원복, 2026-04-20)
+HAIKU_MAX_NEW_PER_RUN = 400           # 일반 실행 상한 (1회성 상세가이드 백필용; 완료 후 10으로 원복 예정)
 HAIKU_MAX_BACKFILL_PER_RUN = 150      # --force-regenerate: 최대 150건
 HAIKU_TIMEOUT_S = 60
 HAIKU_MAX_TOKENS = 1400               # v7.2: 900→1400 — JSON 잘림 방지
