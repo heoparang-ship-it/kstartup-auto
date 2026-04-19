@@ -1,24 +1,36 @@
 #!/usr/bin/env python3
 """
-K-Startup 공고 자동 분류기 v8 — 3티어 전원 수용 + 1순위 정밀화
-════════════════════════════════════════════════════════════════
+K-Startup 공고 자동 분류기 v8.3 — 3티어 전원 수용 + 1순위 정밀화 + 감사 루틴
+═════════════════════════════════════════════════════════════════════════════
 
-v7 대비 변경점:
+v7 → v8 → v8.3 변경점:
 1. **red 제거**: 마감·비모집만 실제 필터, 나머지는 전원 green/yellow/orange에 배치.
-   → 사용자가 "존재하는 공고를 임의로 없애지말고 아이디어 낼 수 있으니 남겨달라" 요청 반영.
 2. **1순위(green) 엄격화**: 지역·단계·업종·자금성격·자격 5축이 모두 부합 + 긍정 키워드 매칭된 공고만.
-3. **3순위(orange) 확장**: 기존 red 포함 — 업종 한정·서울 단독·여성전용 등도 orange에 수용.
+3. **3순위(orange) 확장**: 업종 한정·서울 단독·여성전용 등도 orange에 수용.
    각 항목에 exclusion_flags[]로 "왜 3순위인지" 구조화해 카드에서 표시.
-4. **axis_scores**: 5축 점수(green=0, yellow=1, orange=2) 반환 → UI에서 배지 렌더링.
-5. classify() 반환 스키마:
-   (tier, {
-     summary_reason, category_hints,
-     rule_checks (기존 유지, read-only),
-     risk_flags,
-     axis_scores: {region, stage, industry, nature, qualification},
-     exclusion_flags: [{axis, severity, msg}],
-     tier_logic: "green/yellow/orange 결정 이유 한줄"
-   })
+4. **axis_scores**: 5축 점수(green/yellow/orange) 반환 → UI에서 배지 렌더링.
+5. **v8.3 NEW — green 티어 감사 루틴 (_audit_green_tier)**:
+   1순위 확정 전 agency / integrated_conditions / exclude_target / apply_target_desc를
+   한 번 더 스캔해 지자체 산하 의심 기관·행사성 공고·협소 대상을 적발하면 yellow로 강등.
+   → classify() evidence에 audit_flags[] 필드로 기록. green "오염" 재발 방지.
+6. **v8.3 NEW — Region 축 agency 조기 차단**:
+   _score_region 상단에서 agency의 (재)·○○진흥원·테크노파크·경제진흥원 패턴 +
+   비수도권 지역명을 조기 감지해 structured.region='전국' 값을 덮어씀. 인천 제외.
+7. **v8.3 NEW — 버전 스탬프**:
+   CLASSIFY_VERSION / KEYWORDS_VERSION 상수 + 출력 _meta에 keyword_counts 기록
+   → profile.md와의 동기화 여부를 기계적으로 검증 가능.
+
+classify() 반환 스키마:
+  (tier, {
+    summary_reason, category_hints,
+    rule_checks (backward-compat),
+    risk_flags,
+    axis_scores: {region, stage, industry, nature, qualification},
+    exclusion_flags: [{axis, severity, msg}],
+    audit_flags: [{type, msg}],  # v8.3 신규
+    tier_logic: "green/yellow/orange 결정 이유 한줄",
+    classify_version: "v8.3",    # v8.3 신규
+  })
 
 입력: crawl_v6.py / update.py가 넘기는 item dict (structured 포함)
 출력: classify()는 (tier, evidence) 튜플. 스크립트로 돌리면 recommendations.json 생성.
@@ -32,6 +44,12 @@ from pathlib import Path
 
 KST = timezone(timedelta(hours=9))
 TODAY = datetime.now(KST).strftime("%Y-%m-%d")
+
+# ══════════════════════════════════════════════════════════════
+# 버전 메타 (profile.md와 싱크 확인용)
+# ══════════════════════════════════════════════════════════════
+CLASSIFY_VERSION = "v8.3"
+KEYWORDS_VERSION = "2026-04-19"
 
 # ══════════════════════════════════════════════════════════════
 # 공통 상수 (v7에서 재사용)
@@ -248,6 +266,50 @@ def detect_category_hints(item: dict) -> list:
 # 5축 점수 계산
 # ══════════════════════════════════════════════════════════════
 
+def _is_local_agency_suspect(agency: str) -> tuple[bool, str]:
+    """v8.3: 지자체 산하 의심 agency 감지.
+
+    (재)·재단법인 접두사 + ○○진흥원/○○경제진흥원/○○디자인진흥원/
+    테크노파크/창업지원센터/창조경제혁신센터 패턴을 탐지.
+    인천 / 창업진흥원(중기부 산하 국가기관) / 중소벤처기업진흥공단 등은 면제.
+
+    반환: (suspect, reason)
+    """
+    if not agency:
+        return False, ""
+    # 면제: 인천·국가기관
+    NATIONAL_OR_INCHEON = [
+        "인천", "ICCE",
+        "창업진흥원",  # 중기부 산하 국가기관 (지자체 아님)
+        "중소벤처기업진흥공단", "중진공", "KOSME",
+        "한국콘텐츠진흥원",  # 문체부 산하 국가기관 (지역진흥원 아님)
+        "정보통신산업진흥원", "NIPA",
+        "한국데이터산업진흥원", "K-Data",
+    ]
+    for nat in NATIONAL_OR_INCHEON:
+        if nat in agency:
+            return False, ""
+    # 의심 패턴
+    LOCAL_PATTERNS = [
+        ("(재)",        "재단법인 접두사"),
+        ("재단법인",     "재단법인"),
+        ("진흥원",       "지역진흥원"),
+        ("경제진흥원",   "지자체 경제진흥원"),
+        ("산업진흥원",   "지자체 산업진흥원"),
+        ("디자인진흥원", "지자체 디자인진흥원"),
+        ("테크노파크",   "TP"),
+        ("창조경제혁신센터", "지역혁신센터"),
+        ("창업지원센터", "지자체 창업센터"),
+        ("창업보육센터", "창업보육센터"),
+        ("청년창업센터", "청년창업센터"),
+        ("청년센터",     "지자체 청년센터"),
+    ]
+    for pat, label in LOCAL_PATTERNS:
+        if pat in agency:
+            return True, f"{label}: {agency[:30]}"
+    return False, ""
+
+
 def _score_region(item: dict, combined: str, struct_region: str) -> tuple[str, str]:
     """region 축 점수. (level, detail)
 
@@ -255,6 +317,10 @@ def _score_region(item: dict, combined: str, struct_region: str) -> tuple[str, s
     - agency("(재)부산디자인진흥원" 등 지자체 재단) + 비수도권 지역명 → orange
     - apply_target_desc의 "○○ 소재"/"○○ 관내"/"○○ 사업장" + 비수도권 → orange
     - structured.region == "전국"이라도 agency/desc에서 지역 한정이 드러나면 덮어쓴다
+
+    v8.3 강화:
+    - _is_local_agency_suspect()로 agency 접두사·단어 패턴을 조기 감지
+      (인천 / 국가기관 면제). RED_REGIONS_EXCLUSIVE 리스트 의존 없이 지역한정 포착.
     """
     s = item.get("structured", {}) or {}
     agency = item.get("agency", "") or ""
@@ -265,6 +331,11 @@ def _score_region(item: dict, combined: str, struct_region: str) -> tuple[str, s
     for kw in GREEN_INCHEON:
         if kw in combined:
             return "green", f"인천 매칭 ({kw})"
+
+    # 🟠 v8.3: agency 일반 패턴 조기 감지 (RED_REGIONS_EXCLUSIVE 리스트에 없는 신규 기관도 포착)
+    suspect, reason = _is_local_agency_suspect(agency)
+    if suspect:
+        return "orange", f"지자체 기관 의심 ({reason})"
 
     # 🟠 agency/desc에서 비수도권 지역 한정 감지 (structured.region="전국" 덮어씀)
     for region_kw in RED_REGIONS_EXCLUSIVE:
@@ -396,6 +467,85 @@ def _score_qualification(item: dict, combined: str) -> tuple[str, str]:
 
 
 # ══════════════════════════════════════════════════════════════
+# v8.3: green 티어 감사 루틴
+# ══════════════════════════════════════════════════════════════
+
+def _audit_green_tier(item: dict) -> list:
+    """v8.3: green 확정 전 최종 감사. 의심 항목 발견 시 audit_flags[] 반환.
+
+    axis_scores 계산을 통과했어도, 다음과 같은 케이스는 실제로는 1순위 부적합:
+    - agency가 (재)·진흥원·테크노파크 패턴 (_is_local_agency_suspect이 _score_region에서
+      이미 잡지만, 여기서 2차 방어선)
+    - integrated_conditions / exclude_target에 행사성·협소 대상 시그널
+    - apply_target_desc에 특정 지역 시민·대학 재학생 등 좁은 대상
+
+    audit_flags가 하나라도 있으면 classify()가 green → yellow로 강등한다.
+    """
+    s = item.get("structured", {}) or {}
+    agency = item.get("agency", "") or ""
+    integrated_conditions = (s.get("integrated_conditions") or s.get("integ_conditions") or "")
+    exclude_target = s.get("exclude_target", "") or ""
+    apply_target_desc = s.get("apply_target_desc", "") or ""
+    integrated_name = s.get("integrated_name", "") or ""
+
+    flags = []
+
+    # (1) 지자체 기관 2차 방어선
+    suspect, reason = _is_local_agency_suspect(agency)
+    if suspect:
+        flags.append({
+            "type": "local_agency_suspect",
+            "msg": f"지자체 산하 의심: {reason}",
+        })
+
+    # (2) 행사성·홍보성 시그널 (integrated_conditions / integrated_name)
+    combined_audit = f"{integrated_conditions} {integrated_name}"
+    EVENT_PATTERNS = [
+        "설명회 개최", "간담회 개최", "포럼 개최", "세미나 개최",
+        "기념식", "시상식 개최", "기자간담회",
+        "성과보고회", "성과공유회",
+    ]
+    for pat in EVENT_PATTERNS:
+        if pat in combined_audit:
+            flags.append({
+                "type": "event_suspect",
+                "msg": f"행사성 의심: {pat}",
+            })
+            break
+
+    # (3) 협소 대상 (apply_target_desc / exclude_target)
+    NARROW_PATTERNS = [
+        "재학 중인 대학(원)생", "재학 중인 대학생", "대학(원)생에 한함",
+        "시민만", "구민만", "도민만",
+        "여성만", "만 39세 이하 여성",
+        "외국인등록증 소지자", "체류자격 F-", "비자 F-",
+    ]
+    for pat in NARROW_PATTERNS:
+        if pat in apply_target_desc or pat in exclude_target:
+            flags.append({
+                "type": "narrow_target_suspect",
+                "msg": f"대상 협소 의심: {pat}",
+            })
+            break
+
+    # (4) 자금성 위장 (실제로는 인증·홍보·임치)
+    DISGUISED_PATTERNS = [
+        "인증 취득 지원", "인증취득 지원", "인증서 발급",
+        "기술임치 계약", "임치 수수료",
+        "언론 보도 지원", "PR 지원",
+    ]
+    for pat in DISGUISED_PATTERNS:
+        if pat in combined_audit or pat in apply_target_desc:
+            flags.append({
+                "type": "disguised_funding",
+                "msg": f"자금성 위장 의심: {pat}",
+            })
+            break
+
+    return flags
+
+
+# ══════════════════════════════════════════════════════════════
 # 메인 분류
 # ══════════════════════════════════════════════════════════════
 
@@ -498,6 +648,7 @@ def classify(item: dict) -> tuple[str, dict]:
 
     tier = None
     tier_logic = ""
+    audit_flags = []
 
     if positive_strong and all_axes_green:
         tier = "green"
@@ -523,6 +674,13 @@ def classify(item: dict) -> tuple[str, dict]:
             primary_excl = exclusion_flags[0] if exclusion_flags else None
             reason = primary_excl["msg"] if primary_excl else "직접 매칭 약함"
             tier_logic = f"3순위 (참고용): {reason}"
+
+    # ── v8.3: green 확정 전 감사 — 의심되면 yellow 강등 ──────────
+    if tier == "green":
+        audit_flags = _audit_green_tier(item)
+        if audit_flags:
+            tier = "yellow"
+            tier_logic = f"2순위 (감사 강등): {audit_flags[0]['msg']}"
 
     summary_reason = positive_hit or yellow_hit or ai_hit or tier_logic
 
@@ -572,7 +730,9 @@ def classify(item: dict) -> tuple[str, dict]:
         "risk_flags": risks,
         "axis_scores": axis_scores,
         "exclusion_flags": exclusion_flags,
+        "audit_flags": audit_flags,
         "tier_logic": tier_logic,
+        "classify_version": CLASSIFY_VERSION,
     }
 
 
@@ -663,14 +823,36 @@ def main():
         x.get("deadline") or "9999-99-99",
     ))
 
+    # v8.3: keyword_counts (profile.md와 싱크 확인용)
+    keyword_counts = {
+        "RED_REGIONS_EXCLUSIVE": len(RED_REGIONS_EXCLUSIVE),
+        "GYEONGGI_CITIES_EXCLUSIVE": len(GYEONGGI_CITIES_EXCLUSIVE),
+        "RED_INDUSTRY": len(RED_INDUSTRY),
+        "RED_QUALIFICATION": len(RED_QUALIFICATION),
+        "RED_STAGE": len(RED_STAGE),
+        "RED_NATURE": len(RED_NATURE),
+        "RED_SEOUL_FACILITY": len(RED_SEOUL_FACILITY),
+        "GREEN_KEYWORDS_TITLE_ONLY": len(GREEN_KEYWORDS_TITLE_ONLY),
+        "GREEN_INCHEON": len(GREEN_INCHEON),
+        "YELLOW_KEYWORDS": len(YELLOW_KEYWORDS),
+        "ORANGE_KEYWORDS": len(ORANGE_KEYWORDS),
+    }
+
+    # v8.3: 감사 강등 통계
+    audit_demoted = sum(
+        1 for it in final_items
+        if (it.get("classify_evidence", {}).get("audit_flags") or [])
+    )
+
     result = {
         "schema_version": 5,  # v8 3-tier scheme
         "last_updated": TODAY,
         "items": final_items,
         "history": existing_pool.get("history", []),
         "_meta": {
-            "version": "v8",
-            "scheme": "3-tier, no red filter, all recruiting items kept",
+            "version": CLASSIFY_VERSION,
+            "keywords_version": KEYWORDS_VERSION,
+            "scheme": "3-tier + audit, no red filter, all recruiting items kept",
             "source": "nidview JSON (kisedKstartupService/announcementInformation)",
             "expired_titles": expired_titles,
             "stats": {
@@ -678,8 +860,10 @@ def main():
                 "yellow": stats["yellow"],
                 "orange": stats["orange"],
                 "expired_removed": expired_count,
+                "audit_demoted": audit_demoted,
                 "total_pool": len(final_items),
             },
+            "keyword_counts": keyword_counts,
         },
     }
 
