@@ -184,6 +184,42 @@
   /* v4: 단순 요약 (쿠키 없을 때 placeholder 개선) */
   .deep-pending{color:var(--muted);font-size:11.5px;padding:6px 0;font-style:italic}
 
+  /* v7.2: 🟢 1순위 요약 테이블 (마감일/D-N/난이도 한 눈에) */
+  .green-summary{margin-top:18px;margin-bottom:10px;background:var(--bg);border:1px solid var(--line);border-radius:4px;overflow:hidden}
+  .green-summary-header{display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:linear-gradient(90deg,var(--c-green-soft),#fff);border-bottom:1px solid var(--line);cursor:pointer;user-select:none}
+  .green-summary-header h3{margin:0;font-size:13px;font-weight:800;letter-spacing:0.02em;color:var(--c-green)}
+  .green-summary-header .gs-count{font-size:11px;color:var(--muted);font-weight:500}
+  .green-summary-header .gs-chev{transition:transform 0.15s}
+  .green-summary-header.closed .gs-chev{transform:rotate(-90deg)}
+  .green-summary-body{max-height:480px;overflow-y:auto}
+  .green-summary-body.closed{display:none}
+  .gs-table{width:100%;border-collapse:collapse;font-size:12px}
+  .gs-table thead th{position:sticky;top:0;background:#f7f8fa;border-bottom:1px solid var(--line);padding:7px 10px;text-align:left;font-weight:700;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:var(--muted);z-index:1}
+  .gs-table tbody td{padding:7px 10px;border-bottom:1px solid var(--line-soft);vertical-align:top}
+  .gs-table tbody tr{cursor:pointer;transition:background 0.1s}
+  .gs-table tbody tr:hover{background:var(--soft-bg)}
+  .gs-table tbody tr.flash{background:#fff3bf;transition:background 0.6s}
+  .gs-dbadge{display:inline-block;font-family:"SF Mono",Menlo,monospace;font-weight:800;font-size:11px;padding:2px 7px;border-radius:3px;letter-spacing:0.03em;white-space:nowrap}
+  .gs-dbadge.urgent{background:#fee2e2;color:#991b1b;border:1px solid #fca5a5}
+  .gs-dbadge.soon{background:#fef3c7;color:#92400e;border:1px solid #fcd34d}
+  .gs-dbadge.ok{background:var(--c-green-soft);color:#166534;border:1px solid #86efac}
+  .gs-dbadge.late{background:#e5e7eb;color:#6b7280;border:1px solid #d1d5db}
+  .gs-diff{display:inline-block;font-family:"SF Mono",Menlo,monospace;font-size:10.5px;font-weight:700;padding:2px 7px;border-radius:3px;letter-spacing:0.03em;white-space:nowrap}
+  .gs-diff.low{background:var(--c-green-soft);color:#166534}
+  .gs-diff.medium{background:var(--c-yellow-soft);color:#8a6d00}
+  .gs-diff.high{background:var(--c-red-soft);color:#991b1b}
+  .gs-diff.none{background:#f3f4f6;color:#9ca3af}
+  .gs-title{color:var(--fg);line-height:1.4;font-weight:500}
+  .gs-title:hover{color:var(--c-blue);text-decoration:underline}
+  .gs-agency{color:var(--muted);font-size:10.5px;margin-top:1px}
+  .gs-opus{display:inline-block;font-size:9.5px;font-weight:800;padding:1px 5px;background:#111;color:#fff;border-radius:2px;margin-left:5px;letter-spacing:0.06em;vertical-align:middle}
+  .gs-empty{padding:24px;text-align:center;color:var(--muted);font-style:italic}
+  @media(max-width:640px){
+    .gs-table thead th:nth-child(5),
+    .gs-table tbody td:nth-child(5){display:none}
+    .gs-table{font-size:11.5px}
+  }
+
   /* Actions */
   .card-actions{display:flex;gap:5px;flex-wrap:wrap;margin-top:4px;padding-top:8px;border-top:1px dashed var(--line-soft)}
   .act-btn{background:var(--bg);border:1px solid var(--line);color:var(--fg);padding:4px 10px;font-size:11px;font-family:inherit;cursor:pointer;font-weight:500;border-radius:3px}
@@ -230,6 +266,14 @@
     <button class="primary" onclick="bulkMove('in_progress')">▶ 진행중으로 일괄 이동</button>
     <button onclick="bulkMove('completed')">✓ 지원완료로</button>
     <button onclick="clearSelection()">선택 해제</button>
+  </div>
+
+  <div class="green-summary" id="green-summary" style="display:none">
+    <div class="green-summary-header" id="gs-header" onclick="toggleGreenSummary()">
+      <h3>● 1순위 요약표 — 마감일 / D-N / 난이도</h3>
+      <span class="gs-count"><span id="gs-count">0</span>건 · 제목 클릭 시 카드로 이동 <span class="gs-chev">▾</span></span>
+    </div>
+    <div class="green-summary-body" id="gs-body"></div>
   </div>
 
   <section>
@@ -429,11 +473,94 @@ function renderDiffBanner(){
 }
 
 // ── Render main ──
+// v7.2: 🟢 1순위 요약표
+function toggleGreenSummary(){
+  const body = document.getElementById('gs-body');
+  const hdr = document.getElementById('gs-header');
+  const closed = body.classList.toggle('closed');
+  hdr.classList.toggle('closed', closed);
+  try{ localStorage.setItem('gs_collapsed', closed ? '1' : '0'); }catch(e){}
+}
+function renderGreenSummary(){
+  const wrap = document.getElementById('green-summary');
+  const body = document.getElementById('gs-body');
+  if(!wrap || !body) return;
+  const items = allItems()
+    .filter(i => i.tier === 'green')
+    .filter(i => getStatus(i._id) === 'pool');  // 진행중/완료 이동한 건은 요약표에서 제외
+  document.getElementById('gs-count').textContent = items.length;
+  if(!items.length){
+    wrap.style.display = 'none';
+    return;
+  }
+  wrap.style.display = '';
+  // 마감 임박순 정렬
+  items.sort((a,b) => {
+    const da = daysUntil(a.deadline), db = daysUntil(b.deadline);
+    return da - db;
+  });
+  const diffLabel = {low:'🟢 쉬움', medium:'🟡 보통', high:'🔴 어려움'};
+  const rows = items.map(it => {
+    const d = daysUntil(it.deadline);
+    let dClass = 'ok';
+    if(d < 0) dClass = 'late';
+    else if(d <= 3) dClass = 'urgent';
+    else if(d <= 7) dClass = 'soon';
+    const ds = it.deep_summary || {};
+    const diff = ds.difficulty || '';
+    const diffClass = ['low','medium','high'].includes(diff) ? diff : 'none';
+    const diffText = diffLabel[diff] || '—';
+    const opusTag = (ds._source && String(ds._source).includes('opus'))
+      ? '<span class="gs-opus">OPUS</span>' : '';
+    const dl = it.deadline || '미정';
+    return `<tr onclick="jumpToCard('${it._id}')">
+      <td><span class="gs-dbadge ${dClass}">${dLabel(d)}</span></td>
+      <td style="white-space:nowrap;font-family:'SF Mono',Menlo,monospace;font-size:11px;color:var(--muted)">${esc(dl)}</td>
+      <td><span class="gs-diff ${diffClass}">${diffText}</span></td>
+      <td><span class="gs-title">${esc(it.title || '')}</span>${opusTag}</td>
+      <td class="gs-agency">${esc((it.agency || '').slice(0, 18))}</td>
+    </tr>`;
+  }).join('');
+  body.innerHTML = `<table class="gs-table">
+    <thead><tr>
+      <th style="width:74px">D-N</th>
+      <th style="width:92px">마감일</th>
+      <th style="width:82px">난이도</th>
+      <th>제목</th>
+      <th style="width:140px">기관</th>
+    </tr></thead>
+    <tbody>${rows}</tbody>
+  </table>`;
+  // 접힘 상태 복원
+  try{
+    if(localStorage.getItem('gs_collapsed') === '1'){
+      body.classList.add('closed');
+      document.getElementById('gs-header').classList.add('closed');
+    }
+  }catch(e){}
+}
+
+function jumpToCard(id){
+  // 전체 필터로 전환 후 해당 카드로 스크롤 + 플래시
+  if(currentFilter !== 'all' && currentFilter !== 'green'){
+    render('all');
+  }
+  setTimeout(() => {
+    const card = document.querySelector(`.card[data-id="${id}"]`);
+    if(card){
+      card.scrollIntoView({behavior:'smooth', block:'start'});
+      card.classList.add('flash');
+      setTimeout(() => card.classList.remove('flash'), 1500);
+    }
+  }, 80);
+}
+
 function render(filter){
   currentFilter = filter;
   renderDiffBanner();
   renderStats();
   renderFilters(filter);
+  renderGreenSummary();
   updateBulkToolbar();
 
   let list;
