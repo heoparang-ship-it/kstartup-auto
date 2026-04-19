@@ -34,7 +34,7 @@ HISTORY_MAX_DAYS = 30
 
 # ── Haiku deep_summary 설정 ──
 HAIKU_MODEL = "claude-haiku-4-5-20251001"
-HAIKU_MAX_NEW_PER_RUN = 10            # 일반 실행: 신규 최대 10건
+HAIKU_MAX_NEW_PER_RUN = 400           # 일반 실행: 상세 가이드 전체 백필용 1회성 상향 (원복 예정)
 HAIKU_MAX_BACKFILL_PER_RUN = 150      # --force-regenerate: 최대 150건
 HAIKU_TIMEOUT_S = 60
 HAIKU_MAX_TOKENS = 1400               # v7.2: 900→1400 — JSON 잘림 방지
@@ -335,7 +335,7 @@ def enrich_deep_summaries(items: list, manifest: dict, force_regenerate: bool = 
             print(f"[haiku] {idx}/{len(to_process)} OK {item.get('pbancSn')}: {item.get('title', '')[:30]}...", file=sys.stderr)
         else:
             print(f"[haiku] {idx}/{len(to_process)} FAIL {item.get('pbancSn')}", file=sys.stderr)
-        time.sleep(0.2)
+        time.sleep(0.3)
 
     return (succ, len(to_process))
 
