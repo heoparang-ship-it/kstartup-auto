@@ -53,5 +53,21 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add recommendations.json
-          git diff --cached --quiet || git commit -m "auto: $(date -u +%Y-%m-%d) 공고 업데이트"
-          git push
+          # pool 변경이 없으면 skip
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "auto: $(date -u +%Y-%m-%d) 공고 업데이트"
+          # 실행 중 main이 이동했을 수 있으므로 rebase 후 재시도 (최대 3회)
+          for i in 1 2 3; do
+            git pull --rebase origin main || true
+            if git push; then
+              echo "push succeeded on attempt $i"
+              exit 0
+            fi
+            echo "push attempt $i failed, retrying..."
+            sleep 5
+          done
+          echo "push failed after 3 attempts"
+          exit 1
