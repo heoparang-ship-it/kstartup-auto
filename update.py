@@ -34,7 +34,7 @@ HISTORY_MAX_DAYS = 30
 
 # ── Haiku deep_summary 설정 ──
 HAIKU_MODEL = "claude-haiku-4-5-20251001"
-HAIKU_MAX_NEW_PER_RUN = 400           # 일반 실행: 상세 가이드 전체 백필용 1회성 상향 (원복 예정)
+HAIKU_MAX_NEW_PER_RUN = 10            # 일반 실행: 신규 최대 10건 (백필 완료 후 원복, 2026-04-20)
 HAIKU_MAX_BACKFILL_PER_RUN = 150      # --force-regenerate: 최대 150건
 HAIKU_TIMEOUT_S = 60
 HAIKU_MAX_TOKENS = 1400               # v7.2: 900→1400 — JSON 잘림 방지
@@ -83,6 +83,7 @@ def load_master_modules() -> dict:
 def select_modules(item: dict, evidence: dict, manifest: dict) -> list:
     """
     공고의 category_hints + tier + note 키워드를 보고 주입할 모듈 선택.
+    v2.0 (2026-04-20): 15 modules + 부록 A/B (recipes, dispatch) + evidence pool.
     반환: [(module_id, module_dict), ...]
     """
     modules = manifest.get("modules", {})
@@ -90,12 +91,13 @@ def select_modules(item: dict, evidence: dict, manifest: dict) -> list:
         return []
 
     always_keys = manifest.get("always_inject", [])
-    selected_ids = list(always_keys)  # M01_identity, M02_spine은 항상
+    selected_ids = list(always_keys)  # v2.0: M01_identity, M02_spine, M13_dispatch
 
     hints = set(evidence.get("category_hints", []))
-    title = (item.get("title", "") + " " + item.get("note", "")).lower()
+    text = (item.get("title", "") + " " + item.get("note", "") + " " + item.get("supv_inst_nm", "")).lower()
+    tier = item.get("tier", "")
 
-    # hint 기반 모듈 선택
+    # hint 기반 모듈 선택 (v2.0: team/female/early_stage 추가)
     hint_to_module = {
         "ai": "M05_ai_tech",
         "content": "M06_content_engine",
@@ -103,23 +105,59 @@ def select_modules(item: dict, evidence: dict, manifest: dict) -> list:
         "global": "M09_global",
         "social": "M08_events",
         "budget": "M10_team_budget",
+        "team": "M10_team_budget",
+        "female": "M11_dual_entry",
+        "early_stage": "M14_recipes",
+        "tips": "M03_flywheel",
+        "public_procurement": "M03_flywheel",
     }
     for hint, mod_id in hint_to_module.items():
         if hint in hints and mod_id not in selected_ids:
             selected_ids.append(mod_id)
 
-    # tier가 green/orange이면 플라이휠 · 문제인식 항상 추가 (핵심 공고)
-    if item.get("tier") in ("green", "orange"):
-        for mod_id in ("M03_flywheel", "M04_problem"):
+    # tier가 green/orange이면 플라이휠 · 문제인식 · 체크리스트 항상 추가 (핵심 공고)
+    if tier in ("green", "orange"):
+        for mod_id in ("M03_flywheel", "M04_problem", "M15_checklist"):
             if mod_id not in selected_ids:
                 selected_ids.append(mod_id)
     # yellow라도 "사업화", "BM", "수익모델" 키워드 있으면 플라이휠 추가
-    elif any(k in title for k in ("사업화", "BM", "수익모델", "수익 모델", "플랫폼")):
+    elif any(k in text for k in ("사업화", "bm", "수익모델", "수익 모델", "플랫폼")):
         if "M03_flywheel" not in selected_ids:
             selected_ids.append("M03_flywheel")
 
-    # 5개 초과면 앞에서 5개만 (토큰 예산)
-    selected_ids = selected_ids[:5]
+    # v2.0 신규: 부부·여성·가족 키워드 감지 시 이중지원 전략 주입
+    if any(k in text for k in ("여성", "여성창업", "맘", "엄마", "육아", "가족", "부부", "여성가족")):
+        if "M11_dual_entry" not in selected_ids:
+            selected_ids.append("M11_dual_entry")
+
+    # v2.0 신규: 콘텐츠/이벤트/미디어 키워드 감지 시 레시피 주입
+    if any(k in text for k in ("콘텐츠", "미디어", "인플루언서", "크리에이터", "영상", "유튜브", "sns")):
+        if "M14_recipes" not in selected_ids:
+            selected_ids.append("M14_recipes")
+        if "M06_content_engine" not in selected_ids:
+            selected_ids.append("M06_content_engine")
+
+    # v2.0 신규: 예비창업 / 초기창업 / 3년이내 키워드 감지 시 레시피 주입
+    if any(k in text for k in ("예비창업", "초기창업", "창업초기", "창업 3년", "3년이내")):
+        if "M14_recipes" not in selected_ids:
+            selected_ids.append("M14_recipes")
+
+    # v2.0 신규: 인천/경인/수도권 키워드 감지 시 지역 모듈 주입
+    if any(k in text for k in ("인천", "경인", "강화", "연수", "남동", "부평", "미추홀")):
+        if "M07_incheon" not in selected_ids:
+            selected_ids.append("M07_incheon")
+
+    # v2.0 신규: 글로벌/수출/해외/K-브랜드 키워드 감지
+    if any(k in text for k in ("글로벌", "해외", "수출", "k-브랜드", "k브랜드", "인바운드", "관광")):
+        if "M09_global" not in selected_ids:
+            selected_ids.append("M09_global")
+
+    # v2.0 신규: 공고가 green tier면 evidence pool도 주입 (인용 필요)
+    if tier == "green" and "M12_evidence" not in selected_ids:
+        selected_ids.append("M12_evidence")
+
+    # 7개 초과면 앞에서 7개만 (토큰 예산 — v2.0: 5→7 상향, 각 모듈 summary 확장 반영)
+    selected_ids = selected_ids[:7]
 
     return [(mid, modules[mid]) for mid in selected_ids if mid in modules]
 
