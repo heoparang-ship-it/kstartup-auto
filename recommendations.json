@@ -1,7 +1,7 @@
 {
   "schema_version": 4,
   "last_updated": "2026-04-20",
-  "updated_at_kst": "2026-04-20T11:41:08+09:00",
+  "updated_at_kst": "2026-04-20T19:48:34+09:00",
   "history": [
     {
       "date": "2026-04-19",
@@ -16,10 +16,10 @@
     },
     {
       "date": "2026-04-20",
-      "at_kst": "2026-04-20T11:41:08+09:00",
+      "at_kst": "2026-04-20T19:48:34+09:00",
       "new": 0,
       "updated": 1,
-      "expired": 6,
+      "expired": 0,
       "total": 325,
       "red_excluded": 0,
       "deep_summary_generated": 0,
@@ -7621,7 +7621,7 @@
           "region": {
             "pass": false,
             "value": "전국",
-            "detail": "지역 한정 desc: '전남 소재'"
+            "detail": "사업명에 지역 포함 (광주)"
           },
           "biz_enyy": {
             "pass": true,
@@ -7651,7 +7651,7 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "지역 한정 desc: '전남 소재'"
+            "detail": "사업명에 지역 포함 (광주)"
           },
           "positive_hit": {
             "pass": false,
@@ -7662,7 +7662,7 @@
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "지역 한정 desc: '전남 소재'"
+            "detail": "사업명에 지역 포함 (광주)"
           },
           "stage": {
             "level": "green",
@@ -7685,7 +7685,7 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "지역 한정 desc: '전남 소재'"
+            "msg": "사업명에 지역 포함 (광주)"
           }
         ],
         "audit_flags": [],
@@ -22763,9 +22763,9 @@
       "deadline": "2026-04-30",
       "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=176973",
       "tier": "orange",
-      "note": "3순위 (참고용): 지역 한정 desc: '충청남도 소재'",
+      "note": "3순위 (참고용): 기관 지역 한정 (agency: 충남신용보증재단)",
       "classify_evidence": {
-        "summary_reason": "3순위 (참고용): 지역 한정 desc: '충청남도 소재'",
+        "summary_reason": "3순위 (참고용): 기관 지역 한정 (agency: 충남신용보증재단)",
         "category_hints": [
           "budget"
         ],
@@ -22783,7 +22783,7 @@
           "region": {
             "pass": false,
             "value": "충남",
-            "detail": "지역 한정 desc: '충청남도 소재'"
+            "detail": "기관 지역 한정 (agency: 충남신용보증재단)"
           },
           "biz_enyy": {
             "pass": true,
@@ -22813,18 +22813,18 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "지역 한정 desc: '충청남도 소재'"
+            "detail": "기관 지역 한정 (agency: 충남신용보증재단)"
           },
           "positive_hit": {
             "pass": false,
-            "detail": "3순위 (참고용): 지역 한정 desc: '충청남도 소재'"
+            "detail": "3순위 (참고용): 기관 지역 한정 (agency: 충남신용보증재단)"
           }
         },
         "risk_flags": [],
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "지역 한정 desc: '충청남도 소재'"
+            "detail": "기관 지역 한정 (agency: 충남신용보증재단)"
           },
           "stage": {
             "level": "green",
@@ -22847,11 +22847,11 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "지역 한정 desc: '충청남도 소재'"
+            "msg": "기관 지역 한정 (agency: 충남신용보증재단)"
           }
         ],
         "audit_flags": [],
-        "tier_logic": "3순위 (참고용): 지역 한정 desc: '충청남도 소재'",
+        "tier_logic": "3순위 (참고용): 기관 지역 한정 (agency: 충남신용보증재단)",
         "classify_version": "v8.4"
       },
       "first_seen": "2026-04-19",
@@ -50283,14 +50283,7 @@
   ],
   "red_count_today": 0,
   "_meta": {
-    "expired": [
-      "2026-3회 호남권 엔젤투자 피칭룸 in 제주",
-      "2026 현대건설x서울창업허브 오픈이노베이션(문제해결형)",
-      "금천청년꿈터 『청년창업교육 A to Z 프로젝트』교육생 모집",
-      "2026 현대건설x서울창업허브 오픈이노베이션(자율제안형)",
-      "2026년 세종지식재산센터 IP창업존 28기 교육생 모집",
-      "2026년 제1회 ICT콤플렉스 스타트업 투자상담회 참가기업 모집"
-    ],
+    "expired": [],
     "new_added": [],
     "updated_today": [
       "[충남신용보증재단] 2026년 5월 창업아카데미 교육생 모집"
@@ -50308,7 +50301,7 @@
       "yellow": 40,
       "orange": 274,
       "red_excluded": 0,
-      "expired_removed": 6,
+      "expired_removed": 0,
       "total_pool": 325,
       "rss_total": 325,
       "deep_summary_covered": 325,
