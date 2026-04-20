@@ -34,11 +34,15 @@ jobs:
           python-version: '3.12'
 
       - name: Install dependencies
-        run: pip install requests beautifulsoup4 anthropic
+        run: pip install requests beautifulsoup4
 
       - name: Run update
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # 2026-04-20: Haiku 기본 비활성 (ENABLE_HAIKU=0). Anthropic 크레딧 0원 유지.
+          # deep_summary 백필은 Cowork 세션(Sonnet 서브에이전트)에서 수행.
+          # 1회성 Actions 백필이 필요하면 아래 2줄을 주석 해제:
+          # ENABLE_HAIKU: '1'
+          # ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           FORCE_REGEN: ${{ github.event.inputs.force_regenerate }}
           SKIP_CRAWL: ${{ github.event.inputs.skip_crawl }}
         run: |
@@ -52,7 +56,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add recommendations.json
+          git add recommendations.json pending_deep_summary.json
           # pool 변경이 없으면 skip
           if git diff --cached --quiet; then
             echo "No changes to commit"
