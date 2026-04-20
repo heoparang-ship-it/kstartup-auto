@@ -34,7 +34,7 @@ HISTORY_MAX_DAYS = 30
 
 # ── Haiku deep_summary 설정 ──
 HAIKU_MODEL = "claude-haiku-4-5-20251001"
-HAIKU_MAX_NEW_PER_RUN = 10            # 일반 실행: 신규 최대 10건 (백필 완료 후 원복, 2026-04-20)
+HAIKU_MAX_NEW_PER_RUN = 400           # Haiku 활성화 시 한도 (기본은 ENABLE_HAIKU=0이라 호출 안됨)
 HAIKU_MAX_BACKFILL_PER_RUN = 150      # --force-regenerate: 최대 150건
 HAIKU_TIMEOUT_S = 60
 HAIKU_MAX_TOKENS = 1400               # v7.2: 900→1400 — JSON 잘림 방지
@@ -333,6 +333,12 @@ def generate_deep_summary(client, item: dict, evidence: dict, manifest: dict):
 
 
 def enrich_deep_summaries(items: list, manifest: dict, force_regenerate: bool = False):
+    # 2026-04-20: 기본 비활성. Actions 크레딧 0원 유지. 백필은 Cowork 세션(Sonnet)에서 수행.
+    # 1회성 Actions 백필이 필요하면 환경변수 ENABLE_HAIKU=1 + ANTHROPIC_API_KEY 설정.
+    if os.environ.get("ENABLE_HAIKU", "").strip() not in ("1", "true", "TRUE", "yes"):
+        pending = sum(1 for it in items if not it.get("deep_summary") or it.get("deep_summary", {}).get("_schema") != "v4")
+        print(f"[haiku] 비활성 (ENABLE_HAIKU≠1). pending {pending}건 — Cowork 세션에서 백필 예정", file=sys.stderr)
+        return (0, 0)
     api_key = os.environ.get("ANTHROPIC_API_KEY", "").strip()
     if not api_key:
         print("[haiku] ANTHROPIC_API_KEY 없음 — deep_summary 생성 스킵", file=sys.stderr)
@@ -522,11 +528,21 @@ def main():
 
     pool["items"] = kept_items
     pool["red_count_today"] = red_count
+    pending_list = [it.get("pbancSn") for it in kept_items
+                    if not it.get("deep_summary") or it.get("deep_summary", {}).get("_schema") != "v4"]
+
     pool["_meta"] = {
         "expired": expired_titles,
         "new_added": new_added,
         "updated_today": updated_titles,
-        "deep_summary": {"generated": ds_succ, "attempted": ds_attempt, "force_regenerate": args.force_regenerate},
+        "deep_summary": {
+            "generated": ds_succ,
+            "attempted": ds_attempt,
+            "force_regenerate": args.force_regenerate,
+            "pending_count": len(pending_list),
+            "pending_pbanc_sns": pending_list[:50],  # 디버그용 선두 50개만
+            "haiku_disabled": os.environ.get("ENABLE_HAIKU", "").strip() not in ("1", "true", "TRUE", "yes"),
+        },
         "stats": {
             "green": sum(1 for i in kept_items if i.get("tier") == "green"),
             "yellow": sum(1 for i in kept_items if i.get("tier") == "yellow"),
@@ -535,15 +551,30 @@ def main():
             "expired_removed": len(expired_titles),
             "total_pool": len(kept_items),
             "rss_total": len(crawled) if not args.skip_crawl else 0,
+            "deep_summary_covered": len(kept_items) - len(pending_list),
+            "deep_summary_pending": len(pending_list),
         },
     }
     save_pool(pool, now_kst)
+
+    # Cowork 세션 백필 편의용: pending pbancSn 리스트를 별도 파일로 출력
+    try:
+        import json as _json
+        with open("pending_deep_summary.json", "w", encoding="utf-8") as _f:
+            _json.dump({
+                "generated_at_kst": now_kst.strftime("%Y-%m-%dT%H:%M:%S+09:00"),
+                "count": len(pending_list),
+                "pbanc_sns": pending_list,
+            }, _f, ensure_ascii=False, indent=2)
+        print(f"[pending] pending_deep_summary.json 저장: {len(pending_list)}건", file=sys.stderr)
+    except Exception as _e:
+        print(f"[pending] 저장 실패: {_e}", file=sys.stderr)
 
     stats = pool["_meta"]["stats"]
     print(f"\n{'='*50}", file=sys.stderr)
     print(f"[결과] nidview {stats['rss_total']} → 🟢{stats['green']} 🟡{stats['yellow']} 🟠{stats['orange']} 🔴{stats['red_excluded']} | "
           f"신규 {len(new_added)} · 수정 {len(updated_titles)} · 만료 {stats['expired_removed']} · 풀 {stats['total_pool']} · "
-          f"Haiku {ds_succ}/{ds_attempt}건", file=sys.stderr)
+          f"Haiku {ds_succ}/{ds_attempt}건 · pending {stats['deep_summary_pending']}건(Cowork 세션 백필)", file=sys.stderr)
 
 
 if __name__ == "__main__":
