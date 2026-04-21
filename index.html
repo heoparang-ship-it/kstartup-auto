@@ -706,16 +706,15 @@ function renderCard(it, q){
       <div class="card-deep">
         <button class="deep-toggle ${open}" onclick="toggleDeep('${id}')">
           <span class="chev">▸</span>
-          <span>분류 근거 (상세 가이드 생성 대기중)</span>
+          <span>분류 근거</span>
         </button>
         <div class="deep-content ${open}" id="deep-${id}">
           ${rulesHtml}
           ${flagsHtml ? `<div class="deep-section"><div class="deep-h">▸ 주의신호</div><div>${flagsHtml}</div></div>` : ''}
-          <div class="deep-pending">💭 마스터팩 기반 상세 가이드는 다음 자동 갱신 때 생성됩니다 (Haiku)</div>
         </div>
       </div>`;
   }else{
-    deepHtml = `<div class="card-deep"><div class="deep-pending">💭 상세 가이드는 다음 자동 갱신 때 생성됩니다 (Haiku)</div></div>`;
+    deepHtml = `<div class="card-deep"><div class="deep-pending">💭 분류 데이터 처리 대기 중</div></div>`;
   }
 
   // v8: 5축 점수 미니 스트립
