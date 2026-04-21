@@ -1476,11 +1476,16 @@
         "deep_reason": "XCom 법인 설립일이 3년 이내라면 지원 가치 있음. 신보 보증·투자연계는 sinhon.life MVP→시리즈A 전환에 실질적 레버리지. 경쟁률은 높지만 AI 정책번역 버티컬 포지션으로 차별화 가능. 단 법인 자격 확인(D-0)이 선행 조건이며, 발표평가까지 약 20h 투입 필요. 1순위 공고(남동구·모두의창업)와 병행 가능한 일정이면 진행 권장. 신보 네트워크(보증·멘토링) 자체가 향후 2년 성장에 자산.",
         "entity_suggestion": "xcom_corp",
         "skip_recommended": false,
-        "confidence": "mid",
+        "confidence": "high",
         "signal_strength": "moderate",
-        "critical_flag": "법인 설립일 즉시 확인 필수 — 미확인 시 skip=false 유지 불가",
+        "critical_flag": null,
         "priority_rank": 1,
-        "_source": "cowork-sonnet-v9-deep + red-team-review"
+        "_source": "cowork-sonnet-v9-deep + red-team-review",
+        "verified_facts": {
+          "xcom_founding_date": "2025-10-10",
+          "three_year_eligibility": "CONFIRMED (업력 ~6개월)"
+        },
+        "_updated_at": "2026-04-22"
       },
       "deep_summary": {
         "_schema": "v5",
@@ -1571,11 +1576,12 @@
           "time_budget 16~22시간은 1차 서류 기준 — 2차 발표평가까지 포함하면 30~35시간. 남동구·모두의창업 병행 시 일정 충돌 리스크를 더 강하게 경고해야 함."
         ],
         "override_reason": null,
-        "confidence_adjusted": "mid",
+        "confidence_adjusted": "high",
         "priority_rank": 1,
-        "critical_flag": "법인 설립일 즉시 확인 필수 — 미확인 시 skip=false 유지 불가",
+        "critical_flag": null,
         "_reviewed_at": "2026-04-22",
-        "reviewer_model": "claude-sonnet-4-6"
+        "reviewer_model": "claude-sonnet-4-6",
+        "post_review_note": "XCom 설립일 2025-10-10 확인 (2026-04-22) — 3년 이내 요건 충족, 자격 블록커 해제. skip=false 무조건 확정."
       }
     },
     {
@@ -1814,9 +1820,16 @@
         "skip_recommended": true,
         "confidence": "mid",
         "signal_strength": "weak",
-        "critical_flag": "D-2 마감 — 오늘 오전 sminfo.mss.go.kr 소상공인 자격 조회가 최우선. 결과에 따라 즉시 go/skip 분기",
+        "critical_flag": "자격 확인 완료 (XCom=소상공인 5인 미만). 남은 장벽: D-2 물리적 일정 + 매출·실적 0 → 사용자 go/no-go 결정 필요",
         "priority_rank": 3,
-        "_source": "cowork-sonnet-v9-deep + red-team-review"
+        "_source": "cowork-sonnet-v9-deep + red-team-review",
+        "decision_required": true,
+        "verified_facts": {
+          "xcom_is_sosang": true,
+          "xcom_employee_under_5": true,
+          "skip_logic_update": "자격 미확인(#1) 해제. 매출 0(#2) + D-2 타이트(#3)만 남음 — 사용자 의사결정"
+        },
+        "_updated_at": "2026-04-22"
       },
       "deep_summary": {
         "_schema": "v5",
@@ -1909,9 +1922,10 @@
         "override_reason": null,
         "confidence_adjusted": "mid",
         "priority_rank": 3,
-        "critical_flag": "D-2 마감 — 오늘 오전 sminfo.mss.go.kr 소상공인 자격 조회가 최우선. 결과에 따라 즉시 go/skip 분기",
+        "critical_flag": "자격 확인 완료 — D-2 내 go/no-go 사용자 최종결정 필요",
         "_reviewed_at": "2026-04-22",
-        "reviewer_model": "claude-sonnet-4-6"
+        "reviewer_model": "claude-sonnet-4-6",
+        "post_review_note": "소상공인 자격 확인 (2026-04-22 sminfo.mss.go.kr 조회). skip=true의 3개 근거 중 #1(자격) 해제. #2(매출0 심사열위), #3(D-2 물리적 타이트)는 유지. 로컬크리에이터 트랙 조건부 go 가능."
       }
     },
     {
@@ -1981,9 +1995,13 @@
         "skip_recommended": true,
         "confidence": "mid",
         "signal_strength": "weak",
-        "critical_flag": "공고 원문 재확인 필수 — '아기유니콘 육성사업'(정부 직접 지원)인지 '민간 VC 투자 모집'인지 성격 확인 후 재판정 권고",
+        "critical_flag": null,
         "priority_rank": 4,
-        "_source": "cowork-sonnet-v9-deep + red-team-review"
+        "_source": "cowork-sonnet-v9-deep + red-team-review",
+        "user_passed": true,
+        "user_passed_at": "2026-04-22",
+        "user_passed_reason": "공고 원문 재확인 불필요 — 사용자 스킵 결정",
+        "_updated_at": "2026-04-22"
       },
       "deep_summary": {
         "_schema": "v5",
@@ -2075,9 +2093,10 @@
         "override_reason": null,
         "confidence_adjusted": "mid",
         "priority_rank": 4,
-        "critical_flag": "공고 원문 재확인 필수 — '아기유니콘 육성사업'(정부 직접 지원)인지 '민간 VC 투자 모집'인지 성격 확인 후 재판정 권고",
+        "critical_flag": null,
         "_reviewed_at": "2026-04-22",
-        "reviewer_model": "claude-sonnet-4-6"
+        "reviewer_model": "claude-sonnet-4-6",
+        "post_review_note": "사용자 패스 결정 (2026-04-22) — 공고 원문 재확인 생략."
       }
     }
   ],
@@ -2130,6 +2149,16 @@
       "175907 공고 성격 팩트 에러가 이번 감수의 가장 심각한 발견 — 아기유니콘(정부 직접 지원)과 민간 VC 투자 모집은 전혀 다른 성격임에도 원문 확인 없이 분석 진행.",
       "176939(소진공)은 5분 자격 조회로 go/skip이 결정되는 단순 분기 구조 — 이 조회를 먼저 하고 177224 작업에 집중하는 순서가 최적."
     ],
-    "final_recommendation": "이번 주 집중 1건: 177224 Start-up NEST 19기 (설립일 3년 이내 확인 전제). 오전 중 (1) XCom 설립일 확인, (2) 176939 소상공인 자격 5분 조회, (3) 175907 공고 원문 재확인 세 가지 선행 후 177224 접수 착수."
+    "final_recommendation": "XCom 설립일 2025-10-10 (업력 ~6개월) 및 소상공인 자격 확인 완료 (2026-04-22). [1순위·확정] 177224 Start-up NEST 19기 skip=false 무조건 확정 (D-14 comfortable). [D-2 결정 대기] 176939 소진공 소상공인 도약 자격 해제 — 매출0·D-2 타이트 리스크만 남음. 사용자 go/no-go 결정 필요. [SKIP 확정] 175907 아기유니콘 사용자 패스. [SKIP 유지] 177183 삼성물산 FutureScape 건설 B2B 도메인 미스매치.",
+    "verified_facts": {
+      "xcom_founding_date": "2025-10-10",
+      "xcom_age_at_check": "약 6개월 (2026-04-22 기준)",
+      "xcom_three_year_window_ok": true,
+      "xcom_sosang_gonggigae": true,
+      "xcom_employee_count": "5인 미만",
+      "verified_at": "2026-04-22",
+      "verified_by": "user (heoparang)"
+    },
+    "last_verification": "2026-04-22"
   }
 }
