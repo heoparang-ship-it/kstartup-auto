@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "last_updated": "2026-04-22",
+  "_comment": "사용자 NO-GO 판정 누적 기록. classify_v9.py의 load_nogo_patterns()가 'nogo_entries' 키를 읽어 각 entry.patterns를 flat list로 로드. 공고 text(title + agency + content + integrated_name)에 매칭 시 해당 공고 nogo_match 필드 기록 + tier 1단계 강등(green→yellow→orange).",
+  "_schema_doc": {
+    "date": "YYYY-MM-DD (KST) — NO-GO 판정 날짜",
+    "pbancSn": "string — K-Startup 공고 ID",
+    "title": "string — 공고 제목 (메타)",
+    "agency": "string — 발주기관 (메타)",
+    "reason_user": "string — 사용자 NO-GO 이유",
+    "patterns": "string[] — classify_v9가 매칭에 사용할 키워드. 단순 substring 매칭 (대소문자 무시)"
+  },
+  "nogo_entries": [
+    {
+      "date": "2026-04-21",
+      "pbancSn": "176922",
+      "title": "2026년 인천스타트업파크 TRYOUT AI 실증 사업 모집 공고",
+      "agency": "인천테크노파크 원장",
+      "reason_user": "TRYOUT AI 실증은 도시안전(CCTV 영상분석·이상행동 감지) 도메인 특화 — 생애주기 허브(결혼·허니문·출산·주거·금융)와 무관. 재공고 시 자동 차단.",
+      "patterns": ["TRYOUT", "도시안전", "이상행동 감지", "영상분석"]
+    },
+    {
+      "date": "2026-04-21",
+      "pbancSn": "177062",
+      "title": "2026년 인천스타트업파크 TRYOUT 대학 실증사업 참여기업 모집공고",
+      "agency": "인천테크노파크 원장",
+      "reason_user": "TRYOUT 시리즈 — 대학 특화 인프라 기반 하드웨어·제조 실증. 신혼생활 B2C 플랫폼과 도메인 불일치.",
+      "patterns": ["TRYOUT 대학", "스케일업 챌린지랩"]
+    }
+  ]
+}
