@@ -61,6 +61,17 @@
   .filter-btn.active.violet{background:var(--c-violet);border-color:var(--c-violet)}
   .filter-btn .cnt{font-family:"SF Mono",Menlo,monospace;font-size:10px;opacity:0.7;margin-left:4px}
 
+  /* Search */
+  .search-wrap{display:flex;margin:12px 0 0;border:1px solid var(--line);border-radius:4px;overflow:hidden}
+  .search-icon{display:flex;align-items:center;padding:0 12px;background:var(--fg);color:var(--bg);font-size:14px;flex-shrink:0;user-select:none}
+  #search-input{flex:1;border:none;outline:none;padding:9px 12px;font-family:inherit;font-size:13px;background:var(--bg);color:var(--fg)}
+  #search-input::placeholder{color:var(--muted)}
+  #search-clear{display:none;align-items:center;padding:0 12px;background:var(--bg);border:none;border-left:1px solid var(--line-soft);cursor:pointer;font-size:14px;color:var(--muted);font-family:inherit}
+  #search-clear:hover{background:var(--hover);color:var(--fg)}
+  #search-clear.visible{display:flex}
+  .search-meta{font-size:11px;color:var(--muted);font-family:"SF Mono",Menlo,monospace;margin-top:6px;min-height:16px}
+  .hl{background:var(--fg);color:var(--bg);border-radius:2px;padding:0 1px}
+
   /* Section */
   section{margin-top:30px}
   h2{font-size:14px;margin:0 0 12px;padding-bottom:8px;border-bottom:1px solid var(--line);text-transform:uppercase;letter-spacing:0.1em;font-weight:700;display:flex;justify-content:space-between;align-items:center;gap:10px}
@@ -246,6 +257,12 @@
     <div class="diff-banner" id="diff-banner"></div>
     <div class="stats" id="stats-bar"></div>
     <div class="filters" id="filters"></div>
+    <div class="search-wrap">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="search-input" placeholder="공고명, 주관기관, 메모 검색...  ( / 단축키)" autocomplete="off" spellcheck="false">
+      <button id="search-clear" title="초기화 (Esc)">✕</button>
+    </div>
+    <div class="search-meta" id="search-meta"></div>
   </header>
 
   <div class="bulk-toolbar" id="bulk-toolbar">
@@ -277,7 +294,26 @@ let DATA = [];
 let POOL = null;          // 전체 JSON 객체 (history 포함)
 let state = loadState();
 let currentFilter = 'all';
+let currentSearch = '';
 let selectedIds = new Set();
+
+function matchesSearch(it, q){
+  if(!q) return true;
+  const hay = [it.title, it.agency, it.note, it.deep_summary, it.classify_evidence && it.classify_evidence.reason]
+    .filter(Boolean).join(' ').toLowerCase();
+  return q.split(/\s+/).filter(Boolean).every(t => hay.includes(t));
+}
+function hlText(text, q){
+  if(!q || !text) return esc(text||'');
+  const escaped = esc(text);
+  const terms = q.split(/\s+/).filter(Boolean);
+  let result = escaped;
+  terms.forEach(t => {
+    const safe = t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+    result = result.replace(new RegExp(safe,'gi'), m => `<span class="hl">${m}</span>`);
+  });
+  return result;
+}
 
 function loadState(){
   try{
@@ -486,13 +522,28 @@ function render(filter){
   document.getElementById('section-title-text').textContent = titleText;
   list.sort((a,b) => (a.deadline||'9999').localeCompare(b.deadline||'9999'));
 
+  // 검색 필터 적용
+  const q = currentSearch.trim().toLowerCase();
+  if(q) list = list.filter(it => matchesSearch(it, q));
+
+  const meta = document.getElementById('search-meta');
+  if(q){
+    meta.textContent = `"${currentSearch}" 검색 결과: ${list.length}건`;
+  } else {
+    meta.textContent = '';
+  }
+
   const grid = document.getElementById('card-grid');
   grid.className = 'grid';
-  if(!list.length){ grid.innerHTML = '<div class="empty">해당 조건의 공고가 없습니다.</div>'; return; }
-  grid.innerHTML = list.map(it => renderCard(it)).join('');
+  if(!list.length){
+    grid.innerHTML = `<div class="empty">${q ? `"${currentSearch}"에 해당하는 공고가 없습니다.` : '해당 조건의 공고가 없습니다.'}</div>`;
+    return;
+  }
+  grid.innerHTML = list.map(it => renderCard(it, q)).join('');
 }
 
-function renderCard(it){
+function renderCard(it, q){
+  q = q || '';
   const id = it._id;
   const status = getStatus(id);
   const d = daysUntil(it.deadline);
@@ -501,7 +552,7 @@ function renderCard(it){
   const isUpdated = it.last_changed_at === KSTD && it.first_seen !== KSTD && it._source === 'auto';
   const tier = it.tier || 'user';
   const url = it.url || (it.pbancSn ? `https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=${it.pbancSn}` : '');
-  const titleHtml = url ? `<a href="${url}" target="_blank" rel="noopener">${esc(it.title)}</a>` : `<span class="no-link">${esc(it.title)}</span>`;
+  const titleHtml = url ? `<a href="${url}" target="_blank" rel="noopener">${hlText(it.title, q)}</a>` : `<span class="no-link">${hlText(it.title, q)}</span>`;
   const dlText = it.deadline ? `${it.deadline} · ${dLabel(d)}` : dLabel(d);
   const selected = selectedIds.has(id) ? 'selected' : '';
   const checked = selectedIds.has(id) ? 'checked' : '';
@@ -699,8 +750,8 @@ function renderCard(it){
       ${statusBadge}
     </div>
     ${tierLogicHtml}
-    ${it.agency ? `<div class="card-agency">${esc(it.agency)}</div>` : ''}
-    ${it.note ? `<div class="card-note">${esc(it.note)}</div>` : ''}
+    ${it.agency ? `<div class="card-agency">${hlText(it.agency, q)}</div>` : ''}
+    ${it.note ? `<div class="card-note">${hlText(it.note, q)}</div>` : ''}
     ${deepHtml}
     ${actions ? `<div class="card-actions">${actions}</div>` : ''}
   </div>`;
@@ -780,6 +831,32 @@ document.getElementById('diff-banner').addEventListener('click', e => {
   render(chip.dataset.filter);
   const sec = document.querySelector('section');
   if(sec) sec.scrollIntoView({behavior:'smooth', block:'start'});
+});
+
+// ── 검색 이벤트 ──
+const _si = document.getElementById('search-input');
+const _sc = document.getElementById('search-clear');
+let _sd = null;
+_si.addEventListener('input', () => {
+  currentSearch = _si.value;
+  _sc.classList.toggle('visible', currentSearch.length > 0);
+  clearTimeout(_sd);
+  _sd = setTimeout(() => render(currentFilter), 160);
+});
+_si.addEventListener('keydown', e => {
+  if(e.key === 'Escape'){
+    currentSearch = ''; _si.value = ''; _sc.classList.remove('visible');
+    render(currentFilter); _si.blur();
+  }
+});
+_sc.addEventListener('click', () => {
+  currentSearch = ''; _si.value = ''; _sc.classList.remove('visible');
+  render(currentFilter); _si.focus();
+});
+document.addEventListener('keydown', e => {
+  if(e.key === '/' && e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA'){
+    e.preventDefault(); _si.focus(); _si.select();
+  }
 });
 
 // ── Init ──
