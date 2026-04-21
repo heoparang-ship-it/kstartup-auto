@@ -542,6 +542,24 @@ function render(filter){
   grid.innerHTML = list.map(it => renderCard(it, q)).join('');
 }
 
+// ── 마스터팩 모듈 코드 → 한국어 레이블 ──
+const MODULE_LABELS = {
+  'M01_identity':       '사업 정체성',
+  'M02_spine':          '당사자성 서사',
+  'M03_flywheel':       '3축 플라이휠(커뮤니티·콘텐츠·커머스)',
+  'M04_problem':        '신혼부부 페인포인트',
+  'M05_ai_tech':        'AI 기술 포지셔닝',
+  'M06_content_engine': '콘텐츠 2차가공 엔진',
+  'M07_incheon':        '인천 지역성',
+  'M08_events':         '공공·CSR 이벤트 트랙',
+  'M09_global':         '글로벌 확장(sinhon.global)',
+  'M10_team_budget':    '팀·예산 스냅샷',
+  'M11_dual_entry':     '이중지원 — 이영림(예비창업자 트랙 B)',
+};
+function modLabel(code){
+  return MODULE_LABELS[code] || code.replace(/^M\d+_/, '').replace(/_/g,' ');
+}
+
 // ── 3단계 지원 전략 생성 (tier + axis + risk 기반) ──
 function buildStrategyList(it, ev){
   const tier = it.tier || 'red';
@@ -551,12 +569,12 @@ function buildStrategyList(it, ev){
 
   // Tier별 기본 전략
   if(tier === 'green'){
-    strats.push('마스터팩 M01(정체성)·M02(3축 플라이휠) 서사를 전면 배치해 사업계획서 작성 — 심사위원 설득 논리 완성도 최우선');
+    strats.push('사업 정체성 + 당사자성 서사(결혼→인천 이주→정책 언어 장벽→창업)를 도입부에 배치해 심사위원 공감 확보');
+    strats.push('3축 플라이휠(커뮤니티·콘텐츠·커머스) 중 공고 목적과 가장 가까운 축을 중심 BM으로 강조');
     strats.push('마감 여유를 활용해 증빙 자료(E-01~E-30 중 해당 항목) 사전 준비 및 예산편성표 정합성 검토');
-    strats.push('당사자성 서사(결혼→인천 이주→정책 언어 장벽→창업) 1~2문단 삽입으로 심사위원 공감 확보');
   } else if(tier === 'yellow'){
     strats.push('강점 축(매칭 키워드·업종 적합성)을 도입부에 집중 배치하고, 약점 축은 신혼생활 B2B 라이선스·다문화 트랙으로 보완 논리 수립');
-    strats.push('당사자성 서사 + 3축 플라이휠(커뮤니티·콘텐츠·커머스) 중 공고 목적과 가장 가까운 축을 강조');
+    strats.push('당사자성 서사 + 3축 플라이휠 중 공고 목적과 가장 가까운 축을 강조');
     strats.push('접수 전 공고 기관에 사전 문의(유선·이메일)로 자격 경계 조건 재확인 — 불명확한 요건은 질의서 첨부');
   } else if(tier === 'orange'){
     strats.push('자격 요건 재확인 필수 — 충족 가능 조건과 미충족 조건을 구분해 준비 시간 대비 ROI 검토 후 진행 여부 결정');
@@ -575,7 +593,13 @@ function buildStrategyList(it, ev){
     else if(v && v.level === 'partial') weakAxes.push(`${label}(부분충족: ${v.detail||''})`);
   }
   if(weakAxes.length){
-    strats.push(`보완 필요 항목 — ${weakAxes.join(' / ')}: 마스터팩 M07(지역·인천), M10(다문화), M12(글로벌) 모듈 중 해당 축 서술 보강`);
+    const weakMods = weakAxes.map(w => {
+      if(w.startsWith('지역')) return '인천 지역성 서술 보강';
+      if(w.startsWith('업종')) return '콘텐츠 2차가공 엔진 또는 AI 기술 포지셔닝 부각';
+      if(w.startsWith('자격')) return '이중지원(이영림 예비창업자 트랙 B) 또는 글로벌 확장 서사 검토';
+      return '마스터팩 해당 축 서술 보강';
+    });
+    strats.push(`보완 필요 항목 — ${weakAxes.join(' / ')}: ${[...new Set(weakMods)].join(', ')}`);
   }
 
   // 리스크 플래그 대응
@@ -708,7 +732,7 @@ function renderCard(it, q){
     const modsUsed = Array.isArray(ds._modules_used) ? ds._modules_used : [];
     const modsHtml = modsUsed.length ? `
           <div class="deep-modules">
-            주입된 마스터팩 모듈: ${modsUsed.map(m => `<span class="mod">${esc(m)}</span>`).join('')}
+            적용 관점: ${modsUsed.map(m => `<span class="mod" title="${esc(m)}">${esc(modLabel(m))}</span>`).join('')}
           </div>` : '';
 
     deepHtml = `
