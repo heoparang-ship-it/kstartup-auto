@@ -7,14 +7,8 @@ on:
     - cron: '0 0,9 * * 1-5'
   workflow_dispatch:
     inputs:
-      force_regenerate:
-        description: 'pool 전체 deep_summary 강제 재생성 (백필용, 비용 ~$0.3)'
-        required: false
-        default: 'false'
-        type: choice
-        options: ['false', 'true']
       skip_crawl:
-        description: '크롤 스킵 (pool 재분류 + Haiku만 실행)'
+        description: '크롤 스킵 (pool 재분류 + 원문 fetch만 실행)'
         required: false
         default: 'false'
         type: choice
@@ -38,16 +32,9 @@ jobs:
 
       - name: Run update
         env:
-          # 2026-04-20: Haiku 기본 비활성 (ENABLE_HAIKU=0). Anthropic 크레딧 0원 유지.
-          # deep_summary 백필은 Cowork 세션(Sonnet 서브에이전트)에서 수행.
-          # 1회성 Actions 백필이 필요하면 아래 2줄을 주석 해제:
-          # ENABLE_HAIKU: '1'
-          # ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          FORCE_REGEN: ${{ github.event.inputs.force_regenerate }}
           SKIP_CRAWL: ${{ github.event.inputs.skip_crawl }}
         run: |
           ARGS=""
-          if [ "$FORCE_REGEN" = "true" ]; then ARGS="$ARGS --force-regenerate"; fi
           if [ "$SKIP_CRAWL" = "true" ]; then ARGS="$ARGS --skip-crawl"; fi
           echo "Running: python update.py $ARGS"
           python update.py $ARGS
@@ -56,22 +43,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add recommendations.json pending_deep_summary.json
-          # pool 변경이 없으면 skip
-          if git diff --cached --quiet; then
-            echo "No changes to commit"
-            exit 0
-          fi
-          git commit -m "auto: $(date -u +%Y-%m-%d) 공고 업데이트"
-          # 실행 중 main이 이동했을 수 있으므로 rebase 후 재시도 (최대 3회)
-          for i in 1 2 3; do
-            git pull --rebase origin main || true
-            if git push; then
-              echo "push succeeded on attempt $i"
-              exit 0
-            fi
-            echo "push attempt $i failed, retrying..."
-            sleep 5
-          done
-          echo "push failed after 3 attempts"
-          exit 1
+          git add recommendations.json
+          git diff --cached --quiet || git commit -m "auto: $(date -u +%Y-%m-%d) 공고 업데이트"
+          git push
