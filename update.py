@@ -1,95 +1,42 @@
 #!/usr/bin/env python3
 """
-K-Startup 공고 자동 업데이트 오케스트레이터 v4 (founder-gov-radar)
-RSS 크롤 → 규칙 분류(+evidence) → 만료 삭제 → upsert → Haiku deep_summary 생성 → 저장
+K-Startup 공고 자동 업데이트 오케스트레이터 v5 (founder-gov-radar)
+크롤 → 규칙 분류 → 만료 삭제 → upsert → 🟢🟡 원문 fetch 저장
 
-v4 변경점:
-- classify() v7: (tier, evidence_dict) 반환. note = evidence.summary_reason
-- item.classify_evidence 저장 (rule_checks / risk_flags / category_hints)
-- master_modules.json 동적 주입 — 공고 카테고리에 맞는 모듈 2~5개만 Haiku에 전달
-- deep_summary 새 스키마: fit / strategy[] / checkpoints[] / difficulty / next_action
-                         + master_anchor / evidence_quote / risk_notes[]
-- --force-regenerate: pool 전체 deep_summary 재생성 (1회성 백필)
-- 🔴 공고는 pool 제외 유지 (기존 로직)
-
-Usage:
-  python update.py                  # 일반 실행 (신규 최대 10건 요약)
-  python update.py --force-regenerate  # 전체 재생성 (pool 전체 재요약)
+v5 변경점 (Haiku 제거):
+- deep_summary(Haiku) 완전 제거 — API 키 불필요
+- 🟢🟡 항목에 한해 K-Startup 원문 fetch → raw_content 저장
+- 분석은 Cowork 세션에서 on-demand (원문 읽어서 즉시 판단)
+- --skip-crawl: 크롤 스킵, pool 재분류만 수행
 """
 import argparse
 import json
-import os
+import re
 import sys
 import time
 from datetime import datetime, timezone, timedelta
+
+import requests
+from bs4 import BeautifulSoup
 
 from crawl import crawl
 from classify import classify, TODAY
 
 KST = timezone(timedelta(hours=9))
 POOL_FILE = "recommendations.json"
-MASTER_MODULES_FILE = "master_modules.json"
 STALE_DAYS = 14
 HISTORY_MAX_DAYS = 30
 
-# ── Haiku deep_summary 설정 ──
-HAIKU_MODEL = "claude-haiku-4-5-20251001"
-HAIKU_MAX_NEW_PER_RUN = 10            # 일반 실행: 신규 최대 10건
-HAIKU_MAX_BACKFILL_PER_RUN = 150      # --force-regenerate: 최대 150건
-HAIKU_TIMEOUT_S = 60
-
-# ── 원문 fetch 설정 (🟢🟡만) ──
-FETCH_TIERS = {"green", "yellow"}     # 원문 fetch 대상 티어
-FETCH_CONTENT_MAX_CHARS = 2500        # 원문 최대 길이 (토큰 예산)
+# 원문 fetch 설정
+FETCH_TIERS = {"green", "yellow"}
+FETCH_CONTENT_MAX_CHARS = 2500
 FETCH_TIMEOUT_S = 12
-
-BASE_SYSTEM_PREFIX = """당신은 허파랑 대표(법인 XCom)의 정부지원사업 컨설턴트입니다.
-sinhon.life(B2C 신혼부부 라이프스타일 플랫폼)의 정체성·당사자성·플라이휠을 숙지한 상태로,
-아래 공고가 이 사업에 실제로 맞는지 솔직하게 평가합니다.
-
-[sinhon.life 핵심 정의 — 도메인 판단 기준]
-- 서비스 도메인: 신혼부부 대상 B2C 라이프스타일 플랫폼 (결혼준비·신혼살림·정책정보)
-- 기술: Claude API 기반 AI 챗봇, 개인화 추천, 콘텐츠 큐레이션
-- 절대 해당 없는 영역: CCTV·영상분석, 자율주행, 교통안전, 재난예측, 도시인프라,
-  제조·하드웨어, 바이오·의료, 방위산업, 스마트팩토리, 건설·부동산
-
-공고가 위 "절대 해당 없는 영역"의 기술/솔루션을 명시적으로 요구한다면
-억지 연결 없이 verdict: "red"를 출력하세요.
-맞는 척 하는 것은 실제 시간 낭비와 서류 탈락으로 이어집니다.
-
----
-[마스터팩 모듈] (공고 유형별로 동적 주입됨)
-
-{MODULES}
-
----
-"""
-
-SCHEMA_INSTRUCTION = """다음 JSON 스키마에 정확히 맞춰 응답하세요.
-반드시 `{` 로 시작하고 `}` 로 끝나는 순수 JSON만 출력하세요. 코드펜스(```), 설명 문장, 전후 공백 절대 금지.
-
-{
-  "verdict": "green|yellow|red — 솔직한 도메인 적합 판정. 도메인 미스매치면 반드시 red",
-  "fit": "적합하면: sinhon.life와 연결되는 근거 2~3문장 / 부적합하면: 미스매치 이유 1~2문장",
-  "strategy": ["green/yellow일 때만: 지원 포지셔닝 액션 1", "액션 2", "액션 3"],
-  "checkpoints": ["지원 전 확인 필수사항 1 (자격·서류·지역·업력·도메인 적합성 등)", "확인사항 2"],
-  "difficulty": "low|medium|high|impossible — 도메인 미스매치면 impossible",
-  "next_action": "green/yellow: 오늘~이번주 실행 1개(20자 이내) / red: '패스 — 도메인 미스매치'",
-  "master_anchor": "연결되는 마스터팩 앵커 (없으면 빈 문자열)",
-  "evidence_quote": "공고 원문 핵심 근거 1구절 (30자 이내, 없으면 빈 문자열)",
-  "risk_notes": ["주의점 1 (red면 미스매치 사유를 구체적으로)", "주의점 2"]
-}"""
+FETCH_MAX_PER_RUN = 20   # 신규 항목 중 최대 fetch 건수 (Actions 시간 제한 대비)
 
 
+# ── 원문 fetch ────────────────────────────────────────────────
 def fetch_announcement_content(pbancSn: str) -> str:
-    """🟢🟡 공고 원문을 K-Startup 페이지에서 직접 fetch.
-
-    성공 시 핵심 텍스트(최대 FETCH_CONTENT_MAX_CHARS자) 반환.
-    실패 시 빈 문자열 반환 — Haiku는 기존 메타데이터만 사용.
-    """
-    import requests
-    from bs4 import BeautifulSoup
-
+    """K-Startup 공고 원문 fetch. 성공 시 텍스트, 실패 시 빈 문자열."""
     url = (
         f"https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do"
         f"?schM=view&pbancSn={pbancSn}"
@@ -97,8 +44,7 @@ def fetch_announcement_content(pbancSn: str) -> str:
     headers = {
         "User-Agent": (
             "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-            "AppleWebKit/537.36 (KHTML, like Gecko) "
-            "Chrome/124.0 Safari/537.36"
+            "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
         ),
         "Accept-Language": "ko-KR,ko;q=0.9",
     }
@@ -106,115 +52,69 @@ def fetch_announcement_content(pbancSn: str) -> str:
         resp = requests.get(url, headers=headers, timeout=FETCH_TIMEOUT_S)
         resp.raise_for_status()
         soup = BeautifulSoup(resp.text, "html.parser")
-
-        # 불필요한 태그 제거
         for tag in soup(["script", "style", "nav", "header", "footer", "noscript"]):
             tag.decompose()
-
-        # K-Startup 공고 본문 영역 순차 탐색 (실측 기반 우선순위)
         content = (
-            soup.find("div", class_="app_notice_details-wrap")  # 공고 상세 전체
-            or soup.find("div", class_="information_list-wrap")  # 신청방법·대상 섹션
+            soup.find("div", class_="app_notice_details-wrap")
+            or soup.find("div", class_="information_list-wrap")
             or soup.find("div", class_="board-view-content")
             or soup.find("div", id="content")
             or soup.find("article")
             or soup.find("main")
         )
         text = (content or soup).get_text(separator="\n", strip=True)
-
-        # 연속 빈 줄 압축
-        import re
         text = re.sub(r"\n{3,}", "\n\n", text)
         return text[:FETCH_CONTENT_MAX_CHARS]
     except Exception as e:
-        print(f"[fetch] {pbancSn} 원문 fetch 실패: {e}", file=sys.stderr)
+        print(f"[fetch] {pbancSn} 실패: {e}", file=sys.stderr)
         return ""
 
 
-def load_master_modules() -> dict:
-    """마스터팩 모듈 매니페스트 로드"""
-    try:
-        with open(MASTER_MODULES_FILE, "r", encoding="utf-8") as f:
-            data = json.load(f)
-        return data
-    except (FileNotFoundError, json.JSONDecodeError) as e:
-        print(f"[modules] {MASTER_MODULES_FILE} 로드 실패: {e}. 기본 컨텍스트만 사용", file=sys.stderr)
-        return {
-            "always_inject": [],
-            "modules": {},
-        }
+def enrich_raw_content(items: list):
+    """🟢🟡 신규 항목(raw_content 없음)에 한해 원문 fetch 후 저장."""
+    targets = [
+        it for it in items
+        if it.get("tier") in FETCH_TIERS and not it.get("raw_content")
+    ]
+    if not targets:
+        print("[fetch] raw_content 신규 대상 없음", file=sys.stderr)
+        return
 
+    # 마감 임박 순 정렬
+    targets.sort(key=lambda x: x.get("deadline") or "9999-99-99")
+    to_fetch = targets[:FETCH_MAX_PER_RUN]
 
-def select_modules(item: dict, evidence: dict, manifest: dict) -> list:
-    """
-    공고의 category_hints + tier + note 키워드를 보고 주입할 모듈 선택.
-    반환: [(module_id, module_dict), ...]
-    """
-    modules = manifest.get("modules", {})
-    if not modules:
-        return []
-
-    always_keys = manifest.get("always_inject", [])
-    selected_ids = list(always_keys)  # M01_identity, M02_spine은 항상
-
-    hints = set(evidence.get("category_hints", []))
-    title = (item.get("title", "") + " " + item.get("note", "")).lower()
-
-    # hint 기반 모듈 선택
-    hint_to_module = {
-        "ai": "M05_ai_tech",
-        "content": "M06_content_engine",
-        "incheon": "M07_incheon",
-        "global": "M09_global",
-        "social": "M08_events",
-        "budget": "M10_team_budget",
-    }
-    for hint, mod_id in hint_to_module.items():
-        if hint in hints and mod_id not in selected_ids:
-            selected_ids.append(mod_id)
-
-    # tier가 green/orange이면 플라이휠 · 문제인식 항상 추가 (핵심 공고)
-    if item.get("tier") in ("green", "orange"):
-        for mod_id in ("M03_flywheel", "M04_problem"):
-            if mod_id not in selected_ids:
-                selected_ids.append(mod_id)
-    # yellow라도 "사업화", "BM", "수익모델" 키워드 있으면 플라이휠 추가
-    elif any(k in title for k in ("사업화", "BM", "수익모델", "수익 모델", "플랫폼")):
-        if "M03_flywheel" not in selected_ids:
-            selected_ids.append("M03_flywheel")
-
-    # 5개 초과면 앞에서 5개만 (토큰 예산)
-    selected_ids = selected_ids[:5]
-
-    return [(mid, modules[mid]) for mid in selected_ids if mid in modules]
-
-
-def format_modules_block(selected: list) -> str:
-    """선택된 모듈들을 system 프롬프트에 삽입할 텍스트로 포맷"""
-    if not selected:
-        return "(마스터팩 로드 실패 — 기본 컨텍스트만 사용)"
-    blocks = []
-    for mid, mod in selected:
-        blocks.append(
-            f"### {mid}: {mod['name']} (anchor: {mod.get('anchor', '')})\n"
-            f"{mod['summary']}"
+    print(f"[fetch] 원문 fetch 대상 {len(to_fetch)}건 (전체 미수집 {len(targets)}건)", file=sys.stderr)
+    succ = 0
+    for idx, item in enumerate(to_fetch, 1):
+        sn = item.get("pbancSn", "")
+        content = fetch_announcement_content(sn)
+        if content:
+            item["raw_content"] = content
+            item["raw_fetched_at"] = TODAY
+            succ += 1
+        print(
+            f"[fetch] {idx}/{len(to_fetch)} {'OK' if content else 'FAIL'} "
+            f"{sn} ({len(content)}자) {item.get('title','')[:25]}...",
+            file=sys.stderr,
         )
-    return "\n\n".join(blocks)
+        time.sleep(0.5)
+
+    print(f"[fetch] 완료 {succ}/{len(to_fetch)}건", file=sys.stderr)
 
 
+# ── pool 관리 ─────────────────────────────────────────────────
 def load_pool() -> dict:
     try:
         with open(POOL_FILE, "r", encoding="utf-8") as f:
             data = json.load(f)
         if data.get("schema_version") not in (2, 3, 4, 5):
             raise ValueError("schema mismatch")
-        # v2/v3/v4/v5 → 내부 v4로 통일 (items 구조 동일)
-        data["schema_version"] = 4
         data.setdefault("history", [])
         return data
     except (FileNotFoundError, json.JSONDecodeError, ValueError):
         return {
-            "schema_version": 4,
+            "schema_version": 5,
             "last_updated": TODAY,
             "updated_at_kst": "",
             "history": [],
@@ -224,6 +124,7 @@ def load_pool() -> dict:
 
 
 def save_pool(pool: dict, now_kst: datetime):
+    pool["schema_version"] = 5
     pool["last_updated"] = TODAY
     pool["updated_at_kst"] = now_kst.strftime("%Y-%m-%dT%H:%M:%S+09:00")
     with open(POOL_FILE, "w", encoding="utf-8") as f:
@@ -251,185 +152,19 @@ def prune_history(history: list, now_kst: datetime) -> list:
     return [h for h in history if h.get("date", "") >= cutoff]
 
 
-# ── Haiku deep_summary 생성 ───────────────────────────────────
-def _parse_json_response(text: str):
-    raw = (text or "").strip()
-    candidates = [raw]
-
-    stripped = raw
-    if stripped.startswith("```"):
-        stripped = stripped.split("\n", 1)[1] if "\n" in stripped else stripped[3:]
-        stripped = stripped.rstrip()
-        if stripped.endswith("```"):
-            stripped = stripped[:-3].rstrip()
-        candidates.append(stripped)
-
-    try:
-        s = raw.index("{")
-        e = raw.rindex("}") + 1
-        candidates.append(raw[s:e])
-    except ValueError:
-        pass
-
-    data = None
-    for cand in candidates:
-        try:
-            data = json.loads(cand)
-            break
-        except Exception:
-            continue
-    if data is None:
-        return None
-
-    required = {"fit", "strategy", "checkpoints", "difficulty", "next_action"}
-    if not required.issubset(data.keys()):
-        return None
-    if not isinstance(data.get("strategy"), list) or not isinstance(data.get("checkpoints"), list):
-        return None
-    if data.get("difficulty") not in ("low", "medium", "high"):
-        data["difficulty"] = "medium"
-    # v4 신규 필드는 선택적 — 없으면 기본값
-    data.setdefault("master_anchor", "")
-    data.setdefault("evidence_quote", "")
-    if "risk_notes" not in data or not isinstance(data["risk_notes"], list):
-        data["risk_notes"] = []
-    return data
-
-
-def generate_deep_summary(client, item: dict, evidence: dict, manifest: dict, raw_content: str = ""):
-    selected = select_modules(item, evidence, manifest)
-    modules_block = format_modules_block(selected)
-    system_prompt = BASE_SYSTEM_PREFIX.replace("{MODULES}", modules_block) + "\n" + SCHEMA_INSTRUCTION
-
-    structured = item.get("structured", {}) or {}
-
-    # 원문이 있으면 메타 요약 대신 원문 우선 사용
-    if raw_content:
-        content_block = f"[공고 원문]\n{raw_content}\n"
-    else:
-        # 원문 fetch 실패 시 기존 메타데이터 폴백
-        content_block = (
-            f"[공고 메타데이터 — 원문 fetch 실패, 추정 기반 평가]\n"
-            f"- 지원대상: {(structured.get('apply_target_desc', '') or '')[:300]}\n"
-        )
-
-    user_msg = (
-        f"- 제목: {item.get('title', '')}\n"
-        f"- 주관기관: {item.get('agency', '') or '(미상)'}\n"
-        f"- 마감일: {item.get('deadline', '') or '(미확인)'}\n"
-        f"- 티어: {item.get('tier', '')}\n"
-        f"- 지역: {structured.get('region', '')}\n"
-        f"- 업종분류: {structured.get('biz_class', '')}\n"
-        f"- 업력: {structured.get('biz_enyy', '')}\n\n"
-        f"{content_block}\n"
-        f"JSON만 응답하세요."
-    )
-    try:
-        resp = client.messages.create(
-            model=HAIKU_MODEL,
-            max_tokens=900,
-            system=system_prompt,
-            messages=[{"role": "user", "content": user_msg}],
-            timeout=HAIKU_TIMEOUT_S,
-        )
-        text = resp.content[0].text if resp.content else ""
-        parsed = _parse_json_response(text)
-        if parsed is None:
-            print(f"[haiku] 파싱 실패: {item.get('pbancSn')} — {text[:80]}", file=sys.stderr)
-            return None
-        # 어떤 모듈이 주입됐는지 기록 (디버깅/투명성)
-        parsed["_modules_used"] = [mid for mid, _ in selected]
-        return parsed
-    except Exception as e:
-        print(f"[haiku] 호출 실패 ({item.get('pbancSn')}): {e}", file=sys.stderr)
-        return None
-
-
-def enrich_deep_summaries(items: list, manifest: dict, force_regenerate: bool = False):
-    api_key = os.environ.get("ANTHROPIC_API_KEY", "").strip()
-    if not api_key:
-        print("[haiku] ANTHROPIC_API_KEY 없음 — deep_summary 생성 스킵", file=sys.stderr)
-        return (0, 0)
-
-    if force_regenerate:
-        targets = list(items)
-        max_cap = HAIKU_MAX_BACKFILL_PER_RUN
-        print(f"[haiku] --force-regenerate: pool 전체 {len(targets)}건 재생성 시도 (상한 {max_cap})", file=sys.stderr)
-    else:
-        targets = [it for it in items if not it.get("deep_summary") or it.get("deep_summary", {}).get("_schema") != "v4"]
-        if not targets:
-            print("[haiku] 모든 항목에 v4 deep_summary 존재 — 스킵", file=sys.stderr)
-            return (0, 0)
-        max_cap = HAIKU_MAX_NEW_PER_RUN
-
-    tier_order = {"green": 0, "orange": 1, "yellow": 2, "red": 9}
-    targets.sort(key=lambda x: tier_order.get(x.get("tier", "yellow"), 9))
-    to_process = targets[:max_cap]
-
-    try:
-        from anthropic import Anthropic
-        client = Anthropic(api_key=api_key)
-    except ImportError:
-        print("[haiku] anthropic 패키지 없음 — deep_summary 생성 스킵", file=sys.stderr)
-        return (0, 0)
-
-    print(f"[haiku] deep_summary 생성 대상 {len(to_process)}건 (전체 타겟 {len(targets)}건)", file=sys.stderr)
-
-    succ = 0
-    for idx, item in enumerate(to_process, 1):
-        evidence = item.get("classify_evidence") or {}
-        sn = item.get("pbancSn", "")
-        tier = item.get("tier", "")
-
-        # 🟢🟡만 원문 fetch — 🟠는 메타 폴백
-        raw_content = ""
-        if tier in FETCH_TIERS:
-            raw_content = fetch_announcement_content(sn)
-            fetch_ok = bool(raw_content)
-            print(
-                f"[fetch] {sn} 원문 {'OK' if fetch_ok else 'FAIL'} "
-                f"({len(raw_content)}자)",
-                file=sys.stderr,
-            )
-            time.sleep(0.5)  # K-Startup 서버 부하 방지
-
-        ds = generate_deep_summary(client, item, evidence, manifest, raw_content=raw_content)
-        if ds:
-            ds["_schema"] = "v4"
-            ds["_raw_fetched"] = bool(raw_content)  # 원문 fetch 여부 기록
-            item["deep_summary"] = ds
-            succ += 1
-            print(
-                f"[haiku] {idx}/{len(to_process)} OK {sn} "
-                f"{'(원문)' if raw_content else '(메타)'}: "
-                f"{item.get('title', '')[:30]}...",
-                file=sys.stderr,
-            )
-        else:
-            print(f"[haiku] {idx}/{len(to_process)} FAIL {sn}", file=sys.stderr)
-        time.sleep(0.2)
-
-    return (succ, len(to_process))
-
-
 # ── 메인 ──────────────────────────────────────────────────────
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--force-regenerate", action="store_true",
-                        help="pool 전체의 deep_summary를 강제 재생성 (1회성 백필)")
     parser.add_argument("--skip-crawl", action="store_true",
-                        help="크롤을 스킵하고 pool 재분류 + Haiku만 돌림 (백필용)")
+                        help="크롤 스킵, pool 재분류 + 원문 fetch만 수행")
     args = parser.parse_args()
 
     now_kst = datetime.now(KST)
-    manifest = load_master_modules()
-
     pool = load_pool()
     existing_items = pool.get("items", [])
     print(f"[load] 기존 풀: {len(existing_items)}건", file=sys.stderr)
 
     if args.skip_crawl:
-        # 재분류 only: evidence 없으면 채우고, tier 재판정
         print("[skip-crawl] 크롤 스킵. pool 전체 재분류만 수행", file=sys.stderr)
         kept_items = []
         red_count = 0
@@ -442,16 +177,17 @@ def main():
             item["classify_evidence"] = evidence
             if tier == "red":
                 red_count += 1
-                continue  # 🔴는 pool 제외
+                continue
             if prev_tier != tier:
                 reclassified += 1
+                # 티어 바뀌면 raw_content 재수집
+                if tier in FETCH_TIERS and prev_tier not in FETCH_TIERS:
+                    item.pop("raw_content", None)
+                    item.pop("raw_fetched_at", None)
             kept_items.append(item)
-        print(f"[reclassify] 재분류 {reclassified}건 변경, 🔴 제외 {red_count}건", file=sys.stderr)
+        print(f"[reclassify] {reclassified}건 변경, 🔴 {red_count}건 제외", file=sys.stderr)
+        expired_titles, new_added, updated_titles, crawled = [], [], [], []
 
-        expired_titles = []
-        new_added = []
-        updated_titles = []
-        crawled = []
     else:
         kept_items, expired_titles = expire_items(existing_items)
         if expired_titles:
@@ -459,7 +195,6 @@ def main():
 
         known_sns = {it["pbancSn"] for it in kept_items if it.get("pbancSn")}
         crawled = crawl(known_sns)
-
         kept_by_sn = {it["pbancSn"]: it for it in kept_items if it.get("pbancSn")}
 
         red_count = 0
@@ -484,21 +219,20 @@ def main():
                 new_deadline = crawled_item.get("deadline", "") or existing.get("deadline", "")
                 new_title = crawled_item.get("title", "") or existing.get("title", "")
                 new_agency = crawled_item.get("agency", "") or existing.get("agency", "")
-                if existing.get("tier") != tier:
-                    changed = True
-                if existing.get("deadline", "") != new_deadline and new_deadline:
-                    changed = True
-                if existing.get("title", "") != new_title and new_title:
-                    changed = True
-                if existing.get("note", "") != reason:
-                    changed = True
-                if existing.get("agency", "") != new_agency and new_agency:
-                    changed = True
-                existing["tier"] = tier
-                existing["note"] = reason
-                existing["classify_evidence"] = evidence
-                existing["deadline"] = new_deadline
-                existing["title"] = new_title
+                for field, new_val, old_key in [
+                    ("tier", tier, "tier"),
+                    ("deadline", new_deadline, "deadline"),
+                    ("title", new_title, "title"),
+                    ("note", reason, "note"),
+                    ("agency", new_agency, "agency"),
+                ]:
+                    if existing.get(old_key) != new_val and new_val:
+                        changed = True
+                existing.update({
+                    "tier": tier, "note": reason,
+                    "classify_evidence": evidence,
+                    "deadline": new_deadline, "title": new_title,
+                })
                 if new_agency:
                     existing["agency"] = new_agency
                 if crawled_item.get("structured"):
@@ -506,6 +240,9 @@ def main():
                 if changed:
                     existing["last_changed_at"] = TODAY
                     updated_titles.append(existing.get("title", ""))
+                    # 티어 변경으로 🟢🟡 진입 시 raw_content 재수집 예약
+                    if tier in FETCH_TIERS and not existing.get("raw_content"):
+                        existing.pop("raw_fetched_at", None)
             else:
                 new_item = {
                     "pbancSn": sn,
@@ -523,16 +260,16 @@ def main():
                 kept_items.append(new_item)
                 new_added.append(new_item["title"])
 
-    tier_order = {"green": 0, "orange": 1, "yellow": 2}
+    tier_order = {"green": 0, "yellow": 1, "orange": 2}
     kept_items.sort(key=lambda x: (
-        tier_order.get(x.get("tier", "yellow"), 9),
+        tier_order.get(x.get("tier", "orange"), 9),
         x.get("deadline") or "9999-99-99",
     ))
 
-    # deep_summary 생성 (캐시 or --force-regenerate)
-    ds_succ, ds_attempt = enrich_deep_summaries(kept_items, manifest, force_regenerate=args.force_regenerate)
+    # 🟢🟡 원문 fetch
+    enrich_raw_content(kept_items)
 
-    # history 기록
+    # history
     history = prune_history(pool.get("history", []), now_kst)
     history.append({
         "date": TODAY,
@@ -542,16 +279,9 @@ def main():
         "expired": len(expired_titles),
         "total": len(kept_items),
         "red_excluded": red_count,
-        "deep_summary_generated": ds_succ,
-        "force_regenerate": args.force_regenerate,
     })
     seen = set()
-    deduped = []
-    for h in reversed(history):
-        if h["date"] in seen:
-            continue
-        seen.add(h["date"])
-        deduped.append(h)
+    deduped = [h for h in reversed(history) if h["date"] not in seen and not seen.add(h["date"])]
     pool["history"] = list(reversed(deduped))
 
     pool["items"] = kept_items
@@ -560,7 +290,6 @@ def main():
         "expired": expired_titles,
         "new_added": new_added,
         "updated_today": updated_titles,
-        "deep_summary": {"generated": ds_succ, "attempted": ds_attempt, "force_regenerate": args.force_regenerate},
         "stats": {
             "green": sum(1 for i in kept_items if i.get("tier") == "green"),
             "yellow": sum(1 for i in kept_items if i.get("tier") == "yellow"),
@@ -569,15 +298,20 @@ def main():
             "expired_removed": len(expired_titles),
             "total_pool": len(kept_items),
             "rss_total": len(crawled) if not args.skip_crawl else 0,
+            "raw_fetched": sum(1 for i in kept_items if i.get("raw_content")),
         },
     }
     save_pool(pool, now_kst)
 
     stats = pool["_meta"]["stats"]
     print(f"\n{'='*50}", file=sys.stderr)
-    print(f"[결과] nidview {stats['rss_total']} → 🟢{stats['green']} 🟡{stats['yellow']} 🟠{stats['orange']} 🔴{stats['red_excluded']} | "
-          f"신규 {len(new_added)} · 수정 {len(updated_titles)} · 만료 {stats['expired_removed']} · 풀 {stats['total_pool']} · "
-          f"Haiku {ds_succ}/{ds_attempt}건", file=sys.stderr)
+    print(
+        f"[결과] nidview {stats['rss_total']} → "
+        f"🟢{stats['green']} 🟡{stats['yellow']} 🟠{stats['orange']} 🔴{stats['red_excluded']} | "
+        f"신규 {len(new_added)} · 수정 {len(updated_titles)} · 만료 {stats['expired_removed']} · "
+        f"풀 {stats['total_pool']} · 원문 {stats['raw_fetched']}건",
+        file=sys.stderr,
+    )
 
 
 if __name__ == "__main__":
