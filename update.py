@@ -206,9 +206,9 @@ def load_pool() -> dict:
     try:
         with open(POOL_FILE, "r", encoding="utf-8") as f:
             data = json.load(f)
-        if data.get("schema_version") not in (2, 3, 4):
+        if data.get("schema_version") not in (2, 3, 4, 5):
             raise ValueError("schema mismatch")
-        # v2/v3 → v4 마이그레이션
+        # v2/v3/v4/v5 → 내부 v4로 통일 (items 구조 동일)
         data["schema_version"] = 4
         data.setdefault("history", [])
         return data
