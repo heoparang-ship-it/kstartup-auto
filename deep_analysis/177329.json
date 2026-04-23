@@ -1,0 +1,111 @@
+{
+  "pbancSn": 177329,
+  "title": "일잘러를 위한 \"클로드 코드 입문&자동화 실전 교육\" 참여자 모집 (『신한 스퀘어브릿지』 스타트업 네트워킹 5월 브릿지 클럽)",
+  "analyzed_at": "2026-04-24T16:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.03,
+    "time_cost_hours": "4-8",
+    "one_liner": "Claude Code 교육·네트워킹 이벤트 — 직접자금 0, 스킬 이미 보유, ROI 측면 NO-GO (참석 가치는 있으나 자금 배분 대상 아님)"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "행사·네트워크·교육 (민간, 신한금융희망재단)",
+      "body": "신한 스퀘어브릿지가 운영하는 월간 스타트업 네트워킹 행사 '브릿지 클럽' 5월 에디션. Claude Code 설치·실습 교육 + 스타트업 관계자 네트워킹 구성. 참여 대상: 스타트업 임직원·예비창업자·AC/VC 관계자 등. 직접 현금 지원·상금·PoC비 없음. 교육 참여비(무료 또는 소액) 성격.",
+      "benefits": [
+        { "k": "교육", "v": "Claude Code 입문·자동화 실전 교육" },
+        { "k": "네트워킹", "v": "스타트업·AC/VC·신한금융 관계자 네트워킹" }
+      ],
+      "watchout": "직접 자금 지원 없음; 교육·네트워킹만으로 구성된 행사 — 자동 NO-GO 조건(직접자금 0)"
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [
+        {
+          "point": "Claude Code는 허파랑 팀이 이미 프로덕션에서 일상 활용 중",
+          "reason": "교육 내용이 기존 역량 이하 수준 — 새로운 스킬 획득 기대치 낮음",
+          "fit": "🟡 기술 역량 이미 보유, 교육 가치 미미"
+        }
+      ],
+      "tech_adjacent": [],
+      "mismatch_note": "ROI 판정 대상이 아님 — 자금 지원 없는 네트워킹 이벤트. 신한금융희망재단 관계자 컨택이 목적이라면 별도 판단 가능하나 정부지원 자금 ROI 계산 범주 밖.",
+      "critical_gap": "직접 자금 0원, 교육만 — 자동 NO-GO 조건 충족"
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "이동·참석·교육", "hours": "4-6" },
+          { "stage": "후속 네트워킹 팔로업", "hours": "1-2" }
+        ],
+        "total": "4-8h (자발적 참석 시)"
+      },
+      "probability": {
+        "doc_pass": 1.0,
+        "final_given_doc_pass": 1.0,
+        "final": 0.03,
+        "basis": "누구나 참석 가능한 오픈 이벤트이나 직접 자금 기댓값 0 — 0.03은 스키마 하한값"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "직접 자금 0원, 네트워킹 간접 가치만 (정량화 불가)"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "biz_class = 행사·네트워크, 직접 자금 지원 0 — 자동 NO-GO 조건",
+        "'교육만 수료하면 끝' 구조, 창업 자금·투자 연계 없음",
+        "Claude Code 역량 이미 보유 — 교육 내용의 추가 가치 없음",
+        "같은 기간 🟢 카드(모두의 창업·파주 청년창업) 2건 존재 — 자원 분산 불가"
+      ],
+      "exception_go_conditions": [
+        "신한 스퀘어브릿지 입주 프로그램 또는 신한금융 OI 공고 준비를 위한 사전 관계 형성이 목적일 때 (별도 전략적 판단, 자금 ROI와 무관)"
+      ]
+    },
+
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "직접 자금 포함, 예비창업 매칭 1순위"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 전략 경기 트랙"
+        },
+        {
+          "name": "2026 유니콘 브릿지 with 아이티센 (경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동 — 기창업·sinhon.life",
+          "priority": "🟡",
+          "reason": "sinhon.life 직접 지원 가능 기창업 트랙"
+        }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19 + auto-memory/project_dual_entry_strategy@2026-04-20 + user_business_registration"
+    }
+  }
+}

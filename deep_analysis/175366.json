@@ -1,0 +1,106 @@
+{
+  "pbancSn": 175366,
+  "title": "SK하이닉스청년창업파크 입주기업 모집(상시모집)",
+  "analyzed_at": "2026-04-24T16:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.08,
+    "time_cost_hours": "20-40",
+    "one_liner": "충북 청주 서원대 기반 창업파크 — 입주 주소지 이전 필수, 하드웨어 중심 인프라, SW 법인에 실용성 없음"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "시설·공간·보육 (창업보육센터 입주)",
+      "body": "서원대학교 산학협력단이 운영하는 SK하이닉스청년창업파크(SPARK) 입주기업 모집. 충북 청주 소재. 창업교육, 투자마케팅, 기술지원, 창업보육 프로그램을 원스톱으로 제공. 핵심 조건: 스파크 주소로 사업장 주소지를 1개월 이내 이전 필수(본사 아니어도 가능). 만 45세 이하 조건은 허파랑님 충족 추정. 기존 스파크 입주 경력 없어야 함. 직접 현금 지원은 없으며 공간·프로그램 현물 중심.",
+      "benefits": [
+        { "k": "지원내용", "v": "창업파크 공간·장비·보육 프로그램" },
+        { "k": "직접 현금", "v": "미명시 (공간 현물 중심)" },
+        { "k": "부가 혜택", "v": "창업교육·투자마케팅·기술지원 연계" }
+      ],
+      "watchout": "스파크(청주) 주소지 이전 1개월 이내 필수 — 인천 U1센터 기반 엑스컴의 지소 주소 이전 비용·행정 부담 발생"
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "SK하이닉스 연계 파크이므로 반도체·하드웨어·소재 스타트업 중심 생태계. sinhon.life는 순수 SW/디지털 서비스로 물리적 제작 인프라 활용 수요 없음. 청주 주소 이전은 인천 U1센터와의 이중 거점 운영 비용 발생.",
+      "critical_gap": "청주 소재 주소지 이전 필수 + 반도체/하드웨어 중심 보육 환경 — 순수 SW 서비스 엑스컴에 실익 없음"
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "서류·지원서 작성", "hours": "15-25" },
+          { "stage": "면접·선발 절차", "hours": "5-15" }
+        ],
+        "total": "20-40h (주소 이전 행정 비용 별도)"
+      },
+      "probability": {
+        "doc_pass": 0.20,
+        "final_given_doc_pass": 0.40,
+        "final": 0.08,
+        "basis": "자격 충족(7년 이내, 45세 이하)이나 주소 이전 의사 없음 → 실질 지원 불가. 형식 합격률만 추산"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "주소 이전 의사 없으면 기댓값 0 + 직접 현금 지원 없음"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "스파크(청주) 주소지 1개월 이내 이전 필수 — 인천 U1센터 기반 엑스컴의 이중 거점 비용 과다",
+        "SK하이닉스 연계 반도체·하드웨어 중심 생태계 — sinhon.life SW 서비스와 시너지 없음",
+        "직접 현금 지원 미확인 + 공간 현물 중심 — 자동 NO-GO 조건 해당",
+        "춘기 공백기 자원을 5/15 마감 3건에 집중해야 하는 기회비용"
+      ],
+      "exception_go_conditions": [
+        "청주 기반 창업 거점을 전략적으로 추가하거나, SK하이닉스 협력 레퍼런스가 필요한 구체적 사업 방향이 생길 때 재검토"
+      ]
+    },
+
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "직접 자금 지원, 이전 부담 없음"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 전략 경기 트랙"
+        },
+        {
+          "name": "2026 유니콘 브릿지 with 아이티센 (경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동 — 기창업·sinhon.life",
+          "priority": "🟡",
+          "reason": "본인 기창업 트랙 직접 자금"
+        }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19 + auto-memory/project_dual_entry_strategy@2026-04-20 + user_business_registration"
+    }
+  }
+}

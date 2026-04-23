@@ -1,0 +1,115 @@
+{
+  "pbancSn": 176076,
+  "title": "2026년 팁스(TIPS) 창업기업 지원계획 수정 공고",
+  "analyzed_at": "2026-04-24T16:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.04,
+    "time_cost_hours": "40-80",
+    "one_liner": "팁스 운영사 투자·추천 선결 조건 — 운영사 연결 없는 상태에서 직접 지원 경로 없음"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "팁스(TIPS) R&D 지원 — 운영사 추천 선결 구조",
+      "body": "중소벤처기업부 팁스 프로그램 수정 공고. 일반 창업패키지와 근본적으로 다른 구조 — '팁스 운영사로부터 투자 및 추천을 받은 (예비)창업기업'이 지원 대상. 즉 팁스 운영사(엑셀러레이터)가 먼저 투자 의향을 보이고 추천서를 발급해야 지원 가능. 딥테크팁스 트랙은 팁스 일반트랙 완료 판정 기업 한정. 연계사업(비R&D)은 2025년까지 팁스 R&D 협약 완료 기업만 해당. sinhon.life/엑스컴은 팁스 운영사 연결·투자·추천 이력이 없으므로 현 시점 지원 불가.",
+      "benefits": [
+        { "k": "R&D 지원금", "v": "최대 5억원 (일반팁스 기준)" },
+        { "k": "창업사업화 연계", "v": "1억원 내외 (비R&D 연계)" },
+        { "k": "운영사 투자", "v": "1억원 이상 선투자 (운영사 의무)" },
+        { "k": "해외마케팅", "v": "별도 연계 지원" }
+      ],
+      "watchout": "운영사 투자+추천 없이는 지원서 접수 자체 불가 — 공고 지원이 아니라 운영사 IR이 선행 과제"
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [
+        {
+          "task": "AI/SW 분야 팁스 일반트랙",
+          "reason": "sinhon.life는 RAG + Anthropic API 기반 AI 플랫폼으로 SW/AI 분야 팁스 지원 가능한 기술 스택 보유",
+          "fit": "🟡 기술 fit은 있으나 팁스 운영사 투자·추천 선결 조건 미충족"
+        }
+      ],
+      "mismatch_note": "팁스는 공개 모집이 아닌 운영사 추천 기반 구조. 엑스컴이 팁스 운영사(AC/VC)로부터 투자의향서·추천서를 받은 상태가 아니면 이 공고는 행동 대상이 아님.",
+      "critical_gap": "팁스 운영사 추천·투자 이력 전무 — 공고 지원 전 팁스 운영사 IR 및 투자 의향 확보가 선결 과제"
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "운영사 리스트업·콜드 컨택", "hours": "20-40" },
+          { "stage": "IR 덱 준비 및 미팅", "hours": "20-40" },
+          { "stage": "추천 획득 후 팁스 신청서", "hours": "40-60" }
+        ],
+        "total": "80-140h (운영사 컨택부터 포함 시)"
+      },
+      "probability": {
+        "doc_pass": 0.1,
+        "final_given_doc_pass": 0.4,
+        "final": 0.04,
+        "basis": "운영사 추천 없이는 접수 자체 불가. 운영사 콜드 컨택 성공률 + 추천 획득률 + 팁스 선정률 연쇄 적용 시 4% 이하"
+      },
+      "expected_value_krw": 2000000,
+      "expected_value_label": "0.04 × 5억원 ≈ 2,000만원이나 운영사 미연결 상태에서 투입 대비 ROI 음수"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "팁스 운영사 투자+추천이 지원 선결조건 — 엑스컴은 현재 팁스 운영사 연결 없음",
+        "딥테크팁스·연계사업 트랙 모두 팁스 기졸업 기업 한정 — 해당 없음",
+        "춘기 공백기에 팁스 운영사 콜드 컨택→투자→추천 사이클 완료 불가능",
+        "같은 기간 5/15 마감 3건에 투입할 자원이 고갈됨"
+      ],
+      "exception_go_conditions": [
+        "팁스 운영사(엑셀러레이터·VC)와 이미 IR 미팅·투자의향서 논의 중인 경우",
+        "운영사가 추천서 발급 의향을 밝힌 경우에 한해 즉시 GO 전환"
+      ]
+    },
+
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "예비창업 매칭 100%, 춘기 공백기 유효 카드"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 전략상 대구경북과 병행 가능"
+        },
+        {
+          "name": "2026 유니콘 브릿지 with 아이티센 (경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동 — 기창업·sinhon.life",
+          "priority": "🟡",
+          "reason": "sinhon.life로 직접 지원 가능한 기창업 트랙"
+        }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19 + auto-memory/project_dual_entry_strategy@2026-04-20 + user_business_registration"
+    }
+  }
+}

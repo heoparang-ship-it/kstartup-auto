@@ -1,0 +1,110 @@
+{
+  "pbancSn": 176129,
+  "title": "2026년 기업인력애로센터 활용 취업지원 사업 구인기업 및 구직자 모집 공고",
+  "analyzed_at": "2026-04-24T16:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.30,
+    "time_cost_hours": "5-10",
+    "one_liner": "채용 매칭 지원 — 구인기업 자격 맞으나 직접 자금 0, 6개월차 1인 법인의 즉시 채용 우선순위 없음"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "인력 지원 (채용 매칭 서비스)",
+      "body": "중소벤처기업진흥공단이 운영하는 기업인력애로센터를 통해, 채용 애로를 겪는 중소기업(구인기업)과 취업 희망 구직자를 매칭해주는 서비스. 구인기업 또는 구직자 둘 다 신청 가능. 직접 현금 지원은 없으며, 채용 매칭 서비스(헤드헌팅·취업 연계) 제공이 전부. 엑스컴은 자격상 구인기업으로 신청 가능하나, 현재 채용 계획이 없거나 1인 운영 중이면 실용성 없음.",
+      "benefits": [
+        { "k": "지원내용", "v": "채용 매칭 서비스 (인력 연결)" },
+        { "k": "직접 현금", "v": "0원" },
+        { "k": "부가 혜택", "v": "채용 컨설팅·이력서 검토·면접 지원" }
+      ],
+      "watchout": "직접 자금 0 — 채용 연결 서비스만 제공, 기업 성장 자금과 무관"
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [
+        {
+          "task": "SW 개발자 채용 연계",
+          "reason": "엑스컴이 향후 Next.js·AI 개발자 채용 시 무료 매칭 서비스 활용 가능",
+          "fit": "🟡 채용 계획 있을 때만 실용적"
+        }
+      ],
+      "mismatch_note": "현재 6개월차 초기 스타트업으로 채용보다 제품 개발·자금 확보가 우선 과제. 직접 자금 0이므로 창업지원 ROI 프레임에서 벗어남.",
+      "critical_gap": "직접 자금 0 + 현재 채용 계획 없음 — 자동 NO-GO 조건(교육·네트워킹만, 직접자금 0) 해당"
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "구인공고 등록·센터 연락", "hours": "5-10" }
+        ],
+        "total": "5-10h"
+      },
+      "probability": {
+        "doc_pass": 0.70,
+        "final_given_doc_pass": 0.43,
+        "final": 0.30,
+        "basis": "진입 장벽 낮은 서비스형 지원이나, 채용 미진행 시 실제 활용 가치 0"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "직접 현금 혜택 0 — 채용 계획이 없으면 기댓값 0"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "직접 자금 0 — 자동 NO-GO 조건(직접자금 0, 인력 매칭 서비스만) 해당",
+        "현재 엑스컴 6개월차 초기 단계로 채용보다 제품 개발·자금 확보가 우선",
+        "춘기 공백기 자원을 5/15 마감 3건 집중에 써야 하는 기회비용"
+      ],
+      "exception_go_conditions": [
+        "엑스컴이 실제 AI/SW 개발자 채용 계획이 생기면, 신청 부담 5h 이하로 무료 매칭 서비스 활용 가능 (하지만 지금은 NO-GO)"
+      ]
+    },
+
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "직접 자금 지원, 춘기 최우선 카드"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 전략 경기 트랙"
+        },
+        {
+          "name": "2026 유니콘 브릿지 with 아이티센 (경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동 — 기창업·sinhon.life",
+          "priority": "🟡",
+          "reason": "본인 기창업 트랙 직접 자금"
+        }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19 + auto-memory/project_dual_entry_strategy@2026-04-20 + user_business_registration"
+    }
+  }
+}

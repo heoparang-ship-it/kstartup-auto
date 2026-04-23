@@ -1,0 +1,110 @@
+{
+  "pbancSn": 175833,
+  "title": "청주산단 스타트업센터 입주자 모집공고(2차)",
+  "analyzed_at": "2026-04-24T16:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.03,
+    "time_cost_hours": "0",
+    "one_liner": "청주 산업단지 스타트업 입주공간 — 엑스컴 인천 소재, 충북 이전 현실적 불가, 직접자금 0, 공간 절감만"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "시설·공간 입주 지원 (민간, 청주산단관리공단)",
+      "body": "산업통상자원부 국비로 건립한 충청북도 청주산업단지 내 스타트업센터의 저렴한 임대 공간 모집. 중소기업·창업자·예비창업자 대상으로 청년창업·중소기업 육성 목적. 직접 현금 보조금·상금·PoC비 없음. 입주 후 청주산단 내 네트워킹·교육 프로그램 수혜 가능.",
+      "benefits": [
+        { "k": "입주공간", "v": "청주산단 내 저렴한 임대 공간 (시세 대비 할인)" },
+        { "k": "부대지원", "v": "창업 인프라·네트워킹 프로그램 (세부 미명시)" }
+      ],
+      "watchout": "충청북도 청주 소재 시설 — 인천 기반 엑스컴이 이전해야만 혜택 가능; 지식산업센터 입주 불가 업종 여부 확인 필요"
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [
+        {
+          "task": "SW개발 업종 스타트업 입주",
+          "reason": "SW업은 지식산업센터 허용 업종 범주 내 가능성 높음",
+          "fit": "🟡 업종은 가능하나 지리적 불일치"
+        }
+      ],
+      "mismatch_note": "엑스컴 소재지는 인천광역시 부평구. 청주산단으로 이전은 현실적으로 불가능하며 필요성도 없음. sinhon.life는 풀 원격·클라우드 운영으로 오피스 이전 메리트 없음.",
+      "critical_gap": "엑스컴 소재지 인천 vs 입주지 충북 청주 — 이전 없이는 신청 실익 0"
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "지리적 불일치로 즉시 NO-GO", "hours": "0" }
+        ],
+        "total": "0h"
+      },
+      "probability": {
+        "doc_pass": 0.0,
+        "final_given_doc_pass": 0.0,
+        "final": 0.03,
+        "basis": "청주 이전 비용·사유 없어 실질 지원 불가; 0.03은 스키마 하한값"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "직접 현금 0원, 청주 이전 없이 실익 없음"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "엑스컴 소재지 인천 부평 — 충북 청주산단 입주를 위해서는 법인 이전 또는 분사무소 설치 필요, 비용·이유 없음",
+        "직접 현금 지원 없음 — 공간 임대료 절감만",
+        "sinhon.life 완전 클라우드·원격 운영으로 오프라인 오피스 이전 필요성 없음",
+        "춘기 공백기 🟢 자금 공고 2건 대비 기회비용 명확"
+      ],
+      "exception_go_conditions": [
+        "없음 — 지리적 불일치로 구조적 NO-GO"
+      ]
+    },
+
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "직접 자금 포함, 예비창업 매칭 1순위"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 전략 경기 트랙"
+        },
+        {
+          "name": "2026 유니콘 브릿지 with 아이티센 (경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동 — 기창업·sinhon.life",
+          "priority": "🟡",
+          "reason": "sinhon.life 직접 지원 가능 기창업 트랙"
+        }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19 + auto-memory/project_dual_entry_strategy@2026-04-20 + user_business_registration"
+    }
+  }
+}

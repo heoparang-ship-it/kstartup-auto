@@ -1,0 +1,112 @@
+{
+  "pbancSn": 177310,
+  "title": "[웨비나] 2026 TIPS 합격으로 가는 투자 유치 전략",
+  "analyzed_at": "2026-04-24T16:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.03,
+    "time_cost_hours": "3-5",
+    "one_liner": "TIPS 전략 웨비나 — 직접자금 0, 교육·네트워킹만으로 자동 NO-GO, 정보 습득은 무료 참여 가능하나 자원 배분 대상 아님"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "멘토링·컨설팅·교육 (웨비나)",
+      "body": "코드박스(Kodebox) 주관 TIPS 지원 전략 웨비나. 2세션 구성: ① 2026 TIPS 변경 정책 설명, ② TIPS 운영사 심사역 출신 VC의 투자 유치 전략. 무료 또는 소액 신청 형식. 직접자금, 보조금, 사업화 연계 없음. 정보 습득과 VC 네트워킹이 전부. K-Startup 공고 형식이지만 실질은 민간 웨비나 홍보.",
+      "benefits": [
+        { "k": "TIPS 정책 정보", "v": "2026년 변경된 TIPS 정책 업데이트" },
+        { "k": "투자 전략 정보", "v": "TIPS 운영사 VC 투자 유치 전략 강의" },
+        { "k": "VC 네트워킹(미확정)", "v": "강연자 VC와 접점 기회" }
+      ],
+      "watchout": "웨비나 등록 후 실제 VC 접촉·투자 연결은 별도 영업 활동 필요 — 보장 없음"
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [
+        {
+          "task": "TIPS 전략 정보 습득",
+          "reason": "엑스컴이 향후 TIPS 준비를 고려한다면 2026 정책 변경 파악 유용",
+          "fit": "🟡 정보 가치 있으나 K-Startup 딥분석 ROI 판정 대상 아님"
+        }
+      ],
+      "mismatch_note": "정보 습득 목적으로는 유용할 수 있으나 정부지원사업 ROI 판정 프레임에서 직접자금 0, 교육·네트워킹만 → 자동 NO-GO 조건 해당.",
+      "critical_gap": "직접자금 0, 교육·네트워킹만 — ROI 판정 대상에서 자동 제외"
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "웨비나 참가", "hours": "2-3" },
+          { "stage": "후속 정리", "hours": "1-2" }
+        ],
+        "total": "3-5h"
+      },
+      "probability": {
+        "doc_pass": 1.0,
+        "final_given_doc_pass": 1.0,
+        "final": 0.03,
+        "basis": "웨비나 참가 자체는 무제한이나 직접자금 목표 대비 기댓값 0. 0.03은 VC 네트워킹 통한 간접 투자 연결 가능성 최소치"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "직접자금 0 — 웨비나 참가 기댓값 0원, 간접 정보 가치만"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "직접자금 0, 교육·네트워킹만 — 자동 NO-GO 조건 해당",
+        "정보 습득은 무료 참여로 가능하나 정부지원사업 자원 배분 대상 아님",
+        "같은 기간 직접자금 공고 3건에 자원 집중 필요"
+      ],
+      "exception_go_conditions": [
+        "TIPS 전략 정보가 필요하다면 별도 시간 투자 없이 무료 등록만 — 이 경우 비용 없으므로 참가 가능",
+        "단, 정부지원사업 ROI 배분 자원(서류 준비 시간 등)은 투입하지 않음"
+      ]
+    },
+
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "예비창업 직접자금 지원"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 전략 병행"
+        },
+        {
+          "name": "2026 유니콘 브릿지 with 아이티센 (경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동 — 기창업·sinhon.life",
+          "priority": "🟡",
+          "reason": "TIPS 이전 단계로 기창업 직접자금 확보 우선"
+        }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19 + auto-memory/project_dual_entry_strategy@2026-04-20 + user_business_registration"
+    }
+  }
+}

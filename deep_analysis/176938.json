@@ -1,0 +1,122 @@
+{
+  "pbancSn": 176938,
+  "title": "2026년 스타트업 법률지원사업 참여기업 모집공고(수정)",
+  "analyzed_at": "2026-04-24T16:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "CONDITIONAL-GO",
+    "confidence": "medium",
+    "expected_pass_rate": 0.25,
+    "time_cost_hours": "5-10",
+    "one_liner": "중기부 법률 무료 자문 바우처 — sinhon.life 서비스 약관·개인정보처리방침·계약서 법률 리스크 실제로 있으면 즉시 활용 가치"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "간접지원 (법률 자문 바우처)",
+      "body": "중소벤처기업부가 창업기업의 법률·규제 애로 해소를 위해 변호사·법무법인에게 법률 자문을 무료로 받을 수 있도록 연결해주는 지원사업. K-Startup 원스톱 지원센터 통해 신청. 예비창업자는 2026년 중기부 예비창업자 사업화 선정자에 한해 신청 가능(와이프 트랙 제한). 창업기업(엑스컴)은 바로 신청 가능. 직접 현금 0이지만 법률 자문비는 건당 30만~100만원 규모 절감 효과.",
+      "benefits": [
+        { "k": "지원내용", "v": "법률·규제 자문 (변호사 연결) 무료 제공" },
+        { "k": "직접 현금", "v": "0원 (법률 자문비 절감 현물)" },
+        { "k": "예상 절감액", "v": "자문 건당 30만~100만원 상당" },
+        { "k": "신청 채널", "v": "k-startup.go.kr/onestop" }
+      ],
+      "watchout": "예비창업자는 2026년 중기부 예비창업자 사업화 선정자에 한함 — 와이프 트랙 신청 불가(미선정 상태)"
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [
+        {
+          "task": "sinhon.life 서비스 약관·개인정보처리방침 적법성 검토",
+          "reason": "B2C 플랫폼 운영 시 개인정보보호법·정보통신망법 준수 검토 필요",
+          "fit": "🟢 즉시 활용 가능"
+        },
+        {
+          "task": "부부 프로필 데이터 SSOT 설계의 개인정보 적법 처리 자문",
+          "reason": "커플 데이터 수집·활용 시 법적 리스크 사전 검토",
+          "fit": "🟢 즉시 활용 가능"
+        },
+        {
+          "task": "정부 API·제3자 서비스 연동 계약서 검토",
+          "reason": "Pinecone, Anthropic API 이용약관 리스크, 향후 파트너십 계약",
+          "fit": "🟡 필요 시 활용"
+        }
+      ],
+      "tech_adjacent": [],
+      "mismatch_note": "직접 현금 지원은 없으나, 실제 법률 이슈가 있는 SW 스타트업에게 즉시 실용적. 신청 부담이 5~10h로 매우 낮음.",
+      "critical_gap": "직접 현금 0 — ROI 기준 '현금 기댓값'으로는 산출 불가, 운영 리스크 관리 관점의 실용성으로만 판단"
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "신청서 작성 + 법률 이슈 정리", "hours": "5-10" }
+        ],
+        "total": "5-10h"
+      },
+      "probability": {
+        "doc_pass": 0.60,
+        "final_given_doc_pass": 0.40,
+        "final": 0.25,
+        "basis": "창업기업 엑스컴은 자격 충족. 선착순 또는 심사 방식 미확인이나, 진입 장벽 낮은 바우처성 사업으로 25% 추정"
+      },
+      "expected_value_krw": 200000,
+      "expected_value_label": "0.25 × 80만원(법률 자문비 절감 추정) ≈ 20만원 — 현금 기댓값 낮으나 시간당 투입 대비 실용적"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "CONDITIONAL-GO",
+      "reasons": [
+        "엑스컴(창업기업) 신청 자격 충족, 신청 부담 5~10h로 최소",
+        "sinhon.life B2C 플랫폼 운영 중 실제 법률 리스크(개인정보·약관·API 계약) 존재",
+        "직접 현금 0이나 법률 자문비 절감 현물 가치 실재함"
+      ],
+      "exception_go_conditions": [
+        "현재 sinhon.life 운영 중 실제 법률 이슈(약관 미비, 개인정보 처리 불확실)가 1건 이상 있으면 즉시 GO",
+        "반대로 법률 이슈가 전혀 없고 현금 필요가 급하면 5/15 마감 3건에만 집중"
+      ]
+    },
+
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "직접 현금 지원 — 현재 자원 집중 최우선"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 전략 경기 트랙"
+        },
+        {
+          "name": "2026 유니콘 브릿지 with 아이티센 (경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동 — 기창업·sinhon.life",
+          "priority": "🟡",
+          "reason": "본인 기창업 트랙 직접 자금"
+        }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19 + auto-memory/project_dual_entry_strategy@2026-04-20 + user_business_registration"
+    }
+  }
+}

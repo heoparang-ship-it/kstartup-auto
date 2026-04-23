@@ -1,0 +1,108 @@
+{
+  "pbancSn": 177182,
+  "title": "2026년 KOICA 이노포트 신규 입주기업 모집 안내",
+  "analyzed_at": "2026-04-24T16:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.05,
+    "time_cost_hours": "80-120",
+    "one_liner": "KOICA ODA 분야 글로벌 사회혁신 솔루션 전문 인큐베이터 — sinhon.life 신혼부부 B2C와 완전 무관, 국제개발협력 도메인 레퍼런스 0"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "KOICA 운영 글로벌 사회혁신 스타트업 인큐베이터 (국제개발협력 특화)",
+      "body": "한국국제협력단(KOICA) 운영 이노포트(INNOPORT) 입주기업 모집. '국제개발협력 분야에서 적용 가능한 글로벌 사회혁신 솔루션' 보유 기업 대상 — ODA(공적개발원조) 수원국 문제해결 기반 비즈니스 모델 전제. 입주 공간·멘토링·KOICA 사업 연계 글로벌 테스트베드 혜택 제공. 직접 현금 지원 명시 없으나 인큐베이팅 가치 존재. 핵심 조건: 국제개발협력 분야 사회혁신 솔루션 — sinhon.life(신혼부부 B2C) 완전 미해당.",
+      "benefits": [
+        { "k": "입주 공간", "v": "KOICA 이노포트 시설 입주" },
+        { "k": "멘토링", "v": "KOICA 네트워크 연계 글로벌 전문가" },
+        { "k": "글로벌 테스트베드", "v": "ODA 수원국 현지 적용 기회" },
+        { "k": "직접 현금", "v": "미명시" }
+      ],
+      "watchout": "국제개발협력(ODA) 분야 전문성 필수 — 신혼부부/결혼/B2C 소비자 서비스 완전 무관."
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "sinhon.life는 B2C 신혼부부 플랫폼으로 국제개발협력·ODA·사회혁신 분야와 완전 무관. 엑스컴 사업 영역(SW·미디어콘텐츠)도 ODA 적용 레퍼런스 없음.",
+      "critical_gap": "국제개발협력 분야 사회혁신 솔루션 레퍼런스 완전 부재 — 선발 첫 번째 필터 탈락"
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "ODA 분야 솔루션 재설계 + 사업계획서", "hours": "60-90" },
+          { "stage": "서류·발표", "hours": "20-30" }
+        ],
+        "total": "80-120h"
+      },
+      "probability": {
+        "doc_pass": 0.08,
+        "final_given_doc_pass": 0.25,
+        "final": 0.05,
+        "basis": "ODA 도메인 레퍼런스 전무 + sinhon.life B2C 신혼 플랫폼 = 국제개발협력 주제 적합성 심사에서 기각 가능성 극히 높음"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "직접 현금 미명시, 기댓값 사실상 0"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "sinhon.life B2C 신혼부부 플랫폼 — 국제개발협력(ODA) 분야와 완전 무관",
+        "국제개발협력 글로벌 사회혁신 솔루션 레퍼런스 0",
+        "직접 현금 미명시, 기댓값 사실상 0",
+        "투입 80~120h 대비 기댓값 < 100만원 → 자동 NO-GO",
+        "같은 기간 ROI 높은 춘기 3건 공고 존재"
+      ],
+      "exception_go_conditions": [
+        "엑스컴이 교육·의료·농업 등 ODA 수원국 사회문제 해결 SW 솔루션을 별도 BM으로 개발 계획할 때 — 현재 로드맵에 없음"
+      ]
+    },
+
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "예비창업 매칭 100%, 춘기 공백기에 유효한 몇 안 되는 카드"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 전략상 대구경북과 병행 가능"
+        },
+        {
+          "name": "2026 유니콘 브릿지 with 아이티센 (경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동 — 기창업·sinhon.life",
+          "priority": "🟡",
+          "reason": "sinhon.life로 직접 지원 가능한 기창업 트랙"
+        }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19 + auto-memory/project_dual_entry_strategy@2026-04-20 + user_business_registration"
+    }
+  }
+}

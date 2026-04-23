@@ -1,0 +1,105 @@
+{
+  "pbancSn": 177288,
+  "title": "2026년 제품화 올인원팩(All-In-one pack) 창업기업 모집공고",
+  "analyzed_at": "2026-04-24T16:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.03,
+    "time_cost_hours": "60-100",
+    "one_liner": "제조 창업기업 제품화 전과정 지원 — '제조 분야 창업기업' 명시 조건, SW 기반 sinhon.life는 원천 자격 미해당"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "제조 특화 사업화 지원 (중기부 직접 지원금)",
+      "body": "중소벤처기업부 주관으로 '제조 창업기업의 제품화 전 과정을 원스톱으로 지원'하는 사업. 제품 설계·시제품 제작·시험인증·양산화·판로 개척 등 제조업 특화 지원 항목으로 구성. 핵심 조건: apply_target_desc에 '제조 분야 창업 7년 이내 창업기업'으로 명시. 업종 제한 없다는 structured 데이터는 공고 내용과 상충 — 실질적으로 제조업만 해당.",
+      "benefits": [
+        { "k": "제품화 지원금", "v": "시제품 제작·설계 등 원스톱 지원 (통상 1,000~3,000만원)" },
+        { "k": "시험인증 지원", "v": "KC·CE 등 인증 비용 지원" },
+        { "k": "양산화 연계", "v": "제조 인프라·공정 지원" },
+        { "k": "판로 개척", "v": "유통·바이어 연결 지원" }
+      ],
+      "watchout": "'제조 분야 창업기업' 명시 조건 — SW/앱 서비스 기업은 심사에서 제외될 가능성 높음"
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "sinhon.life는 Next.js 기반 웹앱 서비스, 엑스컴은 SW개발+미디어콘텐츠 업종. 제조 공정·시제품·양산화 지원과 완전 무관. 소프트웨어 패키징을 '제품화'로 해석하더라도 공고 취지와 맞지 않아 심사에서 탈락 확실.",
+      "critical_gap": "apply_target_desc에 '제조 분야 창업기업'으로 명시 — 엑스컴(SW개발 주업)은 제조업 분류 불가, 원천 지원 자격 미충족."
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "자격 조건 확인 후 종료", "hours": "1-2" }
+        ],
+        "total": "1-2h (지원 불가 확인 즉시 종료)"
+      },
+      "probability": {
+        "doc_pass": 0.0,
+        "final_given_doc_pass": 0.0,
+        "final": 0.03,
+        "basis": "제조업 조건 미충족으로 자격 없음. 0.03은 공고 해석 여지에 대한 하한선 추정. 실질 합격 확률 0%."
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "0원 — 제조 분야 자격 조건 미충족으로 합격 불가"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "'제조 분야 창업기업' 명시 조건 — 엑스컴(SW개발 주업) 원천 자격 미해당",
+        "sinhon.life는 웹앱 서비스, 시제품·양산화·시험인증 등 제조 지원 항목과 완전 무관",
+        "지원 검토 자체가 시간 낭비 — 1~2h 확인 후 즉시 종료"
+      ],
+      "exception_go_conditions": [
+        "엑스컴이 하드웨어 제품(IoT 신혼가전 등) 라인업을 추가하고 제조업 업종으로 업종을 추가 등록한 이후 재검토 (중장기 V4+ 시나리오)"
+      ]
+    },
+
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "예비창업 매칭 100%, 춘기 공백기 최우선 카드"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 전략상 대구경북과 병행 가능"
+        },
+        {
+          "name": "2026 유니콘 브릿지 with 아이티센 (경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동 — 기창업·sinhon.life",
+          "priority": "🟡",
+          "reason": "SW 기반 sinhon.life 직접 지원 가능 — 제조 공고 대신 이쪽 집중"
+        }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19 + auto-memory/project_dual_entry_strategy@2026-04-20 + user_business_registration"
+    }
+  }
+}

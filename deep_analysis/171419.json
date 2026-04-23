@@ -1,0 +1,104 @@
+{
+  "pbancSn": 171419,
+  "title": "[Startup Korea Special Visa] Announcement on Application for Recommendations for the \"Startup Korea Special Visa\"",
+  "analyzed_at": "2026-04-24T16:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.03,
+    "time_cost_hours": "5-10",
+    "one_liner": "외국인 스타트업 비자 추천 공고 — 허파랑팀은 한국 국적자로 신청 자격 없음"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "비자 지원 (외국인 창업자 전용)",
+      "body": "중소벤처기업부가 외국인 창업자 또는 예비창업자에게 'Startup Korea Special Visa' 발급 추천을 해주는 제도. 신청 자격이 명확히 '한국 국적이 아닌 (예비)창업자'로 한정. 허파랑팀(한국 국적 창업자)은 신청 자격 자체가 없음. 직접 자금 혜택도 없으며, 비자 추천 절차 서비스만 제공.",
+      "benefits": [
+        { "k": "지원내용", "v": "Startup Korea 특별비자 정부 추천서 발급" },
+        { "k": "직접 현금", "v": "0원" },
+        { "k": "대상", "v": "외국인 (비한국 국적) 창업자/예비창업자만" }
+      ],
+      "watchout": "한국 국적자는 신청 불가 — 외국인 전용 비자 지원 제도"
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "허파랑팀은 한국 국적 창업자로 신청 자격 없음. 글로벌 3단계(K-웨딩 인바운드) 전략을 가진 sinhon.life가 향후 외국인 공동창업자를 영입할 때 참고 자료로만 가치 있음.",
+      "critical_gap": "한국 국적자 신청 불가 — 자격 요건 자체 미충족"
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "공고 검토 (이미 완료)", "hours": "0.5" }
+        ],
+        "total": "0.5h (검토 이상 투입 불필요)"
+      },
+      "probability": {
+        "doc_pass": 0.0,
+        "final_given_doc_pass": 0.0,
+        "final": 0.03,
+        "basis": "한국 국적자 신청 불가로 합격률 0. 0.03은 스키마 하한값"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "신청 자격 없음 — 기댓값 0"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "신청 자격: 한국 국적이 아닌 창업자만 — 한국 국적 허파랑팀 즉시 탈락",
+        "직접 자금 0 + 비자 서비스 전용 — 자동 NO-GO 조건 해당",
+        "sinhon.life 핵심 과제(V3.1 포팅, 춘기 공고 3건)와 완전 무관"
+      ],
+      "exception_go_conditions": [
+        "향후 외국인 공동창업자·핵심 인재 영입 시 해당 인재에게 이 비자 경로 안내 가능"
+      ]
+    },
+
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "직접 자금 지원, 춘기 최우선 카드"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 전략 경기 트랙"
+        },
+        {
+          "name": "2026 유니콘 브릿지 with 아이티센 (경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동 — 기창업·sinhon.life",
+          "priority": "🟡",
+          "reason": "본인 기창업 트랙 직접 자금"
+        }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19 + auto-memory/project_dual_entry_strategy@2026-04-20 + user_business_registration"
+    }
+  }
+}

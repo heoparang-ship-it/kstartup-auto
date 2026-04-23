@@ -1,0 +1,104 @@
+{
+  "pbancSn": 176937,
+  "title": "2026 여성발명진흥 사업 위한 전문가 평가위원 Pool 모집 공고",
+  "analyzed_at": "2026-04-24T16:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.03,
+    "time_cost_hours": "0",
+    "one_liner": "여성발명진흥 전문가 평가위원 모집 — 창업자 지원 공고가 아닌 심사위원 채용, 직접자금 0, 여성발명 도메인 무관"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "인력 모집 (민간, 한국여성발명협회)",
+      "body": "한국여성발명협회가 지식재산처의 여성발명진흥 사업 평가를 수행할 전문가 평가위원 Pool을 구성하기 위한 위촉 공고. 사업화·제조·지식재산·창업·경영 관련 전문가를 모집. 이는 창업자 지원 프로그램이 아니라, 심사·평가 역할을 수행하는 '평가위원' 채용 성격. 직접 현금 지원·PoC비·상금 없음. 위촉 시 소정의 심사료가 있을 수 있으나 정부지원 자금과 다른 성격.",
+      "benefits": [
+        { "k": "위촉", "v": "전문가 평가위원 위촉 (심사 참여 시 소정의 심사료 가능)" },
+        { "k": "경력", "v": "지식재산처 연계 여성발명진흥 사업 평가위원 이력" }
+      ],
+      "watchout": "창업자 지원 공고가 아님 — 평가위원 채용 공고; 여성발명 전문성 요구; 사업화·제조·지식재산 분야 전문가 자격 필요"
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "이 공고는 창업 지원을 '받는' 공고가 아니라 창업·발명 심사를 '하는' 평가위원을 모집하는 공고다. 지원의 방향성 자체가 다르다. 또한 여성발명진흥 분야 전문성을 요구하며, 엑스컴·허파랑은 해당 도메인 경력 없음.",
+      "critical_gap": "창업자 지원 공고 아님 — 평가위원 채용 공고, 자금 ROI 판정 대상 범주 밖"
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "공고 성격 확인 후 즉시 NO-GO", "hours": "0" }
+        ],
+        "total": "0h"
+      },
+      "probability": {
+        "doc_pass": 0.0,
+        "final_given_doc_pass": 0.0,
+        "final": 0.03,
+        "basis": "창업 지원 수혜 공고 아님, 방향성 불일치; 0.03은 스키마 하한값"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "직접 창업 지원 자금 0원; 평가위원 심사료는 사업 지원금 범주 밖"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "창업 지원 수혜 공고가 아닌 평가위원 채용 공고 — 판정 범주 자체 불일치",
+        "biz_class = 인력, 직접 자금 지원 0 — 자동 NO-GO 조건",
+        "여성발명진흥 도메인 전문성 요구 — 엑스컴/허파랑 해당 없음",
+        "사업화·제조·지식재산 전문가 자격 요구 — SW·B2C 플랫폼 경력으로 충족 불가"
+      ],
+      "exception_go_conditions": [
+        "없음 — 공고 성격 자체가 창업 지원 수혜가 아님"
+      ]
+    },
+
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "직접 자금 포함, 예비창업 매칭 1순위"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 전략 경기 트랙"
+        },
+        {
+          "name": "2026 유니콘 브릿지 with 아이티센 (경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동 — 기창업·sinhon.life",
+          "priority": "🟡",
+          "reason": "sinhon.life 직접 지원 가능 기창업 트랙"
+        }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19 + auto-memory/project_dual_entry_strategy@2026-04-20 + user_business_registration"
+    }
+  }
+}

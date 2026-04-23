@@ -1,0 +1,106 @@
+{
+  "pbancSn": 177257,
+  "title": "[서초창업스테이션] 4월 1:1 전문 분야 컨설팅 - 마케팅 및 인사노무",
+  "analyzed_at": "2026-04-24T16:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.50,
+    "time_cost_hours": "5-10",
+    "one_liner": "서초창업스테이션 멤버십 회원 전용 컨설팅 — 직접 자금 0, 교육·컨설팅만, 멤버십 비회원 지원 불가"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "창업보육공간 입주기업 대상 1:1 컨설팅 (멤버십 한정)",
+      "body": "서초창업스테이션 멤버십 회원인 (예비)창업자에 한정된 1:1 전문 컨설팅 프로그램. 온라인 마케팅·퍼포먼스 마케팅·인사노무 분야 전문가 매칭. 직접 현금 지원 없음, 컨설팅 세션만 제공. 엑스컴은 서초창업스테이션 멤버십 비회원이므로 지원 자격 미충족. 마케팅·인사노무 컨설팅 자체는 유용할 수 있으나 멤버십 가입 없이 접근 불가.",
+      "benefits": [
+        { "k": "컨설팅 유형", "v": "온라인 마케팅, 퍼포먼스 마케팅, 인사노무 1:1 전문가 매칭" },
+        { "k": "비용", "v": "무료 (멤버십 전제)" },
+        { "k": "직접 자금", "v": "0원" }
+      ],
+      "watchout": "서초창업스테이션 멤버십 회원 전용 — 비회원 지원 불가. 직접 자금 제로."
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "멤버십 자격 미충족으로 지원 불가. 직접 현금 0, 교육·컨설팅만.",
+      "critical_gap": "서초창업스테이션 멤버십 비회원 — 지원 자격 없음"
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "멤버십 가입 + 신청", "hours": "3-5" },
+          { "stage": "컨설팅 세션 참석", "hours": "2-5" }
+        ],
+        "total": "5-10h"
+      },
+      "probability": {
+        "doc_pass": 0.50,
+        "final_given_doc_pass": 0.50,
+        "final": 0.25,
+        "basis": "멤버십 가입 전제 시 선발률 중간, 단 비회원이므로 실질 확률 0"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "직접 현금 0, 컨설팅 간접효과만"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "서초창업스테이션 멤버십 회원 전용 — 엑스컴 비회원으로 지원 자격 미충족",
+        "직접 자금 0, 교육·컨설팅만 — 자동 NO-GO 조건 해당",
+        "같은 기간 ROI 더 높은 춘기 공고 3건 오픈 중",
+        "서울 서초 소재 시설 기반 프로그램 — 인천 부평 엑스컴과 지리적 불일치"
+      ],
+      "exception_go_conditions": [
+        "서초창업스테이션 멤버십 가입 후 sinhon.life 퍼포먼스 마케팅 전략 수립이 긴급한 경우 — 단독 활용 목적으로만"
+      ]
+    },
+
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "예비창업 매칭 100%, 춘기 공백기에 유효한 몇 안 되는 카드"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 전략상 대구경북과 병행 가능"
+        },
+        {
+          "name": "2026 유니콘 브릿지 with 아이티센 (경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동 — 기창업·sinhon.life",
+          "priority": "🟡",
+          "reason": "sinhon.life로 직접 지원 가능한 기창업 트랙"
+        }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19 + auto-memory/project_dual_entry_strategy@2026-04-20 + user_business_registration"
+    }
+  }
+}

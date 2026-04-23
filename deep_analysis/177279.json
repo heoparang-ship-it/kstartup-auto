@@ -1,0 +1,104 @@
+{
+  "pbancSn": 177279,
+  "title": "2026년도 글로벌 SNS 판로개척 지원사업 파트너사 모집",
+  "analyzed_at": "2026-04-24T16:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.03,
+    "time_cost_hours": "0",
+    "one_liner": "파트너사(마케팅 전문기업) 모집 공고 — 지원 수혜 기업이 아닌 용역 공급사 모집, 엑스컴 자격 구조 미스매치"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "글로벌 SNS 마케팅 파트너사 모집 (B2B 용역 공급사 공모)",
+      "body": "서울창업허브 창동이 스타트업 해외 진출을 지원하기 위한 SNS 마케팅 파트너사(전문 기업·기관)를 모집하는 공고. 이 공고의 신청 주체는 '마케팅 전문 기업(기관)'으로, sinhon.life나 엑스컴처럼 지원을 받고자 하는 수혜 스타트업이 아니라 마케팅 서비스를 제공할 수 있는 공급사가 대상. 신청 조건 ①번이 '사업자등록증 상 업종이 마케팅 관련 업종일 것' — 엑스컴의 주업은 SW개발·미디어콘텐츠로 마케팅 관련 업종 코드 미충족. 추가로 최근 3개년 해외 진출 실적(입점 지원, SNS 마케팅 매출 창출, 해외진출 프로그램 운영) 이력 요구.",
+      "benefits": [
+        { "k": "파트너사 혜택", "v": "서울창업허브 창동 SNS 마케팅 사업 수주 (B2B 용역)" },
+        { "k": "직접 자금(지원금)", "v": "없음 — 파트너사는 용역 제공 측" }
+      ],
+      "watchout": "이 공고는 마케팅 서비스 구매자가 아닌 공급자 모집 — 스타트업 지원 공고가 아님"
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "엑스컴 주업은 SW개발·미디어콘텐츠. 마케팅 관련 업종 코드 없음. 해외 SNS 마케팅 매출 창출 실적·해외진출 프로그램 운영 경험 전무. 파트너사 공모 조건 4개 중 충족 0개.",
+      "critical_gap": "마케팅 전문 기업 업종 조건 미충족 + 최근 3개년 해외 마케팅 실적 전무"
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "자격 확인 후 즉시 NO-GO", "hours": "0" }
+        ],
+        "total": "0h"
+      },
+      "probability": {
+        "doc_pass": 0.0,
+        "final_given_doc_pass": 0.0,
+        "final": 0.03,
+        "basis": "신청 자격 조건 ① 업종 코드 미충족으로 서류 통과 불가"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "파트너사 모집으로 수혜 지원금 구조 아님 — 기댓값 0"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "파트너사(용역 공급사) 모집 — 스타트업 지원 수혜 공고가 아님",
+        "업종 조건: '마케팅 관련 업종' 코드 요구 — 엑스컴 SW개발 주업으로 미충족",
+        "최근 3개년 해외 SNS 마케팅 매출 창출 또는 해외진출 프로그램 운영 이력 요구 — 전무",
+        "오늘(2026-04-24) 마감 — 준비 시간 없음"
+      ],
+      "exception_go_conditions": [
+        "해당 없음 — 공고 성격 자체가 수혜 대상이 아님"
+      ]
+    },
+
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "예비창업 매칭 100%, 춘기 공백기 유효 카드"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 전략상 대구경북과 병행 가능"
+        },
+        {
+          "name": "2026 유니콘 브릿지 with 아이티센 (경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동 — 기창업·sinhon.life",
+          "priority": "🟡",
+          "reason": "sinhon.life로 직접 지원 가능한 기창업 트랙"
+        }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19 + auto-memory/project_dual_entry_strategy@2026-04-20 + user_business_registration"
+    }
+  }
+}

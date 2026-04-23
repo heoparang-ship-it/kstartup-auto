@@ -1,0 +1,112 @@
+{
+  "pbancSn": 177149,
+  "title": "기술 연계 창업지원 프로그램 (예비)창업기업 모집",
+  "analyzed_at": "2026-04-24T16:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.15,
+    "time_cost_hours": "20-40",
+    "one_liner": "강원 대학 보유기술 이전 기반 프로그램 — 외부 기술 의존 구조, sinhon.life 자체기술과 무관, 직접자금 불명확"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "기술이전·멘토링형 (지역 대학 연계)",
+      "body": "강원지역 대학·기관이 보유한 혁신기술을 (예비)창업기업에 이전·지도하는 프로그램. 핵심 구조는 '대학 기술을 받아 창업하거나 적용하라'는 것으로, 엑스컴처럼 자체 기술(Next.js + RAG + AI)을 이미 운용 중인 팀과는 역방향 구조다. 직접 사업비 지원 여부가 공고문에 명시되지 않았으며, 기술지도·이전 위주 지원. 주관기관이 상지대학교(강원 원주)로 지역 밀착형 프로그램.",
+      "benefits": [
+        { "k": "기술사업화 방안 제시", "v": "강원 대학 보유기술 매칭 지도" },
+        { "k": "기술이전 지원", "v": "해당 기술 라이선스 연계 (조건 불명)" },
+        { "k": "기술지도 멘토링", "v": "전문가 컨설팅 (현금 없음)" }
+      ],
+      "watchout": "강원지역 대학 기술 기반 — 수도권 소재 엑스컴이 활용할 기술 매칭 가능성 낮음"
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [
+        {
+          "task": "SW 기반 기술창업",
+          "reason": "엑스컴 업종이 SW개발이므로 SW 관련 강원 대학 기술이전 연결 가능성 이론상 존재",
+          "fit": "🟠 강원 지역 의존 + 자체 기술 보유팀에 역방향 구조"
+        }
+      ],
+      "mismatch_note": "sinhon.life는 자체 개발 프로덕트 — 외부 기술 이전을 받아야 하는 이 프로그램과 동기가 없음",
+      "critical_gap": "강원 대학 보유기술에 의존하는 구조 + 직접자금 불명 + 지역 밀착(강원) → 인천 소재 엑스컴과 맞지 않음"
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "기술 매칭 탐색 + 신청서", "hours": "10-20" },
+          { "stage": "기술지도 참여 (선발 후)", "hours": "10-20" }
+        ],
+        "total": "20-40h"
+      },
+      "probability": {
+        "doc_pass": 0.20,
+        "final_given_doc_pass": 0.75,
+        "final": 0.15,
+        "basis": "강원 외 지역팀 선정 가능성 낮음 + 자체기술 보유팀 우선도 낮을 것"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "직접자금 명시 없음 — 기술지도 서비스만, 현금 기댓값 0"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "직접자금 0 + 교육·기술지도만 = 자동 NO-GO 조건",
+        "강원 지역 대학 기술이전 구조 — 인천 소재 엑스컴과 지역·방향 모두 불일치",
+        "sinhon.life는 자체 RAG/AI 기술 운용 중으로 외부 기술이전 필요 없음",
+        "마감 2026-05-01로 실질 준비 시간 1주 미만"
+      ],
+      "exception_go_conditions": [
+        "강원 대학 보유 SW/AI 특허 중 sinhon.life에 직접 활용 가능한 것이 확인되고, 로열티 면제 조건일 때"
+      ]
+    },
+
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "예비창업 매칭 100%, 직접자금 있는 춘기 공백기 핵심 카드"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 전략상 대구경북과 병행 가능"
+        },
+        {
+          "name": "2026 유니콘 브릿지 with 아이티센 (경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동 — 기창업·sinhon.life",
+          "priority": "🟡",
+          "reason": "sinhon.life 직접 지원 가능, 경기 기반"
+        }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19 + auto-memory/project_dual_entry_strategy@2026-04-20 + user_business_registration"
+    }
+  }
+}

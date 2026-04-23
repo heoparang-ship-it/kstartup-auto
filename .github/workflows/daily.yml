@@ -39,10 +39,17 @@ jobs:
           echo "Running: python update.py $ARGS"
           python update.py $ARGS
 
+      # 2026-04-24: 🟢🟡 공고 중 미분석 건을 pending_deep_analysis.json 에 쌓기.
+      # LLM 호출은 하지 않음 (Cowork 세션 Sonnet 서브에이전트 fan-out 전용).
+      - name: Generate pending deep analysis
+        env:
+          ENABLE_DEEP_ANALYSIS: "0"
+        run: python3 gen_pending_deep_analysis.py
+
       - name: Commit & push changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add recommendations.json
+          git add recommendations.json pending_deep_analysis.json deep_analysis || true
           git diff --cached --quiet || git commit -m "auto: $(date -u +%Y-%m-%d) 공고 업데이트"
           git push

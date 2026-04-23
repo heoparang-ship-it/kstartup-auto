@@ -1,0 +1,120 @@
+{
+  "pbancSn": 177316,
+  "title": "2026년 제3기 서대문구 청년벤처 육성사업 창업기업 모집",
+  "analyzed_at": "2026-04-24T16:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "CONDITIONAL-GO",
+    "confidence": "medium",
+    "expected_pass_rate": 0.12,
+    "time_cost_hours": "50-80",
+    "one_liner": "서대문구 청년벤처 육성 — sinhon.life AI 플랫폼 fit 🟡, TIPS 연계 경로 있으나 대표자 나이 39세 이하 확인 및 서울 접근성 전제 필요"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "기술개발(R&D) / 청년벤처 육성 (지자체)",
+      "body": "서울 서대문구청 주관 청년벤처 육성사업. 대표자 19~39세, 5년 미만 초기 창업기업(또는 예비창업) 대상. TIPS 연계를 명시적으로 언급하는 것이 핵심 — 단순 공간 지원이 아니라 투자 연계 경로를 제공하는 구조. R&D 분류되어 있으나 소프트웨어·플랫폼 기업도 해당 가능성 있음. 직접 사업화 자금 여부 공고문에 불명확.",
+      "benefits": [
+        { "k": "TIPS 연계", "v": "TIPS 운영사 투자 연계 경로 제공" },
+        { "k": "전주기 창업지원", "v": "서대문구 네트워크 활용" },
+        { "k": "사업 확장 지원", "v": "투자·팁스 연계 통한 사업확장" }
+      ],
+      "watchout": "지자체 공고라 혜택 규모 불명확 — TIPS 연계는 '지원'이지 확정 투자 아님. 실제 직접 현금 지원 규모 공고문 확인 필요."
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [
+        {
+          "task": "청년벤처 — SW·플랫폼 스타트업",
+          "reason": "엑스컴 SW 개발 주업, 창업 6개월차(5년 미만), sinhon.life 프로덕트 운영 중",
+          "fit": "🟢 업력·업종·연령 자격 충족 가능"
+        }
+      ],
+      "tech_adjacent": [
+        {
+          "task": "TIPS 연계 경로",
+          "reason": "sinhon.life AI 플랫폼으로 TIPS 전략 접근 중인 팀에게 연계 경로 가치 있음",
+          "fit": "🟡 TIPS 준비 단계에서 유용, 직접 자금은 아님"
+        }
+      ],
+      "mismatch_note": "R&D 분류이나 하드웨어·제조 요건인지 SW도 포함인지 공고문 상세 확인 필요. 서울 서대문구 기반이라 인천 소재 엑스컴의 입주·참여 편의성 낮음.",
+      "critical_gap": "직접 현금 지원 규모 미명시 — TIPS 연계 'support'로 직접자금 0일 가능성, 공고문 원문 확인 전 CONDITIONAL-GO"
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "공고문 원문 확인·서류 준비", "hours": "20-30" },
+          { "stage": "지원서 작성·발표 자료", "hours": "30-50" }
+        ],
+        "total": "50-80h"
+      },
+      "probability": {
+        "doc_pass": 0.25,
+        "final_given_doc_pass": 0.48,
+        "final": 0.12,
+        "basis": "지자체 청년벤처 통상 경쟁률(과제당 5~10배), 청년 요건·업력 충족, SW 플랫폼 fit으로 중간 수준 추정"
+      },
+      "expected_value_krw": 3600000,
+      "expected_value_label": "직접자금 미명시로 TIPS 연계 간접가치로 추산 — 확인 전 참고치. 실제 직접자금 있으면 기댓값 상향"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "CONDITIONAL-GO",
+      "reasons": [
+        "엑스컴 업력·업종·연령 자격 충족 가능",
+        "TIPS 연계 경로는 현 단계 팀에게 전략적 가치 있음",
+        "단, 직접자금 규모·R&D 범위(SW 포함 여부)·대표자 연령 39세 이하 여부 공고문 원문 확인 필요"
+      ],
+      "exception_go_conditions": [
+        "공고문 원문에서 직접 현금 지원(1천만원 이상) 확인",
+        "R&D 분류가 SW 플랫폼 포함임을 확인",
+        "허파랑 대표자 연령 39세 이하 확인",
+        "위 3개 AND 조건 충족 시 GO로 상향"
+      ]
+    },
+
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "예비창업 직접자금 지원, 대구경북 지역 우선"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 전략 병행 가능"
+        },
+        {
+          "name": "2026 유니콘 브릿지 with 아이티센 (경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동 — 기창업·sinhon.life",
+          "priority": "🟡",
+          "reason": "본인 기창업 트랙, 직접자금 규모 확인 시 우선 고려"
+        }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19 + auto-memory/project_dual_entry_strategy@2026-04-20 + user_business_registration"
+    }
+  }
+}

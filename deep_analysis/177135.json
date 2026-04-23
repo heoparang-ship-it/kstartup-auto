@@ -1,0 +1,111 @@
+{
+  "pbancSn": 177135,
+  "title": "2026년 서울창업허브 창동 투자 특화 프로그램 (IR 고도화 과정) - IR 기초 교육 프로그램",
+  "analyzed_at": "2026-04-24T16:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.05,
+    "time_cost_hours": "0",
+    "one_liner": "오늘(2026-04-24) 마감 + IR 교육만 제공, 직접 자금 0 — 자동 NO-GO 조건 해당"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "IR 덱 교육 프로그램 (서울창업허브 창동 입주 우선)",
+      "body": "서울창업허브 창동이 입주기업 및 IR 자료 고도화 희망 스타트업을 대상으로 운영하는 'IR DECK 기초 교육 + 실전 피칭 역량 강화' 교육 프로그램. 직접 자금·상금·바우처 없이 교육 서비스만 제공. 입주기업 또는 기존 IR 자료 보유 기업을 우선 선발하여 비입주 기업은 경쟁 불리. 마감은 오늘 2026-04-24. biz_class='시설·공간·보육'으로 직접 현금 0, 교육만.",
+      "benefits": [
+        { "k": "직접 자금", "v": "없음" },
+        { "k": "교육 서비스", "v": "IR 덱 기초 교육 + 실전 피칭 코칭 (무상)" }
+      ],
+      "watchout": "서울창업허브 창동 입주기업 우선 선발 + 오늘 마감 + 직접 자금 0"
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [
+        {
+          "task": "IR 덱 작성·피칭 역량 강화",
+          "reason": "sinhon.life 투자 유치 준비 단계에서 IR 자료 고도화 필요성은 있음",
+          "fit": "🟡 교육 내용은 유용하나 비입주 기업 선발 불리 + 오늘 마감"
+        }
+      ],
+      "mismatch_note": "서울창업허브 창동 비입주 기업인 엑스컴은 우선 선발 대상에서 제외. 오늘 마감으로 신청 서류 준비 시간 없음. 직접 자금 0으로 자동 NO-GO 조건 해당.",
+      "critical_gap": "직접 자금 0(교육만) + 비입주 기업 선발 불이익 + 오늘 마감"
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "신청서 작성 (오늘 마감, 실질 불가)", "hours": "5-10" },
+          { "stage": "교육 참여 시", "hours": "16-24" }
+        ],
+        "total": "21-34h (교육 수료 후 직접 현금 혜택 없음)"
+      },
+      "probability": {
+        "doc_pass": 0.3,
+        "final_given_doc_pass": 0.17,
+        "final": 0.05,
+        "basis": "비입주 기업 선발 불이익 + 오늘 마감으로 준비 부실 가능성 + 경쟁 다수 예상"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "직접 자금 0 — 교육 가치는 있으나 기회비용 대비 ROI 음수"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "직접 자금 0 — 교육·네트워킹만, 자동 NO-GO 조건 해당",
+        "오늘(2026-04-24) 마감 — 준비 시간 없음",
+        "서울창업허브 창동 비입주 기업으로 선발 불이익",
+        "춘기 공백기 5/15 마감 3건 집중 시기에 교육 프로그램 수강은 기회비용 낭비"
+      ],
+      "exception_go_conditions": [
+        "해당 없음 — 직접 자금 0 + 오늘 마감으로 예외 GO 경로 없음"
+      ]
+    },
+
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "예비창업 매칭 100%, 춘기 공백기 유효 카드"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 전략상 대구경북과 병행 가능"
+        },
+        {
+          "name": "2026 유니콘 브릿지 with 아이티센 (경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동 — 기창업·sinhon.life",
+          "priority": "🟡",
+          "reason": "sinhon.life로 직접 지원 가능한 기창업 트랙"
+        }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19 + auto-memory/project_dual_entry_strategy@2026-04-20 + user_business_registration"
+    }
+  }
+}

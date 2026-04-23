@@ -1,0 +1,113 @@
+{
+  "pbancSn": 176207,
+  "title": "퀄컴 AI 이노베이터 프로그램 - Qualcomm AI Program for Innovators (QAIPI) 2026 - APAC",
+  "analyzed_at": "2026-04-24T16:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.05,
+    "time_cost_hours": "40-80",
+    "one_liner": "온디바이스 AI 하드웨어(Snapdragon) 기반 프로그램 — sinhon.life 클라우드 RAG 아키텍처와 구조적 불일치, 직접현금 0"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "글로벌 빅테크 액셀러레이터 (하드웨어 AI 특화)",
+      "body": "퀄컴이 한국·일본·싱가포르 스타트업 대상으로 운영하는 온디바이스 AI 솔루션 개발 지원 프로그램. Snapdragon 칩셋 기반 엣지 AI를 제품에 구현하는 팀을 선발해 하드웨어 디바이스 액세스, 퀄컴 엔지니어 멘토링, 글로벌 파트너십 네트워크를 제공한다. 직접 현금 지원은 없고, Snapdragon 개발킷·SDK·기술 컨설팅이 핵심 혜택. 선발 경쟁률은 APAC 권역 합산으로 매우 높을 것으로 예상됨.",
+      "benefits": [
+        { "k": "Snapdragon 개발킷 제공", "v": "온디바이스 AI 하드웨어 액세스" },
+        { "k": "퀄컴 엔지니어 1:1 멘토링", "v": "기술 개발 지원" },
+        { "k": "글로벌 파트너 네트워크", "v": "APAC 스타트업 생태계 연결" },
+        { "k": "직접 현금", "v": "없음" }
+      ],
+      "watchout": "온디바이스/엣지 AI 전용 — 클라우드 API 기반 서비스팀은 구조적으로 비대상"
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [
+        {
+          "task": "AI 솔루션 개발",
+          "reason": "엑스컴은 Anthropic API + Pinecone RAG로 AI 서비스 운영 중 — 'AI 스타트업' 레이블은 가능",
+          "fit": "🟠 클라우드 AI(sinhon.life) vs 온디바이스 AI(QAIPI) — 아키텍처 방향 정반대"
+        }
+      ],
+      "mismatch_note": "QAIPI는 Snapdragon 칩 위에서 동작하는 엣지 AI가 핵심. sinhon.life는 서버사이드 RAG + API 호출 구조로 온디바이스 요소가 전혀 없음.",
+      "critical_gap": "온디바이스 AI 구현 레퍼런스 없음 + 하드웨어 디바이스 제품 없음 = QAIPI 핵심 선발 기준 미충족"
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "온디바이스 AI 적용 방안 설계 + 영문 지원서", "hours": "30-50" },
+          { "stage": "인터뷰·발표 (서류 통과 시)", "hours": "10-30" }
+        ],
+        "total": "40-80h"
+      },
+      "probability": {
+        "doc_pass": 0.08,
+        "final_given_doc_pass": 0.60,
+        "final": 0.05,
+        "basis": "APAC 권역 경쟁 + 온디바이스 AI 레퍼런스 부재 + 클라우드 아키텍처팀 구조 불일치 반영"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "직접현금 0 — HW 디바이스/SDK 가치는 sinhon.life 로드맵에 활용 불가"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "온디바이스 AI(엣지/Snapdragon) 특화 프로그램 — sinhon.life 클라우드 RAG 구조와 정반대",
+        "직접 현금 0 + 하드웨어 디바이스 혜택이 현재 제품 로드맵에 불필요",
+        "영문 지원서 + APAC 경쟁 + 40~80h 투입 대비 기댓값 0",
+        "현업 컨택 없는 상태에서 기술 전환(클라우드→온디바이스) 2주 내 프로토타입 불가"
+      ],
+      "exception_go_conditions": [
+        "sinhon.life의 AI 기능을 모바일 온디바이스(스마트폰 로컬 LLM)로 이식하는 제품 피봇을 검토 중이고, 1개월 내 프로토타입 가능할 때"
+      ]
+    },
+
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "예비창업 직접 매칭, 춘기 핵심 자원 투입처"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "병행 가능, 경기 지역 직접자금"
+        },
+        {
+          "name": "2026 유니콘 브릿지 with 아이티센 (경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동 — 기창업·sinhon.life",
+          "priority": "🟡",
+          "reason": "클라우드 AI 서비스 트랙으로 적합"
+        }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19 + auto-memory/project_dual_entry_strategy@2026-04-20 + user_business_registration"
+    }
+  }
+}

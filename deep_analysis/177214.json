@@ -1,0 +1,114 @@
+{
+  "pbancSn": 177214,
+  "title": "2026 대덕특구 딥테크 혁신성장 플랫폼(전략기술 발굴 및 매칭)",
+  "analyzed_at": "2026-04-24T16:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.04,
+    "time_cost_hours": "80-130",
+    "one_liner": "딥테크·공공기술 기반 전략기술 사업화 공고 — sinhon.life는 B2C 신혼 플랫폼으로 12대 전략기술 범주 해당 없음"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "딥테크 OI 매칭 플랫폼 (공공기술 기반 사업화)",
+      "body": "연구개발특구진흥재단 주관, 대덕특구 기반 국가전략기술(반도체·양자·우주·바이오 등 12대 분야) 딥테크 창업·사업화 매칭 플랫폼. 신청 대상은 대중견기업 OI 운영자, 중소기업 신사업 스핀오프, 스타트업/중소기업, 투자기관. 핵심은 공공연구기술을 라이선스/이전받아 시장화하는 딥테크 사업화다. B2C 소비자 플랫폼과 완전히 다른 세계.",
+      "benefits": [
+        { "k": "기술 매칭", "v": "공공기술 발굴·이전 연계" },
+        { "k": "사업화 지원", "v": "딥테크 스타트업 육성 프로그램 연계 (금액 미명시)" },
+        { "k": "네트워크", "v": "대덕특구 연구기관·대기업 OI 네트워크" }
+      ],
+      "watchout": "직접 자금(상금/지원금) 규모가 공고 본문에 명시되지 않음. 기술매칭 플랫폼 성격이 강해 실질 현금 혜택 불명확."
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [
+        {
+          "task": "AI/SW 기반 전략기술 사업화",
+          "reason": "엑스컴의 AI·RAG 기술이 일부 전략기술(AI·반도체·바이오 등) 활용 솔루션으로 포지셔닝 시도 가능",
+          "fit": "🟠 기술 범주 인접하나 공공연구기술 라이선스·이전 이력 없음. 딥테크 포트폴리오 부재."
+        }
+      ],
+      "mismatch_note": "sinhon.life(신혼부부 B2C 플랫폼)은 12대 국가전략기술 범주와 완전 무관. 공공기술 이전·라이선스 이력 없음. 대덕특구 연구기관과의 기존 관계 없음.",
+      "critical_gap": "공공연구기술 기반 딥테크 사업화 레퍼런스 전무 — 대덕특구·출연연 기술이전 이력이 없으면 매칭 자체가 불가"
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "공공기술 탐색 + 매칭 과제 선정", "hours": "30-50" },
+          { "stage": "사업계획서·기술사업화계획 작성", "hours": "40-60" },
+          { "stage": "면접·발표(통과 시)", "hours": "10-20" }
+        ],
+        "total": "80-130h"
+      },
+      "probability": {
+        "doc_pass": 0.10,
+        "final_given_doc_pass": 0.40,
+        "final": 0.04,
+        "basis": "딥테크·공공기술 기반 요건 + 레퍼런스 부재 + 12대 전략기술 비해당 도메인 → 합격 가능성 극히 낮음"
+      },
+      "expected_value_krw": 1200000,
+      "expected_value_label": "0.04 × 3,000만원(추정) ≈ 120만원 (시간당 9,200~15,000원, 최저임금 이하)"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "sinhon.life(B2C 신혼 플랫폼)은 12대 국가전략기술 범주에 해당 없음",
+        "공공연구기술 라이선스·이전 이력 없어 딥테크 사업화 근거 부재",
+        "대덕특구 기반 공고로 인천 소재 엑스컴은 지리적 연결고리도 약함",
+        "기댓값 120만원 vs 투입 80~130h = 시간당 단가 최저임금 이하",
+        "같은 기간 🟢 공고(모두의 창업, 파주 청년창업) 2건 열려있어 기회비용 발생"
+      ],
+      "exception_go_conditions": [
+        "AI·데이터 분야 공공기술(예: ETRI 출연연 AI 기술)을 신혼부부 플랫폼에 적용하는 기술이전 사업화 모델로 재구성 + 대덕특구 연구기관 현업 컨택이 있을 때 (AND 조건)"
+      ]
+    },
+
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "예비창업 매칭 100%, 춘기 공백기에 유효한 핵심 카드"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 전략상 병행 가능"
+        },
+        {
+          "name": "2026 유니콘 브릿지 with 아이티센 (경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동 — 기창업·sinhon.life",
+          "priority": "🟡",
+          "reason": "sinhon.life 직접 지원 가능한 기창업 트랙"
+        }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19 + auto-memory/project_dual_entry_strategy@2026-04-20 + user_business_registration"
+    }
+  }
+}

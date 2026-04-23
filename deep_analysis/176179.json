@@ -1,0 +1,113 @@
+{
+  "pbancSn": 176179,
+  "title": "2026 전략기술 딥테크 창업 촉진 참여기업 모집",
+  "analyzed_at": "2026-04-24T16:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.04,
+    "time_cost_hours": "80-130",
+    "one_liner": "공공기술 기반 딥테크 기획창업 전문 공고 — 엑스컴은 대학·출연연 소속 아님, 공공기술 이전 이력 없음, 자격 조건 미충족"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "딥테크 기획창업 지원 (공공기술 기반)",
+      "body": "연구개발특구진흥재단 연계, (주)제이엔피글로벌 주관의 광역권(광역/강소특구) 딥테크 기획창업 집중지원 프로그램. 지원 자격은 ①공공기술 활용 사업화 예비창업자 또는 2026년 창업기업, ②대학/출연연 소속 예비창업자 또는 2026년 창업기업. 업력 1년 미만 또는 예비창업자만 해당. 엑스컴은 2025-10 설립으로 업력 약 6개월이나, 공공기술 이전·대학·출연연 소속 조건 중 하나를 충족해야 함.",
+      "benefits": [
+        { "k": "딥테크 기획창업 지원금", "v": "공고문 미명시 (공식 사이트 확인 필요)" },
+        { "k": "특구 내 입주·네트워크", "v": "광역/강소특구 연구기관 연계" },
+        { "k": "후속 연계", "v": "초격차 스타트업 프로젝트 진입 경로" }
+      ],
+      "watchout": "자격 조건이 '공공기술 활용' 또는 '대학/출연연 소속'으로 명시. 일반 SW 창업기업은 해당 조건 충족이 매우 어려움."
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [
+        {
+          "task": "AI 전략기술 활용 딥테크 사업화",
+          "reason": "엑스컴의 Anthropic API 기반 AI 에이전트가 전략기술(AI) 범주에 기술적으로 인접",
+          "fit": "🟠 기술 인접하나 공공기술 이전·대학 소속 조건 미충족. 자격 자체가 불확실."
+        }
+      ],
+      "mismatch_note": "sinhon.life는 B2C 신혼 플랫폼으로 국가전략기술 범주 외. 공공기술 이전 이력 없음. 대학/출연연 소속 아님. 지원 자격 두 조건 모두 미충족 가능성 높음.",
+      "critical_gap": "자격 조건 '공공기술 활용 사업화' 또는 '대학/출연연 소속' — 엑스컴은 두 조건 모두 미충족, 지원 자체 불가"
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "자격 요건 확인", "hours": "2-4" },
+          { "stage": "공공기술 탐색 + 사업계획서(자격 있다면)", "hours": "70-120" }
+        ],
+        "total": "80-130h (자격 확인 후 진행 불가 예상)"
+      },
+      "probability": {
+        "doc_pass": 0.08,
+        "final_given_doc_pass": 0.50,
+        "final": 0.04,
+        "basis": "자격 조건 미충족 가능성 높음. 억지로 공공기술 연계 구성해도 심사 현업이 즉시 식별 — 합격률 극히 낮음."
+      },
+      "expected_value_krw": 1200000,
+      "expected_value_label": "0.04 × 3,000만원(추정) ≈ 120만원 (자격 미충족 시 0원)"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "자격 조건: 공공기술 활용 or 대학/출연연 소속 — 엑스컴은 두 조건 모두 미충족",
+        "업력 1년 미만 또는 예비창업자 한정 — 엑스컴은 2025-10 설립, 6개월차로 형식적 충족은 가능하나 나머지 조건 불충족",
+        "딥테크 기획창업 전문 공고로 B2C 신혼 플랫폼 포지셔닝 불가",
+        "기댓값 120만원 이하 + 투입 80~130h = ROI 음수",
+        "춘기 🟢 공고 2건 대비 기회비용 발생"
+      ],
+      "exception_go_conditions": [
+        "ETRI·KAIST 등 출연연 공개 AI 기술을 신혼부부 정책 매칭에 적용하는 기술이전 라이선스 계약 체결 후 (현실적으로 3개월+ 소요 — 이번 사이클 불가)"
+      ]
+    },
+
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "예비창업 매칭 100%, 춘기 공백기 핵심 카드"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 전략상 병행 가능"
+        },
+        {
+          "name": "2026 유니콘 브릿지 with 아이티센 (경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동 — 기창업·sinhon.life",
+          "priority": "🟡",
+          "reason": "sinhon.life 기창업 직접 지원 가능"
+        }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19 + auto-memory/project_dual_entry_strategy@2026-04-20 + user_business_registration"
+    }
+  }
+}

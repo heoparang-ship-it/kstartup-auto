@@ -241,6 +241,60 @@
     .history-row{grid-template-columns:110px 60px 60px 1fr}
     .history-row .h-red{display:none}
   }
+
+  /* === Deep Analysis (합격 가능성 딥 분석) — 2026-04-24 추가 === */
+  .card-verdict{border-top:1px dashed var(--line-soft);padding-top:8px;margin-top:2px}
+  .verdict-bar{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .verdict-badge{display:inline-block;padding:3px 10px;font-family:"SF Mono",Menlo,monospace;font-size:11px;font-weight:800;letter-spacing:0.04em;border-radius:3px;text-transform:uppercase}
+  .verdict-badge.go{background:var(--c-green);color:#fff}
+  .verdict-badge.conditional-go{background:var(--c-orange);color:#fff}
+  .verdict-badge.no-go{background:var(--c-red);color:#fff}
+  .verdict-badge.pending{background:var(--soft-bg);color:var(--muted);border:1px dashed var(--line)}
+  .verdict-rate{font-family:"SF Mono",Menlo,monospace;font-size:11.5px;color:var(--muted)}
+  .verdict-one{flex:1;font-size:12px;color:var(--fg);line-height:1.4;min-width:200px}
+  .analysis-toggle{background:none;border:none;padding:6px 0;cursor:pointer;font-size:12px;font-weight:600;color:#7c3aed;font-family:inherit;display:flex;align-items:center;gap:4px;width:100%;text-align:left;margin-top:4px}
+  .analysis-toggle:hover{color:var(--fg)}
+  .analysis-toggle .chev{transition:transform 0.15s;display:inline-block}
+  .analysis-toggle.open .chev{transform:rotate(90deg)}
+  .analysis-content{display:none;margin-top:8px;font-size:12.5px;padding:12px 14px;background:#fdfbff;border-left:3px solid #7c3aed;border-radius:2px}
+  .analysis-content.open{display:block}
+  .aa-block{margin-bottom:14px;padding-bottom:12px;border-bottom:1px dotted var(--line-soft)}
+  .aa-block:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none}
+  .aa-h{font-size:10.5px;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;color:#7c3aed;margin-bottom:6px}
+  .aa-body{line-height:1.55;color:var(--fg)}
+  .aa-kv{display:grid;grid-template-columns:auto 1fr;gap:3px 10px;font-size:12px;margin-top:6px}
+  .aa-kv .k{color:var(--muted);font-family:"SF Mono",Menlo,monospace;font-size:11px}
+  .aa-kv .v{color:var(--fg)}
+  .aa-list{margin:4px 0 0;padding-left:18px;line-height:1.6}
+  .aa-list li{margin-bottom:3px}
+  .aa-watchout{margin-top:6px;padding:6px 10px;background:var(--c-yellow-soft);border-left:3px solid var(--c-yellow);font-size:11.5px;color:#8a6d00}
+  .aa-gap{margin-top:8px;padding:6px 10px;background:var(--c-red-soft);border-left:3px solid var(--c-red);font-size:12px;color:#7a1212;font-weight:500}
+  .aa-fit-row{display:flex;gap:8px;align-items:flex-start;padding:5px 0;border-bottom:1px dotted var(--line-soft);font-size:12px}
+  .aa-fit-row:last-child{border-bottom:none}
+  .aa-fit-row .fit-mark{flex-shrink:0;width:18px;text-align:center}
+  .aa-fit-row .fit-body{flex:1}
+  .aa-fit-row .fit-task{font-weight:600}
+  .aa-fit-row .fit-reason{color:var(--muted);font-size:11px;margin-top:1px}
+  .aa-roi-table{display:grid;grid-template-columns:1fr auto;gap:2px 10px;font-family:"SF Mono",Menlo,monospace;font-size:11.5px;padding:6px 10px;background:var(--soft-bg);border-radius:3px;margin-top:4px}
+  .aa-roi-table .stage{color:var(--fg)}
+  .aa-roi-table .hrs{color:var(--muted);text-align:right}
+  .aa-roi-total{font-weight:700;color:#7c3aed;padding-top:4px;margin-top:4px;border-top:1px solid var(--line-soft)}
+  .aa-prob{font-family:"SF Mono",Menlo,monospace;font-size:11.5px;color:var(--fg);padding:4px 10px;background:#fff;border:1px solid var(--line);border-radius:3px;margin-top:6px;line-height:1.6}
+  .aa-ev{font-size:13px;font-weight:700;color:#7c3aed;margin-top:6px}
+  .aa-decision-reasons{padding:8px 10px;background:#fff;border:1px solid var(--line);border-radius:3px;margin-top:6px}
+  .aa-exception{margin-top:8px;padding:8px 10px;background:#f7f7ff;border-left:3px solid var(--c-blue);font-size:11.5px;color:var(--fg)}
+  .aa-exception .aa-exception-h{font-weight:700;color:var(--c-blue);text-transform:uppercase;letter-spacing:0.05em;font-size:10px;margin-bottom:4px}
+  .aa-alt{padding:8px 10px;background:#f7fdf8;border:1px solid var(--c-green);border-left:3px solid var(--c-green);border-radius:2px;margin-top:4px}
+  .aa-alt-item{padding:5px 0;border-bottom:1px dotted rgba(24,92,47,0.2);font-size:12px}
+  .aa-alt-item:last-child{border-bottom:none}
+  .aa-alt-head{display:flex;gap:6px;align-items:baseline;flex-wrap:wrap}
+  .aa-alt-name{font-weight:700}
+  .aa-alt-deadline{font-family:"SF Mono",Menlo,monospace;font-size:10.5px;color:#185c2f}
+  .aa-alt-track{font-size:10px;background:#185c2f;color:#fff;padding:1px 6px;border-radius:2px;letter-spacing:0.04em}
+  .aa-alt-reason{color:var(--muted);font-size:11px;margin-top:2px}
+  .aa-pending{color:var(--muted);font-size:12px;padding:8px 10px;background:var(--soft-bg);border-left:3px dashed #7c3aed;font-style:italic}
+  .aa-pending .aa-pending-cmd{display:block;margin-top:4px;font-family:"SF Mono",Menlo,monospace;font-size:10.5px;color:var(--fg);font-style:normal}
+  .aa-meta{font-family:"SF Mono",Menlo,monospace;font-size:10px;color:var(--muted);letter-spacing:0.04em;margin-top:8px;padding-top:6px;border-top:1px dotted var(--line-soft)}
 </style>
 </head>
 <body>
@@ -386,6 +440,79 @@ function formatKstTimestamp(iso){
 }
 
 function esc(s){ if(!s) return ''; const d=document.createElement('div'); d.textContent=s; return d.innerHTML; }
+
+// === Deep Analysis lazy loader === 2026-04-24 추가
+const AA_CACHE = new Map();
+const AA_INFLIGHT = new Map();
+function loadAnalysis(pbancSn){
+  if(AA_CACHE.has(pbancSn)) return Promise.resolve(AA_CACHE.get(pbancSn));
+  if(AA_INFLIGHT.has(pbancSn)) return AA_INFLIGHT.get(pbancSn);
+  const p = fetch(`deep_analysis/${pbancSn}.json`, {cache:'no-cache'})
+    .then(r => r.ok ? r.json() : null)
+    .catch(() => null)
+    .then(data => { AA_CACHE.set(pbancSn, data); AA_INFLIGHT.delete(pbancSn); return data; });
+  AA_INFLIGHT.set(pbancSn, p);
+  return p;
+}
+function toggleAnalysis(pbancSn, id){
+  const btn = document.querySelector(`[data-aa-toggle="${id}"]`);
+  const box = document.getElementById(`aa-${id}`);
+  if(!btn || !box) return;
+  const open = !btn.classList.contains('open');
+  btn.classList.toggle('open', open);
+  box.classList.toggle('open', open);
+  if(open && box.dataset.loaded !== '1'){
+    box.innerHTML = '<div class="aa-pending">⌛ 딥 분석 로드 중...</div>';
+    loadAnalysis(pbancSn).then(data => {
+      box.dataset.loaded = '1';
+      box.innerHTML = data ? renderAnalysis(data) : renderAnalysisPending(pbancSn);
+    });
+  }
+}
+function renderAnalysisPending(pbancSn){
+  return `<div class="aa-pending">💭 이 공고의 딥 분석이 아직 생성되지 않았습니다.<span class="aa-pending-cmd">Cowork 세션에서: <b>"pbancSn=${pbancSn} 딥 분석 생성해줘"</b></span></div>`;
+}
+function preloadAnalysisBadge(pbancSn, id){
+  loadAnalysis(pbancSn).then(data => {
+    if(!data) return;
+    const badge = document.getElementById(`aa-badge-${id}`);
+    const one = document.getElementById(`aa-oneline-${id}`);
+    if(badge && data.verdict){
+      const dv = (data.verdict.decision||'').toLowerCase().replace(/[-\s]/g,'-');
+      badge.className = `verdict-badge ${dv}`;
+      badge.textContent = data.verdict.decision || 'ROI';
+    }
+    if(one && data.verdict && data.verdict.one_liner){
+      one.textContent = data.verdict.one_liner;
+    }
+  });
+}
+function renderAnalysis(a){
+  const s = a.sections || {}; const v = a.verdict || {};
+  const n = s.nature || {};
+  const benefits = Array.isArray(n.benefits) ? n.benefits.map(b => `<div class="k">${esc(b.k)}</div><div class="v">${esc(b.v)}</div>`).join('') : '';
+  const natureHtml = `<div class="aa-block"><div class="aa-h">▸ ${esc(n.title||'이 공고의 정체')}</div><div class="aa-body">${esc(n.body||'')}</div>${n.type ? `<div class="aa-body" style="margin-top:4px;color:var(--muted);font-size:11px">유형: ${esc(n.type)}</div>` : ''}${benefits ? `<div class="aa-kv">${benefits}</div>` : ''}${n.watchout ? `<div class="aa-watchout">⚠ ${esc(n.watchout)}</div>` : ''}</div>`;
+  const f = s.fit || {};
+  const fitRow = (m) => `<div class="aa-fit-row"><div class="fit-mark">${esc(m.fit||'•')}</div><div class="fit-body"><div class="fit-task">${esc(m.task||'')}</div><div class="fit-reason">${esc(m.reason||'')}</div></div></div>`;
+  const direct = (f.direct_match||[]).map(fitRow).join('');
+  const adjacent = (f.tech_adjacent||[]).map(fitRow).join('');
+  const fitHtml = `<div class="aa-block"><div class="aa-h">▸ ${esc(f.title||'팀 적합도 매칭')}</div>${direct ? `<div style="margin-bottom:6px"><div class="aa-h" style="color:#185c2f;font-size:10px">직접 매칭</div>${direct}</div>` : '<div class="aa-body" style="font-size:11.5px;color:var(--muted)">직접 매칭: 없음</div>'}${adjacent ? `<div style="margin-top:6px"><div class="aa-h" style="color:#8a6d00;font-size:10px">기술 인접</div>${adjacent}</div>` : ''}${f.mismatch_note ? `<div class="aa-body" style="margin-top:6px;font-size:11.5px;color:var(--muted)">${esc(f.mismatch_note)}</div>` : ''}${f.critical_gap ? `<div class="aa-gap">🎯 ${esc(f.critical_gap)}</div>` : ''}</div>`;
+  const r = s.roi || {}; const tc = r.time_cost || {};
+  const brk = (tc.breakdown||[]).map(b => `<div class="stage">${esc(b.stage)}</div><div class="hrs">${esc(b.hours)}</div>`).join('');
+  const p = r.probability || {};
+  const pct = (x) => (typeof x === 'number') ? `${(x*100).toFixed(1)}%` : '—';
+  const roiHtml = `<div class="aa-block"><div class="aa-h">▸ ${esc(r.title||'ROI 계산')}</div><div class="aa-body" style="font-size:11.5px;color:var(--muted);margin-bottom:4px">투입 시간</div><div class="aa-roi-table">${brk}<div class="stage aa-roi-total">합계</div><div class="hrs aa-roi-total">${esc(tc.total||'')}</div></div><div class="aa-prob">P(서류통과) = ${pct(p.doc_pass)}<br>P(최종|서류통과) = ${pct(p.final_given_doc_pass)}<br><b>P(최종 선정) = ${pct(p.final)}</b>${p.basis ? `<div style="margin-top:4px;color:var(--muted);font-size:10.5px;font-family:inherit">근거: ${esc(p.basis)}</div>` : ''}</div>${r.expected_value_label ? `<div class="aa-ev">💰 ${esc(r.expected_value_label)}</div>` : ''}</div>`;
+  const d = s.decision || {};
+  const dCls = (d.verdict||'').toLowerCase().replace(/[-\s]/g,'-');
+  const reasons = (d.reasons||[]).map(x => `<li>${esc(x)}</li>`).join('');
+  const excCond = (d.exception_go_conditions||[]).map(x => `<li>${esc(x)}</li>`).join('');
+  const decHtml = `<div class="aa-block"><div class="aa-h">▸ ${esc(d.title||'GO/NO-GO')}</div><div class="verdict-bar" style="margin-bottom:8px"><span class="verdict-badge ${dCls}">${esc(d.verdict||'')}</span><span class="verdict-rate">합격률 ${pct(v.expected_pass_rate)} / 투입 ${esc(v.time_cost_hours||'')}h</span></div>${reasons ? `<div class="aa-decision-reasons"><ul class="aa-list">${reasons}</ul></div>` : ''}${excCond ? `<div class="aa-exception"><div class="aa-exception-h">예외 GO 조건 (AND)</div><ul class="aa-list">${excCond}</ul></div>` : ''}</div>`;
+  const alt = s.alternatives || {};
+  const altItems = (alt.items||[]).map(i => `<div class="aa-alt-item"><div class="aa-alt-head"><span class="aa-alt-name">${esc(i.name)}</span><span class="aa-alt-deadline">${esc(i.deadline||'')}</span>${i.track ? `<span class="aa-alt-track">${esc(i.track)}</span>` : ''}${i.priority ? `<span>${esc(i.priority)}</span>` : ''}</div>${i.reason ? `<div class="aa-alt-reason">${esc(i.reason)}</div>` : ''}</div>`).join('');
+  const altHtml = altItems ? `<div class="aa-block"><div class="aa-h">▸ ${esc(alt.title||'대안')}</div><div class="aa-alt">${altItems}</div></div>` : '';
+  const metaHtml = a.analyzed_at ? `<div class="aa-meta">분석 생성: ${esc(a.analyzed_at)} · ${esc(a.analyzer||'')}</div>` : '';
+  return natureHtml + fitHtml + roiHtml + decHtml + altHtml + metaHtml;
+}
 
 // ── History panel ──
 function renderHistory(){
@@ -845,6 +972,24 @@ function renderCard(it, q){
   const tierLogicText = (ev && ev.tier_logic) || '';
   const tierLogicHtml = tierLogicText ? `<div class="tier-logic ${tier}">${esc(tierLogicText)}</div>` : '';
 
+  // === Deep Analysis (합격 가능성) — 2026-04-24 === 🟢🟡만 표시
+  let analysisHtml = '';
+  if(tier === 'green' || tier === 'yellow'){
+    analysisHtml = `
+      <div class="card-verdict">
+        <div class="verdict-bar">
+          <span class="verdict-badge pending" id="aa-badge-${id}">🔍 ROI</span>
+          <span class="verdict-one" id="aa-oneline-${id}">합격 가능성 딥 분석 (펼쳐서 확인)</span>
+        </div>
+        <button class="analysis-toggle" data-aa-toggle="${id}" onclick="toggleAnalysis(${it.pbancSn}, '${id}')">
+          <span class="chev">▸</span>
+          <span>합격 가능성 · ROI · 대안</span>
+        </button>
+        <div class="analysis-content" id="aa-${id}"></div>
+      </div>`;
+    setTimeout(() => preloadAnalysisBadge(it.pbancSn, id), 0);
+  }
+
   return `<div class="card tier-${tier} status-${status} ${selected}" data-id="${id}">
     <div class="card-tier-bar"></div>
     <div class="card-top">
@@ -863,6 +1008,7 @@ function renderCard(it, q){
     ${it.agency ? `<div class="card-agency">${hlText(it.agency, q)}</div>` : ''}
     ${it.note ? `<div class="card-note">${hlText(it.note, q)}</div>` : ''}
     ${deepHtml}
+    ${analysisHtml}
     ${actions ? `<div class="card-actions">${actions}</div>` : ''}
   </div>`;
 }

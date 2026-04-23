@@ -1,0 +1,122 @@
+{
+  "pbancSn": 177328,
+  "title": "2026년 스타트업 원스톱 지원센터 참여기업 모집공고",
+  "analyzed_at": "2026-04-24T16:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "CONDITIONAL-GO",
+    "confidence": "medium",
+    "expected_pass_rate": 0.25,
+    "time_cost_hours": "5-10",
+    "one_liner": "중기부 원스톱 지원센터 — 법률·세무·금융 멘토링 무료 바우처, 신청 부담 최소, sinhon.life 실제 운영 이슈 있으면 즉시 활용"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "간접지원 (멘토링·컨설팅·교육 바우처)",
+      "body": "중소벤처기업부장관이 운영하는 '스타트업 원스톱 지원센터'에 창업기업의 법률·세무·특허·금융·마케팅 등 애로사항 해소 지원을 위해 참여기업을 모집하는 공고. 직접 현금 0이나 전문가 자문 바우처(법률, 세무, IP, 글로벌 진출 등)를 무료로 제공. 기술창업 기반 예비창업자 및 창업기업 대상. 엑스컴(기창업)은 즉시 자격 충족. 신청 채널: k-startup.go.kr/onestop. 176938(스타트업 법률지원)과 동일 포털에서 동시 신청 가능.",
+      "benefits": [
+        { "k": "지원내용", "v": "법률·세무·특허·금융·마케팅 전문가 자문 바우처" },
+        { "k": "직접 현금", "v": "0원 (전문 자문 현물 지원)" },
+        { "k": "예상 절감액", "v": "자문 분야당 30만~200만원 상당" },
+        { "k": "신청 채널", "v": "k-startup.go.kr/onestop (원스톱 포털)" }
+      ],
+      "watchout": "직접 현금 없음 — 현물 바우처 활용 계획이 있는 창업기업에게만 실용적"
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [
+        {
+          "task": "sinhon.life 세무 자문 (6개월차 법인 세금계산서·부가세·법인세 준비)",
+          "reason": "2025-10 설립 후 첫 결산 시즌 접근 — 세무사 자문 필요성 실재",
+          "fit": "🟢 즉시 활용 가능"
+        },
+        {
+          "task": "특허/IP 자문 (SW 알고리즘·AI 파이프라인 특허 가능성 검토)",
+          "reason": "sinhon.life Pinecone RAG·커플 프로필 알고리즘의 특허 출원 타당성 사전 검토",
+          "fit": "🟢 즉시 활용 가능"
+        },
+        {
+          "task": "글로벌 진출 자문 (K-웨딩 인바운드 3단계 전략)",
+          "reason": "sinhon.life 글로벌 3단계 전략 수립 시 수출/해외 진출 전문가 연계",
+          "fit": "🟡 중기 계획 단계"
+        }
+      ],
+      "tech_adjacent": [],
+      "mismatch_note": "직접 현금 0이지만, 엑스컴 6개월차 법인 운영 중 실제 세무·법률·IP 자문 수요가 실재함. 신청 부담(5~10h)이 극히 낮고, 법률지원(176938)과 동일 원스톱 포털에서 묶음 신청 가능.",
+      "critical_gap": "직접 현금 0 — 현물 바우처 실제 활용 계획이 없으면 ROI 산출 불가"
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "원스톱 포털 신청 (법률지원 176938과 동시 처리 가능)", "hours": "5-10" }
+        ],
+        "total": "5-10h (176938 신청과 묶음 처리 시 3-5h 추가"
+      },
+      "probability": {
+        "doc_pass": 0.60,
+        "final_given_doc_pass": 0.40,
+        "final": 0.25,
+        "basis": "기술창업 기반 창업기업 엑스컴 자격 충족. 진입 장벽 낮은 바우처성 사업. 25% 추정"
+      },
+      "expected_value_krw": 250000,
+      "expected_value_label": "0.25 × 100만원(세무+IP 자문비 절감 추정) ≈ 25만원 — 현금 기댓값 낮으나 시간당 투입 대비 합리적"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "CONDITIONAL-GO",
+      "reasons": [
+        "엑스컴(기창업) 신청 자격 충족, 신청 부담 5~10h 최소",
+        "세무(첫 결산 시즌)·IP(RAG 알고리즘 특허 검토) 자문 수요 실재",
+        "법률지원(176938)과 같은 원스톱 포털 — 묶음 신청으로 효율화 가능"
+      ],
+      "exception_go_conditions": [
+        "세무·IP·법률 중 1개라도 실제 자문이 필요한 이슈가 있으면 즉시 GO (5h 미만 신청)",
+        "이슈가 전혀 없고 현금만 필요하면 5/15 마감 3건에 자원 집중"
+      ]
+    },
+
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "직접 자금 지원 — 현금 필요 시 최우선"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 전략 경기 트랙"
+        },
+        {
+          "name": "2026 스타트업 법률지원 (176938)",
+          "deadline": "2026-12-31",
+          "track": "본인 — 기창업·엑스컴",
+          "priority": "🟡",
+          "reason": "동일 포털, 법률 특화 바우처 — 본 공고와 묶음 신청 권장"
+        }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19 + auto-memory/project_dual_entry_strategy@2026-04-20 + user_business_registration"
+    }
+  }
+}

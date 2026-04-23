@@ -1,0 +1,114 @@
+{
+  "pbancSn": 177100,
+  "title": "2026 ICT콤플렉스 창업 투자 역량 강화 프로그램 참가팀 모집",
+  "analyzed_at": "2026-04-24T16:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.25,
+    "time_cost_hours": "15-30",
+    "one_liner": "ICT 기반 피칭 역량 교육 + 개발공간 지원 — 직접현금 0, 멘토링·교육 중심, 자동 NO-GO"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "멘토링·피칭교육형 (민간 BI)",
+      "body": "ICT콤플렉스(민간 BI)가 운영하는 예비/초기창업팀 대상 투자 역량 강화 프로그램. 핵심은 1:1 전담 멘토링 + 투자유치 교육 + 모의피칭대회다. 우수팀에 한해 '개발 전용 공간'을 추가 지원한다는 내용이 있으나 현금 지원은 명시 없음. 업력 3년 이내(예비창업 포함) 적격. biz_enyy가 예비창업자·3년미만으로 엑스컴(6개월차)은 해당되나, 와이프 예비창업도 가능.",
+      "benefits": [
+        { "k": "1:1 전담 멘토링", "v": "전문가 창업 컨설팅" },
+        { "k": "투자유치 교육", "v": "피칭 스킬 강화" },
+        { "k": "모의피칭대회", "v": "실전 IR 연습 기회" },
+        { "k": "우수팀 개발공간", "v": "ICT콤플렉스 내 공간 지원 (현금 아님)" },
+        { "k": "직접 현금", "v": "없음" }
+      ],
+      "watchout": "개발공간 지원은 우수팀 한정 + ICT콤플렉스 위치(서울 마포) 현장 이용 전제"
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [
+        {
+          "task": "ICT 기반 창업팀",
+          "reason": "엑스컴 주업이 SW개발 — ICT 기반 팀으로 분류 가능",
+          "fit": "🟡 기술 인접이나 sinhon.life 도메인(신혼부부 B2C) 특화 지원 없음"
+        }
+      ],
+      "mismatch_note": "직접자금 없는 역량 강화 프로그램 — 현재 엑스컴은 피칭 역량보다 직접자금 확보가 급선무",
+      "critical_gap": "직접현금 0 + 교육·멘토링만 + 서울 마포 현장 이용 전제 = 자동 NO-GO 조건"
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "지원서 작성 + 피칭자료 준비", "hours": "10-20" },
+          { "stage": "멘토링·교육 참여", "hours": "5-10" }
+        ],
+        "total": "15-30h"
+      },
+      "probability": {
+        "doc_pass": 0.35,
+        "final_given_doc_pass": 0.70,
+        "final": 0.25,
+        "basis": "ICT 기반 초기 창업팀 다수 지원 예상, 도메인 특화 없는 일반 경쟁"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "직접현금 0 — 공간 지원(우수팀 한정)은 현금가치 환산 불가, 인천 소재팀에 실용성 낮음"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "직접자금 0 + 교육·멘토링·피칭훈련만 = 자동 NO-GO 조건",
+        "기댓값(현금) 0원",
+        "서울 마포 ICT콤플렉스 현장 이용 전제 — 인천 부평 소재팀 동선 비용",
+        "춘기 공백기 핵심 자원(3건 5/15 마감)에 우선 배분 필요"
+      ],
+      "exception_go_conditions": [
+        "투자유치 IR을 단기 집중 준비해야 하는 시점이고, ICT콤플렉스와 VC 네트워크 직접 연결이 확인될 때"
+      ]
+    },
+
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "예비창업 직접자금 카드, 춘기 1순위"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 전략 경기 백업 트랙"
+        },
+        {
+          "name": "2026 유니콘 브릿지 with 아이티센 (경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동 — 기창업·sinhon.life",
+          "priority": "🟡",
+          "reason": "기창업 트랙 직접 지원 가능"
+        }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19 + auto-memory/project_dual_entry_strategy@2026-04-20 + user_business_registration"
+    }
+  }
+}

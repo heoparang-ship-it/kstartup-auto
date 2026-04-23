@@ -1,0 +1,115 @@
+{
+  "pbancSn": 177017,
+  "title": "2026년 하반기 「IBK창공(創工)」혁신창업기업 모집",
+  "analyzed_at": "2026-04-24T16:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "CONDITIONAL-GO",
+    "confidence": "medium",
+    "expected_pass_rate": 0.07,
+    "time_cost_hours": "50-80",
+    "one_liner": "IBK은행 액셀러레이터 — 7년 이내 SW 창업 적격, 투자·금융 연계 실질 혜택, sinhon.life 적용 서사 가능하나 경쟁 치열"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "은행계 액셀러레이터형 (IBK기업은행 주관)",
+      "body": "IBK기업은행이 운영하는 혁신창업기업 액셀러레이팅 프로그램으로, '2026년 하반기' 기수 모집이다. 업력 7년 이내 중소기업 대상(예비창업자 제외 명시). 핵심 혜택은 IBK의 중소기업 금융 노하우·컨설팅·글로벌 네트워크 활용으로, 은행 금융권 VC/대출 연계가 실질 경로다. 직접 현금 지원은 공고문에 명시 없으나, 기수 선발 시 사무공간·투자 유치 네트워크·IBK 벤처투자 계열사 연계가 가능하다. 마감 2026-05-06.",
+      "benefits": [
+        { "k": "IBK 중소기업 금융 연계", "v": "대출·보증·투자 네트워크 접근" },
+        { "k": "전용 사무공간", "v": "IBK창공 입주 지원 (서울/부산)" },
+        { "k": "글로벌 네트워크", "v": "IBK 해외 거점 연결" },
+        { "k": "컨설팅·멘토링", "v": "전문가 1:1 지원" },
+        { "k": "직접 현금", "v": "공고 명시 없음 — 금융·투자 연계가 핵심" }
+      ],
+      "watchout": "예비창업자 지원 불가(명시) — 본인 엑스컴(기창업)만 해당, 와이프 트랙 사용 불가"
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [
+        {
+          "task": "혁신기술·아이디어 보유 중소기업",
+          "reason": "엑스컴(SW개발·미디어콘텐츠 법인) + sinhon.life(AI 기반 신혼부부 플랫폼) — 혁신 IT 아이디어·기술 보유 요건 충족",
+          "fit": "🟢 업력(6개월 < 7년), 업종(SW/ICT), 기창업 요건 모두 적격"
+        }
+      ],
+      "tech_adjacent": [],
+      "mismatch_note": "IBK창공은 금융권 프로그램이지만 도메인이 금융 한정이 아닌 '혁신창업 전반' — sinhon.life B2C 플랫폼으로 지원 가능.",
+      "critical_gap": "6개월차 신생법인 + 매출 실적 미약 — IBK 심사 시 '사업성·성장가능성' 입증을 sinhon.life 유저 지표·RAG 기술 차별성으로 대체해야 함"
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "사업계획서 + IBK창공 맞춤 IR 자료 작성", "hours": "35-55" },
+          { "stage": "발표·면접 (서류 통과 시)", "hours": "15-25" }
+        ],
+        "total": "50-80h"
+      },
+      "probability": {
+        "doc_pass": 0.12,
+        "final_given_doc_pass": 0.60,
+        "final": 0.07,
+        "basis": "전국 경쟁 + 매출 실적 미약 + 신생법인 감점 + AI/SW 일반 경쟁 다수 반영"
+      },
+      "expected_value_krw": 3500000,
+      "expected_value_label": "직접현금 없음 — 입주공간+금융연계 혜택을 연간 350만원 상당으로 보수 추정, 0.07 × 5,000만원 상당 = 350만원"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "CONDITIONAL-GO",
+      "reasons": [
+        "엑스컴(기창업·SW) 업종·업력 적격 — 예비창업 제외 명시지만 본인 트랙은 해당",
+        "IBK 금융·투자 네트워크 연계가 6개월차 신생법인에 실질 가치",
+        "sinhon.life 서비스 서사(신혼부부 AI 플랫폼)가 IBK 사업성 심사에 명확히 전달 가능"
+      ],
+      "exception_go_conditions": [
+        "조건 1: IBK창공 입주 위치(서울 여의도/구로·부산)가 현업 운영에 실질 활용 가능한지 확인",
+        "조건 2: sinhon.life MAU·가입자 수 등 최소한의 트랙션 지표를 2주 내 정리 가능한지 확인",
+        "위 2개 AND 조건 충족 + 춘기 공백기 3건(5/15 마감) 준비와 일정 충돌 없을 때 GO 전환"
+      ]
+    },
+
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "직접자금 1순위 — IBK창공 준비와 병행 시 자원 분산 주의"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 전략 경기 백업"
+        },
+        {
+          "name": "2026 유니콘 브릿지 with 아이티센 (경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동 — 기창업·sinhon.life",
+          "priority": "🟡",
+          "reason": "기창업 트랙 직접자금 후보 — IBK창공과 동일 트랙, 중복 투입 가능 여부 검토"
+        }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19 + auto-memory/project_dual_entry_strategy@2026-04-20 + user_business_registration"
+    }
+  }
+}

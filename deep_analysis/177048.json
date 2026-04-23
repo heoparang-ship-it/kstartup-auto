@@ -1,0 +1,102 @@
+{
+  "pbancSn": 177048,
+  "title": "2026년 사회적기업 시설·운영비 지원사업 참여기업 모집(~11/30)",
+  "analyzed_at": "2026-04-24T16:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.03,
+    "time_cost_hours": "20-40",
+    "one_liner": "고용노동부 인증 사회적기업·사회적협동조합 전용 공고 — 엑스컴은 사회적기업 인증 없음, 자격 자체 미충족"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "사회적기업 시설·운영비 직접 지원",
+      "body": "사회복지법인 열매나눔재단 주관, 고용노동부 인증 사회적기업 및 예비사회적기업(지역형·부처형), 사회적협동조합에 시설비와 운영비를 지원하는 사업. 지원 대상이 매우 특정적: 고용노동부 사회적기업 인증서·예비사회적기업 지정서 보유 법인만 신청 가능. 엑스컴은 일반 SW 법인으로 사회적기업 인증 미보유.",
+      "benefits": [
+        { "k": "시설비 지원", "v": "사무공간 임차·리모델링 등 (금액 공고문 확인 필요)" },
+        { "k": "운영비 지원", "v": "인건비·관리비 등 운영 자금" }
+      ],
+      "watchout": "법인 설립 1년 미만 기업은 명시적 지원 제외 — 엑스컴(2025-10 설립, 약 6개월)이 이 조건에도 해당하여 이중 자격 미충족"
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "사회적기업 인증 없음 + 법인 설립 1년 미만 제외 조건 해당 — 두 가지 자격 결격 사유 동시 해당. sinhon.life와 사회적기업 BM은 완전 별개 구조.",
+      "critical_gap": "지원 자격: 고용노동부 인증 사회적기업 또는 예비사회적기업 지정서 필수 — 엑스컴 미보유, 지원 불가"
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "자격 확인", "hours": "1-2" }
+        ],
+        "total": "1-2h (자격 미충족으로 진행 불가)"
+      },
+      "probability": {
+        "doc_pass": 0.0,
+        "final_given_doc_pass": 0.0,
+        "final": 0.03,
+        "basis": "사회적기업 인증 + 법인 1년 이상 두 조건 모두 미충족 — 합격률 사실상 0"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "지원 자격 미충족 — 기댓값 0원"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "고용노동부 인증 사회적기업 또는 예비사회적기업 지정서 필수 — 엑스컴 미보유",
+        "법인 설립 1년 미만 제외 — 엑스컴(2025-10 설립)이 이 조건에 해당",
+        "두 가지 자격 결격 사유 동시 해당",
+        "사회적기업 BM 전환은 sinhon.life 사업 방향과 무관"
+      ],
+      "exception_go_conditions": []
+    },
+
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "예비창업 매칭 100%, 춘기 공백기 핵심 카드"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 전략상 병행 가능"
+        },
+        {
+          "name": "2026 유니콘 브릿지 with 아이티센 (경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동 — 기창업·sinhon.life",
+          "priority": "🟡",
+          "reason": "sinhon.life 기창업 직접 지원 가능"
+        }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19 + auto-memory/project_dual_entry_strategy@2026-04-20 + user_business_registration"
+    }
+  }
+}

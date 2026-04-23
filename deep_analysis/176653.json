@@ -1,0 +1,111 @@
+{
+  "pbancSn": 176653,
+  "title": "[무료/초기 창업자 집중] 메타코드M 유튜브 채널 AI 스타트업 인터뷰 참여자 모집합니다",
+  "analyzed_at": "2026-04-24T16:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.80,
+    "time_cost_hours": "3-5",
+    "one_liner": "유튜브 인터뷰 노출 기회 — 직접자금 0, 네트워킹·홍보만, ROI 기준 자동 NO-GO"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "행사·노출형 (유튜브 인터뷰)",
+      "body": "메타코드M 유튜브 채널에 AI 스타트업 대표를 초청해 인터뷰를 진행하는 홍보성 기회 모집 공고다. 창업패키지·바우처·직접자금 지원은 전혀 없고, '무료로 유튜브에 나올 수 있다'는 것이 전부다. 선발 기준도 명시되지 않았고 합격/불합격 개념이 없는 참여 신청 형태. 업력 제한이 없고 신청 형태도 구글폼으로 진입장벽이 낮지만, 그만큼 혜택 자체가 없다.",
+      "benefits": [
+        { "k": "유튜브 인터뷰 노출", "v": "메타코드M 채널 출연 (현금가치 0)" },
+        { "k": "홍보 효과", "v": "채널 구독자 수 불명 — 노출 보장 없음" }
+      ],
+      "watchout": "직접자금·바우처·공간·투자연계 등 실질 혜택 전무 — 시간 투입 대비 ROI 없음"
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [
+        {
+          "task": "AI 스타트업 인터뷰",
+          "reason": "sinhon.life가 Anthropic API + RAG 기반 AI 서비스이므로 'AI 스타트업' 레이블은 붙음",
+          "fit": "🟡 노출 기회만, 직접 사업 혜택 없음"
+        }
+      ],
+      "mismatch_note": "인터뷰 자체가 목적인 공고. 사업비·바우처·투자·공간 등 어떠한 직접 지원도 없음.",
+      "critical_gap": "직접자금 0 + 교육·네트워킹·홍보만 = 자동 NO-GO 조건 해당"
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "신청서 작성 + 커뮤니케이션", "hours": "2-3" },
+          { "stage": "인터뷰 준비·진행", "hours": "1-2" }
+        ],
+        "total": "3-5h"
+      },
+      "probability": {
+        "doc_pass": 0.80,
+        "final_given_doc_pass": 1.00,
+        "final": 0.80,
+        "basis": "진입장벽 낮은 참여 신청형 — 거의 모든 AI 스타트업 수용 예상"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "직접자금 0원 × 어떤 확률이든 = 0원"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "직접자금 0 + 홍보·네트워킹만 = 자동 NO-GO 판정 조건 정확히 해당",
+        "기댓값 0원 — 합격률이 높아도 현금가치가 없음",
+        "같은 기간(5/15 마감) 춘기 공고 3건에 자원 집중 필요",
+        "유튜브 노출이 필요하다면 자사 채널(허파랑) 운영이 ROI 높음"
+      ],
+      "exception_go_conditions": [
+        "메타코드M 채널 구독자가 10만 이상이고 sinhon.life 타깃(신혼부부 20~30대)과 오버랩이 확인되는 경우 — 단 확인 후 재검토"
+      ]
+    },
+
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "예비창업 매칭 100%, 춘기 공백기에 유효한 몇 안 되는 직접자금 카드"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 전략상 대구경북과 병행 가능"
+        },
+        {
+          "name": "2026 유니콘 브릿지 with 아이티센 (경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동 — 기창업·sinhon.life",
+          "priority": "🟡",
+          "reason": "sinhon.life로 직접 지원 가능한 기창업 트랙"
+        }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19 + auto-memory/project_dual_entry_strategy@2026-04-20 + user_business_registration"
+    }
+  }
+}

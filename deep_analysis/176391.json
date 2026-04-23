@@ -1,0 +1,105 @@
+{
+  "pbancSn": 176391,
+  "title": "창업지원사업 예비위원단 재모집 (신산업분야)",
+  "analyzed_at": "2026-04-24T16:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.10,
+    "time_cost_hours": "10-20",
+    "one_liner": "심사위원단 위촉 공고 — 창업기업 지원 공고가 아니라 역할 반전, 직접 자금 0"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "심사위원 위촉 모집 (역방향 공고)",
+      "body": "창업진흥원이 딥테크 창업기업 육성 사업의 평가·심사에 참여할 '예비위원단'을 모집하는 공고. 즉, 창업기업이 지원받는 공고가 아니라 창업기업을 '심사하는 사람'을 뽑는 공고다. 지원 자격은 조교수 이상 학계, 박사+경력자, 기술사/변리사/공인회계사 등 전문가. 6개월차 기창업 스타트업 대표가 신청할 공고가 아니며, 선정돼도 위원 수당 외 직접 자금 혜택 없음.",
+      "benefits": [
+        { "k": "지원내용", "v": "창업지원사업 심사위원 위촉" },
+        { "k": "직접 현금", "v": "심사 참여 수당 (소액, 공고 미명시)" },
+        { "k": "부가 혜택", "v": "창업생태계 네트워크 (심사자 입장)" }
+      ],
+      "watchout": "이 공고는 창업기업이 수혜받는 공고가 아님 — 심사위원 위촉 공고"
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "허파랑님은 6개월차 SW 창업자로, 이 공고 자격 요건인 '조교수 이상', '박사+5년 이상', '기술사/변리사' 등 전문가 자격 미충족 가능성 높음. 설령 자격 충족해도 이 공고 참여는 sinhon.life 개발/성장에 직접 기여하지 않음.",
+      "critical_gap": "창업기업 지원 공고가 아닌 심사위원 위촉 공고 — 사업 수혜 구조 자체가 없음"
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "지원서 작성·이력서 정리", "hours": "10-20" }
+        ],
+        "total": "10-20h"
+      },
+      "probability": {
+        "doc_pass": 0.15,
+        "final_given_doc_pass": 0.70,
+        "final": 0.10,
+        "basis": "자격 요건 충족 여부 불확실. 설령 선정돼도 금전 기댓값 사실상 0"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "직접 자금 혜택 0 — 심사 수당만 있으며 창업 지원 사업 수혜 구조 없음"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "창업기업 지원 공고가 아닌 심사위원 위촉 공고 — 사업 수혜 구조 없음",
+        "직접 자금 0 — 자동 NO-GO 조건(직접자금 0, 교육·네트워킹성) 해당",
+        "자격 요건(교수·박사·기술사 등 전문가)을 6개월차 창업자가 충족하기 어려움",
+        "춘기 공백기 자원을 5/15 마감 3건에 집중해야 하는 기회비용"
+      ],
+      "exception_go_conditions": [
+        "허파랑님이 AI/SW 분야 심사위원 포지셔닝을 전략적으로 구축하고 싶다면, 향후 창업생태계 인사이더 관계 구축 목적으로 검토 가능 (단, 지금 당장의 ROI는 0)"
+      ]
+    },
+
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "직접 자금 지원, 5/15 마감 우선순위"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 전략 경기 트랙"
+        },
+        {
+          "name": "2026 유니콘 브릿지 with 아이티센 (경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동 — 기창업·sinhon.life",
+          "priority": "🟡",
+          "reason": "sinhon.life 기창업 트랙 직접 수혜"
+        }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19 + auto-memory/project_dual_entry_strategy@2026-04-20 + user_business_registration"
+    }
+  }
+}

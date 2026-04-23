@@ -1,0 +1,104 @@
+{
+  "pbancSn": 177180,
+  "title": "2026 여성발명왕EXPO 참가기업 모집 공고",
+  "analyzed_at": "2026-04-24T16:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.03,
+    "time_cost_hours": "0",
+    "one_liner": "여성 발명 특허 보유자 전용 박람회 — 엑스컴/허파랑 자격 미충족, 직접자금 0, 하드웨어·발명품 도메인 무관"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "발명품 박람회·시상 행사 (민간, 행사·네트워크)",
+      "body": "지식재산처 주최·한국여성발명협회 주관의 '2026 여성발명왕EXPO'. 세계여성발명대회(특허 기술·발명품 심사, 최우수상 등 시상)와 여성발명품박람회(제품 전시·홍보)를 통합 운영. 7월 16~18일 코엑스 개최 예정. 신청 자격은 '국내외 산업재산권(특허·실용신안·디자인) 출원·등록 권리를 보유한 여성, 또는 그 여성 권리자가 대표자·임원으로 재직 중인 기업'. 직접 현금 지원 없음.",
+      "benefits": [
+        { "k": "시상", "v": "최우수상·우수상·금·은·동상 (현금 미명시)" },
+        { "k": "전시·홍보", "v": "코엑스 박람회 부스 노출" }
+      ],
+      "watchout": "신청 자격: 산업재산권 보유 여성 또는 그 여성이 대표·임원인 기업 — 남성 대표 엑스컴 해당 없음"
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "엑스컴 대표 허파랑은 남성이며 산업재산권(특허·실용신안·디자인) 보유 없음. sinhon.life는 SW서비스이며 발명품 박람회 대상이 아님. 와이프 트랙도 발명 특허 보유 조건 없으면 자격 미충족.",
+      "critical_gap": "신청 자격인 '산업재산권 보유 여성' 조건을 팀 어느 트랙도 충족하지 못함"
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "자격 확인 후 즉시 NO-GO", "hours": "0" }
+        ],
+        "total": "0h"
+      },
+      "probability": {
+        "doc_pass": 0.0,
+        "final_given_doc_pass": 0.0,
+        "final": 0.03,
+        "basis": "신청 자격 미충족으로 지원 불가; 0.03은 스키마 하한값"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "직접 자금 0원, 자격 미충족으로 기댓값 0원"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "신청 자격: 산업재산권 보유 여성 또는 여성 대표·임원 기업 — 엑스컴/허파랑 해당 없음",
+        "직접 현금 지원 없음 — 자동 NO-GO 조건(교육·홍보만)",
+        "하드웨어·발명품 도메인으로 SW 서비스 sinhon.life와 완전 무관",
+        "sinhon.life와 공고 주제 완전 무관 + 발명/하드웨어 도메인 레퍼런스 요구"
+      ],
+      "exception_go_conditions": [
+        "없음 — 자격 요건 구조적 미충족"
+      ]
+    },
+
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "예비창업 직접 매칭, 춘기 공백기 최우선 카드"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 전략 경기 트랙"
+        },
+        {
+          "name": "2026 유니콘 브릿지 with 아이티센 (경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동 — 기창업·sinhon.life",
+          "priority": "🟡",
+          "reason": "sinhon.life 직접 지원 가능 기창업 트랙"
+        }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19 + auto-memory/project_dual_entry_strategy@2026-04-20 + user_business_registration"
+    }
+  }
+}

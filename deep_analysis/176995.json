@@ -1,0 +1,113 @@
+{
+  "pbancSn": 176995,
+  "title": "[한국기업가정신재단] 2026년 제15회 청년기업가대회 모집 공고 (~5/6)",
+  "analyzed_at": "2026-04-24T16:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.05,
+    "time_cost_hours": "30-50",
+    "one_liner": "행사·네트워크 성격 경진대회 — 직접자금 불명확, 홍보·네트워킹 위주로 자동 NO-GO 조건 해당"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "행사·네트워크 (경진대회)",
+      "body": "한국기업가정신재단·머니투데이·AC패스파인더 공동 주최 청년기업가대회. 청년 창업가 발굴·포상 성격의 경진대회로 biz_class='행사·네트워크'. 직접 현금 상금이 있을 수 있으나 공고문에 명시된 금액 정보 없음. 주요 목적은 수상 이력을 통한 홍보·미디어(머니투데이) 노출.",
+      "benefits": [
+        { "k": "수상 홍보", "v": "머니투데이 미디어 노출" },
+        { "k": "네트워킹", "v": "AC패스파인더 엑셀러레이터 연결" },
+        { "k": "상금(추정)", "v": "공고문 명시 없음 — 소액 상금 가능성" }
+      ],
+      "watchout": "경진대회 성격으로 수상해도 후속 투자·사업 연계는 불확실, 미디어 홍보 효과 위주"
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [
+        {
+          "task": "sinhon.life — 신혼부부 AI 플랫폼 스토리",
+          "reason": "당사자성 서사(결혼→이주→창업) + 사회문제 해결형 스타트업으로 기업가정신 경진대회 스토리라인 가능",
+          "fit": "🟡 스토리 인접, 수상 가능성 낮음"
+        }
+      ],
+      "mismatch_note": "경진대회 특성상 혁신성·사회임팩트·성장지표(매출·사용자 수) 경쟁력이 핵심. 엑스컴은 6개월차 신생법인으로 실적 지표 약함. 경쟁자(실적 있는 청년 창업가)에 비해 차별화 어려움.",
+      "critical_gap": "직접자금 0(상금 미명시) + 행사·네트워킹만 — 자동 NO-GO 조건(직접자금 0, 매칭금 0)"
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "지원서 작성·IR 자료 준비", "hours": "20-35" },
+          { "stage": "발표 준비(본선 진출 시)", "hours": "10-15" }
+        ],
+        "total": "30-50h"
+      },
+      "probability": {
+        "doc_pass": 0.15,
+        "final_given_doc_pass": 0.33,
+        "final": 0.05,
+        "basis": "전국 단위 경진대회 경쟁률 높음, 6개월차 법인 실적 미약으로 페널티 추정"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "상금 규모 미확인, 직접자금 0 기준 기댓값 0원 — 수상 시 미디어 노출 간접효과만"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "직접자금 0 명시, 행사·네트워크 성격 — 자동 NO-GO 조건 해당",
+        "경진대회 수상 기반 홍보 효과는 sinhon.life 마케팅 로드맵과 별도 ROI 판단 필요",
+        "6개월차 법인 실적 미약 → 경쟁 불리",
+        "같은 기간 직접자금 3천만원↑ 공고 대비 기회비용 과다"
+      ],
+      "exception_go_conditions": [
+        "수상 상금이 500만원 이상으로 확인되고 투입 시간 20h 이내로 가능할 때",
+        "AC패스파인더 투자 연계(Pre-TIPS 경로)가 실질적으로 확인될 때"
+      ]
+    },
+
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "예비창업 매칭 100%, 직접 사업화 자금 지원"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 전략상 대구경북과 병행 가능"
+        },
+        {
+          "name": "2026 유니콘 브릿지 with 아이티센 (경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동 — 기창업·sinhon.life",
+          "priority": "🟡",
+          "reason": "sinhon.life로 직접 지원 가능한 기창업 트랙"
+        }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19 + auto-memory/project_dual_entry_strategy@2026-04-20 + user_business_registration"
+    }
+  }
+}

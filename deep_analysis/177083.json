@@ -1,0 +1,114 @@
+{
+  "pbancSn": 177083,
+  "title": "소셜벤처 Scale-up 파트너 <SE 컨설턴트 멘토링> 참여기업 모집",
+  "analyzed_at": "2026-04-24T16:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.15,
+    "time_cost_hours": "20-40",
+    "one_liner": "SK임원 출신 멘토단 소셜벤처·사회적기업·ESG 전용 멘토링 — sinhon.life B2C 신혼 플랫폼 소셜벤처 미해당, 직접 자금 0"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "소셜벤처·사회적기업 전용 SK임원 출신 멘토링 프로그램",
+      "body": "행복나래(SK 계열 사회적기업 전문 운용사) 주관. '사회문제를 비즈니스로 해결하는 소셜벤처·사회적기업·ESG 스타트업' 대상. SK 임원 출신 멘토단의 경영 자문 제공 — 직접 현금 지원 없음, 멘토링 세션만. 대표 포함 최소 2인 기업 조건(엑스컴 충족 가능). 그러나 '소셜벤처·사회적기업·ESG' 정체성이 핵심 선발 기준 — sinhon.life는 B2C 신혼부부 상업 플랫폼으로 소셜벤처 포지셔닝이 어려움.",
+      "benefits": [
+        { "k": "멘토링", "v": "SK임원 출신 멘토단 1:1 경영 자문" },
+        { "k": "직접 자금", "v": "0원" },
+        { "k": "네트워크", "v": "행복나래·SK 소셜벤처 생태계 연결" }
+      ],
+      "watchout": "소셜벤처·사회적기업 정체성 필수. 직접 현금 지원 없음. 멘토링만."
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [
+        {
+          "task": "sinhon.life 신혼부부 정책 정보 격차 해소 → 사회혁신 각도로 재프레이밍",
+          "reason": "신혼부부 정책 언어 장벽 → 정보 약자 지원 → ESG/소셜 포지셔닝 가능성 이론상 존재",
+          "fit": "🟠 억지 포지셔닝 — 심사위원 설득력 낮음"
+        }
+      ],
+      "mismatch_note": "엑스컴은 SW·미디어콘텐츠 상업 법인. sinhon.life는 B2C 커머스·AI 어시스턴트 플랫폼. 소셜벤처 인증 없음. ESG 지표 측정 체계 없음.",
+      "critical_gap": "소셜벤처·사회적기업 정체성 미보유 — 프로그램 1번 자격 필터 탈락"
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "소셜벤처 포지셔닝 재설계 + 신청서", "hours": "15-30" },
+          { "stage": "서류·면접", "hours": "5-10" }
+        ],
+        "total": "20-40h"
+      },
+      "probability": {
+        "doc_pass": 0.20,
+        "final_given_doc_pass": 0.30,
+        "final": 0.06,
+        "basis": "소셜벤처 정체성 부재로 서류 통과 확률 낮음. 억지 포지셔닝 시 심사위원 불신 리스크."
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "직접 현금 0, SK 멘토링 간접효과만"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "소셜벤처·사회적기업·ESG 전용 — 엑스컴/sinhon.life 해당 없음",
+        "직접 자금 0 — 멘토링만, 자동 NO-GO 조건 해당",
+        "소셜벤처 인증·ESG 지표 없이 포지셔닝 시 신뢰도 리스크",
+        "투입 20~40h 대비 기댓값 0원 — ROI 음수"
+      ],
+      "exception_go_conditions": [
+        "엑스컴이 소셜벤처 인증을 취득하거나 신혼부부 정보격차 해소 사회혁신 BM을 별도 설계할 때",
+        "SK 벤처 생태계 네트워킹이 투자 유치에 즉시 필요한 전략적 상황일 때",
+        "위 둘 중 하나라도 AND 조건으로 실제 가능할 때만 재검토"
+      ]
+    },
+
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "예비창업 매칭 100%, 춘기 공백기에 유효한 몇 안 되는 카드"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 전략상 대구경북과 병행 가능"
+        },
+        {
+          "name": "2026 유니콘 브릿지 with 아이티센 (경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동 — 기창업·sinhon.life",
+          "priority": "🟡",
+          "reason": "sinhon.life로 직접 지원 가능한 기창업 트랙"
+        }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19 + auto-memory/project_dual_entry_strategy@2026-04-20 + user_business_registration"
+    }
+  }
+}

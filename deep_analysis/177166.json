@@ -1,0 +1,129 @@
+{
+  "pbancSn": 177166,
+  "title": "2026 한중싱 인공지능 창업 경진대회 참여기업 모집",
+  "analyzed_at": "2026-04-24T16:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "CONDITIONAL-GO",
+    "confidence": "medium",
+    "expected_pass_rate": 0.10,
+    "time_cost_hours": "40-70",
+    "one_liner": "AI 스타트업 한국예선 — sinhon.life RAG·에이전트가 AI 기술 조건 직접 충족, 단 직접 자금 0·경진대회 성격으로 ROI는 '중국 진출 계획' 있을 때만 양수"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "AI 스타트업 경진대회 (글로벌 진출 성격)",
+      "body": "중국 청두시 고신구 주최 한중싱 인공지능 창업경진대회의 한국예선. 인천창조경제혁신센터가 주관. 한국·중국·싱가포르 스타트업이 참여하는 AI 경진대회로, 한국예선 통과 시 본선 진출 기회. 직접 자금은 한국예선 단계에서 없으나 수상 시 중국 청두 진출 지원·인프라 연결 기회 제공. AI 기술 보유 창업 10년 이내 기업 대상 (예비창업자 제외).",
+      "benefits": [
+        { "k": "한국예선 통과", "v": "본선(중국·싱가포르) 진출 자격" },
+        { "k": "수상 시", "v": "청두 고신구 입주·글로벌 네트워크 연결" },
+        { "k": "AI 레퍼런스", "v": "인천창조혁신센터 포트폴리오 편입" },
+        { "k": "IR 노출", "v": "한중싱 투자자 네트워크 접근" }
+      ],
+      "watchout": "한국예선 단계 직접 자금 없음. 본선 진출해야 실질 혜택. 중국 청두 진출 의향 없으면 투입 대비 ROI 낮음."
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [
+        {
+          "item": "AI 기술 기반 스타트업 (Pinecone RAG + Anthropic API 에이전트 프로덕션 운영)",
+          "fit": "🟢 AI 기술 조건 직접 충족"
+        },
+        {
+          "item": "창업 10년 이내 (6개월차)",
+          "fit": "🟢 업력 조건 충족"
+        },
+        {
+          "item": "인천 소재 (인천창조경제혁신센터 주관)",
+          "fit": "🟢 지역 연고 이점"
+        }
+      ],
+      "tech_adjacent": [
+        {
+          "task": "AI B2C 앱 서비스 — 신혼부부 정책 매칭 AI",
+          "reason": "sinhon.life의 RAG 기반 정책 매칭이 AI 실사용 서비스로 경진대회 발표 소재 적합",
+          "fit": "🟡 AI 도메인은 맞으나 한중싱 심사 초점(B2B·글로벌 확장성·딥테크)과 방향 차이"
+        }
+      ],
+      "mismatch_note": "한중싱 경진대회는 글로벌 확장 가능한 AI 기술 스타트업 선호. sinhon.life는 한국·한인 특화 B2C — 글로벌 스케일링 스토리를 어떻게 구성하느냐가 핵심.",
+      "critical_gap": "sinhon.life의 타겟 시장이 한국 신혼부부 특화 — '글로벌 AI 기술 스타트업'으로의 포지셔닝 재설계 없이는 본선 진출 어려움."
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "글로벌 피칭 자료 준비 (영문 포함)", "hours": "20-30" },
+          { "stage": "한국예선 발표 준비", "hours": "10-20" },
+          { "stage": "행사 참가", "hours": "8-20" }
+        ],
+        "total": "40-70h"
+      },
+      "probability": {
+        "doc_pass": 0.5,
+        "final_given_doc_pass": 0.2,
+        "final": 0.10,
+        "basis": "AI 기술 조건 충족+인천 소재로 예선 진입 문턱 낮음. 단 B2C 신혼부부 앱의 글로벌 AI 경진대회 본선 진출률 낮음. 한국예선 경쟁률 10~20팀 추정."
+      },
+      "expected_value_krw": 500000,
+      "expected_value_label": "직접 자금 0 — 0.10 × 중국 진출 지원 기회가치 추산 불가, 상징적 500만원 × 0.10 = 50만원 기준. 중국 진출 계획 있으면 기댓값 대폭 상승."
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "CONDITIONAL-GO",
+      "reasons": [
+        "AI 기술 조건(RAG + 에이전트) 직접 충족 — 기술 자격 요건 OK",
+        "인천 소재 + 6개월차 업력 조건 충족",
+        "단, 직접 자금 0 — 중국 진출 의향 없으면 투입 대비 기댓값 미미",
+        "B2C 신혼부부 → 글로벌 AI 서비스 재포지셔닝 필요"
+      ],
+      "exception_go_conditions": [
+        "sinhon.life의 글로벌 로드맵(아세안 한인 → K-웨딩 인바운드)을 한중싱 경진대회에 맞춰 영문 피칭 자료로 2주 내 완성 가능할 때",
+        "청두 고신구 진출 또는 싱가포르 한인 커뮤니티 파트너십이 단기 실행 계획에 포함될 때",
+        "위 두 조건 AND 충족 시 GO로 전환 (40~70h 투입 정당화)"
+      ]
+    },
+
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "직접 자금 있는 춘기 최우선 카드 — 본 경진대회보다 즉각 ROI 높음"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 전략상 병행 가능"
+        },
+        {
+          "name": "2026 유니콘 브릿지 with 아이티센 (경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동 — 기창업·sinhon.life",
+          "priority": "🟡",
+          "reason": "직접 자금 트랙, AI 기술 동일하게 어필 가능하면서 국내 기댓값 더 명확"
+        }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19 + auto-memory/project_dual_entry_strategy@2026-04-20 + user_business_registration"
+    }
+  }
+}

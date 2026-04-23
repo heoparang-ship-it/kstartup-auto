@@ -1,0 +1,121 @@
+{
+  "pbancSn": 177262,
+  "title": "「2026년 인천 라이즈업」참여기업 모집공고",
+  "analyzed_at": "2026-04-24T16:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "CONDITIONAL-GO",
+    "confidence": "medium",
+    "expected_pass_rate": 0.10,
+    "time_cost_hours": "60-90",
+    "one_liner": "인천 소재 엑스컴 + 글로벌 진출 서비스 보유 디지털 기업 직접 매칭, 단 마감 오늘(2026-04-27)로 즉시 제출 또는 포기"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "글로벌 현지화 지원 프로그램 (인천 지역 특화, 북미)",
+      "body": "인천광역시 + 인천테크노파크 주관. 인천 관내 디지털 혁신기업의 미국 시장 성공적 진출을 위한 현지화(로컬라이제이션) 지원 프로그램. '인천 라이즈업(기존 Scale-up, 글로벌 현지화 챌린지)' 북미진출지원 기수혜 기업은 제외 — 엑스컴은 미해당이므로 지원 가능. 관외 기업은 선정 후 60일 내 관내 이전 필수이나 엑스컴은 인천 부평 소재로 해당 없음. 국내+현지 전 일정 성실 참여 의무. 직접 현금 지원액 미명시 — 현지화·글로벌 인프라 성격.",
+      "benefits": [
+        { "k": "현지화 지원", "v": "미국 시장 진출 현지화 프로그램 전 과정 지원" },
+        { "k": "글로벌 네트워크", "v": "인천테크노파크 글로벌 파트너 연계" },
+        { "k": "마감", "v": "2026-04-27 (오늘 마감)" }
+      ],
+      "watchout": "마감일이 오늘(2026-04-27)로 사실상 즉시 제출 불가. 글로벌 진출 제품·서비스 보유 증빙 필요. 직접 현금 미명시."
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [
+        {
+          "task": "인천 소재 디지털 혁신기업 글로벌 진출",
+          "reason": "엑스컴 인천 부평 소재, sinhon.life K-웨딩 인바운드 3단계 글로벌 로드맵 존재",
+          "fit": "🟢 지역 + 디지털 + 글로벌 진출 의향 일치"
+        }
+      ],
+      "tech_adjacent": [
+        {
+          "task": "sinhon.life 북미 한인/K-웨딩 인바운드 트랙 → 글로벌 진출 제품으로 포지셔닝",
+          "reason": "글로벌 3단계 로드맵(한인 → K-웨딩 인바운드) 기획 문서 존재",
+          "fit": "🟡 실제 해외 매출·사용자 레퍼런스 없음, 기획 단계"
+        }
+      ],
+      "mismatch_note": "북미 현지화 실제 진행 이력 없음. 국내+현지 전 일정 참여 시 sinhon.life V3.1 개발 리소스 충돌.",
+      "critical_gap": "마감이 오늘(2026-04-27)이라 실질적으로 신청 제출 시간 없음 — 타임아웃 NO-GO에 준함"
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "글로벌 진출 계획 + 현지화 전략 서류 작성", "hours": "30-50" },
+          { "stage": "신청서 제출", "hours": "10-20" },
+          { "stage": "발표/면접 (서류통과 시)", "hours": "20-30" }
+        ],
+        "total": "60-100h (현지 파견 별도)"
+      },
+      "probability": {
+        "doc_pass": 0.25,
+        "final_given_doc_pass": 0.40,
+        "final": 0.10,
+        "basis": "인천 지역 조건 충족·디지털 매칭 긍정, 마감 오늘로 즉시 지원 불가·해외 레퍼런스 부재 감점"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "직접 현금 미명시 — 글로벌 현지화 인프라 간접효과만"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "CONDITIONAL-GO",
+      "reasons": [
+        "인천 부평 소재 엑스컴 — 지역 조건 완전 충족",
+        "AI/SW 디지털 업종 + K-웨딩 글로벌 로드맵 부합",
+        "마감 2026-04-27(오늘)로 실질 지원 불가 — 다음 기수 우선 타겟으로 전환 필요",
+        "직접 현금 미명시로 단기 ROI 기대값 산정 불가"
+      ],
+      "exception_go_conditions": [
+        "오늘 오전 중 bizok.incheon.go.kr 접속 → 마감 시간 확인 후 즉시 온라인 제출 가능한 경우",
+        "sinhon.life 북미 한인 타겟 글로벌 진출 계획이 이미 문서화되어 있어 신청서 30분 내 완성 가능한 경우",
+        "위 둘 AND 충족 시에만 즉시 GO"
+      ]
+    },
+
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "예비창업 매칭 100%, 춘기 공백기에 유효한 몇 안 되는 카드"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 전략상 대구경북과 병행 가능"
+        },
+        {
+          "name": "2026 유니콘 브릿지 with 아이티센 (경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동 — 기창업·sinhon.life",
+          "priority": "🟡",
+          "reason": "sinhon.life로 직접 지원 가능한 기창업 트랙"
+        }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19 + auto-memory/project_dual_entry_strategy@2026-04-20 + user_business_registration"
+    }
+  }
+}

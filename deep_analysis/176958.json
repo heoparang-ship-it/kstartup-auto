@@ -1,0 +1,112 @@
+{
+  "pbancSn": 176958,
+  "title": "초격차 스타트업 프로젝트(DIPS) Link-up(링크업) - 4대 도메인 AX 프로그램 창업기업 모집공고",
+  "analyzed_at": "2026-04-24T16:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.04,
+    "time_cost_hours": "100-160",
+    "one_liner": "4대 도메인(제조/바이오/금융/콘텐츠) AX 협업 매칭 — 도메인 레퍼런스 0, sinhon.life는 콘텐츠 영역 근접하나 '붙임1 사업 명단'에 기등록된 기업만 신청 가능"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "초격차 OI 매칭형 (도메인 AX 협업)",
+      "body": "창업패키지가 아님. 창업진흥원이 운영하는 초격차 스타트업 프로젝트의 Link-up 트랙으로, 4대 도메인(제조·바이오헬스·콘텐츠·금융) 수요기업이 제시한 AX 과제에 이미 '붙임1 사업 명단'에 등재된 초격차 기창업기업이 매칭 지원하는 구조. 핵심 진입 장벽: 공고 본문에 '본 공고의 [붙임1] 상 사업 명단에 참여한 창업기업'이라고 명시 — 기존 초격차 사업 선정 기업 아니면 신청 자체 불가.",
+      "benefits": [
+        { "k": "협업 지원금", "v": "수요기업-스타트업 PoC 매칭 시 지원(금액 공고문 별도)" },
+        { "k": "현장 인프라 접근", "v": "수요기업 인프라 활용 기회" },
+        { "k": "사업화 연계", "v": "초격차 프로젝트 후속 트랙 편입" }
+      ],
+      "watchout": "신청 자격이 '붙임1 명단 기등재 기업'으로 제한 — 엑스컴은 초격차 선정 이력 없음, 원천 지원 불가"
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [
+        {
+          "task": "콘텐츠 도메인 AX 과제",
+          "reason": "sinhon.life가 미디어콘텐츠 업종 포함, 콘텐츠 영역 기술 근접",
+          "fit": "🟡 기술 인접 · 그러나 붙임1 명단 미등재로 지원 자격 없음"
+        }
+      ],
+      "mismatch_note": "제조·바이오헬스·금융 도메인은 엑스컴/sinhon.life와 완전 무관. 콘텐츠 도메인도 초격차 선정 이력 없어 자격 미달.",
+      "critical_gap": "엑스컴은 초격차 스타트업 프로젝트 붙임1 명단 미등재 — 공고 신청 자격 조건 미충족으로 서류 접수 단계에서 자동 탈락."
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "자격 요건 확인 및 과제 분석", "hours": "5-10" },
+          { "stage": "붙임1 명단 확인 → 자격 미달 확인 후 종료", "hours": "1-2" }
+        ],
+        "total": "6-12h (지원 자체 불가 — 추가 투입 없음)"
+      },
+      "probability": {
+        "doc_pass": 0.0,
+        "final_given_doc_pass": 0.0,
+        "final": 0.04,
+        "basis": "붙임1 명단 미등재로 신청 불가. 0.04는 추후 초격차 선정 후 재도전 가능성 반영한 장기 기댓값 추정치."
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "현 시점 0원 — 신청 자격 미충족으로 합격 확률 0%"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "신청 자격이 '붙임1 초격차 사업 명단 기등재 기업'으로 명시 제한 — 엑스컴은 미등재, 원천 지원 불가",
+        "4대 도메인 중 제조·바이오헬스·금융은 sinhon.life/엑스컴과 완전 무관",
+        "콘텐츠 도메인도 자격 장벽에 막혀 기댓값 0",
+        "6h 이상 투입해봤자 서류 접수 자체 불가"
+      ],
+      "exception_go_conditions": [
+        "엑스컴이 별도 트랙으로 초격차 스타트업 프로젝트 본 공고에 선정된 이후 재신청 시 재검토"
+      ]
+    },
+
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "예비창업 매칭 100%, 춘기 공백기 최우선 카드"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 전략상 대구경북과 병행 가능"
+        },
+        {
+          "name": "2026 유니콘 브릿지 with 아이티센 (경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동 — 기창업·sinhon.life",
+          "priority": "🟡",
+          "reason": "sinhon.life로 직접 지원 가능한 기창업 트랙"
+        }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19 + auto-memory/project_dual_entry_strategy@2026-04-20 + user_business_registration"
+    }
+  }
+}

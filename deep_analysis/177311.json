@@ -1,0 +1,105 @@
+{
+  "pbancSn": 177311,
+  "title": "「2026년 민관협력 오픈이노베이션 지원사업」중견기업-스타트업 오픈이노베이션 수요기업 협업과제 모집공고",
+  "analyzed_at": "2026-04-24T16:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.04,
+    "time_cost_hours": "5-10",
+    "one_liner": "수요기업(중견기업) 모집 공고 — 스타트업 공급자 모집이 아닌 협업 과제 내는 중견기업 찾는 B2B 행정 공고"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "행사·네트워크 (중견기업-스타트업 OI 수요기업 모집)",
+      "body": "중소벤처기업부·창업진흥원 주관 민관협력 OI 사업에서 '협업 과제를 내놓을 중견기업·수요기업'을 모집하는 공고. 스타트업이 지원하는 구조가 아니라 중견기업이 협업 수요를 제출하면, 이후 별도 공고로 스타트업 공급자를 매칭하는 2단계 구조. 엑스컴·sinhon.life는 이 공고의 지원 대상(중견기업)이 아님.",
+      "benefits": [
+        { "k": "중견기업 대상", "v": "스타트업과 협업과제 매칭 지원" },
+        { "k": "스타트업 연계 공고", "v": "이후 별도 스타트업 공급자 모집 예정" }
+      ],
+      "watchout": "이 공고는 중견기업 신청용 — 스타트업은 이후 별도 공급자 모집 공고를 기다려야 함"
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "공고 대상이 '스타트업과 협력을 희망하는 국내 중견기업 및 중소기업'. 엑스컴은 6개월차 신생 법인으로 중견기업 요건에 해당하지 않음. 이 공고는 지원 대상 자체가 다름.",
+      "critical_gap": "지원 대상 불일치 — 중견기업 수요기업 모집, 엑스컴은 스타트업 공급자 포지션"
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "공고 구조 확인", "hours": "1-2" },
+          { "stage": "후속 스타트업 공급자 공고 모니터링", "hours": "4-8" }
+        ],
+        "total": "5-10h (이 공고 지원 불가, 후속 공고 대기만)"
+      },
+      "probability": {
+        "doc_pass": 0.0,
+        "final_given_doc_pass": 0.0,
+        "final": 0.04,
+        "basis": "지원 대상 불일치로 지원 불가. 0.04는 이후 스타트업 공급자 공고 시 기회 추정치"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "이 공고 기준 직접자금 0, 지원 자격 없음"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "지원 대상 불일치 — 중견기업 수요기업 모집, 스타트업 지원 공고 아님",
+        "엑스컴은 스타트업 공급자 포지션으로 이 공고 직접 지원 불가",
+        "이후 별도 '스타트업 공급자' 모집 공고가 열릴 경우 재검토 필요"
+      ],
+      "exception_go_conditions": [
+        "이 공고 이후 별도 열리는 스타트업 공급자 모집 공고 확인 시 재검토",
+        "공고문 원문에 스타트업도 참여 가능한 트랙이 있음을 확인할 때"
+      ]
+    },
+
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "예비창업 직접자금 지원, 지역 우선"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 전략 병행"
+        },
+        {
+          "name": "2026 유니콘 브릿지 with 아이티센 (경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동 — 기창업·sinhon.life",
+          "priority": "🟡",
+          "reason": "OI 구조 유사하나 스타트업 직접 지원 가능"
+        }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19 + auto-memory/project_dual_entry_strategy@2026-04-20 + user_business_registration"
+    }
+  }
+}
