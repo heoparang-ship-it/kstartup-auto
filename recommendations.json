@@ -1,7 +1,7 @@
 {
   "schema_version": 5,
   "last_updated": "2026-04-23",
-  "updated_at_kst": "2026-04-23T11:37:27+09:00",
+  "updated_at_kst": "2026-04-23T19:21:08+09:00",
   "history": [
     {
       "date": "2026-04-22",
@@ -14,10 +14,10 @@
     },
     {
       "date": "2026-04-23",
-      "at_kst": "2026-04-23T11:37:27+09:00",
-      "new": 19,
-      "updated": 3,
-      "expired": 13,
+      "at_kst": "2026-04-23T19:21:08+09:00",
+      "new": 0,
+      "updated": 2,
+      "expired": 0,
       "total": 333,
       "red_excluded": 0
     }
@@ -9000,9 +9000,9 @@
       "deadline": "2026-04-24",
       "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177206",
       "tier": "orange",
-      "note": "3순위 (참고용): 사업명에 지역 포함 (울산)",
+      "note": "3순위 (참고용): 사업명에 지역 포함 (경남)",
       "classify_evidence": {
-        "summary_reason": "3순위 (참고용): 사업명에 지역 포함 (울산)",
+        "summary_reason": "3순위 (참고용): 사업명에 지역 포함 (경남)",
         "category_hints": [],
         "rule_checks": {
           "recruiting": {
@@ -9018,7 +9018,7 @@
           "region": {
             "pass": false,
             "value": "부산",
-            "detail": "사업명에 지역 포함 (울산)"
+            "detail": "사업명에 지역 포함 (경남)"
           },
           "biz_enyy": {
             "pass": true,
@@ -9048,11 +9048,11 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "사업명에 지역 포함 (울산)"
+            "detail": "사업명에 지역 포함 (경남)"
           },
           "positive_hit": {
             "pass": false,
-            "detail": "3순위 (참고용): 사업명에 지역 포함 (울산)"
+            "detail": "3순위 (참고용): 사업명에 지역 포함 (경남)"
           }
         },
         "risk_flags": [
@@ -9065,7 +9065,7 @@
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "사업명에 지역 포함 (울산)"
+            "detail": "사업명에 지역 포함 (경남)"
           },
           "stage": {
             "level": "green",
@@ -9088,11 +9088,11 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "사업명에 지역 포함 (울산)"
+            "msg": "사업명에 지역 포함 (경남)"
           }
         ],
         "audit_flags": [],
-        "tier_logic": "3순위 (참고용): 사업명에 지역 포함 (울산)",
+        "tier_logic": "3순위 (참고용): 사업명에 지역 포함 (경남)",
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-22",
@@ -9116,7 +9116,8 @@
         "integrated_name": "2026 강한 소상공인  파트너사 모집 공고&#40;동남권 - 부산, 울산, 경남&#41;",
         "apply_online": "https://www.sbiz24.kr/#/pbanc/663",
         "apply_guide": "www.sbiz24.kr/#/pbanc/663"
-      }
+      },
+      "last_changed_at": "2026-04-23"
     },
     {
       "pbancSn": "177205",
@@ -9125,9 +9126,9 @@
       "deadline": "2026-04-24",
       "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177205",
       "tier": "orange",
-      "note": "3순위 (참고용): 사업명에 지역 포함 (울산)",
+      "note": "3순위 (참고용): 사업명에 지역 포함 (경남)",
       "classify_evidence": {
-        "summary_reason": "3순위 (참고용): 사업명에 지역 포함 (울산)",
+        "summary_reason": "3순위 (참고용): 사업명에 지역 포함 (경남)",
         "category_hints": [
           "budget"
         ],
@@ -9145,7 +9146,7 @@
           "region": {
             "pass": false,
             "value": "부산",
-            "detail": "사업명에 지역 포함 (울산)"
+            "detail": "사업명에 지역 포함 (경남)"
           },
           "biz_enyy": {
             "pass": true,
@@ -9175,11 +9176,11 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "사업명에 지역 포함 (울산)"
+            "detail": "사업명에 지역 포함 (경남)"
           },
           "positive_hit": {
             "pass": false,
-            "detail": "3순위 (참고용): 사업명에 지역 포함 (울산)"
+            "detail": "3순위 (참고용): 사업명에 지역 포함 (경남)"
           }
         },
         "risk_flags": [
@@ -9192,7 +9193,7 @@
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "사업명에 지역 포함 (울산)"
+            "detail": "사업명에 지역 포함 (경남)"
           },
           "stage": {
             "level": "green",
@@ -9215,7 +9216,7 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "사업명에 지역 포함 (울산)"
+            "msg": "사업명에 지역 포함 (경남)"
           },
           {
             "axis": "qualification",
@@ -9224,7 +9225,7 @@
           }
         ],
         "audit_flags": [],
-        "tier_logic": "3순위 (참고용): 사업명에 지역 포함 (울산)",
+        "tier_logic": "3순위 (참고용): 사업명에 지역 포함 (경남)",
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-22",
@@ -9248,7 +9249,8 @@
         "integrated_name": "2026 강한 소상공인 성장지원사업 동남권&#40;부산, 울산, 경남&#41;",
         "apply_online": "https://www.sbiz24.kr/#/pbanc/660",
         "apply_guide": "www.sbiz24.kr/#/pbanc/660"
-      }
+      },
+      "last_changed_at": "2026-04-23"
     },
     {
       "pbancSn": "177204",
@@ -9278,7 +9280,7 @@
           "region": {
             "pass": false,
             "value": "부산",
-            "detail": "사업명에 지역 포함 (울산)"
+            "detail": "사업명에 지역 포함 (경남)"
           },
           "biz_enyy": {
             "pass": true,
@@ -9308,7 +9310,7 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "사업명에 지역 포함 (울산)"
+            "detail": "사업명에 지역 포함 (경남)"
           },
           "positive_hit": {
             "pass": false,
@@ -9325,7 +9327,7 @@
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "사업명에 지역 포함 (울산)"
+            "detail": "사업명에 지역 포함 (경남)"
           },
           "stage": {
             "level": "green",
@@ -9348,7 +9350,7 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "사업명에 지역 포함 (울산)"
+            "msg": "사업명에 지역 포함 (경남)"
           },
           {
             "axis": "qualification",
@@ -41221,53 +41223,18 @@
   ],
   "red_count_today": 0,
   "_meta": {
-    "expired": [
-      "2026년 인천스타트업파크 TRYOUT AI 실증 사업 모집 공고",
-      "2026년 창창한 창업스쿨 교육생 모집",
-      "모두의창업 프로젝트 설명회",
-      "2026년 ESG 오픈이노베이션 혁신파트너 모집공고",
-      "2026 생물자원 활용 창업벤처 지원을 위한 기업 간담회 참여기업 모집",
-      "2026-4회 호남권 엔젤투자 피칭룸 in 광주/전남",
-      "[서울핀테크랩] Korea Financial Innovation Program 2026 오프라인 세션",
-      "[모두의 창업 단기 속성과정]  오프라인 특강&설명회 안내",
-      "소공인 아카데미 1차 교육(3D 프린터(메탈)) 교육생 모집",
-      "2026년 세종특별자치시 농촌융복합산업 도약X성장 지원사업 모집 공고",
-      "2026 국내·외 인바운드 관광활성화 사업 투어크리에이터 참여기업 모집",
-      "[세미나] AI 기본법 시행에 따른 기업 대응 전략",
-      "2026년 4월 ZUZU 피칭데이 (기후테크)"
-    ],
-    "new_added": [
-      "2026년 초격차 이노웨이브 수요기업 모집 공고",
-      "2026년 제품화지원센터 제품화 지원사업 모집",
-      "2026 경기도 Pre-Poc 시장 실증 및 사업화 연계 전략",
-      "2026 관광오픈이노베이션 매칭데이(2차) 참가기업 모집",
-      "2026 혁신성장 청년 예비 소상공인 지원 사업 설명회",
-      "일잘러를 위한 “클로드 코드 입문&자동화 실전 교육” 참여자 모집 (『신한 스퀘어브릿지』 스타트업 네트워킹 5월 브릿지 클럽)",
-      "2026년 스타트업  원스톱 지원센터 참여기업 모집공고",
-      "2026년 G-Space 혁신 창업기업 액셀러레이팅 지원사업 모집공고",
-      "스타트업 투자유치 지원",
-      "[동국대학교] 2026 모두의 창업 서울권역 사업 설명회",
-      "「2026 글로벌 PoC 연계 고도화 지원사업」 참여기업 모집",
-      "2026년 제3기 서대문구 청년벤처 육성사업 창업기업 모집",
-      "(공고 연장) 한국해양교통안전공단 오픈이노베이션 참여 창업기업 모집",
-      "「2026년 보령시 청년창업 육성사업」예비 청년창업가 모집(~4.29)",
-      "로컬 아이디어톤 : 농업 X 기술 참가 팀 모집 공고",
-      "Fusion 360 제품 구현 3D 모델링 교육",
-      "2026 3D 제품 디자인 시각화 실무 교육 : Blender 활용",
-      "『올해의 K-스타트업 2026』 AI리그 참여기업 모집 공고",
-      "『올해의 K-스타트업 2026』 혁신창업리그 참여기업 모집 공고"
-    ],
+    "expired": [],
+    "new_added": [],
     "updated_today": [
-      "2026 ICT콤플렉스 창업 투자 역량 강화 프로그램 참가팀 모집",
-      "2026년 소상공인 도약 지원 사업 공고 (舊 로컬크리에이터, 강한 소상공인) (공고연장)",
-      "2026년 스타트업 법률지원사업 참여기업 모집공고(수정)"
+      "2026 강한 소상공인  파트너사 모집 공고(동남권 - 부산, 울산, 경남)",
+      "2026 강한 소상공인 성장지원사업 동남권(부산, 울산, 경남)"
     ],
     "stats": {
       "green": 18,
       "yellow": 43,
       "orange": 272,
       "red_excluded": 0,
-      "expired_removed": 13,
+      "expired_removed": 0,
       "total_pool": 333,
       "rss_total": 332,
       "raw_fetched": 68
