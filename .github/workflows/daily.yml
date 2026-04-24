@@ -1,16 +1,17 @@
 name: Daily K-Startup Update
 
+# v10.0 Launch (2026-04-24): cron 일시 중단.
+# v9 update.py + classify.py 가 v10 schema 를 덮어쓰는 걸 막기 위해 manual dispatch 전용.
+# TODO: update.py 를 classify_v10 + gen_dashboards_v10 + BIZINFO/KOCCA 멀티소스로 포팅한 뒤 cron 재활성.
 on:
-  schedule:
-    # 평일(월~금) KST 09:00 + 18:00 (UTC 00:00, 09:00)
-    # 토·일은 K-Startup 신규 공고 미갱신 → 제외
-    - cron: '0 0,9 * * 1-5'
+  # schedule:
+  #   - cron: '0 0,9 * * 1-5'
   workflow_dispatch:
     inputs:
       skip_crawl:
         description: '크롤 스킵 (pool 재분류 + 원문 fetch만 실행)'
         required: false
-        default: 'false'
+        default: 'true'
         type: choice
         options: ['false', 'true']
 
@@ -22,14 +23,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-
       - name: Install dependencies
         run: pip install requests beautifulsoup4
-
       - name: Run update
         env:
           SKIP_CRAWL: ${{ github.event.inputs.skip_crawl }}
@@ -38,18 +36,10 @@ jobs:
           if [ "$SKIP_CRAWL" = "true" ]; then ARGS="$ARGS --skip-crawl"; fi
           echo "Running: python update.py $ARGS"
           python update.py $ARGS
-
-      # 2026-04-24: 🟢🟡 공고 중 미분석 건을 pending_deep_analysis.json 에 쌓기.
-      # LLM 호출은 하지 않음 (Cowork 세션 Sonnet 서브에이전트 fan-out 전용).
-      - name: Generate pending deep analysis
-        env:
-          ENABLE_DEEP_ANALYSIS: "0"
-        run: python3 gen_pending_deep_analysis.py
-
       - name: Commit & push changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add recommendations.json pending_deep_analysis.json deep_analysis || true
+          git add recommendations.json
           git diff --cached --quiet || git commit -m "auto: $(date -u +%Y-%m-%d) 공고 업데이트"
           git push
