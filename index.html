@@ -1,3 +1,6 @@
+HTTP 200 
+Content-Type: text/html; charset=utf-8
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -271,7 +274,7 @@
   .aa-gap{margin-top:8px;padding:6px 10px;background:var(--c-red-soft);border-left:3px solid var(--c-red);font-size:12px;color:#7a1212;font-weight:500}
   .aa-fit-row{display:flex;gap:8px;align-items:flex-start;padding:5px 0;border-bottom:1px dotted var(--line-soft);font-size:12px}
   .aa-fit-row:last-child{border-bottom:none}
-  .aa-fit-row .fit-mark{flex-shrink:0;width:18px;text-align:center}
+  .aa-fit-row .fit-mark{flex-shrink:0;min-width:18px;max-width:48px;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis} .aa-fit-row .fit-note{color:#8a6d00;font-size:11px;margin-top:2px;line-height:1.45;word-break:keep-all;overflow-wrap:break-word}
   .aa-fit-row .fit-body{flex:1}
   .aa-fit-row .fit-task{font-weight:600}
   .aa-fit-row .fit-reason{color:var(--muted);font-size:11px;margin-top:1px}
@@ -502,7 +505,7 @@ function renderAnalysis(a){
   const benefits = Array.isArray(n.benefits) ? n.benefits.map(b => `<div class="k">${esc(b.k)}</div><div class="v">${esc(b.v)}</div>`).join('') : '';
   const natureHtml = `<div class="aa-block"><div class="aa-h">▸ ${esc(n.title||'이 공고의 정체')}</div><div class="aa-body">${esc(n.body||'')}</div>${n.type ? `<div class="aa-body" style="margin-top:4px;color:var(--muted);font-size:11px">유형: ${esc(n.type)}</div>` : ''}${benefits ? `<div class="aa-kv">${benefits}</div>` : ''}${n.watchout ? `<div class="aa-watchout">⚠ ${esc(n.watchout)}</div>` : ''}</div>`;
   const f = s.fit || {};
-  const fitRow = (m) => `<div class="aa-fit-row"><div class="fit-mark">${esc(m.fit||'•')}</div><div class="fit-body"><div class="fit-task">${esc(m.task||'')}</div><div class="fit-reason">${esc(m.reason||'')}</div></div></div>`;
+  const fitRow = (m) => { const full = (m.fit||'').trim(); const emojiMatch = full.match(/^(\p{Extended_Pictographic}|[🟢🟡🟠🔴⚫⚪✅❌⚠•])\s*/u); let mark = '•', note = ''; if (emojiMatch) { mark = emojiMatch[1]; note = full.slice(emojiMatch[0].length).trim(); } else if (full.length <= 3) { mark = full || '•'; } else { mark = '•'; note = full; } return `<div class="aa-fit-row"><div class="fit-mark">${esc(mark)}</div><div class="fit-body"><div class="fit-task">${esc(m.task||'')}</div>${note ? `<div class="fit-note">${esc(note)}</div>` : ''}${m.reason ? `<div class="fit-reason">${esc(m.reason)}</div>` : ''}</div></div>`; };
   const direct = (f.direct_match||[]).map(fitRow).join('');
   const adjacent = (f.tech_adjacent||[]).map(fitRow).join('');
   const fitHtml = `<div class="aa-block"><div class="aa-h">▸ ${esc(f.title||'팀 적합도 매칭')}</div>${direct ? `<div style="margin-bottom:6px"><div class="aa-h" style="color:#185c2f;font-size:10px">직접 매칭</div>${direct}</div>` : '<div class="aa-body" style="font-size:11.5px;color:var(--muted)">직접 매칭: 없음</div>'}${adjacent ? `<div style="margin-top:6px"><div class="aa-h" style="color:#8a6d00;font-size:10px">기술 인접</div>${adjacent}</div>` : ''}${f.mismatch_note ? `<div class="aa-body" style="margin-top:6px;font-size:11.5px;color:var(--muted)">${esc(f.mismatch_note)}</div>` : ''}${f.critical_gap ? `<div class="aa-gap">🎯 ${esc(f.critical_gap)}</div>` : ''}</div>`;
