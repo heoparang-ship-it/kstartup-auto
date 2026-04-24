@@ -1,0 +1,133 @@
+{
+  "pbancSn": 177176,
+  "title": "「2026 KB 오픈이노베이션 프로그램」협업 스타트업 모집",
+  "analyzed_at": "2026-04-24T15:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.05,
+    "time_cost_hours": "120-200",
+    "one_liner": "B2C 신혼부부 플랫폼 × 금융 CVC OI — 도메인 fit 0, 150~200h 투입 대비 기댓값 150만원"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "CVC형 OI (문제해결 매칭)",
+      "body": "창업패키지류가 아님. KB금융그룹 계열사 6개(지주·국민은행·증권·손보·라이프·캐피탈·부동산신탁) 현업팀이 16개 협업 과제를 못박아 던지고, 스타트업은 그중 하나를 골라 '우리가 이걸 해드리겠다'고 역제안하는 대기업 문제해결 매칭 프로그램. 업력 제한은 없으나 평가는 현업팀이 직접 본다. 합격해도 3~6개월 PoC 수행 의무 — 사실상 3천만원짜리 위탁개발 구조에 가깝다.",
+      "benefits": [
+        { "k": "PoC 지원금", "v": "과제당 3,000만원" },
+        { "k": "우수기업 시설기자", "v": "추가 1,000만원" },
+        { "k": "KB 계열사 협업", "v": "PoC 진행·사업 제휴 연계" },
+        { "k": "입주", "v": "오픈이노베이션 통(강남) 지원" },
+        { "k": "후속", "v": "KB스타트업 수시 선정 대상 편입" }
+      ],
+      "watchout": "합격 후 KB 현업과 실제 PoC 위탁 수행 필수 — 3~6개월 리소스 고정됨"
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [
+        {
+          "task": "KB증권 — Graph RAG 대내 정보 검색 시스템",
+          "reason": "sinhon.life가 Pinecone RAG를 프로덕션에서 돌리고 있어 RAG 파이프라인 경험은 있음",
+          "fit": "🟡 기술만 인접 · 증권 도메인 레퍼런스 없음"
+        },
+        {
+          "task": "KB지주 — 법무 AI Agent 개발",
+          "reason": "Anthropic API 기반 에이전트 구현 경험",
+          "fit": "🟠 AI 에이전트 일반 역량은 있으나 법무/금융 도메인 자산 0"
+        },
+        {
+          "task": "KB국민은행 — 금융상담 Agent 신뢰도/정확성 평가 시스템",
+          "reason": "AI 품질 평가는 일반 SW 역량으로 접근 가능",
+          "fit": "🟠 금융 규제·컴플라이언스 컨텍스트 부재"
+        },
+        {
+          "task": "KB국민은행 — AI 기반 업무매뉴얼 어셈블리",
+          "reason": "16개 중 가장 일반적 — 단순 AI 업무자동화",
+          "fit": "🟠 차별화 포인트 부재, 경쟁자 다수 예상"
+        }
+      ],
+      "mismatch_note": "나머지 12개 과제(담보신탁·자동차금융비교·글로벌 KYC·시니어 케어 로봇·보험 VOC·사고정보 분석·영업점 입지·M365 Copilot 감사보안·크립토 프로세스 등)는 sinhon.life/엑스컴과 완전 무관",
+      "critical_gap": "치명적: 엑스컴은 2025-10 설립 6개월차 법인, 레퍼런스는 sinhon.life(B2C 신혼부부) 1건. KB 현업팀이 가장 먼저 보는 '우리 도메인 데이터를 다뤄본 적 있는가?' 질문에 답이 없음. 금융·증권·보험 포트폴리오 전무."
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "과제 선정 + 솔루션 재설계", "hours": "40-60" },
+          { "stage": "서류·제안서·데모 영상", "hours": "60-100" },
+          { "stage": "서류 통과 시 발표·면접", "hours": "20-40" }
+        ],
+        "total": "120-200h (PoC 수행 시간 별도)"
+      },
+      "probability": {
+        "doc_pass": 0.125,
+        "final_given_doc_pass": 0.4,
+        "final": 0.05,
+        "basis": "대기업 CVC OI 통상 경쟁률(과제당 10~30배) + 도메인 레퍼런스 부재 페널티 + 6개월차 신생법인 감점 + 현업팀 직접평가 구조 종합 추정"
+      },
+      "expected_value_krw": 1500000,
+      "expected_value_label": "0.05 × 3,000만원 ≈ 150만원 (시간당 7,500~12,500원, 최저임금 이하)"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "sinhon.life(B2C 신혼부부)가 16개 과제 중 직접 매칭 0건",
+        "엑스컴 금융/증권/보험 도메인 레퍼런스 부재 — KB 현업평가 구조의 1번 필터에서 탈락 가능성 큼",
+        "기댓값 150만원 vs 투입 120~200h = 시간당 단가 최저임금 이하",
+        "같은 기간(5/15 마감 3건) 이중지원 전략에 쓸 자원이 고갈됨",
+        "합격해도 3~6개월 PoC 위탁으로 sinhon.life V3.1 포팅/개발 스톱됨"
+      ],
+      "exception_go_conditions": [
+        "특정 과제 1개(특히 KB증권 Graph RAG)로 한정해 2주 내 PoC 프로토타입 완성 가능할 때",
+        "허파랑님이 KB 계열사 현업 또는 벤처투자실에 이미 컨택(지인·전 동료 등)이 있어 '누가 심사하는지 알고 쓰는' 상태일 때",
+        "위 둘을 모두 만족할 때에 한해 재검토 (AND 조건)"
+      ]
+    },
+
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "예비창업 매칭 100%, 춘기 공백기에 유효한 몇 안 되는 카드"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 전략상 대구경북과 병행 가능"
+        },
+        {
+          "name": "2026 유니콘 브릿지 with 아이티센 (경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동 — 기창업·sinhon.life",
+          "priority": "🟡",
+          "reason": "sinhon.life로 직접 지원 가능한 기창업 트랙"
+        }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19 + auto-memory/project_dual_entry_strategy@2026-04-20 + user_business_registration"
+    }
+  }
+}
