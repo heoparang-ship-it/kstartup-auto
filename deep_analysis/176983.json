@@ -1,0 +1,83 @@
+{
+  "pbancSn": 176983,
+  "title": "2026 코리아 프론티어 참가기업 모집",
+  "analyzed_at": "2026-04-24T17:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.03,
+    "time_cost_hours": "45",
+    "one_liner": "누적 투자 30억원 내외 요건 + AI·반도체·스마트제조·기후·바이오 도메인 — 엑스컴 투자 이력 없음"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "글로벌 혁신가 커뮤니티 프로그램(WEF 연계)",
+      "body": "경기도경제과학진흥원·C4IR KOREA 주관. 누적 투자액 30억원 내외 법인 또는 유망 성장단계 기업 대상. AI·반도체·스마트제조·기후·바이오·거브테크 분야. WEF 글로벌 혁신가 커뮤니티 편입.",
+      "benefits": [
+        { "k": "WEF 글로벌 네트워크", "v": "글로벌 혁신가 커뮤니티 참여" }
+      ],
+      "watchout": "누적 투자 30억원 요건. 도메인 제한(AI·반도체 등)."
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "누적 투자 30억원 요건 미충족. 엑스컴 6개월차 투자 이력 없음.",
+      "critical_gap": "누적 투자 30억원 요건 미충족 — 엑스컴 투자 이력 없는 신생 법인."
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "자격확인", "hours": "5" },
+          { "stage": "서류", "hours": "30" },
+          { "stage": "발표", "hours": "10" }
+        ],
+        "total": "45h"
+      },
+      "probability": {
+        "doc_pass": 0.0,
+        "final_given_doc_pass": 0.0,
+        "final": 0.03,
+        "basis": "투자 요건 미충족"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "자격 요건 미충족"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "누적 투자 30억원 요건 미충족",
+        "AI·반도체·스마트제조 등 도메인 sinhon.life 무관"
+      ],
+      "exception_go_conditions": []
+    },
+
+    "alternatives": {
+      "title": "대안",
+      "items": [
+        { "name": "모두의 창업 로컬트랙 (대구경북)", "deadline": "2026-05-15", "track": "와이프", "priority": "🟢", "reason": "예비창업 직접 매칭" },
+        { "name": "파주 청년창업", "deadline": "2026-05-15", "track": "와이프", "priority": "🟢", "reason": "경기 예비창업" },
+        { "name": "2026 유니콘 브릿지 with 아이티센 (경기)", "deadline": "2026-05-15", "track": "본인", "priority": "🟡", "reason": "기창업 sinhon.life" }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19"
+    }
+  }
+}

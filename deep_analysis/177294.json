@@ -1,0 +1,107 @@
+{
+  "pbancSn": "177294",
+  "title": "대구콘텐츠기업지원센터 2026년 2차 입주기업 모집",
+  "analyzed_at": "2026-04-24T17:30:00+09:00",
+  "analyzer": "rule-based@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life + 엑스컴 + 와이프 트랙",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "medium",
+    "expected_pass_rate": 0.05,
+    "time_cost_hours": "40-60",
+    "one_liner": "🟠 규칙 기반 NO-GO — 지역: 지자체 기관 의심 (재단법인 접두사: (재)대구디지털혁신진흥) · 지원 제외 대상: 제외대상 명시 (휴·폐업) · 자격: 제외대상 명시 (휴·폐업)"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "tier orange (자동 분류)",
+      "body": "대상: - 공고일 기준 설립 7년 이내 문화콘텐츠 기업(개인 또는 법인)\r\n- 입주계약일로부터 30일 이내 본사 소재지를 대구콘텐츠기업지원센터로 이전 가능한 기업 · 제외: - 해외기업(합자회사일 경우, 국내 자기자본비율이 50% 미만인 경우)\r\n- 신청일 현재, 정부 및 타 기관에 참여제한으로 제재 중인 사업자\r\n- 국세, 지방세 체납자(기업 또는 대표자), 신용불량자(대표자)\r\n- 금융기관으로부터 채무불이행으로 규제 중인 자 또는 휴·폐업 중인 사업자\r\n- 폐수, 소음, 진동 등 공해 다발업종",
+      "benefits": [],
+      "watchout": ""
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "classify_evidence 요약: 검토 매칭 (전국/시설ㆍ공간ㆍ보육)",
+      "critical_gap": "지역: 지자체 기관 의심 (재단법인 접두사: (재)대구디지털혁신진흥) · 지원 제외 대상: 제외대상 명시 (휴·폐업) · 자격: 제외대상 명시 (휴·폐업)"
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "자격 확인",
+            "hours": "5"
+          },
+          {
+            "stage": "서류 작성",
+            "hours": "30"
+          },
+          {
+            "stage": "발표·인터뷰",
+            "hours": "10"
+          }
+        ],
+        "total": "45h"
+      },
+      "probability": {
+        "doc_pass": 0.15,
+        "final_given_doc_pass": 0.3,
+        "final": 0.05,
+        "basis": "🟠 classify — 도메인·자격 자동 불일치 판정 기반 보수 추정"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "자격·도메인 매칭 미달로 실질 기댓값 거의 0원"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "지역: 지자체 기관 의심 (재단법인 접두사: (재)대구디지털혁신진흥)",
+        "지원 제외 대상: 제외대상 명시 (휴·폐업)",
+        "자격: 제외대상 명시 (휴·폐업)",
+        "지역 키워드: 지자체 기관 의심 (재단법인 접두사: (재)대구디지털혁신진흥)"
+      ],
+      "exception_go_conditions": [
+        "공고문 원문 재확인 후 숨은 매칭 포인트 발견 시 재검토",
+        "춘기 공백기 5/15 마감 3건 모두 마감 후 차선책으로 검토"
+      ]
+    },
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙(대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프",
+          "priority": "🟢",
+          "reason": "예비창업 매칭 100%, 춘기 공백기 핵심 카드"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프",
+          "priority": "🟢",
+          "reason": "경기 예창 백업, 이중지원 전략 가능"
+        },
+        {
+          "name": "2026 유니콘 브릿지(경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동",
+          "priority": "🟡",
+          "reason": "sinhon.life 기창업 트랙"
+        }
+      ]
+    }
+  },
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "target_profile.md",
+      "generation_mode": "rule_based_bulk_nogo"
+    }
+  }
+}

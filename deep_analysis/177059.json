@@ -1,0 +1,94 @@
+{
+  "pbancSn": 177059,
+  "title": "2026 자립준비청년 디지털 진로지원 사업 창업교육 모집(~5/15)",
+  "analyzed_at": "2026-04-24T17:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.0,
+    "time_cost_hours": "45",
+    "one_liner": "자립준비청년(아동복지시설 퇴소자) 전용 교육 — 엑스컴/허파랑 자격 없음"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "창업교육 (특수 대상 한정)",
+      "body": "자립준비청년(아동복지시설 퇴소자) 및 청소년쉼터 입·퇴소자 30명 대상 생성형 AI 창업교육. 직접 자금 0, 교육 수료 성격.",
+      "benefits": [
+        { "k": "교육", "v": "생성형 AI 창업교육 수료" }
+      ],
+      "watchout": "특수 자격(자립준비청년) 전용 — 일반 창업자 지원 불가"
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "자립준비청년 전용 자격 조건 — 엑스컴·허파랑 완전 미해당",
+      "critical_gap": "특수 수혜 대상 전용, 직접 자금 0 — 이중 탈락"
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "자격확인", "hours": "5" },
+          { "stage": "서류", "hours": "30" },
+          { "stage": "발표", "hours": "10" }
+        ],
+        "total": "45h"
+      },
+      "probability": {
+        "doc_pass": 0.0,
+        "final_given_doc_pass": 0.0,
+        "final": 0.0,
+        "basis": "자격 미달"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "자격 미달로 기댓값 0"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "자립준비청년 전용 — 엑스컴/허파랑 자격 없음",
+        "직접 자금 0, 교육 수료만"
+      ],
+      "exception_go_conditions": []
+    },
+
+    "alternatives": {
+      "title": "대안",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "예비창업 매칭 100%"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 전략상 병행 가능"
+        }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19 + auto-memory"
+    }
+  }
+}

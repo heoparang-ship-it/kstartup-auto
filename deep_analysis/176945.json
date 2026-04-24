@@ -1,0 +1,83 @@
+{
+  "pbancSn": 176945,
+  "title": "2026 웨스트버지니아(WV) 거점 북미 진출 지원 프로그램",
+  "analyzed_at": "2026-04-24T17:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.03,
+    "time_cost_hours": "45",
+    "one_liner": "서울 소재 7년 미만 + 웨스트버지니아 현지 거점(공장/R&D) 설립 필수 — 실질 이주 요건, 수용 불가"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "해외 진출(북미 거점) 지원",
+      "body": "서울창업허브M+ 주관. 서울 소재 창업 7년 미만 스타트업 대상. 웨스트버지니아 주정부 인센티브 + LG NOVA 연계. 단순 사업자 등록이 아닌 실제 현지 거점(공장/R&D센터) 설립 필수.",
+      "benefits": [
+        { "k": "웨스트버지니아 주정부 인센티브", "v": "현지 거점 설립 지원" }
+      ],
+      "watchout": "웨스트버지니아 실제 현지 거점 설립 필수 — 사실상 이주 요건"
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "웨스트버지니아 현지 거점 설립 의무. sinhon.life B2C 신혼부부 플랫폼 북미 시장 직접 매칭 어려움.",
+      "critical_gap": "현지 거점(공장·R&D) 설립 필수 — 소프트웨어 플랫폼 사업 모델과 불일치. 인천 소재로 서울 요건도 미충족."
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "자격확인", "hours": "5" },
+          { "stage": "서류", "hours": "30" },
+          { "stage": "발표", "hours": "10" }
+        ],
+        "total": "45h"
+      },
+      "probability": {
+        "doc_pass": 0.0,
+        "final_given_doc_pass": 0.0,
+        "final": 0.03,
+        "basis": "서울 소재 요건 미충족 + 현지 거점 설립 필수 조건 수용 불가"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "자격 요건 미충족"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "서울 소재 요건 미충족 — 엑스컴 인천 소재",
+        "웨스트버지니아 현지 거점 설립 필수 — SW 플랫폼과 불일치"
+      ],
+      "exception_go_conditions": []
+    },
+
+    "alternatives": {
+      "title": "대안",
+      "items": [
+        { "name": "모두의 창업 로컬트랙 (대구경북)", "deadline": "2026-05-15", "track": "와이프", "priority": "🟢", "reason": "예비창업 직접 매칭" },
+        { "name": "파주 청년창업", "deadline": "2026-05-15", "track": "와이프", "priority": "🟢", "reason": "경기 예비창업" },
+        { "name": "2026 유니콘 브릿지 with 아이티센 (경기)", "deadline": "2026-05-15", "track": "본인", "priority": "🟡", "reason": "기창업 sinhon.life" }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19"
+    }
+  }
+}

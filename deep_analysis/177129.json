@@ -1,0 +1,105 @@
+{
+  "pbancSn": "177129",
+  "title": "2026 U-Global Bridge Japan 참여기업 모집",
+  "analyzed_at": "2026-04-24T17:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.05,
+    "time_cost_hours": "45",
+    "one_liner": "울산창조경제혁신센터 주관 일본 진출 — 울산 기반 기업 우선, sinhon.life 일본 진출 플랜 없음"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "해외진출 지원(판로)",
+      "body": "울산창조경제혁신센터 주관 일본 진출 — 울산 기반 기업 우선, sinhon.life 일본 진출 플랜 없음",
+      "benefits": [
+        {
+          "k": "지원 내용",
+          "v": "일본 현지 교류·시장 진출 지원"
+        }
+      ],
+      "watchout": "울산 기반 기업 우선 + sinhon.life 일본 진출 계획 無"
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "울산창조경제혁신센터 주관. 실질적으로 울산 기반 기업 선정 우선. sinhon.life는 일본 진출 로드맵 없고 제품/기술 수출형 아님.",
+      "critical_gap": "울산창조경제혁신센터 주관. 실질적으로 울산 기반 기업 선정 우선. sinhon.life는 일본 진출 로드맵 없고 제품/기술 수출형 아님."
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "자격확인·공고분석",
+            "hours": "5"
+          },
+          {
+            "stage": "서류 작성",
+            "hours": "30"
+          },
+          {
+            "stage": "발표·면접",
+            "hours": "10"
+          }
+        ],
+        "total": "45h"
+      },
+      "probability": {
+        "doc_pass": 0.1,
+        "final_given_doc_pass": 0.5,
+        "final": 0.05,
+        "basis": "지역 제한·도메인 불일치·엑스컴 자격 외 또는 직접자금 0"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "직접자금 없음 또는 도메인/지역 부적격으로 실질 기댓값 0"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "울산창조경제혁신센터 주관. 실질적으로 울산 기반 기업 선정 우선. sinhon.life는 일본 진출 로드맵 없고 제품/기술 수출형 아님."
+      ],
+      "exception_go_conditions": []
+    },
+    "alternatives": {
+      "title": "대안",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "예비창업 매칭 100%, 춘기 공백기 유효 카드"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 전략상 대구경북과 병행 가능"
+        },
+        {
+          "name": "2026 유니콘 브릿지 with 아이티센 (경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동 — 기창업·sinhon.life",
+          "priority": "🟡",
+          "reason": "sinhon.life 기창업 트랙 직접 지원 가능"
+        }
+      ]
+    }
+  },
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19 + auto-memory/project_dual_entry_strategy@2026-04-20 + user_business_registration"
+    }
+  }
+}

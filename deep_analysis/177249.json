@@ -1,0 +1,81 @@
+{
+  "pbancSn": 177249,
+  "title": "2026 Station C 성장자립지원 로컬라이제이션 모집공고",
+  "analyzed_at": "2026-04-24T17:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.05,
+    "time_cost_hours": "45",
+    "one_liner": "춘천(강원) 이전 필수 — 협약 후 6개월 내 강원 이전 의무, 자동 NO-GO"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "지역 이전 지원 (글로컬대학30사업, 춘천)",
+      "body": "수도권·타지역 기업이 춘천으로 이전하고 정착·성장하도록 지원하는 사업. 협약 후 6개월 내 강원도 이전 필수 조건.",
+      "benefits": [
+        { "k": "이전 지원", "v": "춘천 정착 지원 프로그램" }
+      ],
+      "watchout": "강원도(춘천) 이전 필수 — 6개월 내 사업자등록 이전 의무"
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "강원 이전 필수, 엑스컴 인천 소재로 이전 의사 없음",
+      "critical_gap": "특정 지역(강원 춘천) 이전 필수 — 자동 NO-GO 조건 해당"
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "자격확인 + 서류", "hours": "35" },
+          { "stage": "발표", "hours": "10" }
+        ],
+        "total": "45h"
+      },
+      "probability": {
+        "doc_pass": 0.03,
+        "final_given_doc_pass": 0.5,
+        "final": 0.03,
+        "basis": "이전 의사 없음으로 지원 불가"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "이전 불가, 기댓값 0"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "강원(춘천) 이전 필수 — 자동 NO-GO 조건(특정 지역 이전 필수) 해당"
+      ],
+      "exception_go_conditions": []
+    },
+
+    "alternatives": {
+      "title": "대안",
+      "items": [
+        { "name": "모두의 창업 로컬트랙 (대구경북)", "deadline": "2026-05-15", "track": "와이프 — 예비창업", "priority": "🟢", "reason": "예비창업 매칭 100%" },
+        { "name": "파주 청년창업", "deadline": "2026-05-15", "track": "와이프 — 경기 백업", "priority": "🟢", "reason": "이중지원 전략 병행 가능" },
+        { "name": "2026 유니콘 브릿지 with 아이티센 (경기)", "deadline": "2026-05-15", "track": "본인/공동", "priority": "🟡", "reason": "sinhon.life 직접 지원 가능" }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19"
+    }
+  }
+}

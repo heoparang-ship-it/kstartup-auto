@@ -1,0 +1,83 @@
+{
+  "pbancSn": 176520,
+  "title": "기술자료 임치 지원사업 1차 참여기업 모집",
+  "analyzed_at": "2026-04-24T17:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.05,
+    "time_cost_hours": "45",
+    "one_liner": "기술임치 수수료 지원 상한 50만원 — 직접자금 극소, sinhon.life 도메인 무관"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "기술임치 수수료 지원 (사업화 바우처)",
+      "body": "기술임치 계약 체결 기업 대상 수수료 전액 지원(상한 50만원). 직접 창업자금 아님.",
+      "benefits": [
+        { "k": "기술임치 수수료", "v": "전액 지원 (상한 50만원)" }
+      ],
+      "watchout": "기술임치 계약 체결이 선결 조건. 엑스컴 미체결 상태."
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "sinhon.life B2C 플랫폼과 무관. 기술임치 계약 체결 이력 없음.",
+      "critical_gap": "기술임치 계약 미보유, 혜택 상한 50만원으로 ROI 음수."
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "자격확인", "hours": "5" },
+          { "stage": "서류", "hours": "10" }
+        ],
+        "total": "15h"
+      },
+      "probability": {
+        "doc_pass": 0.3,
+        "final_given_doc_pass": 0.5,
+        "final": 0.05,
+        "basis": "기술임치 미체결 전제 — 사전 계약 필요"
+      },
+      "expected_value_krw": 25000,
+      "expected_value_label": "0.05 × 50만원 = 2.5만원"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "직접자금 상한 50만원 — 기댓값 2.5만원으로 최저임금 이하",
+        "기술임치 계약 선결 조건 미충족",
+        "교육·행정 지원 성격, sinhon.life 사업 무관"
+      ],
+      "exception_go_conditions": []
+    },
+
+    "alternatives": {
+      "title": "대안",
+      "items": [
+        { "name": "모두의 창업 로컬트랙 (대구경북)", "deadline": "2026-05-15", "track": "와이프", "priority": "🟢", "reason": "예비창업 직접 매칭" },
+        { "name": "파주 청년창업", "deadline": "2026-05-15", "track": "와이프", "priority": "🟢", "reason": "경기 트랙 병행" },
+        { "name": "유니콘 브릿지 (경기)", "deadline": "2026-05-15", "track": "본인", "priority": "🟡", "reason": "sinhon.life 기창업 트랙" }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "target_profile.md@2026-04-24"
+    }
+  }
+}

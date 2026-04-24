@@ -1,0 +1,79 @@
+{
+  "pbancSn": 175817,
+  "title": "[2026 창업지원사업 통합공고 요약본, 챗봇 제공] 지원사업 준비를 AI와 함께 하는 방법",
+  "analyzed_at": "2026-04-24T17:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.05,
+    "time_cost_hours": "5",
+    "one_liner": "민간사(위커밋) 무료 AI 챗봇·공고 요약 서비스 — 자금 지원 0, 정보 서비스임"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "정보·서비스 (민간 AI 행정지원 무료 제공)",
+      "body": "민간 스타트업(위커밋)이 정부지원사업 준비를 위한 AI 문서자동화 솔루션을 무료 제공하는 서비스 공고. 수혜 자금 없음.",
+      "benefits": [
+        { "k": "AI 문서 자동화", "v": "무료 이용 (무상)" }
+      ],
+      "watchout": "직접 자금 0. 민간 서비스 홍보 성격."
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "자금 지원 공고 아님 — 정보 서비스.",
+      "critical_gap": "직접자금 0, 선정·합격 개념 없음."
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "서비스 가입", "hours": "1" }
+        ],
+        "total": "1h"
+      },
+      "probability": {
+        "doc_pass": 1.0,
+        "final_given_doc_pass": 1.0,
+        "final": 1.0,
+        "basis": "무료 서비스 — 누구나 이용"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "금전적 혜택 없음"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "직접자금 0 — 민간 서비스 공고",
+        "ROI 분석 대상 아님"
+      ],
+      "exception_go_conditions": []
+    },
+
+    "alternatives": {
+      "title": "대안",
+      "items": [
+        { "name": "모두의 창업 로컬트랙 (대구경북)", "deadline": "2026-05-15", "track": "와이프", "priority": "🟢", "reason": "직접자금 우선" }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "target_profile.md@2026-04-24"
+    }
+  }
+}

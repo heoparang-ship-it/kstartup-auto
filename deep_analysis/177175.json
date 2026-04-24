@@ -1,0 +1,81 @@
+{
+  "pbancSn": 177175,
+  "title": "천안시 거점형 스마트도시 조성사업 「2026년 천안시 어반테크기업 클라우드 바우처 지원사업」 참여기업 모집공고",
+  "analyzed_at": "2026-04-24T17:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.05,
+    "time_cost_hours": "45",
+    "one_liner": "천안시 관내 소재 기업 필수 — 클라우드 바우처 지원이나 지역 조건 미충족"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "지자체 클라우드 바우처 (충남 천안)",
+      "body": "천안시 관내 본사·지사·공장 소재 어반테크기업 대상 클라우드 인프라 바우처 지원. 클라우드 비용 지원이나 천안 소재 필수.",
+      "benefits": [
+        { "k": "클라우드 바우처", "v": "클라우드 인프라 비용 지원" }
+      ],
+      "watchout": "천안시 소재 필수, 클라우드 바우처 형태(현금 아님)"
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "천안시 소재 필수, 엑스컴 인천 부평",
+      "critical_gap": "지역 자격 미충족(인천 vs 천안)"
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "자격확인 + 서류", "hours": "35" },
+          { "stage": "발표", "hours": "10" }
+        ],
+        "total": "45h"
+      },
+      "probability": {
+        "doc_pass": 0.03,
+        "final_given_doc_pass": 0.5,
+        "final": 0.03,
+        "basis": "지역 자격 미충족"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "지역 미충족으로 기댓값 0"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "천안시 소재 필수, 엑스컴 인천 소재로 자격 미충족"
+      ],
+      "exception_go_conditions": []
+    },
+
+    "alternatives": {
+      "title": "대안",
+      "items": [
+        { "name": "모두의 창업 로컬트랙 (대구경북)", "deadline": "2026-05-15", "track": "와이프 — 예비창업", "priority": "🟢", "reason": "예비창업 매칭 100%" },
+        { "name": "파주 청년창업", "deadline": "2026-05-15", "track": "와이프 — 경기 백업", "priority": "🟢", "reason": "이중지원 전략 병행 가능" },
+        { "name": "2026 유니콘 브릿지 with 아이티센 (경기)", "deadline": "2026-05-15", "track": "본인/공동", "priority": "🟡", "reason": "sinhon.life 직접 지원 가능" }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19"
+    }
+  }
+}

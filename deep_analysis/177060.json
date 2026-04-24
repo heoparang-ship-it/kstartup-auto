@@ -1,0 +1,80 @@
+{
+  "pbancSn": 177060,
+  "title": "2026년 노동아카데미(무료교육) 모집",
+  "analyzed_at": "2026-04-24T17:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.05,
+    "time_cost_hours": "5",
+    "one_liner": "대구 사업장 노동자/사업주 대상 노동법 교육 — 직접자금 0, 도메인 무관"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "멘토링·컨설팅·교육 (노동 교육)",
+      "body": "대구노동권익센터 주관 노동법 무료 교육. 대구 단일 사업장 또는 대구시민 대상. 직접 자금 없음.",
+      "benefits": [
+        { "k": "노동법 교육", "v": "무료" }
+      ],
+      "watchout": "직접자금 0, 대구 지역 한정, 노동법 교육 전용"
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "창업/사업화 지원 아님, 노동법 교육 수혜 프로그램",
+      "critical_gap": "엑스컴 대구 소재 아님, 직접자금 0, sinhon.life 무관."
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "자격확인", "hours": "5" }
+        ],
+        "total": "5h"
+      },
+      "probability": {
+        "doc_pass": 0.0,
+        "final_given_doc_pass": 0.0,
+        "final": 0.0,
+        "basis": "지역 요건·목적 미충족"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "자격 미달, 기댓값 0원"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "대구 소재 사업장 한정",
+        "노동법 교육만, 직접자금 0"
+      ],
+      "exception_go_conditions": []
+    },
+
+    "alternatives": {
+      "title": "대안",
+      "items": [
+        { "name": "모두의 창업 로컬트랙 (대구경북)", "deadline": "2026-05-15", "track": "와이프", "priority": "🟢", "reason": "예비창업 매칭" },
+        { "name": "파주 청년창업", "deadline": "2026-05-15", "track": "와이프", "priority": "🟢", "reason": "경기 백업" }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19"
+    }
+  }
+}

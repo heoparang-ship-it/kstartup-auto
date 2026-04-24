@@ -1,0 +1,72 @@
+{
+  "pbancSn": 175907,
+  "title": "뉴패러다임인베스트먼트 2026년 상반기 아기유니콘 성장 프로그램 기업모집 공고",
+  "analyzed_at": "2026-04-24T17:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.05,
+    "time_cost_hours": "45",
+    "one_liner": "초기성장지표 보유 스타트업 대상 — 6개월차 엑스컴 매출 실적 미약, 투자유치 이력 없음"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "VC 액셀러레이팅 (아기유니콘 성장)",
+      "body": "뉴패러다임인베스트먼트가 운영하는 초기성장지표 보유 스타트업 대상 성장 프로그램. 이미 트랙션이 있는 스타트업 타겟.",
+      "benefits": [
+        { "k": "성장 프로그램", "v": "투자연계·멘토링" }
+      ],
+      "watchout": "초기성장지표 보유 필수 — 매출·투자 실적 요구"
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [
+        { "task": "B2C 플랫폼 성장", "reason": "sinhon.life 운영 중이나 매출 실적 미약", "fit": "🟠 트랙션 증명 불가" }
+      ],
+      "mismatch_note": "초기성장지표(매출/사용자/투자) 증명 필요 — 6개월차 신생법인 페널티",
+      "critical_gap": "매출 실적 미약한 6개월차 법인 — 초기성장지표 필터 통과 불가"
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "자격확인 + 서류 + 발표", "hours": "45" }
+        ],
+        "total": "45h"
+      },
+      "probability": {
+        "doc_pass": 0.1,
+        "final_given_doc_pass": 0.5,
+        "final": 0.05,
+        "basis": "트랙션 부재 — 서류 통과 가능성 낮음"
+      },
+      "expected_value_krw": 500000,
+      "expected_value_label": "0.05 × 간접혜택만 ≈ 50~100만원 수준"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "초기성장지표 증명 불가 — 6개월차 매출 미약",
+        "기댓값 100만원 미만"
+      ],
+      "exception_go_conditions": []
+    },
+    "alternatives": {
+      "title": "대안",
+      "items": [
+        { "name": "모두의 창업 로컬트랙 (대구경북)", "deadline": "2026-05-15", "track": "와이프 — 예비창업", "priority": "🟢", "reason": "트랙션 불필요한 예창 트랙" },
+        { "name": "2026 유니콘 브릿지 with 아이티센 (경기)", "deadline": "2026-05-15", "track": "본인/공동", "priority": "🟡", "reason": "sinhon.life 직접 지원 가능" }
+      ]
+    }
+  },
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": { "recommendations_snapshot": "2026-04-24", "profile_snapshot": "target_profile.md@2026-04-24" }
+  }
+}

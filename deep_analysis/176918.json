@@ -1,0 +1,83 @@
+{
+  "pbancSn": 176918,
+  "title": "벤처확인인증 사전진단&일대일 무료 밋업 지원사업",
+  "analyzed_at": "2026-04-24T17:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.05,
+    "time_cost_hours": "10-20",
+    "one_liner": "직접자금 0 — 벤처인증 사전진단 무료 밋업, 컨설팅 교육만"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "멘토링·컨설팅·교육",
+      "body": "벤처기업 인증을 목표로 하는 기업에게 1:1 무료 밋업 형태로 진단·전략 자문을 제공하는 프로그램. 직접 자금 0, 네트워킹·교육만.",
+      "benefits": [
+        { "k": "직접 자금", "v": "0원" },
+        { "k": "제공 내용", "v": "벤처인증 1:1 컨설팅(무료)" }
+      ],
+      "watchout": "직접 현금 지원 없음. 벤처인증 자체가 목표라면 유의미하나 ROI 기준 미달."
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "벤처인증 자체는 엑스컴에 유익하나 본 공고는 자금 지원이 없는 교육 프로그램임.",
+      "critical_gap": "직접자금 0, 교육·네트워킹만 — 자동 NO-GO 조건 충족."
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "자격확인+신청", "hours": "5" },
+          { "stage": "밋업 참여", "hours": "5" }
+        ],
+        "total": "10-20h"
+      },
+      "probability": {
+        "doc_pass": 0.5,
+        "final_given_doc_pass": 0.5,
+        "final": 0.05,
+        "basis": "직접 현금 혜택 없음"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "직접 자금 0 — 기댓값 0원"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "직접자금 0, 교육·컨설팅만 — 자동 NO-GO 조건",
+        "같은 기간 🟢 3건 우선"
+      ],
+      "exception_go_conditions": []
+    },
+
+    "alternatives": {
+      "title": "대안",
+      "items": [
+        { "name": "모두의 창업 로컬트랙 (대구경북)", "deadline": "2026-05-15", "track": "와이프 — 예비창업", "priority": "🟢", "reason": "직접 자금 + 예비창업 매칭" },
+        { "name": "파주 청년창업", "deadline": "2026-05-15", "track": "와이프 — 경기 백업", "priority": "🟢", "reason": "이중지원 전략 병행 가능" },
+        { "name": "2026 유니콘 브릿지 with 아이티센 (경기)", "deadline": "2026-05-15", "track": "본인/공동", "priority": "🟡", "reason": "sinhon.life 기창업 트랙" }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19"
+    }
+  }
+}

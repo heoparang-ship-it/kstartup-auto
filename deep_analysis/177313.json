@@ -1,0 +1,95 @@
+{
+  "pbancSn": 177313,
+  "title": "2026년 서울시 소셜벤처 임팩트 측정 상담 신청 참여기업 모집(~5.15.)",
+  "analyzed_at": "2026-04-24T17:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.0,
+    "time_cost_hours": "45",
+    "one_liner": "서울 소재 소셜벤처 전용 + 기보 판별서 필수 — 인천 법인·일반 SW 엑스컴 미해당"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "사업화 지원 (소셜벤처 임팩트 측정 상담)",
+      "body": "서울 소재 소셜벤처 기업 대상 임팩트 측정 보고서 지원. 기술보증기금 소셜벤처 판별서 필수 요건.",
+      "benefits": [
+        { "k": "임팩트 측정 상담", "v": "보고서 작성 지원" }
+      ],
+      "watchout": "소셜벤처 판별서(기보) 필수 + 서울 소재 — 이중 조건"
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "소셜벤처 미인증, 인천 소재, 직접 자금 0",
+      "critical_gap": "소셜벤처 판별서 미보유 + 서울 소재 아님 — 기본 자격 미달"
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "자격확인", "hours": "5" },
+          { "stage": "서류", "hours": "30" },
+          { "stage": "발표", "hours": "10" }
+        ],
+        "total": "45h"
+      },
+      "probability": {
+        "doc_pass": 0.0,
+        "final_given_doc_pass": 0.0,
+        "final": 0.0,
+        "basis": "자격 미달"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "자격 미달로 기댓값 0"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "소셜벤처 판별서(기보) 미보유",
+        "서울 소재 필수 — 엑스컴 인천 소재",
+        "직접 자금 0"
+      ],
+      "exception_go_conditions": []
+    },
+
+    "alternatives": {
+      "title": "대안",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "예비창업 매칭 100%"
+        },
+        {
+          "name": "2026 유니콘 브릿지 with 아이티센 (경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동",
+          "priority": "🟡",
+          "reason": "기창업·SW 트랙"
+        }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19 + auto-memory"
+    }
+  }
+}

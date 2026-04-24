@@ -1,0 +1,87 @@
+{
+  "pbancSn": 177222,
+  "title": "[경북북부] IP디딤돌 프로그램 IP창업존 46기 교육생 모집공고(안동)",
+  "analyzed_at": "2026-04-24T17:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.05,
+    "time_cost_hours": "45",
+    "one_liner": "경상북도 안동 현지 교육, 직접 자금 0 — 이주 불가 + ROI 없음"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "교육 (IP 창업 교육, 경북 안동)",
+      "body": "경상북도 예비창업자 및 2026년 창업자 대상 IP 창업 교육(안동 현지). 직접 자금 0, 교육 수료만.",
+      "benefits": [
+        { "k": "IP 교육", "v": "지식재산권 기반 창업 교육 수료" }
+      ],
+      "watchout": "경북 안동 현지 교육 — 직접 자금 0"
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "안동 현지 교육, 직접 자금 없음",
+      "critical_gap": "직접 자금 0 + 안동 이동 필요 — 자원 투입 대비 ROI 없음"
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "자격확인", "hours": "5" },
+          { "stage": "서류", "hours": "30" },
+          { "stage": "발표", "hours": "10" }
+        ],
+        "total": "45h"
+      },
+      "probability": {
+        "doc_pass": 0.3,
+        "final_given_doc_pass": 0.5,
+        "final": 0.05,
+        "basis": "직접 자금 없어 합격 의미 없음"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "직접 자금 0"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "직접 자금 0, 교육 수료만",
+        "안동 현지 이동 필요"
+      ],
+      "exception_go_conditions": []
+    },
+
+    "alternatives": {
+      "title": "대안",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "대구경북 직접 자금 트랙"
+        }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19 + auto-memory"
+    }
+  }
+}

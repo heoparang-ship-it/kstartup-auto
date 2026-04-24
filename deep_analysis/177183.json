@@ -1,0 +1,82 @@
+{
+  "pbancSn": 177183,
+  "title": "2026 FutureScape '삼성물산 건설부문' 과 함께 미래 혁신을 설계해 나갈 스타트업을 찾습니다. (~5/8)",
+  "analyzed_at": "2026-04-24T17:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.05,
+    "time_cost_hours": "45",
+    "one_liner": "건설산업 디지털전환 협업과제 전용 OI — sinhon.life 도메인 fit 0, 건설 레퍼런스 無"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "대기업 CVC형 OI (삼성물산 건설부문)",
+      "body": "삼성물산 건설부문 × 서울경제진흥원 × 소풍커넥트 운영 오픈이노베이션. 건설산업 디지털전환·기술융합 과제 보유 스타트업 모집. 10년 이내 법인기업.",
+      "benefits": [
+        { "k": "PoC 실증 기회", "v": "삼성물산 현업 협업" }
+      ],
+      "watchout": "건설 도메인 과제 필수, 직접 현금 지원 규모 미명시"
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "건설산업 특화 OI, sinhon.life/엑스컴과 무관",
+      "critical_gap": "건설 도메인 레퍼런스 0, 협업과제 직접 매칭 불가"
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "자격확인 + 서류", "hours": "35" },
+          { "stage": "발표", "hours": "10" }
+        ],
+        "total": "45h"
+      },
+      "probability": {
+        "doc_pass": 0.1,
+        "final_given_doc_pass": 0.5,
+        "final": 0.05,
+        "basis": "건설 도메인 불일치로 서류 탈락 확실"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "직접자금 미명시, 기댓값 0"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "건설산업 디지털전환 전용, sinhon.life 도메인 fit 0",
+        "건설 레퍼런스 전무"
+      ],
+      "exception_go_conditions": []
+    },
+
+    "alternatives": {
+      "title": "대안",
+      "items": [
+        { "name": "모두의 창업 로컬트랙 (대구경북)", "deadline": "2026-05-15", "track": "와이프 — 예비창업", "priority": "🟢", "reason": "예비창업 매칭 100%" },
+        { "name": "파주 청년창업", "deadline": "2026-05-15", "track": "와이프 — 경기 백업", "priority": "🟢", "reason": "이중지원 전략 병행 가능" },
+        { "name": "2026 유니콘 브릿지 with 아이티센 (경기)", "deadline": "2026-05-15", "track": "본인/공동", "priority": "🟡", "reason": "sinhon.life 직접 지원 가능" }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19"
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "pbancSn": 177043,
+  "title": "[인천창조경제혁신센터x대한항공] 『2026년 대한항공 항공우주 오픈이노베이션』 참여기업 모집",
+  "analyzed_at": "2026-04-24T17:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.0,
+    "time_cost_hours": "45h",
+    "one_liner": "항공우주·무인기 도메인 전용 OI — sinhon.life(신혼 B2C) 완전 무관"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "CVC형 OI (항공우주·무인기)",
+      "body": "대한항공과 항공우주분야 기술 협력 파트너 발굴. 소형 가스터빈엔진 개발 등 하드웨어·항공기체 과제 중심. sinhon.life/SW 역량과 접점 없음.",
+      "benefits": [
+        {
+          "k": "PoC 지원금",
+          "v": "과제별 상이"
+        },
+        {
+          "k": "협업",
+          "v": "대한항공 계열사 연계"
+        }
+      ],
+      "watchout": "항공우주·하드웨어 도메인 레퍼런스 필수"
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "항공우주 하드웨어(무인기·터빈·UAM) — SW 신혼 플랫폼과 접점 전무",
+      "critical_gap": "항공우주 도메인 레퍼런스 0 — 즉시 탈락"
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "자격확인",
+            "hours": "5"
+          },
+          {
+            "stage": "서류",
+            "hours": "30"
+          },
+          {
+            "stage": "발표",
+            "hours": "10"
+          }
+        ],
+        "total": "45h"
+      },
+      "probability": {
+        "doc_pass": 0.0,
+        "final_given_doc_pass": 0.0,
+        "final": 0.0,
+        "basis": "항공우주 도메인 자격 미충족"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "기댓값 0"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "sinhon.life/엑스컴과 도메인 완전 무관",
+        "항공우주·하드웨어 레퍼런스 전무"
+      ],
+      "exception_go_conditions": []
+    },
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "예비창업 매칭 100%, 춘기 공백기 유효 카드"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 전략상 병행 가능"
+        },
+        {
+          "name": "2026 유니콘 브릿지 with 아이티센 (경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동 — 기창업·sinhon.life",
+          "priority": "🟡",
+          "reason": "sinhon.life 직접 지원 가능"
+        }
+      ]
+    }
+  },
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19 + auto-memory/project_dual_entry_strategy@2026-04-20 + user_business_registration"
+    }
+  }
+}

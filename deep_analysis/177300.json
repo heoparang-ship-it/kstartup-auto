@@ -1,0 +1,107 @@
+{
+  "pbancSn": "177300",
+  "title": "2026년 지역특화콘텐츠개발지원(대구게임테크허브) 차세대 플랫폼 도약·확장 지원사업",
+  "analyzed_at": "2026-04-24T17:30:00+09:00",
+  "analyzer": "rule-based@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life + 엑스컴 + 와이프 트랙",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "medium",
+    "expected_pass_rate": 0.05,
+    "time_cost_hours": "40-60",
+    "one_liner": "🟠 규칙 기반 NO-GO — 지역: 지자체 기관 의심 (재단법인 접두사: (재)대구디지털혁신진흥원) · 업종: 업종 한정 (게임) · 지역 키워드: 지자체 기관 의심 (재단법인 접두사: (재)대구디지털혁신진흥원)"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "tier orange (자동 분류)",
+      "body": "대상: 공고일 기준 사업자등록증 상 본사 소재지가 대구인 게임 제작·배급업 등록 기업\r\n* 협약일 기준 2개월 이내 대구 사업자등록·이전 확약 역외기업(본사)\r\n\r\n(차세대 플랫폼 도약 지원) \r\n- 신규 PC·콘솔 게임 제작 예정 기업\r\n- 출시 이력 없는 초기·아이디어 단계 게임콘텐츠\r\n(차세대 플랫폼 확장 지원)\r\n- 공고 마감일(‘26.5.8.(금)) 기준 출시완료된 게임콘텐츠  \r\n- IP 사용 및 콘텐츠 소유권 확보된 게임콘텐츠 · 제외: 첨부파일(공고문 및 사업안내서) 내 지원 제외대",
+      "benefits": [],
+      "watchout": ""
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "classify_evidence 요약: 검토 매칭 (콘텐츠)",
+      "critical_gap": "지역: 지자체 기관 의심 (재단법인 접두사: (재)대구디지털혁신진흥원) · 업종: 업종 한정 (게임) · 지역 키워드: 지자체 기관 의심 (재단법인 접두사: (재)대구디지털혁신진흥원)"
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "자격 확인",
+            "hours": "5"
+          },
+          {
+            "stage": "서류 작성",
+            "hours": "30"
+          },
+          {
+            "stage": "발표·인터뷰",
+            "hours": "10"
+          }
+        ],
+        "total": "45h"
+      },
+      "probability": {
+        "doc_pass": 0.15,
+        "final_given_doc_pass": 0.3,
+        "final": 0.05,
+        "basis": "🟠 classify — 도메인·자격 자동 불일치 판정 기반 보수 추정"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "자격·도메인 매칭 미달로 실질 기댓값 거의 0원"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "지역: 지자체 기관 의심 (재단법인 접두사: (재)대구디지털혁신진흥원)",
+        "업종: 업종 한정 (게임)",
+        "지역 키워드: 지자체 기관 의심 (재단법인 접두사: (재)대구디지털혁신진흥원)",
+        "매칭 키워드: 검토 매칭 (콘텐츠)"
+      ],
+      "exception_go_conditions": [
+        "공고문 원문 재확인 후 숨은 매칭 포인트 발견 시 재검토",
+        "춘기 공백기 5/15 마감 3건 모두 마감 후 차선책으로 검토"
+      ]
+    },
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙(대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프",
+          "priority": "🟢",
+          "reason": "예비창업 매칭 100%, 춘기 공백기 핵심 카드"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프",
+          "priority": "🟢",
+          "reason": "경기 예창 백업, 이중지원 전략 가능"
+        },
+        {
+          "name": "2026 유니콘 브릿지(경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동",
+          "priority": "🟡",
+          "reason": "sinhon.life 기창업 트랙"
+        }
+      ]
+    }
+  },
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "target_profile.md",
+      "generation_mode": "rule_based_bulk_nogo"
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "pbancSn": 177278,
+  "title": "2026년 벤처나라 벤처창업기업제품 등록 지원제도 기관 추천 희망 기업 모집",
+  "analyzed_at": "2026-04-24T17:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.05,
+    "time_cost_hours": "45",
+    "one_liner": "공공조달 B2G 진출 전제 — sinhon.life B2C 모델과 무관, 벤처기업 지정 미보유"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "시설·공간·보육 (공공조달 등록 추천)",
+      "body": "서울창업허브 창동이 조달청 벤처나라 등록을 추천해주는 프로그램. 공공조달시장 진출 의향 기업 대상. 직접 자금 없음.",
+      "benefits": [
+        { "k": "벤처나라 등록 추천", "v": "공공조달 진출 기회" }
+      ],
+      "watchout": "직접자금 0, B2G 판로 개척 목적이므로 B2C 제품과 무관"
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "sinhon.life는 B2C 신혼부부 플랫폼, 공공조달 상품 없음",
+      "critical_gap": "벤처기업 지정 미보유, B2G 제품 없음, 엑스컴 약점 키워드(B2G·공공조달) 정확히 해당."
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "자격확인 + 서류", "hours": "5" }
+        ],
+        "total": "5h"
+      },
+      "probability": {
+        "doc_pass": 0.05,
+        "final_given_doc_pass": 0.3,
+        "final": 0.05,
+        "basis": "벤처기업 지정 미보유·B2C 전용 제품 — 실질적 혜택 없음"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "직접자금 0, ROI 없음"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "공공조달 B2G 진출 목적이므로 B2C sinhon.life와 무관",
+        "직접 자금 0",
+        "벤처기업 지정 미보유"
+      ],
+      "exception_go_conditions": []
+    },
+
+    "alternatives": {
+      "title": "대안",
+      "items": [
+        { "name": "모두의 창업 로컬트랙 (대구경북)", "deadline": "2026-05-15", "track": "와이프", "priority": "🟢", "reason": "예비창업 매칭" },
+        { "name": "파주 청년창업", "deadline": "2026-05-15", "track": "와이프", "priority": "🟢", "reason": "경기 백업" },
+        { "name": "유니콘 브릿지 (경기)", "deadline": "2026-05-15", "track": "본인", "priority": "🟡", "reason": "기창업 sinhon.life" }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19"
+    }
+  }
+}

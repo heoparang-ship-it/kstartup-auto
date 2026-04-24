@@ -1,0 +1,81 @@
+{
+  "pbancSn": 177238,
+  "title": "2026년 군위 청년(예비)창업 지원사업 (예비)청년창업자 모집 공고",
+  "analyzed_at": "2026-04-24T17:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.05,
+    "time_cost_hours": "45",
+    "one_liner": "군위군 전입 필수 + 대구 주소 보유자 대상 — 엑스컴 인천, 이주 불가"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "지자체 청년창업 지원",
+      "body": "대구 군위군 내 창업·전입 조건. 공고일 기준 19~45세, 대구시 주소 보유자 또는 군위군 내 창업 3년 이내 기창업자. 선정 후 군위군 전입 필수.",
+      "benefits": [
+        { "k": "창업 지원금", "v": "공고문 미기재" }
+      ],
+      "watchout": "군위군 전입 필수 — 실거주 이전 요구"
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "대구 주소 또는 군위군 창업 요건 — 엑스컴 인천 소재, 전입 불가",
+      "critical_gap": "군위군 전입 필수 — 실이주 요건으로 자동 NO-GO"
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "자격확인 + 서류 + 발표", "hours": "45" }
+        ],
+        "total": "45h"
+      },
+      "probability": {
+        "doc_pass": 0.0,
+        "final_given_doc_pass": 0.0,
+        "final": 0.0,
+        "basis": "군위군 전입 불가 — 자격 미충족"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "자격 미충족 — 기댓값 0원"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "군위군 전입(실이주) 필수 — 엑스컴 인천 소재로 불가",
+        "대구시 주소 보유 또는 군위군 창업 요건 미충족"
+      ],
+      "exception_go_conditions": []
+    },
+
+    "alternatives": {
+      "title": "대안",
+      "items": [
+        { "name": "모두의 창업 로컬트랙 (대구경북)", "deadline": "2026-05-15", "track": "와이프 — 예비창업", "priority": "🟢", "reason": "대구경북 트랙, 이주 없이 지원 가능" },
+        { "name": "파주 청년창업", "deadline": "2026-05-15", "track": "와이프 — 경기 백업", "priority": "🟢", "reason": "이중지원 전략상 병행 가능" },
+        { "name": "2026 유니콘 브릿지 with 아이티센 (경기)", "deadline": "2026-05-15", "track": "본인/공동", "priority": "🟡", "reason": "sinhon.life 직접 지원 가능" }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19 + auto-memory"
+    }
+  }
+}

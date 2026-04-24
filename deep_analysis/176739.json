@@ -1,0 +1,78 @@
+{
+  "pbancSn": 176739,
+  "title": "2026년 기술이전 지원사업 (서울 Tech trade-on 프로그램) 참여기업 모집",
+  "analyzed_at": "2026-04-24T17:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.05,
+    "time_cost_hours": "45",
+    "one_liner": "서울 본사 소재 7년 미만 기업 공공기술이전 — 엑스컴 인천 본사로 자격 미달"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "사업화 (공공기술 이전)",
+      "body": "KIST이노베이션 공공기술 이전 지원. 서울 본사 소재 기업 한정. 기술이전료 지원 가능.",
+      "benefits": [
+        { "k": "공공기술 이전 지원", "v": "기술이전료 매칭 가능" }
+      ],
+      "watchout": "서울 본사 소재 필수 (지사 불가), 공공 R&D 기술 이전이 전제"
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "엑스컴 인천 본사 소재, 서울 본사 요건 미충족",
+      "critical_gap": "서울 본사 소재 필수 — 엑스컴 인천 부평."
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "자격확인", "hours": "5" }
+        ],
+        "total": "5h"
+      },
+      "probability": {
+        "doc_pass": 0.0,
+        "final_given_doc_pass": 0.0,
+        "final": 0.0,
+        "basis": "본사 소재지 요건 미충족"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "자격 미달"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "서울 본사 소재 필수 — 엑스컴 인천"
+      ],
+      "exception_go_conditions": []
+    },
+
+    "alternatives": {
+      "title": "대안",
+      "items": [
+        { "name": "유니콘 브릿지 (경기)", "deadline": "2026-05-15", "track": "본인", "priority": "🟡", "reason": "기창업 sinhon.life" }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19"
+    }
+  }
+}

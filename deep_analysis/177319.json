@@ -1,0 +1,87 @@
+{
+  "pbancSn": 177319,
+  "title": "울산시 바이오 디지털 헬스케어 글로벌 진출 지원 (2026 BIO USA 참관) 사업",
+  "analyzed_at": "2026-04-24T17:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.0,
+    "time_cost_hours": "45",
+    "one_liner": "울산 소재 바이오·헬스케어 전용 + 이주 조건 — SW/신혼 플랫폼 도메인 완전 무관"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "글로벌 진출 (BIO USA 참관)",
+      "body": "울산 소재 또는 이전 예정 바이오·디지털 헬스케어 기업 대상 BIO USA 2026 참관 지원. 울산 이전 필수.",
+      "benefits": [
+        { "k": "BIO USA 참관", "v": "글로벌 바이오 박람회 참관 지원" }
+      ],
+      "watchout": "바이오·헬스케어 도메인 전용 + 울산 소재/이전 필수"
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "바이오·헬스케어 무관, 울산 이전 불가",
+      "critical_gap": "바이오·헬스케어 도메인 레퍼런스 0 + 울산 이전 불가 — 이중 탈락"
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "자격확인", "hours": "5" },
+          { "stage": "서류", "hours": "30" },
+          { "stage": "발표", "hours": "10" }
+        ],
+        "total": "45h"
+      },
+      "probability": {
+        "doc_pass": 0.0,
+        "final_given_doc_pass": 0.0,
+        "final": 0.0,
+        "basis": "자격 미달"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "자격 미달로 기댓값 0"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "바이오·헬스케어 도메인 전용 — sinhon.life/엑스컴 무관",
+        "울산 소재 또는 이전 필수 — 이전 불가"
+      ],
+      "exception_go_conditions": []
+    },
+
+    "alternatives": {
+      "title": "대안",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "예비창업 매칭 100%"
+        }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19 + auto-memory"
+    }
+  }
+}

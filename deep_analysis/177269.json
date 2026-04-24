@@ -1,0 +1,86 @@
+{
+  "pbancSn": 177269,
+  "title": "IBK 창공 Silicon Valley 4기 해외 진출 참가기업 모집",
+  "analyzed_at": "2026-04-24T17:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.05,
+    "time_cost_hours": "45",
+    "one_liner": "Seed~Pre-A 미국 진출 프로그램 — 엑스컴 6개월차 투자 트랙션 없음, 직접자금 0"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "글로벌 (IBK 창공 실리콘밸리 액셀러레이팅)",
+      "body": "IBK + 500 Global 미국 진출. 서울 4주+실리콘밸리 8주. PMF·트랙션 보유 Seed~Pre-A 대상.",
+      "benefits": [
+        { "k": "미국 현지 연수", "v": "서울 4주 + SV 8주" },
+        { "k": "투자 연계", "v": "500 Global 네트워크" }
+      ],
+      "watchout": "PMF·초기 트랙션 확보 전제. 직접자금 지원 없음."
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [
+        { "task": "글로벌 진출 준비 스타트업", "reason": "sinhon.life 글로벌 3단계 로드맵 있음", "fit": "🟠 트랙션 미약, 6개월차 신생법인" }
+      ],
+      "mismatch_note": "500 Global 심사는 PMF·초기 투자 이력 중심 — 엑스컴 투자 이력 0.",
+      "critical_gap": "투자 트랙션 0 + 6개월차 신생법인 — Pre-A 단계 요건 미충족."
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "자격확인 + 서류 + 발표", "hours": "45" }
+        ],
+        "total": "45h"
+      },
+      "probability": {
+        "doc_pass": 0.1,
+        "final_given_doc_pass": 0.3,
+        "final": 0.05,
+        "basis": "투자 이력 없는 6개월차 신생법인 패널티"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "직접자금 없음, 수료 후 투자 간접 연계"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "Seed~Pre-A 투자 트랙션 요건 미충족 (투자 이력 0)",
+        "직접자금 없는 글로벌 프로그램",
+        "12주 현지 체류 — 현업 개발 스톱"
+      ],
+      "exception_go_conditions": [
+        "엔젤·시드 투자 1건 이상 유치 후 재지원 검토"
+      ]
+    },
+
+    "alternatives": {
+      "title": "대안",
+      "items": [
+        { "name": "유니콘 브릿지 (경기)", "deadline": "2026-05-15", "track": "본인", "priority": "🟡", "reason": "sinhon.life 직접 매칭, 직접자금 가능" },
+        { "name": "모두의 창업 로컬트랙 (대구경북)", "deadline": "2026-05-15", "track": "와이프", "priority": "🟢", "reason": "예비창업 직접 매칭" }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "target_profile.md@2026-04-24"
+    }
+  }
+}

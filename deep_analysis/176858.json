@@ -1,0 +1,106 @@
+{
+  "pbancSn": "176858",
+  "title": "2026년 체육인 직업안정 사업(창업지원) 창업교육과정(씨앗) 참가자 모집",
+  "analyzed_at": "2026-04-24T17:30:00+09:00",
+  "analyzer": "rule-based@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life + 엑스컴 + 와이프 트랙",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "medium",
+    "expected_pass_rate": 0.05,
+    "time_cost_hours": "40-60",
+    "one_liner": "🟠 규칙 기반 NO-GO — 지원 제외 대상: 자격 한정 (장애인) · 자격: 자격 한정 (장애인) · 매칭 키워드: 검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "tier orange (자동 분류)",
+      "body": "대상: ㅁ 은퇴(예정) 또는 경력 단절 체육인 중 전·현직 선수, 지도자, 심판으로 창업 의지가 있는 자\r\n  * 체육인 복지법 제2조에 해당하는 체육인\r\n\r\nㅁ 체육인 기준\r\n  - 선수 : ｢국민체육진흥법｣에 따른 경기단체에 선수로 등록된 기간이 총 5년 이상이면서 연속하여 3년 이상 등록된 적이 있는 사람 중 아래 대회 에 출전한 경력이 있는 사람\r\n  - 지도자 : ｢국민체육진흥법｣에 따른 경기단체에 지도자로 등록된 기간이 총 5년 이상인 사람 중 아래 대회 에 출전한 선수를 지도한 경력이",
+      "benefits": [],
+      "watchout": ""
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "classify_evidence 요약: 검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)",
+      "critical_gap": "지원 제외 대상: 자격 한정 (장애인) · 자격: 자격 한정 (장애인) · 매칭 키워드: 검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)"
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "자격 확인",
+            "hours": "5"
+          },
+          {
+            "stage": "서류 작성",
+            "hours": "30"
+          },
+          {
+            "stage": "발표·인터뷰",
+            "hours": "10"
+          }
+        ],
+        "total": "45h"
+      },
+      "probability": {
+        "doc_pass": 0.15,
+        "final_given_doc_pass": 0.3,
+        "final": 0.05,
+        "basis": "🟠 classify — 도메인·자격 자동 불일치 판정 기반 보수 추정"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "자격·도메인 매칭 미달로 실질 기댓값 거의 0원"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "지원 제외 대상: 자격 한정 (장애인)",
+        "자격: 자격 한정 (장애인)",
+        "매칭 키워드: 검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)"
+      ],
+      "exception_go_conditions": [
+        "공고문 원문 재확인 후 숨은 매칭 포인트 발견 시 재검토",
+        "춘기 공백기 5/15 마감 3건 모두 마감 후 차선책으로 검토"
+      ]
+    },
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙(대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프",
+          "priority": "🟢",
+          "reason": "예비창업 매칭 100%, 춘기 공백기 핵심 카드"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프",
+          "priority": "🟢",
+          "reason": "경기 예창 백업, 이중지원 전략 가능"
+        },
+        {
+          "name": "2026 유니콘 브릿지(경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동",
+          "priority": "🟡",
+          "reason": "sinhon.life 기창업 트랙"
+        }
+      ]
+    }
+  },
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "target_profile.md",
+      "generation_mode": "rule_based_bulk_nogo"
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "pbancSn": 177312,
+  "title": "제주창조경제혁신센터 글로벌 액셀러레이팅 프로그램 「시리즈 J 」 참여기업 모집",
+  "analyzed_at": "2026-04-24T17:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.05,
+    "time_cost_hours": "45",
+    "one_liner": "일본 진출 특화 액셀러레이팅 — 현재 일본 진출 계획 없음, 직접 자금 미확인"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "글로벌 액셀러레이팅 (일본 특화)",
+      "body": "제주창조경제혁신센터 일본 진출 특화 프로그램. 일본 진출 예정·희망 스타트업 대상. 직접 자금 규모 미기재.",
+      "benefits": [
+        { "k": "일본 진출 지원", "v": "글로벌 프로그램" }
+      ],
+      "watchout": "일본 진출 의향 필요, 예비창업자 제외"
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [
+        {
+          "task": "일본 K-웨딩 인바운드 진출",
+          "reason": "sinhon.life 글로벌 3단계 로드맵에 일본 포함 가능성",
+          "fit": "🟠 로드맵 상 먼 단계, 현재 국내 MVP 집중 시기"
+        }
+      ],
+      "mismatch_note": "일본 진출은 sinhon.life 글로벌 3단계 후반부 — 현재 MVP 완성 전 단계",
+      "critical_gap": "현재 일본 진출 준비 없음, 예비창업자 제외"
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "자격확인 + 서류 + 발표", "hours": "45" }
+        ],
+        "total": "45h"
+      },
+      "probability": {
+        "doc_pass": 0.1,
+        "final_given_doc_pass": 0.1,
+        "final": 0.05,
+        "basis": "일본 진출 계획 미비 + 직접 자금 규모 불명확"
+      },
+      "expected_value_krw": 250000,
+      "expected_value_label": "0.05 × 500만원 추정 ≈ 25만원"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "일본 진출 계획 현재 없음 — 국내 MVP 집중 시기",
+        "직접 자금 규모 미기재, 기댓값 불명확",
+        "춘기 공백기 핵심 3건 대비 우선순위 낮음"
+      ],
+      "exception_go_conditions": []
+    },
+
+    "alternatives": {
+      "title": "대안",
+      "items": [
+        { "name": "모두의 창업 로컬트랙 (대구경북)", "deadline": "2026-05-15", "track": "와이프 — 예비창업", "priority": "🟢", "reason": "예비창업 매칭 100%" },
+        { "name": "파주 청년창업", "deadline": "2026-05-15", "track": "와이프 — 경기 백업", "priority": "🟢", "reason": "이중지원 전략상 병행 가능" },
+        { "name": "2026 유니콘 브릿지 with 아이티센 (경기)", "deadline": "2026-05-15", "track": "본인/공동", "priority": "🟡", "reason": "sinhon.life 직접 지원 가능" }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19 + auto-memory"
+    }
+  }
+}

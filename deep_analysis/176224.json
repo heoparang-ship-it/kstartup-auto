@@ -1,0 +1,107 @@
+{
+  "pbancSn": "176224",
+  "title": "[경기경영자총협회] 26년 청년일자리도약장려금 사업 참여 기업 모집 안내",
+  "analyzed_at": "2026-04-24T17:30:00+09:00",
+  "analyzer": "rule-based@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life + 엑스컴 + 와이프 트랙",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "medium",
+    "expected_pass_rate": 0.05,
+    "time_cost_hours": "40-60",
+    "one_liner": "🟠 규칙 기반 NO-GO — 지역: 경기 시 한정 desc: '화성 소재' · 업종: 업종 한정 (에너지) · 지역 키워드: 경기 시 한정 desc: '화성 소재'"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "tier orange (자동 분류)",
+      "body": "대상: ■ 지원대상 (아래 요건을 모두 충족해야 하며, 세부 자격은 담당자에 문의)\r\n\r\n1. 수원, 용인, 화성 소재 기업\r\n\r\n2. 기준 피보험자 수 5인 이상 우선지원 대상기업\r\n  *기준 피보험자 수 : 참여 신청 직전 월부터 이전 1년간 매 월말 고용보험 피보험자 수 평균\r\n  *지식서비스‧문화콘텐츠‧신재생에너지 산업, 미래유망기업, 청년창업기업, 경기도 주력 육성산업 등 해당 기업은 1인 이상도 가능\r\n\r\n3. 연 매출액이 기준 피보험자 수 × 1,900만원 이상인 기업 · 제외: ■ ",
+      "benefits": [],
+      "watchout": ""
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "classify_evidence 요약: 검토 매칭 (청년창업)",
+      "critical_gap": "지역: 경기 시 한정 desc: '화성 소재' · 업종: 업종 한정 (에너지) · 지역 키워드: 경기 시 한정 desc: '화성 소재'"
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "자격 확인",
+            "hours": "5"
+          },
+          {
+            "stage": "서류 작성",
+            "hours": "30"
+          },
+          {
+            "stage": "발표·인터뷰",
+            "hours": "10"
+          }
+        ],
+        "total": "45h"
+      },
+      "probability": {
+        "doc_pass": 0.15,
+        "final_given_doc_pass": 0.3,
+        "final": 0.05,
+        "basis": "🟠 classify — 도메인·자격 자동 불일치 판정 기반 보수 추정"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "자격·도메인 매칭 미달로 실질 기댓값 거의 0원"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "지역: 경기 시 한정 desc: '화성 소재'",
+        "업종: 업종 한정 (에너지)",
+        "지역 키워드: 경기 시 한정 desc: '화성 소재'",
+        "매칭 키워드: 검토 매칭 (청년창업)"
+      ],
+      "exception_go_conditions": [
+        "공고문 원문 재확인 후 숨은 매칭 포인트 발견 시 재검토",
+        "춘기 공백기 5/15 마감 3건 모두 마감 후 차선책으로 검토"
+      ]
+    },
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙(대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프",
+          "priority": "🟢",
+          "reason": "예비창업 매칭 100%, 춘기 공백기 핵심 카드"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프",
+          "priority": "🟢",
+          "reason": "경기 예창 백업, 이중지원 전략 가능"
+        },
+        {
+          "name": "2026 유니콘 브릿지(경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동",
+          "priority": "🟡",
+          "reason": "sinhon.life 기창업 트랙"
+        }
+      ]
+    }
+  },
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "target_profile.md",
+      "generation_mode": "rule_based_bulk_nogo"
+    }
+  }
+}

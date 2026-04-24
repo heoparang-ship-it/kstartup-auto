@@ -1,0 +1,98 @@
+{
+  "pbancSn": 177285,
+  "title": "소싱 디렉팅 및 후속 프로그램 참여자 모집",
+  "analyzed_at": "2026-04-24T17:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.0,
+    "time_cost_hours": "1h",
+    "one_liner": "제조 분야 전용 — SW 단독 개발 명시 제외, sinhon.life 탈락"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "메이커스페이스 제조창업 프로그램 (서울과기대)",
+      "body": "제조 분야 예비창업자 대상. 공고 명시: 단순 가공, 앱 개발 등 소프트웨어 단독 개발 아이템 제외.",
+      "benefits": [
+        {
+          "k": "소싱 디렉팅",
+          "v": "제조 프로토타입 연계"
+        }
+      ],
+      "watchout": "SW 단독 개발 아이템 명시 제외 — sinhon.life(SW) 지원 불가"
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "공고 명시 제외 대상: SW 단독 개발. sinhon.life = SW 플랫폼 → 즉시 탈락",
+      "critical_gap": "SW 단독 개발 명시 제외 — 자격 자체 없음"
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "자격확인",
+            "hours": "1"
+          }
+        ],
+        "total": "1h"
+      },
+      "probability": {
+        "doc_pass": 0.0,
+        "final_given_doc_pass": 0.0,
+        "final": 0.0,
+        "basis": "공고 명시 제외 대상"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "기댓값 0"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "공고 명시 제외: SW 단독 개발 아이템",
+        "sinhon.life = SW 플랫폼 → 자격 없음"
+      ],
+      "exception_go_conditions": []
+    },
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "예비창업 매칭 100%, 춘기 공백기 유효 카드"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 전략상 병행 가능"
+        },
+        {
+          "name": "2026 유니콘 브릿지 with 아이티센 (경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동 — 기창업·sinhon.life",
+          "priority": "🟡",
+          "reason": "sinhon.life 직접 지원 가능"
+        }
+      ]
+    }
+  },
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19 + auto-memory/project_dual_entry_strategy@2026-04-20 + user_business_registration"
+    }
+  }
+}

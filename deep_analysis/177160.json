@@ -1,0 +1,80 @@
+{
+  "pbancSn": 177160,
+  "title": "2026년 핵심기술 모니터링 지원사업 모집 공고",
+  "analyzed_at": "2026-04-24T17:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.05,
+    "time_cost_hours": "45",
+    "one_liner": "기술임치 이력 필수 + 핵심기술 보유 조건 — 엑스컴 임치 미보유, 교육만"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "멘토링·컨설팅·교육 (기술보호 모니터링)",
+      "body": "기술임치 이력 보유 기업 대상 핵심기술 모니터링·컨설팅 지원. 직접자금 0.",
+      "benefits": [
+        { "k": "기술모니터링 컨설팅", "v": "무상 제공" }
+      ],
+      "watchout": "기술임치 이력 선결 조건. 직접자금 없음."
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "기술임치 이력 없는 엑스컴 신청 불가.",
+      "critical_gap": "기술임치 계약 미보유. 직접자금 0."
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "자격확인 + 서류", "hours": "45" }
+        ],
+        "total": "45h"
+      },
+      "probability": {
+        "doc_pass": 0.1,
+        "final_given_doc_pass": 0.2,
+        "final": 0.05,
+        "basis": "기술임치 이력 없음 필터"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "직접자금 없음"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "기술임치 이력 선결 조건 미충족",
+        "직접자금 0 — 교육·컨설팅만",
+        "sinhon.life 도메인 무관"
+      ],
+      "exception_go_conditions": []
+    },
+
+    "alternatives": {
+      "title": "대안",
+      "items": [
+        { "name": "모두의 창업 로컬트랙 (대구경북)", "deadline": "2026-05-15", "track": "와이프", "priority": "🟢", "reason": "예비창업 직접 매칭" }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "target_profile.md@2026-04-24"
+    }
+  }
+}

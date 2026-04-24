@@ -1,0 +1,94 @@
+{
+  "pbancSn": 177289,
+  "title": "'생성형 AI 활용 업무 스킬 UP' 비대면 교육 참가자 모집",
+  "analyzed_at": "2026-04-24T17:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.05,
+    "time_cost_hours": "45",
+    "one_liner": "핀테크 교육 수료 전용, 직접 자금 0 — 자원 투입 대비 ROI 없음"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "교육 (비대면, 핀테크 대상)",
+      "body": "서울핀테크랩×한국핀테크산업협회 공동 생성형 AI 업무 활용 교육. 전국 누구나 지원 가능하나 핀테크 기업·스타트업 업무효율 향상 목적. 직접 자금 0.",
+      "benefits": [
+        { "k": "교육 수료", "v": "생성형 AI 업무 스킬 비대면 교육" }
+      ],
+      "watchout": "직접 자금 0, 교육 수료만 — 자원 배분 가치 없음"
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "직접 자금 없는 교육 수료 — 춘기 공백기 자원 배분 부적합",
+      "critical_gap": "직접 자금 0, 교육만 — 자동 NO-GO 조건 해당"
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "자격확인", "hours": "5" },
+          { "stage": "서류", "hours": "30" },
+          { "stage": "발표", "hours": "10" }
+        ],
+        "total": "45h"
+      },
+      "probability": {
+        "doc_pass": 0.5,
+        "final_given_doc_pass": 0.5,
+        "final": 0.05,
+        "basis": "직접 자금 0으로 ROI 없음"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "직접 자금 0"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "직접 자금 0, 교육 수료만",
+        "춘기 공백기 자원 배분 우선순위 부적합"
+      ],
+      "exception_go_conditions": []
+    },
+
+    "alternatives": {
+      "title": "대안",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "예비창업 매칭 100%"
+        },
+        {
+          "name": "2026 유니콘 브릿지 with 아이티센 (경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동",
+          "priority": "🟡",
+          "reason": "직접 투자 자금 유입 가능"
+        }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19 + auto-memory"
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "pbancSn": 176645,
+  "title": "[신규설립] 2026년 DNA 융합 제품·서비스 해외진출 지원 사업 참여기업 모집선발 공고",
+  "analyzed_at": "2026-04-24T17:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.03,
+    "time_cost_hours": "45",
+    "one_liner": "해외 JV 설립 완료 또는 추진 중 조건 — 엑스컴 해외 법인·파트너 전무"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "글로벌 (해외 JV 설립 지원)",
+      "body": "해외 현지 JV(조인트벤처) 설립 추진 중이거나 완료한 디지털 혁신기술 분야 기업 대상.",
+      "benefits": [
+        { "k": "해외 JV 운영 지원", "v": "자금·컨설팅 연계" }
+      ],
+      "watchout": "해외 현지 파트너사 보유 또는 JV 추진 중 조건 필수."
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "해외 JV 없는 6개월차 신생법인 — 자격 미충족.",
+      "critical_gap": "해외 파트너사·JV 없음. 6개월차 신생법인."
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "자격확인 + 서류", "hours": "45" }
+        ],
+        "total": "45h"
+      },
+      "probability": {
+        "doc_pass": 0.05,
+        "final_given_doc_pass": 0.2,
+        "final": 0.03,
+        "basis": "해외 JV 조건 미충족"
+      },
+      "expected_value_krw": 150000,
+      "expected_value_label": "추정 지원금 × 0.03 = 미미"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "해외 JV 추진 중 조건 미충족",
+        "6개월차 신생법인 — 해외 파트너 없음",
+        "sinhon.life 글로벌화는 V4 이후"
+      ],
+      "exception_go_conditions": []
+    },
+
+    "alternatives": {
+      "title": "대안",
+      "items": [
+        { "name": "유니콘 브릿지 (경기)", "deadline": "2026-05-15", "track": "본인", "priority": "🟡", "reason": "국내 기창업 트랙 우선" }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "target_profile.md@2026-04-24"
+    }
+  }
+}

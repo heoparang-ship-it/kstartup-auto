@@ -1,0 +1,77 @@
+{
+  "pbancSn": 177193,
+  "title": "2026 상생 오픈이노베이션 스타트업 모집공고(사업설명회 4.22.)",
+  "analyzed_at": "2026-04-24T17:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+  "verdict": {
+    "decision": "CONDITIONAL-GO",
+    "confidence": "medium",
+    "expected_pass_rate": 0.10,
+    "time_cost_hours": "45",
+    "one_liner": "경기콘텐츠진흥원 메타버스/VR/AR/AI OI — AI 기술 인접, 경기도 소재 우대, sinhon.life AI 콘텐츠 각도 가능"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "OI 협업 프로그램 (경기콘텐츠진흥원)",
+      "body": "경기콘텐츠진흥원 운영. 가상융합(메타버스/VR/AR/XR) 및 신기술(AI 등) 기업 대상. PoC 협업·컨설팅·홍보·투자연계. 경기도 소재 기업 우대.",
+      "benefits": [
+        { "k": "PoC 협업", "v": "파트너사 협업 프로젝트" },
+        { "k": "투자연계", "v": "투자 연계 경험" },
+        { "k": "홍보·컨설팅", "v": "시장 대입 컨설팅·홍보" }
+      ],
+      "watchout": "경기도 소재 기업 우대 — 인천 엑스컴 불리하나 전국 지원 가능"
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [
+        { "task": "신기술(AI) 기업 협업", "reason": "sinhon.life Anthropic API + RAG 에이전트 프로덕션 운영 — AI 기술 fit", "fit": "🟡 AI 기술 인접, 콘텐츠 도메인 레퍼런스 약함" }
+      ],
+      "mismatch_note": "메타버스/XR 도메인 없음. AI 기술만 인접.",
+      "critical_gap": "콘텐츠 도메인(메타버스/VR/XR) 레퍼런스 없음. 경기도 소재 아닌 인천 — 지역 페널티."
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "자격확인 + 서류 + 발표", "hours": "45" }
+        ],
+        "total": "45h"
+      },
+      "probability": {
+        "doc_pass": 0.2,
+        "final_given_doc_pass": 0.5,
+        "final": 0.10,
+        "basis": "AI 기술 인접 + 전국 지원 가능 — 경기 소재 아닌 페널티 상쇄 필요"
+      },
+      "expected_value_krw": 1500000,
+      "expected_value_label": "0.10 × 간접혜택 ≈ 100~200만원 (PoC 직접자금 있을 시 상향)"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "CONDITIONAL-GO",
+      "reasons": [
+        "AI 기술 인접 — sinhon.life Anthropic API 에이전트 각도 가능",
+        "경기콘텐츠진흥원 전국 지원 가능"
+      ],
+      "exception_go_conditions": [
+        "sinhon.life를 'AI 기반 신혼 콘텐츠 플랫폼' 각도로 재포지셔닝 가능한지 2주 내 확인",
+        "PoC 직접자금 금액 공고 상세 확인 후 기댓값 재계산"
+      ]
+    },
+    "alternatives": {
+      "title": "대안",
+      "items": [
+        { "name": "모두의 창업 로컬트랙 (대구경북)", "deadline": "2026-05-15", "track": "와이프 — 예비창업", "priority": "🟢", "reason": "예창 매칭 100%, 1순위" },
+        { "name": "2026 유니콘 브릿지 with 아이티센 (경기)", "deadline": "2026-05-15", "track": "본인/공동", "priority": "🟡", "reason": "sinhon.life 직접 지원 가능" }
+      ]
+    }
+  },
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": { "recommendations_snapshot": "2026-04-24", "profile_snapshot": "target_profile.md@2026-04-24" }
+  }
+}

@@ -442,6 +442,13 @@ function formatKstTimestamp(iso){
 function esc(s){ if(!s) return ''; const d=document.createElement('div'); d.textContent=s; return d.innerHTML; }
 
 // === Deep Analysis lazy loader === 2026-04-24 추가
+// VERDICT_INDEX: _index.json 내용 (전체 공고 verdict 요약). 페이지 로드 시 채워짐.
+let VERDICT_INDEX = {};  // { "177176": {decision, confidence, expected_pass_rate, one_liner, analyzed_at}, ... }
+function getVerdict(pbancSn){
+  if(pbancSn == null) return null;
+  return VERDICT_INDEX[String(pbancSn)] || null;
+}
+// AA_CACHE: 전체 5블록 JSON (펼칠 때만 fetch)
 const AA_CACHE = new Map();
 const AA_INFLIGHT = new Map();
 function loadAnalysis(pbancSn){
@@ -473,19 +480,21 @@ function renderAnalysisPending(pbancSn){
   return `<div class="aa-pending">💭 이 공고의 딥 분석이 아직 생성되지 않았습니다.<span class="aa-pending-cmd">Cowork 세션에서: <b>"pbancSn=${pbancSn} 딥 분석 생성해줘"</b></span></div>`;
 }
 function preloadAnalysisBadge(pbancSn, id){
-  loadAnalysis(pbancSn).then(data => {
-    if(!data) return;
+  // 1) VERDICT_INDEX 에 있으면 즉시 반영 (페이지 로드 시 fetch됨 — 가장 빠른 경로)
+  const vi = getVerdict(pbancSn);
+  const apply = (v) => {
     const badge = document.getElementById(`aa-badge-${id}`);
     const one = document.getElementById(`aa-oneline-${id}`);
-    if(badge && data.verdict){
-      const dv = (data.verdict.decision||'').toLowerCase().replace(/[-\s]/g,'-');
+    if(badge && v){
+      const dv = (v.decision||'').toLowerCase().replace(/[-\s]/g,'-');
       badge.className = `verdict-badge ${dv}`;
-      badge.textContent = data.verdict.decision || 'ROI';
+      badge.textContent = v.decision || 'ROI';
     }
-    if(one && data.verdict && data.verdict.one_liner){
-      one.textContent = data.verdict.one_liner;
-    }
-  });
+    if(one && v && v.one_liner){ one.textContent = v.one_liner; }
+  };
+  if(vi){ apply(vi); return; }
+  // 2) 인덱스에 없으면 풀 파일 fetch 시도 (fallback)
+  loadAnalysis(pbancSn).then(data => { if(data && data.verdict) apply(data.verdict); });
 }
 function renderAnalysis(a){
   const s = a.sections || {}; const v = a.verdict || {};
@@ -570,11 +579,21 @@ function renderStats(){
 
 function renderFilters(f){
   const pool = allItems().filter(i => getStatus(i._id) === 'pool');
+  // verdict-기반 분류 헬퍼
+  const isGo = (it) => {
+    const v = getVerdict(it.pbancSn); if(!v) return false;
+    return v.decision === 'GO' || v.decision === 'CONDITIONAL-GO';
+  };
+  const isNogo = (it) => {
+    const v = getVerdict(it.pbancSn); if(!v) return false;
+    return v.decision === 'NO-GO';
+  };
+  const isPending = (it) => !getVerdict(it.pbancSn);
   const counts = {
     all: pool.length,
-    green: pool.filter(i=>i.tier==='green').length,
-    yellow: pool.filter(i=>i.tier==='yellow').length,
-    orange: pool.filter(i=>i.tier==='orange').length,
+    go: pool.filter(isGo).length,
+    nogo: pool.filter(isNogo).length,
+    pending: pool.filter(isPending).length,
     new: pool.filter(i=>i.first_seen===KSTD).length,
     updated: pool.filter(i=>i.last_changed_at===KSTD && i.first_seen!==KSTD).length,
     urgent: pool.filter(i=>{const d=daysUntil(i.deadline); return d>=0&&d<=3;}).length,
@@ -582,13 +601,13 @@ function renderFilters(f){
     completed: Object.values(state.statuses).filter(v=>v.status==='completed').length
   };
   const btns = [
-    ['all','전체',''],
-    ['green','● 1순위','green'],
-    ['yellow','◐ 2순위','yellow'],
-    ['orange','○ 3순위','orange'],
+    ['go','✅ GO','green'],
+    ['nogo','❌ NO-GO','orange'],
+    ['pending','⏳ 분석 대기',''],
+    ['all','📋 전체',''],
+    ['urgent','⏰ D-3',''],
     ['new','🆕 NEW',''],
     ['updated','🔄 UPDATED',''],
-    ['urgent','⏰ D-3',''],
     ['in_progress','▶ 진행중','blue'],
     ['completed','✓ 완료','']
   ];
@@ -629,15 +648,21 @@ function render(filter){
   else if(filter==='completed'){ list = statusedItems('completed'); titleText = '✓ 지원 완료'; }
   else{
     let pool = allItems().filter(i => getStatus(i._id) === 'pool');
-    if(['green','yellow','orange'].includes(filter)) pool = pool.filter(i=>i.tier===filter);
+    if(filter==='go') pool = pool.filter(i => {
+      const v = getVerdict(i.pbancSn); return v && (v.decision === 'GO' || v.decision === 'CONDITIONAL-GO');
+    });
+    else if(filter==='nogo') pool = pool.filter(i => {
+      const v = getVerdict(i.pbancSn); return v && v.decision === 'NO-GO';
+    });
+    else if(filter==='pending') pool = pool.filter(i => !getVerdict(i.pbancSn));
     else if(filter==='new') pool = pool.filter(i=>i.first_seen===KSTD);
     else if(filter==='updated') pool = pool.filter(i=>i.last_changed_at===KSTD && i.first_seen!==KSTD);
     else if(filter==='urgent') pool = pool.filter(i=>{const d=daysUntil(i.deadline); return d>=0&&d<=7;});
     const labels = {
-      all:'전체 공고',
-      green:'● 1순위 강력 추천 (5축 매칭)',
-      yellow:'◐ 2순위 검토 (지원 가능, 강매칭 아님)',
-      orange:'○ 3순위 아이디어·리포지셔닝 풀',
+      all:'📋 전체 공고',
+      go:'✅ GO — 지원 가치 있음 (GO + CONDITIONAL-GO)',
+      nogo:'❌ NO-GO — 지원 비권장',
+      pending:'⏳ 분석 대기 (아직 딥 분석 안 된 공고)',
       new:'🆕 오늘 신규로 올라온 공고',
       updated:'🔄 오늘 정보가 수정된 공고',
       urgent:'⏰ 임박 마감 (D-0 ~ D-7)'
@@ -1121,12 +1146,20 @@ async function init(){
     const r = await fetch('recommendations.json?_=' + Date.now());
     POOL = await r.json();
     DATA = POOL.items || [];
+    // verdict 인덱스 로드 (없어도 치명적이지 않음)
+    try {
+      const ri = await fetch('deep_analysis/_index.json?_=' + Date.now());
+      if(ri.ok){
+        const idx = await ri.json();
+        VERDICT_INDEX = idx.verdicts || {};
+      }
+    } catch(err){ console.warn('verdict index load 실패', err); }
     document.getElementById('last-updated').textContent = POOL.last_updated || '—';
     if(POOL.updated_at_kst){
       document.getElementById('reload-at').textContent = formatKstTimestamp(POOL.updated_at_kst);
     }
     renderHistory();
-    render('all');
+    render('go');
   }catch(e){
     document.getElementById('card-grid').innerHTML = '<div class="empty">recommendations.json 로드 실패: ' + esc(e.message) + '</div>';
     console.error(e);

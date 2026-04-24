@@ -1,0 +1,105 @@
+{
+  "pbancSn": "177253",
+  "title": "「2026년 충남 천안·아산 강소특구 이노테크 발굴 및 창업지원 사업」 (예비)창업자 모집 공고",
+  "analyzed_at": "2026-04-24T17:30:00+09:00",
+  "analyzer": "rule-based@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life + 엑스컴 + 와이프 트랙",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "medium",
+    "expected_pass_rate": 0.05,
+    "time_cost_hours": "40-60",
+    "one_liner": "🟠 규칙 기반 NO-GO — 지역: 사업명에 지역 포함 (충남) · 지역 키워드: 사업명에 지역 포함 (충남)"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "tier orange (자동 분류)",
+      "body": "대상: 예비창업자 및 충남 천안·아산 지역 내 창업기업*\r\n* 공고일 기준 업력 7년(‘19.4.16. 이후 창업) 이내 창업자를 의미하며, 창업일은 개인사업자의 경우 사업개시일(사업자등록증상의 개업일), 법인기업의 경우 법인등기부등본상 회사성립연월일을 기준으로 함 · 제외: 신청제한 요건 중 어느 한 가지라도 해당될 경우 신청할 수 없음\r\n\r\n   ◦ 중소기업창업지원법에 의거 지원이 불가능한 기업\r\n     - 금융 및 보험업, 부동산업, 숙박 및 음식점업, 무도장 운영업\r\n     - 골프장 ",
+      "benefits": [],
+      "watchout": ""
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "classify_evidence 요약: structured 완전 매칭 (전국/사업화)",
+      "critical_gap": "지역: 사업명에 지역 포함 (충남) · 지역 키워드: 사업명에 지역 포함 (충남)"
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "자격 확인",
+            "hours": "5"
+          },
+          {
+            "stage": "서류 작성",
+            "hours": "30"
+          },
+          {
+            "stage": "발표·인터뷰",
+            "hours": "10"
+          }
+        ],
+        "total": "45h"
+      },
+      "probability": {
+        "doc_pass": 0.15,
+        "final_given_doc_pass": 0.3,
+        "final": 0.05,
+        "basis": "🟠 classify — 도메인·자격 자동 불일치 판정 기반 보수 추정"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "자격·도메인 매칭 미달로 실질 기댓값 거의 0원"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "지역: 사업명에 지역 포함 (충남)",
+        "지역 키워드: 사업명에 지역 포함 (충남)"
+      ],
+      "exception_go_conditions": [
+        "공고문 원문 재확인 후 숨은 매칭 포인트 발견 시 재검토",
+        "춘기 공백기 5/15 마감 3건 모두 마감 후 차선책으로 검토"
+      ]
+    },
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙(대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프",
+          "priority": "🟢",
+          "reason": "예비창업 매칭 100%, 춘기 공백기 핵심 카드"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프",
+          "priority": "🟢",
+          "reason": "경기 예창 백업, 이중지원 전략 가능"
+        },
+        {
+          "name": "2026 유니콘 브릿지(경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동",
+          "priority": "🟡",
+          "reason": "sinhon.life 기창업 트랙"
+        }
+      ]
+    }
+  },
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "target_profile.md",
+      "generation_mode": "rule_based_bulk_nogo"
+    }
+  }
+}

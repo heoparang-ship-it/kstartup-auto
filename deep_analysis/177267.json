@@ -1,0 +1,83 @@
+{
+  "pbancSn": 177267,
+  "title": "2026년 의왕시1인창조기업지원센터 모두의 도전을 위한! '모두의 창업' 설명회 및 전략교육",
+  "analyzed_at": "2026-04-24T17:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.03,
+    "time_cost_hours": "45",
+    "one_liner": "의왕시 창업 설명회 — 멘토링·교육만, 직접 자금 0"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "멘토링·교육",
+      "body": "의왕시 1인 창조기업지원센터 주관. 예비창업자·초기창업기업 대상 설명회 및 사업계획서 전략교육. 직접 자금 없음.",
+      "benefits": [
+        { "k": "교육", "v": "사업계획서 전략교육" }
+      ],
+      "watchout": "의왕시 관내 우대. 직접 자금 0."
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "교육·설명회만. 직접 자금 없음.",
+      "critical_gap": "직접 자금 0 — 교육·네트워킹 only."
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "자격확인", "hours": "5" },
+          { "stage": "서류", "hours": "30" },
+          { "stage": "발표", "hours": "10" }
+        ],
+        "total": "45h"
+      },
+      "probability": {
+        "doc_pass": 0.5,
+        "final_given_doc_pass": 0.1,
+        "final": 0.05,
+        "basis": "직접 자금 없는 교육 프로그램"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "직접 자금 없음"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "교육·설명회 only — 직접 자금 0",
+        "자동 NO-GO: 교육만 수료 성격"
+      ],
+      "exception_go_conditions": []
+    },
+
+    "alternatives": {
+      "title": "대안",
+      "items": [
+        { "name": "모두의 창업 로컬트랙 (대구경북)", "deadline": "2026-05-15", "track": "와이프", "priority": "🟢", "reason": "예비창업 직접 매칭" },
+        { "name": "파주 청년창업", "deadline": "2026-05-15", "track": "와이프", "priority": "🟢", "reason": "경기 예비창업" },
+        { "name": "2026 유니콘 브릿지 with 아이티센 (경기)", "deadline": "2026-05-15", "track": "본인", "priority": "🟡", "reason": "기창업 sinhon.life" }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19"
+    }
+  }
+}

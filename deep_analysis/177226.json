@@ -1,0 +1,81 @@
+{
+  "pbancSn": 177226,
+  "title": "2026년「펨테크 산업 육성 사업」프로그램 참여기업 모집",
+  "analyzed_at": "2026-04-24T17:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.05,
+    "time_cost_hours": "45",
+    "one_liner": "펨테크(여성 생애주기 제품·서비스) 도메인 — sinhon.life 직접 매칭 없음"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "정책자금",
+      "body": "한국여성경제인협회 주관, 여성 생애주기 제품·서비스를 제공하는 펨테크 기업 육성 프로그램. 여성기업 한정은 아니나 펨테크 도메인 필수.",
+      "benefits": [
+        { "k": "직접 자금", "v": "공고문 미상 (정책자금 분류)" }
+      ],
+      "watchout": "펨테크 제품·서비스 보유 기업 한정."
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "sinhon.life는 신혼부부 플랫폼으로 펨테크 도메인 아님.",
+      "critical_gap": "펨테크 도메인 레퍼런스 전무 — NO-GO."
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "자격확인+서류+발표", "hours": "45" }
+        ],
+        "total": "45h"
+      },
+      "probability": {
+        "doc_pass": 0.1,
+        "final_given_doc_pass": 0.1,
+        "final": 0.05,
+        "basis": "도메인 미매칭"
+      },
+      "expected_value_krw": 500000,
+      "expected_value_label": "도메인 미매칭, 기댓값 미미"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "펨테크(여성 생애주기) 도메인 — sinhon.life 무관",
+        "도메인 레퍼런스 없어 통과 불가"
+      ],
+      "exception_go_conditions": []
+    },
+
+    "alternatives": {
+      "title": "대안",
+      "items": [
+        { "name": "모두의 창업 로컬트랙 (대구경북)", "deadline": "2026-05-15", "track": "와이프 — 예비창업", "priority": "🟢", "reason": "예비창업 매칭" },
+        { "name": "파주 청년창업", "deadline": "2026-05-15", "track": "와이프 — 경기 백업", "priority": "🟢", "reason": "이중지원 병행" },
+        { "name": "2026 유니콘 브릿지 with 아이티센 (경기)", "deadline": "2026-05-15", "track": "본인/공동", "priority": "🟡", "reason": "기창업 트랙" }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19"
+    }
+  }
+}

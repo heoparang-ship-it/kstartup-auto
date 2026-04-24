@@ -1,0 +1,80 @@
+{
+  "pbancSn": 176961,
+  "title": "2026 시제품 제작 구현을 위한 소싱 디렉팅 운영",
+  "analyzed_at": "2026-04-24T17:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.03,
+    "time_cost_hours": "45",
+    "one_liner": "경기 ICT 제조 시제품 — 하드웨어/제조 도메인, sinhon.life SW 전용 무관"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "멘토링·컨설팅·교육 (시제품 소싱 디렉팅)",
+      "body": "경기도 ICT 제조 분야 (예비)창업자 대상 시제품 제작 소싱 컨설팅. 하드웨어 전제.",
+      "benefits": [
+        { "k": "시제품 소싱 컨설팅", "v": "무상" }
+      ],
+      "watchout": "ICT 제조(하드웨어) 전제. 경기도 소재/창업 필수."
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "시제품 제작 — sinhon.life 순수 SW 서비스와 무관.",
+      "critical_gap": "경기도 소재 + ICT 제조(하드웨어) 도메인 — 엑스컴 인천 SW 법인."
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "자격확인 + 서류", "hours": "45" }
+        ],
+        "total": "45h"
+      },
+      "probability": {
+        "doc_pass": 0.05,
+        "final_given_doc_pass": 0.2,
+        "final": 0.03,
+        "basis": "지역 미달 + 제조 도메인 불일치"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "직접자금 0"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "경기도 소재 필수 — 엑스컴 인천",
+        "ICT 제조(하드웨어) 전제 — SW 서비스 제외",
+        "직접자금 없는 컨설팅"
+      ],
+      "exception_go_conditions": []
+    },
+
+    "alternatives": {
+      "title": "대안",
+      "items": [
+        { "name": "유니콘 브릿지 (경기)", "deadline": "2026-05-15", "track": "본인", "priority": "🟡", "reason": "SW 서비스 직접 지원 가능" }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "target_profile.md@2026-04-24"
+    }
+  }
+}

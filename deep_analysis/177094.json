@@ -1,0 +1,81 @@
+{
+  "pbancSn": 177094,
+  "title": "재도전 「Log-in 대전」 사업화 지원 사업 참여자 모집공고",
+  "analyzed_at": "2026-04-24T17:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.03,
+    "time_cost_hours": "45",
+    "one_liner": "재창업자·대전 소재 한정 + 2025 재도전 아카데미 수료 전제 — 자격 미충족"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "사업화",
+      "body": "대전창조경제혁신센터 주관, 실패 후 재창업자 대상 사업화 지원. 2025 재도전 아카데미 수료 또는 대전 소재 3년 이내 재창업기업 필요.",
+      "benefits": [
+        { "k": "직접 자금", "v": "사업화 지원금 (금액 불명)" }
+      ],
+      "watchout": "재창업자 전용 + 대전 소재 + 2025 아카데미 수료 조건."
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "엑스컴은 초기 창업(2025-10)으로 재창업자 아님. 대전 소재 아님.",
+      "critical_gap": "재창업자 전용 + 대전 소재 — 이중 자격 미충족."
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "자격확인", "hours": "5" }
+        ],
+        "total": "5h"
+      },
+      "probability": {
+        "doc_pass": 0.0,
+        "final_given_doc_pass": 0.0,
+        "final": 0.03,
+        "basis": "이중 자격 미충족"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "자격 미충족 — 기댓값 0"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "재창업자 전용 — 엑스컴 초기창업(재창업 아님)",
+        "대전 소재 필수 — 엑스컴 인천"
+      ],
+      "exception_go_conditions": []
+    },
+
+    "alternatives": {
+      "title": "대안",
+      "items": [
+        { "name": "모두의 창업 로컬트랙 (대구경북)", "deadline": "2026-05-15", "track": "와이프 — 예비창업", "priority": "🟢", "reason": "예비창업 매칭" },
+        { "name": "파주 청년창업", "deadline": "2026-05-15", "track": "와이프 — 경기 백업", "priority": "🟢", "reason": "이중지원 병행" },
+        { "name": "2026 유니콘 브릿지 with 아이티센 (경기)", "deadline": "2026-05-15", "track": "본인/공동", "priority": "🟡", "reason": "기창업 트랙" }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19"
+    }
+  }
+}

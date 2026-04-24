@@ -1,0 +1,100 @@
+{
+  "pbancSn": 177167,
+  "title": "2026년「모두의 창업 프로젝트」설명회 및 신청서 작성 특강 안내",
+  "analyzed_at": "2026-04-24T17:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.0,
+    "time_cost_hours": "3h",
+    "one_liner": "설명회·특강 성격 — 직접 자금 0, 네트워킹만"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "설명회·교육 (광운대학교 NCI창업패키지사업단)",
+      "body": "모두의 창업 프로젝트 설명회 및 신청서 작성 특강. 직접 자금 없음. 모두의 창업 본 공고 지원 준비용.",
+      "benefits": [
+        {
+          "k": "정보 제공",
+          "v": "설명회·특강 참여"
+        }
+      ],
+      "watchout": "직접 자금 0 — 설명회 참여 자체로 혜택 없음"
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "설명회 성격 — 지원해야 할 실질 대상 없음",
+      "critical_gap": "설명회 — 직접 자금 0, 투입 대비 ROI 없음"
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "참석",
+            "hours": "3"
+          }
+        ],
+        "total": "3h"
+      },
+      "probability": {
+        "doc_pass": 0.0,
+        "final_given_doc_pass": 0.0,
+        "final": 0.0,
+        "basis": "설명회 — 합격/불합격 없음"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "직접 자금 0"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "설명회·특강 성격 — 직접 자금 없음",
+        "ROI 없음"
+      ],
+      "exception_go_conditions": [
+        "모두의 창업 본 공고(와이프 트랙) 준비 목적이라면 참석 고려 가능 — 단, 별도 딥 분석 대상 아님"
+      ]
+    },
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "예비창업 매칭 100%, 춘기 공백기 유효 카드"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 전략상 병행 가능"
+        },
+        {
+          "name": "2026 유니콘 브릿지 with 아이티센 (경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동 — 기창업·sinhon.life",
+          "priority": "🟡",
+          "reason": "sinhon.life 직접 지원 가능"
+        }
+      ]
+    }
+  },
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19 + auto-memory/project_dual_entry_strategy@2026-04-20 + user_business_registration"
+    }
+  }
+}

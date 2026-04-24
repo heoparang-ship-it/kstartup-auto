@@ -1,0 +1,80 @@
+{
+  "pbancSn": 177029,
+  "title": "충북대학교 『글로벌(G)테크벤처센터(BI) 』 입주기업 모집",
+  "analyzed_at": "2026-04-24T17:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.05,
+    "time_cost_hours": "45",
+    "one_liner": "충북 소재 BI 입주 — 엑스컴 인천 소재, 이전 실익 없음"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "시설·공간·보육",
+      "body": "충북대학교 글로벌테크벤처센터(POST-BI) 입주 모집. 충북 중기청 연계, 기술기반 벤처기업 대상.",
+      "benefits": [
+        { "k": "직접 자금", "v": "불명 (공간·보육 서비스 위주)" }
+      ],
+      "watchout": "충북 소재 또는 이전 필요."
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "충북 소재 BI — 엑스컴 인천 이전 불가.",
+      "critical_gap": "충북 이전 필수 — 자동 NO-GO."
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "자격확인+서류+발표", "hours": "45" }
+        ],
+        "total": "45h"
+      },
+      "probability": {
+        "doc_pass": 0.1,
+        "final_given_doc_pass": 0.1,
+        "final": 0.05,
+        "basis": "지역 이전 부담"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "이전 실익 없음 — 기댓값 0"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "충북 소재 BI 이전 필수 — 엑스컴 인천"
+      ],
+      "exception_go_conditions": []
+    },
+
+    "alternatives": {
+      "title": "대안",
+      "items": [
+        { "name": "모두의 창업 로컬트랙 (대구경북)", "deadline": "2026-05-15", "track": "와이프 — 예비창업", "priority": "🟢", "reason": "예비창업 매칭" },
+        { "name": "파주 청년창업", "deadline": "2026-05-15", "track": "와이프 — 경기 백업", "priority": "🟢", "reason": "이중지원 병행" },
+        { "name": "2026 유니콘 브릿지 with 아이티센 (경기)", "deadline": "2026-05-15", "track": "본인/공동", "priority": "🟡", "reason": "기창업 트랙" }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19"
+    }
+  }
+}

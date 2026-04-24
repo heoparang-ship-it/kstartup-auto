@@ -1,0 +1,87 @@
+{
+  "pbancSn": 177228,
+  "title": "[국비지원교육]디지털드로잉 기반 창작캐릭터 IP 상품화 전문과정 교육생 모집",
+  "analyzed_at": "2026-04-24T17:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.0,
+    "time_cost_hours": "45",
+    "one_liner": "여성 전용 교육 + 직접 자금 0 — 자격 없음"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "창업교육 (여성 전용)",
+      "body": "서울시 서부여성발전센터 주관, 디지털드로잉 기반 캐릭터 IP 상품화 여성 창업 교육. 여성 참여 희망자 20명. 직접 자금 0.",
+      "benefits": [
+        { "k": "교육 수료", "v": "캐릭터 IP 상품화 교육" }
+      ],
+      "watchout": "여성 전용 교육 — 일반 법인 미해당"
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "여성 전용 + 직접 자금 0",
+      "critical_gap": "여성 전용 자격 조건 — 엑스컴(법인) 해당 없음"
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "자격확인", "hours": "5" },
+          { "stage": "서류", "hours": "30" },
+          { "stage": "발표", "hours": "10" }
+        ],
+        "total": "45h"
+      },
+      "probability": {
+        "doc_pass": 0.0,
+        "final_given_doc_pass": 0.0,
+        "final": 0.0,
+        "basis": "자격 미달"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "자격 미달로 기댓값 0"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "여성 전용 교육 — 엑스컴 법인 미해당",
+        "직접 자금 0"
+      ],
+      "exception_go_conditions": []
+    },
+
+    "alternatives": {
+      "title": "대안",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "예비창업 매칭 100%"
+        }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19 + auto-memory"
+    }
+  }
+}

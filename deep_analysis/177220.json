@@ -1,0 +1,80 @@
+{
+  "pbancSn": 177220,
+  "title": "2026년 U-RISE 스타트업 캠퍼스 사업 창업팀 모집 공고",
+  "analyzed_at": "2026-04-24T17:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.03,
+    "time_cost_hours": "45",
+    "one_liner": "울산대학교 재학생·교원·졸업 2년 이내 한정 — 엑스컴 자격 없음"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "사업화",
+      "body": "울산대학교 대학(원)생·교원 및 졸업 2년 이내 대상 창업지원 프로그램. 대학 연계 필수.",
+      "benefits": [
+        { "k": "직접 자금", "v": "불명 (사업화 지원)" }
+      ],
+      "watchout": "울산대학교 소속 필수."
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "울산대 재학생/교원/졸업 2년 이내 한정 — 엑스컴 해당 없음.",
+      "critical_gap": "대학 소속 자격 미충족 — 즉시 NO-GO."
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "자격확인+서류+발표", "hours": "45" }
+        ],
+        "total": "45h"
+      },
+      "probability": {
+        "doc_pass": 0.0,
+        "final_given_doc_pass": 0.0,
+        "final": 0.03,
+        "basis": "자격 미충족"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "자격 미충족 — 기댓값 0"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "울산대학교 재학생·교원·졸업 2년 이내 한정 — 엑스컴 자격 없음"
+      ],
+      "exception_go_conditions": []
+    },
+
+    "alternatives": {
+      "title": "대안",
+      "items": [
+        { "name": "모두의 창업 로컬트랙 (대구경북)", "deadline": "2026-05-15", "track": "와이프 — 예비창업", "priority": "🟢", "reason": "예비창업 매칭" },
+        { "name": "파주 청년창업", "deadline": "2026-05-15", "track": "와이프 — 경기 백업", "priority": "🟢", "reason": "이중지원 병행" },
+        { "name": "2026 유니콘 브릿지 with 아이티센 (경기)", "deadline": "2026-05-15", "track": "본인/공동", "priority": "🟡", "reason": "기창업 트랙" }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19"
+    }
+  }
+}

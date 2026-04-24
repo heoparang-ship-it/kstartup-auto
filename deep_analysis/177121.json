@@ -1,0 +1,107 @@
+{
+  "pbancSn": "177121",
+  "title": "[성남 식품제조 소공인특화지원센터] 소공인 기술 컨설팅 참여기업 모집공고",
+  "analyzed_at": "2026-04-24T17:30:00+09:00",
+  "analyzer": "rule-based@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life + 엑스컴 + 와이프 트랙",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "medium",
+    "expected_pass_rate": 0.05,
+    "time_cost_hours": "40-60",
+    "one_liner": "🟠 규칙 기반 NO-GO — 지역: 지자체 기관 의심 (지역진흥원: 성남산업진흥원) · 지원 제외 대상: 제외대상 명시 (휴·폐업) · 업종: 업종 한정 (식품)"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "tier orange (자동 분류)",
+      "body": "대상: 성남시 소재 상시 근로자수 10인 미만 식품제조 소공인\r\n(산업분류코드 C10, C11) · 제외: 아래의 내용에 1개 이상 해당하는 경우는 신청 및 지원 불가\r\n① (참여제한) 정부·지자체, 공공기관 등으로부터 참여 제한 중인 경우\r\n② (중복참여) 유관기관 지원사업 기수혜 및 수혜중인 자는 참여제한\r\n③ (세금체납) 4대보험, 국세·지방세 체납, 행정처분을 받은 경우\r\n④ (부도/휴‧폐업) 기업의 부도, 휴·폐업 중인 경우\r\n⑤ (서류 허위제출) 사업 참여를 위해 제출한 서류가 허위로 ",
+      "benefits": [],
+      "watchout": ""
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "classify_evidence 요약: 3순위 (참고용): 지자체 기관 의심 (지역진흥원: 성남산업진흥원)",
+      "critical_gap": "지역: 지자체 기관 의심 (지역진흥원: 성남산업진흥원) · 지원 제외 대상: 제외대상 명시 (휴·폐업) · 업종: 업종 한정 (식품)"
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "자격 확인",
+            "hours": "5"
+          },
+          {
+            "stage": "서류 작성",
+            "hours": "30"
+          },
+          {
+            "stage": "발표·인터뷰",
+            "hours": "10"
+          }
+        ],
+        "total": "45h"
+      },
+      "probability": {
+        "doc_pass": 0.15,
+        "final_given_doc_pass": 0.3,
+        "final": 0.05,
+        "basis": "🟠 classify — 도메인·자격 자동 불일치 판정 기반 보수 추정"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "자격·도메인 매칭 미달로 실질 기댓값 거의 0원"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "지역: 지자체 기관 의심 (지역진흥원: 성남산업진흥원)",
+        "지원 제외 대상: 제외대상 명시 (휴·폐업)",
+        "업종: 업종 한정 (식품)",
+        "자격: 제외대상 명시 (휴·폐업)"
+      ],
+      "exception_go_conditions": [
+        "공고문 원문 재확인 후 숨은 매칭 포인트 발견 시 재검토",
+        "춘기 공백기 5/15 마감 3건 모두 마감 후 차선책으로 검토"
+      ]
+    },
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙(대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프",
+          "priority": "🟢",
+          "reason": "예비창업 매칭 100%, 춘기 공백기 핵심 카드"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프",
+          "priority": "🟢",
+          "reason": "경기 예창 백업, 이중지원 전략 가능"
+        },
+        {
+          "name": "2026 유니콘 브릿지(경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동",
+          "priority": "🟡",
+          "reason": "sinhon.life 기창업 트랙"
+        }
+      ]
+    }
+  },
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "target_profile.md",
+      "generation_mode": "rule_based_bulk_nogo"
+    }
+  }
+}

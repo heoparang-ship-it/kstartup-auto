@@ -1,0 +1,107 @@
+{
+  "pbancSn": "177194",
+  "title": "2026년 IR·PR 영상제작 및 디지털마케팅지원 사업",
+  "analyzed_at": "2026-04-24T17:30:00+09:00",
+  "analyzer": "rule-based@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life + 엑스컴 + 와이프 트랙",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "medium",
+    "expected_pass_rate": 0.05,
+    "time_cost_hours": "40-60",
+    "one_liner": "🟠 규칙 기반 NO-GO — 지역: 지자체 기관 의심 (지자체 창업센터: KAIST 창업원 창업지원센터) · 지원 제외 대상: 제외대상 명시 (휴·폐업) · 자격: 제외대상 명시 (휴·폐업)"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "tier orange (자동 분류)",
+      "body": "대상: 대전광역시 소재의 예비창업자 또는 중소·벤처기업 · 제외: 사업에 참여하는 자(참여기업, 위탁기관(기업), 대표자 등)가 다음의 어느 하나에 해당하는 경우\r\n- 기업의 부도, 화의, 법정관리중인 기업\r\n- 금융 불량 거래처로 규제중인 기업\r\n- 국세 및 지방세 체납중인 기업, 휴·폐업중인 기업\r\n- 기타 정상적으로 금융거래가 어려운 경우 등\r\n- 신청기업이 제출서류를 허위로 작성한 경우\r\n- 기타 대전광역시장이 사업화 지원이 어렵다고 판단하는 경우 · 지역: 대전 · 업력: 예비창업자,1년",
+      "benefits": [],
+      "watchout": ""
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "classify_evidence 요약: 검토 매칭 (디지털)",
+      "critical_gap": "지역: 지자체 기관 의심 (지자체 창업센터: KAIST 창업원 창업지원센터) · 지원 제외 대상: 제외대상 명시 (휴·폐업) · 자격: 제외대상 명시 (휴·폐업)"
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "자격 확인",
+            "hours": "5"
+          },
+          {
+            "stage": "서류 작성",
+            "hours": "30"
+          },
+          {
+            "stage": "발표·인터뷰",
+            "hours": "10"
+          }
+        ],
+        "total": "45h"
+      },
+      "probability": {
+        "doc_pass": 0.15,
+        "final_given_doc_pass": 0.3,
+        "final": 0.05,
+        "basis": "🟠 classify — 도메인·자격 자동 불일치 판정 기반 보수 추정"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "자격·도메인 매칭 미달로 실질 기댓값 거의 0원"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "지역: 지자체 기관 의심 (지자체 창업센터: KAIST 창업원 창업지원센터)",
+        "지원 제외 대상: 제외대상 명시 (휴·폐업)",
+        "자격: 제외대상 명시 (휴·폐업)",
+        "지역 키워드: 지자체 기관 의심 (지자체 창업센터: KAIST 창업원 창업지원센터)"
+      ],
+      "exception_go_conditions": [
+        "공고문 원문 재확인 후 숨은 매칭 포인트 발견 시 재검토",
+        "춘기 공백기 5/15 마감 3건 모두 마감 후 차선책으로 검토"
+      ]
+    },
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙(대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프",
+          "priority": "🟢",
+          "reason": "예비창업 매칭 100%, 춘기 공백기 핵심 카드"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프",
+          "priority": "🟢",
+          "reason": "경기 예창 백업, 이중지원 전략 가능"
+        },
+        {
+          "name": "2026 유니콘 브릿지(경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동",
+          "priority": "🟡",
+          "reason": "sinhon.life 기창업 트랙"
+        }
+      ]
+    }
+  },
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "target_profile.md",
+      "generation_mode": "rule_based_bulk_nogo"
+    }
+  }
+}

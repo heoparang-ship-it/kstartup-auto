@@ -1,0 +1,75 @@
+{
+  "pbancSn": 177186,
+  "title": "2026년 서울창업허브 창동 스타트업 융복합 콘텐츠 제작 영상 콘텐츠 지원 기업 모집",
+  "analyzed_at": "2026-04-24T17:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+  "verdict": {
+    "decision": "CONDITIONAL-GO",
+    "confidence": "medium",
+    "expected_pass_rate": 0.10,
+    "time_cost_hours": "45",
+    "one_liner": "서울창업허브 창동 영상 콘텐츠 제작 지원 — IR·PoC·마케팅 목적 영상, 미디어콘텐츠 업종 엑스컴 fit"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "시설·공간 (영상 콘텐츠 제작 지원금)",
+      "body": "서울창업허브 창동 운영. 영상·뉴미디어 콘텐츠로 사업 확장 희망 스타트업 대상. IR/투자·실증PoC·판로·마케팅·해외진출 목적 영상 콘텐츠 제작 지원금. 7년 미만 기창업 기업.",
+      "benefits": [
+        { "k": "영상 콘텐츠 제작 지원금", "v": "IR/마케팅/PoC 영상 제작비 지원" }
+      ],
+      "watchout": "서울 소재 우대 가능성. 지원금 금액 미공개."
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [
+        { "task": "sinhon.life 마케팅 영상 제작", "reason": "미디어콘텐츠 업종 엑스컴 + 허파랑 유튜브 채널 — 영상 콘텐츠 레퍼런스 있음", "fit": "🟢 미디어콘텐츠 직접 매칭" }
+      ],
+      "tech_adjacent": [],
+      "mismatch_note": "서울 소재 기업 우대 가능 — 인천 엑스컴 소재 페널티",
+      "critical_gap": "지원금 금액 미공개 — 기댓값 계산 불확실. 서울 소재 아닌 페널티."
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "자격확인 + 서류 + 발표", "hours": "45" }
+        ],
+        "total": "45h"
+      },
+      "probability": {
+        "doc_pass": 0.2,
+        "final_given_doc_pass": 0.5,
+        "final": 0.10,
+        "basis": "미디어콘텐츠 직접 매칭 + 허파랑 유튜브 레퍼런스"
+      },
+      "expected_value_krw": 1000000,
+      "expected_value_label": "지원금 금액 확인 필요 — 확인 후 재계산"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "CONDITIONAL-GO",
+      "reasons": [
+        "미디어콘텐츠 업종 직접 매칭",
+        "허파랑 유튜브 + sinhon.life 영상 마케팅 레퍼런스 활용 가능"
+      ],
+      "exception_go_conditions": [
+        "지원금 금액 공고 상세 확인 — 100만원 이상 직접자금 확인 시 GO",
+        "서울 소재 제한 여부 확인"
+      ]
+    },
+    "alternatives": {
+      "title": "대안",
+      "items": [
+        { "name": "모두의 창업 로컬트랙 (대구경북)", "deadline": "2026-05-15", "track": "와이프 — 예비창업", "priority": "🟢", "reason": "예창 매칭 100%, 1순위" },
+        { "name": "2026 유니콘 브릿지 with 아이티센 (경기)", "deadline": "2026-05-15", "track": "본인/공동", "priority": "🟡", "reason": "sinhon.life 직접 지원 가능" }
+      ]
+    }
+  },
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": { "recommendations_snapshot": "2026-04-24", "profile_snapshot": "target_profile.md@2026-04-24" }
+  }
+}

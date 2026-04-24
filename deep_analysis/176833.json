@@ -1,0 +1,107 @@
+{
+  "pbancSn": "176833",
+  "title": "2026년 상반기 화성시 벤처인증 비용 지원사업",
+  "analyzed_at": "2026-04-24T17:30:00+09:00",
+  "analyzer": "rule-based@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life + 엑스컴 + 와이프 트랙",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "medium",
+    "expected_pass_rate": 0.05,
+    "time_cost_hours": "40-60",
+    "one_liner": "🟠 규칙 기반 NO-GO — 지역: 지자체 기관 의심 (재단법인 접두사: (재)화성산업진흥원) · 공고 성격: 성격 불일치 (벤처인증) · 지역 키워드: 지자체 기관 의심 (재단법인 접두사: (재)화성산업진흥원)"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "tier orange (자동 분류)",
+      "body": "대상: (지원대상) 벤처기업 인증을 취득한* 화성시 소재** 중소기업\r\n   * 상반기 공고기간 내 신규 및 재확인 인증 취득 \r\n ** 화성시 관내 본사를 두고 있는 기업(※ 공장 및 연구소 제외) · 지역: 경기 · 업력: 예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
+      "benefits": [],
+      "watchout": ""
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "classify_evidence 요약: 3순위 (참고용): 지자체 기관 의심 (재단법인 접두사: (재)화성산업진흥원)",
+      "critical_gap": "지역: 지자체 기관 의심 (재단법인 접두사: (재)화성산업진흥원) · 공고 성격: 성격 불일치 (벤처인증) · 지역 키워드: 지자체 기관 의심 (재단법인 접두사: (재)화성산업진흥원)"
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "자격 확인",
+            "hours": "5"
+          },
+          {
+            "stage": "서류 작성",
+            "hours": "30"
+          },
+          {
+            "stage": "발표·인터뷰",
+            "hours": "10"
+          }
+        ],
+        "total": "45h"
+      },
+      "probability": {
+        "doc_pass": 0.15,
+        "final_given_doc_pass": 0.3,
+        "final": 0.05,
+        "basis": "🟠 classify — 도메인·자격 자동 불일치 판정 기반 보수 추정"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "자격·도메인 매칭 미달로 실질 기댓값 거의 0원"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "지역: 지자체 기관 의심 (재단법인 접두사: (재)화성산업진흥원)",
+        "공고 성격: 성격 불일치 (벤처인증)",
+        "지역 키워드: 지자체 기관 의심 (재단법인 접두사: (재)화성산업진흥원)",
+        "매칭 키워드: 3순위 (참고용): 지자체 기관 의심 (재단법인 접두사: (재)화성산업진흥원)"
+      ],
+      "exception_go_conditions": [
+        "공고문 원문 재확인 후 숨은 매칭 포인트 발견 시 재검토",
+        "춘기 공백기 5/15 마감 3건 모두 마감 후 차선책으로 검토"
+      ]
+    },
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙(대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프",
+          "priority": "🟢",
+          "reason": "예비창업 매칭 100%, 춘기 공백기 핵심 카드"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프",
+          "priority": "🟢",
+          "reason": "경기 예창 백업, 이중지원 전략 가능"
+        },
+        {
+          "name": "2026 유니콘 브릿지(경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동",
+          "priority": "🟡",
+          "reason": "sinhon.life 기창업 트랙"
+        }
+      ]
+    }
+  },
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "target_profile.md",
+      "generation_mode": "rule_based_bulk_nogo"
+    }
+  }
+}

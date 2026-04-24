@@ -1,0 +1,83 @@
+{
+  "pbancSn": 177146,
+  "title": "2026 꿈터플러스 제4회 대학생 창업 아이디어 경진대회",
+  "analyzed_at": "2026-04-24T17:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.03,
+    "time_cost_hours": "45",
+    "one_liner": "부산 소재 대학생 전용 경진대회 — 기창업 법인 자격 없음"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "대학생 창업 아이디어 경진대회",
+      "body": "부산 소재 대학(원)생·휴학생 대상 창업 아이디어 경진대회. 예비창업자로 만 39세 이하 부산 소재 대학생 필수.",
+      "benefits": [
+        { "k": "상금", "v": "수상 기업 소액 상금" }
+      ],
+      "watchout": "대학생 전용 — 기창업 법인 지원 불가"
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "대학생 전용, 부산 소재 필수. 엑스컴 기창업 법인 자격 없음.",
+      "critical_gap": "대학생 자격 요건 미충족. 기창업 법인 지원 불가."
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "자격확인", "hours": "5" },
+          { "stage": "서류", "hours": "30" },
+          { "stage": "발표", "hours": "10" }
+        ],
+        "total": "45h"
+      },
+      "probability": {
+        "doc_pass": 0.0,
+        "final_given_doc_pass": 0.0,
+        "final": 0.03,
+        "basis": "자격 요건 미충족"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "지원 자격 없음"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "대학생 전용 — 기창업 법인 자격 없음",
+        "부산 소재 요건 미충족"
+      ],
+      "exception_go_conditions": []
+    },
+
+    "alternatives": {
+      "title": "대안",
+      "items": [
+        { "name": "모두의 창업 로컬트랙 (대구경북)", "deadline": "2026-05-15", "track": "와이프", "priority": "🟢", "reason": "예비창업 직접 매칭" },
+        { "name": "파주 청년창업", "deadline": "2026-05-15", "track": "와이프", "priority": "🟢", "reason": "경기 예비창업" },
+        { "name": "2026 유니콘 브릿지 with 아이티센 (경기)", "deadline": "2026-05-15", "track": "본인", "priority": "🟡", "reason": "기창업 sinhon.life" }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19"
+    }
+  }
+}

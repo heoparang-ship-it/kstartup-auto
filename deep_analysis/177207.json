@@ -1,0 +1,82 @@
+{
+  "pbancSn": 177207,
+  "title": "[MYSC] 메트라이프 Inclusion Plus 9.0 참여기업 모집 (~5/8)",
+  "analyzed_at": "2026-04-24T17:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.05,
+    "time_cost_hours": "45",
+    "one_liner": "포용금융·헬스케어 임팩트 비즈니스 전용 — sinhon.life 도메인 fit 0, 개인사업자·예비창업가 제외"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "민간 액셀러레이팅 + 투자 프로그램",
+      "body": "MYSC가 운영하는 메트라이프 임팩트 투자 프로그램. 포용 금융(일자리 창출 포함) 또는 헬스케어 솔루션 보유 임팩트 비즈니스 기업 대상. 설립 형태·업력 무관이나 개인사업자·예비창업가 제외.",
+      "benefits": [
+        { "k": "액셀러레이팅", "v": "멘토링·네트워킹·투자 연계" }
+      ],
+      "watchout": "포용금융 또는 헬스케어 도메인 필수, 직접 현금 지원 규모 미명시"
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "sinhon.life는 신혼부부 B2C 플랫폼으로 포용금융·헬스케어와 무관",
+      "critical_gap": "도메인 완전 불일치(포용금융/헬스케어 vs 신혼부부 플랫폼)"
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "자격확인 + 서류", "hours": "35" },
+          { "stage": "발표", "hours": "10" }
+        ],
+        "total": "45h"
+      },
+      "probability": {
+        "doc_pass": 0.1,
+        "final_given_doc_pass": 0.5,
+        "final": 0.05,
+        "basis": "도메인 불일치로 서류 단계 탈락 거의 확실"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "직접자금 미명시, 기댓값 사실상 0"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "포용금융·헬스케어 임팩트 비즈니스 전용, sinhon.life 도메인 fit 0",
+        "직접 현금 지원 규모 미명시 — 기댓값 산정 불가"
+      ],
+      "exception_go_conditions": []
+    },
+
+    "alternatives": {
+      "title": "대안",
+      "items": [
+        { "name": "모두의 창업 로컬트랙 (대구경북)", "deadline": "2026-05-15", "track": "와이프 — 예비창업", "priority": "🟢", "reason": "예비창업 매칭 100%" },
+        { "name": "파주 청년창업", "deadline": "2026-05-15", "track": "와이프 — 경기 백업", "priority": "🟢", "reason": "이중지원 전략 병행 가능" },
+        { "name": "2026 유니콘 브릿지 with 아이티센 (경기)", "deadline": "2026-05-15", "track": "본인/공동", "priority": "🟡", "reason": "sinhon.life 직접 지원 가능" }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19"
+    }
+  }
+}

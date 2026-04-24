@@ -1,0 +1,87 @@
+{
+  "pbancSn": 177268,
+  "title": "(대전센터) 2026년 제3회 제대군인 창업 워크숍 개최 안내",
+  "analyzed_at": "2026-04-24T17:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.0,
+    "time_cost_hours": "45",
+    "one_liner": "5년 이상 복무 제대군인 전용 교육 워크숍, 직접 자금 0 — 자격 없음"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "창업교육 (제대군인 전용)",
+      "body": "5년 이상 중·장기복무 제대(예정) 군인 또는 3년 이내 전역 취업맞춤특기병 등 대상 창업 워크숍. 대전 개최. 직접 자금 0.",
+      "benefits": [
+        { "k": "워크숍 교육", "v": "창업 역량 강화 강의" }
+      ],
+      "watchout": "제대군인 전용 자격 조건"
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "제대군인 전용 — 일반 창업자 미해당",
+      "critical_gap": "제대군인 자격 필수 + 직접 자금 0"
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "자격확인", "hours": "5" },
+          { "stage": "서류", "hours": "30" },
+          { "stage": "발표", "hours": "10" }
+        ],
+        "total": "45h"
+      },
+      "probability": {
+        "doc_pass": 0.0,
+        "final_given_doc_pass": 0.0,
+        "final": 0.0,
+        "basis": "자격 미달"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "자격 미달로 기댓값 0"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "제대군인(5년 이상 복무) 전용 자격 — 엑스컴/허파랑 해당 없음",
+        "직접 자금 0"
+      ],
+      "exception_go_conditions": []
+    },
+
+    "alternatives": {
+      "title": "대안",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "예비창업 매칭 100%"
+        }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19 + auto-memory"
+    }
+  }
+}

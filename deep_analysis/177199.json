@@ -1,0 +1,83 @@
+{
+  "pbancSn": 177199,
+  "title": "2026 K-CAMP 제주 5기 액셀러레이팅 프로그램",
+  "analyzed_at": "2026-04-24T17:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.03,
+    "time_cost_hours": "45",
+    "one_liner": "제주 소재 + 제주 주력산업(관광·바이오·에너지) 필수 — 엑스컴 인천 소재, 도메인 무관"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "지역 액셀러레이팅",
+      "body": "제주 소재 업력 6년 미만 법인 대상. 제주 주력산업(지능형관광, 청정바이오, 그린에너지, 이차전지, 수소) 아이템 필수. 투자유치·크라우드펀딩 연계 지원.",
+      "benefits": [
+        { "k": "액셀러레이팅", "v": "투자유치·IR 역량 강화" }
+      ],
+      "watchout": "제주 소재 법인 필수. 제주 주력산업 아이템 요건."
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "제주 주력산업 — sinhon.life 신혼부부 플랫폼 해당 없음.",
+      "critical_gap": "제주 소재 법인 요건 미충족, 주력산업 도메인 무관."
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "자격확인", "hours": "5" },
+          { "stage": "서류", "hours": "30" },
+          { "stage": "발표", "hours": "10" }
+        ],
+        "total": "45h"
+      },
+      "probability": {
+        "doc_pass": 0.0,
+        "final_given_doc_pass": 0.0,
+        "final": 0.03,
+        "basis": "지역·도메인 이중 미적합"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "지원 자격 없음"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "제주 소재 법인 요건 미충족",
+        "제주 주력산업 도메인 무관"
+      ],
+      "exception_go_conditions": []
+    },
+
+    "alternatives": {
+      "title": "대안",
+      "items": [
+        { "name": "모두의 창업 로컬트랙 (대구경북)", "deadline": "2026-05-15", "track": "와이프", "priority": "🟢", "reason": "예비창업 직접 매칭" },
+        { "name": "파주 청년창업", "deadline": "2026-05-15", "track": "와이프", "priority": "🟢", "reason": "경기 예비창업" },
+        { "name": "2026 유니콘 브릿지 with 아이티센 (경기)", "deadline": "2026-05-15", "track": "본인", "priority": "🟡", "reason": "기창업 sinhon.life" }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19"
+    }
+  }
+}

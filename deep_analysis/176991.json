@@ -1,0 +1,81 @@
+{
+  "pbancSn": 176991,
+  "title": "제 8회 공군 창의·혁신 아이디어 공모 해커톤 참가자 모집",
+  "analyzed_at": "2026-04-24T17:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.03,
+    "time_cost_hours": "45",
+    "one_liner": "공군 내부 AI경진대회는 장병·군무원 전용 — 엑스컴 자격 외"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "해커톤 (공군 창의아이디어 공모)",
+      "body": "자유/지정 공모는 일반인 참가 가능하나 AI경진대회는 공군 장병·군무원 전용. 국방·방산 도메인 특화.",
+      "benefits": [
+        { "k": "상금", "v": "미명시" }
+      ],
+      "watchout": "AI경진대회(핵심 트랙)는 군인 전용. 일반 트랙은 도메인 fit 없음."
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "국방·방산 — sinhon.life 완전 무관.",
+      "critical_gap": "AI경진대회 군인 전용 자격 외. 자유공모는 국방 아이디어 필요."
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "자격확인 + 서류", "hours": "45" }
+        ],
+        "total": "45h"
+      },
+      "probability": {
+        "doc_pass": 0.05,
+        "final_given_doc_pass": 0.3,
+        "final": 0.03,
+        "basis": "국방 도메인 부재, AI경진대회 자격 불충족"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "자격 외 트랙 — 실질 기댓값 0"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "AI경진대회 군인 전용 — 엑스컴 자격 외",
+        "국방/방산 도메인 완전 무관",
+        "직접자금 없는 해커톤 성격"
+      ],
+      "exception_go_conditions": []
+    },
+
+    "alternatives": {
+      "title": "대안",
+      "items": [
+        { "name": "모두의 창업 로컬트랙 (대구경북)", "deadline": "2026-05-15", "track": "와이프", "priority": "🟢", "reason": "예비창업 직접 매칭" },
+        { "name": "유니콘 브릿지 (경기)", "deadline": "2026-05-15", "track": "본인", "priority": "🟡", "reason": "sinhon.life 기창업 트랙" }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "target_profile.md@2026-04-24"
+    }
+  }
+}

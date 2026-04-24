@@ -1,0 +1,70 @@
+{
+  "pbancSn": 177246,
+  "title": "2026년 소셜 임팩트 체인저스 7기 창업기업 모집",
+  "analyzed_at": "2026-04-24T17:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.05,
+    "time_cost_hours": "45",
+    "one_liner": "대전 소셜벤처 창업기업 — 소셜임팩트 도메인 + 대전 이주 필요, sinhon.life 무관"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "시설·공간 (소셜벤처 창업기업, 대전)",
+      "body": "대전창조경제혁신센터 운영. 소셜벤처 기창업기업 대상. 대전 입주.",
+      "benefits": [
+        { "k": "소셜임팩트 체인저스 입주", "v": "대전 소재 공간 지원" }
+      ],
+      "watchout": "소셜벤처 도메인 필수 + 대전 이주"
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "소셜벤처 도메인 무관, 대전 이주 필요",
+      "critical_gap": "소셜벤처 도메인 0 + 대전 이주 + 직접자금 없음 — 자동 NO-GO"
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "자격확인 + 서류 + 발표", "hours": "45" }
+        ],
+        "total": "45h"
+      },
+      "probability": {
+        "doc_pass": 0.05,
+        "final_given_doc_pass": 0.1,
+        "final": 0.05,
+        "basis": "도메인 무관 + 지역 이주 필요"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "도메인 무관 — 기댓값 0"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "소셜벤처 도메인 무관",
+        "대전 이주 필요",
+        "직접자금 없음 — 공간만"
+      ],
+      "exception_go_conditions": []
+    },
+    "alternatives": {
+      "title": "대안",
+      "items": [
+        { "name": "모두의 창업 로컬트랙 (대구경북)", "deadline": "2026-05-15", "track": "와이프 — 예비창업", "priority": "🟢", "reason": "예창 매칭 100%" }
+      ]
+    }
+  },
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": { "recommendations_snapshot": "2026-04-24", "profile_snapshot": "target_profile.md@2026-04-24" }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "pbancSn": 177137,
+  "title": "[소싱디렉팅] D&M Boost-up 프로그램 참가 창업기업 모집",
+  "analyzed_at": "2026-04-24T17:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.05,
+    "time_cost_hours": "45",
+    "one_liner": "디자인·제조 분야 컨설팅·제품화 지원 — sinhon.life SW서비스와 무관"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "시설·공간·보육",
+      "body": "동국대학교 메이커스페이스가 기술 또는 제조 아이템 보유 기업을 선발해 디자인·제조 컨설팅, 제품화, 초도물량 생산 지원.",
+      "benefits": [
+        { "k": "직접 자금", "v": "불명 (제조 지원 서비스 위주)" }
+      ],
+      "watchout": "하드웨어·제조 아이템 보유 기업 대상."
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "sinhon.life는 SW B2C 서비스 — 제조·하드웨어 아이템 없음.",
+      "critical_gap": "제조 도메인 완전 무관 — NO-GO."
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "자격확인+서류+발표", "hours": "45" }
+        ],
+        "total": "45h"
+      },
+      "probability": {
+        "doc_pass": 0.1,
+        "final_given_doc_pass": 0.1,
+        "final": 0.05,
+        "basis": "제조 도메인 미매칭"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "도메인 미매칭 — 기댓값 0"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "제조·하드웨어 아이템 보유 기업 대상 — sinhon.life SW 서비스 무관"
+      ],
+      "exception_go_conditions": []
+    },
+
+    "alternatives": {
+      "title": "대안",
+      "items": [
+        { "name": "모두의 창업 로컬트랙 (대구경북)", "deadline": "2026-05-15", "track": "와이프 — 예비창업", "priority": "🟢", "reason": "예비창업 매칭" },
+        { "name": "파주 청년창업", "deadline": "2026-05-15", "track": "와이프 — 경기 백업", "priority": "🟢", "reason": "이중지원 병행" },
+        { "name": "2026 유니콘 브릿지 with 아이티센 (경기)", "deadline": "2026-05-15", "track": "본인/공동", "priority": "🟡", "reason": "기창업 트랙" }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19"
+    }
+  }
+}

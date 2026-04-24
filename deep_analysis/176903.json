@@ -1,0 +1,69 @@
+{
+  "pbancSn": 176903,
+  "title": "2026 기후에너지환경창업대전 (Eco+ Start-Up Challenge 2026)",
+  "analyzed_at": "2026-04-24T17:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.03,
+    "time_cost_hours": "45",
+    "one_liner": "기후·환경 창업 아이디어 공모 — 녹색산업 도메인 전용, sinhon.life 완전 무관"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "행사·공모전 (기후·환경 창업)",
+      "body": "한국환경산업기술원 주관. 녹색산업 창업 아이디어 발굴. 환경 도메인 전용.",
+      "benefits": [
+        { "k": "공모전 상금", "v": "미공개 (행사·네트워크 위주)" }
+      ],
+      "watchout": "환경/기후 도메인 아이디어 필수"
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "기후·환경 도메인 완전 무관",
+      "critical_gap": "기후·환경 도메인 0 — 자동 NO-GO"
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "자격확인 + 서류 + 발표", "hours": "45" }
+        ],
+        "total": "45h"
+      },
+      "probability": {
+        "doc_pass": 0.03,
+        "final_given_doc_pass": 0.1,
+        "final": 0.03,
+        "basis": "도메인 무관"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "도메인 무관 — 기댓값 0"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "기후·환경 도메인 완전 무관",
+        "행사·네트워크 위주 — 직접자금 불명확"
+      ],
+      "exception_go_conditions": []
+    },
+    "alternatives": {
+      "title": "대안",
+      "items": [
+        { "name": "모두의 창업 로컬트랙 (대구경북)", "deadline": "2026-05-15", "track": "와이프 — 예비창업", "priority": "🟢", "reason": "예창 매칭 100%" }
+      ]
+    }
+  },
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": { "recommendations_snapshot": "2026-04-24", "profile_snapshot": "target_profile.md@2026-04-24" }
+  }
+}

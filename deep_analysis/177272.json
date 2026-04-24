@@ -1,0 +1,81 @@
+{
+  "pbancSn": 177272,
+  "title": "2026년 세종시설관리공단 거브테크 오픈이노베이션 참여 스타트업 모집공고",
+  "analyzed_at": "2026-04-24T17:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.05,
+    "time_cost_hours": "45",
+    "one_liner": "세종시 이전 필수 + B2G 공공문제해결 PoC — sinhon.life 도메인 무관, 세종 이전 요건"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "CVC형 OI (공공기관 문제해결 PoC)",
+      "body": "세종창조경제혁신센터 × 세종시설관리공단. 관외기업은 협약 종료 전 세종시 본점·지사·연구소 이전 필수. 공공시설 관리 문제해결 PoC 위주.",
+      "benefits": [
+        { "k": "PoC 지원금", "v": "과제별 상이 (공고문 미기재)" }
+      ],
+      "watchout": "세종시 이전 필수, B2G 공공문제해결 레퍼런스 필요"
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "세종시설관리공단 과제는 공공시설·인프라 관리 도메인 — sinhon.life 신혼부부 B2C와 무관",
+      "critical_gap": "세종 이전 필수 + 공공시설 도메인 무관 — 이중 자격 미충족"
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "자격확인 + 서류 + 발표", "hours": "45" }
+        ],
+        "total": "45h"
+      },
+      "probability": {
+        "doc_pass": 0.05,
+        "final_given_doc_pass": 0.1,
+        "final": 0.05,
+        "basis": "세종 이전 조건 + 도메인 무관으로 사실상 접수 무의미"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "세종 이전 불가 — 기댓값 0원"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "관외기업 세종시 이전 필수 — 엑스컴 인천 소재",
+        "공공시설 관리 B2G 도메인, sinhon.life 무관"
+      ],
+      "exception_go_conditions": []
+    },
+
+    "alternatives": {
+      "title": "대안",
+      "items": [
+        { "name": "모두의 창업 로컬트랙 (대구경북)", "deadline": "2026-05-15", "track": "와이프 — 예비창업", "priority": "🟢", "reason": "예비창업 매칭 100%" },
+        { "name": "파주 청년창업", "deadline": "2026-05-15", "track": "와이프 — 경기 백업", "priority": "🟢", "reason": "이중지원 전략상 병행 가능" },
+        { "name": "2026 유니콘 브릿지 with 아이티센 (경기)", "deadline": "2026-05-15", "track": "본인/공동", "priority": "🟡", "reason": "sinhon.life 직접 지원 가능" }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "sinhon-life/CLAUDE.md@2026-04-19 + auto-memory"
+    }
+  }
+}

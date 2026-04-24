@@ -1,0 +1,106 @@
+{
+  "pbancSn": "176968",
+  "title": "2026년 K-Global 해외진출 지원사업 참여기업 모집 공고",
+  "analyzed_at": "2026-04-24T17:30:00+09:00",
+  "analyzer": "rule-based@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life + 엑스컴 + 와이프 트랙",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "medium",
+    "expected_pass_rate": 0.05,
+    "time_cost_hours": "40-60",
+    "one_liner": "🟠 규칙 기반 NO-GO — 업력: 단계 불일치 (IPO) · 창업 단계: 단계 불일치 (IPO) · 매칭 키워드: 검토 매칭 (전국/글로벌)"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "tier orange (자동 분류)",
+      "body": "대상: ㅇ 기술 분야 : ICT, 디지털 분야 제품·서비스 보유 기업\r\nㅇ 제품 및 서비스가 국내외 시장에 출시 및 영업활동(홍보, 광고, 판매) 중인 기업\r\nㅇ 해외진출이 준비된 기업 (아래 1개 이상)\r\n① 해외 IP 보유(특허, PCT, 상표 등)\r\n② 해외 전시회·컨퍼런스 참여 경험 보유\r\n③ 해외 현지 법인 설립증 보유\r\n④ 수출 실적 보유\r\n⑤ 해외 파트너사와 MOU, NDA 등 계약 체결 보유\r\nㅇ 기업공개(IPO) 전 단계의 비상장 및 국내 또는 국외 법인사업자 · 제외: ① 상기 ",
+      "benefits": [],
+      "watchout": ""
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "classify_evidence 요약: 검토 매칭 (전국/글로벌)",
+      "critical_gap": "업력: 단계 불일치 (IPO) · 창업 단계: 단계 불일치 (IPO) · 매칭 키워드: 검토 매칭 (전국/글로벌)"
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "자격 확인",
+            "hours": "5"
+          },
+          {
+            "stage": "서류 작성",
+            "hours": "30"
+          },
+          {
+            "stage": "발표·인터뷰",
+            "hours": "10"
+          }
+        ],
+        "total": "45h"
+      },
+      "probability": {
+        "doc_pass": 0.15,
+        "final_given_doc_pass": 0.3,
+        "final": 0.05,
+        "basis": "🟠 classify — 도메인·자격 자동 불일치 판정 기반 보수 추정"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "자격·도메인 매칭 미달로 실질 기댓값 거의 0원"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "업력: 단계 불일치 (IPO)",
+        "창업 단계: 단계 불일치 (IPO)",
+        "매칭 키워드: 검토 매칭 (전국/글로벌)"
+      ],
+      "exception_go_conditions": [
+        "공고문 원문 재확인 후 숨은 매칭 포인트 발견 시 재검토",
+        "춘기 공백기 5/15 마감 3건 모두 마감 후 차선책으로 검토"
+      ]
+    },
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙(대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프",
+          "priority": "🟢",
+          "reason": "예비창업 매칭 100%, 춘기 공백기 핵심 카드"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프",
+          "priority": "🟢",
+          "reason": "경기 예창 백업, 이중지원 전략 가능"
+        },
+        {
+          "name": "2026 유니콘 브릿지(경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동",
+          "priority": "🟡",
+          "reason": "sinhon.life 기창업 트랙"
+        }
+      ]
+    }
+  },
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "target_profile.md",
+      "generation_mode": "rule_based_bulk_nogo"
+    }
+  }
+}

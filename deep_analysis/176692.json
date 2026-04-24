@@ -1,0 +1,80 @@
+{
+  "pbancSn": 176692,
+  "title": "2026년 사이즈코리아 데이터 활용 컨설팅 지원사업 수요기업 모집",
+  "analyzed_at": "2026-04-24T17:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인) + 와이프(예창 대구경북/경기 병행)",
+
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.03,
+    "time_cost_hours": "45",
+    "one_liner": "한국인 인체치수 데이터 컨설팅 — 신체계측/로봇/의류 도메인, sinhon.life 완전 무관"
+  },
+
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "멘토링·컨설팅·교육 (인체치수 데이터)",
+      "body": "한국인 인체치수(사이즈코리아) 데이터 활용 컨설팅. 로봇·AI·IT 우대지만 인체치수 활용 제품/서비스 전제.",
+      "benefits": [
+        { "k": "데이터 컨설팅", "v": "무상 제공" }
+      ],
+      "watchout": "인체치수 데이터 활용 목적 서비스 전제. 직접자금 없음."
+    },
+
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "sinhon.life는 신혼부부 정보 서비스 — 인체치수 데이터 활용 BM 없음.",
+      "critical_gap": "인체치수 데이터 활용 BM 미보유. 직접자금 0."
+    },
+
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          { "stage": "자격확인 + 서류", "hours": "45" }
+        ],
+        "total": "45h"
+      },
+      "probability": {
+        "doc_pass": 0.05,
+        "final_given_doc_pass": 0.3,
+        "final": 0.03,
+        "basis": "도메인 완전 무관"
+      },
+      "expected_value_krw": 0,
+      "expected_value_label": "직접자금 0"
+    },
+
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "인체치수 데이터 활용 BM 없음",
+        "직접자금 0 — 컨설팅만",
+        "sinhon.life 완전 무관 도메인"
+      ],
+      "exception_go_conditions": []
+    },
+
+    "alternatives": {
+      "title": "대안",
+      "items": [
+        { "name": "모두의 창업 로컬트랙 (대구경북)", "deadline": "2026-05-15", "track": "와이프", "priority": "🟢", "reason": "예비창업 직접 매칭" }
+      ]
+    }
+  },
+
+  "_meta": {
+    "cycle_phase": "spring_gap",
+    "generated_from": {
+      "recommendations_snapshot": "2026-04-24",
+      "profile_snapshot": "target_profile.md@2026-04-24"
+    }
+  }
+}
