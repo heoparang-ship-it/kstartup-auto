@@ -1,0 +1,72 @@
+{
+  "id": "bizinfo_PBLN_000000000120583",
+  "title": "2026년 해외 온라인몰 입점 지원사업 모집 공고",
+  "analyzed_at": "2026-04-25T00:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북)",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.04,
+    "time_cost_hours": 3,
+    "one_liner": "장애인기업 온라인 수출지원, 자격요건 불충족"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "수출 지원 (장애인기업 특화)",
+      "body": "장애인기업종합지원센터가 주관하는 해외 온라인몰(Amazon, Alibaba 등) 입점 지원사업. 장애인기업 또는 장애인 대표자 기업을 우선 지원 대상으로 하며, 해외 온라인몰 입점 컨설팅·수수료·광고비 등을 지원함. best_entity가 younglim_daegu(대구)이나 장애인기업 자격 요건이 핵심 걸림돌.",
+      "benefits": [
+        {"k": "입점비 지원", "v": "해외 온라인몰 입점 관련 수수료 지원"},
+        {"k": "컨설팅", "v": "상품 등록·마케팅 컨설팅 제공"},
+        {"k": "교육", "v": "글로벌 e커머스 역량 강화 교육"}
+      ],
+      "watchout": "장애인기업 인증 또는 장애인 대표자 요건이 필수일 가능성 높음. 일반 스타트업 지원 어려움."
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [
+        {"task": "B2C 플랫폼 운영", "fit": "🟡", "reason": "온라인 채널 운영 경험은 있으나 수출 제품 없음"},
+        {"task": "대구 지역 소재", "fit": "🟡", "reason": "이영림 대구 기반이나 장애인기업 자격 미보유"}
+      ],
+      "mismatch_note": "장애인기업 자격 없음. SW 서비스 플랫폼은 해외 온라인몰 입점 대상 상품이 아님.",
+      "critical_gap": "장애인기업 자격 요건 미충족, 수출 가능 물리적 상품 없음"
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {"stage": "자격확인", "hours": "2"},
+          {"stage": "서류검토", "hours": "1"}
+        ],
+        "total": "3h"
+      },
+      "probability": {
+        "doc_pass": 0.04,
+        "final_given_doc_pass": 0.1,
+        "final": 0.004,
+        "basis": "장애인기업 자격 요건 미충족으로 신청 자체가 불가"
+      },
+      "expected_value_label": "자격 불충족으로 진행 불가"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "장애인기업종합지원센터 주관으로 장애인기업 자격 필요",
+        "SW 플랫폼 서비스는 해외 온라인몰 입점 상품이 아님",
+        "수출 가능한 물리적 제품군 없음"
+      ],
+      "exception_go_conditions": [],
+      "alternatives": []
+    },
+    "alternatives": {
+      "title": "대안 공고",
+      "items": [
+        {"title": "KOTRA 일반 수출지원 프로그램", "reason": "장애인기업 제한 없는 KOTRA 수출바우처 등이 더 적합"}
+      ]
+    }
+  }
+}

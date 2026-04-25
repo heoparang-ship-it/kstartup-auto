@@ -1,0 +1,69 @@
+{
+  "id": "bizinfo_PBLN_000000000121066",
+  "title": "2026년 프랑스 파리 광학 전시회 (SILMO) 한국관 참가기업 모집 공고",
+  "analyzed_at": "2026-04-25T00:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북)",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.01,
+    "time_cost_hours": "2",
+    "one_liner": "파리 광학 전시회, 안경/광학기기 업종 전용"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "해외 전시회 한국관 참가 지원",
+      "body": "산업통상자원부·KOTRA가 운영하는 프랑스 파리 SILMO 광학 전시회 한국관 참가 지원 사업. SILMO는 세계 최대 광학·안경·안과기기 전문 전시회로, 안경·콘택트렌즈·광학기기·아이웨어 제품 보유 기업이 대상.",
+      "benefits": [
+        {"k": "지원 형태", "v": "전시 부스 임차비 일부 보조"},
+        {"k": "지원 내용", "v": "파리 현지 한국관 부스, 바이어 매칭"},
+        {"k": "기대 효과", "v": "유럽 광학 시장 바이어 발굴"}
+      ],
+      "watchout": "광학·안경·아이웨어 실물 제품 보유 필수. 디지털 서비스 기업은 전시 대상 아님."
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "광학기기·안경 제품이 없는 SW 팀. 업종 완전 미스매치.",
+      "critical_gap": "광학·안경·아이웨어 실물 제품 없음"
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {"stage": "자격 확인", "hours": "1"},
+          {"stage": "판단", "hours": "1"}
+        ],
+        "total": "2h"
+      },
+      "probability": {
+        "doc_pass": 0.01,
+        "final_given_doc_pass": 0.01,
+        "final": 0.01,
+        "basis": "광학 제품 없는 팀 → 신청 의미 없음"
+      },
+      "expected_value_label": "투입 2h 대비 기대가치 없음"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "광학·안경·아이웨어 전문 전시회로 업종 완전 미스매치",
+        "디지털 플랫폼 서비스는 전시 대상 아님",
+        "파리 출장 비용 발생 대비 실익 전무"
+      ],
+      "exception_go_conditions": []
+    },
+    "alternatives": {
+      "title": "대안 공고",
+      "items": [
+        "싱가포르 K-콘텐츠 IP 파트너십 데이 (bizinfo_PBLN_000000000121252) - 디지털 IP 해외 진출",
+        "AX 원스톱 바우처 (bizinfo_PBLN_000000000120085) - AI SW 직접 지원"
+      ]
+    }
+  }
+}

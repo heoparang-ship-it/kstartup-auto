@@ -1,0 +1,97 @@
+{
+  "id": "bizinfo_PBLN_000000000119852",
+  "title": "[경북] 2026년 로케이션 제작지원 사업 공고",
+  "analyzed_at": "2026-04-25T00:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북)",
+  "verdict": {
+    "decision": "CONDITIONAL-GO",
+    "confidence": "medium",
+    "expected_pass_rate": 0.28,
+    "time_cost_hours": "12",
+    "one_liner": "경북 로케이션 제작지원 — 이영림 콘텐츠 트랙 적합"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "지역 영상콘텐츠 로케이션 제작비 지원",
+      "body": "경북문화재단 콘텐츠진흥원 주관. 경북 지역을 배경으로 한 영상 콘텐츠 제작 시 로케이션 비용 지원.",
+      "benefits": [
+        {
+          "k": "로케이션 비용 지원",
+          "v": "경북 내 촬영 장소 섭외·이용 비용 지원"
+        },
+        {
+          "k": "제작 지원",
+          "v": "경북 기반 콘텐츠 홍보 연계"
+        }
+      ],
+      "watchout": "경북 내 실제 촬영 계획이어야 함. 단순 디지털 콘텐츠 제작은 해당 안 될 수 있음."
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [
+        {
+          "task": "유튜브·영상 콘텐츠 제작",
+          "fit": "🟢",
+          "reason": "허파랑 유튜브 크리에이터 + 이영림 경북 트랙으로 콘텐츠 제작 지원 직접 활용 가능"
+        }
+      ],
+      "tech_adjacent": [
+        {
+          "task": "sinhon.life 브랜드 영상 제작",
+          "fit": "🟡",
+          "reason": "신혼부부 관련 경북 관광·라이프스타일 콘텐츠와 시너지"
+        }
+      ],
+      "mismatch_note": "경북 지역 로케이션 조건. 이영림 명의 또는 경북 기반 활동이어야 함.",
+      "critical_gap": "경북 소재 제작사 또는 경북 촬영 콘텐츠 계획 필요. 이영림 경북 트랙 기준 충족 가능."
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "자격확인",
+            "hours": "2"
+          },
+          {
+            "stage": "서류작성",
+            "hours": "10"
+          }
+        ],
+        "total": "12h"
+      },
+      "probability": {
+        "doc_pass": 0.55,
+        "final_given_doc_pass": 0.5,
+        "final": 0.28,
+        "basis": "유튜브 크리에이터 강점 + 이영림 경북 트랙 조합으로 조건부 지원 가능."
+      },
+      "expected_value_label": "로케이션 비용 수백만원 지원 기대"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "CONDITIONAL-GO",
+      "reasons": [
+        "경상북도 내 영상·콘텐츠 제작을 위한 로케이션 비용 지원",
+        "이영림(대구경북 트랙) + 허파랑 유튜브 크리에이터 강점과 연결",
+        "sinhon.life 관련 영상 콘텐츠 경북 지역 제작 시 직접 활용 가능"
+      ],
+      "exception_go_conditions": [
+        "이영림 명의 경북 기반 영상 콘텐츠(신혼여행/라이프스타일 등) 제작 계획 수립 시"
+      ]
+    },
+    "alternatives": {
+      "title": "대안 공고",
+      "items": [
+        {
+          "id": "bizinfo_PBLN_000000000121103",
+          "title": "경주시 온라인 플랫폼 판로지원",
+          "reason": "이영림 경북 트랙 콘텐츠 판로 연계 가능"
+        }
+      ]
+    }
+  }
+}

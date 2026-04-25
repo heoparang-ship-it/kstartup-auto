@@ -1,0 +1,98 @@
+{
+  "id": "bizinfo_PBLN_000000000119777",
+  "title": "2026년 전통문화 크라우드 펀딩 연계 지원 사업 참여기업 모집 공고",
+  "analyzed_at": "2026-04-25T00:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북)",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "medium",
+    "expected_pass_rate": 0.08,
+    "time_cost_hours": "5",
+    "one_liner": "전통문화 크라우드펀딩 연계 지원"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "크라우드펀딩 연계 지원 (전통문화 특화)",
+      "body": "문화체육관광부·한국공예디자인문화진흥원이 운영하는 전통문화 관련 기업의 크라우드펀딩 프로젝트를 연계 지원하는 사업. 전통공예, 전통디자인, 한복, 도자기 등 전통문화 산업 기업이 크라우드펀딩을 통해 초기 자금을 조달할 수 있도록 지원.",
+      "benefits": [
+        {
+          "k": "지원내용",
+          "v": "크라우드펀딩 컨설팅, 플랫폼 수수료 지원"
+        },
+        {
+          "k": "주관기관",
+          "v": "한국공예디자인문화진흥원"
+        },
+        {
+          "k": "대상",
+          "v": "전통문화 관련 기업·공방"
+        }
+      ],
+      "watchout": "전통문화(공예·디자인·한복 등) 분야 기업 전용. SW 플랫폼 서비스 해당 없음."
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [
+        {
+          "task": "전통문화 관련 사업",
+          "fit": "🔴",
+          "reason": "sinhon.life는 신혼부부 AI 플랫폼으로 전통문화와 무관"
+        }
+      ],
+      "tech_adjacent": [
+        {
+          "task": "전통 혼례·한복 연계",
+          "fit": "🟡",
+          "reason": "신혼부부 플랫폼에 한복·전통혼례 콘텐츠 포함 시 매우 약한 연결점 가능"
+        }
+      ],
+      "mismatch_note": "전통공예·문화 분야 특화 사업으로 디지털 플랫폼 서비스와 거리 있음.",
+      "critical_gap": "전통문화 관련 제품·서비스 없음."
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "자격확인",
+            "hours": "3"
+          },
+          {
+            "stage": "적합성 검토",
+            "hours": "2"
+          }
+        ],
+        "total": "5h"
+      },
+      "probability": {
+        "doc_pass": 0.12,
+        "final_given_doc_pass": 0.2,
+        "final": 0.08,
+        "basis": "전통문화 특화 사업으로 SW 플랫폼 적합성 낮음"
+      },
+      "expected_value_label": "낮음 - 핵심 분야 불일치"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "전통문화(공예·한복·도자기 등) 특화 사업",
+        "SW/AI 디지털 플랫폼과 분야 불일치",
+        "신혼부부 서비스에 전통문화 요소가 없음"
+      ],
+      "exception_go_conditions": [
+        "sinhon.life에 전통혼례·한복 큐레이션 서비스 모듈 추가 시 약한 연결 가능 (권장하지 않음)"
+      ]
+    },
+    "alternatives": {
+      "title": "대안 공고",
+      "items": [
+        "문화콘텐츠 스타트업 지원 (KOCCA)",
+        "중기부 크라우드펀딩 연계 지원"
+      ]
+    }
+  }
+}

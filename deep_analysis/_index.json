@@ -1,2288 +1,3511 @@
 {
-  "generated_at": "2026-04-24T13:20:02.913849+09:00",
-  "total": 326,
-  "verdicts": {
-    "177127": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "부산 소재 BI 입주 — 엑스컴 인천 소재, 이전 실익 없음",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177297": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "유럽 글로벌 세미나·밋업 — 직접자금 0, 네트워킹·홍보만",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "176811": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "행사·네트워킹 IR피칭, 직접 자금 0 — 자원 투입 대비 ROI 없음",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177114": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "경남 도민 예비창업자 전용 — 와이프 경기·대구경북 트랙, 경남 거주 미해당",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "176833": {
+  "schema_version": 2,
+  "last_updated": "2026-04-25",
+  "total": 438,
+  "entries": [
+    {
+      "id": "165441",
+      "title": "[입주기업 모집]안산대학교 창업보육센터 입주기업 모집 공고",
       "decision": "NO-GO",
       "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 지자체 기관 의심 (재단법인 접두사: (재)화성산업진흥원) · 공고 성격: 성격 불일치 (벤처인증) · 지역 키워드: 지자체 기관 의심 (재단법인 접두사: (재)화성산업진흥원)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
     },
-    "177240": {
+    {
+      "id": "171419",
+      "title": "[Startup Korea Special Visa] Announcement on Application for Recommendations for the \"Startup Korea Special Visa\"",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "전북 소재 필수 — 엑스컴 인천 소재, 이전 의무 조건 NO-GO",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "176759": {
+    {
+      "id": "173061",
+      "title": "2025년 딥테크 챌린지 프로젝트(DCP) 지원계획 공고",
       "decision": "NO-GO",
       "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 서울 시설/지자체 (서울 소재) · 지역 키워드: 서울 시설/지자체 (서울 소재) · 매칭 키워드: 검토 매칭 (액셀러레이팅)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
     },
-    "177004": {
+    {
+      "id": "173424",
+      "title": "바이오 협력, 지금 시작하세요 – 'BioLink Starup Hub'에서 필요한 기술을 찾고, 가진 기술을 연결하세요!",
       "decision": "NO-GO",
       "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 지자체 기관 의심 (재단법인 접두사: (재)경기콘텐츠진흥원) · 지역 키워드: 지자체 기관 의심 (재단법인 접두사: (재)경기콘텐츠진흥원) · 매칭 키워드: 검토 매칭 (콘텐츠)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
     },
-    "176685": {
+    {
+      "id": "175366",
+      "title": "SK하이닉스청년창업파크 입주기업 모집(상시모집)",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "전북 게임콘텐츠 전용 입주 — sinhon.life 신혼 플랫폼과 도메인 무관, 전북 이전 의향 없음",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "176903": {
+    {
+      "id": "175783",
+      "title": "2026년 중앙부처 및 지자체 창업지원사업 통합공고",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "기후·환경 창업 아이디어 공모 — 녹색산업 도메인 전용, sinhon.life 완전 무관",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "177259": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "대전 이주 필수 공간 지원 — 엑스컴 인천 소재, 이전 실익 없음",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177138": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "경기 북부 특화 콘텐츠 제작 공급기업 — 엑스컴 인천 소재, 경기 북부 특화 콘텐츠 레퍼런스 0",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177202": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.04,
-      "one_liner": "CJ제일제당 식품·바이오 협업 OI — 신혼부부 B2C 플랫폼과 도메인 fit 0, 食 레퍼런스 없이 현업팀 평가 통과 불가",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
-    },
-    "176947": {
+    {
+      "id": "175808",
+      "title": "2026 위치정보(위치기반) 사업자를 위한 클라우드 지원사업 모집",
       "decision": "NO-GO",
       "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 지자체 기관 의심 (창업보육센터: 협성대학교 창업보육센터) · 지역 키워드: 지자체 기관 의심 (창업보육센터: 협성대학교 창업보육센터) · 매칭 키워드: 3순위 (참고용): 지자체 기관 의심 (창업보육센터: 협성대학교 창업보육센터)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
     },
-    "177129": {
+    {
+      "id": "175817",
+      "title": "[2026 창업지원사업 통합공고 요약본, 챗봇 제공] 지원사업 준비를 AI와 함께 하는 방법",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "울산창조경제혁신센터 주관 일본 진출 — 울산 기반 기업 우선, sinhon.life 일본 진출 플랜 없음",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "176938": {
+    {
+      "id": "175833",
+      "title": "청주산단 스타트업센터 입주자 모집공고(2차)",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "175849",
+      "title": "대구 동성로 1인 창조기업 지원센터 입주기업 모집",
+      "decision": "NO-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
+    },
+    {
+      "id": "175907",
+      "title": "뉴패러다임인베스트먼트 2026년 상반기 아기유니콘 성장 프로그램 기업모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "175949",
+      "title": "2026년 지역창업특화지원사업(김해시 1인창조) 상반기 입주(자)기업 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "175975",
+      "title": "2026년 김해시중장년기술창업센터 상반기 신규 입주(자)기업 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "176073",
+      "title": "가죽패션 소공인 장비 임대지원사업",
+      "decision": "NO-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
+    },
+    {
+      "id": "176076",
+      "title": "2026년 팁스(TIPS) 창업기업 지원계획 수정 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "176085",
+      "title": "[성남 식품제조 소공인특화지원센터] 촬영스튜디오 대관 및 사용자 모집",
+      "decision": "NO-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
+    },
+    {
+      "id": "176090",
+      "title": "2026년 용산구 청년기업 융자지원사업",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "176129",
+      "title": "2026년 기업인력애로센터 활용 취업지원 사업 구인기업 및 구직자 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "176179",
+      "title": "2026 전략기술 딥테크 창업 촉진 참여기업 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "176190",
+      "title": "[성남산업진흥원] 2026년 창업기업 상시 멘토링 참여자(멘티)  모집",
+      "decision": "NO-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
+    },
+    {
+      "id": "176207",
+      "title": "퀄컴 AI 이노베이터 프로그램 - Qualcomm AI Program for Innovators (QAIPI) 2026 - APAC",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "176208",
+      "title": "2026 신개념 세대융합 청년창업 지원 멘티 상시 모집",
       "decision": "CONDITIONAL-GO",
       "confidence": "medium",
-      "expected_pass_rate": 0.25,
-      "one_liner": "중기부 법률 무료 자문 바우처 — sinhon.life 서비스 약관·개인정보처리방침·계약서 법률 리스크 실제로 있으면 즉시 활용 가치",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "177330": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "소상공인 설명회 — 행사·네트워킹만, 직접 자금 0",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177217": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "핀테크·스테이블코인 AML 교육 — 직접 자금 0, 금융 도메인 무관",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177305": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "Blender 3D 교육 프로그램 — 직접 자금 0, 교육만",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177079": {
+    {
+      "id": "176218",
+      "title": "[충남]  2026년 IP디딤돌프로그램   아이디어 권리화 지원사업 모집 공고",
       "decision": "NO-GO",
       "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 업종: 업종 한정 (의료)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
     },
-    "177316": {
-      "decision": "CONDITIONAL-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.12,
-      "one_liner": "서대문구 청년벤처 육성 — sinhon.life AI 플랫폼 fit 🟡, TIPS 연계 경로 있으나 대표자 나이 39세 이하 확인 및 서울 접근성 전제 필요",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
-    },
-    "177133": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "충남 인구감소지역 소재 조건 필수 — 네트워킹만, 직접자금 0",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177269": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "Seed~Pre-A 미국 진출 프로그램 — 엑스컴 6개월차 투자 트랙션 없음, 직접자금 0",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177178": {
-      "decision": "CONDITIONAL-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.1,
-      "one_liner": "중기부 AI리그 경진대회, 3년 미만 전국 — sinhon.life AI/RAG 기술 fit 🟡, 상금 규모 확인 후 재검토",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177254": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "폐업 이력 보유자 전용 재창업 지원 — 엑스컴 현재 운영 중, 자격 미충족",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177152": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.1,
-      "one_liner": "구미 소재·이전 필수 제작센터 입주 — 인천 기반 SW 법인의 물리적 이전 비용이 혜택을 초과",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
-    },
-    "177051": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "울산 지역 AI공급기업 컨소시엄 필수 — 엑스컴 울산 소재 아님, 컨소시엄 파트너 無",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "176085": {
+    {
+      "id": "176224",
+      "title": "[경기경영자총협회] 26년 청년일자리도약장려금 사업 참여 기업 모집 안내",
       "decision": "NO-GO",
       "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 지자체 기관 의심 (지역진흥원: 성남산업진흥원) · 지원 제외 대상: 제외대상 명시 (휴·폐업) · 업종: 업종 한정 (식품)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
     },
-    "176961": {
+    {
+      "id": "176248",
+      "title": "2026년 IP디딤돌 프로그램 지원대상 모집 공고",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "경기 ICT 제조 시제품 — 하드웨어/제조 도메인, sinhon.life SW 전용 무관",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "176739": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "서울 본사 소재 7년 미만 기업 공공기술이전 — 엑스컴 인천 본사로 자격 미달",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177308": {
+    {
+      "id": "176286",
+      "title": "민간기업 분야 우수인재 특별귀화 추천 신청 모집 공고  (Announcement on the Call for Applications for  Recommendation for Special Naturalization of Outstanding  Private-Sector Talent)",
       "decision": "NO-GO",
       "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 지자체 기관 의심 (재단법인 접두사: (재)성동벤처밸리) · 지역 키워드: 지자체 기관 의심 (재단법인 접두사: (재)성동벤처밸리) · 매칭 키워드: 3순위 (참고용): 지자체 기관 의심 (재단법인 접두사: (재)성동벤처밸리)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
     },
-    "176997": {
+    {
+      "id": "176296",
+      "title": "[인천지식재산센터] IP디딤돌 아이디어 권리화 지원사업 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "176313",
+      "title": "2026년 창업·벤처 녹색융합클러스터 그린아이디어랩 상주오피스 이용자 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "176316",
+      "title": "2026년 창업·벤처 녹색융합클러스터 그린아이디어랩 비상주오피스 이용자 모집",
       "decision": "NO-GO",
       "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "대기업 7곳 OI 행사·네트워크 — 직접자금 불명확, sinhon.life 연관 과제 미확인",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
     },
-    "177224": {
-      "decision": "CONDITIONAL-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.08,
-      "one_liner": "신보 보증 연계 + 액셀러레이터 협업 육성 플랫폼 — 혁신성장 SW/AI 적격, 직접현금 아닌 보증 자금 연계가 실질 혜택, 제외 조건 충족 여부 사전 확인 필수",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
-    },
-    "176945": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "서울 소재 7년 미만 + 웨스트버지니아 현지 거점(공장/R&D) 설립 필수 — 실질 이주 요건, 수용 불가",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "176991": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "공군 내부 AI경진대회는 장병·군무원 전용 — 엑스컴 자격 외",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177290": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "경기도 AI 혁신클러스터 입주 지원 — 직접 현금 지원 0, 시설/공간 제공만, 경기도 소재 이전 필요",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "173424": {
+    {
+      "id": "176378",
+      "title": "2026 대경권 엔젤투자 포럼 참여기업 모집 상시 공고",
       "decision": "NO-GO",
       "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 지자체 기관 의심 (재단법인 접두사: (재)충북창조경제혁신센터) · 업종: 업종 한정 (바이오) · 지역 키워드: 지자체 기관 의심 (재단법인 접두사: (재)충북창조경제혁신센터)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
     },
-    "177272": {
+    {
+      "id": "176391",
+      "title": "창업지원사업 예비위원단 재모집 (신산업분야)",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "세종시 이전 필수 + B2G 공공문제해결 PoC — sinhon.life 도메인 무관, 세종 이전 요건",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "177064": {
+    {
+      "id": "176393",
+      "title": "취ㆍ창업 상담창구 참여자 모집",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "광주 기술기반 예비창업가 전용 — 엑스컴 기창업 법인, 광주 소재 아님",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "176536": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "해양수산 도메인 전용 + 부산 이주 필수 + 기창업자 제외 — 엑스컴 자격 없음",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "176940": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "소상공인 전용 프로그램 — 엑스컴은 SW개발 법인(소상공인 아님), 업력 1년미만 제외 조건 적용 불가 구조",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
-    },
-    "177220": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "울산대학교 재학생·교원·졸업 2년 이내 한정 — 엑스컴 자격 없음",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177267": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "의왕시 창업 설명회 — 멘토링·교육만, 직접 자금 0",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177321": {
+    {
+      "id": "176406",
+      "title": "2026 대경권 엔젤투자 피칭룸 참여기업 모집 공고",
       "decision": "NO-GO",
       "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 지자체 기관 의심 (재단법인 접두사: (재)경남창조경제혁신센터 대표이사) · 지역 키워드: 지자체 기관 의심 (재단법인 접두사: (재)경남창조경제혁신센터 대표이사)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
     },
-    "177160": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "기술임치 이력 필수 + 핵심기술 보유 조건 — 엑스컴 임치 미보유, 교육만",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177245": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "양자컴퓨팅 예비창업 전용 — 도메인 완전 무관, 기창업 법인 지원 불가",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177095": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "오늘(2026-04-24) 마감 + 직접 자금 없는 네트워킹 행사 — 직접 현금 0, 자동 NO-GO",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
-    },
-    "177203": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "고양시 소재 법인 필수 — 엑스컴 본점 인천 부평, 지역 자격 미충족",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177180": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "여성 발명 특허 보유자 전용 박람회 — 엑스컴/허파랑 자격 미충족, 직접자금 0, 하드웨어·발명품 도메인 무관",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
-    },
-    "176653": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.8,
-      "one_liner": "유튜브 인터뷰 노출 기회 — 직접자금 0, 네트워킹·홍보만, ROI 기준 자동 NO-GO",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
-    },
-    "177073": {
+    {
+      "id": "176442",
+      "title": "2026년 3D프린팅 전문기술 활용지원 사업",
       "decision": "NO-GO",
       "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 지자체 기관 의심 (재단법인 접두사: (재)대구창조경제혁신센터 대표이사) · 지역 키워드: 지자체 기관 의심 (재단법인 접두사: (재)대구창조경제혁신센터 대표이사) · 매칭 키워드: 검토 매칭 (IR)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
     },
-    "176737": {
+    {
+      "id": "176494",
+      "title": "경기 스타트업 지원센터 일반상담 모집",
       "decision": "NO-GO",
       "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 경기 시 기관 (화성 in agency) · 지역 키워드: 경기 시 기관 (화성 in agency) · 매칭 키워드: 검토 매칭 (전국/창업교육)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
     },
-    "177247": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.0,
-      "one_liner": "광진구 소재 기업 전용 컨설팅 — 엑스컴(인천) 자격 없음",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177000": {
+    {
+      "id": "176497",
+      "title": "『글로벌 교류·투자유치 지원사업』2026년 자율형 프로그램 참가 기업 모집",
       "decision": "NO-GO",
       "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "충남창조경제혁신센터 배치프로그램 — 충남 이주 압력 + 직접자금 불명확 + 춘기 우선순위 하위",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
     },
-    "177039": {
+    {
+      "id": "176520",
+      "title": "기술자료 임치 지원사업 1차 참여기업 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "176536",
+      "title": "2026년 해양수산 비즈니스그라운드(아이디어랩, 예비창업자 선발) 참여기업 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "176563",
+      "title": "2026년 부산AI실증지원센터 고성능 컴퓨터 이용 지원사업 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "176566",
+      "title": "한남대학교 캠퍼스혁신파크 산학연혁신허브 입점자 모집 공고(상시)",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "176645",
+      "title": "[신규설립] 2026년 DNA 융합 제품·서비스 해외진출 지원 사업 참여기업 모집선발 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "176653",
+      "title": "[무료/초기 창업자 집중] 메타코드M 유튜브 채널 AI 스타트업 인터뷰 참여자 모집합니다",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "176685",
+      "title": "2026년 전북글로벌게임센터 입주기업 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "176692",
+      "title": "2026년 사이즈코리아 데이터 활용 컨설팅 지원사업 수요기업 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "176703",
+      "title": "청주미래누리터 지식산업센터 입주기업 모집",
       "decision": "NO-GO",
       "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 서울 구 단독 (강북구) · 지역 키워드: 서울 구 단독 (강북구) · 매칭 키워드: 검토 매칭 (청년창업)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
     },
-    "177166": {
-      "decision": "CONDITIONAL-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.1,
-      "one_liner": "AI 스타트업 한국예선 — sinhon.life RAG·에이전트가 AI 기술 조건 직접 충족, 단 직접 자금 0·경진대회 성격으로 ROI는 '중국 진출 계획' 있을 때만 양수",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
-    },
-    "177291": {
+    {
+      "id": "176707",
+      "title": "2026년 경북 스타트업 투자매칭 지원사업 참여기업 모집",
       "decision": "NO-GO",
       "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 기관 지역 한정 (agency: 충북지식재산센터장) · 지역 키워드: 기관 지역 한정 (agency: 충북지식재산센터장) · 매칭 키워드: 검토 매칭 (IP 디딤돌)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
     },
-    "177304": {
-      "decision": "CONDITIONAL-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.08,
-      "one_liner": "KIPRIS 특허·지재 공공데이터 활용 아이디어 경진대회 — sinhon.life 신혼 정책 매칭에 특허 데이터 접목 시 스토리 성립, 프로토타입 2주 내 가능 여부가 관건",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
-    },
-    "177228": {
+    {
+      "id": "176729",
+      "title": "[국비지원]생성형 AI기반 스마트 커머스 창업가(셀러) 양성 교육생 모집",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.0,
-      "one_liner": "여성 전용 교육 + 직접 자금 0 — 자격 없음",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "177060": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "대구 사업장 노동자/사업주 대상 노동법 교육 — 직접자금 0, 도메인 무관",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177315": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "해양교통안전 공공기관 OI + 세종 이전 필수 — 해양 도메인 무관",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "176956": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "강원대 캠퍼스(강원) 입점 시설 지원 — 강원 이전 필수, 자동 NO-GO",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "176755": {
+    {
+      "id": "176737",
+      "title": "「2026년 상반기 화성특례시 사회적경제 창업아카데미」교육생 모집",
       "decision": "NO-GO",
       "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 지자체 기관 의심 (재단법인 접두사: (재)경남창조경제혁신센터) · 지역 키워드: 지자체 기관 의심 (재단법인 접두사: (재)경남창조경제혁신센터) · 매칭 키워드: 3순위 (참고용): 지자체 기관 의심 (재단법인 접두사: (재)경남창조경제혁신센터)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
     },
-    "177197": {
+    {
+      "id": "176739",
+      "title": "2026년 기술이전 지원사업 (서울 Tech trade-on 프로그램) 참여기업 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "176741",
+      "title": "2026년 기술컨설팅 지원사업(서울 스타트업 Tech trade-on 프로그램) 참여기업 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "176749",
+      "title": "[성동구 관내기업] 2026년도 정부지원사업 및 베트남 현지진출 컨설팅 지원기업 모집",
       "decision": "NO-GO",
       "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 공고 성격: 성격 불일치 (언론 홍보)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
     },
-    "177303": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "영덕군 내 창업 예정자·1년 미만 기창업자 전용 교육 — 지역·업력 미충족",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177218": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "강동구 무료 창업 컨설팅 — 직접자금 0, 멘토링·교육만, 현 단계 우선순위 자원 배분 대상 아님",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
-    },
-    "177109": {
+    {
+      "id": "176755",
+      "title": "「2026년 경남창조경제혁신센터 창업-BuS 프로그램」참여 스타트업 모집 공고",
       "decision": "NO-GO",
       "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 지자체 기관 의심 (재단법인 접두사: (재)전남창조경제혁신센터) · 지역 키워드: 지자체 기관 의심 (재단법인 접두사: (재)전남창조경제혁신센터) · 매칭 키워드: 검토 매칭 (액셀러레이팅)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
     },
-    "177219": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.0,
-      "one_liner": "과천 소재 예비/1년미만 전용 입주 공간 — 시설만, 직접 자금 0",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "176992": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "싱가포르·아세안 네트워킹 이벤트 — 직접 자금 0, 1:1 밋업·세미나만, sinhon.life 글로벌 로드맵과 타이밍 미스매치",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
-    },
-    "175975": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "김해 중장년 기술창업센터 — 지역 이전 필수 + 중장년(만40세) 우선 대상",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177105": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "반도체 팹리스(설계) 전용 — 엑스컴 SW 플랫폼 기업, 반도체 도메인 fit 0",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "176296": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.15,
-      "one_liner": "예비창업자 전용 IP 특허출원 지원 — 기창업(엑스컴) 신청 불가, 직접 금전 혜택 0",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
-    },
-    "177128": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "화성시 소재 중소기업 전용 — 엑스컴 인천 소재",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177231": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "강원도 본사 소재 필수 — 엑스컴 인천 소재, 자격 미충족",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177025": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "농업·농기계(LS엠트론) OI — sinhon.life(신혼 B2C) 도메인 완전 무관",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177185": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.0,
-      "one_liner": "ODA 사업 설명회 — 직접 자금 0, 네트워킹만",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177289": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "핀테크 교육 수료 전용, 직접 자금 0 — 자원 투입 대비 ROI 없음",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177149": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.15,
-      "one_liner": "강원 대학 보유기술 이전 기반 프로그램 — 외부 기술 의존 구조, sinhon.life 자체기술과 무관, 직접자금 불명확",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
-    },
-    "177320": {
+    {
+      "id": "176759",
+      "title": "2026년 서울시 소셜벤처 투자유치 액셀러레이팅 지원사업 참여기업 모집",
       "decision": "NO-GO",
       "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 지자체 기관 의심 (지역진흥원: 시흥산업진흥원) · 지역 키워드: 지자체 기관 의심 (지역진흥원: 시흥산업진흥원) · 매칭 키워드: 3순위 (참고용): 지자체 기관 의심 (지역진흥원: 시흥산업진흥원)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
     },
-    "177226": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "펨테크(여성 생애주기 제품·서비스) 도메인 — sinhon.life 직접 매칭 없음",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177117": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.08,
-      "one_liner": "여성 전용 공고 — 본인(남성 법인대표) 지원 불가, 와이프 트랙 적합하나 서울 지역 한정으로 경기·대구경북 우선순위와 불일치",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
-    },
-    "177136": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "서울 구로 거주 청년 창업교육 — 직접 자금 0, 교육만",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177334": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "경기도 Pre-PoC 교육·컨설팅 — 직접 자금 미미, 교육 성격",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "176645": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "해외 JV 설립 완료 또는 추진 중 조건 — 엑스컴 해외 법인·파트너 전무",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177252": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "지식재산 무료 교육 수요조사 — 직접자금 0, 창업교육·수요조사만으로 자동 NO-GO",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
-    },
-    "177301": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "사회적경제조직 전용 — 엑스컴 일반 영리법인, 자격 미충족",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "176995": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "행사·네트워크 성격 경진대회 — 직접자금 불명확, 홍보·네트워킹 위주로 자동 NO-GO 조건 해당",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
-    },
-    "177146": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "부산 소재 대학생 전용 경진대회 — 기창업 법인 자격 없음",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "176782": {
+    {
+      "id": "176782",
+      "title": "「2026년 창업-BuS at 경북」참여기업 모집공고(상시모집)",
       "decision": "NO-GO",
       "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 지자체 기관 의심 (지역혁신센터: 경북창조경제혁신센터) · 지역 키워드: 지자체 기관 의심 (지역혁신센터: 경북창조경제혁신센터) · 매칭 키워드: 3순위 (참고용): 지자체 기관 의심 (지역혁신센터: 경북창조경제혁신센터)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
     },
-    "177212": {
-      "decision": "CONDITIONAL-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.2,
-      "one_liner": "인천 남동구 청년창업공간 — 엑스컴 인천 소재 일치, 직접자금 0이나 저렴한 사무공간 확보 가능, 기술창업 업종·만 39세 이하 자격 확인 선결",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
-    },
-    "177046": {
+    {
+      "id": "176794",
+      "title": "[강동구 청년해냄센터] 취약분야 상시 컨설팅 4월 참가자 모집 공고",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "신한금융 베트남법인 OI — 금융 도메인 + 베트남 진출 특화, sinhon.life 무관",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "176958": {
+    {
+      "id": "176810",
+      "title": "창원시 벤처투자 『매칭&피칭데이』참여기업 모집 공고",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.04,
-      "one_liner": "4대 도메인(제조/바이오/금융/콘텐츠) AX 협업 매칭 — 도메인 레퍼런스 0, sinhon.life는 콘텐츠 영역 근접하나 '붙임1 사업 명단'에 기등록된 기업만 신청 가능",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "177186": {
-      "decision": "CONDITIONAL-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.1,
-      "one_liner": "서울창업허브 창동 영상 콘텐츠 제작 지원 — IR·PoC·마케팅 목적 영상, 미디어콘텐츠 업종 엑스컴 fit",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177092": {
+    {
+      "id": "176811",
+      "title": "[제63차] 2026년 대구스타트업 리더스포럼 IR피칭 참여기업 모집",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.0,
-      "one_liner": "농식품 스타트업 전용 글로벌 챌린지 — sinhon.life 무관",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "177233": {
+    {
+      "id": "176814",
+      "title": "2026 공공조달데이터·AI 활용 창업경진대회",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "176833",
+      "title": "2026년 상반기 화성시 벤처인증 비용 지원사업",
       "decision": "NO-GO",
       "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 경기 단독 (인천 미포함) · 업종: 업종 한정 (반도체) · 지역 키워드: 경기 단독 (인천 미포함)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
     },
-    "177032": {
+    {
+      "id": "176848",
+      "title": "ZUZU X 더존비즈온 IR 집중검토(TIPS)",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "176849",
+      "title": "2026 스마트건설 창업 아이디어 공모전",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "176855",
+      "title": "2026년 판교테크노밸리 입주기업 임대보증금 지원사업",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "176856",
+      "title": "[종로여성인력개발센터] 2026년 청년일자리도약장려금 참여기업 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "176858",
+      "title": "2026년 체육인 직업안정 사업(창업지원) 창업교육과정(씨앗) 참가자 모집",
       "decision": "NO-GO",
       "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 지자체 기관 의심 (재단법인 접두사: (재)울산창조경제혁신센터) · 지역 키워드: 지자체 기관 의심 (재단법인 접두사: (재)울산창조경제혁신센터)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
     },
-    "177093": {
+    {
+      "id": "176880",
+      "title": "2026년 체육인 직업안정 사업(창업지원) 창업보육과정(새싹) 참가자 모집",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.0,
-      "one_liner": "서울 소재 패션기업 전용 — 업종·지역 이중 탈락",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "177280": {
+    {
+      "id": "176881",
+      "title": "2026년 체육인 직업안정 사업(창업지원) 창업점검과정(열매) 참가자 모집",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "동작구 소재 기업 한정 — 엑스컴 인천 소재, 자격 미충족",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "177193": {
-      "decision": "CONDITIONAL-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.1,
-      "one_liner": "경기콘텐츠진흥원 메타버스/VR/AR/AI OI — AI 기술 인접, 경기도 소재 우대, sinhon.life AI 콘텐츠 각도 가능",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177206": {
+    {
+      "id": "176884",
+      "title": "2026년 경기도 노동안전보건 우수기업 인증사업 참여기업 모집",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "부산·울산·경남 소상공인 파트너사 — 엑스컴 법인(인천) 소상공인 아님",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "177288": {
+    {
+      "id": "176888",
+      "title": "2026 관광기업 육성 및 창업 지원사업 참가자 모집 공고",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "제조 창업기업 제품화 전과정 지원 — '제조 분야 창업기업' 명시 조건, SW 기반 sinhon.life는 원천 자격 미해당",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
-    },
-    "177262": {
-      "decision": "CONDITIONAL-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.1,
-      "one_liner": "인천 소재 엑스컴 + 글로벌 진출 서비스 보유 디지털 기업 직접 매칭, 단 마감 오늘(2026-04-27)로 즉시 제출 또는 포기",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
-    },
-    "177065": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "광주 예비창업자 공공기술 이전 전용 — 엑스컴 기창업 법인, 광주 소재 아님",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177131": {
-      "decision": "NO-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 지자체 기관 의심 (재단법인 접두사: (재)충남콘텐츠진흥원) · 지역 키워드: 지자체 기관 의심 (재단법인 접두사: (재)충남콘텐츠진흥원) · 매칭 키워드: 검토 매칭 (콘텐츠)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
-    },
-    "176442": {
-      "decision": "NO-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 업종: 업종 한정 (3D프린팅) · 매칭 키워드: 검토 매칭 (전국/기술개발(R&amp;D))",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
-    },
-    "176858": {
-      "decision": "NO-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지원 제외 대상: 자격 한정 (장애인) · 자격: 자격 한정 (장애인) · 매칭 키워드: 검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
-    },
-    "177144": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "광주 하드웨어 시제품 제작 — 엑스컴 기창업 법인, 광주 소재 아님, SW 제품",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177067": {
-      "decision": "CONDITIONAL-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.1,
-      "one_liner": "경기 파주 예비·초기창업 39세 이하 — 와이프 트랙 적합, 파주 주소 요건 확인 필요",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177181": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "하드웨어 제조 스타트업 전용 — SW/플랫폼 엑스컴 도메인 fit 0, 프로토타입 하드웨어 없음",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177005": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.0,
-      "one_liner": "동남권 ICT 예비창업자 전용 — 와이프(경기/대구) 트랙에도 지역 불일치",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "176855": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "판교테크노밸리 입주기업 임직원 주거 임대보증금 융자 — 판교 입주 기업 임직원 전용, 엑스컴 해당 없음",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177235": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "대구 달서구 입주 필수 + 직접 자금 없는 공간 지원 — 인천 법인 이주 불가",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "176129": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.3,
-      "one_liner": "채용 매칭 지원 — 구인기업 자격 맞으나 직접 자금 0, 6개월차 1인 법인의 즉시 채용 우선순위 없음",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
-    },
-    "176910": {
-      "decision": "CONDITIONAL-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "전국 창업경진대회 — sinhon.life AI·B2C 포지셔닝 가능, 3년 내 누적상금 3천만원 제한 확인 필요",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177158": {
-      "decision": "CONDITIONAL-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.1,
-      "one_liner": "특허출원 바우처 — SW특허 1건 출원 의향 있으면 저비용·저위험 신청 가능",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177328": {
-      "decision": "CONDITIONAL-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.25,
-      "one_liner": "중기부 원스톱 지원센터 — 법률·세무·금융 멘토링 무료 바우처, 신청 부담 최소, sinhon.life 실제 운영 이슈 있으면 즉시 활용",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
-    },
-    "176406": {
-      "decision": "NO-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 지역 한정 desc: '경북 소재' · 지역 키워드: 지역 한정 desc: '경북 소재' · 매칭 키워드: 검토 매칭 (피칭)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
-    },
-    "177261": {
-      "decision": "CONDITIONAL-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.1,
-      "one_liner": "인천 소재 엑스컴 지역 적합 + 디지털 분야 매칭 — 글로벌 진출 계획·매출 실적 조건 충족 시 검토 가능",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177268": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.0,
-      "one_liner": "5년 이상 복무 제대군인 전용 교육 워크숍, 직접 자금 0 — 자격 없음",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "165441": {
-      "decision": "NO-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 지자체 기관 의심 (창업보육센터: 안산대학교 창업보육센터) · 지역 키워드: 지자체 기관 의심 (창업보육센터: 안산대학교 창업보육센터) · 매칭 키워드: 검토 매칭 (전국/시설ㆍ공간ㆍ보육)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
-    },
-    "176520": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "기술임치 수수료 지원 상한 50만원 — 직접자금 극소, sinhon.life 도메인 무관",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177195": {
-      "decision": "NO-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 지자체 기관 의심 (재단법인 접두사: (재)부산창조경제혁신센터 대표이사) · 지역 키워드: 지자체 기관 의심 (재단법인 접두사: (재)부산창조경제혁신센터 대표이사) · 매칭 키워드: 검토 매칭 (전국/글로벌)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
-    },
-    "177107": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "대구 소재 콘텐츠기업 필수 + 시장 출시 콘텐츠 보유 조건 — 엑스컴 인천 소재, 자체 콘텐츠 IP 없음",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177265": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.04,
-      "one_liner": "기존 '공공기술기반 창업탐색' 사업 참여기업 한정 — 엑스컴은 사전 참여 이력 없어 지원 자격 미달",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
-    },
-    "176988": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.0,
-      "one_liner": "바이오·의료 네트워크 행사 — 직접 자금 0, sinhon.life 무관",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177239": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "운영기관(민간기관·단체) 모집 — 스타트업 지원기업이 아닌 프로그램 운영자 모집",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177271": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.9,
-      "one_liner": "무료 마케팅 사례 세미나 — 교육·네트워킹만, 직접 자금 0, 자동 NO-GO",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
-    },
-    "177123": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "에너지신산업 도메인 전용 — sinhon.life 신혼부부 플랫폼 완전 무관",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177191": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "부산 뿌리산업(제조·공정) — sinhon.life SW/AI, 제조 레퍼런스 0",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177310": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "TIPS 전략 웨비나 — 직접자금 0, 교육·네트워킹만으로 자동 NO-GO, 정보 습득은 무료 참여 가능하나 자원 배분 대상 아님",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
-    },
-    "176703": {
-      "decision": "NO-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지원 제외 대상: 제외대상 명시 (휴·폐업) · 업종: 업종 한정 (반도체) · 자격: 제외대상 명시 (휴·폐업)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
-    },
-    "176810": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "창원 소재 또는 이전 계획 기업 투자 피칭 이벤트 — 직접자금 0, 이전 의향 없음",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177010": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "구리시 기초창업 교육 — 직접자금 0, 교육/멘토링만, 기댓값 0",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177204": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "동남권 로컬기업 전용 — 엑스컴 인천 소재",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177143": {
-      "decision": "NO-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 경기 시 기관 (성남 in agency) · 지역 키워드: 경기 시 기관 (성남 in agency)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
-    },
-    "177222": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "경상북도 안동 현지 교육, 직접 자금 0 — 이주 불가 + ROI 없음",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177248": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "대전 소셜벤처 예비창업 — 소셜임팩트 도메인 + 대전 이주 필요, sinhon.life 무관",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177175": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "천안시 관내 소재 기업 필수 — 클라우드 바우처 지원이나 지역 조건 미충족",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "176952": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "대구 50인 미만 사업장 노무컨설팅 — 직접자금 0, 대구 지역 한정",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177028": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "전주 로컬 브랜드·지역문제해결 + 구성원 과반 전주시민 필수 — 자격 미충족",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177338": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "이노웨이브는 스타트업이 아닌 수요기업(대·중견기업·병원·공공기관) 모집 공고 — 엑스컴은 지원 자격 대상 자체가 아님",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
-    },
-    "177094": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "재창업자·대전 소재 한정 + 2025 재도전 아카데미 수료 전제 — 자격 미충족",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "176316": {
-      "decision": "NO-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 업종: 업종 한정 (환경산업) · 매칭 키워드: 검토 매칭 (전국/시설ㆍ공간ㆍ보육)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
-    },
-    "176692": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "한국인 인체치수 데이터 컨설팅 — 신체계측/로봇/의류 도메인, sinhon.life 완전 무관",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "176707": {
-      "decision": "NO-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 지자체 기관 의심 (재단법인 접두사: (재)경북창조경제혁신센터) · 공고 성격: 성격 불일치 (벤처인증) · 지역 키워드: 지자체 기관 의심 (재단법인 접두사: (재)경북창조경제혁신센터)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
-    },
-    "176286": {
-      "decision": "NO-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지원 제외 대상: 자격 한정 (특별귀화) · 자격: 자격 한정 (특별귀화)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
-    },
-    "176563": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "부산 AI기업·개발자 대상 고성능 컴퓨팅 인프라 지원 — 엑스컴 인천 소재, 부산 이전 의향 없음",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177283": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "경북 본사 소재 필수 — 엑스컴 인천 소재, 이전 예정 불가 명시",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177287": {
-      "decision": "NO-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 지역 한정 (강원) · 지역 키워드: 지역 한정 (강원) · 매칭 키워드: 3순위 (참고용): 지역 한정 (강원)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
-    },
-    "177208": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "소상공인 쇼핑몰 판로 지원 — 엑스컴 SW법인, 판매 상품 없음, 대상 아님",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "176939": {
-      "decision": "NO-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지원 제외 대상: 제외대상 명시 (휴·폐업) · 자격: 제외대상 명시 (휴·폐업)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
-    },
-    "177331": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "관광 OI 매칭데이 — 관광 도메인 레퍼런스 0, sinhon.life 무관",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177236": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "대전 이주 필수 + 소셜벤처 — 엑스컴 인천 소재, 소셜벤처 아님",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177260": {
-      "decision": "NO-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 지자체 기관 의심 (지역진흥원: 과학기술부총리 겸 과학기술정보통신부장관 배 경 훈, 과) · 지역 키워드: 지자체 기관 의심 (지역진흥원: 과학기술부총리 겸 과학기술정보통신부장관 배 경 훈, 과) · 매칭 키워드: 3순위 (참고용): 지자체 기관 의심 (지역진흥원: 과학기술부총리 겸 과",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
-    },
-    "177298": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "부산 기반 에듀테크·AI시티 해외진출 — sinhon.life 에듀테크 아님, 부산 소재 아님",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177047": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "안양대 창업보육센터 입주 — 경기 안양 이전 필수, 직접자금 없음",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177187": {
-      "decision": "CONDITIONAL-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.1,
-      "one_liner": "대구 소재 스타트업 액셀러레이팅 — 와이프 대구경북 트랙에 지역 fit, 투자유치·크라우드펀딩 연계",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177048": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "고용노동부 인증 사회적기업·사회적협동조합 전용 공고 — 엑스컴은 사회적기업 인증 없음, 자격 자체 미충족",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
-    },
-    "177294": {
-      "decision": "NO-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 지자체 기관 의심 (재단법인 접두사: (재)대구디지털혁신진흥) · 지원 제외 대상: 제외대상 명시 (휴·폐업) · 자격: 제외대상 명시 (휴·폐업)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
-    },
-    "176884": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "노동안전보건 인증사업 — 직접 자금 0, sinhon.life 무관",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177120": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "서울 서경대 캠퍼스 물리적 입주 — 엑스컴 인천 소재, 이주 필수",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177066": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "광주 맞춤형예비창업가발굴육성사업 후속 전용 — 엑스컴 인천 소재, 지역 불일치",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177176": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "B2C 신혼부부 플랫폼 × 금융 CVC OI — 도메인 fit 0, 150~200h 투입 대비 기댓값 150만원",
-      "analyzed_at": "2026-04-24T15:00:00+09:00"
-    },
-    "177207": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "포용금융·헬스케어 임팩트 비즈니스 전용 — sinhon.life 도메인 fit 0, 개인사업자·예비창업가 제외",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "176892": {
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "176892",
+      "title": "「모두의 창업 프로젝트」통합 모집 수정공고",
       "decision": "GO",
       "confidence": "high",
-      "expected_pass_rate": 0.15,
-      "one_liner": "target_profile 내 이미 🟢 1순위로 지정된 공고 — 와이프 예비창업(로컬트랙) 직접 매칭, 춘기 핵심 카드",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "177230": {
-      "decision": "NO-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 서울 단독 (인천 미포함) · 지역 키워드: 서울 단독 (인천 미포함)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
-    },
-    "177088": {
+    {
+      "id": "176903",
+      "title": "2026 기후에너지환경창업대전 (Eco+ Start-Up Challenge 2026)",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "충남 천안 대학 보육센터 입주 — 시설만, 직접자금 없음, 충남 이주 필요",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177279": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "파트너사(마케팅 전문기업) 모집 공고 — 지원 수혜 기업이 아닌 용역 공급사 모집, 엑스컴 자격 구조 미스매치",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
-    },
-    "177043": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.0,
-      "one_liner": "항공우주·무인기 도메인 전용 OI — sinhon.life(신혼 B2C) 완전 무관",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177169": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "경기 안성 창업보육센터 입주 — 본사 이전 필수, 직접 현금 없음",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177194": {
-      "decision": "NO-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 지자체 기관 의심 (지자체 창업센터: KAIST 창업원 창업지원센터) · 지원 제외 대상: 제외대상 명시 (휴·폐업) · 자격: 제외대상 명시 (휴·폐업)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
-    },
-    "177050": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "경북 구미 교육 프로그램 — 직접 자금 0, 교육 수료만",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177165": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "청두시 주관 글로벌 경진대회 동아시아예선 — 직접 자금 0·중국 진출 의향 없음·한중싱 AI 대회와 중복 소모, 177166 CONDITIONAL-GO 선택 시 이중 투입 비합리",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
-    },
-    "177022": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "소셜벤처 행사·네트워킹 — 직접자금 0, sinhon.life 소셜벤처 아님",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "176313": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "인천 녹색산업 예비창업 오피스 — 녹색산업 도메인 필수, sinhon.life 무관",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177250": {
-      "decision": "NO-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 지자체 기관 의심 (재단법인 접두사: (재)부산창조경제혁신센터) · 지역 키워드: 지자체 기관 의심 (재단법인 접두사: (재)부산창조경제혁신센터) · 매칭 키워드: 검토 매칭 (액셀러레이팅)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
-    },
-    "177031": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.0,
-      "one_liner": "서울 소재 게임기업 전용 + 게임 도메인 레퍼런스 0 — 이중 탈락",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177318": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.0,
-      "one_liner": "설명회 — 직접 자금 0, 모두의 창업 본 공고 안내용",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "176566": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "대전 한남대 캠퍼스 내 창업 공간 입주 — 대전 이전 의향 없음, 직접자금 미미",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "176931": {
-      "decision": "NO-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 지자체 기관 의심 (재단법인 접두사: 파주시, (재)경기테크노파크) · 지역 키워드: 지자체 기관 의심 (재단법인 접두사: 파주시, (재)경기테크노파크) · 매칭 키워드: 검토 매칭 (청년창업)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
-    },
-    "177313": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.0,
-      "one_liner": "서울 소재 소셜벤처 전용 + 기보 판별서 필수 — 인천 법인·일반 SW 엑스컴 미해당",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177196": {
-      "decision": "NO-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지원 제외 대상: 자격 한정 (OASIS) · 자격: 자격 한정 (OASIS) · 매칭 키워드: 3순위 (참고용): 자격 한정 (OASIS)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
-    },
-    "176378": {
-      "decision": "NO-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 지역 한정 desc: '경북 소재' · 지역 키워드: 지역 한정 desc: '경북 소재' · 매칭 키워드: 3순위 (참고용): 지역 한정 desc: '경북 소재'",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
-    },
-    "175366": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.08,
-      "one_liner": "충북 청주 서원대 기반 창업파크 — 입주 주소지 이전 필수, 하드웨어 중심 인프라, SW 법인에 실용성 없음",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
-    },
-    "177216": {
-      "decision": "NO-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 경기 시 단독 combined (안산) · 지역 키워드: 경기 시 단독 combined (안산) · 매칭 키워드: 검토 매칭 (청년창업)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
-    },
-    "177293": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "광명시 소재 또는 이전 필수 — 엑스컴 인천 부평, 멘토링·교육 위주로 직접자금 불명확",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "176729": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "여성 전용 이커머스 셀러 양성 교육 — 직접자금 0, 교육 수료 후 끝, 남성 대표 엑스컴 해당 없음",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
-    },
-    "175907": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "초기성장지표 보유 스타트업 대상 — 6개월차 엑스컴 매출 실적 미약, 투자유치 이력 없음",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "176497": {
-      "decision": "NO-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 지자체 기관 의심 (재단법인 접두사: (재)부산기술창업투자원) · 지역 키워드: 지자체 기관 의심 (재단법인 접두사: (재)부산기술창업투자원) · 매칭 키워드: 검토 매칭 (기술창업)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
-    },
-    "177135": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "오늘(2026-04-24) 마감 + IR 교육만 제공, 직접 자금 0 — 자동 NO-GO 조건 해당",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
-    },
-    "177286": {
-      "decision": "NO-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 업종: 업종 한정 (화장품)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
-    },
-    "177091": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "해운·항만·물류 디지털전환 특화 — sinhon.life 도메인 완전 무관",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177336": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "H/W 전용 + 서울 소재 필수 — SW 전용 엑스컴(인천) 완전 미해당",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "176090": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "용산구 6개월 이상 거주 + 용산구 사업자등록 조건 — 엑스컴 인천 소재로 자격 미달",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177126": {
-      "decision": "NO-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 업종: 업종 한정 (바이오) · 매칭 키워드: 검토 매칭 (전국/기술개발(R&amp;D))",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
-    },
-    "177242": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "동대문구 소재 필수 — 인천 부평 법인 엑스컴 지역 부적합, 직접 자금 없음",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "175949": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "김해 1인창조기업 입주 — 엑스컴 법인·인천 소재, 지역 이전 필수 불가",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177302": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.0,
-      "one_liner": "3D프린팅 기술 활용 H/W 제품 전용 — SW 전용 엑스컴 완전 미해당",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "176918": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "직접자금 0 — 벤처인증 사전진단 무료 밋업, 컨설팅 교육만",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177292": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.0,
-      "one_liner": "핀테크·서울 소재 창업 3년 이내 전용 IR — 업종·지역 이중 탈락",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177179": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "인천 창업스쿨(교육·멘토링) — 직접자금 0, 교육 수료 프로그램",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "176919": {
-      "decision": "NO-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 공고 성격: 성격 불일치 (벤처확인)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
-    },
-    "177282": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "성동구 관내 기업 한정 + 소셜임팩트 필수 — 엑스컴 인천 소재, 소셜벤처 아님",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177215": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "금융기관 협력 실적 보유 스타트업 전용 사례 공모 — 엑스컴 금융협업 실적 0, 직접자금 0, 수상 트로피만",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
-    },
-    "176943": {
-      "decision": "NO-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 지자체 기관 의심 (재단법인 접두사: (재)경남창조경제혁신센터) · 지역 키워드: 지자체 기관 의심 (재단법인 접두사: (재)경남창조경제혁신센터)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
-    },
-    "177190": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "로봇 엔드이펙터(하드웨어 제조) — sinhon.life 무관, 제조/로봇 레퍼런스 0",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "176207": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "온디바이스 AI 하드웨어(Snapdragon) 기반 프로그램 — sinhon.life 클라우드 RAG 아키텍처와 구조적 불일치, 직접현금 0",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
-    },
-    "176973": {
-      "decision": "NO-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 기관 지역 한정 (agency: 충남신용보증재단) · 지역 키워드: 기관 지역 한정 (agency: 충남신용보증재단) · 매칭 키워드: 3순위 (참고용): 기관 지역 한정 (agency: 충남신용보증재단)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
-    },
-    "177170": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.0,
-      "one_liner": "교육 프로그램 — 직접 자금 0, 도봉구 지자체 한정",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177295": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "오늘(2026-04-24) 마감 + 20인 이상 제조 중소기업 전용 컨설팅 수혜 공고 — 지원 자격·도메인 이중 불충족",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
-    },
-    "177278": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "공공조달 B2G 진출 전제 — sinhon.life B2C 모델과 무관, 벤처기업 지정 미보유",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177306": {
-      "decision": "NO-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 경기 단독 (인천 미포함) · 업종: 업종 한정 (3D 모델링) · 지역 키워드: 경기 단독 (인천 미포함)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
-    },
-    "175783": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "메타 통합공고 — 직접 지원 경로 없음, 개별 사업 공고를 별도 추적해야 하는 안내문",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
-    },
-    "177188": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "서비스로봇 부품 상용화 — sinhon.life SW/AI, 로봇 하드웨어 레퍼런스 0",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177080": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "한국외대(용인) 캠퍼스 물리적 입주 — 엑스컴 인천 소재, 이주 필수",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177081": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.0,
-      "one_liner": "충북 소재 콘텐츠기업 전용 — 엑스컴(인천) 지역 탈락",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "175833": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "청주 산업단지 스타트업 입주공간 — 엑스컴 인천 소재, 충북 이전 현실적 불가, 직접자금 0, 공간 절감만",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
-    },
-    "176179": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.04,
-      "one_liner": "공공기술 기반 딥테크 기획창업 전문 공고 — 엑스컴은 대학·출연연 소속 아님, 공공기술 이전 이력 없음, 자격 조건 미충족",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
-    },
-    "177159": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.0,
-      "one_liner": "광주·전남·전북 소재 필수 — 엑스컴(인천) 지역 불충족",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177276": {
-      "decision": "NO-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 지자체 기관 의심 (재단법인 접두사: (재)충남창조경제혁신센터) · 업종: 업종 한정 (식품) · 지역 키워드: 지자체 기관 의심 (재단법인 접두사: (재)충남창조경제혁신센터)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
-    },
-    "177214": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.04,
-      "one_liner": "딥테크·공공기술 기반 전략기술 사업화 공고 — sinhon.life는 B2C 신혼 플랫폼으로 12대 전략기술 범주 해당 없음",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
-    },
-    "177249": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "춘천(강원) 이전 필수 — 협약 후 6개월 내 강원 이전 의무, 자동 NO-GO",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "176968": {
-      "decision": "NO-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 업력: 단계 불일치 (IPO) · 창업 단계: 단계 불일치 (IPO) · 매칭 키워드: 검토 매칭 (전국/글로벌)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
-    },
-    "176880": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.0,
-      "one_liner": "은퇴 체육인 전용 — 엑스컴/허파랑 자격 없음",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177199": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "제주 소재 + 제주 주력산업(관광·바이오·에너지) 필수 — 엑스컴 인천 소재, 도메인 무관",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "176076": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.04,
-      "one_liner": "팁스 운영사 투자·추천 선결 조건 — 운영사 연결 없는 상태에서 직접 지원 경로 없음",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
-    },
-    "177137": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "디자인·제조 분야 컨설팅·제품화 지원 — sinhon.life SW서비스와 무관",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "176983": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "누적 투자 30억원 내외 요건 + AI·반도체·스마트제조·기후·바이오 도메인 — 엑스컴 투자 이력 없음",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177211": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "경북 서부권 전자산업 특화 — sinhon.life SW/AI, 경북 소재 아님",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177299": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "대전 거주 필수 + 방산/드론 도메인 — 엑스컴 지역·업종 이중 불일치",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "176218": {
-      "decision": "NO-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 기관 지역 한정 (agency: 충남북부상공회의소  충남지식재산센터) · 지역 키워드: 기관 지역 한정 (agency: 충남북부상공회의소  충남지식재산센터) · 매칭 키워드: 검토 매칭 (IP디딤돌)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
-    },
-    "177243": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "양자컴퓨팅 전문 도메인 — sinhon.life/엑스컴 완전 무관",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "176999": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "XRPL 블록체인 디지털자산 프로덕트 특화 — sinhon.life 핀테크/블록체인 무관",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "176953": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "부산 소재 관광·마이스 유관 기업 전용 — 엑스컴 인천 소재, 관광·마이스 도메인 레퍼런스 없음",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "176073": {
-      "decision": "NO-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 서울 단독 (인천 미포함) · 업종: 업종 한정 (패션) · 지역 키워드: 서울 단독 (인천 미포함)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
-    },
-    "176881": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "은퇴 체육인(5년 이상 등록 선수·지도자·심판) 전용 — 엑스컴 자격 완전 해당 없음",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177241": {
-      "decision": "NO-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 사업명에 지역 포함 (부산) · 지역 키워드: 사업명에 지역 포함 (부산) · 매칭 키워드: 3순위 (참고용): 사업명에 지역 포함 (부산)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
-    },
-    "177309": {
-      "decision": "NO-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 지자체 기관 의심 (재단법인 접두사: (재)충남창조경제혁신센터) · 지역 키워드: 지자체 기관 의심 (재단법인 접두사: (재)충남창조경제혁신센터)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
-    },
-    "177238": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "군위군 전입 필수 + 대구 주소 보유자 대상 — 엑스컴 인천, 이주 불가",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177300": {
-      "decision": "NO-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 지자체 기관 의심 (재단법인 접두사: (재)대구디지털혁신진흥원) · 업종: 업종 한정 (게임) · 지역 키워드: 지자체 기관 의심 (재단법인 접두사: (재)대구디지털혁신진흥원)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
-    },
-    "177168": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "수행사(CRO 서비스 제공 기관) 모집 공고 — 스타트업 지원 공고 아님",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177090": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "대전/세종/충청 소재 기업 전용 — 엑스컴 인천 소재",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "175817": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "민간사(위커밋) 무료 AI 챗봇·공고 요약 서비스 — 자금 지원 0, 정보 서비스임",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "176937": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "여성발명진흥 전문가 평가위원 모집 — 창업자 지원 공고가 아닌 심사위원 채용, 직접자금 0, 여성발명 도메인 무관",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
-    },
-    "177121": {
-      "decision": "NO-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 지자체 기관 의심 (지역진흥원: 성남산업진흥원) · 지원 제외 대상: 제외대상 명시 (휴·폐업) · 업종: 업종 한정 (식품)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
-    },
-    "177258": {
-      "decision": "NO-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 지자체 기관 의심 (지역혁신센터: 전북창조경제혁신센터) · 지역 키워드: 지자체 기관 의심 (지역혁신센터: 전북창조경제혁신센터)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
-    },
-    "177007": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.0,
-      "one_liner": "동남권(부울경) ICT 기업 전용 — 엑스컴(인천) 이전 필수 조건",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177209": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "게임 제작 전문 지원 + 전북 이전 필수 — 도메인·지역 이중 NO-GO",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177205": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "동남권 소상공인 전용 — 엑스컴 인천 법인, 소상공인 아님",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177177": {
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "176910",
+      "title": "올해의 K-스타트업 2026 부처 통합 창업경진대회 공고",
       "decision": "CONDITIONAL-GO",
       "confidence": "medium",
-      "expected_pass_rate": 0.1,
-      "one_liner": "중기부 혁신창업리그, 3년 미만 전국 — sinhon.life B2C 혁신 스토리 구성 가능, 상금 규모 확인 필요",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "177225": {
+    {
+      "id": "176918",
+      "title": "벤처확인인증 사전진단&일대일 무료 밋업 지원사업",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.0,
-      "one_liner": "바이오·의료 프로그램 전문수행기관 모집 — 엑스컴은 수행기관 자격 없음",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "177296": {
+    {
+      "id": "176919",
+      "title": "2026 벤처확인 인증준비기업 맞춤형 무료 진단 지원사업",
       "decision": "NO-GO",
       "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 지자체 기관 의심 (재단법인 접두사: (재)이노베이션아카데미) · 지역 키워드: 지자체 기관 의심 (재단법인 접두사: (재)이노베이션아카데미) · 매칭 키워드: 3순위 (참고용): 지자체 기관 의심 (재단법인 접두사: (재)이노베이션아카데미)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
     },
-    "177059": {
+    {
+      "id": "176931",
+      "title": "파주청년창업지원센터  상반기 청년 창업아카데미 참여기업/팀 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
+    },
+    {
+      "id": "176937",
+      "title": "2026 여성발명진흥 사업 위한 전문가 평가위원 Pool 모집 공고",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.0,
-      "one_liner": "자립준비청년(아동복지시설 퇴소자) 전용 교육 — 엑스컴/허파랑 자격 없음",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "177063": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "벤처인증 자문·교육 — 직접 자금 0, 컨설팅만",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "176978": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "창원 관내 예비/7년 이내 창업자 멘토링 — 직접자금 0, 창원 지역 한정",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177189": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.0,
-      "one_liner": "경기 소재 기업 전용 투자연계 밋업 — 엑스컴(인천) 소재 불충족",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177263": {
+    {
+      "id": "176938",
+      "title": "2026년 스타트업 법률지원사업 참여기업 모집공고(수정)",
       "decision": "CONDITIONAL-GO",
       "confidence": "medium",
-      "expected_pass_rate": 0.12,
-      "one_liner": "인천 소재 엑스컴 AI 디지털 기업 직접 매칭, 북미 대학 기술검증 글로벌 트랙 — TRL 5단계 충족 여부 및 2주 내 기술검증 자료 준비가 선결",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "176248": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "강원 거주 예비창업자 한정 IP 교육 — 엑스컴 기창업·인천 소재로 자격 미달, 직접자금 0",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "176741": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "서울 소재 7년 미만 기업 기술컨설팅 — 직접자금 0, 엑스컴 인천 소재로 자격 미달",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177285": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.0,
-      "one_liner": "제조 분야 전용 — SW 단독 개발 명시 제외, sinhon.life 탈락",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177200": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "부산 동구 소재·주소지 필수 — 엑스컴 인천 소재, 이주 실익 없음",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177099": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "경북 기반 4차산업 기업 전용 — 엑스컴 인천 소재",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "176494": {
+    {
+      "id": "176939",
+      "title": "2026년 소상공인 도약 지원 사업 공고 (舊 로컬크리에이터, 강한 소상공인) (공고연장)",
       "decision": "NO-GO",
       "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 지자체 기관 의심 (지역진흥원: 경기도경제과학진흥원) · 지역 키워드: 지자체 기관 의심 (지역진흥원: 경기도경제과학진흥원) · 매칭 키워드: 검토 매칭 (기술창업)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
     },
-    "176994": {
+    {
+      "id": "176940",
+      "title": "2026년 소상공인 투자연계 지원사업 립스 프로그램 참여 소상공인 모집 공고",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.0,
-      "one_liner": "세미나 — 직접 자금 0, 네트워킹만",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "176848": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "Pre-A·TIPS 희망 B2B/핀테크/ICT 전용 IR — sinhon.life 투자단계 불일치",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177113": {
+    {
+      "id": "176943",
+      "title": "2026년 양산시 로컬크리에이터 육성사업 참여기업 모집공고",
       "decision": "NO-GO",
       "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 사업명에 지역 포함 (경남) · 업종: 업종 한정 (반도체) · 지역 키워드: 사업명에 지역 포함 (경남)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
     },
-    "177100": {
+    {
+      "id": "176945",
+      "title": "2026 웨스트버지니아(WV) 거점 북미 진출 지원 프로그램",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.25,
-      "one_liner": "ICT 기반 피칭 역량 교육 + 개발공간 지원 — 직접현금 0, 멘토링·교육 중심, 자동 NO-GO",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "177086": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "제조 창업 교육·아카데미 — sinhon.life SW/AI, 직접자금 0",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177210": {
+    {
+      "id": "176947",
+      "title": "2026 협성대학교 창업보육센터 상반기 신규 입주기업 모집 공고",
       "decision": "NO-GO",
       "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 지자체 기관 의심 (재단법인 접두사: (재)대전창조경제혁신센터) · 지역 키워드: 지자체 기관 의심 (재단법인 접두사: (재)대전창조경제혁신센터)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
     },
-    "177311": {
+    {
+      "id": "176952",
+      "title": "2026년도 찾아가는 노무서비스 지원(방문) 공고",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.04,
-      "one_liner": "수요기업(중견기업) 모집 공고 — 스타트업 공급자 모집이 아닌 협업 과제 내는 중견기업 찾는 B2B 행정 공고",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "177257": {
+    {
+      "id": "176953",
+      "title": "부산 관광ㆍ마이스 그로우업(Grow-up) 지원사업",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.5,
-      "one_liner": "서초창업스테이션 멤버십 회원 전용 컨설팅 — 직접 자금 0, 교육·컨설팅만, 멤버십 비회원 지원 불가",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "173061": {
+    {
+      "id": "176956",
+      "title": "강원대학교 캠퍼스혁신파크 산학연혁신허브 입점자 모집공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "176958",
+      "title": "초격차 스타트업 프로젝트(DIPS) Link-up(링크업) - 4대 도메인 AX 프로그램 창업기업 모집공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "176961",
+      "title": "2026 시제품 제작 구현을 위한 소싱 디렉팅 운영",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "176968",
+      "title": "2026년 K-Global 해외진출 지원사업 참여기업 모집 공고",
       "decision": "NO-GO",
       "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 지자체 기관 의심 (지역진흥원: 중소기업기술정보진흥원) · 지역 키워드: 지자체 기관 의심 (지역진흥원: 중소기업기술정보진흥원)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
     },
-    "177111": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "제대군인 전용 창업교육 — 직접 자금 0, 특수자격 요건",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "176749": {
+    {
+      "id": "176973",
+      "title": "[충남신용보증재단] 2026년 5월 창업아카데미 교육생 모집",
       "decision": "NO-GO",
       "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 서울 구 단독 (성동구) · 지역 키워드: 서울 구 단독 (성동구) · 매칭 키워드: 3순위 (참고용): 서울 구 단독 (성동구)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
     },
-    "177246": {
+    {
+      "id": "176978",
+      "title": "2026년 『창창 창업 멘토단 운영사업』 참여 창업가 모집(상시멘토링 모집) 공고",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "대전 소셜벤처 창업기업 — 소셜임팩트 도메인 + 대전 이주 필요, sinhon.life 무관",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "177253": {
+    {
+      "id": "176983",
+      "title": "2026 코리아 프론티어 참가기업 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "176988",
+      "title": "Osong Life-Science Startup Summit",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "176991",
+      "title": "제 8회 공군 창의·혁신 아이디어 공모 해커톤 참가자 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "176992",
+      "title": "2026 글로벌 스타트업 서밋(싱가포르,아세안) 참여기업 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "176994",
+      "title": "AI 및 기술 트렌드 세미나 참가자 모집: AI가 바꾸는 산업의 미래",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "176995",
+      "title": "[한국기업가정신재단] 2026년 제15회 청년기업가대회 모집 공고 (~5/6)",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "176996",
+      "title": "2026년 서울시 기후테크 시제품 제작지원 사업 참가 모집",
       "decision": "NO-GO",
       "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 사업명에 지역 포함 (충남) · 지역 키워드: 사업명에 지역 포함 (충남)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
     },
-    "176888": {
+    {
+      "id": "176997",
+      "title": "2026년 르노코리아 x 한진정보통신 x 현대면세점 x HS효성/효성 x KB국민카드 x LG전자 x SK에코플랜트 x 서울창조경제혁신센터 1st S.STAGE 개최 안내",
+      "decision": "NO-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "176999",
+      "title": "[서울핀테크랩 x XRPL Korea] 2026 Korea Financial Innovation Program 신청",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.0,
-      "one_liner": "전남 이주 필수 + 관광 도메인 전용 — 자격·도메인 이중 탈락",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "177173": {
+    {
+      "id": "177000",
+      "title": "2026 CHANGeUP NAVIgation Batch(배치프로그램) 6기 참여기업 모집",
+      "decision": "NO-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177004",
+      "title": "2026 디자인 솔루션 랩 인턴십 지원사업 참여기업 모집",
+      "decision": "NO-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
+    },
+    {
+      "id": "177005",
+      "title": "청년창업 인큐베이팅 프로그램 Track A : 예비창업트랙 참가자 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177007",
+      "title": "청년창업 인큐베이팅 프로그램 Track B : 초기창업트랙 참가자 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177010",
+      "title": "[구리시 청년내일센터] 실전 기초창업 교육 & 그룹 멘토링 참가자 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177015",
+      "title": "대구삼성창조캠퍼스 AX창업오피스 (대구창조경제혁신센터(4F)) 입주기업 모집 공고(2회차)",
       "decision": "CONDITIONAL-GO",
       "confidence": "medium",
-      "expected_pass_rate": 0.1,
-      "one_liner": "전국·7년미만·SW 가능 + 아이티센 투자 10억+TIPS — sinhon.life fit 🟡, 2주 내 데모 완성 가능 시 재검토",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "177083": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.15,
-      "one_liner": "SK임원 출신 멘토단 소셜벤처·사회적기업·ESG 전용 멘토링 — sinhon.life B2C 신혼 플랫폼 소셜벤처 미해당, 직접 자금 0",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
-    },
-    "177069": {
-      "decision": "NO-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 지자체 기관 의심 (재단법인: 재단법인 넥스트챌린지) · 지역 키워드: 지자체 기관 의심 (재단법인: 재단법인 넥스트챌린지) · 매칭 키워드: 검토 매칭 (전국/시설ㆍ공간ㆍ보육)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
-    },
-    "176393": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "충남 당진시 청년 취창업 상담 — 지역 이주 필수, 직접자금 0, 교육/상담만",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177317": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "대전 소재 기업 필수 — 글로벌 PoC 연계 지원이나 엑스컴 인천 소재로 자격 미충족",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "176794": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.7,
-      "one_liner": "강동구 지역 무료 컨설팅 수혜 프로그램 — 직접자금 0, 교육·멘토링만, 자동 NO-GO",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
-    },
-    "177264": {
-      "decision": "NO-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 서울 단독 (인천 미포함) · 지원 제외 대상: 자격 한정 (중장년) · 자격: 자격 한정 (중장년)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
-    },
-    "177017": {
+    {
+      "id": "177017",
+      "title": "2026년 하반기 「IBK창공(創工)」혁신창업기업 모집",
       "decision": "CONDITIONAL-GO",
       "confidence": "medium",
-      "expected_pass_rate": 0.07,
-      "one_liner": "IBK은행 액셀러레이터 — 7년 이내 SW 창업 적격, 투자·금융 연계 실질 혜택, sinhon.life 적용 서사 가능하나 경쟁 치열",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "177072": {
+    {
+      "id": "177022",
+      "title": "[EY한영x함께일하는재단] 2026 소셜벤처 비즈니스 클리닉 (4/24) 온라인",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "디지털헬스케어 보건의료 빅데이터 전용 교육·컨설팅 — 직접자금 0, 헬스케어 도메인 레퍼런스 0",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "177322": {
+    {
+      "id": "177025",
+      "title": "2026년「융복합 기술 오픈이노베이션 지원사업」참여기업 모집 공고",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "충청남도 청년 예비창업·소상공인 교육 — 지역 조건 미충족, 직접자금 0",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "177068": {
+    {
+      "id": "177028",
+      "title": "지역소통협력팀 통합 지원사업 <2026 전주살랩> 참가자 모집",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "교육생 모집 공고 — 현재 법인대표(재직자) 지원 불가 조건 해당, 직접자금 0, 교육수료만",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "177029": {
+    {
+      "id": "177029",
+      "title": "충북대학교 『글로벌(G)테크벤처센터(BI) 』 입주기업 모집",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "충북 소재 BI 입주 — 엑스컴 인천 소재, 이전 실익 없음",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "177167": {
+    {
+      "id": "177031",
+      "title": "2026 SBA X 메르세데스 벤츠 코리아 게임 산업 상생 플랫폼 활용 게임개발 지원 참가기업 모집",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.0,
-      "one_liner": "설명회·특강 성격 — 직접 자금 0, 네트워킹만",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "177223": {
+    {
+      "id": "177032",
+      "title": "제9회 안전 신기술 공모전 기업 모집",
+      "decision": "NO-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
+    },
+    {
+      "id": "177039",
+      "title": "2026 혁신성장 청년 예비 소상공인 지원 사업 참여자 모집",
+      "decision": "NO-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
+    },
+    {
+      "id": "177043",
+      "title": "[인천창조경제혁신센터x대한항공] 『2026년 대한항공 항공우주 오픈이노베이션』 참여기업 모집",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "성남시 소재 기업 전용 멘토링 교육 — 직접 자금 0, 지역 요건 미충족",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "177182": {
+    {
+      "id": "177046",
+      "title": "2026 신한금융그룹 베트남 X 서울창업허브 오픈이노베이션",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "KOICA ODA 분야 글로벌 사회혁신 솔루션 전문 인큐베이터 — sinhon.life 신혼부부 B2C와 완전 무관, 국제개발협력 도메인 레퍼런스 0",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "176856": {
+    {
+      "id": "177047",
+      "title": "[안양대학교 창업보육센터] 2026년 상반기 신규 입주기업 모집",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "서울 중구·종로구·동대문구 소재 5인 이상 기업 청년채용 보조금 — 엑스컴 인천 소재, 피보험자 5인 미만",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "177201": {
+    {
+      "id": "177048",
+      "title": "2026년 사회적기업 시설·운영비 지원사업 참여기업 모집(~11/30)",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "설명회·교육 이벤트 — 직접자금 0, 네트워킹만",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "176208": {
+    {
+      "id": "177050",
+      "title": "경북 구미 강소연구개발특구 '2026년 기술창업교육' 예비 및 초기창업자 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177051",
+      "title": "「2026년 지역주도형 AI대전환사업」 AI솔루션 보급·확산사업 지원기업 통합모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177052",
+      "title": "2026년 스타트업 고도화 지원사업 참여기업 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177059",
+      "title": "2026 자립준비청년 디지털 진로지원 사업 창업교육 모집(~5/15)",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177060",
+      "title": "2026년 노동아카데미(무료교육) 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177063",
+      "title": "2026년 초기 창업기업 대상 벤처기업 인증 행정자문&전략 수립 기업모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177064",
+      "title": "기술기반 예비창업가 사업화자금지원 모집공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177065",
+      "title": "기술이전 예비창업가 사업화자금지원 모집공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177066",
+      "title": "우수 창업가 후속 사업화자금지원 사업 모집공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177067",
+      "title": "파주시 청년창업 활성화 지원사업 참여기업 모집",
       "decision": "CONDITIONAL-GO",
       "confidence": "medium",
-      "expected_pass_rate": 0.2,
-      "one_liner": "인천창조경제혁신센터 멘토링·컨설팅 공고 — 엑스컴 인천 소재 기창업자로 지역·업력 직접 매칭, 단 직접자금 0이라 부업적 활용에 한정",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "177251": {
-      "decision": "NO-GO",
-      "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 지자체 기관 의심 (재단법인 접두사: (재)부산창조경제혁신센터) · 지역 키워드: 지자체 기관 의심 (재단법인 접두사: (재)부산창조경제혁신센터)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
-    },
-    "176849": {
+    {
+      "id": "177068",
+      "title": "2026년도 스타트업 AI 기술인력 양성(이어드림 스쿨) 6기 교육생 모집 공고",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "스마트건설 아이디어 공모 — 건설 도메인 전용, sinhon.life 완전 무관",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "177015": {
+    {
+      "id": "177069",
+      "title": "넥스트챌린지스쿨 글로벌 AI 혁신 캠퍼스 협력 기관 파트너 모집",
+      "decision": "NO-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
+    },
+    {
+      "id": "177072",
+      "title": "2026년 보건의료빅데이터 창업 인큐베이팅 랩 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177073",
+      "title": "[대구 TIPS] 「제12회 대구 TIPS IR 데이」 참가기업 모집",
+      "decision": "NO-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
+    },
+    {
+      "id": "177079",
+      "title": "제12회 2026년 보건의료빅데이터·AI 활용 창업경진대회",
+      "decision": "NO-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
+    },
+    {
+      "id": "177080",
+      "title": "2026년 한국외대 창업보육센터 입주기업 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177081",
+      "title": "2026년 충북콘텐츠기업지원센터 액셀러레이팅 프로그램 참여기업 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177083",
+      "title": "소셜벤처 Scale-up 파트너 <SE 컨설턴트 멘토링> 참여기업 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177086",
+      "title": "2026 제조 창업 스케일업 아카데미",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177088",
+      "title": "2026년 1차 단국대학교(천안) 창업보육센터 '창조플러스존'입주기업 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177090",
+      "title": "(로우파트너스) 2026년 K-Camp 대전 7기 액셀러레이팅 프로그램",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177091",
+      "title": "「2026 스마트 해운물류 창업Flame」 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177092",
+      "title": "농진원X굿네이버스글로벌임팩트 「글로벌임팩트챌린지」참여기업 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177093",
+      "title": "K-패션 브랜드 글로벌 팝업 지원사업 참여기업 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177094",
+      "title": "재도전 「Log-in 대전」 사업화 지원 사업 참여자 모집공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177095",
+      "title": "스타트업 투자 연계 데모데이 참여기업 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177098",
+      "title": "2026년도 시장창출형 지능형 로봇 활용 및 확산 사업 기업 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177099",
+      "title": "4차산업 기술실증 벤처 스타트업 육성지원 사업",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177100",
+      "title": "2026 ICT콤플렉스 창업 투자 역량 강화 프로그램 참가팀 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177101",
+      "title": "2026 인천콘텐츠코리아랩 스타트업 부스터 프로젝트",
       "decision": "CONDITIONAL-GO",
       "confidence": "medium",
-      "expected_pass_rate": 0.1,
-      "one_liner": "대구 AX(AI전환) 창업오피스 — 와이프 예비창업 트랙 대구경북 우선지역과 매칭, AI 스타트업 공간 지원",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "176391": {
+    {
+      "id": "177105",
+      "title": "초격차 스타트업 프로젝트 모두의 챌린지 팹리스 참여기업 모집공고",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.1,
-      "one_liner": "심사위원단 위촉 공고 — 창업기업 지원 공고가 아니라 역할 반전, 직접 자금 0",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "176224": {
+    {
+      "id": "177107",
+      "title": "2026년 대구콘텐츠기업지원센터 콘텐츠기업 맞춤형 패키지 지원 사업",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177109",
+      "title": "2026년 전남 스타트업 액셀러레이팅 프로그램(4기) 참여기업 모집",
       "decision": "NO-GO",
       "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 경기 시 한정 desc: '화성 소재' · 업종: 업종 한정 (에너지) · 지역 키워드: 경기 시 한정 desc: '화성 소재'",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
     },
-    "177307": {
+    {
+      "id": "177111",
+      "title": "(서울센터) 2026년 제2회 제대군인 창업 워크숍 개최 안내",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "농업 X 기술 아이디어톤 — 행사·네트워킹만, 직접자금 0, 농업 도메인 무관",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "177157": {
+    {
+      "id": "177113",
+      "title": "경남 수도권 투자유치 거점센터 (G-Space@TIPS) 2026 G-Demoday&G-Mentoring day",
       "decision": "NO-GO",
       "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 지자체 기관 의심 (재단법인 접두사: (재)울산창조경제혁신센터) · 지역 키워드: 지자체 기관 의심 (재단법인 접두사: (재)울산창조경제혁신센터)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
     },
-    "177312": {
+    {
+      "id": "177114",
+      "title": "2026 문화콘텐츠 예비창업자 패키지 지원 참가자 모집 공고",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "일본 진출 특화 액셀러레이팅 — 현재 일본 진출 계획 없음, 직접 자금 미확인",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "177139": {
+    {
+      "id": "177117",
+      "title": "여성 1인 창조기업 지원센터 신규 입주기업 모집",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "기계/부품 설계제작·금형·초도물량 전문 제조기업 모집 — SW기업 엑스컴 완전 무관",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "177274": {
+    {
+      "id": "177119",
+      "title": "2026년 도자특화 인재 창업·창직 지원사업",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177120",
+      "title": "2026년 서경대학교 창업보육센터 입주기업 모집(2차)",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177121",
+      "title": "[성남 식품제조 소공인특화지원센터] 소공인 기술 컨설팅 참여기업 모집공고",
       "decision": "NO-GO",
       "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 지자체 기관 의심 (재단법인 접두사: (재)충북과학기술혁신원장) · 업종: 업종 한정 (바이오) · 지역 키워드: 지자체 기관 의심 (재단법인 접두사: (재)충북과학기술혁신원장)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
     },
-    "177234": {
+    {
+      "id": "177123",
+      "title": "[상생형 창업·벤처기업 지원사업] 2026년 KEPCO 에너지 스타트업 참여기업 모집공고",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "행사·네트워킹 이벤트 — 직접 자금 0, 매칭 연계 이벤트에 불과",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "177101": {
+    {
+      "id": "177126",
+      "title": "2026년 서울바이오허브-대원제약 오픈이노베이션 프로그램",
+      "decision": "NO-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
+    },
+    {
+      "id": "177127",
+      "title": "부산가톨릭대학교 창업보육센터 신규 입주기업 모집 재공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177128",
+      "title": "2026년 AI-대중소 동반성장 프로그램 참여기업 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177129",
+      "title": "2026 U-Global Bridge Japan 참여기업 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177131",
+      "title": "[충남콘텐츠진흥원] 벤처창업·AI분야 역량강화 교육 바우처 지원사업 모집공고",
+      "decision": "NO-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
+    },
+    {
+      "id": "177133",
+      "title": "2026년 충남 로컬창업 네트워크 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177135",
+      "title": "2026년 서울창업허브 창동 투자 특화 프로그램 (IR 고도화 과정) - IR 기초 교육 프로그램",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177136",
+      "title": "구로구 청년창업지원센터 일반 창업교육(상반기 : 4회차) : 온라인 마케팅 실전 가이드",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177137",
+      "title": "[소싱디렉팅] D&M Boost-up 프로그램 참가 창업기업 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177138",
+      "title": "2026 북부 특화 콘텐츠 매칭 프로젝트 공급기업 모집공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177139",
+      "title": "[소싱디렉팅] D&M Boost-up 프로그램 아웃소싱 전문 제작기업 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177143",
+      "title": "2026. 청년 창업 역량강화 프로젝트 THE 와플 4기 모집",
+      "decision": "NO-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
+    },
+    {
+      "id": "177144",
+      "title": "[최대 400만원 상당 제작 지원] 2026년 시제품 제작 프로그램(예비창업자 지원 과정) 참가자 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177146",
+      "title": "2026 꿈터플러스 제4회 대학생 창업 아이디어 경진대회",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177148",
+      "title": "2026년 The GS Challenge. FUTURE RETAIL 4 오픈이노베이션 프로그램 개최 안내",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177149",
+      "title": "기술 연계 창업지원 프로그램 (예비)창업기업 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177152",
+      "title": "2026년 구미시 스타트업 제작센터 참여기업 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177157",
+      "title": "2026년 2차 포텐셜 씨드(Potential Seed) 경작형 프로그램 참여기업 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
+    },
+    {
+      "id": "177158",
+      "title": "2026년 특허출원·등록 비용 바우처 지원사업 (상반기 / 3차)",
       "decision": "CONDITIONAL-GO",
       "confidence": "medium",
-      "expected_pass_rate": 0.12,
-      "one_liner": "인천 캐릭터 콘텐츠 스타트업 특화 지원 — 엑스컴 인천 소재·창업 6개월 적격, 단 '캐릭터 콘텐츠' IP 실적 사전 확보가 필수 선결 조건",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "177148": {
+    {
+      "id": "177159",
+      "title": "K-Camp 광주 7기 액셀러레이팅 프로그램 참가기업 모집",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "GS리테일 유통·리테일 OI — sinhon.life 신혼부부 B2C, 유통/리테일 도메인 레퍼런스 0",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "176996": {
+    {
+      "id": "177160",
+      "title": "2026년 핵심기술 모니터링 지원사업 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177164",
+      "title": "[4월 사업 운영 온라인 교육] 소상공인·중소기업 대표님들을 위한 사업 운영 전략 무료 특강",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177165",
+      "title": "2026 골든팬더 글로벌 혁신창업경진대회 동아시아예선 참여기업 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177166",
+      "title": "2026 한중싱 인공지능 창업 경진대회 참여기업 모집",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177167",
+      "title": "2026년「모두의 창업 프로젝트」설명회 및 신청서 작성 특강 안내",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177168",
+      "title": "2026 K-Startup New York Revenue-First Growth Program 수행사 공개공모",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177169",
+      "title": "[중앙대휴먼테크노창업보육센터] 중앙대학교 다빈치캠퍼스 창업보육센터 입주기업 모집공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177170",
+      "title": "[도봉구청년창업센터] 제3차 스케일업 아카데미 : 일상의 아이디어가 AI를 만나 비즈니스가 되는 순간 (모두의 창업)",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177173",
+      "title": "『 2026 유니콘 브릿지 with 아이티센 』 참여 스타트업 모집 - 투자&TIPS 연계",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177175",
+      "title": "천안시 거점형 스마트도시 조성사업 「2026년 천안시 어반테크기업 클라우드 바우처 지원사업」 참여기업 모집공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177176",
+      "title": "「2026 KB 오픈이노베이션 프로그램」협업 스타트업 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T15:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177177",
+      "title": "『올해의 K-스타트업 2026』 혁신창업리그 참여기업 모집 공고",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177178",
+      "title": "『올해의 K-스타트업 2026』 AI리그 참여기업 모집 공고",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177179",
+      "title": "2026년 ICCE x INNOPOLIS 창업스쿨 16기 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177180",
+      "title": "2026 여성발명왕EXPO 참가기업 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177181",
+      "title": "[인탑스 액셀러레이팅 5기 모집] 제품 디자인·설계·양산부터 IR까지! 스타트업 올인원 스케일업!",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177182",
+      "title": "2026년 KOICA 이노포트 신규 입주기업 모집 안내",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177183",
+      "title": "2026 FutureScape '삼성물산 건설부문' 과 함께 미래 혁신을 설계해 나갈 스타트업을 찾습니다. (~5/8)",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177185",
+      "title": "[한국국제협력단] 2026-2027 KOICA IBS 공모설명회 및 1:1 컨설팅 안내",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177186",
+      "title": "2026년 서울창업허브 창동 스타트업 융복합 콘텐츠 제작 영상 콘텐츠 지원 기업 모집",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177187",
+      "title": "『K-Camp 대구 7기』액셀러레이팅 프로그램 참가기업 모집",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177188",
+      "title": "2026년도 생활지원 서비스로봇 제품 상용화 지원사업 기업 모집 및 지원 계획 통합 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177189",
+      "title": "2026년 경기스타트업플랫폼 온라인 밋업위크(1차) 참가기업 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177190",
+      "title": "2026년도 제조산업 공정작업용 로봇 엔드이펙터 실증 기반 구축 지원 기업 모집 통합 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177191",
+      "title": "2026년도 뿌리산업 고도화를 위한 BIZ 플랫폼 구축 사업 현장 맞춤 공정·기술 고도화 지원 기업 모집 및 지원 계획 통합 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177193",
+      "title": "2026 상생 오픈이노베이션 스타트업 모집공고(사업설명회 4.22.)",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177194",
+      "title": "2026년 IR·PR 영상제작 및 디지털마케팅지원 사업",
       "decision": "NO-GO",
       "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 서울 시설/지자체 (서울 소재) · 업종: 업종 한정 (시제품 제작) · 지역 키워드: 서울 시설/지자체 (서울 소재)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
     },
-    "177183": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "건설산업 디지털전환 협업과제 전용 OI — sinhon.life 도메인 fit 0, 건설 레퍼런스 無",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "177227": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "의료기기 전시회 — 도메인 완전 무관, 성남시 소재 바이오·헬스 기업 전용",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "175808": {
+    {
+      "id": "177195",
+      "title": "비수도권 스타트업 베트남 진출 지원 사업 「스스로 프로젝트」참가 스타트업 모집(~5/8)",
       "decision": "NO-GO",
       "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지원 제외 대상: 제외대상 명시 (대기업) · 자격: 제외대상 명시 (대기업)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
     },
-    "175849": {
+    {
+      "id": "177196",
+      "title": "2026년 창업이민종합지윈시스템(OASIS 4&5) 참여자 모집 공고",
       "decision": "NO-GO",
       "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 지역 한정 (대구) · 업종: 업종 한정 (의료) · 지역 키워드: 지역 한정 (대구)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
     },
-    "177052": {
-      "decision": "NO-GO",
-      "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "대전 소재 필수 — 엑스컴(인천)은 지원 자격 자체 미충족",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
-    },
-    "176190": {
+    {
+      "id": "177197",
+      "title": "26년 4월 스타트업 언론 홍보 지원사업 참가사 모집 공고(2차)",
       "decision": "NO-GO",
       "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 지자체 기관 의심 (지역진흥원: 성남산업진흥원) · 지역 키워드: 지자체 기관 의심 (지역진흥원: 성남산업진흥원) · 매칭 키워드: 3순위 (참고용): 지자체 기관 의심 (지역진흥원: 성남산업진흥원)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
     },
-    "177098": {
+    {
+      "id": "177199",
+      "title": "2026 K-CAMP 제주 5기 액셀러레이팅 프로그램",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "부산 로봇 실증 사업 — 하드웨어/로봇 도메인, sinhon.life 완전 무관",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "177284": {
+    {
+      "id": "177200",
+      "title": "2026년「동구 도심형 청년 창업·주거 복합공간」(이바구플랫폼) 입주자 모집 공고",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "롯데건설 AI 기록관리·실내측위·로봇 과제 전용 OI — 건설 도메인 fit 0, sinhon.life 무관",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "177275": {
+    {
+      "id": "177201",
+      "title": "수원대학교 모두의 창업 사업설명회 개최",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "바이오헬스 협의체 네트워킹 — 직접자금 0, 도메인 완전 무관",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "177319": {
+    {
+      "id": "177202",
+      "title": "[프론티어랩스 6기] CJ제일제당 협업 스타트업 모집",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.0,
-      "one_liner": "울산 소재 바이오·헬스케어 전용 + 이주 조건 — SW/신혼 플랫폼 도메인 완전 무관",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "177119": {
+    {
+      "id": "177203",
+      "title": "2026년 KAU BI 고양시 초기창업기업 사업화 지원사업 모집 공고",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "이천시 도자산업 특화 창업교육 — 도자 도메인 완전 무관, 직접자금 0",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "176814": {
+    {
+      "id": "177204",
+      "title": "2026 로컬기업 육성사업 (舊 로컬크리에이터) 동남권(부산, 울산, 경남)",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "공공조달 AI 경진대회 — B2G·조달 도메인 레퍼런스 0, 행사·네트워킹만",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "177277": {
+    {
+      "id": "177205",
+      "title": "2026 강한 소상공인 성장지원사업 동남권(부산, 울산, 경남)",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.05,
-      "one_liner": "충청권(대전·세종·충남·충북) 소재 스타트업 전용 — 인천 엑스컴 지역 불일치",
-      "analyzed_at": "2026-04-24T17:00:00+09:00"
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "171419": {
+    {
+      "id": "177206",
+      "title": "2026 강한 소상공인 파트너사 모집 공고(동남권 - 부산, 울산, 경남)",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "외국인 스타트업 비자 추천 공고 — 허파랑팀은 한국 국적자로 신청 자격 없음",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "177221": {
+    {
+      "id": "177207",
+      "title": "[MYSC] 메트라이프 Inclusion Plus 9.0 참여기업 모집 (~5/8)",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177208",
+      "title": "2026년 판로확대 지원사업 참여 소상공인 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177209",
+      "title": "2026 고도화 게임 제작지원사업 모집공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177210",
+      "title": "「2026 딥테크 스튜디오」 공공기술 활용 딥테크 스타트업 상시 모집 공고",
       "decision": "NO-GO",
       "confidence": "medium",
-      "expected_pass_rate": 0.05,
-      "one_liner": "🟠 규칙 기반 NO-GO — 지역: 기관 지역 한정 (agency: 안동상공회의소(경북북부지식재산센터)) · 지역 키워드: 기관 지역 한정 (agency: 안동상공회의소(경북북부지식재산센터)) · 매칭 키워드: 검토 매칭 (IP디딤돌)",
-      "analyzed_at": "2026-04-24T17:30:00+09:00"
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
     },
-    "177164": {
+    {
+      "id": "177211",
+      "title": "「2026년 경상북도 지역혁신 프로젝트」혁신창업/데스벨리 지원 공고(2차)",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.9,
-      "one_liner": "사업 운영 전략 무료 온라인 특강 — 교육만, 직접 자금 0, 자동 NO-GO",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     },
-    "177329": {
+    {
+      "id": "177212",
+      "title": "2026년 상반기 남동구 청년창업지원센터 입주기업 추가모집 공고",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177214",
+      "title": "2026 대덕특구 딥테크 혁신성장 플랫폼(전략기술 발굴 및 매칭)",
       "decision": "NO-GO",
       "confidence": "high",
-      "expected_pass_rate": 0.03,
-      "one_liner": "Claude Code 교육·네트워킹 이벤트 — 직접자금 0, 스킬 이미 보유, ROI 측면 NO-GO (참석 가치는 있으나 자금 배분 대상 아님)",
-      "analyzed_at": "2026-04-24T16:00:00+09:00"
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177215",
+      "title": "dcamp startupOI 금융권x스타트업 우수 협력 사례 공모(금융위원장상, 디캠프 이사장상 시상)",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177216",
+      "title": "중소벤처기업진흥공단 안산 POST-BI센터 입주기업모집",
+      "decision": "NO-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
+    },
+    {
+      "id": "177217",
+      "title": "'스테이블코인 AML 규제 동향 및 시사점' 비대면 교육 참가자 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177218",
+      "title": "[강동구 청년해냄센터] 취약분야 상시 컨설팅 5월 참가자 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177219",
+      "title": "2026년 과천시 창업지원센터 스마트오피스 입주기업 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177220",
+      "title": "2026년 U-RISE 스타트업 캠퍼스 사업 창업팀 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177221",
+      "title": "[경북북부] IP디딤돌 프로그램 IP창업존 45기 교육생 모집공고(포항)",
+      "decision": "NO-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
+    },
+    {
+      "id": "177222",
+      "title": "[경북북부] IP디딤돌 프로그램 IP창업존 46기 교육생 모집공고(안동)",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177223",
+      "title": "2026 서강 se7en on the table 전문가 멘토링 프로그램 (1회차) 참가기업 모집(~4.29)",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177224",
+      "title": "[신용보증기금] 스타트업 육성 플랫폼「Start-up NEST」제19기 일반·특별전형 참여기업 모집",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177225",
+      "title": "「2026 서울바이오허브-기술보증기금 글로벌 진출 성장 가속 프로그램」 전문수행기관 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177226",
+      "title": "2026년「펨테크 산업 육성 사업」프로그램 참여기업 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177227",
+      "title": "[성남산업진흥원] 2026 독일 뒤셀도르프 의료기기전시회(MEDICA 2026) 참가기업 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177228",
+      "title": "[국비지원교육]디지털드로잉 기반 창작캐릭터 IP 상품화 전문과정 교육생 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177230",
+      "title": "2026 상반기 서울 AI 허브 고성능 컴퓨팅 인프라 지원사업",
+      "decision": "NO-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
+    },
+    {
+      "id": "177231",
+      "title": "K-Camp 강원 6기 액셀러레이팅 프로그램 스타트업 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177233",
+      "title": "2026 경기도 ICT Product  시험 인증 지원  공모",
+      "decision": "NO-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
+    },
+    {
+      "id": "177234",
+      "title": "2026년 G-Star 오픈이노베이션 커넥팅 데이",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177235",
+      "title": "달서구 청년창업지원센터 11차 입주기업 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177236",
+      "title": "2026년 제3차 대전소셜벤처캠퍼스 입주기업 모집공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177238",
+      "title": "2026년 군위 청년(예비)창업 지원사업 (예비)청년창업자 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177239",
+      "title": "인천 공공 실증 오픈이노베이션 운영기관 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177240",
+      "title": "2026년 특화역량 BI 지원사업 『2026 도전! J-스타트업 콘테스트』참가기업 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177241",
+      "title": "부산글로벌테크비즈센터 입주기관(기업) 모집공고(수시모집)",
+      "decision": "NO-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
+    },
+    {
+      "id": "177242",
+      "title": "2026년도 동대문구 창업지원센터 입주자 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177243",
+      "title": "[블루포인트] 양자컴퓨팅 분야 비즈니스 스케일업 프로그램「Quantum Jump」참가 기업 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177245",
+      "title": "[블루포인트] 양자컴퓨팅 분야 창업 지원 프로그램 「Quantum NEST」참가자(개인/팀) 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177246",
+      "title": "2026년 소셜 임팩트 체인저스 7기 창업기업 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177247",
+      "title": "『찾아가는 기업 고민해결 찐(眞)톡(talk)』",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177248",
+      "title": "2026년 소셜 임팩트 랩(Lab) 예비 창업기업 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177249",
+      "title": "2026 Station C 성장자립지원 로컬라이제이션 모집공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177250",
+      "title": "[부산창조경제혁신센터] 2026 OSA 스마트해양 액셀러레이팅 참여기업 모집",
+      "decision": "NO-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
+    },
+    {
+      "id": "177251",
+      "title": "[부산창조경제혁신센터] 2026 OSA AX 오픈이노베이션 밋업 데이 참여기업 모집",
+      "decision": "NO-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
+    },
+    {
+      "id": "177252",
+      "title": "2026년 3회차 지식재산 무료 초청교육 수요조사",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177253",
+      "title": "「2026년 충남 천안·아산 강소특구 이노테크 발굴 및 창업지원 사업」 (예비)창업자 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
+    },
+    {
+      "id": "177254",
+      "title": "2026년 재도전성공패키지(추가경정예산) 예비재창업자 및 재창업기업 모집공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177257",
+      "title": "[서초창업스테이션] 4월 1:1 전문 분야 컨설팅 - 마케팅 및 인사노무",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177258",
+      "title": "(전북ON 프로젝트) 모두의 창업  도전을 위한 교육 참여자 모집",
+      "decision": "NO-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
+    },
+    {
+      "id": "177259",
+      "title": "2026년 대전 1인 창조기업 지원센터 제2차 입주기업 모집공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177260",
+      "title": "2026년 과학기술 창업경진대회 공고 「올해의 K-스타트업 2026 연구자리그 연계」",
+      "decision": "NO-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
+    },
+    {
+      "id": "177261",
+      "title": "2026년 '인천 라이징스타 6기' 글로벌 스케일업 프로그램 지원기업 모집 통합공고",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177262",
+      "title": "「2026년 인천 라이즈업」참여기업 모집공고",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177263",
+      "title": "2026년도 「인천 유니브-엑스(Univ. X)」 참여기업 모집 공고",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177264",
+      "title": "2026년 서울시50플러스재단 공유사무실 입주기업 모집(2차)",
+      "decision": "NO-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
+    },
+    {
+      "id": "177265",
+      "title": "『2026년 공공기술기반 시장연계 창업탐색 지원사업』 글로벌 경진대회 참가기업 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177267",
+      "title": "2026년 의왕시1인창조기업지원센터 모두의 도전을 위한! '모두의 창업' 설명회 및 전략교육",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177268",
+      "title": "(대전센터) 2026년 제3회 제대군인 창업 워크숍 개최 안내",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177269",
+      "title": "IBK 창공 Silicon Valley 4기 해외 진출 참가기업 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177271",
+      "title": "[무료 마케팅] 2026년 성공적인 마케팅을 위한 매출상승 사례 세미나",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177272",
+      "title": "2026년 세종시설관리공단 거브테크 오픈이노베이션 참여 스타트업 모집공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177274",
+      "title": "2026년 충주시 바이오헬스기업 창업·성장 지원사업 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
+    },
+    {
+      "id": "177275",
+      "title": "충주 바이오헬스산업 협의체 회원 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177276",
+      "title": "2026 중소기업 해외시장 홍보판촉 지원사업(호주)",
+      "decision": "NO-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
+    },
+    {
+      "id": "177277",
+      "title": "2026-4회 충청권 엔젤투자 피칭룸 프로그램 참가기업 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177278",
+      "title": "2026년 벤처나라 벤처창업기업제품 등록 지원제도 기관 추천 희망 기업 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177279",
+      "title": "2026년도 글로벌 SNS 판로개척 지원사업 파트너사 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177280",
+      "title": "2026년 동작구청과 함께하는 ESG 중소기업 지원사업",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177282",
+      "title": "제7회 성동구 소셜벤처 스케일업 프로그램 참여기업 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177283",
+      "title": "2026년 경북 글로벌 스타트업 패키지 참여기업 모집공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177284",
+      "title": "2026년 롯데건설 x 서울창업허브 성수 OPEN INNOVATION 참가기업 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177285",
+      "title": "소싱 디렉팅 및 후속 프로그램 참여자 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177286",
+      "title": "『2026 오픈웨이브 with 솔루엠&지디케이화장품』 참여기업 모집",
+      "decision": "NO-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
+    },
+    {
+      "id": "177287",
+      "title": "G-SSR(Gangwon-South Startup Rise)  아카데미",
+      "decision": "NO-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
+    },
+    {
+      "id": "177288",
+      "title": "2026년 제품화 올인원팩(All-In-one pack) 창업기업 모집공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177289",
+      "title": "'생성형 AI 활용 업무 스킬 UP' 비대면 교육 참가자 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177290",
+      "title": "경기도 AI 멤버십 기업 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177291",
+      "title": "충북 제35기(26년 2기) IP창업존 교육생 모집공고",
+      "decision": "NO-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
+    },
+    {
+      "id": "177292",
+      "title": "2026년 제1회 S.Challenge IR 참여 기업 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177293",
+      "title": "2026년 광명형 혁신스타트업 스케일업 액셀러레이팅 프로그램 참가기업 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177294",
+      "title": "대구콘텐츠기업지원센터 2026년 2차 입주기업 모집",
+      "decision": "NO-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
+    },
+    {
+      "id": "177295",
+      "title": "2026년 중소기업 디지털 전환 및 스마트 공장 구축 솔루션 컨설팅 지원사업",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177296",
+      "title": "코디세이 AI 네이티브 과정",
+      "decision": "NO-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
+    },
+    {
+      "id": "177297",
+      "title": "2026 서울창업허브 공덕 유럽 글로벌 세미나 & 1:1 밋업",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177298",
+      "title": "2026 방콕 한-아세안 AI시티·에듀테크 데이 참가기업 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177299",
+      "title": "2026 대전방산혁신클러스터 드론특화형 국방 창업 교육 참가자 모집공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177300",
+      "title": "2026년 지역특화콘텐츠개발지원(대구게임테크허브) 차세대 플랫폼 도약·확장 지원사업",
+      "decision": "NO-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
+    },
+    {
+      "id": "177301",
+      "title": "[MYSC] 2026년 사회적경제 도약패키지 [G-Impact] 참여기업 모집 (~5/7(목) 15:00)",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177302",
+      "title": "2026년 3D-FAB 크라우드펀딩 지원사업 참여 기업 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177303",
+      "title": "창업On 희망On 아카데미 참여자 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177304",
+      "title": "2026 지식재산 데이터 활용 창업 경진대회",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177305",
+      "title": "2026 3D 제품 디자인 시각화 실무 교육 : Blender 활용",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177306",
+      "title": "Fusion 360 제품 구현 3D 모델링 교육",
+      "decision": "NO-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
+    },
+    {
+      "id": "177307",
+      "title": "로컬 아이디어톤 : 농업 X 기술 참가 팀 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177308",
+      "title": "스타트업 실무 마스터 시리즈: 세무, 절세전략부터 인사노무 까지",
+      "decision": "NO-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
+    },
+    {
+      "id": "177309",
+      "title": "「2026년 보령시 청년창업 육성사업」예비 청년창업가 모집(~4.29)",
+      "decision": "NO-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
+    },
+    {
+      "id": "177310",
+      "title": "[웨비나] 2026 TIPS 합격으로 가는 투자 유치 전략",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177311",
+      "title": "「2026년 민관협력 오픈이노베이션 지원사업」중견기업-스타트업 오픈이노베이션 수요기업 협업과제 모집공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177312",
+      "title": "제주창조경제혁신센터 글로벌 액셀러레이팅 프로그램 「시리즈 J 」 참여기업 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177313",
+      "title": "2026년 서울시 소셜벤처 임팩트 측정 상담 신청 참여기업 모집(~5.15.)",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177315",
+      "title": "(공고 연장) 한국해양교통안전공단 오픈이노베이션 참여 창업기업 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177316",
+      "title": "2026년 제3기 서대문구 청년벤처 육성사업 창업기업 모집",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177317",
+      "title": "「2026 글로벌 PoC 연계 고도화 지원사업」 참여기업 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177318",
+      "title": "[동국대학교] 2026 모두의 창업 서울권역 사업 설명회",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177319",
+      "title": "울산시 바이오 디지털 헬스케어 글로벌 진출 지원 (2026 BIO USA 참관) 사업",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177320",
+      "title": "스타트업 투자유치 지원",
+      "decision": "NO-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
+    },
+    {
+      "id": "177321",
+      "title": "2026년 G-Space 혁신 창업기업 액셀러레이팅 지원사업 모집공고",
+      "decision": "NO-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T17:30:00+09:00",
+      "analyzer": "rule-based@cowork"
+    },
+    {
+      "id": "177322",
+      "title": "2026년 5월 동네창업학교 교육생 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177328",
+      "title": "2026년 스타트업 원스톱 지원센터 참여기업 모집공고",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177329",
+      "title": "일잘러를 위한 \"클로드 코드 입문&자동화 실전 교육\" 참여자 모집 (『신한 스퀘어브릿지』 스타트업 네트워킹 5월 브릿지 클럽)",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177330",
+      "title": "2026 혁신성장 청년 예비 소상공인 지원 사업 설명회",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177331",
+      "title": "2026 관광오픈이노베이션 매칭데이(2차) 참가기업 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177334",
+      "title": "2026 경기도 Pre-Poc 시장 실증 및 사업화 연계 전략",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177336",
+      "title": "2026년 제품화지원센터 제품화 지원사업 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T17:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "177338",
+      "title": "2026년 초격차 이노웨이브 수요기업 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T16:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000116741",
+      "title": "2026년 중소기업 수출지원사업 통합 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000116904",
+      "title": "2026년 중앙부처 및 지자체 창업지원사업 통합 공고",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000116975",
+      "title": "넷제로 챌린지X 통합 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000117059",
+      "title": "2026년 고용창출장려금 및 고용안정장려금 사업 공고",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000117068",
+      "title": "[경북] 청년하우스 주거 지원 사업 전세대출이자·월세 지원 모집 공고(금호 이웃사촌마을 조성사업)",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000117108",
+      "title": "2026년 한국식품산업클러스터진흥원 식품기업 해외인증 지원 사업 변경 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000117158",
+      "title": "[경북] 2026년 벤처기업 육성자금 운용계획 공고",
+      "decision": "GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000117168",
+      "title": "[대구] 2025년 4차 소상공인 맞춤형 출산ㆍ양육지원 사업 모집 공고",
+      "decision": "GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000117307",
+      "title": "[인천] 2026년 가상융합산업 콘텐츠 제작 장비 임차지원 공고(인천 가상융합산업 혁신센터)",
+      "decision": "GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000117611",
+      "title": "[인천] 지역 중소기업 금융지원 강화를 위한 금융기관(NH농협은행) 협업 특별 경영안정자금 추가 지원 공고",
+      "decision": "GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000117643",
+      "title": "2026년 예산군 로케이션 인센티브 제작지원 사업 공고",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "low",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000117668",
+      "title": "[인천] 2026년 기술거래촉진네트워크사업(인천기술전환플랫폼) 기술이전 및 기술수요조사서 신청 공고",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000117928",
+      "title": "2026년 중소기업 마케팅지원사업 통합 공고",
+      "decision": "GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000117971",
+      "title": "2026년 울산 북구 단체관광객 유치 인센티브 지원 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000118017",
+      "title": "[인천] 2026년 중소기업육성자금 지원계획 공고",
+      "decision": "GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000118037",
+      "title": "2026년 기업인력애로센터 활용 취업지원 사업 구인기업 및 구직자 모집 공고",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000118049",
+      "title": "2026년 중소벤처기업부 외국전문인력(E-7-1) 고용추천 공고",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "low",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000118054",
+      "title": "2026년 중소벤처기업부 숙련기능인력(E-7-4) 전환추천 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000118204",
+      "title": "2026년 여성기업 육성사업 공고",
+      "decision": "GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000118285",
+      "title": "2026년 실감콘텐츠 스튜디오 프로젝트 현물지원기업 모집 공고",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000118318",
+      "title": "2026년 소스개발 및 생산지원 사업 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000118556",
+      "title": "2026년 디지털커머스 전문기관(소담스퀘어 in 광주) 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000118679",
+      "title": "[인천] 2026년 채용연계형 뿌리기업 근로환경 혁신 지원사업(환경개선) 모집 공고(지역산업맞춤형 일자리지원 사업)",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000118729",
+      "title": "2026년 창업-BuS at 경북 참여기업 모집 공고",
+      "decision": "GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000118910",
+      "title": "2026년 지스타 경북의 저력 딥테크 부스터 프로그램 참여기업 모집 공고",
+      "decision": "GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000119010",
+      "title": "[인천] 2026년 연구장비 공동활용 지원사업 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000119011",
+      "title": "[인천] 2026년 중소기업 연구조직 설립 지원사업 모집 공고",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000119272",
+      "title": "2026년 유니버설디자인리빙랩 제품 사용성조사 장비 공동활용 지원안내 공고",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000119316",
+      "title": "2026년 일터혁신 상생컨설팅 지원사업 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000119373",
+      "title": "[인천] 2026년 신개념 세대융합 청년창업 지원 멘티 상시모집 공고",
+      "decision": "GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000119473",
+      "title": "2026년 1차 유통플랫폼 MD 상담회 소상공인 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000119491",
+      "title": "2026년 인재채움뱅크 대체인력 채용지원 참여 기업 모집 공고",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000119567",
+      "title": "2026년 농식품 크라우드펀딩 지원사업 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000119659",
+      "title": "[경북] 2026년 스타트업 투자매칭 지원 참여기업 모집 공고",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000119692",
+      "title": "2026년 중동 특화 긴급 물류바우처 사업 참여기업 수정 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000119739",
+      "title": "2026년 소상공인 온라인판로 지원사업 참여기업 모집공고",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000119754",
+      "title": "2026년 팁스(TIPS) 창업기업 지원계획 수정 공고",
+      "decision": "GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000119777",
+      "title": "2026년 전통문화 크라우드 펀딩 연계 지원 사업 참여기업 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000119852",
+      "title": "[경북] 2026년 로케이션 제작지원 사업 공고",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000119999",
+      "title": "2026년 인천창조경제혁신센터 창업-BuS 프로그램 참여기업 모집 공고",
+      "decision": "GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000120058",
+      "title": "2026년 일터혁신 상생컨설팅 지원사업 기업 모집 공고",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000120085",
+      "title": "2026년 AX 원스톱 바우처 지원사업수요기업 모집 공고",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000120138",
+      "title": "[인천] 중동 수출 중소기업 긴급 경영안정자금 지원 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000120164",
+      "title": "2026년 중소기업제품 전용판매장(면세장) 참여기업 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000120174",
+      "title": "2026년 우리동네 크라우드펀딩 지원사업 크라우드펀딩 참여 소상공인 모집 공고",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000120342",
+      "title": "2026년 기업승계 M&A 활성화를 위한 컨설팅 지원사업 시행계획 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000120406",
+      "title": "2026년 TIPS 연계 민간투자 성과확산 인센티브 지원사업 모집 공고",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000120423",
+      "title": "2026년 로봇 재제조산업 기업지원사업(기술 자문) 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000120444",
+      "title": "2026년 체육인 직업안정 사업(창업지원) 참여자 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000120457",
+      "title": "2026년 가족친화인증 신청 공고",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000120461",
+      "title": "2026년 중소기업 CBAM대응 인프라구축 사업 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000120470",
+      "title": "2026년 1차 마케팅 구매상담회 참여기업 모집 공고",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000120541",
+      "title": "2026년 1차 온라인판로 종합지원사업 참여기업 모집 공고",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000120570",
+      "title": "[인천] 2026년 상반기 경영안정자금 이차보전 지원 추가접수 공고(중소기업 육성자금 지원 사업)",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000120583",
+      "title": "2026년 해외 온라인몰 입점 지원사업 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000120606",
+      "title": "2026년 절삭공구·가공 빅데이터를 활용한 첨단제조 플랫폼 기반구축 및 실증사업 기술지도 수요기업 모집 공고(산업혁신 기반구축사업)",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000120617",
+      "title": "제6회 경북 공공데이터 활용 창업경진대회 참가자 모집 공고",
+      "decision": "GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000120676",
+      "title": "[인천] 2026년 인공지능 전환(AX) 컨설팅 지원사업 참여기업 모집 공고(AI Playground 인천 조성사업)",
+      "decision": "GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000120679",
+      "title": "[인천] 2026년 시제품제작 장비 (3D 프린팅) 공동활용 지원 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000120683",
+      "title": "[인천] 2026년 콘텐츠코리아랩 스타트업 부스터 프로젝트 모집 공고",
+      "decision": "GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000120685",
+      "title": "[인천] 2026년 1차 기술이전 사업화 지원사업 공고",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "low",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000120686",
+      "title": "[인천] 2026년 라이즈업 참여기업 모집 공고",
+      "decision": "GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000120687",
+      "title": "[인천] 2026년 기술도입 실시 지원사업 모집 공고",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "low",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000120712",
+      "title": "2026년 디자인-온라인제조플랫폼서비스 사업 수요기업 모집 공고",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000120727",
+      "title": "2026년 탄소중립 설비투자 지원 참여기업 모집 공고(공급망 트랙)",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000120753",
+      "title": "2026년 블록체인 신뢰성 검증 지원 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000120757",
+      "title": "2026년 K-섬유패션 협력강화 및 글로벌 브랜드 육성 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000120758",
+      "title": "[대구·경북] 2026년 유니코어 기술창업 아이디어 경진대회 공고(과기정통부 학연협력 플랫폼 구축 시범사업)",
+      "decision": "GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000120814",
+      "title": "2026년 생활용 섬유제품 제조역량강화사업 지원대상기업 모집 통합 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000120821",
+      "title": "2026년 디지털커머스 전문기관(소담스퀘어강원) 소상공인 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000120831",
+      "title": "2026년 북미 진출 GATE 프로그램 참여기업 모집 공고",
+      "decision": "GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000120842",
+      "title": "2026년 전북 글로벌게임센터 고도화 게임 제작지원사업 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000120846",
+      "title": "2026년 글로벌스케일업캠퍼스 인천 유니브-엑스(Univ. X) 참여기업 모집 공고",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000120848",
+      "title": "2026년 1차 일반 물류바우처 사업 참여기업 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000120853",
+      "title": "2026년 2차 수출지원기반활용사업 참여기업 모집 수정공고(중소벤처기업부 소관 수출바우처사업)",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "low",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000120868",
+      "title": "2026년 전남형 청년창업사관학교 지원자 모집 공고",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000120873",
+      "title": "모두의 창업 프로젝트 통합 모집 수정 공고",
+      "decision": "GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000120900",
+      "title": "[인천] 2026년 우수기업 선정 계획 공고",
+      "decision": "GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000120923",
+      "title": "2026년 여성발명왕EXPO 참가기업 모집 공고",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000120939",
+      "title": "2026년 한국형Manufacturing-X플랫폼표준모델개발및실증(R&D) 신규지원 대상과제 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000120951",
+      "title": "[인천] 2026년 2차 청년 고용안심 지원사업 참여기업 모집 공고",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000120961",
+      "title": "[인천] 2026년 인천스타트업파크 글로벌 액셀러레이팅 프로그램 참여기업 모집 공고",
+      "decision": "GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000120963",
+      "title": "2026년 3차(추경) 수출지원기반활용사업 참여기업 모집공고 (산업통상부 산업 글로벌 진출역량 강화 긴급지원바우처)",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000121000",
+      "title": "[인천] 2026년 가상융합산업 콘텐츠 사업화 지원과제 참여기업 모집 공고(인천 가상융합산업 혁신센터 운영사업)",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000121008",
+      "title": "2026년 중소기업 혁신바우처(채용지원) 사업 지원계획 공고",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000121031",
+      "title": "2026년 웹소설 번역비 지원 사업 추가 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000121054",
+      "title": "[경북] 영덕군 2026년 창업On 희망On 아카데미 참여자 모집 공고(시군 특화 맞춤형 일자리 지원사업)",
+      "decision": "GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000121056",
+      "title": "2026년 지역특화콘텐츠개발지원(대구게임테크허브) 차세대 플랫폼 도약ㆍ확장 지원사업 참가기업 모집 공고",
+      "decision": "GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000121058",
+      "title": "2026년 G-Star 오픈이노베이션 커넥팅데이 스타트업 모집 공고",
+      "decision": "GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000121066",
+      "title": "2026년 프랑스 파리 광학 전시회 (SILMO) 한국관 참가기업 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000121069",
+      "title": "[인천] 2026년 공예산업 상품화 지원 사업 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000121074",
+      "title": "2026년 중견기업-스타트업 오픈이노베이션 수요기업 협업과제 모집 공고(민관협력 오픈이노베이션 지원사업)",
+      "decision": "GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000121075",
+      "title": "2026년 러시아 모스크바 향수 및 화장품 전시회(InterCHARM 2026) 한국관 참가기업 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000121103",
+      "title": "[경북] 경주시 2026년 온라인 플랫폼 판로지원 온라인 기획전 참여업체 모집 공고",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000121139",
+      "title": "2026년 제12회 인천광역시 공공데이터·AI 활용 창업경진대회 공고",
+      "decision": "GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000121142",
+      "title": "[인천] 2026년 지역 디자인기업 역량강화 지원사업 참여기업 모집 공고",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000121174",
+      "title": "2026년 콘텐츠 스타트업 해외마켓(SWITCH) 참가기업 추가모집 공고",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000121181",
+      "title": "2026년 코리아 국제 스트리밍 페스티벌 투자유치 쇼케이스 (미디어테크 분야·우수기획안 분야) 참가 기업 모집 연장 공고",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000121183",
+      "title": "2026년 로봇 플래그쉽 지역거점 구축사업 지원과제 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000121196",
+      "title": "2026년 섬유패션 수요-제조간 AI활용 디지털 공급망 구축 사업 수혜기업 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000121219",
+      "title": "2026년 KOTRA-이베이재팬(큐텐재팬) 파워셀러 1단계 입점교육 2기 참가기업 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000121220",
+      "title": "2026년 KOTRA-이베이(eBay) 파워셀러 1단계 입점교육 2기 참가기업 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000121222",
+      "title": "2026년 KOTRA-월마트 파워셀러 1단계 입점교육 1기 참가기업 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000121233",
+      "title": "[경북] 고령군 2026년 중소기업 기숙사 임차비 지원사업 참여기업 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000121235",
+      "title": "[경북] 2026년 글로벌 스타트업 패키지 참가기업 모집 공고",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000121251",
+      "title": "2026년 멕시코 멕시코시티 뷰티 엑스포 미용 전시회 (Expo Beauty Show 2026) 한국관 참가기업 모집 공고",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000121252",
+      "title": "싱가포르 K-콘텐츠ㆍIP 파트너십 데이 참가기업 모집 공고",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000121261",
+      "title": "2026년 더현대글로벌×더셀렉츠 글로벌 팝업스토어(일본 도쿄) 참가사 모집 공고",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000121263",
+      "title": "2026년 더현대글로벌×더셀렉츠 글로벌 팝업스토어(프랑스 파리) 참가사 모집 공고",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000121267",
+      "title": "[인천] 2026년 우수 콘텐츠 사업화 지원 기업 모집 공고",
+      "decision": "GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "bizinfo_PBLN_000000000121268",
+      "title": "[인천] 2026년 인천형 특별 경영안정자금 지원 공고(금융비용 확대 지원을 위한 하나은행 출연 및 협업)",
+      "decision": "CONDITIONAL-GO",
+      "confidence": "medium",
+      "analyzed_at": "2026-04-25T00:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
+    },
+    {
+      "id": "k_startup_177176",
+      "title": "「2026 KB 오픈이노베이션 프로그램」협업 스타트업 모집",
+      "decision": "NO-GO",
+      "confidence": "high",
+      "analyzed_at": "2026-04-24T15:00:00+09:00",
+      "analyzer": "sonnet-handoff@cowork"
     }
-  }
+  ]
 }

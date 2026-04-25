@@ -1,0 +1,98 @@
+{
+  "id": "bizinfo_PBLN_000000000117068",
+  "title": "[경북] 청년하우스 주거 지원 사업 전세대출이자·월세 지원 모집 공고(금호 이웃사촌마을 조성사업)",
+  "analyzed_at": "2026-04-25T00:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북)",
+  "verdict": {
+    "decision": "CONDITIONAL-GO",
+    "confidence": "medium",
+    "expected_pass_rate": 0.4,
+    "time_cost_hours": "10",
+    "one_liner": "경북 청년 주거비 지원 (이영림)"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "주거 지원 (청년 전세대출이자·월세)",
+      "body": "경상북도·경북테크노파크가 운영하는 청년하우스 주거 지원 사업. 금호 이웃사촌마을 조성사업과 연계하여 경북 거주 청년에게 전세대출이자 또는 월세를 지원. 이영림(와이프, 예비창업자)의 대구경북 거주 시 적합.",
+      "benefits": [
+        {
+          "k": "지원내용",
+          "v": "전세대출이자 또는 월세 지원"
+        },
+        {
+          "k": "주관기관",
+          "v": "경상북도, 경북테크노파크"
+        },
+        {
+          "k": "대상",
+          "v": "경북 거주 청년 (연령 기준 확인 필요)"
+        }
+      ],
+      "watchout": "경북 거주(또는 이주 예정) 청년 대상 전용. 대구 거주 시 경북 사업 지원 가능 여부 확인 필요."
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [
+        {
+          "task": "경북 거주 청년 자격",
+          "fit": "🟡",
+          "reason": "이영림이 대구 거주로 경북 인접. 경북 이주 또는 경북 내 주거 계획 시 적합"
+        },
+        {
+          "task": "주거비 지원 필요성",
+          "fit": "🟢",
+          "reason": "예비창업자 단계로 주거비 절감이 실질적 도움"
+        }
+      ],
+      "tech_adjacent": [],
+      "mismatch_note": "대구는 행정상 경북이 아니므로 거주지 요건 정확한 확인 필요.",
+      "critical_gap": "대구 거주자의 경북 사업 지원 가능 여부 불확실."
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "자격확인",
+            "hours": "3"
+          },
+          {
+            "stage": "신청서류",
+            "hours": "7"
+          }
+        ],
+        "total": "10h"
+      },
+      "probability": {
+        "doc_pass": 0.6,
+        "final_given_doc_pass": 0.65,
+        "final": 0.4,
+        "basis": "이영림 대구경북 거점 추천 공고. 경북 거주 요건 충족 시 통과율 양호."
+      },
+      "expected_value_label": "중간 - 주거비 실질 절감 혜택"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "CONDITIONAL-GO",
+      "reasons": [
+        "이영림 대구경북 예비창업자로 best_entity 매칭",
+        "주거비 지원은 예비창업자에게 실질적 혜택",
+        "경북테크노파크 네트워크 연계 가능성"
+      ],
+      "exception_go_conditions": [
+        "이영림이 경북 지역(대구 인접 경북 시군) 거주 또는 이주 계획 시 GO",
+        "금호 이웃사촌마을 입주 가능 여부 확인 시"
+      ]
+    },
+    "alternatives": {
+      "title": "대안 공고",
+      "items": [
+        "대구 청년 주거 지원 사업",
+        "경북 청년창업사관학교 (주거+창업 연계)"
+      ]
+    }
+  }
+}

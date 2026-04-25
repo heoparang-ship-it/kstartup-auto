@@ -1,0 +1,83 @@
+{
+  "id": "bizinfo_PBLN_000000000120461",
+  "title": "2026년 중소기업 CBAM대응 인프라구축 사업 공고",
+  "analyzed_at": "2026-04-25T00:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북)",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.0,
+    "time_cost_hours": 2,
+    "one_liner": "탄소국경세 대응 제조수출업 전용 — SW 플랫폼 무관"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "탄소규제 대응 / CBAM 인프라 지원",
+      "body": "중소벤처기업부·중소벤처기업진흥공단 운영. EU 탄소국경조정메커니즘(CBAM) 대응 인프라 구축 지원. 철강·시멘트·비료·알루미늄·전력·수소 등 CBAM 규제 대상 제조·수출 기업 전용. SW 플랫폼·서비스업과 완전 무관.",
+      "benefits": [
+        {
+          "k": "지원 내용",
+          "v": "CBAM 대응 시스템·인프라 구축비 지원"
+        },
+        {
+          "k": "대상",
+          "v": "CBAM 규제 대상 제조·수출 중소기업"
+        },
+        {
+          "k": "마감",
+          "v": "2026-04-27"
+        }
+      ],
+      "watchout": "제조업·수출업 전용. SW/IT/플랫폼 서비스업 신청 불가."
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "CBAM 규제 대상은 철강·알루미늄·시멘트 등 제조 수출업. SW 플랫폼과 완전 다른 영역.",
+      "critical_gap": "업종 완전 불일치 — CBAM 규제 비해당 업종."
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "자격확인",
+            "hours": "1"
+          },
+          {
+            "stage": "검토",
+            "hours": "1"
+          }
+        ],
+        "total": "2h"
+      },
+      "probability": {
+        "doc_pass": 0.0,
+        "final_given_doc_pass": 0.0,
+        "final": 0.0,
+        "basis": "CBAM 비해당 업종."
+      },
+      "expected_value_label": "없음 — 업종 불일치"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "CBAM 규제 대상 제조·수출업 전용 — SW 플랫폼 해당 없음",
+        "신청 자격 자체 없음"
+      ],
+      "exception_go_conditions": []
+    },
+    "alternatives": {
+      "title": "대안 공고",
+      "items": [
+        "bizinfo_PBLN_000000000118017 (인천 중소기업육성자금)",
+        "bizinfo_PBLN_000000000117611 (인천 경영안정자금)"
+      ]
+    }
+  }
+}

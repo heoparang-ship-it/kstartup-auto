@@ -1,0 +1,105 @@
+{
+  "id": "bizinfo_PBLN_000000000117158",
+  "title": "[경북] 2026년 벤처기업 육성자금 운용계획 공고",
+  "analyzed_at": "2026-04-25T00:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북)",
+  "verdict": {
+    "decision": "GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.35,
+    "time_cost_hours": 20,
+    "one_liner": "이영림 경북 청년창업 벤처자금 직접 해당"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "정책자금 / 벤처기업 육성 융자",
+      "body": "경상북도·경상북도경제진흥원 운영. 경북 소재 벤처기업 또는 청년창업 기업 대상 저금리 육성자금. 이영림 청년창업 강 매칭. 창업 아이템 기술성·성장성 심사.",
+      "benefits": [
+        {
+          "k": "지원 내용",
+          "v": "벤처기업 육성 저금리 융자"
+        },
+        {
+          "k": "대상",
+          "v": "경북 소재 벤처기업, 청년창업기업"
+        },
+        {
+          "k": "특징",
+          "v": "청년창업 강 매칭 트리거"
+        }
+      ],
+      "watchout": "경북 소재 기업 필수. 벤처확인 또는 청년 자격 증빙 필요."
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [
+        {
+          "task": "이영림 청년창업자",
+          "fit": "🟢",
+          "reason": "청년창업 강 매칭, 대구경북 지역 부합"
+        },
+        {
+          "task": "AI 플랫폼 기술 기반 창업",
+          "fit": "🟢",
+          "reason": "기술 기반 벤처 요건 충족 가능"
+        }
+      ],
+      "tech_adjacent": [
+        {
+          "task": "벤처확인 취득",
+          "fit": "🟡",
+          "reason": "예비창업 단계에서 벤처확인 불가 — 창업 후 신청 필요"
+        }
+      ],
+      "mismatch_note": "허파랑·엑스컴은 경북 지역 불일치.",
+      "critical_gap": "사전 창업 완료 필요. 벤처확인 또는 청년창업 자격 확인."
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "자격확인",
+            "hours": "3"
+          },
+          {
+            "stage": "서류작성",
+            "hours": "12"
+          },
+          {
+            "stage": "심사대응",
+            "hours": "5"
+          }
+        ],
+        "total": "20h"
+      },
+      "probability": {
+        "doc_pass": 0.55,
+        "final_given_doc_pass": 0.65,
+        "final": 0.35,
+        "basis": "청년창업 강 매칭. 창업 완료 후 청년 자격 유지하면 높은 통과율."
+      },
+      "expected_value_label": "중상 — 실질 자금 조달 + 경북 벤처 생태계 진입"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "GO",
+      "reasons": [
+        "이영림 청년창업 강 매칭 + 경북 지역 완전 부합",
+        "창업 완료 시 즉시 신청 가능한 자금 지원",
+        "경북 벤처 생태계 진입 발판"
+      ],
+      "exception_go_conditions": []
+    },
+    "alternatives": {
+      "title": "대안 공고",
+      "items": [
+        "bizinfo_PBLN_000000000118910 (지스타 경북 딥테크 부스터)",
+        "bizinfo_PBLN_000000000118729 (창업-BuS at 경북)"
+      ]
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "id": "bizinfo_PBLN_000000000120757",
+  "title": "2026년 K-섬유패션 협력강화 및 글로벌 브랜드 육성 공고",
+  "analyzed_at": "2026-04-25T00:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북)",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.02,
+    "time_cost_hours": "3",
+    "one_liner": "섬유·패션 제조 기반 공고, 팀 무관"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "글로벌 브랜드 육성 지원",
+      "body": "산업통상자원부·한국패션협회가 운영하는 K-섬유패션 글로벌 브랜드 육성 프로그램. 섬유·패션 제조 기반 중소기업의 해외 진출, 브랜드 개발, 마케팅을 지원한다. 실물 섬유·패션 제품을 보유한 제조·유통 기업이 주 대상.",
+      "benefits": [
+        {"k": "지원 형태", "v": "글로벌 브랜드 컨설팅·해외전시 참가비 보조"},
+        {"k": "지원 내용", "v": "패션 브랜드 기획, 해외 바이어 연결, 마케팅 비용 일부 지원"},
+        {"k": "주관", "v": "한국패션협회"}
+      ],
+      "watchout": "섬유·패션 제조 실적 및 브랜드 보유 여부가 핵심 요건. 디지털 플랫폼은 간접 연관이 있어도 주 선발군에서 벗어남."
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [
+        {"task": "B2C 마케팅 경험", "fit": "🟡", "reason": "sinhon.life의 B2C UX 역량은 있으나 패션 제품 실물 없음"}
+      ],
+      "mismatch_note": "팀은 AI/SW 플랫폼 전문으로 섬유·패션 제조 실적 없음. 공고 목적과 근본적으로 미스매치.",
+      "critical_gap": "섬유·패션 제품 제조 또는 유통 실적 전무"
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {"stage": "자격 확인", "hours": "1"},
+          {"stage": "서류 작성", "hours": "2"}
+        ],
+        "total": "3h"
+      },
+      "probability": {
+        "doc_pass": 0.03,
+        "final_given_doc_pass": 0.05,
+        "final": 0.02,
+        "basis": "패션 제조 실적 요구 → SW 전문 팀 해당 없음"
+      },
+      "expected_value_label": "투입 3h 대비 기대가치 극소"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "섬유·패션 제조 기반 사업으로 SW 플랫폼 팀과 업종 미스매치",
+        "실물 패션 브랜드·제품 없음",
+        "신혼부부 플랫폼과 직접 연관성 없음"
+      ],
+      "exception_go_conditions": [
+        "신혼 웨딩 패션/드레스 버티컬로 확장 시 재검토 가능"
+      ]
+    },
+    "alternatives": {
+      "title": "대안 공고",
+      "items": [
+        "싱가포르 K-콘텐츠·IP 파트너십 데이 (bizinfo_PBLN_000000000121252) - 콘텐츠 IP 글로벌 진출",
+        "대구게임테크허브 플랫폼 도약 지원 (bizinfo_PBLN_000000000121056) - 플랫폼 SW 직접 매칭"
+      ]
+    }
+  }
+}

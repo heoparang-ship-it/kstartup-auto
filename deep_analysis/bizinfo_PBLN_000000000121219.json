@@ -1,0 +1,73 @@
+{
+  "id": "bizinfo_PBLN_000000000121219",
+  "title": "2026년 KOTRA-이베이재팬(큐텐재팬) 파워셀러 1단계 입점교육 2기 참가기업 모집 공고",
+  "analyzed_at": "2026-04-25T00:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북)",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.04,
+    "time_cost_hours": "4",
+    "one_liner": "일본 이커머스 입점교육, 실물상품 없어 무관"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "해외 이커머스 입점 교육·지원",
+      "body": "KOTRA와 이베이재팬(큐텐재팬)이 공동으로 일본 이커머스 마켓플레이스 입점을 원하는 한국 중소기업을 모집해 1단계 파워셀러 입점 교육을 제공한다. 일본에 한국 상품을 판매하려는 실물 제품 보유 수출기업이 대상.",
+      "benefits": [
+        {"k": "지원 형태", "v": "이커머스 입점 교육 및 컨설팅"},
+        {"k": "지원 내용", "v": "큐텐재팬 플랫폼 입점 절차·상품 등록·마케팅 교육"},
+        {"k": "기대 효과", "v": "일본 온라인 수출 판로 개척"}
+      ],
+      "watchout": "실물 제품(SKU) 보유가 전제 조건. 디지털 서비스는 이커머스 입점 대상이 아님."
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [
+        {"task": "플랫폼 운영 경험", "fit": "🟡", "reason": "플랫폼 운영 역량은 있으나 판매할 실물 상품이 없음"}
+      ],
+      "mismatch_note": "sinhon.life·(주)엑스컴 모두 디지털 SW 서비스로 일본 이커머스에 올릴 실물 상품 없음.",
+      "critical_gap": "일본 수출 가능 실물 제품(SKU) 없음"
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {"stage": "자격 확인", "hours": "2"},
+          {"stage": "서류 작성", "hours": "2"}
+        ],
+        "total": "4h"
+      },
+      "probability": {
+        "doc_pass": 0.05,
+        "final_given_doc_pass": 0.08,
+        "final": 0.04,
+        "basis": "실물 상품 보유가 전제 → 디지털 서비스 팀 해당 없음"
+      },
+      "expected_value_label": "투입 대비 기대가치 없음"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "일본 이커머스 입점은 실물 제품(SKU) 보유 전제",
+        "sinhon.life는 디지털 플랫폼 서비스로 판매 실물 없음",
+        "교육 내용도 실물 수출 운영에 집중"
+      ],
+      "exception_go_conditions": [
+        "신혼 굿즈·패키지 등 실물 상품 라인업 출시 시 재검토"
+      ]
+    },
+    "alternatives": {
+      "title": "대안 공고",
+      "items": [
+        "싱가포르 K-콘텐츠 IP 파트너십 데이 (bizinfo_PBLN_000000000121252) - 디지털 IP 해외 진출 적합",
+        "온라인판로 종합지원사업 (bizinfo_PBLN_000000000120541) - 국내 온라인 판로"
+      ]
+    }
+  }
+}

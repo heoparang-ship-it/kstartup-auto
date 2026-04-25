@@ -1,0 +1,77 @@
+{
+  "id": "bizinfo_PBLN_000000000120712",
+  "title": "2026년 디자인-온라인제조플랫폼서비스 사업 수요기업 모집 공고",
+  "analyzed_at": "2026-04-25T00:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북)",
+  "verdict": {
+    "decision": "CONDITIONAL-GO",
+    "confidence": "medium",
+    "expected_pass_rate": 0.2,
+    "time_cost_hours": "14",
+    "one_liner": "디자인 온라인 제조 플랫폼 수요기업, UX 제작물 연계 가능"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "디자인 제조 바우처·플랫폼 서비스 지원",
+      "body": "산업통상자원부·한국디자인진흥원(KIDP)이 운영하는 디자인-온라인제조플랫폼 서비스 사업. 중소기업이 소량 제조·시제품 제작을 온라인 제조 플랫폼을 통해 진행할 때 비용 일부를 지원한다. 굿즈·패키지·인쇄물·판촉물 등 소량 제조가 필요한 기업이 수요기업으로 참여 가능.",
+      "benefits": [
+        {"k": "지원 형태", "v": "온라인 제조 플랫폼 이용 바우처"},
+        {"k": "지원 내용", "v": "소량 시제품·굿즈·패키지 제작 비용 일부 보조"},
+        {"k": "주관", "v": "한국디자인진흥원(KIDP)"}
+      ],
+      "watchout": "(주)엑스컴은 xcom_corp 단계 불일치(중견기업) 플래그가 있음. 실제 매출 및 규모 기준 재확인 필요. 수요기업은 제조 의뢰 실적·계획이 있어야 함."
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [
+        {"task": "브랜드 굿즈·홍보물 제작", "fit": "🟢", "reason": "sinhon.life 론칭 시 브랜드 키트·웨딩 패키지 굿즈 소량 제작 계획 연계 가능"}
+      ],
+      "tech_adjacent": [
+        {"task": "UX 디자인 시제품", "fit": "🟡", "reason": "플랫폼 UI/UX 실물화(인쇄 매뉴얼·패키지)로 연결 가능하나 SW 서비스 제작물은 해당 없음"}
+      ],
+      "mismatch_note": "(주)엑스컴은 중견기업 기준 단계 불일치 플래그. 허파랑 개인 또는 이영림 명의로 신청 시 소기업 기준 해당 가능.",
+      "critical_gap": "제조 의뢰 계획(굿즈·패키지 등) 구체화 필요. (주)엑스컴 규모 요건 확인."
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {"stage": "자격 확인 및 제조 계획 수립", "hours": "4"},
+          {"stage": "서류 작성", "hours": "8"},
+          {"stage": "제출", "hours": "2"}
+        ],
+        "total": "14h"
+      },
+      "probability": {
+        "doc_pass": 0.4,
+        "final_given_doc_pass": 0.5,
+        "final": 0.2,
+        "basis": "굿즈·홍보물 제작 계획 있으면 적합하나 SW 전용 기업 자격 불확실"
+      },
+      "expected_value_label": "소량 제조 비용 보조로 브랜드 키트 제작 가능, 14h 투자 조건부 가치"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "CONDITIONAL-GO",
+      "reasons": [
+        "sinhon.life 브랜드 론칭 굿즈·웨딩 패키지 소량 제작 계획 시 바우처 활용 가능",
+        "디자인-제조 연계로 브랜드 물리적 접점 확보 가능",
+        "허파랑 개인 또는 이영림 명의 소기업 자격 신청 시 규모 요건 해결"
+      ],
+      "exception_go_conditions": [
+        "sinhon.life 론칭 굿즈(브랜드 키트·신혼 패키지 등) 제작 계획이 확정된 경우 GO",
+        "(주)엑스컴이 아닌 허파랑 개인 명의로 신청하여 중견기업 기준 제외 확인 시 GO"
+      ]
+    },
+    "alternatives": {
+      "title": "대안 공고",
+      "items": [
+        "AX 원스톱 바우처 (bizinfo_PBLN_000000000120085) - SW 개발 직접 지원",
+        "온라인판로 종합지원사업 (bizinfo_PBLN_000000000120541) - 완성 제품 판로 연계"
+      ]
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "id": "bizinfo_PBLN_000000000121196",
+  "title": "2026년 섬유패션 수요-제조간 AI활용 디지털 공급망 구축 사업 수혜기업 모집 공고",
+  "analyzed_at": "2026-04-25T00:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북)",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.02,
+    "time_cost_hours": "2",
+    "one_liner": "섬유패션 제조 SCM 지원, 업종 완전 불일치"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "제조업 디지털 전환 지원 (섬유패션 특화)",
+      "body": "한국아웃도어스포츠산업협회 주관으로 섬유패션 분야 수요기업(브랜드·유통)과 제조기업 간 AI 기반 디지털 공급망(SCM) 구축 지원. 섬유·의류·아웃도어 제조·판매 기업이 수혜기업 대상. SW 플랫폼 기업은 기술 공급자 역할이지 수혜기업이 아님.",
+      "benefits": [
+        {
+          "k": "AI SCM 구축 지원",
+          "v": "수요-제조 연계 AI 공급망 관리 시스템 무상 지원"
+        },
+        {
+          "k": "컨설팅",
+          "v": "디지털 전환 전문 컨설팅 제공"
+        },
+        {
+          "k": "네트워크",
+          "v": "섬유패션 업계 B2B 네트워크 구축"
+        }
+      ],
+      "watchout": "섬유·패션 제조 또는 유통 기업만 수혜기업으로 신청 가능."
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [
+        {
+          "task": "AI/데이터 기술",
+          "fit": "🟡",
+          "reason": "AI/RAG 기술 보유하나 섬유패션 도메인 지식 없음"
+        },
+        {
+          "task": "플랫폼 연계 서비스",
+          "fit": "🟡",
+          "reason": "플랫폼 개발 역량은 있으나 SCM 솔루션 공급 경험 없음"
+        }
+      ],
+      "mismatch_note": "수혜기업 = 섬유패션 제조·유통 기업. SW 기업은 수혜기업 자격 없음.",
+      "critical_gap": "섬유패션 업종 미해당"
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "자격확인",
+            "hours": "1"
+          },
+          {
+            "stage": "서류검토",
+            "hours": "1"
+          }
+        ],
+        "total": "2h"
+      },
+      "probability": {
+        "doc_pass": 0.02,
+        "final_given_doc_pass": 0.1,
+        "final": 0.002,
+        "basis": "섬유패션 업종 미해당으로 신청 자격 없음"
+      },
+      "expected_value_label": "업종 불일치로 신청 불가"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "섬유패션 수요·제조 기업 한정 공고",
+        "SW 플랫폼 기업은 수혜기업 자격 없음",
+        "AI 기술 보유해도 업종 요건으로 배제"
+      ],
+      "exception_go_conditions": []
+    },
+    "alternatives": {
+      "title": "대안 공고",
+      "items": [
+        {
+          "title": "AI 바우처 공급기업 등록 (NIPA)",
+          "reason": "AI 기술 보유 기업이 공급자로 참여하는 AI 바우처 프로그램"
+        }
+      ]
+    }
+  }
+}

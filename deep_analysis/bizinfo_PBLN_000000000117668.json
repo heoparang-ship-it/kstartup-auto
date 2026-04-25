@@ -1,0 +1,103 @@
+{
+  "id": "bizinfo_PBLN_000000000117668",
+  "title": "[인천] 2026년 기술거래촉진네트워크사업(인천기술전환플랫폼) 기술이전 및 기술수요조사서 신청 공고",
+  "analyzed_at": "2026-04-25T00:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북)",
+  "verdict": {
+    "decision": "CONDITIONAL-GO",
+    "confidence": "medium",
+    "expected_pass_rate": 0.25,
+    "time_cost_hours": 18,
+    "one_liner": "인천 기술이전 플랫폼, 허파랑 개인 AI기술 이전 가능성"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "기술이전 / 기술수요조사",
+      "body": "인천광역시·인천테크노파크 운영. 기술 보유자(공급자) 또는 기술 수요자 양쪽 모두 신청 가능. 기술이전·기술사업화 연계 플랫폼. AI/SW 기술 보유자가 인천 기업에 기술이전하거나, 인천 기업이 기술 수요를 등록. 엑스컴의 AI/RAG 기술이 '공급' 측면에서 등록 가능.",
+      "benefits": [
+        {
+          "k": "지원 내용",
+          "v": "기술이전 중개, 기술사업화 컨설팅, 매칭 지원"
+        },
+        {
+          "k": "대상",
+          "v": "기술 공급자 및 수요자 (인천 소재 우선)"
+        }
+      ],
+      "watchout": "중견기업 단계 불일치 감안 — 허파랑 개인 또는 초기 법인 자격으로 신청. 실질 기술이전 계약까지는 긴 과정."
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [
+        {
+          "task": "허파랑 인천 기반 AI 기술 보유",
+          "fit": "🟢",
+          "reason": "인천테크노파크 강 매칭, AI/RAG 기술 공급자로 등록 가능"
+        }
+      ],
+      "tech_adjacent": [
+        {
+          "task": "기술수요 조사 참여",
+          "fit": "🟡",
+          "reason": "플랫폼 기술 수요자 측면 등록으로도 활용 가능"
+        },
+        {
+          "task": "엑스컴 법인 자격",
+          "fit": "🟡",
+          "reason": "중견기업 단계 불일치 표시 — 초기 스타트업으로 재확인 필요"
+        }
+      ],
+      "mismatch_note": "이영림(대구)은 인천 전용으로 해당 없음. 엑스컴은 단계 불일치 재확인 요망.",
+      "critical_gap": "기술이전 실적·특허 등 기술 공급 증빙 자료 필요."
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "자격확인",
+            "hours": "3"
+          },
+          {
+            "stage": "기술 수요조사서 작성",
+            "hours": "10"
+          },
+          {
+            "stage": "매칭 대응",
+            "hours": "5"
+          }
+        ],
+        "total": "18h"
+      },
+      "probability": {
+        "doc_pass": 0.5,
+        "final_given_doc_pass": 0.5,
+        "final": 0.25,
+        "basis": "기술 증빙 자료 충분하면 통과 가능. 실질 기술이전까지는 추가 단계 필요."
+      },
+      "expected_value_label": "중 — 직접 자금보다 기술 네트워크·사업화 연결 가치"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "CONDITIONAL-GO",
+      "reasons": [
+        "허파랑 AI/RAG 기술 공급자 등록으로 인천 기술 생태계 진입 가능",
+        "인천테크노파크 네트워크 확보 기회"
+      ],
+      "exception_go_conditions": [
+        "AI/RAG 기술 명세서 및 관련 포트폴리오 보유 시 GO",
+        "기술이전 목적 아닌 기술수요조사 참여 목적이라면 즉시 GO"
+      ]
+    },
+    "alternatives": {
+      "title": "대안 공고",
+      "items": [
+        "bizinfo_PBLN_000000000118017 (인천 중소기업육성자금 — 더 직접적)",
+        "bizinfo_PBLN_000000000117611 (인천 경영안정자금)"
+      ]
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "id": "bizinfo_PBLN_000000000118049",
+  "title": "2026년 중소벤처기업부 외국전문인력(E-7-1) 고용추천 공고",
+  "analyzed_at": "2026-04-25T00:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북)",
+  "verdict": {
+    "decision": "CONDITIONAL-GO",
+    "confidence": "low",
+    "expected_pass_rate": 0.12,
+    "time_cost_hours": 10,
+    "one_liner": "외국 SW 전문인력 채용 시 비자 지원 가능"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "외국인력 / 비자지원 / 고용추천",
+      "body": "중소기업이 외국인 전문인력(E-7-1 비자)을 채용할 때 중소벤처기업부 추천서를 받아 법무부 비자 신청을 원활하게 할 수 있도록 지원하는 제도. IT·SW·R&D 분야도 포함되어 있으며, 전문학사 이상 학력 + 관련 분야 경력 보유 외국인이 대상.",
+      "benefits": [
+        {"k": "지원형태", "v": "E-7-1 비자 고용추천서 발급 (법무부 비자 심사 우대)"},
+        {"k": "주관기관", "v": "중소벤처기업진흥공단"},
+        {"k": "대상", "v": "외국 전문인력(IT·SW·연구 등) 채용 희망 중소기업"}
+      ],
+      "watchout": "외국인 SW 개발자를 채용할 구체적 계획이 있어야 의미 있음. 현재 채용 계획이 없으면 실효 없음."
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [
+        {"task": "SW·IT 분야 외국인 전문인력 채용", "fit": "🟢", "reason": "AI/SW 스타트업으로 외국인 개발자 채용 시 직접 활용 가능"}
+      ],
+      "tech_adjacent": [
+        {"task": "AI/RAG 전문인력 확보", "fit": "🟡", "reason": "AI 엔지니어 중 외국인 채용 계획 있으면 활용 가능"}
+      ],
+      "mismatch_note": "현재 외국인 채용 계획이 구체화되지 않은 초기 스타트업이므로 즉각 활용 어려움.",
+      "critical_gap": "외국인 전문인력 채용 계획 부재 — 현 시점 실효성 낮음."
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {"stage": "자격확인 및 요건 파악", "hours": "3"},
+          {"stage": "채용 계획서·추천신청 서류", "hours": "7"}
+        ],
+        "total": "10h"
+      },
+      "probability": {
+        "doc_pass": 0.4,
+        "final_given_doc_pass": 0.3,
+        "final": 0.12,
+        "basis": "IT 분야 포함이나 채용 계획 구체화 여부에 따라 유효성 결정"
+      },
+      "expected_value_label": "외국인 개발자 채용 계획 있을 때만 GO"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "CONDITIONAL-GO",
+      "reasons": [
+        "SW·IT 분야 외국인 전문인력 포함 — 업종 일치",
+        "현재 채용 계획 없으면 실효 없음",
+        "향후 AI/SW 개발자 채용 시 유용한 채널"
+      ],
+      "exception_go_conditions": [
+        "외국인 AI/SW 개발자 채용 계획이 3개월 내 구체화되는 경우 GO"
+      ]
+    },
+    "alternatives": {
+      "title": "대안 공고",
+      "items": [
+        "K-스타트업 외국인 창업 비자 (D-8-4) — 외국인 공동창업 검토 시 해당"
+      ]
+    }
+  }
+}

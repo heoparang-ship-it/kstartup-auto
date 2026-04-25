@@ -1,0 +1,67 @@
+{
+  "id": "bizinfo_PBLN_000000000118318",
+  "title": "2026년 소스개발 및 생산지원 사업 공고",
+  "analyzed_at": "2026-04-25T00:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북)",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.01,
+    "time_cost_hours": 1,
+    "one_liner": "식품소스 개발·생산 지원, 식품업 전용"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "식품업 / R&D지원",
+      "body": "농림축산식품부 산하 한국식품산업클러스터진흥원이 운영하는 식품소스(소스류·장류·드레싱 등) 개발 및 생산공정 지원사업. 식품 제조기업이 신규 소스 제품을 개발·시생산할 수 있도록 시설·장비·전문인력을 지원.",
+      "benefits": [
+        {"k": "지원형태", "v": "소스 개발 R&D 비용 + 시생산 시설 이용 지원"},
+        {"k": "주관기관", "v": "한국식품산업클러스터진흥원"},
+        {"k": "대상", "v": "식품 제조기업 (소스류 개발 희망 기업)"}
+      ],
+      "watchout": "식품 제조업 특화 사업. 신혼부부 플랫폼·SW 법인과는 업종 전면 불일치."
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "sinhon.life 및 엑스컴은 디지털 SW 기업으로 식품 제조 업종과 전혀 관련 없음.",
+      "critical_gap": "식품 제조업 업종 코드 및 생산시설 요건 미충족. 신청 자격 없음."
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {"stage": "자격확인", "hours": "1"}
+        ],
+        "total": "1h"
+      },
+      "probability": {
+        "doc_pass": 0.01,
+        "final_given_doc_pass": 0.05,
+        "final": 0.0005,
+        "basis": "식품 제조업 전용 — SW 기업 해당 없음"
+      },
+      "expected_value_label": "즉시 패스"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "식품 소스 개발·생산 지원사업 — 식품 제조업 전용",
+        "SW·플랫폼 기업 업종 불일치",
+        "신혼부부 플랫폼과 내용적 연관성 없음"
+      ],
+      "exception_go_conditions": []
+    },
+    "alternatives": {
+      "title": "대안 공고",
+      "items": [
+        "신혼부부 식품 관련 콘텐츠 마케팅 연계 사업 별도 탐색 (식품 파트너사 연계 방향)"
+      ]
+    }
+  }
+}

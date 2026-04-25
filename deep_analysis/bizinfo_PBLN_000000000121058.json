@@ -1,0 +1,99 @@
+{
+  "id": "bizinfo_PBLN_000000000121058",
+  "title": "2026년 G-Star 오픈이노베이션 커넥팅데이 스타트업 모집 공고",
+  "analyzed_at": "2026-04-25T00:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북)",
+  "verdict": {
+    "decision": "GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.35,
+    "time_cost_hours": 12,
+    "one_liner": "경북 스타트업 오픈이노베이션 피칭 행사, 이영림 GO"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "오픈이노베이션 네트워킹/IR",
+      "body": "G-Star 게임쇼와 연계한 경북창조경제혁신센터 주관 오픈이노베이션 커넥팅데이. 스타트업이 중견·대기업과 협업 기회를 얻는 IR 행사형 공고. 지역 한정(경상북도/경북).",
+      "benefits": [
+        {
+          "k": "협업 기회",
+          "v": "중견·대기업 오픈이노베이션 파트너 매칭"
+        },
+        {
+          "k": "노출",
+          "v": "G-Star 연계 홍보·네트워킹"
+        }
+      ],
+      "watchout": "경북 소재 또는 경북창조경제혁신센터 입주·지원 기업 우선. 이영림이 대구 거점이므로 인접 가능하나 영덕·경주 등 경북 소재 확인 필요."
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [
+        {
+          "task": "예비창업자 IR 발표",
+          "fit": "🟢",
+          "reason": "이영림 예비창업 단계, AI 기반 서비스 아이템으로 발표 가능"
+        }
+      ],
+      "tech_adjacent": [
+        {
+          "task": "신혼·라이프스타일 플랫폼 소개",
+          "fit": "🟡",
+          "reason": "G-Star 게임 특화 행사이나 디지털 콘텐츠 B2C 서비스로 피칭 가능"
+        }
+      ],
+      "mismatch_note": "허파랑·엑스컴은 경북 기반 아님. 이영림 대구 거점이 경북 범위 포함 여부 확인 필요.",
+      "critical_gap": "경북 소재 자격 요건 확인 필수"
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "자격확인",
+            "hours": "1"
+          },
+          {
+            "stage": "서류작성",
+            "hours": "6"
+          },
+          {
+            "stage": "피칭준비",
+            "hours": "5"
+          }
+        ],
+        "total": "12h"
+      },
+      "probability": {
+        "doc_pass": 0.55,
+        "final_given_doc_pass": 0.65,
+        "final": 0.35,
+        "basis": "경북 오픈이노베이션 특화, 이영림 대구 근거리, 예비창업자 적합"
+      },
+      "expected_value_label": "주 분석 엔터티: 이영림(예비창업/대구경북)"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "GO",
+      "reasons": [
+        "경북창조경제혁신센터 주관 → 이영림 대구 근거리 접근 가능",
+        "예비창업자·초기스타트업 타겟 IR 행사",
+        "AI/디지털 B2C 서비스 아이템 피칭 적합"
+      ],
+      "exception_go_conditions": []
+    },
+    "alternatives": {
+      "title": "대안 공고",
+      "items": [
+        {
+          "id": "bizinfo_PBLN_000000000121054",
+          "title": "경북 창업On 희망On 아카데미",
+          "reason": "동일 기관, 이영림 경북 창업 진입점"
+        }
+      ]
+    }
+  }
+}

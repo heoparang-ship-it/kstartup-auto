@@ -1,0 +1,104 @@
+{
+  "id": "bizinfo_PBLN_000000000121054",
+  "title": "[경북] 영덕군 2026년 창업On 희망On 아카데미 참여자 모집 공고(시군 특화 맞춤형 일자리 지원사업)",
+  "analyzed_at": "2026-04-25T00:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북)",
+  "verdict": {
+    "decision": "GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.45,
+    "time_cost_hours": 10,
+    "one_liner": "경북 창업 아카데미, 이영림 예창자 최적"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "창업 교육·아카데미 (경북 영덕)",
+      "body": "경북창조경제혁신센터 주관 시군 특화 맞춤형 창업 아카데미. 창업 희망자·예비창업자에게 교육·멘토링·창업 실습 제공. 이영림 예비창업자 신분과 완벽 매칭.",
+      "benefits": [
+        {
+          "k": "창업 교육",
+          "v": "단계별 창업 실무 교육 및 멘토링"
+        },
+        {
+          "k": "지역 창업 네트워크",
+          "v": "경북 창업 생태계 진입 기회"
+        }
+      ],
+      "watchout": "영덕군 특화 사업으로 현지 참여 또는 원격 참여 여부 확인 필요. 실제 거주지·거점 기준 확인."
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [
+        {
+          "task": "예비창업자 교육 참여",
+          "fit": "🟢",
+          "reason": "이영림 예비창업자, 창업 아카데미 타겟 그룹"
+        },
+        {
+          "task": "창업 아이템 개발",
+          "fit": "🟢",
+          "reason": "AI 기반 B2C 서비스 아이템 보유"
+        }
+      ],
+      "tech_adjacent": [
+        {
+          "task": "지역 시장 네트워크 구축",
+          "fit": "🟡",
+          "reason": "경북 지역 창업 생태계 인맥 형성 가능"
+        }
+      ],
+      "mismatch_note": "영덕군 현지 참여 요건이 있을 경우 대구 거주자 접근 제한 가능.",
+      "critical_gap": "영덕군 거주/소재 요건 여부 확인 필수"
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "자격확인",
+            "hours": "1"
+          },
+          {
+            "stage": "신청서 작성",
+            "hours": "5"
+          },
+          {
+            "stage": "인터뷰 준비",
+            "hours": "4"
+          }
+        ],
+        "total": "10h"
+      },
+      "probability": {
+        "doc_pass": 0.65,
+        "final_given_doc_pass": 0.69,
+        "final": 0.45,
+        "basis": "예비창업자 교육형, 이영림 단계 최적 매칭, 경북 근거리"
+      },
+      "expected_value_label": "주 분석 엔터티: 이영림(예비창업/대구경북)"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "GO",
+      "reasons": [
+        "예비창업자 타겟 교육 프로그램",
+        "이영림 대구 거점 – 경북 근거리",
+        "경북창조경제혁신센터 강 매칭"
+      ],
+      "exception_go_conditions": []
+    },
+    "alternatives": {
+      "title": "대안 공고",
+      "items": [
+        {
+          "id": "bizinfo_PBLN_000000000121058",
+          "title": "G-Star 오픈이노베이션 커넥팅데이",
+          "reason": "동일 기관 IR 행사, 아카데미 이후 단계"
+        }
+      ]
+    }
+  }
+}

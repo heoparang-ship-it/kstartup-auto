@@ -1,0 +1,92 @@
+{
+  "id": "bizinfo_PBLN_000000000120679",
+  "title": "[인천] 2026년 시제품제작 장비 (3D 프린팅) 공동활용 지원 공고",
+  "analyzed_at": "2026-04-25T00:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북)",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.05,
+    "time_cost_hours": 4,
+    "one_liner": "3D프린팅 장비지원 — SW플랫폼팀에 활용가치 없음"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "장비·시설 공동활용 (제조/시제품)",
+      "body": "인천테크노파크에서 운영하는 3D프린팅 장비를 인천 소재 중소기업·스타트업에 저비용 공동활용하도록 지원하는 현물성 사업. 직접 현금 지원은 없으며 장비 사용료 할인/무료 이용이 혜택 전부. 시제품 제작이 필요한 하드웨어·제조 기업 대상.",
+      "benefits": [
+        {
+          "k": "지원내용",
+          "v": "3D프린터 등 시제품 제작 장비 공동활용 (사용료 감면)"
+        },
+        {
+          "k": "직접 현금",
+          "v": "없음 (현물 장비 이용 한정)"
+        },
+        {
+          "k": "대상",
+          "v": "인천 소재 중소기업 / 창업기업"
+        }
+      ],
+      "watchout": "순수 SW 서비스 업체에는 시제품 제작 장비 이용 수요 자체가 없음. 인천 소재 요건은 충족하나 활용 가능성 제로"
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "sinhon.life 및 엑스컴 모두 순수 SW/AI 플랫폼. 3D프린팅 시제품 제작 수요 없음. 장비 공동활용 사업은 제조업체 대상.",
+      "critical_gap": "하드웨어/시제품 수요 완전 부재 — SW 플랫폼에 적용 불가"
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "자격확인",
+            "hours": "1"
+          },
+          {
+            "stage": "판단 및 기각",
+            "hours": "3"
+          }
+        ],
+        "total": "4h"
+      },
+      "probability": {
+        "doc_pass": 0.1,
+        "final_given_doc_pass": 0.5,
+        "final": 0.05,
+        "basis": "인천 소재 자격은 충족하나 3D프린팅 장비 실활용 가능성 없으므로 지원 의미 없음"
+      },
+      "expected_value_label": "현금 지원 없음 + 장비 활용 수요 없음 → 기댓값 0"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "3D프린팅 시제품 장비 — SW/AI 플랫폼에 활용 수요 전무",
+        "직접 현금 지원 없음 (장비 사용료 감면만)",
+        "sinhon.life/엑스컴 비즈니스 모델과 무관한 인프라"
+      ],
+      "exception_go_conditions": [
+        "향후 굿즈·패키지 등 물리적 제품 연계 비즈니스 진출 시 재검토 가능"
+      ]
+    },
+    "alternatives": {
+      "title": "대안 공고",
+      "items": [
+        {
+          "name": "인천창조경제혁신센터 창업-BuS 프로그램",
+          "reason": "SW 창업 직접 지원 + 인천 소재 충족"
+        },
+        {
+          "name": "가상융합산업 콘텐츠 제작 장비 임차지원",
+          "reason": "동일 인천TP 운영, SW/콘텐츠 활용 가능"
+        }
+      ]
+    }
+  }
+}

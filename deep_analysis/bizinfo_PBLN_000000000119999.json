@@ -1,0 +1,121 @@
+{
+  "id": "bizinfo_PBLN_000000000119999",
+  "title": "2026년 인천창조경제혁신센터 창업-BuS 프로그램 참여기업 모집 공고",
+  "analyzed_at": "2026-04-25T00:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북)",
+  "verdict": {
+    "decision": "GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.45,
+    "time_cost_hours": 20,
+    "one_liner": "인천창경센터 BuS — SW 창업 직접지원 + 인천 네트워크 최적"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "창업 지원 (보육·멘토링·자금)",
+      "body": "인천창조경제혁신센터(인천창경센터)의 창업-BuS(Business+Startup) 프로그램. 인천 소재 창업기업을 대상으로 보육 공간, 멘토링, 사업화 자금, 네트워킹, 투자 연계 등 종합 지원. 디지털·SW·AI 스타트업 우대 가능성. 인천창조경제혁신센터는 SK그룹 연계 운영으로 대기업 오픈 이노베이션 연계 기회 제공.",
+      "benefits": [
+        {
+          "k": "사업화 자금",
+          "v": "직접 현금 지원 (규모 공고 원문 확인)"
+        },
+        {
+          "k": "보육 공간",
+          "v": "인천창경센터 입주 공간 지원"
+        },
+        {
+          "k": "멘토링",
+          "v": "전문가 멘토링 + 투자자 연계"
+        },
+        {
+          "k": "네트워크",
+          "v": "SK그룹 오픈 이노베이션 연계"
+        }
+      ],
+      "watchout": "입주 기반 프로그램이면 인천 접근성 고려. SK 그룹 관련 산업 우선 선발 가능성 — SW/AI 플랫폼 적합"
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [
+        {
+          "task": "인천 소재 창업기업",
+          "fit": "🟢",
+          "reason": "엑스컴 인천 부평 법인 소재 + 창경센터 접근성"
+        },
+        {
+          "task": "SW/AI 창업 (디지털 서비스)",
+          "fit": "🟢",
+          "reason": "sinhon.life AI/RAG 플랫폼 → SK 디지털 혁신 생태계 적합"
+        },
+        {
+          "task": "B2C 플랫폼 비즈니스",
+          "fit": "🟢",
+          "reason": "신혼부부 타겟 B2C 플랫폼 — 소비자 서비스 분야"
+        }
+      ],
+      "tech_adjacent": [
+        {
+          "task": "TIPS 연계 준비",
+          "fit": "🟡",
+          "reason": "인천창경센터 → SK TIPS 운영사 연계 가능성"
+        }
+      ],
+      "mismatch_note": "없음 — 전반적으로 높은 적합도",
+      "critical_gap": "없음"
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "자격 확인",
+            "hours": "2"
+          },
+          {
+            "stage": "사업계획서 작성",
+            "hours": "12"
+          },
+          {
+            "stage": "인터뷰 준비 및 발표",
+            "hours": "6"
+          }
+        ],
+        "total": "20h"
+      },
+      "probability": {
+        "doc_pass": 0.65,
+        "final_given_doc_pass": 0.7,
+        "final": 0.45,
+        "basis": "인천 소재 + SW/AI 플랫폼 + B2C 당사자성 강점. 인천창경센터 디지털 트랙 우대 예상"
+      },
+      "expected_value_label": "사업화 자금 + 입주 + SK 오픈이노베이션 연계 — 종합 가치 수천만 원 이상"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "GO",
+      "reasons": [
+        "인천 소재 + SW/AI 창업 = 최적 프로필 매칭",
+        "직접 사업화 자금 + 보육 공간 + 멘토링 종합 패키지",
+        "SK 오픈 이노베이션 연계 — TIPS 준비 단계에서 네트워크 확보",
+        "sinhon.life 신혼 플랫폼 당사자성 스토리 강점 보유"
+      ],
+      "exception_go_conditions": []
+    },
+    "alternatives": {
+      "title": "대안 공고",
+      "items": [
+        {
+          "name": "인천 세대융합 청년창업 멘티 모집",
+          "reason": "동일 창경센터 병행 지원 가능"
+        },
+        {
+          "name": "TIPS 창업기업 지원 수정 공고",
+          "reason": "BuS 선정 후 TIPS 트랙으로 업스케일 가능"
+        }
+      ]
+    }
+  }
+}

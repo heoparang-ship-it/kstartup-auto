@@ -1,0 +1,78 @@
+{
+  "id": "bizinfo_PBLN_000000000121252",
+  "title": "싱가포르 K-콘텐츠ㆍIP 파트너십 데이 참가기업 모집 공고",
+  "analyzed_at": "2026-04-25T00:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북)",
+  "verdict": {
+    "decision": "CONDITIONAL-GO",
+    "confidence": "medium",
+    "expected_pass_rate": 0.2,
+    "time_cost_hours": "16",
+    "one_liner": "콘텐츠 IP 보유 시 싱가포르 글로벌 진출 기회"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "해외 파트너십 행사 참가 지원",
+      "body": "문화체육관광부·한국콘텐츠진흥원(KOCCA)이 싱가포르에서 개최하는 K-콘텐츠·IP 파트너십 데이에 참가할 한국 기업을 모집한다. 웹툰·게임·영상·캐릭터·교육 콘텐츠 등 IP를 보유한 기업과 싱가포르·동남아 현지 바이어·투자자를 연결하는 B2B 매칭 행사.",
+      "benefits": [
+        {"k": "지원 형태", "v": "참가비 일부 보조 및 현지 행사 참여 기회"},
+        {"k": "지원 내용", "v": "항공·숙박 지원, 현지 바이어 사전 매칭, KOCCA 한국관 부스 제공"},
+        {"k": "기대 효과", "v": "동남아 IP 라이선스·퍼블리싱 파트너 확보"}
+      ],
+      "watchout": "IP/콘텐츠 실적(등록된 IP, 출판·게임·영상 등)이 없으면 참가 목적이 불분명해져 선발 경쟁력 낮음. 행사 자체는 무료가 아니며 현지 출장 비용 발생."
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [
+        {"task": "콘텐츠·플랫폼 비즈니스", "fit": "🟢", "reason": "sinhon.life는 신혼부부 대상 라이프스타일 콘텐츠 플랫폼으로 IP화 가능성 있음"},
+        {"task": "유튜브 크리에이터 IP", "fit": "🟢", "reason": "허파랑의 유튜브 채널은 K-콘텐츠 IP로 등록 가능"}
+      ],
+      "tech_adjacent": [
+        {"task": "AI 기반 콘텐츠 생성", "fit": "🟡", "reason": "AI/RAG 기술을 콘텐츠 생산에 활용하는 스토리로 연결 가능하나 IP 등록 실적 필요"}
+      ],
+      "mismatch_note": "현재 등록된 IP나 콘텐츠 저작물 실적이 부족할 경우 선발 경쟁력 저하.",
+      "critical_gap": "공식 IP 등록(저작권·상표) 및 콘텐츠 수출 레퍼런스 부재"
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {"stage": "자격 확인 및 IP 현황 정리", "hours": "4"},
+          {"stage": "참가 신청서 작성", "hours": "8"},
+          {"stage": "출장 준비", "hours": "4"}
+        ],
+        "total": "16h"
+      },
+      "probability": {
+        "doc_pass": 0.4,
+        "final_given_doc_pass": 0.5,
+        "final": 0.2,
+        "basis": "콘텐츠 플랫폼 적합성 있으나 IP 실적 부족으로 경쟁력 보통"
+      },
+      "expected_value_label": "싱가포르 파트너십 확보 시 동남아 진출 기반, 16h 투자 가치 있음"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "CONDITIONAL-GO",
+      "reasons": [
+        "sinhon.life의 신혼부부 콘텐츠 플랫폼은 K-콘텐츠 IP로 포지셔닝 가능",
+        "유튜브 크리에이터 IP + AI 콘텐츠 기술 조합으로 차별화 가능",
+        "싱가포르는 동남아 한인 신혼부부 시장 거점"
+      ],
+      "exception_go_conditions": [
+        "저작권 등록 IP 1개 이상 보유 또는 등록 예정일 경우 GO로 전환",
+        "sinhon.life 앱/웹 출시 완료 시점에 신청 권장"
+      ]
+    },
+    "alternatives": {
+      "title": "대안 공고",
+      "items": [
+        "대구게임테크허브 플랫폼 도약 지원 (bizinfo_PBLN_000000000121056) - 국내 플랫폼 지원 우선 확보",
+        "온라인판로 종합지원사업 (bizinfo_PBLN_000000000120541) - 국내 온라인 채널 먼저 확장"
+      ]
+    }
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "id": "bizinfo_PBLN_000000000119011",
+  "title": "[인천] 2026년 중소기업 연구조직 설립 지원사업 모집 공고",
+  "analyzed_at": "2026-04-25T00:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북)",
+  "verdict": {
+    "decision": "CONDITIONAL-GO",
+    "confidence": "medium",
+    "expected_pass_rate": 0.35,
+    "time_cost_hours": 15,
+    "one_liner": "기업부설연구소 설립 지원 — R&D 세제혜택+TIPS 준비 발판"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "R&D 기반 구축 (기업부설연구소 설립 지원)",
+      "body": "인천테크노파크가 인천 소재 중소기업의 기업부설연구소 또는 연구개발전담부서 설립을 지원하는 사업. 연구소 설립 시 법인세 감면, R&D 비용 세액공제 등 세제 혜택 발생. 연구소 설립 컨설팅, 인정 신청 지원, 장비 구입 비용 일부 지원 포함 가능. SW 법인도 SW 연구소로 설립 가능.",
+      "benefits": [
+        {
+          "k": "컨설팅 지원",
+          "v": "연구소 설립 절차 및 한국산업기술진흥협회 인정 신청 지원"
+        },
+        {
+          "k": "세제 혜택",
+          "v": "기업부설연구소 인정 시 R&D 세액공제 25% (중소기업)"
+        },
+        {
+          "k": "장비 지원",
+          "v": "연구 장비 구입 비용 일부 지원 (공고 원문 확인)"
+        }
+      ],
+      "watchout": "연구소 설립 후 유지 요건(전담 연구원 1인 이상 상시 고용 등) 충족 필요. 6개월 법인의 경우 연구원 고용 비용 부담 가능"
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [
+        {
+          "task": "인천 소재 중소기업",
+          "fit": "🟢",
+          "reason": "엑스컴 인천 부평 법인"
+        },
+        {
+          "task": "SW/AI R&D 연구소",
+          "fit": "🟢",
+          "reason": "AI/RAG 연구개발 — SW 기업부설연구소 설립 적합"
+        }
+      ],
+      "tech_adjacent": [
+        {
+          "task": "TIPS R&D 준비",
+          "fit": "🟡",
+          "reason": "연구소 설립 후 TIPS R&D 과제 신청 자격 강화"
+        }
+      ],
+      "mismatch_note": "연구원 상시 고용 요건이 초기 법인 부담 요소",
+      "critical_gap": "전담 연구원 고용 유지 요건 — 6개월 법인의 인건비 부담"
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "자격 확인 및 사전 상담",
+            "hours": "3"
+          },
+          {
+            "stage": "신청서 및 연구소 설립 계획 작성",
+            "hours": "8"
+          },
+          {
+            "stage": "한국산업기술진흥협회 인정 준비",
+            "hours": "4"
+          }
+        ],
+        "total": "15h"
+      },
+      "probability": {
+        "doc_pass": 0.6,
+        "final_given_doc_pass": 0.58,
+        "final": 0.35,
+        "basis": "인천 소재 + SW R&D 명확. 단, 연구원 고용 요건 충족 여부 변수"
+      },
+      "expected_value_label": "R&D 세액공제 연 수백만~수천만 원 절감 + TIPS/정부R&D 신청 자격 강화"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "CONDITIONAL-GO",
+      "reasons": [
+        "SW 기업부설연구소 설립 가능 — AI/RAG R&D 연구소 명분 충분",
+        "R&D 세액공제 25% — 장기 절세 효과 큼",
+        "TIPS R&D 과제 신청 자격 강화 — 전략적 포석"
+      ],
+      "exception_go_conditions": [
+        "연구원 상시 고용 요건(1인 이상) 충족 가능 여부 확인 후 GO 결정",
+        "법인 규모 성장 후 R&D 비용 증가 시점에 세제혜택 효과 극대화"
+      ]
+    },
+    "alternatives": {
+      "title": "대안 공고",
+      "items": [
+        {
+          "name": "TIPS 창업기업 지원",
+          "reason": "연구소 설립 후 TIPS 신청으로 R&D 자금 확보"
+        },
+        {
+          "name": "인천창경센터 창업-BuS",
+          "reason": "연구소 설립 전 사업화 기반 먼저 구축"
+        }
+      ]
+    }
+  }
+}

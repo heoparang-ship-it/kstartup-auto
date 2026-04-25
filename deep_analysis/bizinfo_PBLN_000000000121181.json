@@ -1,0 +1,79 @@
+{
+  "id": "bizinfo_PBLN_000000000121181",
+  "title": "2026년 코리아 국제 스트리밍 페스티벌 투자유치 쇼케이스 (미디어테크 분야·우수기획안 분야) 참가 기업 모집 연장 공고",
+  "analyzed_at": "2026-04-25T00:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북)",
+  "verdict": {
+    "decision": "CONDITIONAL-GO",
+    "confidence": "medium",
+    "expected_pass_rate": 0.2,
+    "time_cost_hours": 16,
+    "one_liner": "미디어테크 투자 쇼케이스, AI 콘텐츠 기획으로 도전 가능"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "투자유치 쇼케이스 (미디어테크/콘텐츠)",
+      "body": "과기정통부·NIPA 주관 코리아 국제 스트리밍 페스티벌(KISF)의 투자유치 쇼케이스 참가 모집. '미디어테크 분야'(스트리밍·AI 콘텐츠·OTT 기술 등)와 '우수기획안 분야'(영상·음악·웹툰 등 콘텐츠 기획안)로 구성. 선발 기업은 국내외 투자자 앞 IR 발표 기회 획득. 허파랑 유튜브 크리에이터 이력 + AI/RAG 기술이 '미디어테크'와 연결 가능.",
+      "benefits": [
+        {"k": "투자자 IR 기회", "v": "국내외 투자자 대상 공개 IR 발표 무대"},
+        {"k": "네트워킹", "v": "국제 스트리밍 업계 관계자·VC 네트워크"},
+        {"k": "미디어 노출", "v": "행사 공식 채널 홍보 및 미디어 취재"}
+      ],
+      "watchout": "미디어테크 분야 신청 시 기술 데모 또는 서비스 MVP 필요. 콘텐츠 기획안 분야는 완성도 높은 기획서 요구. 투자로 이어지는 비율은 낮음."
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [
+        {"task": "AI 기반 미디어 기술", "fit": "🟢", "reason": "AI/RAG 기술을 신혼부부 콘텐츠 큐레이션·영상 생성에 적용 가능"},
+        {"task": "유튜브 크리에이터 경험", "fit": "🟢", "reason": "허파랑의 유튜브 채널 운영 이력이 미디어테크 맥락과 직결"}
+      ],
+      "tech_adjacent": [
+        {"task": "B2C 플랫폼 UX", "fit": "🟡", "reason": "스트리밍 서비스 UX 경험으로 연결 가능하나 스트리밍 특화 기술은 부재"},
+        {"task": "콘텐츠 기획안", "fit": "🟡", "reason": "신혼 라이프스타일 기반 콘텐츠 기획안 작성 가능하나 방송·OTT 제작 경험 없음"}
+      ],
+      "mismatch_note": "기존 플랫폼이 순수 스트리밍 서비스는 아니므로 미디어테크 분야 포지셔닝 전략이 필요.",
+      "critical_gap": "스트리밍 기술 데모 또는 영상 제작 실적 부재"
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {"stage": "자격확인", "hours": "2"},
+          {"stage": "기획안 작성", "hours": "10"},
+          {"stage": "IR 덱 준비", "hours": "4"}
+        ],
+        "total": "16h"
+      },
+      "probability": {
+        "doc_pass": 0.35,
+        "final_given_doc_pass": 0.55,
+        "final": 0.2,
+        "basis": "AI+미디어 기획안 역량 있음, 단 스트리밍 특화 기술 데모 없어 경쟁에서 불리"
+      },
+      "expected_value_label": "투자자 노출 가치 있으나 확률 중간 수준"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "CONDITIONAL-GO",
+      "reasons": [
+        "유튜브 크리에이터+AI 기술 조합이 '미디어테크' 분야와 부분 연결 가능",
+        "투자자 IR 발표 기회 자체가 초기 스타트업에 높은 가치",
+        "우수기획안 분야는 완성도 있는 기획서만으로 도전 가능"
+      ],
+      "exception_go_conditions": [
+        "AI 기반 신혼 라이프 콘텐츠 스트리밍 기획안을 구체화할 수 있을 때",
+        "허파랑의 유튜브 채널을 미디어테크 트랙 레퍼런스로 활용 가능할 때"
+      ],
+      "alternatives": []
+    },
+    "alternatives": {
+      "title": "대안 공고",
+      "items": [
+        {"title": "NIPA AI 바우처·AI 서비스 사업화 지원", "reason": "AI/RAG 기술 직접 활용 가능한 공고"}
+      ]
+    }
+  }
+}

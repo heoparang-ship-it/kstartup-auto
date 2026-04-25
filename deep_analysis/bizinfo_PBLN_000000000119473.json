@@ -1,0 +1,86 @@
+{
+  "id": "bizinfo_PBLN_000000000119473",
+  "title": "2026년 1차 유통플랫폼 MD 상담회 소상공인 모집 공고",
+  "analyzed_at": "2026-04-25T00:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북)",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.05,
+    "time_cost_hours": "3",
+    "one_liner": "소상공인 유통채널 입점 MD 상담회"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "유통채널 입점 지원 (소상공인 대상)",
+      "body": "중소벤처기업부·한국중소벤처기업유통원이 운영하는 소상공인 대상 유통플랫폼 MD 상담회. 쿠팡, 네이버스마트스토어 등 유통 플랫폼 MD와 소상공인을 매칭하여 입점 및 판로 개척 지원. 실물 상품을 판매하는 소상공인 대상.",
+      "benefits": [
+        {
+          "k": "지원내용",
+          "v": "유통 플랫폼 MD 1:1 상담, 입점 연계 지원"
+        },
+        {
+          "k": "주관기관",
+          "v": "한국중소벤처기업유통원"
+        },
+        {
+          "k": "대상",
+          "v": "실물 상품 판매 소상공인"
+        }
+      ],
+      "watchout": "실물 상품 없는 순수 SW/플랫폼 서비스는 대상에서 제외됨."
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [
+        {
+          "task": "실물 상품 보유",
+          "fit": "🔴",
+          "reason": "sinhon.life는 디지털 플랫폼 서비스로 유통 MD 상담 대상 아님"
+        }
+      ],
+      "tech_adjacent": [],
+      "mismatch_note": "소상공인 실물 유통 지원 사업으로 SW 플랫폼 서비스와 완전 불일치.",
+      "critical_gap": "실물 상품 없음. 소상공인 업종 코드와 불일치 가능성."
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "자격확인",
+            "hours": "3"
+          }
+        ],
+        "total": "3h"
+      },
+      "probability": {
+        "doc_pass": 0.08,
+        "final_given_doc_pass": 0.1,
+        "final": 0.05,
+        "basis": "실물 상품 기반 소상공인 전용 사업으로 SW 스타트업 해당 없음"
+      },
+      "expected_value_label": "매우 낮음 - 해당 없음"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "실물 상품 없는 SW 플랫폼 서비스는 유통 MD 상담 대상 아님",
+        "소상공인 기준 충족 여부도 불확실 (법인 스타트업)",
+        "핵심 미스매치: 오프라인 유통채널 vs 디지털 플랫폼"
+      ],
+      "exception_go_conditions": []
+    },
+    "alternatives": {
+      "title": "대안 공고",
+      "items": [
+        "소상공인 디지털 전환 지원사업",
+        "플랫폼 입점 바우처 지원"
+      ]
+    }
+  }
+}

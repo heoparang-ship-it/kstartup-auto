@@ -1,0 +1,72 @@
+{
+  "id": "bizinfo_PBLN_000000000120842",
+  "title": "2026년 전북 글로벌게임센터 고도화 게임 제작지원사업 공고",
+  "analyzed_at": "2026-04-25T00:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북)",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.05,
+    "time_cost_hours": 4,
+    "one_liner": "전북 소재 게임 전문지원, 사업 분야 미매칭"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "콘텐츠 제작 지원 (지역 게임특화)",
+      "body": "전북특별자치도콘텐츠융합진흥원이 운영하는 글로벌게임센터 입주·제작비 지원사업. 전북 소재 또는 전북 이전 의사가 있는 게임 개발사를 대상으로 게임 제작 경비를 지원하고 글로벌 진출 기회를 제공함. 게임 장르(모바일/PC/콘솔) 전문지원이므로 신혼부부 B2C 플랫폼과 콘텐츠 성격이 상이함.",
+      "benefits": [
+        {"k": "제작비 지원", "v": "게임 개발 제작비 일부 지원 (기업별 상이)"},
+        {"k": "입주공간", "v": "전북 글로벌게임센터 입주 및 인프라 활용"},
+        {"k": "글로벌 연계", "v": "해외 게임쇼 참가·바이어 연결 기회"}
+      ],
+      "watchout": "전북 지역 소재 또는 이전 의사가 필수 조건일 가능성 높음. 게임 개발 실적(빌드/데모) 요구 예상."
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [
+        {"task": "소프트웨어 개발역량", "fit": "🟡", "reason": "SW/AI 개발 역량은 있으나 게임 빌드·엔진(Unity/UE) 경험 없음"},
+        {"task": "플랫폼 서비스 기획", "fit": "🟡", "reason": "B2C 플랫폼 기획 경험은 있으나 게임 장르와 무관"}
+      ],
+      "mismatch_note": "신혼부부 B2C 플랫폼(sinhon.life)은 게임 콘텐츠가 아님. 전북 소재 요건도 충족 불가.",
+      "critical_gap": "게임 개발 실적 전무, 전북 지역 기반 없음"
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {"stage": "자격확인", "hours": "2"},
+          {"stage": "서류작성", "hours": "2"}
+        ],
+        "total": "4h"
+      },
+      "probability": {
+        "doc_pass": 0.05,
+        "final_given_doc_pass": 0.1,
+        "final": 0.005,
+        "basis": "게임 개발 실적 없음 + 전북 소재 요건 미충족으로 서류 통과 자체가 현실적으로 불가"
+      },
+      "expected_value_label": "투자 대비 가치 없음"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "사업 분야가 '게임 제작'으로 신혼부부 플랫폼·AI/RAG 서비스와 무관",
+        "전북 소재 요건: 인천/대구 기반 팀과 지역 불일치",
+        "게임 개발 실적(빌드·데모) 요구 시 제출 불가"
+      ],
+      "exception_go_conditions": [],
+      "alternatives": []
+    },
+    "alternatives": {
+      "title": "대안 공고",
+      "items": [
+        {"title": "콘텐츠·SW 분야 지역 기반 지원사업", "reason": "인천·대구 거점의 SW/플랫폼 콘텐츠 지원사업이 더 적합"}
+      ]
+    }
+  }
+}

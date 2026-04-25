@@ -1,0 +1,99 @@
+{
+  "id": "bizinfo_PBLN_000000000120753",
+  "title": "2026년 블록체인 신뢰성 검증 지원 모집 공고",
+  "analyzed_at": "2026-04-25T00:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북)",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.04,
+    "time_cost_hours": "3",
+    "one_liner": "블록체인 신뢰성 검증 지원, 블록체인 요소 없음"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "SW 인증·검증 지원 (블록체인 특화)",
+      "body": "과기정통부·TTA 주관 블록체인 시스템 신뢰성 검증(성능·보안·기능 시험) 지원. 블록체인 기술을 실제 서비스에 적용한 기업 대상. sinhon.life 및 엑스컴 서비스에 블록체인 요소 없음.",
+      "benefits": [
+        {
+          "k": "검증비용 지원",
+          "v": "블록체인 신뢰성 시험 비용 전액 또는 일부 지원"
+        },
+        {
+          "k": "TTA 공인 시험",
+          "v": "정부 공인 검증기관 인증서 발급"
+        },
+        {
+          "k": "컨설팅",
+          "v": "블록체인 보안·성능 개선 컨설팅"
+        }
+      ],
+      "watchout": "블록체인 기술이 서비스에 실제 적용되어 있어야 신청 가능."
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [
+        {
+          "task": "SW 개발 역량",
+          "fit": "🟡",
+          "reason": "SW 개발 능력은 있으나 현재 블록체인 기술 미적용"
+        },
+        {
+          "task": "플랫폼 보안·신뢰성",
+          "fit": "🟡",
+          "reason": "B2C 플랫폼 보안 필요성은 있으나 블록체인 방식이 아님"
+        }
+      ],
+      "mismatch_note": "블록체인 기술을 서비스에 실제 적용한 기업 대상. 현재 서비스에 블록체인 요소 없음.",
+      "critical_gap": "블록체인 기술 미적용"
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "자격확인",
+            "hours": "2"
+          },
+          {
+            "stage": "서류검토",
+            "hours": "1"
+          }
+        ],
+        "total": "3h"
+      },
+      "probability": {
+        "doc_pass": 0.04,
+        "final_given_doc_pass": 0.1,
+        "final": 0.004,
+        "basis": "블록체인 기술 적용 없음으로 신청 자격 사실상 미충족"
+      },
+      "expected_value_label": "자격 미충족으로 실익 없음"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "블록체인 기술이 서비스에 실제 적용되어야 하는 요건",
+        "sinhon.life/엑스컴 서비스에 블록체인 요소 없음",
+        "블록체인 도입을 위한 추가 개발 비용 및 시간 과다"
+      ],
+      "exception_go_conditions": [
+        "신혼부부 계약·서류 등 블록체인 인증 기능을 향후 개발할 구체적 계획이 있는 경우"
+      ]
+    },
+    "alternatives": {
+      "title": "대안 공고",
+      "items": [
+        {
+          "title": "SW 품질 인증·GS인증 지원사업",
+          "reason": "블록체인 없이도 SW 품질 인증을 받을 수 있는 지원사업 활용"
+        }
+      ]
+    }
+  }
+}

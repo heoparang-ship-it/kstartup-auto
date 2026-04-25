@@ -1,0 +1,73 @@
+{
+  "id": "bizinfo_PBLN_000000000120848",
+  "title": "2026년 1차 일반 물류바우처 사업 참여기업 모집 공고",
+  "analyzed_at": "2026-04-25T00:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북)",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.03,
+    "time_cost_hours": "4",
+    "one_liner": "물류 실물 없는 SW플랫폼엔 해당 없음"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "바우처 지원",
+      "body": "중소벤처기업부·중소진흥공단이 운영하는 물류바우처 사업으로, 중소기업의 물류비(포장·운반·창고·배송·국제물류 등) 일부를 바우처 형태로 지원한다. 실물 상품 판매·배송이 있는 제조·유통 기업을 주 대상으로 한다.",
+      "benefits": [
+        {"k": "지원 형태", "v": "물류비 바우처 (최대 수백만원)"},
+        {"k": "지원 내용", "v": "포장재·창고임차·배송비 등 물류비용 일부 보전"},
+        {"k": "주관", "v": "중소벤처기업진흥공단"}
+      ],
+      "watchout": "디지털 서비스·SW 기업은 물류 실적 자체가 없어 바우처 사용처가 없음. 신청은 가능하나 선발 기준에서 물류 실적·물동량이 핵심 평가지표."
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [
+        {"task": "인천 소재 중소기업", "fit": "🟡", "reason": "(주)엑스컴은 인천 소재이나 SW법인으로 물류 실적 전무"}
+      ],
+      "mismatch_note": "sinhon.life는 디지털 플랫폼으로 물류 실물 배송이 없음. 바우처 사용처 자체가 없어 실익 없음.",
+      "critical_gap": "물류 실물 거래(발송·보관·운반) 실적 전무"
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {"stage": "자격 확인", "hours": "2"},
+          {"stage": "서류 작성", "hours": "2"}
+        ],
+        "total": "4h"
+      },
+      "probability": {
+        "doc_pass": 0.05,
+        "final_given_doc_pass": 0.05,
+        "final": 0.03,
+        "basis": "물류 실물 실적 요구 → SW전용 플랫폼 거의 해당 없음"
+      },
+      "expected_value_label": "투입 4h 대비 기대가치 극소"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "sinhon.life·(주)엑스컴 모두 디지털 SW 서비스로 물류 실적 없음",
+        "바우처 사용처(포장재·창고·배송비) 자체가 존재하지 않음",
+        "물류 물동량·실적이 주요 선발 평가지표"
+      ],
+      "exception_go_conditions": [
+        "향후 굿즈·인쇄물 등 실물 커머스를 병행 운영하게 될 경우 재검토"
+      ]
+    },
+    "alternatives": {
+      "title": "대안 공고",
+      "items": [
+        "2026년 AX 원스톱 바우처 (bizinfo_PBLN_000000000120085) - SW/AI 서비스에 직접 적용 가능한 바우처",
+        "2026년 온라인판로 종합지원사업 (bizinfo_PBLN_000000000120541) - 온라인 플랫폼 판로 연결"
+      ]
+    }
+  }
+}

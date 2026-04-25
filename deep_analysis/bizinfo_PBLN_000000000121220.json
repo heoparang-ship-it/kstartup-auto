@@ -1,0 +1,74 @@
+{
+  "id": "bizinfo_PBLN_000000000121220",
+  "title": "2026년 KOTRA-이베이(eBay) 파워셀러 1단계 입점교육 2기 참가기업 모집 공고",
+  "analyzed_at": "2026-04-25T00:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북)",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "medium",
+    "expected_pass_rate": 0.06,
+    "time_cost_hours": 4,
+    "one_liner": "이베이 입점 교육, 수출 상품 없어 실익 없음"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "해외 이커머스 입점교육 (수출 바우처)",
+      "body": "KOTRA와 eBay가 연계하여 중소기업의 eBay 플랫폼 글로벌 판매를 지원하는 입점교육 프로그램. 1단계는 교육 위주이며 입점 후 실거래까지 연계. 수출 가능한 제품(소비재·전자기기 등)이 있는 기업 대상. 매칭 근거인 '주거 라이프사이클'은 가정용품 등 소비재를 상상한 것으로 보이나, sinhon.life는 디지털 서비스이므로 실질적 적용 어려움.",
+      "benefits": [
+        {"k": "eBay 입점교육", "v": "플랫폼 등록·상품 최적화·SEO 등 무료 교육"},
+        {"k": "멘토링", "v": "KOTRA 수출전문위원 1:1 멘토링"},
+        {"k": "입점 연계", "v": "교육 이수 후 eBay 입점 우선 연계"}
+      ],
+      "watchout": "교육 참가 후 실제 eBay 입점·판매 실적 관리 필요. 수출 제품이 없으면 교육 이수해도 의미 없음."
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [
+        {"task": "B2C 서비스 운영", "fit": "🟡", "reason": "B2C 경험 있으나 물리적 수출 상품 없음"},
+        {"task": "글로벌 마케팅 역량", "fit": "🟡", "reason": "디지털 마케팅 역량은 있으나 이커머스 수출과 무관"}
+      ],
+      "mismatch_note": "eBay 입점은 실물 상품(전자기기·생활용품 등) 판매가 전제. 소프트웨어 플랫폼 서비스는 대상 외.",
+      "critical_gap": "수출 가능한 물리적 제품 없음"
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {"stage": "자격확인", "hours": "2"},
+          {"stage": "신청서류", "hours": "2"}
+        ],
+        "total": "4h"
+      },
+      "probability": {
+        "doc_pass": 0.1,
+        "final_given_doc_pass": 0.6,
+        "final": 0.06,
+        "basis": "교육 신청 자체는 가능하나 활용 가능한 수출 상품이 없어 사업 목적 미달성"
+      },
+      "expected_value_label": "교육 참가 가능하나 사업 적용 가치 없음"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "eBay 입점은 실물 소비재 수출 전제 프로그램",
+        "sinhon.life 및 엑스컴 모두 수출 가능 상품 없음",
+        "교육 이수 후 매출 연결 불가능"
+      ],
+      "exception_go_conditions": [
+        "신혼부부 관련 굿즈/물리적 상품을 향후 개발할 계획이 구체화된 경우"
+      ],
+      "alternatives": []
+    },
+    "alternatives": {
+      "title": "대안 공고",
+      "items": [
+        {"title": "글로벌 SW/앱 해외 진출 지원 (NIPA, KOTRA)", "reason": "디지털 서비스의 해외 진출 지원 프로그램이 더 적합"}
+      ]
+    }
+  }
+}

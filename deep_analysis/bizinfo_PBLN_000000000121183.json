@@ -1,0 +1,86 @@
+{
+  "id": "bizinfo_PBLN_000000000121183",
+  "title": "2026년 로봇 플래그쉽 지역거점 구축사업 지원과제 모집 공고",
+  "analyzed_at": "2026-04-25T00:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북)",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.02,
+    "time_cost_hours": "2",
+    "one_liner": "로봇 지역거점 구축 HW 과제"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "HW/로봇 인프라 구축 지원",
+      "body": "산업통상자원부가 한국로봇산업진흥원을 통해 추진하는 로봇 플래그쉽 지역거점 구축사업. 지역에 로봇 산업 거점을 조성하고 로봇 기업 집적화를 지원하는 인프라 구축 과제. 로봇 제조·개발 기업 또는 지자체 중심 참여.",
+      "benefits": [
+        {
+          "k": "지원유형",
+          "v": "시설·장비 구축 지원금"
+        },
+        {
+          "k": "주관기관",
+          "v": "한국로봇산업진흥원"
+        },
+        {
+          "k": "분야",
+          "v": "로봇 산업 인프라, 지역거점"
+        }
+      ],
+      "watchout": "로봇 제조·개발 기업 또는 지자체 대상. SW 기업 단독 참여 사실상 불가."
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [
+        {
+          "task": "로봇 기술/제품 보유",
+          "fit": "🔴",
+          "reason": "팀은 SW/AI 전문으로 로봇 HW 관련 기술·제품 없음"
+        }
+      ],
+      "tech_adjacent": [],
+      "mismatch_note": "HW/로봇 분야로 SW 플랫폼 스타트업과 완전 불일치.",
+      "critical_gap": "로봇 기술, 로봇 제품, 제조 인프라 전무."
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "자격확인",
+            "hours": "2"
+          }
+        ],
+        "total": "2h"
+      },
+      "probability": {
+        "doc_pass": 0.02,
+        "final_given_doc_pass": 0.03,
+        "final": 0.02,
+        "basis": "로봇 HW 특화 사업으로 SW 스타트업 참여 불가."
+      },
+      "expected_value_label": "해당없음 - 즉시 패스"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "로봇 HW/제조 특화 사업으로 SW/AI 스타트업 대상 아님",
+        "지역거점 구축 인프라 사업으로 스타트업 단독 참여 형태 아님",
+        "팀 역량과 완전 불일치"
+      ],
+      "exception_go_conditions": []
+    },
+    "alternatives": {
+      "title": "대안 공고",
+      "items": [
+        "AI·SW 분야 창업성장 기술개발사업",
+        "로봇 SW 인터페이스 분야는 별도 공고 확인"
+      ]
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "id": "bizinfo_PBLN_000000000120138",
+  "title": "[인천] 중동 수출 중소기업 긴급 경영안정자금 지원 공고",
+  "analyzed_at": "2026-04-25T00:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북)",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.02,
+    "time_cost_hours": 2,
+    "one_liner": "중동 수출 실적 전제 긴급자금 — 내수 SW 스타트업과 완전 무관"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "금융 지원 (수출 기업 긴급 경영안정)",
+      "body": "중동 지역(이스라엘-하마스 분쟁 등 영향) 수출 피해를 입은 인천 소재 중소기업에 긴급 경영안정자금을 저금리 대출로 지원하는 사업. 중동 수출 실적이 있고 해당 사유로 매출 감소가 발생한 기업 대상. 지역 특수 사유 기반 긴급 지원 성격.",
+      "benefits": [
+        {
+          "k": "지원내용",
+          "v": "긴급 경영안정자금 (저금리 대출)"
+        },
+        {
+          "k": "대상",
+          "v": "중동 수출 피해 인천 소재 중소기업"
+        }
+      ],
+      "watchout": "중동 수출 실적 및 피해 사실 증명 필수 — 국내 B2C 신혼 플랫폼은 수출 이력 전무"
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "중동 수출 기업 전용 긴급 자금. sinhon.life 및 엑스컴은 국내 B2C 서비스로 수출 이력 없음",
+      "critical_gap": "중동 수출 실적 전무 — 지원 자격 자체 미충족"
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "자격 확인 후 기각",
+            "hours": "2"
+          }
+        ],
+        "total": "2h"
+      },
+      "probability": {
+        "doc_pass": 0.02,
+        "final_given_doc_pass": 0.1,
+        "final": 0.02,
+        "basis": "중동 수출 실적 없으므로 신청 자격 미충족"
+      },
+      "expected_value_label": "기댓값 0 — 자격 미충족"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "중동 수출 실적 완전 부재 — 자격 요건 미충족",
+        "긴급 수출 피해 지원 성격 — 국내 B2C 플랫폼과 무관"
+      ],
+      "exception_go_conditions": [
+        "중동 시장 진출 후 수출 피해 발생 시 재검토 (현재 시나리오 없음)"
+      ]
+    },
+    "alternatives": {
+      "title": "대안 공고",
+      "items": [
+        {
+          "name": "인천형 특별 경영안정자금 (하나은행)",
+          "reason": "수출 요건 없는 일반 경영안정자금"
+        },
+        {
+          "name": "인천 상반기 이차보전",
+          "reason": "동일 인천TP 운영, 수출 요건 없음"
+        }
+      ]
+    }
+  }
+}

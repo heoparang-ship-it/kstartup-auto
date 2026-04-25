@@ -1,0 +1,83 @@
+{
+  "id": "bizinfo_PBLN_000000000119567",
+  "title": "2026년 농식품 크라우드펀딩 지원사업 공고",
+  "analyzed_at": "2026-04-25T00:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북)",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.04,
+    "time_cost_hours": "4",
+    "one_liner": "농식품 크라우드펀딩 — 농업 도메인 무관"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "농식품 특화 크라우드펀딩 지원",
+      "body": "농림축산식품부 산하 농업정책보험금융원 주관. 농식품 분야 제품/서비스 보유 기업 대상 크라우드펀딩 수수료 및 홍보비 지원.",
+      "benefits": [
+        {
+          "k": "크라우드펀딩 수수료 지원",
+          "v": "펀딩 플랫폼 수수료 일부 보전"
+        },
+        {
+          "k": "홍보·마케팅 지원",
+          "v": "온라인 홍보 비용 지원"
+        }
+      ],
+      "watchout": "농식품 분야 제품 보유 여부가 1차 진입장벽. SW 플랫폼 불가."
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "농식품 도메인 전용 지원. SW/B2C 플랫폼과 교집합 없음.",
+      "critical_gap": "농업인 또는 농식품 기업 자격 요건"
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "자격확인",
+            "hours": "2"
+          },
+          {
+            "stage": "서류작성",
+            "hours": "2"
+          }
+        ],
+        "total": "4h"
+      },
+      "probability": {
+        "doc_pass": 0.05,
+        "final_given_doc_pass": 0.08,
+        "final": 0.04,
+        "basis": "농식품 도메인 특화 공고. SW법인·플랫폼 스타트업과 자격 불일치."
+      },
+      "expected_value_label": "자격 미달로 실질 기댓값 0원"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "농식품 분야 특화 지원으로 SW/플랫폼 기업 대상 아님",
+        "농업인·농식품기업 자격 요건 불충족",
+        "sinhon.life/엑스컴은 농업 연계성 전혀 없음"
+      ],
+      "exception_go_conditions": []
+    },
+    "alternatives": {
+      "title": "대안 공고",
+      "items": [
+        {
+          "id": "bizinfo_PBLN_000000000120174",
+          "title": "우리동네 크라우드펀딩(소상공인)",
+          "reason": "크라우드펀딩 지원은 동일하나 소상공인 대상으로 더 광범위"
+        }
+      ]
+    }
+  }
+}

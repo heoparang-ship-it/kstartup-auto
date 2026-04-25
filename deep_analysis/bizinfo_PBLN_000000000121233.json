@@ -1,0 +1,73 @@
+{
+  "id": "bizinfo_PBLN_000000000121233",
+  "title": "[경북] 고령군 2026년 중소기업 기숙사 임차비 지원사업 참여기업 모집 공고",
+  "analyzed_at": "2026-04-25T00:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북)",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.04,
+    "time_cost_hours": "3",
+    "one_liner": "경북 고령군 소재 기업 전용, 지역 미해당"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "복리후생 임차비 지원",
+      "body": "경상북도 고령군 소재 중소기업이 직원 기숙사 임차 시 비용 일부를 지원하는 지역 밀착형 복리후생 사업. 고령군에 실제 사업장(본사·공장 등)을 보유한 기업만 신청 가능.",
+      "benefits": [
+        {"k": "지원 형태", "v": "기숙사 임차비 보조금"},
+        {"k": "지원 내용", "v": "직원 기숙사 월 임차비 일부 지원"},
+        {"k": "주관", "v": "경상북도경제진흥원"}
+      ],
+      "watchout": "고령군 소재 기업 전용. 이영림(대구경북 예창)도 고령군 소재 사업장이 없으면 해당 없음."
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [
+        {"task": "경북 지역 연고", "fit": "🟡", "reason": "이영림은 대구경북 거주이나 고령군 사업장 없음"}
+      ],
+      "mismatch_note": "사업장 소재지가 고령군이어야 하는 지역 제한 공고. 세 엔터티 모두 고령군 소재지 없음.",
+      "critical_gap": "고령군 소재 사업장 없음"
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {"stage": "자격 확인", "hours": "1"},
+          {"stage": "서류 작성", "hours": "2"}
+        ],
+        "total": "3h"
+      },
+      "probability": {
+        "doc_pass": 0.05,
+        "final_given_doc_pass": 0.08,
+        "final": 0.04,
+        "basis": "고령군 소재 사업장 없어 자격 요건 미충족 가능성 높음"
+      },
+      "expected_value_label": "지역 조건 미충족으로 실익 없음"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "고령군 소재 기업 전용 공고",
+        "이영림 포함 세 엔터티 모두 고령군 사업장 없음",
+        "복리후생 지원으로 창업 초기 스타트업 혜택 미미"
+      ],
+      "exception_go_conditions": [
+        "이영림이 고령군에 사업장을 설립할 계획이 있는 경우에만 재검토"
+      ]
+    },
+    "alternatives": {
+      "title": "대안 공고",
+      "items": [
+        "대구게임테크허브 플랫폼 도약 지원 (bizinfo_PBLN_000000000121056) - 이영림 대구 소재 지원 적합",
+        "AX 원스톱 바우처 (bizinfo_PBLN_000000000120085) - 전국 단위 AI 지원"
+      ]
+    }
+  }
+}

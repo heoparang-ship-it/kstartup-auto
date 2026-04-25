@@ -20,7 +20,11 @@
   .stat-box {
     background: white; padding: 14px; border-radius: 10px;
     box-shadow: 0 1px 3px rgba(0,0,0,.06); text-align: center;
+    transition: background .15s, outline .15s;
   }
+  .stat-box[data-filter] { cursor: pointer; }
+  .stat-box[data-filter]:hover { background: #fff3f0; }
+  .stat-box.active-filter { outline: 2px solid #f97066; }
   .stat-num { font-size: 26px; font-weight: 700; }
   .stat-label { font-size: 12px; color: #888; margin-top: 2px; }
 
@@ -58,6 +62,12 @@
   }
   .filter-btn.active { background: #f97066; color: white; border-color: #f97066; }
   .filter-btn:hover { background: #f3ede6; }
+  .fav-btn {
+    background: none; border: none; cursor: pointer; font-size: 18px;
+    padding: 2px 6px; color: #ccc; line-height: 1; transition: color .15s;
+    flex-shrink: 0; align-self: flex-start;
+  }
+  .fav-btn:hover, .fav-btn.starred { color: #f97066; }
 
   #items { margin-top: 12px; }
   .item {
@@ -240,18 +250,18 @@
 
 <div class="stats">
   <div class="stat-box"><div class="stat-num">1307</div><div class="stat-label">전체 raw</div></div>
-  <div class="stat-box"><div class="stat-num" style="color:#389e0d">44</div><div class="stat-label">🟢 1순위</div></div>
-  <div class="stat-box"><div class="stat-num" style="color:#ad6800">72</div><div class="stat-label">🟡 2순위</div></div>
-  <div class="stat-box"><div class="stat-num" style="color:#d4380d">376</div><div class="stat-label">🟠 3순위</div></div>
+  <div class="stat-box" data-filter="tier-green"><div class="stat-num" style="color:#389e0d">44</div><div class="stat-label">🟢 1순위</div></div>
+  <div class="stat-box" data-filter="tier-yellow"><div class="stat-num" style="color:#ad6800">72</div><div class="stat-label">🟡 2순위</div></div>
+  <div class="stat-box" data-filter="tier-orange"><div class="stat-num" style="color:#d4380d">376</div><div class="stat-label">🟠 3순위</div></div>
   <div class="stat-box"><div class="stat-num" style="color:#999">815</div><div class="stat-label">🔴 제외</div></div>
   <div class="stat-box"><div class="stat-num" style="color:#722ed1">3</div><div class="stat-label">🗓️ 연례 매칭</div></div>
   <div class="stat-box"><div class="stat-num" style="color:#888">73</div><div class="stat-label">🔄 dedupe</div></div>
 </div>
 
 <div class="stats" style="grid-template-columns: repeat(3, 1fr);">
-  <div class="stat-box"><div class="stat-num">371</div><div class="stat-label">허파랑 개인</div></div>
-  <div class="stat-box"><div class="stat-num">7</div><div class="stat-label">XCom 법인</div></div>
-  <div class="stat-box"><div class="stat-num">114</div><div class="stat-label">이영림 대구</div></div>
+  <div class="stat-box" data-filter="entity-heoparang_personal"><div class="stat-num">371</div><div class="stat-label">허파랑 개인</div></div>
+  <div class="stat-box" data-filter="entity-xcom_corp"><div class="stat-num">7</div><div class="stat-label">XCom 법인</div></div>
+  <div class="stat-box" data-filter="entity-younglim_daegu"><div class="stat-num">114</div><div class="stat-label">이영림 대구</div></div>
 </div>
 
 <section class='annual-banner'><h3>🗓️ 연례 반복 공고 — 오픈 임박</h3><div class='ann-rows'><div class='ann-row'><span class='ann-tier'>🟢</span><span class='ann-title'>annual_kocca_wedding_k_content: K-웨딩|웨딩 콘텐츠|신부|허니문 콘텐츠</span><span class='ann-agency'>한국콘텐츠진흥원</span><span class='ann-eta'>예상 2026-05-01~2026-05-31 (D-7)</span><span class='ann-conf conf-low'>low</span></div></div></section>
@@ -280,6 +290,11 @@
   <button class="filter-btn ann-btn active" data-filter="annual-all">전체</button>
   <button class="filter-btn ann-btn" data-filter="annual-matched">🗓️ 연례 매칭만</button>
 </div>
+<div class="filter-group">
+  <span class="filter-label">즐겨찾기</span>
+  <button class="filter-btn fav-filter-btn active" data-filter="fav-all">전체</button>
+  <button class="filter-btn fav-filter-btn" data-filter="fav-only">★ 즐겨찾기만</button>
+</div>
 
 <div id="items"></div>
 
@@ -298,7 +313,16 @@ const ENTITY_LABEL = {
 };
 const SOURCE_BADGE = {"k_startup": ["K-Startup", "#0958d9", "#e6f4ff"], "bizinfo": ["BIZINFO", "#b76e00", "#fffbe6"], "kocca": ["KOCCA", "#722ed1", "#f9f0ff"], "mss": ["중기부", "#cf1322", "#fff1f0"], "kipo": ["특허청", "#389e0d", "#f6ffed"], "moel": ["고용부", "#13a8a8", "#e6fffb"], "msit": ["과기부", "#2f54eb", "#f0f5ff"], "kotra": ["KOTRA", "#d48806", "#fff7e6"], "kosme": ["중진공", "#08979c", "#e6fffb"]};
 
-const state = { source: "all", tier: "all", entity: "all", annual: "all" };
+const FAV_KEY = 'sinhon_kstartup_favs';
+function getFavs() {
+  try { return new Set(JSON.parse(localStorage.getItem(FAV_KEY) || '[]')); }
+  catch(e) { return new Set(); }
+}
+function saveFavs(s) { localStorage.setItem(FAV_KEY, JSON.stringify([...s])); }
+
+let _currentFavs = new Set();
+
+const state = { source: "all", tier: "all", entity: "all", annual: "all", fav: "all" };
 
 function escapeHtml(s) {
   if (!s) return "";
@@ -363,6 +387,7 @@ function renderCard(it) {
        data-source="${it.source}" data-tier="${it.tier}" data-entity="${it.best_entity}" data-annual="${it.annual_recurring ? '1' : '0'}">
     <div class="item-header">
       <div class="item-title"><a href="${escapeHtml(it.url||'#')}" target="_blank">${escapeHtml(it.title)}</a></div>
+      <button class="fav-btn${_currentFavs.has(it.id) ? ' starred' : ''}" title="즐겨찾기" onclick="toggleFavBtn('${escapeHtml(it.id)}', this)">★</button>
       <div class="badges">
         <span class="badge badge-tier badge-tier-${it.tier}">${TIER_EMOJI[it.tier]||""} ${it.tier}</span>
         <span class="badge" style="background:${srcBadge[2]};color:${srcBadge[1]}">${srcBadge[0]}</span>
@@ -551,15 +576,33 @@ function renderAnalysis(a) {
 
 function render() {
   const container = document.getElementById("items");
+  _currentFavs = getFavs();
   const filtered = ITEMS.filter(it => {
     if (state.source !== "all" && it.source !== state.source) return false;
     if (state.tier !== "all" && it.tier !== state.tier) return false;
     if (state.entity !== "all" && it.best_entity !== state.entity) return false;
     if (state.annual === "matched" && !it.annual_recurring) return false;
+    if (state.fav === "only" && !_currentFavs.has(it.id)) return false;
     return true;
   });
   container.innerHTML = filtered.map(renderCard).join("") ||
     `<div style="padding:40px;text-align:center;color:#999">조건에 맞는 공고가 없습니다</div>`;
+}
+
+function toggleFavBtn(id, btn) {
+  const favs = getFavs();
+  if (favs.has(id)) favs.delete(id); else favs.add(id);
+  saveFavs(favs);
+  btn.classList.toggle('starred', favs.has(id));
+  if (state.fav === 'only') render();
+}
+
+function syncStatBoxes(kind, value) {
+  document.querySelectorAll(`.stat-box[data-filter^="${kind}-"]`).forEach(b => b.classList.remove("active-filter"));
+  if (value !== "all") {
+    const box = document.querySelector(`.stat-box[data-filter="${kind}-${value}"]`);
+    if (box) box.classList.add("active-filter");
+  }
 }
 
 function bindFilters() {
@@ -573,7 +616,23 @@ function bindFilters() {
       const group = btn.parentElement;
       group.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
       btn.classList.add("active");
+      // sync stat-box highlight
+      syncStatBoxes(kind, value);
       render();
+    });
+  });
+
+  // Stat-box shortcut clicks — delegate to corresponding filter-btn
+  document.querySelectorAll(".stat-box[data-filter]").forEach(box => {
+    box.addEventListener("click", () => {
+      const f = box.dataset.filter;
+      // If already active, toggle off (go to "all")
+      const [kind] = f.split("-");
+      const currentVal = state[kind];
+      const boxVal = f.split("-").slice(1).join("-");
+      const targetFilter = currentVal === boxVal ? `${kind}-all` : f;
+      const btn = document.querySelector(`.filter-btn[data-filter="${targetFilter}"]`);
+      if (btn) btn.click();
     });
   });
 }

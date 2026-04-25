@@ -1,0 +1,120 @@
+{
+  "id": "bizinfo_PBLN_000000000121000",
+  "title": "[인천] 2026년 가상융합산업 콘텐츠 사업화 지원과제 참여기업 모집 공고(인천 가상융합산업 혁신센터 운영사업)",
+  "analyzed_at": "2026-04-25T00:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북)",
+  "verdict": {
+    "decision": "CONDITIONAL-GO",
+    "confidence": "medium",
+    "expected_pass_rate": 0.16,
+    "time_cost_hours": "30",
+    "one_liner": "[인천] 2026년 가상융합산업 콘텐츠 사업화 지원과제"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "XR/VR 콘텐츠 사업화",
+      "body": "인천테크노파크 가상융합산업 혁신센터가 운영하는 XR·메타버스·VR 콘텐츠 사업화 지원 과제로, 가상융합 기술 기반 콘텐츠 기업에 R&D·사업화 자금을 지원한다. 가상공간 내 서비스 또는 XR 결합 플랫폼이 핵심 심사 요소다.",
+      "benefits": [
+        {
+          "k": "사업화 자금",
+          "v": "과제당 최대 3,000~5,000만원 추정 (R&D 포함)"
+        },
+        {
+          "k": "장비 인프라",
+          "v": "XR 제작 장비·스튜디오 이용"
+        },
+        {
+          "k": "기술 지원",
+          "v": "가상융합 기술 전문 컨설팅"
+        }
+      ],
+      "watchout": "XR/VR 콘텐츠 기술 특화 — 순수 SW 플랫폼은 심사 적합성 낮을 수 있음"
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [
+        {
+          "task": "디지털 플랫폼 가상화",
+          "fit": "신혼 생활공간 VR 투어 기능 개발 가능",
+          "reason": "sinhon.life에 VR 인테리어/신혼집 투어 기능 추가 어필"
+        }
+      ],
+      "tech_adjacent": [
+        {
+          "task": "AI+XR 융합",
+          "fit": "RAG 기반 VR 공간 큐레이션",
+          "reason": "AI와 가상융합 기술 결합 신규 트랙"
+        }
+      ],
+      "mismatch_note": "XR 기술 특화 요건 — AI/SW 플랫폼 배경만으로는 심사 기준 완전 충족 어려움",
+      "critical_gap": "XR/VR 기술 구현 역량 부재 — 파트너십이나 기술 연계 없이는 경쟁력 낮음"
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "자격확인",
+            "hours": "3"
+          },
+          {
+            "stage": "서류작성",
+            "hours": "20"
+          },
+          {
+            "stage": "발표준비",
+            "hours": "7"
+          }
+        ],
+        "total": "30h"
+      },
+      "probability": {
+        "doc_pass": 0.35,
+        "final_given_doc_pass": 0.45,
+        "final": 0.16,
+        "basis": "인천 지역 강점 있으나 XR 기술 특화 요건이 핵심 걸림돌"
+      },
+      "expected_value_label": "기대값 약 700만원 (지원금 4,000만원 × 0.16 × 현금비중 0.7) — XR 파트너 확보 시 상향"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "CONDITIONAL-GO",
+      "reasons": [
+        "인천 지역 강 매칭",
+        "XR 파트너 확보 또는 VR 기능 추가 계획 시 경쟁력 확보"
+      ],
+      "exception_go_conditions": [
+        "XR 기술 파트너사와 컨소시엄 구성 시 GO로 전환"
+      ]
+    },
+    "alternatives": {
+      "title": "대안 공고",
+      "items": [
+        {
+          "name": "[인천] AI Playground 인천 AX 컨설팅",
+          "deadline": "2026-04-30",
+          "track": "AI/SW",
+          "priority": "1순위",
+          "reason": "AI/RAG 전문성 직결 최고 적합"
+        },
+        {
+          "name": "[인천] 콘텐츠코리아랩 스타트업 부스터",
+          "deadline": "2026-04-29",
+          "track": "콘텐츠/창업",
+          "priority": "2순위",
+          "reason": "콘텐츠+플랫폼 삼중 매칭"
+        },
+        {
+          "name": "창업진흥원 초기창업패키지",
+          "deadline": "2026-05-31",
+          "track": "초기창업",
+          "priority": "3순위",
+          "reason": "6개월차 SW법인 전국 지원 가능"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "id": "bizinfo_PBLN_000000000118285",
+  "title": "2026년 실감콘텐츠 스튜디오 프로젝트 현물지원기업 모집 공고",
+  "analyzed_at": "2026-04-25T00:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북)",
+  "verdict": {
+    "decision": "CONDITIONAL-GO",
+    "confidence": "medium",
+    "expected_pass_rate": 0.25,
+    "time_cost_hours": "18",
+    "one_liner": "광주 실감콘텐츠 제작 현물 지원"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "현물 지원 (실감콘텐츠 제작 스튜디오)",
+      "body": "광주광역시·광주정보문화산업진흥원이 운영하는 실감콘텐츠 스튜디오 프로젝트 지원. XR(VR/AR), 메타버스, 실감형 미디어 콘텐츠 제작 기업에 스튜디오 시설 및 장비를 현물로 지원. 콘텐츠 제작 스타트업 대상.",
+      "benefits": [
+        {
+          "k": "지원내용",
+          "v": "실감콘텐츠 스튜디오 시설·장비 현물 지원"
+        },
+        {
+          "k": "주관기관",
+          "v": "광주정보문화산업진흥원"
+        },
+        {
+          "k": "대상",
+          "v": "XR·메타버스·실감콘텐츠 제작 기업"
+        }
+      ],
+      "watchout": "광주 소재 또는 광주 방문 제작 가능 기업 대상. 실감콘텐츠 제작 계획 필요."
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [
+        {
+          "task": "실감콘텐츠 제작 경험",
+          "fit": "🟡",
+          "reason": "AI/SW 기술 보유하나 XR·VR 실감콘텐츠 제작 경험 불확실"
+        },
+        {
+          "task": "콘텐츠 스타트업",
+          "fit": "🟢",
+          "reason": "sinhon.life 웨딩 콘텐츠 플랫폼으로 콘텐츠 기업 포지셔닝 가능"
+        }
+      ],
+      "tech_adjacent": [
+        {
+          "task": "AI 기반 콘텐츠 제작",
+          "fit": "🟡",
+          "reason": "AI 생성 콘텐츠를 실감형으로 확장하는 기획 가능"
+        },
+        {
+          "task": "신혼부부 XR 콘텐츠",
+          "fit": "🟡",
+          "reason": "웨딩 XR 체험, 예식장 가상투어 등 실감콘텐츠 아이디어 연계 가능"
+        }
+      ],
+      "mismatch_note": "광주 소재 아닌 인천 기업으로 스튜디오 방문 제작 의지 표명 필요. 실감콘텐츠가 핵심 비즈니스 아님.",
+      "critical_gap": "XR/AR/VR 콘텐츠 제작 경험 없음. 광주 방문 제작 현실성 낮음."
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "자격확인",
+            "hours": "3"
+          },
+          {
+            "stage": "서류작성",
+            "hours": "10"
+          },
+          {
+            "stage": "계획서 준비",
+            "hours": "5"
+          }
+        ],
+        "total": "18h"
+      },
+      "probability": {
+        "doc_pass": 0.4,
+        "final_given_doc_pass": 0.6,
+        "final": 0.25,
+        "basis": "콘텐츠 기업 요건 충족 가능하나 실감콘텐츠 특화 경험 부재가 관건"
+      },
+      "expected_value_label": "중간 - 스튜디오 현물 지원 활용 시 신규 콘텐츠 제작 가능"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "CONDITIONAL-GO",
+      "reasons": [
+        "실감콘텐츠 스튜디오 현물 지원으로 초기 제작비 절감 가능",
+        "신혼부부 대상 웨딩 XR 콘텐츠로 차별화 기회",
+        "AI 기술을 실감콘텐츠와 결합한 혁신 제안 가능"
+      ],
+      "exception_go_conditions": [
+        "웨딩 XR 체험 또는 예식장 가상투어 실감콘텐츠 개발 계획 수립 시",
+        "광주 방문 제작 일정 조율 가능한 경우"
+      ]
+    },
+    "alternatives": {
+      "title": "대안 공고",
+      "items": [
+        "KOCCA 실감콘텐츠 제작 지원",
+        "메타버스 콘텐츠 창작 지원사업"
+      ]
+    }
+  }
+}

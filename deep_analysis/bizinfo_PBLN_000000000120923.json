@@ -1,0 +1,108 @@
+{
+  "id": "bizinfo_PBLN_000000000120923",
+  "title": "2026년 여성발명왕EXPO 참가기업 모집 공고",
+  "analyzed_at": "2026-04-25T00:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북)",
+  "verdict": {
+    "decision": "CONDITIONAL-GO",
+    "confidence": "medium",
+    "expected_pass_rate": 0.3,
+    "time_cost_hours": "15",
+    "one_liner": "여성발명 EXPO 전시 참가 모집"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "전시회 참가 지원 (여성 발명·창업)",
+      "body": "한국여성발명협회가 주관하는 여성발명왕EXPO 참가기업 모집. 여성 발명가·창업가의 제품 및 서비스를 전시하고 바이어·소비자와 만남의 장 제공. 부스 지원 및 홍보 지원이 핵심 혜택. 이영림(예비창업자) 적합.",
+      "benefits": [
+        {
+          "k": "지원내용",
+          "v": "전시 부스 지원, 홍보·마케팅 지원"
+        },
+        {
+          "k": "주관기관",
+          "v": "한국여성발명협회"
+        },
+        {
+          "k": "대상",
+          "v": "여성 발명가·여성 창업기업"
+        }
+      ],
+      "watchout": "여성 대표자 또는 여성 발명가 요건 필수. 이영림 명의 신청 검토."
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [
+        {
+          "task": "여성 창업자 요건",
+          "fit": "🟢",
+          "reason": "이영림(와이프)이 여성 예비창업자로 자격 충족"
+        },
+        {
+          "task": "B2C 소비자 서비스/제품",
+          "fit": "🟢",
+          "reason": "sinhon.life 신혼부부 플랫폼은 B2C 소비자 대상으로 EXPO 전시 적합"
+        }
+      ],
+      "tech_adjacent": [
+        {
+          "task": "발명/특허 보유",
+          "fit": "🟡",
+          "reason": "SW 특허 또는 앱 기반 발명으로 포지셔닝 가능"
+        }
+      ],
+      "mismatch_note": "'발명'에 방점이 있어 순수 서비스 플랫폼은 발명 요소 부각 필요.",
+      "critical_gap": "특허 또는 발명 실적 없을 경우 '발명왕' 콘셉트와 거리가 생김."
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "자격확인",
+            "hours": "2"
+          },
+          {
+            "stage": "신청서류",
+            "hours": "8"
+          },
+          {
+            "stage": "전시 준비",
+            "hours": "5"
+          }
+        ],
+        "total": "15h"
+      },
+      "probability": {
+        "doc_pass": 0.55,
+        "final_given_doc_pass": 0.55,
+        "final": 0.3,
+        "basis": "여성 창업자 요건 충족, B2C 서비스 전시 적합. 발명 요소 포지셔닝이 관건."
+      },
+      "expected_value_label": "중간 - 브랜드 노출 및 네트워킹 기회"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "CONDITIONAL-GO",
+      "reasons": [
+        "이영림이 여성 예비창업자로 자격 요건 충족",
+        "B2C 신혼부부 플랫폼은 여성 소비자 타겟으로 EXPO 전시 시너지 있음",
+        "홍보 기회 및 여성 창업 네트워크 활용 가능"
+      ],
+      "exception_go_conditions": [
+        "이영림 명의 예비창업자 또는 여성 대표 요건 확인 시 GO",
+        "sinhon.life 관련 SW 특허 출원 예정 시 발명 요소 강화 가능"
+      ]
+    },
+    "alternatives": {
+      "title": "대안 공고",
+      "items": [
+        "여성기업 우선구매 지원",
+        "여성창업경진대회"
+      ]
+    }
+  }
+}
