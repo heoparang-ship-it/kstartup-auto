@@ -11,12 +11,14 @@ if not INDEX.exists():
 html = INDEX.read_text(encoding="utf-8")
 original = html
 
+# 패치 1: D-day 실시간화
 html = re.sub(
-    r'const\s+now\s*=\s*new\s+Date\("\d{4}-\d{2}-\d{2}"\);',
+    r'const\s+now\s*=\s*new\s+Date\(["\x27]\d{4}-\d{2}-\d{2}["\x27]\)\s*;?',
     'const now = new Date(); now.setHours(0,0,0,0);',
     html,
 )
 
+# recommendations.json에서 데이터
 updated_at = "(unknown)"; total_pool = "?"
 if RECS.exists():
     try:
@@ -29,20 +31,24 @@ if RECS.exists():
 kst = timezone(timedelta(hours=9))
 build_now = datetime.now(kst).strftime("%Y-%m-%d %H:%M KST")
 
-footer = (
-    '<div class="bottom-update" style="margin:24px auto 12px;max-width:1200px;'
-    'padding:14px 18px;background:#f5f5f4;border:1px solid #e7e5e4;border-radius:10px;'
-    'font-size:12.5px;color:#57534e;text-align:center;">'
+# 상단 배너 (눈에 잘 띄는 노란색 띠 형태)
+top_block = (
+    '<div class="top-update" style="margin:0 auto;max-width:none;'
+    'padding:10px 18px;background:#fef3c7;border-bottom:2px solid #fcd34d;'
+    'font-size:13px;color:#78350f;text-align:center;font-weight:500;">'
     f'\U0001F552 <b>최근 업데이트 시각</b>: {updated_at} '
     f'· 누적 풀 <b>{total_pool}</b>건 '
     f'· 페이지 빌드 {build_now}'
     '</div>'
 )
 
-if 'class="bottom-update"' in html:
-    html = re.sub(r'<div class="bottom-update"[^>]*>.*?</div>', footer, html, flags=re.DOTALL)
+# 기존 하단 bottom-update 제거 (중복 방지)
+html = re.sub(r'\n?<div class="bottom-update"[^>]*>.*?</div>\n?', '\n', html, flags=re.DOTALL)
+# 기존 top-update 있으면 교체, 없으면 <body ...> 직후 삽입
+if 'class="top-update"' in html:
+    html = re.sub(r'<div class="top-update"[^>]*>.*?</div>', top_block, html, flags=re.DOTALL)
 else:
-    html = re.sub(r'</body>', footer + '\n</body>', html, count=1)
+    html = re.sub(r'(<body[^>]*>)', r'\1\n' + top_block, html, count=1)
 
 if html == original:
     print("No changes (already patched).")
