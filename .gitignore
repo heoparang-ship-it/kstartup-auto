@@ -1,4 +1,11 @@
-__pycache__/
 *.pyc
 .DS_Store
 .env
+.local/
+.venv/
+__pycache__/
+attachments/
+batch_full.json
+parsed/
+pending_pdf_score.json
+scored_pdf/

@@ -1,0 +1,18 @@
+{
+  "_comment": "공고 정렬 가중치. 합 1.0 권장. 사용자가 자유롭게 수정 후 대시보드 새로고침.",
+  "weights": {
+    "pdf_pass_rate":         0.50,
+    "roi_score":             0.30,
+    "alternatives_richness": 0.20
+  },
+  "priority_labels": {
+    "pdf_pass_rate":         "합격가능성",
+    "roi_score":             "ROI",
+    "alternatives_richness": "대안"
+  },
+  "fallback": {
+    "use_expected_pass_rate_when_pdf_missing": true,
+    "use_time_cost_hours_for_roi_when_pdf_missing": true,
+    "default_when_no_data": 0.0
+  }
+}

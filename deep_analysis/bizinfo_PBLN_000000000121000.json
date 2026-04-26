@@ -10,7 +10,42 @@
     "confidence": "medium",
     "expected_pass_rate": 0.16,
     "time_cost_hours": "30",
-    "one_liner": "[인천] 2026년 가상융합산업 콘텐츠 사업화 지원과제"
+    "one_liner": "[인천] 2026년 가상융합산업 콘텐츠 사업화 지원과제",
+    "pdf_pass_rate": 0.3,
+    "pdf_pass_rate_confidence": "medium",
+    "pdf_pass_rate_evidence": [
+      {
+        "quote": "인천 소재 사업화 또는 수출 등이 가능한 가상융합산업 콘텐츠 보유 기업",
+        "source_pdf": "붙임2._2026년_인천_가상융합산업_콘텐츠_사업화_지원과제_신청서_양식.md"
+      },
+      {
+        "quote": "trgetNm: 중소기업",
+        "source_pdf": "structured_excerpt"
+      },
+      {
+        "quote": "사업 신청금액 (단위 : 천원) 최대 10,000(VAT포함)",
+        "source_pdf": "붙임2._2026년_인천_가상융합산업_콘텐츠_사업화_지원과제_신청서_양식.md"
+      },
+      {
+        "quote": "2024, 2025년 재무제표 각1",
+        "source_pdf": "붙임2._2026년_인천_가상융합산업_콘텐츠_사업화_지원과제_신청서_양식.md"
+      }
+    ],
+    "roi_score": 0.28,
+    "roi_breakdown": {
+      "지원금_만원": 1000,
+      "자기부담_만원": null,
+      "자기부담_pct": null,
+      "작성공수_시간": 30,
+      "인건비상한_만원": null
+    },
+    "alternatives": [],
+    "killer_blockers": [
+      "인천 소재 기업 필수 — 인천 외 소재 기업은 지원 불가. 현재 사업장 소재지 확인 필요",
+      "마감 2026-04-30 (공고일 기준 2일 이내) — 서류 준비 시간 극히 부족 (재무제표·법인인감증명서 등 원본 필요)",
+      "법인 또는 사업자등록 필수 — 개인 명의(heoparang_personal)는 '기업' 자격 요건 미충족 가능성. 중소기업 기준 적용"
+    ],
+    "one_liner_pdf": "🚫 인천 소재 기업 필수 — 인천 외 소재 기업은 지원 불가. 현재 사업장 소재지 확인 필요"
   },
   "sections": {
     "nature": {
@@ -116,5 +151,7 @@
         }
       ]
     }
-  }
+  },
+  "pdf_analyzed_at": "2026-04-27T02:04:31.779555+09:00",
+  "pdf_analyzer": "sonnet-pdf@cowork"
 }

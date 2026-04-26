@@ -10,7 +10,39 @@
     "confidence": "medium",
     "expected_pass_rate": 0.06,
     "time_cost_hours": "4",
-    "one_liner": "월마트 입점 교육, 수출 실물 상품 없어 실익 없음"
+    "one_liner": "월마트 입점 교육, 수출 실물 상품 없어 실익 없음",
+    "pdf_pass_rate": 0.04,
+    "pdf_pass_rate_confidence": "high",
+    "pdf_pass_rate_evidence": [
+      {
+        "quote": "법인 사업자만 가능하며 개인사업자는 불가능합니다.",
+        "source_pdf": "2026_글로벌_온라인_유통망_파워셀러_육성사업_모집_공고_1단계_월마트_1기.md"
+      },
+      {
+        "quote": "지원대상 : 월마트 계정 미보유 기업 혹은 월마트 계정은 보유하고 있으나 판매를 시행하지 않은 기업 중, 기초 입점 및 마케팅 교육을 필요로 하는 국내 기업",
+        "source_pdf": "2026_글로벌_온라인_유통망_파워셀러_육성사업_모집_공고_1단계_월마트_1기.md"
+      },
+      {
+        "quote": "기초 입점교육 5회, 마케팅비 지원 30만원 (선착순 10개사, 실비 사용 후 사후정산)",
+        "source_pdf": "2026_글로벌_온라인_유통망_파워셀러_육성사업_모집_공고_1단계_월마트_1기.md"
+      }
+    ],
+    "roi_score": 0.03,
+    "roi_breakdown": {
+      "지원금_만원": 30,
+      "자기부담_만원": null,
+      "자기부담_pct": null,
+      "작성공수_시간": 3,
+      "인건비상한_만원": null
+    },
+    "alternatives": [],
+    "killer_blockers": [
+      "법인 사업자만 신청 가능 — best_entity(heoparang_personal)는 개인사업자로 자격 미충족 (자동 NO-GO)",
+      "sinhon.life는 실물 소비재 수출 상품 없음 — 월마트 입점 자체가 사업 모델과 무관",
+      "지원 혜택 실질: 교육 5회 + 마케팅비 30만원(선착순 10개사 사후정산) — 기댓값 극히 낮음",
+      "xcom_corp(법인)도 tier=red (단계 불일치) — 법인으로도 적용 불가"
+    ],
+    "one_liner_pdf": "🚫 법인 전용·소비재 수출 없음 — 허파랑 개인·sinhon.life 모두 자격 미달, 교육 30만원 실익 없음"
   },
   "sections": {
     "nature": {
@@ -95,5 +127,7 @@
         }
       ]
     }
-  }
+  },
+  "pdf_analyzed_at": "2026-04-27T02:04:31.781711+09:00",
+  "pdf_analyzer": "sonnet-pdf@cowork"
 }

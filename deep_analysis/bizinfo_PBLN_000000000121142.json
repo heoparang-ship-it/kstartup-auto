@@ -10,7 +10,55 @@
     "confidence": "medium",
     "expected_pass_rate": 0.25,
     "time_cost_hours": 16,
-    "one_liner": "인천 디자인기업 지원, UX 강점 살리면 가능"
+    "one_liner": "인천 디자인기업 지원, UX 강점 살리면 가능",
+    "pdf_pass_rate": 0.04,
+    "pdf_pass_rate_confidence": "high",
+    "pdf_pass_rate_evidence": [
+      {
+        "quote": "② 산업디자인전문회사 신고증을 보유한 인천디자인지원센터 주관기관 등록사",
+        "source_pdf": "붙임1_모집공고문.md"
+      },
+      {
+        "quote": "지원대상 : 사업자등록 본점소재지가 인천지역으로 등록된 1인 디자인전문회사(아래 요건 충족)",
+        "source_pdf": "붙임1_모집공고문.md"
+      },
+      {
+        "quote": "인천디자인지원센터 주관기관 미등록 기업",
+        "source_pdf": "붙임1_모집공고문.md"
+      }
+    ],
+    "roi_score": 0.05,
+    "roi_breakdown": {
+      "지원금_만원": 500,
+      "자기부담_만원": null,
+      "자기부담_pct": 0.0,
+      "작성공수_시간": 16,
+      "인건비상한_만원": null
+    },
+    "alternatives": [
+      {
+        "pbancSn": null,
+        "title": "모두의 창업 로컬트랙(대구경북)",
+        "reason": "와이프 트랙 1순위 공고, 예비창업자 적격, 마감 2026-05-15"
+      },
+      {
+        "pbancSn": null,
+        "title": "유니콘 브릿지(경기)",
+        "reason": "본인/공동 트랙, SW·AI 직접매칭 가능, 마감 2026-05-15"
+      },
+      {
+        "pbancSn": null,
+        "title": "파주 청년창업",
+        "reason": "와이프 트랙 경기 백업, 마감 2026-05-15"
+      }
+    ],
+    "killer_blockers": [
+      "산업디자인전문회사 신고증 미보유 — 엑스컴은 SW개발+미디어콘텐츠 법인으로 디자인전문회사 아님",
+      "인천디자인지원센터 주관기관 미등록 — 등록 없이 지원 불가, 지원제외대상 명시",
+      "공고 대상이 1인 디자인전문회사 한정 — sinhon.life B2C AI 플랫폼과 도메인 불일치",
+      "주관기관 등록 절차 완료 후에야 참여 자격 부여 — 공고 마감(5.8) 전 등록 완료 사실상 불가"
+    ],
+    "one_liner_pdf": "🚫 산업디자인전문회사 신고증 + 주관기관 등록 두 조건 모두 미충족 — 엑스컴(SW개발) 진입 불가"
   },
   "sections": {
     "nature": {
@@ -101,5 +149,7 @@
         }
       ]
     }
-  }
+  },
+  "pdf_analyzed_at": "2026-04-27T02:04:31.781026+09:00",
+  "pdf_analyzer": "sonnet-pdf@cowork"
 }

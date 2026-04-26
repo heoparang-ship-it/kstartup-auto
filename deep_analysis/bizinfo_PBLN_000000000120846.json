@@ -10,7 +10,37 @@
     "confidence": "medium",
     "expected_pass_rate": 0.25,
     "time_cost_hours": "28",
-    "one_liner": "2026년 글로벌스케일업캠퍼스 인천 유니브-엑스(Uni"
+    "one_liner": "2026년 글로벌스케일업캠퍼스 인천 유니브-엑스(Uni",
+    "pdf_pass_rate": 0.3,
+    "pdf_pass_rate_confidence": "medium",
+    "pdf_pass_rate_evidence": [
+      {
+        "quote": "인천 관내 본사를 둔 AI 등 디지털 분야(TRL 5단계 이상)의 원천기술을 보유한 기업",
+        "source_pdf": "붙임1._2026년_인천_유니브-엑스(Univ._X)_프로그램_지원기업_모집_공고문.md"
+      },
+      {
+        "quote": "재무제표 : 최근 3개년 재무제표",
+        "source_pdf": "붙임1._2026년_인천_유니브-엑스(Univ._X)_프로그램_지원기업_모집_공고문.md"
+      },
+      {
+        "quote": "현지화 지원 프로그램에 적극 참여(전담인력 배정, 현지 체류 일정 포함 전체 프로그램 참여 필수)",
+        "source_pdf": "붙임1._2026년_인천_유니브-엑스(Univ._X)_프로그램_지원기업_모집_공고문.md"
+      }
+    ],
+    "roi_score": 0.45,
+    "roi_breakdown": {
+      "지원금_만원": null,
+      "자기부담_만원": null,
+      "자기부담_pct": null,
+      "작성공수_시간": 35,
+      "인건비상한_만원": null
+    },
+    "alternatives": [],
+    "killer_blockers": [
+      "재무제표 최근 3개년 제출 필수인데 엑스컴은 2025-10 개업 6개월차로 1개년도 미달 — 서류심사 결격 가능성 높음",
+      "본 프로그램은 스케일업(성장기 기업) 대상이며 entities 분석상 xcom_corp 는 '단계 불일치(스케일업)'으로 레드 판정 — 신생법인 적합 단계 아님"
+    ],
+    "one_liner_pdf": "🌐 인천 AI기업 자격은 맞지만 6개월 신생법인엔 재무제표 3개년 벽이 치명적"
   },
   "sections": {
     "nature": {
@@ -121,5 +151,7 @@
         }
       ]
     }
-  }
+  },
+  "pdf_analyzed_at": "2026-04-27T02:04:31.777959+09:00",
+  "pdf_analyzer": "sonnet-pdf@cowork"
 }

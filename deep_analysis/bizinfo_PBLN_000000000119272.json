@@ -10,7 +10,50 @@
     "confidence": "medium",
     "expected_pass_rate": 0.3,
     "time_cost_hours": 8,
-    "one_liner": "UX 사용성 측정 장비 — sinhon.life UI 검증에 전용 가능"
+    "one_liner": "UX 사용성 측정 장비 — sinhon.life UI 검증에 전용 가능",
+    "pdf_pass_rate": 0.07,
+    "pdf_pass_rate_confidence": "high",
+    "pdf_pass_rate_evidence": [
+      {
+        "quote": "☞ 전국 중소기업 및 기관, 대학 등 (사업자등록증 보유)",
+        "source_pdf": "붙임3_모집포스터.md"
+      },
+      {
+        "quote": "일정협의 및 시나리오 제공, 조사장비 및 실험환경 제공, 데이터 제공 지원",
+        "source_pdf": "structured_excerpt.bsnsSumryCn"
+      },
+      {
+        "quote": "Muscle Biofeedback Training / Gait & Balance Assessment / Pelvic Floor Therapy / Return to Play & Injury Risk Evaluation",
+        "source_pdf": "붙임2_장비카달로그.md"
+      },
+      {
+        "quote": "Noraxon's Ultium EMG sensor system is a multi-modal device that delivers high-fidelity data and flexible measurement options.",
+        "source_pdf": "붙임2_장비카달로그.md"
+      },
+      {
+        "quote": "Use pliance® to provide dynamic quantification of the seated localized pressure locations of a wheelchair user.",
+        "source_pdf": "붙임2_장비카달로그.md"
+      }
+    ],
+    "roi_score": 0.05,
+    "roi_breakdown": {
+      "지원금_만원": null,
+      "자기부담_만원": null,
+      "자기부담_pct": null,
+      "작성공수_시간": 4,
+      "인건비상한_만원": null
+    },
+    "alternatives": [
+      "모두의 창업 로컬트랙(대구경북) — 2026-05-15 마감, 와이프 트랙 1순위",
+      "파주 청년창업 — 2026-05-15 마감, 와이프 경기 백업",
+      "유니콘 브릿지(경기) — 2026-05-15 마감, 본인/공동 후보"
+    ],
+    "killer_blockers": [
+      "장비 용도 완전 불일치: 지원 장비가 EMG(근전도)·3D 동작캡처·압력 분포 측정 등 생체역학·재활 연구 전용 — sinhon.life(신혼 B2C·AI 플랫폼)와 접점 없음",
+      "직접 현금 지원 0원: 장비 이용 시간만 제공하며 상금·PoC금·바우처 없어 자동 NO-GO 기준(기댓값 < 100만원) 충족",
+      "도메인 레퍼런스 요구: 바이오메카닉스·헬스케어·재활공학 연구 실적이 없고, 공고 배경 프로그램(유니버설디자인리빙랩) 연구 커뮤니티와 네트워크 부재"
+    ],
+    "one_liner_pdf": "🦾 근전도·동작캡처 장비 공동활용 — 생체역학 연구용이라 sinhon.life와 접점 전무, 현금 혜택 0원이라 패스"
   },
   "sections": {
     "nature": {
@@ -106,5 +149,7 @@
         }
       ]
     }
-  }
+  },
+  "pdf_analyzed_at": "2026-04-27T02:04:31.772646+09:00",
+  "pdf_analyzer": "sonnet-pdf@cowork"
 }

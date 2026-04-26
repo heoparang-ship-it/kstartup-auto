@@ -10,7 +10,55 @@
     "confidence": "high",
     "expected_pass_rate": 0.35,
     "time_cost_hours": 12,
-    "one_liner": "경북 스타트업 오픈이노베이션 피칭 행사, 이영림 GO"
+    "one_liner": "경북 스타트업 오픈이노베이션 피칭 행사, 이영림 GO",
+    "pdf_pass_rate": 0.2,
+    "pdf_pass_rate_confidence": "medium",
+    "pdf_pass_rate_evidence": [
+      {
+        "quote": "모집대상 : 공고일 기준, 업력 만 7년 이내 기업 또는 업력 10년 이내 신산업 분야 기업 30개사 내외(※ 지역제한 없음)",
+        "source_pdf": "2026년_G-Star_오픈이노베이션_커넥팅_데이_스타트업_모집공고.md"
+      },
+      {
+        "quote": "DB손해보험 — LLM 기반 문서 자동 생성 에이전트, 이미지 및 텍스트 위변조 분석, AI 기반 디지털 마케팅 최적화 솔루션",
+        "source_pdf": "2026년_G-Star_오픈이노베이션_커넥팅_데이_스타트업_모집공고.md"
+      },
+      {
+        "quote": "경북창조경제혁신센터 PoC 사업 연계를 통한 후속사업 참여 가점 및 직접 투자 기회 제공",
+        "source_pdf": "2026년_G-Star_오픈이노베이션_커넥팅_데이_스타트업_모집공고.md"
+      }
+    ],
+    "roi_score": 0.22,
+    "roi_breakdown": {
+      "지원금_만원": null,
+      "자기부담_만원": null,
+      "자기부담_pct": null,
+      "작성공수_시간": 12,
+      "인건비상한_만원": null
+    },
+    "alternatives": [
+      {
+        "pbancSn": null,
+        "title": "모두의 창업 로컬트랙(대구경북)",
+        "reason": "와이프 트랙 1순위, 경기→대구경북 적격, 마감 2026-05-15"
+      },
+      {
+        "pbancSn": null,
+        "title": "파주 청년창업",
+        "reason": "와이프 트랙 경기 백업, 직접 지원금 있는 창업 프로그램, 마감 2026-05-15"
+      },
+      {
+        "pbancSn": null,
+        "title": "유니콘 브릿지(경기)",
+        "reason": "본인/공동 트랙, sinhon.life 직접 매칭 가능, 마감 2026-05-15"
+      }
+    ],
+    "killer_blockers": [
+      "직접 현금 지원 없음 — 네트워킹·매칭 행사 성격, 금전 기댓값 0원 (자동 NO-GO 트리거: 직접자금 0, 매칭금 0)",
+      "수요기업 14개사 대부분 제조·방산·항공우주·로봇 도메인 → sinhon.life(신혼 B2C) 기술 직접 매칭 없음",
+      "PoC 후속 연계 시 '경북 내 본사·지점·부설연구소 이전 또는 설립' 의무 조건 — 인천 소재 (주)엑스컴에 실질 부담",
+      "같은 기간 ROI 더 높은 🟢 대안 공고 2개 이상 존재 (모두의 창업·파주 청년창업)"
+    ],
+    "one_liner_pdf": "🤝 행사 참여 허들 낮고 지역제한 없으나 직접자금 0·기술 미스매치로 xcom/sinhon엔 ROI 없음 — younglim 한정 GO"
   },
   "sections": {
     "nature": {
@@ -95,5 +143,7 @@
         }
       ]
     }
-  }
+  },
+  "pdf_analyzed_at": "2026-04-27T02:04:31.780400+09:00",
+  "pdf_analyzer": "sonnet-pdf@cowork"
 }
