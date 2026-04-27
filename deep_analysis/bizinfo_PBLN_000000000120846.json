@@ -40,7 +40,9 @@
       "재무제표 최근 3개년 제출 필수인데 엑스컴은 2025-10 개업 6개월차로 1개년도 미달 — 서류심사 결격 가능성 높음",
       "본 프로그램은 스케일업(성장기 기업) 대상이며 entities 분석상 xcom_corp 는 '단계 불일치(스케일업)'으로 레드 판정 — 신생법인 적합 단계 아님"
     ],
-    "one_liner_pdf": "🌐 인천 AI기업 자격은 맞지만 6개월 신생법인엔 재무제표 3개년 벽이 치명적"
+    "one_liner_pdf": "🌐 인천 AI기업 자격은 맞지만 6개월 신생법인엔 재무제표 3개년 벽이 치명적",
+    "tier_revised": "orange",
+    "tier_revised_reason": "base=yellow, blockers=2 → 한 단계 강등"
   },
   "sections": {
     "nature": {

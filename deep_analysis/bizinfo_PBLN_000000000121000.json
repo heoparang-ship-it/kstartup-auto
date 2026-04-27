@@ -45,7 +45,9 @@
       "마감 2026-04-30 (공고일 기준 2일 이내) — 서류 준비 시간 극히 부족 (재무제표·법인인감증명서 등 원본 필요)",
       "법인 또는 사업자등록 필수 — 개인 명의(heoparang_personal)는 '기업' 자격 요건 미충족 가능성. 중소기업 기준 적용"
     ],
-    "one_liner_pdf": "🚫 인천 소재 기업 필수 — 인천 외 소재 기업은 지원 불가. 현재 사업장 소재지 확인 필요"
+    "one_liner_pdf": "🚫 인천 소재 기업 필수 — 인천 외 소재 기업은 지원 불가. 현재 사업장 소재지 확인 필요",
+    "tier_revised": "orange",
+    "tier_revised_reason": "base=yellow, blockers=3 → 한 단계 강등"
   },
   "sections": {
     "nature": {

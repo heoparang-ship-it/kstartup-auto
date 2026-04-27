@@ -29,6 +29,31 @@ PDF_KEYS = (
 )
 
 
+def revise_tier(verdict: dict) -> tuple[str | None, str]:
+    """pdf_pass_rate 기반 tier 재분류.
+    임계: ≥0.5 green, ≥0.2 yellow, ≥0.1 orange, <0.1 red.
+    killer_blockers 있으면 한 단계 강등 (단 green 은 yellow까지만).
+    반환: (tier_revised, reason)
+    """
+    p = verdict.get("pdf_pass_rate")
+    if not isinstance(p, (int, float)):
+        return None, "no_pdf_score"
+    if p >= 0.5:
+        base = "green"
+    elif p >= 0.2:
+        base = "yellow"
+    elif p >= 0.1:
+        base = "orange"
+    else:
+        base = "red"
+    blockers = verdict.get("killer_blockers") or []
+    if blockers and base != "red":
+        downgrade = {"green": "yellow", "yellow": "orange", "orange": "red"}
+        revised = downgrade.get(base, base)
+        return revised, f"base={base}, blockers={len(blockers)} → 한 단계 강등"
+    return base, f"base={base}"
+
+
 def main() -> int:
     if not SCORED_DIR.exists():
         print(f"[ERROR] {SCORED_DIR} 없음 — 세션이 점수 파일을 먼저 만들어야 함", file=sys.stderr)
@@ -70,6 +95,12 @@ def main() -> int:
         if before == {k: v.get(k) for k in PDF_KEYS}:
             skip += 1
             continue
+
+        # tier 재분류 (PDF 점수 기반) — 기존 tier 는 보존, verdict.tier_revised 로 별도 추가
+        tier_rev, reason = revise_tier(v)
+        if tier_rev:
+            v["tier_revised"] = tier_rev
+            v["tier_revised_reason"] = reason
 
         d["pdf_analyzed_at"] = datetime.now(KST).isoformat()
         d["pdf_analyzer"] = scored.get("_analyzer") or "sonnet-pdf@cowork"

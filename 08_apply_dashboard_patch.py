@@ -16,8 +16,11 @@ REPO = Path(os.environ.get("KSTARTUP_REPO", Path(__file__).resolve().parent))
 INDEX = REPO / "index.html"
 BACKUP = REPO / "index.html.before-p4"
 SENTINEL = "/* === P4: PDF 기반 점수 블록 + 정렬 === */"
+SENTINEL_V2 = "/* === P4 v2: tier_revised badge === */"
+SENTINEL_V3 = "/* === P4 v3: 합격률 칩 + PDF 블록 최상단 === */"
 
 CSS_BLOCK = '''/* === P4: PDF 기반 점수 블록 + 정렬 === */
+/* === P4 v2: tier_revised badge === */
 .pdf-score-block { background: #f5f3ff; border: 1px solid #d3adf7; border-radius: 8px; padding: 10px 12px; margin: 8px 0 0 0; font-size: 12px; }
 .pdf-score-row { display: grid; grid-template-columns: 80px 1fr 60px; gap: 8px; align-items: center; margin: 3px 0; }
 .pdf-score-label { color: #555; font-weight: 600; }
@@ -34,7 +37,17 @@ CSS_BLOCK = '''/* === P4: PDF 기반 점수 블록 + 정렬 === */
 .sort-bar .sb-pri { background: #f5f3ff; color: #531dab; padding: 4px 10px; border-radius: 16px; }
 .sort-bar .sb-edit { font-size: 11px; color: #999; margin-left: auto; }
 .sort-bar .sb-edit code { background: #f5f5f5; padding: 1px 4px; border-radius: 3px; }
-.score-chip { display: inline-block; background: #f9f0ff; color: #531dab; font-weight: 700; padding: 2px 8px; border-radius: 12px; font-size: 11px; margin-left: 4px; }'''
+.score-chip { display: inline-block; background: #f9f0ff; color: #531dab; font-weight: 700; padding: 2px 8px; border-radius: 12px; font-size: 11px; margin-left: 4px; }
+/* P4 v2: tier_revised badge */
+.tier-revised-badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 10.5px; font-weight: 700; margin-left: 4px; vertical-align: middle; }
+.tier-revised-up   { background: #d9f7be; color: #389e0d; }
+.tier-revised-down { background: #fff1f0; color: #cf1322; }
+.tier-revised-same { background: #f0f5ff; color: #1d39c4; }
+.tier-revised-badge::before { margin-right: 3px; }
+.tier-revised-up::before   { content: "🔼"; }
+.tier-revised-down::before { content: "🔽"; }
+.tier-revised-same::before { content: "✓"; }
+.sb-revised-stats { font-size: 11px; color: #722ed1; padding-left: 8px; border-left: 1px solid #d9d9d9; margin-left: 8px; }'''
 
 JS_HELPERS = '''// === P4: 가중치·정렬 ===
 const DEFAULT_WEIGHTS = {
@@ -78,7 +91,44 @@ function renderSortBar() {
   const ranked = Object.entries(w).sort((a, b) => b[1] - a[1]);
   const pills = ranked.map(([k, v], i) => `<span class="sb-pri">${i + 1}순위 ${lbl[k] || k} (${(v * 100).toFixed(0)}%)</span>`).join(' · ');
   const bar = document.getElementById('sort-bar');
-  if (bar) bar.innerHTML = `<span class="sb-h">정렬</span>${pills}<span class="sb-edit"><code>weights.json</code> 수정 후 새로고침</span>`;
+  if (bar) bar.innerHTML = `<span class="sb-h">정렬</span>${pills}<span class="sb-revised-stats" id="tier-revised-stats">tier 변동 집계 중…</span><span class="sb-edit"><code>weights.json</code> 수정 후 새로고침</span>`;
+}
+
+// P4 v2: 카드 헤더의 .badges 에 tier_revised 배지 비동기 추가
+const TIER_RANK = { red: 0, orange: 1, yellow: 2, green: 3 };
+async function loadTierRevisedBadge(itemId) {
+  const data = await loadAnalysis(itemId);
+  const v = (data && data.verdict) || {};
+  const rev = v.tier_revised;
+  if (!rev) return;
+  let badges;
+  try { badges = document.querySelector(`.item[data-id="${CSS.escape(itemId)}"] .badges`); } catch (_) { return; }
+  if (!badges || badges.querySelector('.tier-revised-badge')) return;
+  const item = ITEMS.find(i => i.id === itemId);
+  const cur = item?.tier;
+  const cls = TIER_RANK[rev] > TIER_RANK[cur] ? 'tier-revised-up'
+            : TIER_RANK[rev] < TIER_RANK[cur] ? 'tier-revised-down' : 'tier-revised-same';
+  const label = TIER_RANK[rev] === TIER_RANK[cur] ? `PDF: ${rev}` : `${cur}→${rev}`;
+  const span = document.createElement('span');
+  span.className = `tier-revised-badge ${cls}`;
+  span.textContent = label;
+  span.title = v.tier_revised_reason || '';
+  badges.appendChild(span);
+}
+
+async function updateTierRevisedStats() {
+  const stats = { up: 0, down: 0, same: 0, none: 0 };
+  await Promise.all(ITEMS.map(async (it) => {
+    const data = await loadAnalysis(it.id);
+    const rev = data?.verdict?.tier_revised;
+    if (!rev) { stats.none += 1; return; }
+    const d = TIER_RANK[rev] - TIER_RANK[it.tier];
+    if (d > 0) stats.up += 1;
+    else if (d < 0) stats.down += 1;
+    else stats.same += 1;
+  }));
+  const el = document.getElementById('tier-revised-stats');
+  if (el) el.innerHTML = `tier 변동: 🔼 ${stats.up} · 🔽 ${stats.down} · ✓ ${stats.same} (PDF 미평가 ${stats.none})`;
 }
 '''
 
@@ -115,11 +165,147 @@ PDF_BLOCK_JS = '''
 '''
 
 
+V3_CSS = """/* === P4 v3: 합격률 칩 + PDF 블록 최상단 === */
+.pdf-pass-chip { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: 700; margin-left: 4px; vertical-align: middle; font-family: 'SF Mono', Menlo, monospace; }
+.pdf-pass-chip-high { background: #d9f7be; color: #389e0d; }
+.pdf-pass-chip-mid  { background: #fff1b8; color: #ad6800; }
+.pdf-pass-chip-low  { background: #ffd6e7; color: #c41d7f; }
+"""
+V3_JS = """// === P4 v3: 합격률 칩 ===
+async function loadPdfPassChip(itemId) {
+  const data = await loadAnalysis(itemId);
+  const v = (data && data.verdict) || {};
+  const p = v.pdf_pass_rate;
+  if (typeof p !== 'number') return;
+  let badges;
+  try { badges = document.querySelector(`.item[data-id="${CSS.escape(itemId)}"] .badges`); } catch(_) { return; }
+  if (!badges || badges.querySelector('.pdf-pass-chip')) return;
+  const cls = p >= 0.5 ? 'pdf-pass-chip-high' : p >= 0.2 ? 'pdf-pass-chip-mid' : 'pdf-pass-chip-low';
+  const span = document.createElement('span');
+  span.className = `pdf-pass-chip ${cls}`;
+  span.textContent = `합격 ${(p*100).toFixed(0)}%`;
+  span.title = v.one_liner_pdf || '';
+  badges.appendChild(span);
+}
+"""
+
+def apply_v3(html: str, log: list[str]) -> str:
+    """v3 증분: CSS 칩, JS 합격률 칩 fan-out, renderAnalysis return 순서 (pdf 맨 앞)."""
+    if SENTINEL_V3 in html:
+        return html
+    # CSS
+    if "\n</style>" in html:
+        html = html.replace("\n</style>", "\n" + V3_CSS + "</style>", 1)
+        log.append("v3 CSS 주입 OK")
+    # JS 헬퍼 — async function render() 직전에 삽입
+    anc = "\nasync function render() {"
+    if anc in html and V3_JS not in html:
+        html = html.replace(anc, "\n" + V3_JS + anc, 1)
+        log.append("v3 JS 헬퍼 주입 OK")
+    # render() fan-out 에 loadPdfPassChip 추가
+    old = "filtered.forEach(it => loadTierRevisedBadge(it.id));"
+    new = "filtered.forEach(it => { loadTierRevisedBadge(it.id); loadPdfPassChip(it.id); });"
+    if old in html:
+        html = html.replace(old, new, 1)
+        log.append("render() 합격률 칩 fan-out 주입 OK")
+    # renderAnalysis return 순서: pdfBlockHtml 을 맨 앞으로
+    old_ret = "return natureHtml + fitHtml + roiHtml + decHtml + altHtml + pdfBlockHtml + metaHtml;"
+    new_ret = "return pdfBlockHtml + natureHtml + fitHtml + roiHtml + decHtml + altHtml + metaHtml;"
+    if old_ret in html:
+        html = html.replace(old_ret, new_ret, 1)
+        log.append("renderAnalysis return 순서 변경 OK (PDF 블록 → 맨 앞)")
+    return html
+
+
 def patch(html: str) -> tuple[str, list[str]]:
     log: list[str] = []
-    if SENTINEL in html:
-        log.append("이미 패치됨 — skip")
+    if SENTINEL in html and SENTINEL_V2 in html and SENTINEL_V3 in html:
+        log.append("이미 v3 패치됨 — skip")
         return html, log
+    if SENTINEL in html and SENTINEL_V2 in html and SENTINEL_V3 not in html:
+        log.append("v2 패치 감지 → v3 증분 적용")
+        return apply_v3(html, log), log
+    if SENTINEL in html and SENTINEL_V2 not in html:
+        log.append("v1 패치 감지 → v2 증분 적용 (CSS·JS 추가만)")
+        # v1만 있는 경우: tier_revised 관련 코드만 끼워넣음
+        # CSS 보강
+        css_patch = """/* P4 v2: tier_revised badge */
+.tier-revised-badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 10.5px; font-weight: 700; margin-left: 4px; vertical-align: middle; }
+.tier-revised-up   { background: #d9f7be; color: #389e0d; }
+.tier-revised-down { background: #fff1f0; color: #cf1322; }
+.tier-revised-same { background: #f0f5ff; color: #1d39c4; }
+.tier-revised-up::before   { content: "🔼"; margin-right: 3px; }
+.tier-revised-down::before { content: "🔽"; margin-right: 3px; }
+.tier-revised-same::before { content: "✓";  margin-right: 3px; }
+.sb-revised-stats { font-size: 11px; color: #722ed1; padding-left: 8px; border-left: 1px solid #d9d9d9; margin-left: 8px; }
+"""
+        if SENTINEL_V2 not in html and "\n</style>" in html:
+            html = html.replace("\n</style>", "\n" + SENTINEL_V2 + "\n" + css_patch + "</style>", 1)
+            log.append("v2 CSS 주입 OK")
+        # JS 헬퍼 보강
+        js_patch_v2 = """// === P4 v2: tier_revised ===
+const TIER_RANK = { red: 0, orange: 1, yellow: 2, green: 3 };
+async function loadTierRevisedBadge(itemId) {
+  const data = await loadAnalysis(itemId);
+  const v = (data && data.verdict) || {};
+  const rev = v.tier_revised;
+  if (!rev) return;
+  let badges;
+  try { badges = document.querySelector(`.item[data-id="${CSS.escape(itemId)}"] .badges`); } catch (_) { return; }
+  if (!badges || badges.querySelector('.tier-revised-badge')) return;
+  const item = ITEMS.find(i => i.id === itemId);
+  const cur = item?.tier;
+  const cls = TIER_RANK[rev] > TIER_RANK[cur] ? 'tier-revised-up'
+            : TIER_RANK[rev] < TIER_RANK[cur] ? 'tier-revised-down' : 'tier-revised-same';
+  const label = TIER_RANK[rev] === TIER_RANK[cur] ? `PDF: ${rev}` : `${cur}→${rev}`;
+  const span = document.createElement('span');
+  span.className = `tier-revised-badge ${cls}`;
+  span.textContent = label;
+  span.title = v.tier_revised_reason || '';
+  badges.appendChild(span);
+}
+async function updateTierRevisedStats() {
+  const stats = { up: 0, down: 0, same: 0, none: 0 };
+  await Promise.all(ITEMS.map(async (it) => {
+    const data = await loadAnalysis(it.id);
+    const rev = data?.verdict?.tier_revised;
+    if (!rev) { stats.none += 1; return; }
+    const d = TIER_RANK[rev] - TIER_RANK[it.tier];
+    if (d > 0) stats.up += 1;
+    else if (d < 0) stats.down += 1;
+    else stats.same += 1;
+  }));
+  const el = document.getElementById('tier-revised-stats');
+  if (el) el.innerHTML = `tier 변동: 🔼 ${stats.up} · 🔽 ${stats.down} · ✓ ${stats.same} (PDF 미평가 ${stats.none})`;
+}
+"""
+        anchor = "\nasync function render() {"
+        if anchor in html:
+            html = html.replace(anchor, "\n" + js_patch_v2 + "\nasync function render() {", 1)
+            log.append("v2 JS 헬퍼 주입 OK")
+        # render() 끝부분 확장: tier_revised fan-out
+        old = 'container.innerHTML = (await sortItems(filtered)).map(renderCard).join("")'
+        new = 'container.innerHTML = (await sortItems(filtered)).map(renderCard).join("");\n  filtered.forEach(it => loadTierRevisedBadge(it.id));\n  updateTierRevisedStats();\n  // v2 patched (was single line)'
+        if old in html and "loadTierRevisedBadge" not in html.split(old)[1].split('\n', 5)[1]:
+            html = html.replace(old, new, 1)
+            log.append("render() v2 fan-out 주입 OK")
+        # 카드 data-id 속성
+        if 'data-id="${escapeHtml(it.id)}"' not in html:
+            anchor2 = '<div class="item tier-${it.tier}${it.annual_recurring ? \' annual\' : \'\'}"\n       data-source='
+            if anchor2 in html:
+                html = html.replace(
+                    anchor2,
+                    '<div class="item tier-${it.tier}${it.annual_recurring ? \' annual\' : \'\'}"\n       data-id="${escapeHtml(it.id)}" data-source='
+                )
+                log.append("카드 data-id 속성 주입 OK")
+        # sortBar 에 stats 슬롯 추가
+        old_bar = "if (bar) bar.innerHTML = `<span class=\"sb-h\">정렬</span>${pills}<span class=\"sb-edit\">"
+        new_bar = "if (bar) bar.innerHTML = `<span class=\"sb-h\">정렬</span>${pills}<span class=\"sb-revised-stats\" id=\"tier-revised-stats\">tier 변동 집계 중…</span><span class=\"sb-edit\">"
+        if old_bar in html:
+            html = html.replace(old_bar, new_bar, 1)
+            log.append("sortBar v2 stats 슬롯 OK")
+        # v2 적용 후 v3 도 같이
+        return apply_v3(html, log), log
 
     # 1) CSS 주입: </style> 직전 (리터럴 replace — 한 번만)
     if "\n</style>" in html:
@@ -154,13 +340,28 @@ def patch(html: str) -> tuple[str, list[str]]:
     else:
         log.append("⚠ render() 시그니처 못 찾음 — 정렬 비활성")
 
-    # filtered.map → (await sortItems(filtered)).map
+    # filtered.map → (await sortItems(filtered)).map + tier_revised badge fan-out
     target_render = 'container.innerHTML = filtered.map(renderCard).join("")'
     if target_render in html:
-        html = html.replace(target_render, 'container.innerHTML = (await sortItems(filtered)).map(renderCard).join("")')
-        log.append("render() 정렬 호출 주입 OK")
+        html = html.replace(
+            target_render,
+            'container.innerHTML = (await sortItems(filtered)).map(renderCard).join("");\n  filtered.forEach(it => loadTierRevisedBadge(it.id));\n  updateTierRevisedStats();\n  // (was: container.innerHTML = filtered.map(renderCard).join(""))'
+        )
+        log.append("render() 정렬 호출 + tier_revised fan-out 주입 OK")
     else:
         log.append("⚠ filtered.map 호출 패턴 못 찾음")
+
+    # 카드 div 에 data-id 속성 추가 (tier_revised 배지 위치 식별용)
+    if 'data-id="${escapeHtml(it.id)}"' not in html:
+        anchor = '<div class="item tier-${it.tier}${it.annual_recurring ? \' annual\' : \'\'}"\n       data-source='
+        if anchor in html:
+            html = html.replace(
+                anchor,
+                '<div class="item tier-${it.tier}${it.annual_recurring ? \' annual\' : \'\'}"\n       data-id="${escapeHtml(it.id)}" data-source='
+            )
+            log.append("카드 data-id 속성 주입 OK")
+        else:
+            log.append("⚠ 카드 div anchor 못 찾음 — tier_revised 배지 미작동 가능")
 
     # 5) <body> 직후 sort-bar 영역
     target_body = "<body>\n"
@@ -181,7 +382,9 @@ def patch(html: str) -> tuple[str, list[str]]:
         else:
             log.append("⚠ 마지막 render() 호출 못 찾음 — 수동 패치 필요")
 
-    return html, log
+    # fresh 패치 흐름 마지막에 v3 도 같이 — but 이 흐름에서는 v2 sortBar 슬롯과 v3 합격률 칩이 없음
+    # v2 가 fresh 흐름에 포함 안 됐으니 여기선 v3 만 추가하고, v2 는 별도 트리거 필요
+    return apply_v3(html, log), log
 
 
 def main() -> int:
