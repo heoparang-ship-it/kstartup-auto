@@ -373,7 +373,13 @@ async function compositeScore(id) {
 }
 async function sortItems(items) {
   await Promise.all(items.map(it => compositeScore(it.id)));
-  return [...items].sort((a, b) => (SCORE_CACHE.get(b.id)?.score ?? 0) - (SCORE_CACHE.get(a.id)?.score ?? 0));
+  // 즐겨찾기 최상단 고정 → 그다음 점수순 (재정렬 시에도 ★ 위치 유지)
+  return [...items].sort((a, b) => {
+    const fa = _currentFavs.has(a.id) ? 1 : 0;
+    const fb = _currentFavs.has(b.id) ? 1 : 0;
+    if (fa !== fb) return fb - fa;
+    return (SCORE_CACHE.get(b.id)?.score ?? 0) - (SCORE_CACHE.get(a.id)?.score ?? 0);
+  });
 }
 function renderSortBar() {
   const w = WEIGHTS_CONF.weights; const lbl = WEIGHTS_CONF.priority_labels;
@@ -718,7 +724,8 @@ function toggleFavBtn(id, btn) {
   if (favs.has(id)) favs.delete(id); else favs.add(id);
   saveFavs(favs);
   btn.classList.toggle('starred', favs.has(id));
-  if (state.fav === 'only') render();
+  // 즐겨찾기 토글 시 즉시 재정렬 (별 누르면 최상단으로 이동)
+  render();
 }
 
 function syncStatBoxes(kind, value) {
