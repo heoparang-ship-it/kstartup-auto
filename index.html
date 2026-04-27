@@ -258,64 +258,11 @@
 .sort-bar .sb-edit { font-size: 11px; color: #999; margin-left: auto; }
 .sort-bar .sb-edit code { background: #f5f5f5; padding: 1px 4px; border-radius: 3px; }
 .score-chip { display: inline-block; background: #f9f0ff; color: #531dab; font-weight: 700; padding: 2px 8px; border-radius: 12px; font-size: 11px; margin-left: 4px; }
-/* === P4 v2: tier_revised badge === */
-/* P4 v2: tier_revised badge */
-.tier-revised-badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 10.5px; font-weight: 700; margin-left: 4px; vertical-align: middle; }
-.tier-revised-up   { background: #d9f7be; color: #389e0d; }
-.tier-revised-down { background: #fff1f0; color: #cf1322; }
-.tier-revised-same { background: #f0f5ff; color: #1d39c4; }
-.tier-revised-up::before   { content: "🔼"; margin-right: 3px; }
-.tier-revised-down::before { content: "🔽"; margin-right: 3px; }
-.tier-revised-same::before { content: "✓";  margin-right: 3px; }
-.sb-revised-stats { font-size: 11px; color: #722ed1; padding-left: 8px; border-left: 1px solid #d9d9d9; margin-left: 8px; }
-/* === P4 v3: 합격률 칩 + PDF 블록 최상단 === */
-.pdf-pass-chip { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: 700; margin-left: 4px; vertical-align: middle; font-family: 'SF Mono', Menlo, monospace; }
-.pdf-pass-chip-high { background: #d9f7be; color: #389e0d; }
-.pdf-pass-chip-mid  { background: #fff1b8; color: #ad6800; }
-.pdf-pass-chip-low  { background: #ffd6e7; color: #c41d7f; }
-/* === P4 v4: 점수화 대기 배지 + 신청 상태 === */
-.pdf-pending-chip { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: 600; margin-left: 4px; vertical-align: middle; background: #f0f0f0; color: #666; cursor: help; }
-.pdf-pending-chip::before { content: "🕒 "; }
-.sb-pending-stats { font-size: 11px; color: #ad6800; padding-left: 8px; border-left: 1px solid #d9d9d9; margin-left: 8px; font-weight: 600; cursor: help; }
-.sb-pending-stats.has-pending { color: #d4380d; animation: pulse-bell 2s ease-in-out infinite; }
-@keyframes pulse-bell { 0%, 100% { opacity: 1; } 50% { opacity: 0.55; } }
-
-/* 신청 상태 */
-.status-toggle { display: inline-flex; gap: 2px; margin-left: 6px; vertical-align: middle; }
-.status-btn { padding: 2px 7px; border: 1px solid #e0dcd7; background: white; border-radius: 10px; cursor: pointer; font-size: 10.5px; line-height: 1.2; }
-.status-btn:hover { background: #fafafa; }
-.status-btn.active { border-color: transparent; font-weight: 700; }
-.status-btn.active.s-wip       { background: #fff7e6; color: #d46b08; border-color: #ffd591; }
-.status-btn.active.s-submitted { background: #f6ffed; color: #389e0d; border-color: #b7eb8f; }
-.status-btn.active.s-paused    { background: #f0f5ff; color: #1d39c4; border-color: #adc6ff; }
-.status-btn.active.s-pass      { background: #fafafa; color: #999; border-color: #d9d9d9; text-decoration: line-through; }
-.item.has-status-pass { opacity: 0.55; }
-.item.has-status-submitted { box-shadow: inset 4px 0 0 #52c41a; }
-.item.has-status-wip { box-shadow: inset 4px 0 0 #fa8c16; }
-/* === P4 v5: 결정 필터(GO/조건부/NO-GO) === */
-.decision-filter { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; padding: 6px 12px; background: white; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.06); margin: 8px 0; }
-.dec-label { font-size: 11px; color: #999; text-transform: uppercase; letter-spacing: 0.05em; margin-right: 4px; }
-.dec-btn { padding: 5px 12px; border: 1px solid #e0dcd7; background: white; border-radius: 16px; cursor: pointer; font-size: 12.5px; }
-.dec-btn:hover { background: #fafafa; }
-.dec-btn.active { font-weight: 700; border-color: transparent; color: white; }
-.dec-btn.active[data-decision="all"]    { background: #595959; }
-.dec-btn.active[data-decision="go"]     { background: #389e0d; }
-.dec-btn.active[data-decision="strict"] { background: #237804; }
-.dec-btn.active[data-decision="cond"]   { background: #d46b08; }
-.dec-btn.active[data-decision="nogo"]   { background: #cf1322; }
-.dec-btn .dec-count { font-size: 10.5px; opacity: 0.7; margin-left: 3px; }
-.dec-btn.active .dec-count { opacity: 0.95; }
-/* === P4 v6: 신규 공고 NEW 배지 === */
-.new-badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: 700; margin-left: 4px; vertical-align: middle; background: linear-gradient(135deg, #ff7875, #f5222d); color: white; box-shadow: 0 1px 3px rgba(245, 34, 45, 0.3); }
-.new-badge::before { content: "🆕 "; }
-.sb-new-stats { font-size: 11.5px; color: #cf1322; padding-left: 8px; border-left: 1px solid #d9d9d9; margin-left: 8px; font-weight: 700; cursor: help; }
-.sb-new-stats:empty { display: none; }
-.item.is-new { border-left: 3px solid #f5222d; }
 </style>
 </head>
 <body>
 <div id="sort-bar" class="sort-bar"></div>
-<div class="top-update" style="margin:0 auto;max-width:none;padding:10px 18px;background:#fef3c7;border-bottom:2px solid #fcd34d;font-size:13px;color:#78350f;text-align:center;font-weight:500;">🕒 <b>최근 업데이트 시각</b>: 2026-04-24T17:17:57+09:00 · 누적 풀 <b>492</b>건 · 페이지 빌드 2026-04-26 01:29 KST · 만료 공고는 ★ 즐겨찾기만 보관됩니다</div>
+<div class="top-update" style="margin:0 auto;max-width:none;padding:10px 18px;background:#fef3c7;border-bottom:2px solid #fcd34d;font-size:13px;color:#78350f;text-align:center;font-weight:500;">🕒 <b>최근 업데이트 시각</b>: 2026-04-28T00:16:46+09:00 · 누적 풀 <b>443</b>건 · 페이지 빌드 2026-04-28 00:16 KST · 만료 공고는 ★ 즐겨찾기만 보관됩니다</div>
 <h1>🗂️ 신혼생활 공고 매칭 대시보드</h1>
 <div class="subtitle">
   v10.0 · BIZINFO + KOCCA + K-Startup 멀티소스 · 트리플 엔티티 · 생애주기 L1~L7 · 스토리텔링 브리지
@@ -419,7 +366,7 @@ function renderSortBar() {
   const ranked = Object.entries(w).sort((a, b) => b[1] - a[1]);
   const pills = ranked.map(([k, v], i) => `<span class="sb-pri">${i + 1}순위 ${lbl[k] || k} (${(v * 100).toFixed(0)}%)</span>`).join(' · ');
   const bar = document.getElementById('sort-bar');
-  if (bar) bar.innerHTML = `<span class="sb-h">정렬</span>${pills}<span class="sb-revised-stats" id="tier-revised-stats">tier 변동 집계 중…</span><span class="sb-pending-stats" id="pending-stats">점수화 상태 확인 중…</span><span class="sb-new-stats" id="new-stats"></span><span class="sb-edit"><code>weights.json</code> 수정 후 새로고침</span>`;
+  if (bar) bar.innerHTML = `<span class="sb-h">정렬</span>${pills}<span class="sb-edit"><code>weights.json</code> 수정 후 새로고침</span>`;
 }
 
 const TIER_EMOJI = { green: "🟢", yellow: "🟡", orange: "🟠", red: "🔴" };
@@ -502,7 +449,7 @@ function renderCard(it) {
 
   return `
   <div class="item tier-${it.tier}${it.annual_recurring ? ' annual' : ''}"
-       data-id="${escapeHtml(it.id)}" data-source="${it.source}" data-tier="${it.tier}" data-entity="${it.best_entity}" data-annual="${it.annual_recurring ? '1' : '0'}">
+       data-source="${it.source}" data-tier="${it.tier}" data-entity="${it.best_entity}" data-annual="${it.annual_recurring ? '1' : '0'}">
     <div class="item-header">
       <div class="item-title"><a href="${escapeHtml(it.url||'#')}" target="_blank">${escapeHtml(it.title)}</a></div>
       <button class="fav-btn${_currentFavs.has(it.id) ? ' starred' : ''}" title="즐겨찾기" onclick="toggleFavBtn('${escapeHtml(it.id)}', this)">★</button>
@@ -720,264 +667,12 @@ function renderAnalysis(a) {
       </div>`;
   }
 
-  return pdfBlockHtml + natureHtml + fitHtml + roiHtml + decHtml + altHtml + metaHtml;
-}
-
-// === P4 v2: tier_revised ===
-const TIER_RANK = { red: 0, orange: 1, yellow: 2, green: 3 };
-async function loadTierRevisedBadge(itemId) {
-  const data = await loadAnalysis(itemId);
-  const v = (data && data.verdict) || {};
-  const rev = v.tier_revised;
-  if (!rev) return;
-  let badges;
-  try { badges = document.querySelector(`.item[data-id="${CSS.escape(itemId)}"] .badges`); } catch (_) { return; }
-  if (!badges || badges.querySelector('.tier-revised-badge')) return;
-  const item = ITEMS.find(i => i.id === itemId);
-  const cur = item?.tier;
-  const cls = TIER_RANK[rev] > TIER_RANK[cur] ? 'tier-revised-up'
-            : TIER_RANK[rev] < TIER_RANK[cur] ? 'tier-revised-down' : 'tier-revised-same';
-  const label = TIER_RANK[rev] === TIER_RANK[cur] ? `PDF: ${rev}` : `${cur}→${rev}`;
-  const span = document.createElement('span');
-  span.className = `tier-revised-badge ${cls}`;
-  span.textContent = label;
-  span.title = v.tier_revised_reason || '';
-  badges.appendChild(span);
-}
-async function updateTierRevisedStats() {
-  const stats = { up: 0, down: 0, same: 0, none: 0 };
-  await Promise.all(ITEMS.map(async (it) => {
-    const data = await loadAnalysis(it.id);
-    const rev = data?.verdict?.tier_revised;
-    if (!rev) { stats.none += 1; return; }
-    const d = TIER_RANK[rev] - TIER_RANK[it.tier];
-    if (d > 0) stats.up += 1;
-    else if (d < 0) stats.down += 1;
-    else stats.same += 1;
-  }));
-  const el = document.getElementById('tier-revised-stats');
-  if (el) el.innerHTML = `tier 변동: 🔼 ${stats.up} · 🔽 ${stats.down} · ✓ ${stats.same} (PDF 미평가 ${stats.none})`;
-}
-
-// === P4 v3: 합격률 칩 ===
-async function loadPdfPassChip(itemId) {
-  const data = await loadAnalysis(itemId);
-  const v = (data && data.verdict) || {};
-  const p = v.pdf_pass_rate;
-  if (typeof p !== 'number') return;
-  let badges;
-  try { badges = document.querySelector(`.item[data-id="${CSS.escape(itemId)}"] .badges`); } catch(_) { return; }
-  if (!badges || badges.querySelector('.pdf-pass-chip')) return;
-  const cls = p >= 0.5 ? 'pdf-pass-chip-high' : p >= 0.2 ? 'pdf-pass-chip-mid' : 'pdf-pass-chip-low';
-  const span = document.createElement('span');
-  span.className = `pdf-pass-chip ${cls}`;
-  span.textContent = `합격 ${(p*100).toFixed(0)}%`;
-  span.title = v.one_liner_pdf || '';
-  badges.appendChild(span);
-}
-
-// === P4 v4: 점수화 대기 배지 + 신청 상태 ===
-const STATUS_KEY = 'sinhon_kstartup_status';
-const STATUSES = [
-  { code: 'wip',       label: '📝 작성중',  cls: 's-wip' },
-  { code: 'submitted', label: '📤 신청완료', cls: 's-submitted' },
-  { code: 'paused',    label: '⏸ 보류',    cls: 's-paused' },
-  { code: 'pass',      label: '❌ 패스',    cls: 's-pass' },
-];
-function getStatus() {
-  try { return JSON.parse(localStorage.getItem(STATUS_KEY) || '{}'); } catch { return {}; }
-}
-function saveStatus(map) { localStorage.setItem(STATUS_KEY, JSON.stringify(map)); }
-function setItemStatus(itemId, code) {
-  const m = getStatus();
-  if (m[itemId] === code) delete m[itemId]; else m[itemId] = code;
-  saveStatus(m);
-  applyStatusVisual(itemId);
-  updatePendingStats();
-}
-function applyStatusVisual(itemId) {
-  const m = getStatus();
-  const code = m[itemId];
-  let card;
-  try { card = document.querySelector(`.item[data-id="${CSS.escape(itemId)}"]`); } catch { return; }
-  if (!card) return;
-  ['has-status-wip','has-status-submitted','has-status-paused','has-status-pass'].forEach(c => card.classList.remove(c));
-  if (code) card.classList.add(`has-status-${code}`);
-  card.querySelectorAll('.status-btn').forEach(b => {
-    b.classList.toggle('active', b.dataset.status === code);
-  });
-}
-function loadStatusToggle(itemId) {
-  let badges;
-  try { badges = document.querySelector(`.item[data-id="${CSS.escape(itemId)}"] .badges`); } catch { return; }
-  if (!badges || badges.querySelector('.status-toggle')) return;
-  const wrap = document.createElement('span');
-  wrap.className = 'status-toggle';
-  wrap.innerHTML = STATUSES.map(s =>
-    `<button class="status-btn ${s.cls}" data-status="${s.code}" onclick="setItemStatus('${itemId.replace(/'/g,"\'")}','${s.code}')" title="${s.label}">${s.label}</button>`
-  ).join('');
-  badges.appendChild(wrap);
-  applyStatusVisual(itemId);
-}
-
-// 점수화 대기 배지
-async function loadPendingBadge(itemId) {
-  const data = await loadAnalysis(itemId);
-  const v = (data && data.verdict) || {};
-  if (typeof v.pdf_pass_rate === 'number') return; // 점수화됨
-  let badges;
-  try { badges = document.querySelector(`.item[data-id="${CSS.escape(itemId)}"] .badges`); } catch { return; }
-  if (!badges || badges.querySelector('.pdf-pending-chip')) return;
-  const span = document.createElement('span');
-  span.className = 'pdf-pending-chip';
-  span.textContent = 'PDF 점수화 대기';
-  span.title = 'Cowork 세션에서 점수화 필요. "오늘 큐 점수화" 한 줄 입력하면 자동 처리.';
-  badges.appendChild(span);
-}
-
-async function updatePendingStats() {
-  let pending = 0, scored = 0;
-  await Promise.all(ITEMS.map(async (it) => {
-    const data = await loadAnalysis(it.id);
-    if (typeof data?.verdict?.pdf_pass_rate === 'number') scored += 1; else pending += 1;
-  }));
-  const el = document.getElementById('pending-stats');
-  if (el) {
-    el.innerHTML = pending > 0
-      ? `🕒 점수화 대기 <b>${pending}</b>건 — Cowork 세션에서 처리 필요`
-      : `✅ 모든 공고 점수화 완료 (${scored}건)`;
-    el.classList.toggle('has-pending', pending > 0);
-  }
-}
-
-// === P4 v5: 결정 필터(GO/조건부/NO-GO) ===
-function normalizeDecision(verdict) {
-  // 기존 verdict.decision (rule-based) + tier_revised (PDF 기반) 통합 정규화
-  if (!verdict) return 'unknown';
-  const dec = String(verdict.decision || '').toUpperCase();
-  const rev = verdict.tier_revised;
-  // PDF 점수가 강력하게 NO-GO면 우선
-  if (typeof verdict.pdf_pass_rate === 'number') {
-    if (verdict.pdf_pass_rate < 0.1) return 'nogo';
-    if (verdict.pdf_pass_rate >= 0.5) return 'go';
-    if (verdict.pdf_pass_rate >= 0.2 || rev === 'yellow' || rev === 'orange') return 'cond';
-  }
-  // PDF 점수 없으면 기존 decision 만 본다
-  if (dec.includes('NO-GO') || dec.includes('NOGO') || dec === 'NO GO') return 'nogo';
-  if (dec.includes('CONDITIONAL') || dec.includes('조건부') || dec.endsWith('-?')) return 'cond';
-  if (dec.startsWith('GO')) return 'go';
-  return 'unknown';
-}
-function matchDecision(verdict, mode) {
-  if (!mode || mode === 'all') return true;
-  const norm = normalizeDecision(verdict);
-  if (mode === 'go')     return norm === 'go' || norm === 'cond';   // GO + 조건부
-  if (mode === 'strict') return norm === 'go';
-  if (mode === 'cond')   return norm === 'cond';
-  if (mode === 'nogo')   return norm === 'nogo';
-  return true;
-}
-async function prefetchAllAnalysis() {
-  // 백그라운드로 모든 deep_analysis 캐시. 진행 중에 사용자가 필터 누르면 await 보장.
-  return Promise.all(ITEMS.map(it => loadAnalysis(it.id)));
-}
-async function ensureAnalysisReady() {
-  await prefetchAllAnalysis();
-}
-function renderDecisionFilter() {
-  if (document.getElementById('decision-filter')) return;
-  const sortBar = document.getElementById('sort-bar');
-  if (!sortBar || !sortBar.parentElement) return;
-  const grp = document.createElement('div');
-  grp.id = 'decision-filter';
-  grp.className = 'decision-filter';
-  grp.innerHTML = `
-    <span class="dec-label">결정</span>
-    <button class="dec-btn active" data-decision="all">전체 <span class="dec-count" id="dec-cnt-all"></span></button>
-    <button class="dec-btn" data-decision="go">✅ GO + 조건부 <span class="dec-count" id="dec-cnt-go"></span></button>
-    <button class="dec-btn" data-decision="strict">✅ GO 만 <span class="dec-count" id="dec-cnt-strict"></span></button>
-    <button class="dec-btn" data-decision="cond">🤔 조건부 <span class="dec-count" id="dec-cnt-cond"></span></button>
-    <button class="dec-btn" data-decision="nogo">🚫 NO-GO <span class="dec-count" id="dec-cnt-nogo"></span></button>
-  `;
-  sortBar.parentElement.insertBefore(grp, sortBar.nextSibling);
-  grp.querySelectorAll('.dec-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      grp.querySelectorAll('.dec-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      state.decision = btn.dataset.decision;
-      render();
-    });
-  });
-}
-async function updateDecisionCounts() {
-  await prefetchAllAnalysis();
-  const counts = { all: ITEMS.length, go: 0, strict: 0, cond: 0, nogo: 0, unknown: 0 };
-  ITEMS.forEach(it => {
-    const v = AA_CACHE.get(it.id)?.verdict;
-    const n = normalizeDecision(v);
-    if (n === 'go')      { counts.strict += 1; counts.go += 1; }
-    else if (n === 'cond'){ counts.cond += 1; counts.go += 1; }
-    else if (n === 'nogo'){ counts.nogo += 1; }
-    else                  { counts.unknown += 1; }
-  });
-  for (const [k, v] of Object.entries(counts)) {
-    const el = document.getElementById('dec-cnt-' + k);
-    if (el) el.textContent = `(${v})`;
-  }
-}
-
-// === P4 v6: 신규 공고 NEW 배지 ===
-const NEW_WINDOW_DAYS = 3;
-function isItemNew(item) {
-  const ct = item && item.structured && item.structured.creatPnttm;
-  if (!ct) return false;
-  try {
-    const dt = new Date(String(ct).replace(' ', 'T'));
-    if (isNaN(dt.getTime())) return false;
-    const age = (Date.now() - dt.getTime()) / 86400000;
-    return age >= 0 && age <= NEW_WINDOW_DAYS;
-  } catch { return false; }
-}
-function loadNewBadge(itemId) {
-  const item = ITEMS.find(i => i.id === itemId);
-  if (!item || !isItemNew(item)) return;
-  let card, badges;
-  try {
-    card = document.querySelector(`.item[data-id="${CSS.escape(itemId)}"]`);
-    badges = card?.querySelector('.badges');
-  } catch { return; }
-  if (!badges || badges.querySelector('.new-badge')) return;
-  card.classList.add('is-new');
-  const span = document.createElement('span');
-  span.className = 'new-badge';
-  span.textContent = 'NEW';
-  span.title = `${NEW_WINDOW_DAYS}일 이내 게시 — ${item.structured?.creatPnttm || ''}`;
-  badges.appendChild(span);
-}
-async function updateNewStats() {
-  let newAll = 0, newPending = 0;
-  await prefetchAllAnalysis();
-  ITEMS.forEach(it => {
-    if (isItemNew(it)) {
-      newAll += 1;
-      const v = AA_CACHE.get(it.id)?.verdict;
-      if (typeof v?.pdf_pass_rate !== 'number') newPending += 1;
-    }
-  });
-  const el = document.getElementById('new-stats');
-  if (!el) return;
-  if (newAll === 0) { el.innerHTML = ''; el.title = ''; return; }
-  el.innerHTML = newPending > 0
-    ? `🆕 신규 <b>${newAll}</b>건 (점수화 대기 <b>${newPending}</b>)`
-    : `🆕 신규 <b>${newAll}</b>건 (모두 점수화됨)`;
-  el.title = `최근 ${NEW_WINDOW_DAYS}일 이내 게시된 공고 ${newAll}건` +
-    (newPending > 0 ? ` — ${newPending}건은 Cowork 세션에서 점수화 필요` : '');
+  return natureHtml + fitHtml + roiHtml + decHtml + altHtml + pdfBlockHtml + metaHtml;
 }
 
 async function render() {
   const container = document.getElementById("items");
   _currentFavs = getFavs();
-  if (state.decision && state.decision !== "all") { await ensureAnalysisReady(); }
   const filtered = ITEMS.filter(it => {
     if (state.source !== "all" && it.source !== state.source) return false;
     if (state.tier !== "all" && it.tier !== state.tier) return false;
@@ -985,17 +680,9 @@ async function render() {
     if (state.annual === "matched" && !it.annual_recurring) return false;
     if (it.deadline && new Date(it.deadline + "T23:59:59+09:00") < new Date() && !_currentFavs.has(it.id)) return false;
     if (state.fav === "only" && !_currentFavs.has(it.id)) return false;
-    if (state.decision && state.decision !== "all") {
-      const _v = AA_CACHE.get(it.id)?.verdict;
-      if (!matchDecision(_v, state.decision)) return false;
-    }
     return true;
   });
-  container.innerHTML = (await sortItems(filtered)).map(renderCard).join("");
-  filtered.forEach(it => { loadTierRevisedBadge(it.id); loadPdfPassChip(it.id); loadPendingBadge(it.id); loadStatusToggle(it.id); loadNewBadge(it.id); });
-  updatePendingStats();
-  updateTierRevisedStats();
-  // v2 patched (was single line) ||
+  container.innerHTML = (await sortItems(filtered)).map(renderCard).join("") ||
     `<div style="padding:40px;text-align:center;color:#999">조건에 맞는 공고가 없습니다</div>`;
 }
 
@@ -1048,7 +735,7 @@ function bindFilters() {
 }
 
 bindFilters();
-loadWeights().then(() => { renderSortBar(); renderDecisionFilter(); render(); setTimeout(() => { updateDecisionCounts(); updateNewStats(); }, 100); });
+loadWeights().then(() => { renderSortBar(); render(); });
 </script>
 </body>
 </html>
