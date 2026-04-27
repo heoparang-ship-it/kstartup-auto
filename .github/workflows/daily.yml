@@ -1,17 +1,25 @@
-name: Daily K-Startup Update
+name: Daily K-Startup Update + PDF Pipeline
 
-# v10.0 Launch (2026-04-24): cron 일시 중단.
-# v9 update.py + classify.py 가 v10 schema 를 덮어쓰는 걸 막기 위해 manual dispatch 전용.
-# TODO: update.py 를 classify_v10 + gen_dashboards_v10 + BIZINFO/KOCCA 멀티소스로 포팅한 뒤 cron 재활성.
+# v10 + PDF 점수화 파이프라인 (2026-04-27 재활성)
+# KST 1시 = UTC 16시 (전날), KST 18시 = UTC 9시
+# 흐름: update.py → 01 download → 02 parse → 03 gen pending → commit/push
+# LLM 호출은 일절 없음 (점수화는 Cowork 세션의 Sonnet 서브에이전트가 별도 처리)
 on:
-  # schedule:
-  #   - cron: '0 0,9 * * 1-5'
+  schedule:
+    - cron: '0 16 * * *'   # 매일 KST 1시
+    - cron: '0 9 * * *'    # 매일 KST 18시
   workflow_dispatch:
     inputs:
       skip_crawl:
-        description: '크롤 스킵 (pool 재분류 + 원문 fetch만 실행)'
+        description: '크롤 스킵 (recommendations.json 재사용)'
         required: false
-        default: 'true'
+        default: 'false'
+        type: choice
+        options: ['false', 'true']
+      skip_pdf:
+        description: 'PDF 다운/파싱/큐 스킵 (recommendations 만 갱신)'
+        required: false
+        default: 'false'
         type: choice
         options: ['false', 'true']
 
@@ -21,25 +29,74 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+          cache: 'pip'
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
       - name: Install dependencies
-        run: pip install requests beautifulsoup4
-      - name: Run update
+        run: |
+          pip install --upgrade pip
+          pip install requests beautifulsoup4 opendataloader-pdf
+
+      - name: Cache attachments
+        id: cache-attach
+        uses: actions/cache@v4
+        with:
+          path: attachments
+          key: attachments-${{ hashFiles('recommendations.json') }}
+          restore-keys: |
+            attachments-
+
+      - name: Cache parsed
+        id: cache-parsed
+        uses: actions/cache@v4
+        with:
+          path: parsed
+          key: parsed-${{ hashFiles('recommendations.json') }}
+          restore-keys: |
+            parsed-
+
+      - name: 1) Run update.py (recommendations 갱신)
         env:
           SKIP_CRAWL: ${{ github.event.inputs.skip_crawl }}
         run: |
           ARGS=""
           if [ "$SKIP_CRAWL" = "true" ]; then ARGS="$ARGS --skip-crawl"; fi
-          echo "Running: python update.py $ARGS"
           python update.py $ARGS
+
+      - name: 2) Download PDF attachments
+        if: github.event.inputs.skip_pdf != 'true'
+        env:
+          PDF_SOURCES: bizinfo
+        run: python 01_download_attachments.py
+
+      - name: 3) Parse PDFs (opendataloader-pdf)
+        if: github.event.inputs.skip_pdf != 'true'
+        run: python 02_parse_attachments.py
+
+      - name: 4) Generate pending_pdf_score queue
+        if: github.event.inputs.skip_pdf != 'true'
+        run: python 03_gen_pending_pdf_score.py
+
       - name: Commit & push changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add recommendations.json
-          git diff --cached --quiet || git commit -m "auto: $(date -u +%Y-%m-%d) 공고 업데이트"
+          git add recommendations.json deep_analysis/ pending_pdf_score/ 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "변경사항 없음 — skip commit"
+            exit 0
+          fi
+          NEW_PENDING=$(ls pending_pdf_score/*.json 2>/dev/null | grep -v _index | wc -l)
+          git commit -m "auto: $(TZ=Asia/Seoul date +%Y-%m-%d_%H시) — pending ${NEW_PENDING}건"
           git push

@@ -18,6 +18,7 @@ BACKUP = REPO / "index.html.before-p4"
 SENTINEL = "/* === P4: PDF 기반 점수 블록 + 정렬 === */"
 SENTINEL_V2 = "/* === P4 v2: tier_revised badge === */"
 SENTINEL_V3 = "/* === P4 v3: 합격률 칩 + PDF 블록 최상단 === */"
+SENTINEL_V4 = "/* === P4 v4: 점수화 대기 배지 + 신청 상태 === */"
 
 CSS_BLOCK = '''/* === P4: PDF 기반 점수 블록 + 정렬 === */
 /* === P4 v2: tier_revised badge === */
@@ -165,6 +166,102 @@ PDF_BLOCK_JS = '''
 '''
 
 
+V4_CSS = """/* === P4 v4: 점수화 대기 배지 + 신청 상태 === */
+.pdf-pending-chip { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: 600; margin-left: 4px; vertical-align: middle; background: #f0f0f0; color: #666; cursor: help; }
+.pdf-pending-chip::before { content: "🕒 "; }
+.sb-pending-stats { font-size: 11px; color: #ad6800; padding-left: 8px; border-left: 1px solid #d9d9d9; margin-left: 8px; font-weight: 600; cursor: help; }
+.sb-pending-stats.has-pending { color: #d4380d; animation: pulse-bell 2s ease-in-out infinite; }
+@keyframes pulse-bell { 0%, 100% { opacity: 1; } 50% { opacity: 0.55; } }
+
+/* 신청 상태 */
+.status-toggle { display: inline-flex; gap: 2px; margin-left: 6px; vertical-align: middle; }
+.status-btn { padding: 2px 7px; border: 1px solid #e0dcd7; background: white; border-radius: 10px; cursor: pointer; font-size: 10.5px; line-height: 1.2; }
+.status-btn:hover { background: #fafafa; }
+.status-btn.active { border-color: transparent; font-weight: 700; }
+.status-btn.active.s-wip       { background: #fff7e6; color: #d46b08; border-color: #ffd591; }
+.status-btn.active.s-submitted { background: #f6ffed; color: #389e0d; border-color: #b7eb8f; }
+.status-btn.active.s-paused    { background: #f0f5ff; color: #1d39c4; border-color: #adc6ff; }
+.status-btn.active.s-pass      { background: #fafafa; color: #999; border-color: #d9d9d9; text-decoration: line-through; }
+.item.has-status-pass { opacity: 0.55; }
+.item.has-status-submitted { box-shadow: inset 4px 0 0 #52c41a; }
+.item.has-status-wip { box-shadow: inset 4px 0 0 #fa8c16; }
+"""
+
+V4_JS = """// === P4 v4: 점수화 대기 배지 + 신청 상태 ===
+const STATUS_KEY = 'sinhon_kstartup_status';
+const STATUSES = [
+  { code: 'wip',       label: '📝 작성중',  cls: 's-wip' },
+  { code: 'submitted', label: '📤 신청완료', cls: 's-submitted' },
+  { code: 'paused',    label: '⏸ 보류',    cls: 's-paused' },
+  { code: 'pass',      label: '❌ 패스',    cls: 's-pass' },
+];
+function getStatus() {
+  try { return JSON.parse(localStorage.getItem(STATUS_KEY) || '{}'); } catch { return {}; }
+}
+function saveStatus(map) { localStorage.setItem(STATUS_KEY, JSON.stringify(map)); }
+function setItemStatus(itemId, code) {
+  const m = getStatus();
+  if (m[itemId] === code) delete m[itemId]; else m[itemId] = code;
+  saveStatus(m);
+  applyStatusVisual(itemId);
+  updatePendingStats();
+}
+function applyStatusVisual(itemId) {
+  const m = getStatus();
+  const code = m[itemId];
+  let card;
+  try { card = document.querySelector(`.item[data-id="${CSS.escape(itemId)}"]`); } catch { return; }
+  if (!card) return;
+  ['has-status-wip','has-status-submitted','has-status-paused','has-status-pass'].forEach(c => card.classList.remove(c));
+  if (code) card.classList.add(`has-status-${code}`);
+  card.querySelectorAll('.status-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.status === code);
+  });
+}
+function loadStatusToggle(itemId) {
+  let badges;
+  try { badges = document.querySelector(`.item[data-id="${CSS.escape(itemId)}"] .badges`); } catch { return; }
+  if (!badges || badges.querySelector('.status-toggle')) return;
+  const wrap = document.createElement('span');
+  wrap.className = 'status-toggle';
+  wrap.innerHTML = STATUSES.map(s =>
+    `<button class="status-btn ${s.cls}" data-status="${s.code}" onclick="setItemStatus('${itemId.replace(/'/g,"\\'")}','${s.code}')" title="${s.label}">${s.label}</button>`
+  ).join('');
+  badges.appendChild(wrap);
+  applyStatusVisual(itemId);
+}
+
+// 점수화 대기 배지
+async function loadPendingBadge(itemId) {
+  const data = await loadAnalysis(itemId);
+  const v = (data && data.verdict) || {};
+  if (typeof v.pdf_pass_rate === 'number') return; // 점수화됨
+  let badges;
+  try { badges = document.querySelector(`.item[data-id="${CSS.escape(itemId)}"] .badges`); } catch { return; }
+  if (!badges || badges.querySelector('.pdf-pending-chip')) return;
+  const span = document.createElement('span');
+  span.className = 'pdf-pending-chip';
+  span.textContent = 'PDF 점수화 대기';
+  span.title = 'Cowork 세션에서 점수화 필요. "오늘 큐 점수화" 한 줄 입력하면 자동 처리.';
+  badges.appendChild(span);
+}
+
+async function updatePendingStats() {
+  let pending = 0, scored = 0;
+  await Promise.all(ITEMS.map(async (it) => {
+    const data = await loadAnalysis(it.id);
+    if (typeof data?.verdict?.pdf_pass_rate === 'number') scored += 1; else pending += 1;
+  }));
+  const el = document.getElementById('pending-stats');
+  if (el) {
+    el.innerHTML = pending > 0
+      ? `🕒 점수화 대기 <b>${pending}</b>건 — Cowork 세션에서 처리 필요`
+      : `✅ 모든 공고 점수화 완료 (${scored}건)`;
+    el.classList.toggle('has-pending', pending > 0);
+  }
+}
+"""
+
 V3_CSS = """/* === P4 v3: 합격률 칩 + PDF 블록 최상단 === */
 .pdf-pass-chip { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: 700; margin-left: 4px; vertical-align: middle; font-family: 'SF Mono', Menlo, monospace; }
 .pdf-pass-chip-high { background: #d9f7be; color: #389e0d; }
@@ -188,6 +285,34 @@ async function loadPdfPassChip(itemId) {
   badges.appendChild(span);
 }
 """
+
+def apply_v4(html: str, log: list[str]) -> str:
+    """v4 증분: 점수화 대기 배지·신청 상태 트래킹·sort-bar 카운트."""
+    if SENTINEL_V4 in html:
+        return html
+    # CSS
+    if "\n</style>" in html:
+        html = html.replace("\n</style>", "\n" + V4_CSS + "</style>", 1)
+        log.append("v4 CSS 주입 OK")
+    # JS 헬퍼
+    anc = "\nasync function render() {"
+    if anc in html and V4_JS not in html:
+        html = html.replace(anc, "\n" + V4_JS + anc, 1)
+        log.append("v4 JS 헬퍼 주입 OK")
+    # render() fan-out 에 loadPendingBadge + loadStatusToggle 추가, updatePendingStats 호출
+    old = "filtered.forEach(it => { loadTierRevisedBadge(it.id); loadPdfPassChip(it.id); });"
+    new = "filtered.forEach(it => { loadTierRevisedBadge(it.id); loadPdfPassChip(it.id); loadPendingBadge(it.id); loadStatusToggle(it.id); });\n  updatePendingStats();"
+    if old in html:
+        html = html.replace(old, new, 1)
+        log.append("render() v4 fan-out 주입 OK")
+    # sort-bar 에 점수화 대기 stats 슬롯
+    old_bar = '<span class="sb-revised-stats" id="tier-revised-stats">tier 변동 집계 중…</span>'
+    new_bar = '<span class="sb-revised-stats" id="tier-revised-stats">tier 변동 집계 중…</span><span class="sb-pending-stats" id="pending-stats">점수화 상태 확인 중…</span>'
+    if old_bar in html:
+        html = html.replace(old_bar, new_bar, 1)
+        log.append("sortBar v4 점수화 대기 슬롯 OK")
+    return html
+
 
 def apply_v3(html: str, log: list[str]) -> str:
     """v3 증분: CSS 칩, JS 합격률 칩 fan-out, renderAnalysis return 순서 (pdf 맨 앞)."""
@@ -219,12 +344,16 @@ def apply_v3(html: str, log: list[str]) -> str:
 
 def patch(html: str) -> tuple[str, list[str]]:
     log: list[str] = []
-    if SENTINEL in html and SENTINEL_V2 in html and SENTINEL_V3 in html:
-        log.append("이미 v3 패치됨 — skip")
+    if SENTINEL in html and SENTINEL_V2 in html and SENTINEL_V3 in html and SENTINEL_V4 in html:
+        log.append("이미 v4 패치됨 — skip")
         return html, log
+    if SENTINEL in html and SENTINEL_V2 in html and SENTINEL_V3 in html and SENTINEL_V4 not in html:
+        log.append("v3 패치 감지 → v4 증분 적용")
+        return apply_v4(html, log), log
     if SENTINEL in html and SENTINEL_V2 in html and SENTINEL_V3 not in html:
-        log.append("v2 패치 감지 → v3 증분 적용")
-        return apply_v3(html, log), log
+        log.append("v2 패치 감지 → v3+v4 증분 적용")
+        html = apply_v3(html, log)
+        return apply_v4(html, log), log
     if SENTINEL in html and SENTINEL_V2 not in html:
         log.append("v1 패치 감지 → v2 증분 적용 (CSS·JS 추가만)")
         # v1만 있는 경우: tier_revised 관련 코드만 끼워넣음
@@ -304,8 +433,9 @@ async function updateTierRevisedStats() {
         if old_bar in html:
             html = html.replace(old_bar, new_bar, 1)
             log.append("sortBar v2 stats 슬롯 OK")
-        # v2 적용 후 v3 도 같이
-        return apply_v3(html, log), log
+        # v2 적용 후 v3, v4 도 같이
+        html = apply_v3(html, log)
+        return apply_v4(html, log), log
 
     # 1) CSS 주입: </style> 직전 (리터럴 replace — 한 번만)
     if "\n</style>" in html:
@@ -382,9 +512,9 @@ async function updateTierRevisedStats() {
         else:
             log.append("⚠ 마지막 render() 호출 못 찾음 — 수동 패치 필요")
 
-    # fresh 패치 흐름 마지막에 v3 도 같이 — but 이 흐름에서는 v2 sortBar 슬롯과 v3 합격률 칩이 없음
-    # v2 가 fresh 흐름에 포함 안 됐으니 여기선 v3 만 추가하고, v2 는 별도 트리거 필요
-    return apply_v3(html, log), log
+    # fresh 패치 흐름 마지막에 v3, v4 도 같이
+    html = apply_v3(html, log)
+    return apply_v4(html, log), log
 
 
 def main() -> int:
