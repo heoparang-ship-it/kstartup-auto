@@ -19,6 +19,7 @@ SENTINEL = "/* === P4: PDF 기반 점수 블록 + 정렬 === */"
 SENTINEL_V2 = "/* === P4 v2: tier_revised badge === */"
 SENTINEL_V3 = "/* === P4 v3: 합격률 칩 + PDF 블록 최상단 === */"
 SENTINEL_V4 = "/* === P4 v4: 점수화 대기 배지 + 신청 상태 === */"
+SENTINEL_V5 = "/* === P4 v5: 결정 필터(GO/조건부/NO-GO) === */"
 
 CSS_BLOCK = '''/* === P4: PDF 기반 점수 블록 + 정렬 === */
 /* === P4 v2: tier_revised badge === */
@@ -166,6 +167,98 @@ PDF_BLOCK_JS = '''
 '''
 
 
+V5_CSS = """/* === P4 v5: 결정 필터(GO/조건부/NO-GO) === */
+.decision-filter { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; padding: 6px 12px; background: white; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.06); margin: 8px 0; }
+.dec-label { font-size: 11px; color: #999; text-transform: uppercase; letter-spacing: 0.05em; margin-right: 4px; }
+.dec-btn { padding: 5px 12px; border: 1px solid #e0dcd7; background: white; border-radius: 16px; cursor: pointer; font-size: 12.5px; }
+.dec-btn:hover { background: #fafafa; }
+.dec-btn.active { font-weight: 700; border-color: transparent; color: white; }
+.dec-btn.active[data-decision="all"]    { background: #595959; }
+.dec-btn.active[data-decision="go"]     { background: #389e0d; }
+.dec-btn.active[data-decision="strict"] { background: #237804; }
+.dec-btn.active[data-decision="cond"]   { background: #d46b08; }
+.dec-btn.active[data-decision="nogo"]   { background: #cf1322; }
+.dec-btn .dec-count { font-size: 10.5px; opacity: 0.7; margin-left: 3px; }
+.dec-btn.active .dec-count { opacity: 0.95; }
+"""
+
+V5_JS = """// === P4 v5: 결정 필터(GO/조건부/NO-GO) ===
+function normalizeDecision(verdict) {
+  // 기존 verdict.decision (rule-based) + tier_revised (PDF 기반) 통합 정규화
+  if (!verdict) return 'unknown';
+  const dec = String(verdict.decision || '').toUpperCase();
+  const rev = verdict.tier_revised;
+  // PDF 점수가 강력하게 NO-GO면 우선
+  if (typeof verdict.pdf_pass_rate === 'number') {
+    if (verdict.pdf_pass_rate < 0.1) return 'nogo';
+    if (verdict.pdf_pass_rate >= 0.5) return 'go';
+    if (verdict.pdf_pass_rate >= 0.2 || rev === 'yellow' || rev === 'orange') return 'cond';
+  }
+  // PDF 점수 없으면 기존 decision 만 본다
+  if (dec.includes('NO-GO') || dec.includes('NOGO') || dec === 'NO GO') return 'nogo';
+  if (dec.includes('CONDITIONAL') || dec.includes('조건부') || dec.endsWith('-?')) return 'cond';
+  if (dec.startsWith('GO')) return 'go';
+  return 'unknown';
+}
+function matchDecision(verdict, mode) {
+  if (!mode || mode === 'all') return true;
+  const norm = normalizeDecision(verdict);
+  if (mode === 'go')     return norm === 'go' || norm === 'cond';   // GO + 조건부
+  if (mode === 'strict') return norm === 'go';
+  if (mode === 'cond')   return norm === 'cond';
+  if (mode === 'nogo')   return norm === 'nogo';
+  return true;
+}
+async function prefetchAllAnalysis() {
+  // 백그라운드로 모든 deep_analysis 캐시. 진행 중에 사용자가 필터 누르면 await 보장.
+  return Promise.all(ITEMS.map(it => loadAnalysis(it.id)));
+}
+async function ensureAnalysisReady() {
+  await prefetchAllAnalysis();
+}
+function renderDecisionFilter() {
+  if (document.getElementById('decision-filter')) return;
+  const sortBar = document.getElementById('sort-bar');
+  if (!sortBar || !sortBar.parentElement) return;
+  const grp = document.createElement('div');
+  grp.id = 'decision-filter';
+  grp.className = 'decision-filter';
+  grp.innerHTML = `
+    <span class="dec-label">결정</span>
+    <button class="dec-btn active" data-decision="all">전체 <span class="dec-count" id="dec-cnt-all"></span></button>
+    <button class="dec-btn" data-decision="go">✅ GO + 조건부 <span class="dec-count" id="dec-cnt-go"></span></button>
+    <button class="dec-btn" data-decision="strict">✅ GO 만 <span class="dec-count" id="dec-cnt-strict"></span></button>
+    <button class="dec-btn" data-decision="cond">🤔 조건부 <span class="dec-count" id="dec-cnt-cond"></span></button>
+    <button class="dec-btn" data-decision="nogo">🚫 NO-GO <span class="dec-count" id="dec-cnt-nogo"></span></button>
+  `;
+  sortBar.parentElement.insertBefore(grp, sortBar.nextSibling);
+  grp.querySelectorAll('.dec-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      grp.querySelectorAll('.dec-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      state.decision = btn.dataset.decision;
+      render();
+    });
+  });
+}
+async function updateDecisionCounts() {
+  await prefetchAllAnalysis();
+  const counts = { all: ITEMS.length, go: 0, strict: 0, cond: 0, nogo: 0, unknown: 0 };
+  ITEMS.forEach(it => {
+    const v = AA_CACHE.get(it.id)?.verdict;
+    const n = normalizeDecision(v);
+    if (n === 'go')      { counts.strict += 1; counts.go += 1; }
+    else if (n === 'cond'){ counts.cond += 1; counts.go += 1; }
+    else if (n === 'nogo'){ counts.nogo += 1; }
+    else                  { counts.unknown += 1; }
+  });
+  for (const [k, v] of Object.entries(counts)) {
+    const el = document.getElementById('dec-cnt-' + k);
+    if (el) el.textContent = `(${v})`;
+  }
+}
+"""
+
 V4_CSS = """/* === P4 v4: 점수화 대기 배지 + 신청 상태 === */
 .pdf-pending-chip { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: 600; margin-left: 4px; vertical-align: middle; background: #f0f0f0; color: #666; cursor: help; }
 .pdf-pending-chip::before { content: "🕒 "; }
@@ -286,6 +379,52 @@ async function loadPdfPassChip(itemId) {
 }
 """
 
+def apply_v5(html: str, log: list[str]) -> str:
+    """v5 증분: GO/조건부/NO-GO 결정 필터."""
+    if SENTINEL_V5 in html:
+        return html
+    # CSS
+    if "\n</style>" in html:
+        html = html.replace("\n</style>", "\n" + V5_CSS + "</style>", 1)
+        log.append("v5 CSS 주입 OK")
+    # JS 헬퍼
+    anc = "\nasync function render() {"
+    if anc in html and V5_JS not in html:
+        html = html.replace(anc, "\n" + V5_JS + anc, 1)
+        log.append("v5 JS 헬퍼 주입 OK")
+    # render() filter 안에 decision 필터 추가 — 마지막 fav 필터 다음에 끼움
+    fav_anchor = 'if (state.fav === "only" && !_currentFavs.has(it.id)) return false;'
+    fav_replacement = (
+        'if (state.fav === "only" && !_currentFavs.has(it.id)) return false;\n'
+        '    if (state.decision && state.decision !== "all") {\n'
+        '      const _v = AA_CACHE.get(it.id)?.verdict;\n'
+        '      if (!matchDecision(_v, state.decision)) return false;\n'
+        '    }'
+    )
+    if fav_anchor in html and 'matchDecision' not in html.split(fav_anchor)[1].split('\n', 5)[1]:
+        html = html.replace(fav_anchor, fav_replacement, 1)
+        log.append("render() filter 에 decision 추가 OK")
+    # render() 시작점에서 prefetch — _currentFavs 다음 줄에 await
+    pref_anchor = '_currentFavs = getFavs();'
+    pref_replacement = (
+        '_currentFavs = getFavs();\n'
+        '  if (state.decision && state.decision !== "all") { await ensureAnalysisReady(); }'
+    )
+    if pref_anchor in html and 'ensureAnalysisReady' not in html.split(pref_anchor)[1].split('\n', 5)[1]:
+        html = html.replace(pref_anchor, pref_replacement, 1)
+        log.append("render() prefetch 가드 OK")
+    # 부트스트랩에 renderDecisionFilter + updateDecisionCounts 호출 추가
+    boot_anchor = 'loadWeights().then(() => { renderSortBar(); render(); });'
+    boot_replacement = (
+        'loadWeights().then(() => { renderSortBar(); renderDecisionFilter(); render(); '
+        'setTimeout(() => updateDecisionCounts(), 100); });'
+    )
+    if boot_anchor in html:
+        html = html.replace(boot_anchor, boot_replacement, 1)
+        log.append("부트스트랩에 결정 필터 초기화 추가 OK")
+    return html
+
+
 def apply_v4(html: str, log: list[str]) -> str:
     """v4 증분: 점수화 대기 배지·신청 상태 트래킹·sort-bar 카운트."""
     if SENTINEL_V4 in html:
@@ -344,16 +483,21 @@ def apply_v3(html: str, log: list[str]) -> str:
 
 def patch(html: str) -> tuple[str, list[str]]:
     log: list[str] = []
-    if SENTINEL in html and SENTINEL_V2 in html and SENTINEL_V3 in html and SENTINEL_V4 in html:
-        log.append("이미 v4 패치됨 — skip")
+    if SENTINEL_V5 in html:
+        log.append("이미 v5 패치됨 — skip")
         return html, log
+    if SENTINEL in html and SENTINEL_V2 in html and SENTINEL_V3 in html and SENTINEL_V4 in html:
+        log.append("v4 패치 감지 → v5 증분 적용")
+        return apply_v5(html, log), log
     if SENTINEL in html and SENTINEL_V2 in html and SENTINEL_V3 in html and SENTINEL_V4 not in html:
-        log.append("v3 패치 감지 → v4 증분 적용")
-        return apply_v4(html, log), log
+        log.append("v3 패치 감지 → v4+v5 증분 적용")
+        html = apply_v4(html, log)
+        return apply_v5(html, log), log
     if SENTINEL in html and SENTINEL_V2 in html and SENTINEL_V3 not in html:
-        log.append("v2 패치 감지 → v3+v4 증분 적용")
+        log.append("v2 패치 감지 → v3+v4+v5 증분 적용")
         html = apply_v3(html, log)
-        return apply_v4(html, log), log
+        html = apply_v4(html, log)
+        return apply_v5(html, log), log
     if SENTINEL in html and SENTINEL_V2 not in html:
         log.append("v1 패치 감지 → v2 증분 적용 (CSS·JS 추가만)")
         # v1만 있는 경우: tier_revised 관련 코드만 끼워넣음
@@ -433,9 +577,10 @@ async function updateTierRevisedStats() {
         if old_bar in html:
             html = html.replace(old_bar, new_bar, 1)
             log.append("sortBar v2 stats 슬롯 OK")
-        # v2 적용 후 v3, v4 도 같이
+        # v2 적용 후 v3, v4, v5 도 같이
         html = apply_v3(html, log)
-        return apply_v4(html, log), log
+        html = apply_v4(html, log)
+        return apply_v5(html, log), log
 
     # 1) CSS 주입: </style> 직전 (리터럴 replace — 한 번만)
     if "\n</style>" in html:
@@ -512,9 +657,10 @@ async function updateTierRevisedStats() {
         else:
             log.append("⚠ 마지막 render() 호출 못 찾음 — 수동 패치 필요")
 
-    # fresh 패치 흐름 마지막에 v3, v4 도 같이
+    # fresh 패치 흐름 마지막에 v3, v4, v5 도 같이
     html = apply_v3(html, log)
-    return apply_v4(html, log), log
+    html = apply_v4(html, log)
+    return apply_v5(html, log), log
 
 
 def main() -> int:
