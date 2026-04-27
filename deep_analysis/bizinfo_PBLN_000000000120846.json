@@ -11,23 +11,23 @@
     "expected_pass_rate": 0.25,
     "time_cost_hours": "28",
     "one_liner": "2026년 글로벌스케일업캠퍼스 인천 유니브-엑스(Uni",
-    "pdf_pass_rate": 0.3,
-    "pdf_pass_rate_confidence": "medium",
+    "pdf_pass_rate": 0.15,
+    "pdf_pass_rate_confidence": "high",
     "pdf_pass_rate_evidence": [
       {
         "quote": "인천 관내 본사를 둔 AI 등 디지털 분야(TRL 5단계 이상)의 원천기술을 보유한 기업",
         "source_pdf": "붙임1._2026년_인천_유니브-엑스(Univ._X)_프로그램_지원기업_모집_공고문.md"
       },
       {
-        "quote": "재무제표 : 최근 3개년 재무제표",
+        "quote": "신청 기술의 독자적 알고리즘/특허 보유 및 글로벌 우위성",
         "source_pdf": "붙임1._2026년_인천_유니브-엑스(Univ._X)_프로그램_지원기업_모집_공고문.md"
       },
       {
-        "quote": "현지화 지원 프로그램에 적극 참여(전담인력 배정, 현지 체류 일정 포함 전체 프로그램 참여 필수)",
+        "quote": "(선정규모) 총 3개사 내외",
         "source_pdf": "붙임1._2026년_인천_유니브-엑스(Univ._X)_프로그램_지원기업_모집_공고문.md"
       }
     ],
-    "roi_score": 0.45,
+    "roi_score": 0.18,
     "roi_breakdown": {
       "지원금_만원": null,
       "자기부담_만원": null,
@@ -35,14 +35,31 @@
       "작성공수_시간": 35,
       "인건비상한_만원": null
     },
-    "alternatives": [],
-    "killer_blockers": [
-      "재무제표 최근 3개년 제출 필수인데 엑스컴은 2025-10 개업 6개월차로 1개년도 미달 — 서류심사 결격 가능성 높음",
-      "본 프로그램은 스케일업(성장기 기업) 대상이며 entities 분석상 xcom_corp 는 '단계 불일치(스케일업)'으로 레드 판정 — 신생법인 적합 단계 아님"
+    "alternatives": [
+      {
+        "pbancSn": null,
+        "title": "유니콘 브릿지(경기)",
+        "reason": "본인 트랙 공동 지원 가능, 마감 2026-05-15로 현재 유효, 직접 자금 지원 구조"
+      },
+      {
+        "pbancSn": null,
+        "title": "모두의 창업 로컬트랙(대구경북)",
+        "reason": "와이프 예비창업 트랙 1순위, 마감 2026-05-15, 본 공고보다 ROI 높음"
+      },
+      {
+        "pbancSn": null,
+        "title": "파주 청년창업",
+        "reason": "와이프 경기 백업 트랙, 마감 2026-05-15, 예비창업자 자격 적합"
+      }
     ],
-    "one_liner_pdf": "🌐 인천 AI기업 자격은 맞지만 6개월 신생법인엔 재무제표 3개년 벽이 치명적",
-    "tier_revised": "orange",
-    "tier_revised_reason": "base=yellow, blockers=2 → 한 단계 강등"
+    "killer_blockers": [
+      "직접 현금 지원 없음 — 운영사에게 지원금 지급, 기업은 프로그램 혜택만 수령",
+      "TRL 5단계 이상 원천기술 요건 — sinhon.life는 플랫폼 서비스로 원천기술 인정 가능성 낮음",
+      "평가배점 30점(기술혁신성) 항목에 독자적 알고리즘·특허 보유 명시 — 특허 미보유로 감점 불가피",
+      "총 3개사 선발 극소 규모 — 경쟁률 감안 시 6개월차 신생법인의 합격 기댓값 매우 낮음",
+      "서류+발표평가(PT 15분+Q&A 15분) 이중 관문 — 투입 공수 최소 35시간 이상 예상"
+    ],
+    "one_liner_pdf": "인천 소재·AI 조건은 통과하나 원천기술·특허 없이 3개사 경쟁에서 승산 낮음"
   },
   "sections": {
     "nature": {
@@ -154,6 +171,6 @@
       ]
     }
   },
-  "pdf_analyzed_at": "2026-04-27T02:04:31.777959+09:00",
-  "pdf_analyzer": "sonnet-pdf@cowork"
+  "pdf_analyzed_at": "2026-04-28T02:31:12.865501+09:00",
+  "pdf_analyzer": "sonnet-pdf@cowork-2026-04-28"
 }
