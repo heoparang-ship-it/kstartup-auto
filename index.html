@@ -262,7 +262,7 @@
 </head>
 <body>
 <div id="sort-bar" class="sort-bar"></div>
-<div class="top-update" style="margin:0 auto;max-width:none;padding:10px 18px;background:#fef3c7;border-bottom:2px solid #fcd34d;font-size:13px;color:#78350f;text-align:center;font-weight:500;">🕒 <b>최근 업데이트 시각</b>: 2026-04-28 01:52 KST · 누적 풀 <b>504</b>건 · 페이지 빌드 2026-04-28 01:52 KST · 만료 공고는 ★ 즐겨찾기만 보관됩니다</div>
+<div class="top-update" style="margin:0 auto;max-width:none;padding:10px 18px;background:#fef3c7;border-bottom:2px solid #fcd34d;font-size:13px;color:#78350f;text-align:center;font-weight:500;">🕒 <b>최근 업데이트 시각</b>: 2026-04-28 01:52 KST · 누적 풀 <b>504</b>건 · 페이지 빌드 2026-04-28 01:55 KST · 만료 공고는 ★ 즐겨찾기만 보관됩니다</div>
 <h1>🗂️ 신혼생활 공고 매칭 대시보드</h1>
 <div class="subtitle">
   v10.0 · BIZINFO + KOCCA + K-Startup 멀티소스 · 트리플 엔티티 · 생애주기 L1~L7 · 스토리텔링 브리지
@@ -288,8 +288,8 @@
 
 <div class="filter-group">
   <span class="filter-label">Source</span>
-  <button class="filter-btn src-btn active" data-filter="source-all">전체 (492)</button>
-  <button class='filter-btn src-btn' data-filter='source-bizinfo'>BIZINFO (480)</button><button class='filter-btn src-btn' data-filter='source-kocca'>KOCCA (12)</button>
+  <button class="filter-btn src-btn active" data-filter="source-all">전체 (504)</button>
+  <button class='filter-btn src-btn' data-filter='source-bizinfo'>BIZINFO (492)</button><button class='filter-btn src-btn' data-filter='source-kocca'>KOCCA (12)</button>
 </div>
 <div class="filter-group">
   <span class="filter-label">Tier</span>
@@ -309,6 +309,11 @@
   <span class="filter-label">Annual</span>
   <button class="filter-btn ann-btn active" data-filter="annual-all">전체</button>
   <button class="filter-btn ann-btn" data-filter="annual-matched">🗓️ 연례 매칭만</button>
+</div>
+<div class="filter-group">
+  <span class="filter-label">신규</span>
+  <button class="filter-btn new24h-btn active" data-filter="new24h-all">전체</button>
+  <button class="filter-btn new24h-btn" data-filter="new24h-24h" id="btn-new24h">🆕 24h 신규</button>
 </div>
 <div class="filter-group">
   <span class="filter-label">즐겨찾기</span>
@@ -387,7 +392,7 @@ function saveFavs(s) { localStorage.setItem(FAV_KEY, JSON.stringify([...s])); }
 
 let _currentFavs = new Set();
 
-const state = { source: "all", tier: "all", entity: "all", annual: "all", fav: "all" };
+const state = { source: "all", tier: "all", entity: "all", annual: "all", fav: "all", new24h: "all" };
 
 function escapeHtml(s) {
   if (!s) return "";
@@ -680,6 +685,13 @@ async function render() {
     if (state.annual === "matched" && !it.annual_recurring) return false;
     if (it.deadline && new Date(it.deadline + "T23:59:59+09:00") < new Date() && !_currentFavs.has(it.id)) return false;
     if (state.fav === "only" && !_currentFavs.has(it.id)) return false;
+    if (state.new24h === "24h") {
+      const ts = (it.structured && it.structured.creatPnttm) || it.first_seen || "";
+      if (!ts) return false;
+      const created = new Date(ts.replace(" ", "T") + (ts.includes("T") ? "" : "+09:00"));
+      const cutoff = new Date(Date.now() - 24 * 60 * 60 * 1000);
+      if (created < cutoff) return false;
+    }
     return true;
   });
   container.innerHTML = (await sortItems(filtered)).map(renderCard).join("") ||
@@ -736,6 +748,20 @@ function bindFilters() {
 
 bindFilters();
 loadWeights().then(() => { renderSortBar(); render(); });
+
+// 24h 신규 카운트 배지
+(function update24hBadge() {
+  const now = Date.now();
+  const cutoff = new Date(now - 24 * 60 * 60 * 1000);
+  const cnt = ITEMS.filter(it => {
+    const ts = (it.structured && it.structured.creatPnttm) || it.first_seen || "";
+    if (!ts) return false;
+    const created = new Date(ts.replace(" ", "T") + (ts.includes("T") ? "" : "+09:00"));
+    return created >= cutoff;
+  }).length;
+  const btn = document.getElementById("btn-new24h");
+  if (btn && cnt > 0) btn.textContent = "🆕 24h 신규 (" + cnt + ")";
+})();
 </script>
 </body>
 </html>
