@@ -305,6 +305,12 @@
 .dec-btn.active[data-decision="nogo"]   { background: #cf1322; }
 .dec-btn .dec-count { font-size: 10.5px; opacity: 0.7; margin-left: 3px; }
 .dec-btn.active .dec-count { opacity: 0.95; }
+/* === P4 v6: 신규 공고 NEW 배지 === */
+.new-badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: 700; margin-left: 4px; vertical-align: middle; background: linear-gradient(135deg, #ff7875, #f5222d); color: white; box-shadow: 0 1px 3px rgba(245, 34, 45, 0.3); }
+.new-badge::before { content: "🆕 "; }
+.sb-new-stats { font-size: 11.5px; color: #cf1322; padding-left: 8px; border-left: 1px solid #d9d9d9; margin-left: 8px; font-weight: 700; cursor: help; }
+.sb-new-stats:empty { display: none; }
+.item.is-new { border-left: 3px solid #f5222d; }
 </style>
 </head>
 <body>
@@ -413,7 +419,7 @@ function renderSortBar() {
   const ranked = Object.entries(w).sort((a, b) => b[1] - a[1]);
   const pills = ranked.map(([k, v], i) => `<span class="sb-pri">${i + 1}순위 ${lbl[k] || k} (${(v * 100).toFixed(0)}%)</span>`).join(' · ');
   const bar = document.getElementById('sort-bar');
-  if (bar) bar.innerHTML = `<span class="sb-h">정렬</span>${pills}<span class="sb-revised-stats" id="tier-revised-stats">tier 변동 집계 중…</span><span class="sb-pending-stats" id="pending-stats">점수화 상태 확인 중…</span><span class="sb-edit"><code>weights.json</code> 수정 후 새로고침</span>`;
+  if (bar) bar.innerHTML = `<span class="sb-h">정렬</span>${pills}<span class="sb-revised-stats" id="tier-revised-stats">tier 변동 집계 중…</span><span class="sb-pending-stats" id="pending-stats">점수화 상태 확인 중…</span><span class="sb-new-stats" id="new-stats"></span><span class="sb-edit"><code>weights.json</code> 수정 후 새로고침</span>`;
 }
 
 const TIER_EMOJI = { green: "🟢", yellow: "🟡", orange: "🟠", red: "🔴" };
@@ -920,6 +926,54 @@ async function updateDecisionCounts() {
   }
 }
 
+// === P4 v6: 신규 공고 NEW 배지 ===
+const NEW_WINDOW_DAYS = 3;
+function isItemNew(item) {
+  const ct = item && item.structured && item.structured.creatPnttm;
+  if (!ct) return false;
+  try {
+    const dt = new Date(String(ct).replace(' ', 'T'));
+    if (isNaN(dt.getTime())) return false;
+    const age = (Date.now() - dt.getTime()) / 86400000;
+    return age >= 0 && age <= NEW_WINDOW_DAYS;
+  } catch { return false; }
+}
+function loadNewBadge(itemId) {
+  const item = ITEMS.find(i => i.id === itemId);
+  if (!item || !isItemNew(item)) return;
+  let card, badges;
+  try {
+    card = document.querySelector(`.item[data-id="${CSS.escape(itemId)}"]`);
+    badges = card?.querySelector('.badges');
+  } catch { return; }
+  if (!badges || badges.querySelector('.new-badge')) return;
+  card.classList.add('is-new');
+  const span = document.createElement('span');
+  span.className = 'new-badge';
+  span.textContent = 'NEW';
+  span.title = `${NEW_WINDOW_DAYS}일 이내 게시 — ${item.structured?.creatPnttm || ''}`;
+  badges.appendChild(span);
+}
+async function updateNewStats() {
+  let newAll = 0, newPending = 0;
+  await prefetchAllAnalysis();
+  ITEMS.forEach(it => {
+    if (isItemNew(it)) {
+      newAll += 1;
+      const v = AA_CACHE.get(it.id)?.verdict;
+      if (typeof v?.pdf_pass_rate !== 'number') newPending += 1;
+    }
+  });
+  const el = document.getElementById('new-stats');
+  if (!el) return;
+  if (newAll === 0) { el.innerHTML = ''; el.title = ''; return; }
+  el.innerHTML = newPending > 0
+    ? `🆕 신규 <b>${newAll}</b>건 (점수화 대기 <b>${newPending}</b>)`
+    : `🆕 신규 <b>${newAll}</b>건 (모두 점수화됨)`;
+  el.title = `최근 ${NEW_WINDOW_DAYS}일 이내 게시된 공고 ${newAll}건` +
+    (newPending > 0 ? ` — ${newPending}건은 Cowork 세션에서 점수화 필요` : '');
+}
+
 async function render() {
   const container = document.getElementById("items");
   _currentFavs = getFavs();
@@ -938,7 +992,7 @@ async function render() {
     return true;
   });
   container.innerHTML = (await sortItems(filtered)).map(renderCard).join("");
-  filtered.forEach(it => { loadTierRevisedBadge(it.id); loadPdfPassChip(it.id); loadPendingBadge(it.id); loadStatusToggle(it.id); });
+  filtered.forEach(it => { loadTierRevisedBadge(it.id); loadPdfPassChip(it.id); loadPendingBadge(it.id); loadStatusToggle(it.id); loadNewBadge(it.id); });
   updatePendingStats();
   updateTierRevisedStats();
   // v2 patched (was single line) ||
@@ -994,7 +1048,7 @@ function bindFilters() {
 }
 
 bindFilters();
-loadWeights().then(() => { renderSortBar(); renderDecisionFilter(); render(); setTimeout(() => updateDecisionCounts(), 100); });
+loadWeights().then(() => { renderSortBar(); renderDecisionFilter(); render(); setTimeout(() => { updateDecisionCounts(); updateNewStats(); }, 100); });
 </script>
 </body>
 </html>

@@ -20,6 +20,7 @@ SENTINEL_V2 = "/* === P4 v2: tier_revised badge === */"
 SENTINEL_V3 = "/* === P4 v3: 합격률 칩 + PDF 블록 최상단 === */"
 SENTINEL_V4 = "/* === P4 v4: 점수화 대기 배지 + 신청 상태 === */"
 SENTINEL_V5 = "/* === P4 v5: 결정 필터(GO/조건부/NO-GO) === */"
+SENTINEL_V6 = "/* === P4 v6: 신규 공고 NEW 배지 === */"
 
 CSS_BLOCK = '''/* === P4: PDF 기반 점수 블록 + 정렬 === */
 /* === P4 v2: tier_revised badge === */
@@ -166,6 +167,63 @@ PDF_BLOCK_JS = '''
   }
 '''
 
+
+V6_CSS = """/* === P4 v6: 신규 공고 NEW 배지 === */
+.new-badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: 700; margin-left: 4px; vertical-align: middle; background: linear-gradient(135deg, #ff7875, #f5222d); color: white; box-shadow: 0 1px 3px rgba(245, 34, 45, 0.3); }
+.new-badge::before { content: "🆕 "; }
+.sb-new-stats { font-size: 11.5px; color: #cf1322; padding-left: 8px; border-left: 1px solid #d9d9d9; margin-left: 8px; font-weight: 700; cursor: help; }
+.sb-new-stats:empty { display: none; }
+.item.is-new { border-left: 3px solid #f5222d; }
+"""
+
+V6_JS = """// === P4 v6: 신규 공고 NEW 배지 ===
+const NEW_WINDOW_DAYS = 3;
+function isItemNew(item) {
+  const ct = item && item.structured && item.structured.creatPnttm;
+  if (!ct) return false;
+  try {
+    const dt = new Date(String(ct).replace(' ', 'T'));
+    if (isNaN(dt.getTime())) return false;
+    const age = (Date.now() - dt.getTime()) / 86400000;
+    return age >= 0 && age <= NEW_WINDOW_DAYS;
+  } catch { return false; }
+}
+function loadNewBadge(itemId) {
+  const item = ITEMS.find(i => i.id === itemId);
+  if (!item || !isItemNew(item)) return;
+  let card, badges;
+  try {
+    card = document.querySelector(`.item[data-id="${CSS.escape(itemId)}"]`);
+    badges = card?.querySelector('.badges');
+  } catch { return; }
+  if (!badges || badges.querySelector('.new-badge')) return;
+  card.classList.add('is-new');
+  const span = document.createElement('span');
+  span.className = 'new-badge';
+  span.textContent = 'NEW';
+  span.title = `${NEW_WINDOW_DAYS}일 이내 게시 — ${item.structured?.creatPnttm || ''}`;
+  badges.appendChild(span);
+}
+async function updateNewStats() {
+  let newAll = 0, newPending = 0;
+  await prefetchAllAnalysis();
+  ITEMS.forEach(it => {
+    if (isItemNew(it)) {
+      newAll += 1;
+      const v = AA_CACHE.get(it.id)?.verdict;
+      if (typeof v?.pdf_pass_rate !== 'number') newPending += 1;
+    }
+  });
+  const el = document.getElementById('new-stats');
+  if (!el) return;
+  if (newAll === 0) { el.innerHTML = ''; el.title = ''; return; }
+  el.innerHTML = newPending > 0
+    ? `🆕 신규 <b>${newAll}</b>건 (점수화 대기 <b>${newPending}</b>)`
+    : `🆕 신규 <b>${newAll}</b>건 (모두 점수화됨)`;
+  el.title = `최근 ${NEW_WINDOW_DAYS}일 이내 게시된 공고 ${newAll}건` +
+    (newPending > 0 ? ` — ${newPending}건은 Cowork 세션에서 점수화 필요` : '');
+}
+"""
 
 V5_CSS = """/* === P4 v5: 결정 필터(GO/조건부/NO-GO) === */
 .decision-filter { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; padding: 6px 12px; background: white; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.06); margin: 8px 0; }
@@ -379,6 +437,40 @@ async function loadPdfPassChip(itemId) {
 }
 """
 
+def apply_v6(html: str, log: list[str]) -> str:
+    """v6 증분: 신규 공고 NEW 배지 + sort-bar 카운트."""
+    if SENTINEL_V6 in html:
+        return html
+    # CSS
+    if "\n</style>" in html:
+        html = html.replace("\n</style>", "\n" + V6_CSS + "</style>", 1)
+        log.append("v6 CSS 주입 OK")
+    # JS 헬퍼
+    anc = "\nasync function render() {"
+    if anc in html and V6_JS not in html:
+        html = html.replace(anc, "\n" + V6_JS + anc, 1)
+        log.append("v6 JS 헬퍼 주입 OK")
+    # render() fan-out 에 loadNewBadge 추가
+    old = "filtered.forEach(it => { loadTierRevisedBadge(it.id); loadPdfPassChip(it.id); loadPendingBadge(it.id); loadStatusToggle(it.id); });"
+    new = "filtered.forEach(it => { loadTierRevisedBadge(it.id); loadPdfPassChip(it.id); loadPendingBadge(it.id); loadStatusToggle(it.id); loadNewBadge(it.id); });"
+    if old in html:
+        html = html.replace(old, new, 1)
+        log.append("render() v6 fan-out 주입 OK")
+    # sort-bar new-stats 슬롯
+    old_bar = '<span class="sb-pending-stats" id="pending-stats">점수화 상태 확인 중…</span>'
+    new_bar = '<span class="sb-pending-stats" id="pending-stats">점수화 상태 확인 중…</span><span class="sb-new-stats" id="new-stats"></span>'
+    if old_bar in html:
+        html = html.replace(old_bar, new_bar, 1)
+        log.append("sortBar v6 신규 슬롯 OK")
+    # 부트스트랩에 updateNewStats 호출
+    old_boot = 'setTimeout(() => updateDecisionCounts(), 100);'
+    new_boot = 'setTimeout(() => { updateDecisionCounts(); updateNewStats(); }, 100);'
+    if old_boot in html:
+        html = html.replace(old_boot, new_boot, 1)
+        log.append("부트스트랩 updateNewStats 추가 OK")
+    return html
+
+
 def apply_v5(html: str, log: list[str]) -> str:
     """v5 증분: GO/조건부/NO-GO 결정 필터."""
     if SENTINEL_V5 in html:
@@ -483,21 +575,27 @@ def apply_v3(html: str, log: list[str]) -> str:
 
 def patch(html: str) -> tuple[str, list[str]]:
     log: list[str] = []
-    if SENTINEL_V5 in html:
-        log.append("이미 v5 패치됨 — skip")
+    if SENTINEL_V6 in html:
+        log.append("이미 v6 패치됨 — skip")
         return html, log
-    if SENTINEL in html and SENTINEL_V2 in html and SENTINEL_V3 in html and SENTINEL_V4 in html:
-        log.append("v4 패치 감지 → v5 증분 적용")
-        return apply_v5(html, log), log
+    if SENTINEL_V5 in html and SENTINEL_V6 not in html:
+        log.append("v5 패치 감지 → v6 증분 적용")
+        return apply_v6(html, log), log
+    if SENTINEL in html and SENTINEL_V2 in html and SENTINEL_V3 in html and SENTINEL_V4 in html and SENTINEL_V5 not in html:
+        log.append("v4 패치 감지 → v5+v6 증분 적용")
+        html = apply_v5(html, log)
+        return apply_v6(html, log), log
     if SENTINEL in html and SENTINEL_V2 in html and SENTINEL_V3 in html and SENTINEL_V4 not in html:
-        log.append("v3 패치 감지 → v4+v5 증분 적용")
+        log.append("v3 패치 감지 → v4+v5+v6 증분 적용")
         html = apply_v4(html, log)
-        return apply_v5(html, log), log
+        html = apply_v5(html, log)
+        return apply_v6(html, log), log
     if SENTINEL in html and SENTINEL_V2 in html and SENTINEL_V3 not in html:
-        log.append("v2 패치 감지 → v3+v4+v5 증분 적용")
+        log.append("v2 패치 감지 → v3+v4+v5+v6 증분 적용")
         html = apply_v3(html, log)
         html = apply_v4(html, log)
-        return apply_v5(html, log), log
+        html = apply_v5(html, log)
+        return apply_v6(html, log), log
     if SENTINEL in html and SENTINEL_V2 not in html:
         log.append("v1 패치 감지 → v2 증분 적용 (CSS·JS 추가만)")
         # v1만 있는 경우: tier_revised 관련 코드만 끼워넣음
@@ -577,10 +675,11 @@ async function updateTierRevisedStats() {
         if old_bar in html:
             html = html.replace(old_bar, new_bar, 1)
             log.append("sortBar v2 stats 슬롯 OK")
-        # v2 적용 후 v3, v4, v5 도 같이
+        # v2 적용 후 v3, v4, v5, v6 도 같이
         html = apply_v3(html, log)
         html = apply_v4(html, log)
-        return apply_v5(html, log), log
+        html = apply_v5(html, log)
+        return apply_v6(html, log), log
 
     # 1) CSS 주입: </style> 직전 (리터럴 replace — 한 번만)
     if "\n</style>" in html:
@@ -657,10 +756,11 @@ async function updateTierRevisedStats() {
         else:
             log.append("⚠ 마지막 render() 호출 못 찾음 — 수동 패치 필요")
 
-    # fresh 패치 흐름 마지막에 v3, v4, v5 도 같이
+    # fresh 패치 흐름 마지막에 v3~v6 도 같이
     html = apply_v3(html, log)
     html = apply_v4(html, log)
-    return apply_v5(html, log), log
+    html = apply_v5(html, log)
+    return apply_v6(html, log), log
 
 
 def main() -> int:
