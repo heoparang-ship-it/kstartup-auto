@@ -10,7 +10,57 @@
     "confidence": "medium",
     "expected_pass_rate": 0.3,
     "time_cost_hours": "8",
-    "one_liner": "일터혁신 컨설팅 — 조직문화 개선 활용 가능"
+    "one_liner": "일터혁신 컨설팅 — 조직문화 개선 활용 가능",
+    "pdf_pass_rate": 0.03,
+    "pdf_pass_rate_confidence": "high",
+    "pdf_pass_rate_evidence": [
+      {
+        "quote": "☞ 일터혁신 필요성과 의지가 있는 20인 이상 사업장",
+        "source_pdf": "[2026년_일터혁신_상생컨설팅]_참여_기업_모집_안내.md"
+      },
+      {
+        "quote": "☞ 일터혁신 상생컨설팅 지원\n- 진단 : 기초진단, 심층진단\n- 컨설팅 : 자문컨설팅, 전문컨설팅(특화), 심화컨설팅(특화)",
+        "source_pdf": "[2026년_일터혁신_상생컨설팅]_참여_기업_모집_안내.md"
+      },
+      {
+        "quote": "노사 참여 기반의 일터혁신을 통해 근로 여건을 함께 개선하는 정부지원사업입니다. 전문 컨설턴트가 사업장을 방문해 맞춤형 컨설팅을 제공하며, 한국표준협회가 축척된 노하우로 실직적인 혁신 솔루션을 지원합니다.",
+        "source_pdf": "structured_excerpt"
+      }
+    ],
+    "roi_score": 0.03,
+    "roi_breakdown": {
+      "지원금_만원": null,
+      "자기부담_만원": null,
+      "자기부담_pct": null,
+      "작성공수_시간": 8,
+      "인건비상한_만원": null
+    },
+    "alternatives": [
+      {
+        "pbancSn": null,
+        "title": "모두의 창업 로컬트랙(대구경북)",
+        "reason": "와이프 트랙 1순위, 경기→대구경북 적격, 마감 2026-05-15"
+      },
+      {
+        "pbancSn": null,
+        "title": "파주 청년창업",
+        "reason": "와이프 트랙 경기 백업, 직접 지원금 있는 창업 프로그램, 마감 2026-05-15"
+      },
+      {
+        "pbancSn": null,
+        "title": "유니콘 브릿지(경기)",
+        "reason": "본인/공동 트랙, sinhon.life 직접 매칭 가능, 마감 2026-05-15"
+      }
+    ],
+    "killer_blockers": [
+      "자격 미충족 — PDF 명시 '20인 이상 사업장' 요건, (주)엑스컴은 6개월차 초기 법인으로 해당 인원 기준 충족 불가 (자동 NO-GO)",
+      "직접 현금 지원 없음 — 컨설팅 무료 제공 성격, 금전 기댓값 0원 (직접자금 0, 매칭금 0)",
+      "공고 PDF 대부분 이미지로만 구성 — 팜플렛 텍스트 추출 불가, 상세 자격요건 추가 확인 불가능",
+      "노무·조직관리 컨설팅 특화 — sinhon.life(B2C·AI) 및 SW개발 업무와 직접 연관성 없음"
+    ],
+    "one_liner_pdf": "인원 20인 이상 자격 미충족 + 현금 지원 0원 — 엑스컴/sinhon 현시점 완전 NO-GO, 팀 확장 후 재검토",
+    "tier_revised": "red",
+    "tier_revised_reason": "base=red"
   },
   "sections": {
     "nature": {
@@ -93,5 +143,7 @@
         }
       ]
     }
-  }
+  },
+  "pdf_analyzed_at": "2026-04-27T10:12:29.921836+09:00",
+  "pdf_analyzer": "sonnet-pdf@cowork"
 }
