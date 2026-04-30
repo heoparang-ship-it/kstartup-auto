@@ -1,0 +1,7 @@
+# kstartup-auto runtime deps
+# - update.py / crawl.py / classify.py: requests, beautifulsoup4
+# - 02_parse_attachments.py: opendataloader-pdf (PDF → 구조화 텍스트)
+# 버전 핀은 의도적으로 느슨 — Actions 캐시 키 계산용 + 최소 호환 보장
+requests>=2.31
+beautifulsoup4>=4.12
+opendataloader-pdf>=2.3.0

@@ -46,7 +46,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install --upgrade pip
-          pip install requests beautifulsoup4 opendataloader-pdf
+          pip install -r requirements.txt
 
       - name: Cache attachments
         id: cache-attach
