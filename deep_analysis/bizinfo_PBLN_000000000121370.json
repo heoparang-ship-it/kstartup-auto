@@ -1,0 +1,115 @@
+{
+  "id": "bizinfo_PBLN_000000000121370",
+  "title": "2026년 2차 오픈이노베이션 플랫폼 지원사업 참여기업 모집 연장 공고",
+  "analyzed_at": "2026-04-30T12:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북/경기 병행)",
+  "verdict": {
+    "decision": "CONDITIONAL-GO",
+    "confidence": "medium",
+    "expected_pass_rate": 0.07,
+    "time_cost_hours": "60-80",
+    "one_liner": "전남창조경제혁신센터 OI — PoC 2,000만원, 수요분야 매칭 시 CONDITIONAL-GO"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "지역 창조경제혁신센터 OI (대·중견기업 협업 매칭)",
+      "body": "전남창조경제혁신센터가 대·중견기업과 스타트업의 협업 프로젝트를 통해 혁신성장을 도모하는 오픈이노베이션 플랫폼 프로그램이다. 수요분야 관련 기술·솔루션 보유 기업이 대상이며, PoC 지원금 최대 2,000만원과 대·중견기업 사업부서 밋업 연계, 직·간접 투자 검토가 포함된다. 지역 제한이 명시되지 않아 전국 지원 가능 여부 확인 필요.",
+      "benefits": [
+        {
+          "k": "PoC 지원금",
+          "v": "1개社 최대 2,000만원"
+        },
+        {
+          "k": "대·중견기업 밋업",
+          "v": "수요기업 사업부서 직접 연결"
+        },
+        {
+          "k": "투자 연계",
+          "v": "전남창조경제혁신센터 직·간접 투자 검토"
+        }
+      ],
+      "watchout": "수요분야(협업 과제) 매칭 여부가 핵심. 수요기업이 어떤 분야를 원하는지 공고문 원문 확인 필요. 전남 소재 우대 가능성 있음."
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [
+        {
+          "task": "수요기업 디지털 전환·AI 솔루션 협업",
+          "fit": "🟡",
+          "reason": "sinhon.life의 Anthropic API 기반 AI 에이전트·RAG 기술을 전남 소재 대·중견기업 디지털화에 연결하는 각도 가능"
+        }
+      ],
+      "mismatch_note": "수요기업의 구체적 협업 과제 목록이 공고 요약에 없어 fit 판단에 불확실성 있음. 전남 소재 우대 가능성 존재(인천 부평 소재 감점 리스크).",
+      "critical_gap": "수요기업 협업 분야 불명확. 공고 원문 확인 후 재판단 필요. 전남 지역 소재 우대 시 불리."
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "수요 과제 분석 + 솔루션 기획",
+            "hours": "20-30"
+          },
+          {
+            "stage": "서류·제안서 작성",
+            "hours": "30-40"
+          },
+          {
+            "stage": "발표 준비 (서류 통과 시)",
+            "hours": "10-10"
+          }
+        ],
+        "total": "60-80h"
+      },
+      "probability": {
+        "doc_pass": 0.15,
+        "final_given_doc_pass": 0.45,
+        "final": 0.07,
+        "basis": "AI 기술 보유 가점 + 지역 외 기업 감점, 수요 분야 매칭 불확실성 반영"
+      },
+      "expected_value_label": "0.07 × 2,000만원 ≈ 140만원 (시간당 1.7~2.3만원)"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "CONDITIONAL-GO",
+      "reasons": [
+        "PoC 2,000만원은 투입 대비 경계선 기댓값",
+        "AI·SW 기술로 접근 가능한 수요 과제가 있으면 제안 가능"
+      ],
+      "exception_go_conditions": [
+        "수요기업 협업 과제 원문 확인 후 sinhon.life·AI 에이전트와 직접 매칭되는 과제가 존재하는 경우",
+        "지역 외 기업도 동등 평가됨을 확인한 경우"
+      ]
+    },
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "예비창업 매칭 100%, 우선 처리"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 병행 가능"
+        },
+        {
+          "name": "2026 민관협력 오픈이노베이션 (서울창조경제혁신센터)",
+          "deadline": "2026-06-04",
+          "track": "본인 — 기창업·sinhon.life",
+          "priority": "🟡",
+          "reason": "최대 1억원, 자율탐색형으로 각도 자유도 높음"
+        }
+      ]
+    }
+  }
+}

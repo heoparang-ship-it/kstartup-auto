@@ -1,0 +1,92 @@
+{
+  "id": "bizinfo_PBLN_000000000121452",
+  "title": "[광주] 광산구 2026년 청년창업자 사업장 월 임대료 지원사업 지원대상자 모집 공고",
+  "analyzed_at": "2026-04-30T12:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북/경기 병행)",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.03,
+    "time_cost_hours": "5-10",
+    "one_liner": "광주 광산구 거주·사업장 개인사업자 한정 임대료 지원 60만원 — 지역·업종·법인 형태 삼중 불일치"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "지자체 청년창업자 임대료 보조 (소액)",
+      "body": "광주광역시 광산구가 광산구 거주 청년 창업자의 사업장 임대료를 3개월간 월 20만원 한도(총 60만원 이내)로 지원하는 소규모 지역 지원사업이다. 광산구 거주 + 광산구 사업장 + 개인사업자(법인 제외) + 월 임대료 200만원 이하가 필수 조건이다.",
+      "benefits": [
+        {
+          "k": "임대료 지원",
+          "v": "월 20만원 한도, 3개월 최대 60만원"
+        },
+        {
+          "k": "직접 자금",
+          "v": "60만원 (소액)"
+        }
+      ],
+      "watchout": "개인사업자만 해당 — 법인(엑스컴) 불가. 광산구 거주·사업장 조건."
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "엑스컴은 법인(주식회사)으로 개인사업자 조건 미충족. 지역도 인천이며 광주 광산구와 무관.",
+      "critical_gap": "법인 형태 + 지역(광주 광산구) 이중 미충족. 지원금 60만원으로 기댓값 극소."
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "자격 검토",
+            "hours": "2"
+          },
+          {
+            "stage": "방문 접수 준비 (조건부)",
+            "hours": "3-8"
+          }
+        ],
+        "total": "5-10h"
+      },
+      "probability": {
+        "doc_pass": 0.03,
+        "final_given_doc_pass": 0.1,
+        "final": 0.03,
+        "basis": "법인·지역 자격 미달로 신청 불가"
+      },
+      "expected_value_label": "기댓값 0 (자격 미달), 최대 60만원"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "법인(엑스컴) 불가 — 개인사업자만 해당",
+        "광주 광산구 거주·사업장 조건 미충족",
+        "최대 지원금 60만원 — 기댓값 < 100만원 + 자동 NO-GO"
+      ],
+      "exception_go_conditions": []
+    },
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "임대료 60만원 대신 실질 자금 지원 트랙"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "경기 트랙 청년창업 지원"
+        }
+      ]
+    }
+  }
+}

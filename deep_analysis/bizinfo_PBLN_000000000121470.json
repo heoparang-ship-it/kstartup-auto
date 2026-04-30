@@ -1,0 +1,92 @@
+{
+  "id": "bizinfo_PBLN_000000000121470",
+  "title": "[대전] 2026년 대전인쇄마켓 플랫폼 구축 사업 모집 공고",
+  "analyzed_at": "2026-04-30T12:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북/경기 병행)",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.03,
+    "time_cost_hours": "5-10",
+    "one_liner": "대전 동구 인쇄 소공인 전용 온라인 플랫폼 입점 지원 — 상시근로자 10명 미만 인쇄업 한정, 접점 없음"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "소공인 온라인 판로 지원 (인쇄업 특화)",
+      "body": "대전인쇄소공인특화지원센터가 대전 인쇄집적지(동구 정동·중동·삼성동) 소재 인쇄 소공인의 온라인 판로 확대를 위해 통합 플랫폼 입점 및 활용을 지원하는 초소규모 특화 사업이다. 상시근로자 10명 미만의 인쇄 및 기록매체 복제업을 주된 사업으로 영위하는 자가 대상이다.",
+      "benefits": [
+        {
+          "k": "온라인 판로 플랫폼 입점",
+          "v": "지원"
+        },
+        {
+          "k": "직접 자금",
+          "v": "없음 (현물·플랫폼 입점 지원)"
+        }
+      ],
+      "watchout": "대전 동구 인쇄집적지 소재 인쇄 소공인만 해당 — 업종·지역 모두 불일치"
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "인쇄업과 SW 개발·미디어 콘텐츠는 전혀 다른 업종. 지역(대전 동구)도 불일치.",
+      "critical_gap": "업종(인쇄업) + 지역(대전 동구) + 직접 자금 없음 삼중 불일치."
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "자격 검토",
+            "hours": "2"
+          },
+          {
+            "stage": "신청 (조건부)",
+            "hours": "3-8"
+          }
+        ],
+        "total": "5-10h"
+      },
+      "probability": {
+        "doc_pass": 0.03,
+        "final_given_doc_pass": 0.1,
+        "final": 0.03,
+        "basis": "업종·지역 자격 미달, 직접 자금 없음"
+      },
+      "expected_value_label": "기댓값 0 (자격 미달, 직접 자금 없음)"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "인쇄업 소공인 전용 — SW·미디어 기업 해당 없음",
+        "대전 동구 인쇄집적지 소재 조건 미충족",
+        "직접 자금 없음 — 자동 NO-GO"
+      ],
+      "exception_go_conditions": []
+    },
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "인쇄업 지원 대신 실질적 자금 트랙"
+        },
+        {
+          "name": "글로벌 SaaS 마켓플레이스 지원사업",
+          "deadline": "2026-05-15",
+          "track": "엑스컴 — SW",
+          "priority": "🟡",
+          "reason": "플랫폼 구축 역량을 살리는 SW 전용 대안"
+        }
+      ]
+    }
+  }
+}

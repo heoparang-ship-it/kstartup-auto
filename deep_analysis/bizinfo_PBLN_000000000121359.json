@@ -1,0 +1,99 @@
+{
+  "id": "bizinfo_PBLN_000000000121359",
+  "title": "2026년 패션 솔버톤(Fashion Solve-A-Thon) 모집 공고",
+  "analyzed_at": "2026-04-30T12:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북/경기 병행)",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.05,
+    "time_cost_hours": "30-50",
+    "one_liner": "패션산업 해커톤·교육 중심 — 직접 자금 소액, sinhon.life와 무관한 도메인"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "해커톤·솔버톤 (패션산업 문제해결)",
+      "body": "부산섬유패션산업연합회가 패션산업 현안과 사회 문제에 융복합 솔루션을 제시하는 팀을 모집하는 솔버톤 프로그램이다. 예비창업자 또는 3년 미만 창업자 팀이 대상이며, 창업 강의·전문가 멘토링·IR 발표 멘토링·상금·상장 등을 지원한다. 상금 규모와 멘토링 위주로 직접 자금 지원은 소액이다.",
+      "benefits": [
+        {
+          "k": "상금",
+          "v": "수상팀 상금 (공고문 참조, 소액 추정)"
+        },
+        {
+          "k": "창업 교육·멘토링",
+          "v": "강의·IR 발표 멘토링 제공"
+        }
+      ],
+      "watchout": "교육·멘토링 중심 구조. 상금이 소액일 가능성 높음. 패션 도메인 전용."
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "sinhon.life는 신혼부부 정보 플랫폼이며 패션산업과 무관하다. 부산 소재 우대 가능성이 있으나 명시 없음. 교육·멘토링 위주로 직접 자금 ROI가 낮다.",
+      "critical_gap": "패션 도메인 레퍼런스 0. 교육·네트워킹 위주 성격으로 자동 NO-GO 조건 해당."
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "솔루션 기획·발표자료",
+            "hours": "20-30"
+          },
+          {
+            "stage": "현장 발표",
+            "hours": "10-20"
+          }
+        ],
+        "total": "30-50h"
+      },
+      "probability": {
+        "doc_pass": 0.15,
+        "final_given_doc_pass": 0.33,
+        "final": 0.05,
+        "basis": "예비창업자 자격 충족 + 패션 도메인 레퍼런스 없음 감점"
+      },
+      "expected_value_label": "상금 소액(수백만원 이하 추정) × 0.05 ≈ 수십만원 이하"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "교육·멘토링 중심 구조 — 자동 NO-GO 조건 해당(직접 자금 소액·교육 위주)",
+        "패션 도메인 레퍼런스 없음",
+        "같은 기간 우선순위 🟢 공고 2건 이상 존재"
+      ],
+      "exception_go_conditions": []
+    },
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "예비창업 매칭 100%"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 병행 가능"
+        },
+        {
+          "name": "2026 유니콘 브릿지 (경기)",
+          "deadline": "2026-05-15",
+          "track": "본인 — 기창업·sinhon.life",
+          "priority": "🟡",
+          "reason": "SW 플랫폼 직접 지원 가능"
+        }
+      ]
+    }
+  }
+}

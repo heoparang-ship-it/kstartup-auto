@@ -1,0 +1,99 @@
+{
+  "id": "bizinfo_PBLN_000000000121352",
+  "title": "[서울] 2026년 제품화지원센터 제품화 지원사업 모집 공고",
+  "analyzed_at": "2026-04-30T12:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북/경기 병행)",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.03,
+    "time_cost_hours": "<5h",
+    "one_liner": "H/W 스타트업 전용 제품화 지원 — SW·플랫폼인 엑스컴·sinhon.life 해당 없음"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "H/W 제품화 기술지원 (서울창업허브)",
+      "body": "서울창업허브 제품화지원센터가 서울 소재 H/W 분야 스타트업에게 3D모델링·제품 설계·시제품 제작·금형 제작 등 하드웨어 제품화 과정의 전문 엔지니어 기술지원을 제공하는 사업이다. 서울 소재 업력 7년 이내 H/W 분야 스타트업이 대상이며, 직접 자금 지원보다는 시설·인력 지원 형태다.",
+      "benefits": [
+        {
+          "k": "전문 엔지니어 기술지원",
+          "v": "3D모델링·제품설계·시제품 제작"
+        },
+        {
+          "k": "센터 장비 활용",
+          "v": "금형 제작·사출·SMT제작"
+        },
+        {
+          "k": "판로 연계",
+          "v": "제품화 후 유통 연계 지원"
+        }
+      ],
+      "watchout": "H/W 분야 전용. 서울 소재 요건. 직접 자금 지원 없음."
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "sinhon.life는 소프트웨어 B2C 플랫폼이고 엑스컴은 SW·미디어콘텐츠 법인이다. H/W 제품 개발 계획이 없으며, 인천 소재로 서울 요건도 불충족.",
+      "critical_gap": "업종(H/W) + 소재지(서울) 이중 불충족. 지원 자격 없음."
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "공고 검토 및 자격 확인",
+            "hours": "1-2"
+          }
+        ],
+        "total": "<5h"
+      },
+      "probability": {
+        "doc_pass": 0.0,
+        "final_given_doc_pass": 0.0,
+        "final": 0.03,
+        "basis": "H/W 업종 요건 및 서울 소재 요건 이중 불충족"
+      },
+      "expected_value_label": "0 × 0원 = 기댓값 0원"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "H/W 분야 스타트업 전용 — sinhon.life·엑스컴은 SW·플랫폼",
+        "서울 소재 요건 불충족 (인천 부평)",
+        "직접 자금 지원 없어 기댓값 0"
+      ],
+      "exception_go_conditions": []
+    },
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "예비창업 매칭 100%"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 병행 가능"
+        },
+        {
+          "name": "2026 유니콘 브릿지 (경기)",
+          "deadline": "2026-05-15",
+          "track": "본인 — 기창업·sinhon.life",
+          "priority": "🟡",
+          "reason": "SW 플랫폼 직접 지원 가능"
+        }
+      ]
+    }
+  }
+}

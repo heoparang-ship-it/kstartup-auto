@@ -1,0 +1,92 @@
+{
+  "id": "bizinfo_PBLN_000000000121404",
+  "title": "[제주] 2026년 지역혁신클러스터육성사업(비R&D) 기업지원(R&D연계 지원) 공고",
+  "analyzed_at": "2026-04-30T12:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북/경기 병행)",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.04,
+    "time_cost_hours": "10-20",
+    "one_liner": "제주 소재 화장품·식품·우주항공 R&D 수행기업 限 — sinhon.life SW 법인과 무관"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "지역혁신클러스터 비R&D 연계 지원",
+      "body": "산업통상자원부와 제주도가 지원하는 지역혁신클러스터 사업의 비R&D 파트로, 제주 특화분야(화장품·식품, 기회발전특구 우주·항공) R&D 과제 수행기업 또는 종료기업에 한해 시제품 제작·마케팅·컨설팅 등을 지원하는 사업이다. 기존 R&D 과제 참여 이력이 필수 자격이며 신규 진입 불가다.",
+      "benefits": [
+        {
+          "k": "기술지원",
+          "v": "시제품제작·시험분석·인증획득·지식재산권 등"
+        },
+        {
+          "k": "사업화지원",
+          "v": "브랜드·마케팅·전시회·디자인 등"
+        },
+        {
+          "k": "역량강화",
+          "v": "컨설팅·기술지도 등 15개 프로그램"
+        }
+      ],
+      "watchout": "기존 R&D 과제 수행기업 또는 기회발전특구 투자완료기업 限 — 신규 기업 지원 불가"
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "제주 화장품·식품·우주항공 R&D 이력 필요. sinhon.life·엑스컴은 해당 R&D 이력 없고 제주 소재도 아님.",
+      "critical_gap": "R&D 과제 수행기업 이력 요건 + 제주 소재 요건 동시 미충족"
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "공고 검토 및 자격 확인",
+            "hours": "10-20"
+          }
+        ],
+        "total": "10-20h"
+      },
+      "probability": {
+        "doc_pass": 0.0,
+        "final_given_doc_pass": 0.0,
+        "final": 0.04,
+        "basis": "R&D 수행기업 이력 + 제주 소재 요건 미충족으로 지원 자격 없음"
+      },
+      "expected_value_label": "지원 불가 — 기댓값 0원"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "지역혁신클러스터 R&D 과제 수행기업 이력 필수 — 엑스컴 해당 이력 없음",
+        "제주 특화(화장품·식품·우주항공) 도메인과 sinhon.life SW 완전 무관",
+        "제주 소재 요건 미충족"
+      ],
+      "exception_go_conditions": []
+    },
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "예비창업 매칭 100%"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 전략 병행"
+        }
+      ]
+    }
+  }
+}

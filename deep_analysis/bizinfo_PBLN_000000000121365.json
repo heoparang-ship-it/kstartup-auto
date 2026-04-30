@@ -1,0 +1,98 @@
+{
+  "id": "bizinfo_PBLN_000000000121365",
+  "title": "2026년 중소기업 CBAM대응 인프라(MRV)구축 사업 참여기업 모집 수정 공고",
+  "analyzed_at": "2026-04-30T12:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북/경기 병행)",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.03,
+    "time_cost_hours": "<5h",
+    "one_liner": "EU CBAM 대응 제조업 전용 탄소배출 MRV 구축 지원 — sinhon.life·엑스컴 해당 없음"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "중기부 제조업 탄소규제 대응 인프라 지원",
+      "body": "중소벤처기업진흥공단이 EU 탄소국경조정제도(CBAM) 대상 품목을 수출하는 중소기업에게 탄소배출량 산정을 위한 MRV 인프라 구축 비용을 지원하는 사업이다. 생산설비 계측장비(H/W), 에너지 모니터링 시스템(S/W), 탄소 배출량 검증을 패키지로 지원한다. EU로 CBAM 대상 품목(철강·시멘트·비료·알루미늄·전기·수소 등)을 수출하거나 희망하는 제조 중소기업이 대상이다.",
+      "benefits": [
+        {
+          "k": "H/W 계측설비 구축 지원",
+          "v": "에너지 사용량 측정 계측설비"
+        },
+        {
+          "k": "S/W 시스템 구축 지원",
+          "v": "에너지 모니터링·CBAM 보고서 작성 시스템"
+        },
+        {
+          "k": "검증 지원",
+          "v": "전문 기관 탄소배출 산정량 검증·의견서"
+        }
+      ],
+      "watchout": "EU CBAM 대상 품목 제조·수출 기업 전용. 서비스·SW 기업 해당 없음."
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "sinhon.life·엑스컴은 SW·플랫폼 서비스 기업이다. EU CBAM 대상 제조 품목 수출 사업 계획이 없다.",
+      "critical_gap": "제조업·CBAM 대상 품목 수출 요건 불충족. 사업 성격 자체가 완전 무관."
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "공고 검토",
+            "hours": "1"
+          }
+        ],
+        "total": "<5h"
+      },
+      "probability": {
+        "doc_pass": 0.0,
+        "final_given_doc_pass": 0.0,
+        "final": 0.03,
+        "basis": "제조업·CBAM 수출 요건 불충족"
+      },
+      "expected_value_label": "0원 (사업 성격 완전 무관)"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "EU CBAM 대상 품목 제조·수출 기업 전용 — sinhon.life·엑스컴 해당 없음",
+        "SW·플랫폼 서비스 기업은 지원 대상 외"
+      ],
+      "exception_go_conditions": []
+    },
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "예비창업 매칭 100%"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 병행 가능"
+        },
+        {
+          "name": "2026 유니콘 브릿지 (경기)",
+          "deadline": "2026-05-15",
+          "track": "본인 — 기창업·sinhon.life",
+          "priority": "🟡",
+          "reason": "SW 플랫폼 직접 지원 가능"
+        }
+      ]
+    }
+  }
+}

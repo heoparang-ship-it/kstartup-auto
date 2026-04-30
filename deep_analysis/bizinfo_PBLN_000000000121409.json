@@ -1,0 +1,87 @@
+{
+  "id": "bizinfo_PBLN_000000000121409",
+  "title": "[제주] 2026년 애니메이션 단편 제작지원 참여기업 모집 공고(글로벌 문화콘텐츠 제작지원사업)",
+  "analyzed_at": "2026-04-30T12:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북/경기 병행)",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.03,
+    "time_cost_hours": "5-10",
+    "one_liner": "제주 소재 애니메이션 법인사업자 限 — sinhon.life SW 법인과 업종·소재지 완전 불일치"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "지역 콘텐츠 애니메이션 단편 제작 지원",
+      "body": "제주콘텐츠진흥원이 제주 소재 문화산업 법인사업자를 대상으로 국산 애니메이션 단편 제작을 지원하는 사업이다. 기업 자체 특화 IP 확보 및 사업화가 목적이며 광고·전시영상은 제외한다. 제주 소재 법인 + 문화산업 업종이 이중 요건이다.",
+      "benefits": [
+        {
+          "k": "제작지원금",
+          "v": "규모 미기재 (공고문 참조)"
+        },
+        {
+          "k": "지원내용",
+          "v": "국산 애니메이션 단편 제작비 지원"
+        }
+      ],
+      "watchout": "제주 소재 문화산업 법인 + 애니메이션 업종 限 — 인천 SW 법인 자격 없음"
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "애니메이션 단편 제작 전용 공고. sinhon.life·엑스컴 업종(SW·미디어콘텐츠)이 애니메이션 업종과 구분되며 제주 소재도 아님.",
+      "critical_gap": "제주 소재 + 애니메이션 문화산업 법인 요건 — 두 요건 모두 미충족"
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "공고 검토 및 자격 확인",
+            "hours": "5-10"
+          }
+        ],
+        "total": "5-10h"
+      },
+      "probability": {
+        "doc_pass": 0.0,
+        "final_given_doc_pass": 0.0,
+        "final": 0.03,
+        "basis": "제주 소재 + 애니메이션 업종 요건 동시 미충족"
+      },
+      "expected_value_label": "지원 불가 — 기댓값 0원"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "제주 소재 애니메이션 법인 限 — 인천 SW 법인 즉시 탈락",
+        "애니메이션 단편 제작과 sinhon.life 플랫폼 서비스 완전 무관"
+      ],
+      "exception_go_conditions": []
+    },
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "예비창업 매칭 100%"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 전략 병행"
+        }
+      ]
+    }
+  }
+}

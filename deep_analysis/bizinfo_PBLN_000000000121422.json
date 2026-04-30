@@ -1,0 +1,94 @@
+{
+  "id": "bizinfo_PBLN_000000000121422",
+  "title": "[경기] 시흥시 2026년 빈 점포 활용 소상인 창업 지원사업 모집 공고(2025 상권친화형 도시 조성사업)",
+  "analyzed_at": "2026-04-30T12:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북/경기 병행)",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.04,
+    "time_cost_hours": "10-20",
+    "one_liner": "시흥시 빈 점포 소상인 창업 限 — 오프라인 점포 기반 사업, sinhon.life SW 플랫폼과 무관"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "지자체 소상인 창업 지원 (오프라인 점포)",
+      "body": "시흥산업진흥원이 시흥시 내 빈 점포를 활용한 소상인 창업·재창업자를 대상으로 인테리어·간판·설비 도입 등 창업비용을 최대 2,000만원까지 지원하는 상권 활성화 사업이다. 오프라인 점포 입주 창업에 특화된 공고로 디지털 SW 플랫폼 창업과는 성격이 다르다.",
+      "benefits": [
+        {
+          "k": "창업비용",
+          "v": "1개소 당 최대 2,000만원"
+        },
+        {
+          "k": "지원항목",
+          "v": "인테리어·간판·설비 도입 등"
+        }
+      ],
+      "watchout": "시흥시 빈 점포 활용 소상인 창업자 限 — 오프라인 점포 기반 요건, SW 서비스 기업 해당 없음"
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "오프라인 점포 인테리어·설비 지원 사업으로 sinhon.life(디지털 B2C 플랫폼)·엑스컴(SW 개발)과 사업 성격 자체가 다름.",
+      "critical_gap": "시흥시 소재 빈 점포 활용 소상인 창업자 요건 — 디지털 SW 법인 자격 없음"
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "공고 검토 및 자격 확인",
+            "hours": "10-20"
+          }
+        ],
+        "total": "10-20h"
+      },
+      "probability": {
+        "doc_pass": 0.0,
+        "final_given_doc_pass": 0.0,
+        "final": 0.04,
+        "basis": "오프라인 점포 소상인 창업 요건 + 시흥시 소재 요건 미충족"
+      },
+      "expected_value_label": "지원 불가 — 기댓값 0원"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "시흥시 빈 점포 활용 소상인 창업자 限 — SW 디지털 법인 업종·성격 불일치",
+        "오프라인 점포 기반 지원으로 sinhon.life 운영에 실질 기여 없음"
+      ],
+      "exception_go_conditions": []
+    },
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "예비창업 매칭 100%"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 전략 병행"
+        },
+        {
+          "name": "2026 유니콘 브릿지 with 아이티센 (경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동 — 기창업·sinhon.life",
+          "priority": "🟡",
+          "reason": "sinhon.life 기창업 경기 트랙"
+        }
+      ]
+    }
+  }
+}

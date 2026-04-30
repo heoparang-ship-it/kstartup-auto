@@ -1,0 +1,94 @@
+{
+  "id": "bizinfo_PBLN_000000000121382",
+  "title": "[전북] 2026년 입주ㆍ졸업기업 선택형 지원 프로그램 참여기업 모집 공고(전북특별자치도중장년기술창업센터)",
+  "analyzed_at": "2026-04-30T12:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북/경기 병행)",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.03,
+    "time_cost_hours": "<5h",
+    "one_liner": "전북 중장년기술창업센터 입주·졸업기업 전용 — 입주 이력 요건 충족 불가"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "입주기업 전용 선택형 사업화 지원 (전북 중장년창업센터)",
+      "body": "전북특별자치도경제통상진흥원이 전북특별자치도중장년기술창업센터에 2024~2026년 입주 이력이 있는 졸업기업 또는 현 입주기업에게 사업화 지원금 최대 500만원을 제공하는 선택형 지원 프로그램이다. 시제품 제작·품질인증·지식재산권·홈페이지 제작·전시회 참가 등을 선택해 활용할 수 있다. 오직 해당 센터 입주·졸업 기업만 신청 가능하다.",
+      "benefits": [
+        {
+          "k": "사업화 지원금",
+          "v": "최대 500만원"
+        },
+        {
+          "k": "지원 항목 선택",
+          "v": "시제품·인증·지재권·마케팅 중 선택"
+        }
+      ],
+      "watchout": "전북 중장년기술창업센터 입주·졸업 이력 필수. 외부 기업 신청 불가."
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "엑스컴은 해당 센터 입주·졸업 이력이 없다. 지원 자격 자체가 없음.",
+      "critical_gap": "전북 중장년기술창업센터 입주 이력 요건 불충족. 외부 기업 지원 불가."
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "공고 검토",
+            "hours": "1"
+          }
+        ],
+        "total": "<5h"
+      },
+      "probability": {
+        "doc_pass": 0.0,
+        "final_given_doc_pass": 0.0,
+        "final": 0.03,
+        "basis": "입주·졸업 이력 요건 불충족"
+      },
+      "expected_value_label": "0원 (자격 없음)"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "전북 중장년기술창업센터 입주·졸업 이력 요건 불충족",
+        "지원금 500만원 소액으로 설령 자격 있어도 기댓값 낮음"
+      ],
+      "exception_go_conditions": []
+    },
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "예비창업 매칭 100%"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 병행 가능"
+        },
+        {
+          "name": "2026 민관협력 오픈이노베이션 (서울창조경제혁신센터)",
+          "deadline": "2026-06-04",
+          "track": "본인 — 기창업·sinhon.life",
+          "priority": "🟡",
+          "reason": "최대 1억원, 자율탐색형, GO 판정 공고"
+        }
+      ]
+    }
+  }
+}

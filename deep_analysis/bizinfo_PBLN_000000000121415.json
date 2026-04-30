@@ -1,0 +1,100 @@
+{
+  "id": "bizinfo_PBLN_000000000121415",
+  "title": "[경남] 2026년 경남형 제조 AX 고도화 패스트트랙 지원사업 도입기업 모집 공고",
+  "analyzed_at": "2026-04-30T12:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북/경기 병행)",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.03,
+    "time_cost_hours": "5-10",
+    "one_liner": "경남 제조기업 AX 도입 지원 — SW 법인 엑스컴은 도입기업 아닌 공급기업 입장으로 자격 없음"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "제조기업 AX 도입 지원 (스마트공장)",
+      "body": "한국전자기술연구원이 경남 소재 스마트공장 1~2단계 제조기업을 대상으로 AI 기반 공정 혁신·고도화 실증을 지원하는 사업이다. 경남 소재 제조기업이 AI를 '도입'하는 사업으로, sinhon.life·엑스컴은 공급자(SW 개발사) 입장이기 때문에 '도입기업' 자격이 없다.",
+      "benefits": [
+        {
+          "k": "AX 진단·로드맵",
+          "v": "기업 맞춤형 중장기 로드맵 수립 지원"
+        },
+        {
+          "k": "AI 내재화",
+          "v": "난공정·애로기술 AI 실증 지원"
+        }
+      ],
+      "watchout": "경남 소재 제조기업(도입기업) 限 — SW 개발사 엑스컴은 공급기업 입장으로 자격 없음"
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [
+        {
+          "task": "AI 내재화 실증 구현",
+          "fit": "🟠",
+          "reason": "AI 구현 역량은 있으나 경남 제조기업 '도입기업' 자격 요건 미충족"
+        }
+      ],
+      "mismatch_note": "엑스컴은 AI SW 공급기업이며 이 공고는 AI를 도입하는 제조기업 지원이다. 역할이 반대.",
+      "critical_gap": "경남 소재 제조기업(스마트공장 1~2단계) 도입기업 요건 — SW 법인 자격 없음"
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "공고 검토 및 자격 확인",
+            "hours": "5-10"
+          }
+        ],
+        "total": "5-10h"
+      },
+      "probability": {
+        "doc_pass": 0.0,
+        "final_given_doc_pass": 0.0,
+        "final": 0.03,
+        "basis": "도입기업(제조사) 요건 + 경남 소재 요건 동시 미충족"
+      },
+      "expected_value_label": "지원 불가 — 기댓값 0원"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "경남 소재 제조기업(도입기업) 限 — SW 개발사 엑스컴 자격 없음",
+        "AI 공급기업과 도입기업 역할이 본질적으로 반대"
+      ],
+      "exception_go_conditions": []
+    },
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "예비창업 매칭 100%"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 전략 병행"
+        },
+        {
+          "name": "2026 유니콘 브릿지 with 아이티센 (경기)",
+          "deadline": "2026-05-15",
+          "track": "본인/공동 — 기창업·sinhon.life",
+          "priority": "🟡",
+          "reason": "sinhon.life 기창업 트랙 직접 지원 가능"
+        }
+      ]
+    }
+  }
+}

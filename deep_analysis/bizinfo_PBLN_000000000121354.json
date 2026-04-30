@@ -1,0 +1,120 @@
+{
+  "id": "bizinfo_PBLN_000000000121354",
+  "title": "2026년 12기 드림벤처스타 지원사업 모집 공고(Dream Venture Star with 호반그룹)",
+  "analyzed_at": "2026-04-30T12:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북/경기 병행)",
+  "verdict": {
+    "decision": "CONDITIONAL-GO",
+    "confidence": "medium",
+    "expected_pass_rate": 0.07,
+    "time_cost_hours": "60-100",
+    "one_liner": "호반그룹(건설) OI — 신혼·분양·입주 각도로 sinhon.life 연결 시 CONDITIONAL-GO"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "대기업 CVC형 OI (호반그룹 협업 매칭)",
+      "body": "대전창조경제혁신센터와 호반그룹이 공동으로 협업 스타트업을 발굴하는 오픈이노베이션 프로그램이다. 호반그룹은 국내 주요 건설·주거 사업 그룹으로, BM 고도화·현업부서 컨설팅·샘플 DB 제공·사내 전문가 멘토링이 포함된다. PoC 사업화 자금 최대 1,500만원 지원과 대전창조경제혁신센터 후속 지원 및 투자 연계가 가능하다.",
+      "benefits": [
+        {
+          "k": "PoC 사업화자금",
+          "v": "최대 1,500만원"
+        },
+        {
+          "k": "호반그룹 현업 협업",
+          "v": "사업부서 매칭·샘플 DB·전문가 멘토링"
+        },
+        {
+          "k": "후속 연계",
+          "v": "대전창조경제혁신센터 직·간접 투자 연계"
+        }
+      ],
+      "watchout": "호반그룹 건설·주거 현업과 협업 과제를 구체적으로 설계해야 함. PoC 수행 기간 리소스 고정."
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [
+        {
+          "task": "호반그룹 신규 분양·입주 고객 대상 AI 서비스",
+          "fit": "🟡",
+          "reason": "sinhon.life의 신혼부부 = 호반 신규 분양 핵심 고객층과 완전 겹침. 신혼 입주 정보·정책 매칭 각도로 협업 제안 가능"
+        },
+        {
+          "task": "신혼·청년 주거 라이프스타일 데이터 분석",
+          "fit": "🟡",
+          "reason": "sinhon.life 부부 프로필 SSOT 데이터를 호반 마케팅·분양 전략에 연결하는 각도 가능"
+        }
+      ],
+      "mismatch_note": "건설·주거 도메인 직접 레퍼런스는 없으나, sinhon.life의 타깃인 신혼부부가 호반그룹의 핵심 고객층과 일치한다는 점에서 제안 각도가 가장 뚜렷한 공고다.",
+      "critical_gap": "건설·부동산 도메인 포트폴리오 없음. 신혼부부 타깃 겹침을 설득력 있는 협업 과제로 가공하는 기획 작업 필요."
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "협업 각도 기획",
+            "hours": "15-25"
+          },
+          {
+            "stage": "서류·제안서 작성",
+            "hours": "30-50"
+          },
+          {
+            "stage": "발표 준비 (서류 통과 시)",
+            "hours": "15-25"
+          }
+        ],
+        "total": "60-100h"
+      },
+      "probability": {
+        "doc_pass": 0.18,
+        "final_given_doc_pass": 0.4,
+        "final": 0.07,
+        "basis": "신혼부부·주거 타깃 겹침 가점 + 건설 도메인 레퍼런스 부재 감점 종합"
+      },
+      "expected_value_label": "0.07 × 1,500만원 ≈ 105만원 (시간당 1~1.7만원)"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "CONDITIONAL-GO",
+      "reasons": [
+        "sinhon.life 신혼부부 타깃 = 호반그룹 신혼 분양 고객층 직접 겹침 — 제안 각도 가장 뚜렷",
+        "PoC 1,500만원 기댓값은 경계선이지만 협업 네트워크 형성 부가가치 있음"
+      ],
+      "exception_go_conditions": [
+        "신혼 입주 고객 대상 AI 정책 매칭·홈케어 정보 서비스 등 구체적 협업 과제를 2주 내 기획서로 완성 가능한 경우",
+        "호반그룹 분양/마케팅 담당 현업과 사전 컨택이 가능한 경우"
+      ]
+    },
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "예비창업 매칭 100%, 우선 처리 후 여력 있을 때 검토"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 병행 가능"
+        },
+        {
+          "name": "2026 민관협력 오픈이노베이션 (서울창조경제혁신센터)",
+          "deadline": "2026-06-04",
+          "track": "본인 — 기창업·sinhon.life",
+          "priority": "🟡",
+          "reason": "최대 1억원, 자율탐색형으로 각도 자유도 높음"
+        }
+      ]
+    }
+  }
+}

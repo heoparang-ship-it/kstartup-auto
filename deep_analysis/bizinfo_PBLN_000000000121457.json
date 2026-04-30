@@ -1,0 +1,100 @@
+{
+  "id": "bizinfo_PBLN_000000000121457",
+  "title": "[전북] 2026년 바이오 지역산업 역량강화 지원사업 비R&D 지원계획 공고",
+  "analyzed_at": "2026-04-30T12:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북/경기 병행)",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.03,
+    "time_cost_hours": "5-10",
+    "one_liner": "전북 소재 바이오 기업 전용 비R&D 지원 — 인천 SW법인·신혼 플랫폼 지역·도메인 이중 불일치"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "지역 바이오 산업 비R&D 기업 지원",
+      "body": "전북테크노파크가 전북 소재 중소기업 또는 전주·익산·정읍 투자 확약 기업에 바이오 기술사업화를 지원하는 사업이다. 시제품 제작·시험인증·지식재산권, 디자인·마케팅·컨설팅 지원을 포함한다. 전북 소재 또는 전북 투자 확약이 필수이며, 바이오 분야 기업이 대상이다.",
+      "benefits": [
+        {
+          "k": "시제품 제작·시험인증",
+          "v": "지원"
+        },
+        {
+          "k": "디자인·마케팅·컨설팅",
+          "v": "사업화 지원"
+        },
+        {
+          "k": "지식재산권 확보",
+          "v": "지원"
+        },
+        {
+          "k": "직접 자금",
+          "v": "규모 미명시"
+        }
+      ],
+      "watchout": "전북 소재 + 바이오 분야 이중 조건. 인천 SW법인 자격 미달."
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "바이오 도메인 레퍼런스 0, 전북 소재 조건 미충족. 접점 없음.",
+      "critical_gap": "지역(전북) + 도메인(바이오) 이중 미충족. 자동 NO-GO."
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "자격 검토",
+            "hours": "2"
+          },
+          {
+            "stage": "신청 서류 (조건부)",
+            "hours": "3-8"
+          }
+        ],
+        "total": "5-10h"
+      },
+      "probability": {
+        "doc_pass": 0.03,
+        "final_given_doc_pass": 0.1,
+        "final": 0.03,
+        "basis": "지역·도메인 자격 미달"
+      },
+      "expected_value_label": "기댓값 0 (자격 미달)"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "전북 소재 조건 미충족 (인천 부평)",
+        "바이오 도메인 레퍼런스 0",
+        "자동 NO-GO: 완전 무관 도메인 + 지역 불일치"
+      ],
+      "exception_go_conditions": []
+    },
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "전북 바이오 대신 핵심 🟢 트랙 집중"
+        },
+        {
+          "name": "글로벌 SaaS 마켓플레이스 지원사업",
+          "deadline": "2026-05-15",
+          "track": "엑스컴 — SW",
+          "priority": "🟡",
+          "reason": "바이오 대신 SW 기업 전용 지원"
+        }
+      ]
+    }
+  }
+}

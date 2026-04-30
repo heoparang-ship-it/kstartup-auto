@@ -1,0 +1,106 @@
+{
+  "id": "bizinfo_PBLN_000000000121446",
+  "title": "2026년 중국 상하이 China Invest Week 참여기업 모집 공고",
+  "analyzed_at": "2026-04-30T12:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북/경기 병행)",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.05,
+    "time_cost_hours": "20-40",
+    "one_liner": "상하이 VC 밋업 — 항공비 지원뿐, 직접 자금 0. 중국 시장 진출 계획 없는 현 단계에 기회비용 낭비"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "수출·투자유치 — 해외 IR 행사 참가 지원",
+      "body": "중소벤처기업진흥공단이 상하이 현지 VC·PE와 한국 스타트업 1:1 밋업을 주선하는 행사형 지원이다. 항공(1인)·현지 교통·식사 지원이 전부이며 직접 현금 지원은 없다. 소비재·바이오·헬스케어·AI·반도체 등 하이테크 기업을 우대하는 뉘앙스가 있다. 마감 2026-05-12.",
+      "benefits": [
+        {
+          "k": "항공(1인)",
+          "v": "지원"
+        },
+        {
+          "k": "현지 교통·식사",
+          "v": "단체 지원"
+        },
+        {
+          "k": "직접 자금",
+          "v": "없음"
+        },
+        {
+          "k": "중국 VC 네트워크",
+          "v": "1:1 밋업 기회"
+        }
+      ],
+      "watchout": "직접 자금 0, 행사 참가 형태. 중국 투자유치 계획 없으면 ROI 없음."
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [
+        {
+          "task": "AI 스타트업 중국 VC 밋업",
+          "fit": "🟠",
+          "reason": "sinhon.life가 AI 포함이지만, B2C 신혼부부 한국 특화 서비스 — 중국 VC 투자 적합성 낮음"
+        }
+      ],
+      "mismatch_note": "B2C 신혼부부 한국 로컬 서비스는 중국 투자자 관심 범주 밖. 현 단계 글로벌 IR 자원 투입 불필요.",
+      "critical_gap": "직접 자금 0 + 네트워킹만 — 자동 NO-GO 조건. 춘기 공백기 핵심 카드에 자원 집중 필요."
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "신청서 작성",
+            "hours": "10-20"
+          },
+          {
+            "stage": "현지 참가 준비·이동",
+            "hours": "10-20"
+          }
+        ],
+        "total": "20-40h"
+      },
+      "probability": {
+        "doc_pass": 0.2,
+        "final_given_doc_pass": 0.25,
+        "final": 0.05,
+        "basis": "선정 자체는 어렵지 않을 수 있으나, 행사 참가 시 ROI(투자유치 가능성) 사실상 0"
+      },
+      "expected_value_label": "직접 자금 0원, 투자유치 기댓값 계산 불가"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "직접 자금 없음 — 행사 참가·네트워킹만, 자동 NO-GO",
+        "B2C 신혼부부 한국 로컬 서비스의 중국 VC 투자유치 적합성 낮음",
+        "춘기 공백기 자원 분산 방지 — 🟢 카드 집중 필요"
+      ],
+      "exception_go_conditions": []
+    },
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "직접 자금 있는 🟢 우선"
+        },
+        {
+          "name": "글로벌 SaaS 마켓플레이스 지원사업",
+          "deadline": "2026-05-15",
+          "track": "엑스컴 — SW 글로벌",
+          "priority": "🟡",
+          "reason": "해외 진출 관심 있다면 중국 행사 대신 SaaS 마켓플레이스 등록 지원"
+        }
+      ]
+    }
+  }
+}

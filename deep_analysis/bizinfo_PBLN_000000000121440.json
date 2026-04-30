@@ -1,0 +1,106 @@
+{
+  "id": "bizinfo_PBLN_000000000121440",
+  "title": "2026년 2차 창업-BuS 프로그램 참여기업 모집 공고",
+  "analyzed_at": "2026-04-30T12:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북/경기 병행)",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.05,
+    "time_cost_hours": "60-100",
+    "one_liner": "전북 TIPS 연계 투자 발굴 프로그램 — 전북 비소재, 신혼 플랫폼 도메인 fit 약, 대안 대비 기회비용 큼"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "초기 스타트업 투자 발굴 (TIPS 추천 + LIPS 매칭융자)",
+      "body": "전북창조경제혁신센터가 투자 재원으로 유망 (예비)창업기업을 발굴하는 프로그램이다. TIPS 트랙과 LIPS(소상공인 연계형) 두 가지로 나뉜다. TIPS 추천 시 연구개발비·창업사업화·해외마케팅 지원과 전북 내 보육공간 입주가 가능하다. 대상은 예비창업자~7년 이내 창업기업으로 넓지만, 전북 소재 또는 전북 이전 의향이 사실상 필요하다.",
+      "benefits": [
+        {
+          "k": "TIPS 추천",
+          "v": "R&D·사업화·해외마케팅 지원"
+        },
+        {
+          "k": "LIPS 1",
+          "v": "민간투자 연계형 매칭융자"
+        },
+        {
+          "k": "LIPS 2",
+          "v": "혁신소상공인 투자 연계"
+        },
+        {
+          "k": "보육공간",
+          "v": "Start-up Foret, 미래기술혁신센터 입주"
+        }
+      ],
+      "watchout": "전북 소재 또는 이전 의향 선결 조건. TIPS 추천은 별도 심사 절차 필요."
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [
+        {
+          "task": "예비창업~7년 이내 스타트업 투자 발굴",
+          "fit": "🟡",
+          "reason": "엑스컴 6개월차 기창업 + 이영림 예비창업 트랙으로 접근 가능. 단 전북 소재 조건 문제."
+        }
+      ],
+      "mismatch_note": "전북 소재 조건이 핵심 장벽. 대구경북·경기 우선 전략과 지역적으로 불일치.",
+      "critical_gap": "전북 소재 미충족 + 대구경북·경기 우선 전략과 충돌. 같은 기간 🟢 카드 2개 존재."
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "전략 검토",
+            "hours": "5"
+          },
+          {
+            "stage": "사업계획서 작성",
+            "hours": "55-95"
+          }
+        ],
+        "total": "60-100h"
+      },
+      "probability": {
+        "doc_pass": 0.15,
+        "final_given_doc_pass": 0.33,
+        "final": 0.05,
+        "basis": "전북 비소재 감점, 창업-BuS 경쟁률 추정 중간. TIPS 추천까지 이어지는 확률 낮음."
+      },
+      "expected_value_label": "기댓값 불명확 (TIPS 연계 지원금 규모 공고 미명시), 투입 대비 낮음"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "전북 소재 조건 미충족 — 인천, 대구경북·경기 우선 전략과 충돌",
+        "같은 기간 🟢 트랙(모두의 창업 로컬트랙, 파주 청년창업) 2개 오픈 — 자동 NO-GO",
+        "TIPS 연계 확률까지 감안 시 최종 기댓값 낮음"
+      ],
+      "exception_go_conditions": []
+    },
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "전북 대신 대구경북 우선 트랙, 이중지원 전략 핵심"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "경기 트랙으로 전북 대신 집중"
+        }
+      ]
+    }
+  }
+}

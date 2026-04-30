@@ -1,0 +1,95 @@
+{
+  "id": "bizinfo_PBLN_000000000121388",
+  "title": "[경기] 2026년 중소기업 마케팅 지원사업 국내 온라인 마케팅지원 참여기업 추가 모집공고 (네이버, 오늘의집)",
+  "analyzed_at": "2026-04-30T12:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북/경기 병행)",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.03,
+    "time_cost_hours": "10-15",
+    "one_liner": "식품·펫 카테고리 제품 限 — sinhon.life(SW 서비스)는 지원 대상 카테고리 미해당"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "지자체 마케팅 바우처 (유통채널 입점 지원)",
+      "body": "경기도주식회사가 경기도 소재 중소기업의 식품(신선) 및 펫 카테고리 제품을 네이버 리테일 미디어와 오늘의집 플랫폼에 입점·광고·라이브 판매 형태로 지원하는 사업이다. 대상은 경기도 본사 또는 공장 보유 기업이며 지원 분야가 식품(신선)·펫으로 명시 제한되어 있다. SW 서비스·플랫폼은 지원 범위에 포함되지 않는다.",
+      "benefits": [
+        {
+          "k": "네이버 AI 광고",
+          "v": "비즈머니 쿠폰 무상 지원"
+        },
+        {
+          "k": "오늘의집",
+          "v": "라이브 판매 지원"
+        },
+        {
+          "k": "공통",
+          "v": "입점 연계·기획전 운영·쿠폰비용 지원"
+        }
+      ],
+      "watchout": "식품(신선)·펫 카테고리 제품 限 — SW·플랫폼 서비스는 지원 대상 아님"
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "sinhon.life는 디지털 B2C 플랫폼 서비스이며, 본 공고는 식품·펫 실물 제품 전용 마케팅 지원이다. 카테고리 자체가 불일치.",
+      "critical_gap": "지원 분야 식품(신선)·펫 제품 限 — sinhon.life(SW 서비스)는 지원 대상 카테고리 미해당으로 즉시 탈락"
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "공고 검토 및 자격 확인",
+            "hours": "5-10"
+          },
+          {
+            "stage": "서류 준비(지원 불가 확인 시 종료)",
+            "hours": "5"
+          }
+        ],
+        "total": "10-15h"
+      },
+      "probability": {
+        "doc_pass": 0.0,
+        "final_given_doc_pass": 0.0,
+        "final": 0.03,
+        "basis": "식품·펫 카테고리 요건 미충족으로 지원 자격 없음"
+      },
+      "expected_value_label": "지원 불가 (카테고리 미해당) — 기댓값 0원"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "지원 분야 식품(신선)·펫 카테고리 限 — sinhon.life(SW 플랫폼) 자격 미달",
+        "경기도 소재 요건도 미충족 (인천 본사)"
+      ],
+      "exception_go_conditions": []
+    },
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "예비창업 매칭 100%, 춘기 유효 카드"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 전략 병행 가능"
+        }
+      ]
+    }
+  }
+}

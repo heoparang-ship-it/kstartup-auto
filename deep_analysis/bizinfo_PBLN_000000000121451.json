@@ -1,0 +1,96 @@
+{
+  "id": "bizinfo_PBLN_000000000121451",
+  "title": "[제주] 2026년 다양성영화 기획개발 멘토링 지원사업 공고",
+  "analyzed_at": "2026-04-30T12:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북/경기 병행)",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.03,
+    "time_cost_hours": "10-20",
+    "one_liner": "제주 거주 영화감독·제작사 전용 멘토링 지원금 200만원 — 지역·업종·규모 삼중 불일치"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "지역 콘텐츠 창작 지원 (영화 기획개발 멘토링)",
+      "body": "제주콘텐츠진흥원이 제주 소재 콘텐츠 제작사업자 또는 제주 거주 개인 창작자에게 실사영화·다큐멘터리 기획개발 단계의 전문가 멘토링을 편당 200만원 지원하는 소규모 창작 지원사업이다. 영상 제작 경험이 있는 감독·프로듀서·작가가 대상이며, 시나리오·기획안 개발 단계에 있는 작품에 한한다.",
+      "benefits": [
+        {
+          "k": "전문가 멘토링",
+          "v": "편당 200만원"
+        },
+        {
+          "k": "기획안 고도화",
+          "v": "컨설팅 지원"
+        },
+        {
+          "k": "직접 자금",
+          "v": "편당 200만원"
+        }
+      ],
+      "watchout": "제주 거주 또는 제주 소재 제작사 조건 + 영상 제작 경험 증빙 필수"
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "sinhon.life는 SW/B2C 플랫폼이며 영화·다큐멘터리 제작 이력 없음. 제주 소재/거주 조건 미충족. 지원금도 200만원으로 소액.",
+      "critical_gap": "지역(제주) + 업종(영화·다큐멘터리) + 규모(200만원 소액) 삼중 불일치. 자동 NO-GO."
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "자격 검토",
+            "hours": "2"
+          },
+          {
+            "stage": "신청 서류 (조건부)",
+            "hours": "8-18"
+          }
+        ],
+        "total": "10-20h"
+      },
+      "probability": {
+        "doc_pass": 0.03,
+        "final_given_doc_pass": 0.1,
+        "final": 0.03,
+        "basis": "지역·업종 자격 미달, 영상 제작 경험 부재"
+      },
+      "expected_value_label": "기댓값 0 (자격 미달)"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "제주 소재/거주 조건 미충족",
+        "영화·다큐멘터리 제작 이력 없음",
+        "지원금 200만원 — 기댓값 < 100만원 + 투입 시간 낭비"
+      ],
+      "exception_go_conditions": []
+    },
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "영화 대신 예비창업 트랙 집중"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "경기 트랙 병행"
+        }
+      ]
+    }
+  }
+}

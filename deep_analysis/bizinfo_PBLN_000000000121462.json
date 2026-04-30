@@ -1,0 +1,122 @@
+{
+  "id": "bizinfo_PBLN_000000000121462",
+  "title": "2026년 글로벌 SaaS 마켓플레이스 지원사업 국내 SaaS 중소ㆍ중견 지원기업 모집 공고",
+  "analyzed_at": "2026-04-30T12:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북/경기 병행)",
+  "verdict": {
+    "decision": "CONDITIONAL-GO",
+    "confidence": "medium",
+    "expected_pass_rate": 0.12,
+    "time_cost_hours": "40-70",
+    "one_liner": "국내 SaaS SW법인 전용 글로벌 CSP 마켓플레이스 등록 지원 — 엑스컴 SW법인 fit 🟡, sinhon.life SaaS화 포지셔닝 가능 시 GO"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "SW 글로벌 진출 지원 (SaaS 마켓플레이스 등록·최적화)",
+      "body": "과기정통부·한국정보통신기술협회(TTA)가 국내 SaaS 중소·중견 SW기업(법인)의 글로벌 CSP 마켓플레이스(AWS Marketplace, Azure Marketplace 등) 등록·최적화, 제품 고도화, 해외 현지 홍보를 지원하는 사업이다. 지역 제한이 없고 SW 법인이면 기본 자격을 갖출 수 있다. 마감 2026-05-15.",
+      "benefits": [
+        {
+          "k": "CSP 마켓플레이스 등록·최적화 지원",
+          "v": "포함"
+        },
+        {
+          "k": "제품 고도화",
+          "v": "지원"
+        },
+        {
+          "k": "해외 현지 홍보",
+          "v": "지원"
+        },
+        {
+          "k": "직접 자금 규모",
+          "v": "공고 상 미명시 (컨설팅·현물 위주 추정)"
+        }
+      ],
+      "watchout": "SaaS 제품 보유 증빙 필요 — sinhon.life를 B2B SaaS로 포지셔닝할 수 있는지 검토 필요"
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [
+        {
+          "task": "국내 SaaS 기업 글로벌 마켓플레이스 진출",
+          "fit": "🟡",
+          "reason": "엑스컴 주업 SW개발, sinhon.life가 SaaS 성격을 가짐. 단 현재 B2C 신혼부부 서비스로 B2B SaaS 포지셔닝 재설계 필요"
+        },
+        {
+          "task": "AWS/Azure 마켓플레이스 등록 지원",
+          "fit": "🟡",
+          "reason": "Amplify·AWS 스택 운영 경험 있어 CSP 친화적 환경. 등록 기술 장벽 낮음"
+        }
+      ],
+      "mismatch_note": "현재 sinhon.life는 B2C 모델이라 SaaS 마켓플레이스 대상 제품으로 보기 어렵다. 별도 B2B SaaS 제품(예: 정책 매칭 API, 신혼 데이터 SaaS) 포지셔닝이 필요하다.",
+      "critical_gap": "B2B SaaS 제품 존재 여부 — 현재 B2C만 운영 중이라 마켓플레이스 등록 대상 제품 재설계 2~4주 소요 예상"
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "SaaS 포지셔닝·제품 재설계 검토",
+            "hours": "20-30"
+          },
+          {
+            "stage": "신청서 작성",
+            "hours": "20-40"
+          }
+        ],
+        "total": "40-70h"
+      },
+      "probability": {
+        "doc_pass": 0.3,
+        "final_given_doc_pass": 0.4,
+        "final": 0.12,
+        "basis": "SW 법인 기본 자격 충족, SaaS 포지셔닝 재설계 시 경쟁력 있음. 지역 제한 없어 경쟁자 다수. 인지도 낮은 6개월차 법인 감점."
+      },
+      "expected_value_label": "직접 자금 규모 공고 미명시 — 컨설팅·현물 위주 추정, 기댓값 계산 제한적"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "CONDITIONAL-GO",
+      "reasons": [
+        "엑스컴 SW법인 기본 자격 충족, 지역 제한 없음",
+        "AWS 스택 경험으로 CSP 마켓플레이스 기술 장벽 낮음",
+        "현재 B2C만 운영 — B2B SaaS 제품 포지셔닝 재설계가 선결"
+      ],
+      "exception_go_conditions": [
+        "sinhon.life 또는 엑스컴의 특정 기능(정책 매칭 API, RAG 엔진 등)을 B2B SaaS로 패키징 가능한 경우",
+        "2주 내 마켓플레이스 등록 가능한 MVP 수준 제품 정의 가능한 경우",
+        "위 조건 충족 시 마감(05-15) 전 GO 재검토"
+      ]
+    },
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "본 공고 검토하는 동안 🟢 카드 병행 진행"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 전략상 동시 진행"
+        },
+        {
+          "name": "서울 AI허브 GPU 바우처",
+          "deadline": "2026-05-08",
+          "track": "엑스컴 — AI 인프라",
+          "priority": "🟡",
+          "reason": "서울 소재 조건 해소 시 AI 인프라 바우처도 병행 검토"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "id": "bizinfo_PBLN_000000000121455",
+  "title": "[부산] 2026년 차세대 고효율 전력반도체 실증인프라 기업지원 모집 공고",
+  "analyzed_at": "2026-04-30T12:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북/경기 병행)",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.03,
+    "time_cost_hours": "5-10",
+    "one_liner": "전력반도체 시제품·신뢰성 시험 전용 인프라 — SW법인·B2C 플랫폼 접점 완전 없음"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "하드웨어 제조 인프라 지원 (전력반도체 실증)",
+      "body": "부산테크노파크 전력반도체센터가 전력반도체 관련 기업에 시제품 제작·기술컨설팅·신뢰성 시험·평가·인증을 지원하는 하드웨어 특화 사업이다. 부산 내외 전력반도체 관련 기업이 대상이며, 반도체 설계·제조 역량이 전제된다. 마감 2026-05-11.",
+      "benefits": [
+        {
+          "k": "시제품 제작",
+          "v": "지원"
+        },
+        {
+          "k": "기술컨설팅",
+          "v": "지원"
+        },
+        {
+          "k": "신뢰성 시험·평가·인증",
+          "v": "지원"
+        },
+        {
+          "k": "직접 자금",
+          "v": "현금 규모 미명시 (현물 위주)"
+        }
+      ],
+      "watchout": "전력반도체 관련 기업 한정 — SW 서비스·미디어 콘텐츠 기업 해당 없음"
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "엑스컴은 SW개발·미디어콘텐츠 법인. 전력반도체와 어떠한 접점도 없음.",
+      "critical_gap": "도메인(전력반도체·하드웨어) 레퍼런스 및 역량 완전 부재. 자동 NO-GO."
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "자격 검토",
+            "hours": "2"
+          },
+          {
+            "stage": "신청 서류 (조건부)",
+            "hours": "3-8"
+          }
+        ],
+        "total": "5-10h"
+      },
+      "probability": {
+        "doc_pass": 0.03,
+        "final_given_doc_pass": 0.1,
+        "final": 0.03,
+        "basis": "도메인 자격 완전 미달"
+      },
+      "expected_value_label": "기댓값 0 (도메인 미달)"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "전력반도체 도메인 레퍼런스 0 — SW법인 해당 없음",
+        "하드웨어 시제품·인증 지원 — 소프트웨어 기업 수혜 불가",
+        "자동 NO-GO: 완전 무관 도메인"
+      ],
+      "exception_go_conditions": []
+    },
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "반도체 대신 예비창업 트랙 집중"
+        },
+        {
+          "name": "글로벌 SaaS 마켓플레이스 지원사업",
+          "deadline": "2026-05-15",
+          "track": "엑스컴 — SW",
+          "priority": "🟡",
+          "reason": "SW 전용 지원으로 대체"
+        }
+      ]
+    }
+  }
+}

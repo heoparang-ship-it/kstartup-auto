@@ -1,0 +1,87 @@
+{
+  "id": "bizinfo_PBLN_000000000121402",
+  "title": "2026년 2차 디지털 랩온어칩 실용화 플랫폼 구축사업 기술지원과제 참여기업 모집 공고",
+  "analyzed_at": "2026-04-30T12:00:00+09:00",
+  "analyzer": "sonnet-handoff@cowork",
+  "schema_version": 1,
+  "target_profile": "sinhon.life(B2C 신혼부부) + (주)엑스컴(6개월차 SW법인/인천) + 이영림(예창 대구경북/경기 병행)",
+  "verdict": {
+    "decision": "NO-GO",
+    "confidence": "high",
+    "expected_pass_rate": 0.03,
+    "time_cost_hours": "5-10",
+    "one_liner": "체외진단 의료기기 제조기업 限 — 바이오·하드웨어 레퍼런스 0인 SW 법인 지원 불가"
+  },
+  "sections": {
+    "nature": {
+      "title": "이 공고의 정체",
+      "type": "바이오 R&D 기술지원 (특화 제조)",
+      "body": "춘천바이오산업진흥원이 체외진단 의료기기 분야 제조기업을 대상으로 랩온어칩 제작에 필요한 인간항체 개발을 최대 3,000만원 한도로 지원하는 기술지원 과제다. 대상이 '국내 체외진단 의료기기 산업분야 제조기업'으로 명시되어 있어 SW 서비스 기업과 완전 무관하다.",
+      "benefits": [
+        {
+          "k": "기술지원금",
+          "v": "과제당 최대 3,000만원"
+        },
+        {
+          "k": "지원내용",
+          "v": "인간항체 개발 기술 지원"
+        }
+      ],
+      "watchout": "체외진단 의료기기 제조기업 限 — SW 서비스 기업 지원 자격 없음"
+    },
+    "fit": {
+      "title": "팀 적합도 매칭",
+      "direct_match": [],
+      "tech_adjacent": [],
+      "mismatch_note": "바이오·체외진단 하드웨어 제조 전용. sinhon.life·엑스컴과 공통점 전무.",
+      "critical_gap": "체외진단 의료기기 제조업 요건 — SW 법인 즉시 탈락"
+    },
+    "roi": {
+      "title": "ROI 계산",
+      "time_cost": {
+        "breakdown": [
+          {
+            "stage": "공고 검토 및 자격 확인",
+            "hours": "5-10"
+          }
+        ],
+        "total": "5-10h"
+      },
+      "probability": {
+        "doc_pass": 0.0,
+        "final_given_doc_pass": 0.0,
+        "final": 0.03,
+        "basis": "업종 요건(체외진단 의료기기 제조) 미충족으로 지원 자격 없음"
+      },
+      "expected_value_label": "지원 불가 — 기댓값 0원"
+    },
+    "decision": {
+      "title": "GO/NO-GO",
+      "verdict": "NO-GO",
+      "reasons": [
+        "체외진단 의료기기 제조기업 限 — SW 법인 엑스컴 자격 없음",
+        "바이오·하드웨어 레퍼런스 0으로 도메인 fit 전무"
+      ],
+      "exception_go_conditions": []
+    },
+    "alternatives": {
+      "title": "대안 (같은 기간 열려 있는 공고)",
+      "items": [
+        {
+          "name": "모두의 창업 로컬트랙 (대구경북)",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 예비창업",
+          "priority": "🟢",
+          "reason": "예비창업 매칭 100%"
+        },
+        {
+          "name": "파주 청년창업",
+          "deadline": "2026-05-15",
+          "track": "와이프 — 경기 백업",
+          "priority": "🟢",
+          "reason": "이중지원 전략 병행"
+        }
+      ]
+    }
+  }
+}
