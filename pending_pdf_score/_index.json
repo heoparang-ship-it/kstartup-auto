@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-01T19:27:28.690971+09:00",
+  "generated_at": "2026-05-02T01:49:40.109774+09:00",
   "schema_version": 2,
   "pdf_text_cap": 15000,
-  "target_count": 226,
+  "target_count": 222,
   "pending": [
     {
       "key": "bizinfo_PBLN_000000000121219",
@@ -80,34 +80,6 @@
       "tier": "yellow",
       "deadline": "",
       "pdf_text_chars": 16918
-    },
-    {
-      "key": "bizinfo_PBLN_000000000121323",
-      "title": "[광주] 2026년 말레이시아 K-소비재 유통망 입점 사업 모집 공고",
-      "tier": "orange",
-      "deadline": "2026-05-01",
-      "pdf_text_chars": 10539
-    },
-    {
-      "key": "bizinfo_PBLN_000000000121274",
-      "title": "[경북] 2026년 2차 automechanika Frankfurt 경북 공동관 참가기업 추가모집 공고(2026년 자동차 부품전 경북 공동관 참가 지원사업)",
-      "tier": "orange",
-      "deadline": "2026-05-01",
-      "pdf_text_chars": 4764
-    },
-    {
-      "key": "bizinfo_PBLN_000000000121213",
-      "title": "2026년 기계ㆍ로봇산업(기계분야) 발전유공 포상 신청 연장 공고",
-      "tier": "orange",
-      "deadline": "2026-05-01",
-      "pdf_text_chars": 15075
-    },
-    {
-      "key": "bizinfo_PBLN_000000000121210",
-      "title": "2026년 기계ㆍ로봇산업(로봇분야) 발전유공 포상 신청 연장 공고",
-      "tier": "orange",
-      "deadline": "2026-05-01",
-      "pdf_text_chars": 15075
     },
     {
       "key": "bizinfo_PBLN_000000000121295",
@@ -1588,10 +1560,10 @@
     }
   ],
   "stats": {
-    "total_items": 883,
+    "total_items": 865,
     "red": 0,
     "expired": 0,
-    "no_pdf": 605,
-    "already_scored": 52
+    "no_pdf": 593,
+    "already_scored": 50
   }
 }
