@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-03T19:09:32.726321+09:00",
+  "generated_at": "2026-05-04T01:39:21.886697+09:00",
   "schema_version": 2,
   "pdf_text_cap": 15000,
-  "target_count": 222,
+  "target_count": 221,
   "pending": [
     {
       "key": "bizinfo_PBLN_000000000121219",
@@ -80,13 +80,6 @@
       "tier": "yellow",
       "deadline": "",
       "pdf_text_chars": 16918
-    },
-    {
-      "key": "bizinfo_PBLN_000000000121295",
-      "title": "2026년 2차 창조문화산업지원센터(천안역지하도상가) 신규 입주자(창업지원) 모집 공고",
-      "tier": "orange",
-      "deadline": "2026-05-03",
-      "pdf_text_chars": 4692
     },
     {
       "key": "bizinfo_PBLN_000000000121322",
@@ -1560,10 +1553,10 @@
     }
   ],
   "stats": {
-    "total_items": 865,
+    "total_items": 859,
     "red": 0,
     "expired": 0,
-    "no_pdf": 593,
+    "no_pdf": 588,
     "already_scored": 50
   }
 }
