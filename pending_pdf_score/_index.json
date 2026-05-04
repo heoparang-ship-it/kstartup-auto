@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-04T20:09:39.083014+09:00",
+  "generated_at": "2026-05-05T02:24:09.951218+09:00",
   "schema_version": 2,
   "pdf_text_cap": 15000,
-  "target_count": 221,
+  "target_count": 216,
   "pending": [
     {
       "key": "bizinfo_PBLN_000000000121219",
@@ -80,41 +80,6 @@
       "tier": "yellow",
       "deadline": "",
       "pdf_text_chars": 16918
-    },
-    {
-      "key": "bizinfo_PBLN_000000000121322",
-      "title": "2026년 과학기술정보통신부 차세대 특화망 융합서비스 확산 사업 재공고",
-      "tier": "orange",
-      "deadline": "2026-05-04",
-      "pdf_text_chars": 5910
-    },
-    {
-      "key": "bizinfo_PBLN_000000000121299",
-      "title": "[강원] 호주(멜버른) 수출로드쇼 (수출상담회) 참가기업 모집 공고 ",
-      "tier": "orange",
-      "deadline": "2026-05-04",
-      "pdf_text_chars": 4166
-    },
-    {
-      "key": "bizinfo_PBLN_000000000120840",
-      "title": "2026년 혁신 프리미어 1000 녹색산업 우수기업 모집 공고",
-      "tier": "orange",
-      "deadline": "2026-05-04",
-      "pdf_text_chars": 15079
-    },
-    {
-      "key": "bizinfo_PBLN_000000000120301",
-      "title": "2026년 딥테크 챌린지 프로젝트 기술도전형 제1차 기술수요조사 시행계획 공고",
-      "tier": "orange",
-      "deadline": "2026-05-04",
-      "pdf_text_chars": 22701
-    },
-    {
-      "key": "bizinfo_PBLN_000000000120279",
-      "title": "2026년 시니어 과학기술인 단기연구원 지원사업 공고",
-      "tier": "orange",
-      "deadline": "2026-05-04",
-      "pdf_text_chars": 7953
     },
     {
       "key": "bizinfo_PBLN_000000000121304",
@@ -1553,10 +1518,10 @@
     }
   ],
   "stats": {
-    "total_items": 859,
+    "total_items": 844,
     "red": 0,
     "expired": 0,
-    "no_pdf": 588,
+    "no_pdf": 578,
     "already_scored": 50
   }
 }

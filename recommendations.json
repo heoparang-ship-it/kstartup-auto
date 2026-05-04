@@ -1,7 +1,7 @@
 {
   "schema_version": 5,
-  "last_updated": "2026-05-04",
-  "updated_at_kst": "2026-05-04T20:07:08+09:00",
+  "last_updated": "2026-05-05",
+  "updated_at_kst": "2026-05-05T02:20:58+09:00",
   "red_count_today": 0,
   "reds_today": [
     {
@@ -2409,143 +2409,6 @@
     {
       "source": "kstartup",
       "source_label": "K-Startup",
-      "id": "kstartup_177375",
-      "pbancSn": "177375",
-      "title": "[스마트전자약종합지원센터] 2026년 스마트 전자약 사업화 종합 지원 모집",
-      "agency": "건양대병원 스마트전자약종합지원센터",
-      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177375",
-      "deadline": "2026-05-04",
-      "structured": {
-        "pbanc_sn_int": 177375,
-        "integrated": false,
-        "recruiting": true,
-        "start_date": "2026-04-24",
-        "end_date": "2026-05-04",
-        "agency_type": "민간",
-        "biz_class": "사업화",
-        "region": "전국",
-        "biz_enyy": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
-        "age_range": "만 20세 미만,만 20세 이상 ~ 만 39세 이하,만 40세 이상",
-        "apply_target": "일반기업",
-        "apply_target_desc": "국내 스마트 전자약 산업의 기술 역량을 보유한 기업",
-        "exclude_target": "아래 내용 중 한개라도 해당하는 경우는 지원 불가\r\n- 부도, 화의, 법정관리중인 경우\r\n- 국세 및 지방세 체납중인 경우\r\n- 금융 불량거래처로 규제중인 경우\r\n- 수행실적 확인이 불분명하거나 허위 서류를 제출한 경우\r\n- 허위 또는 그 밖의 부정한 방법으로 신청 서류를 제출한 경우\r\n- 기타 본 사업 목적 및 지원분야 등으로 적정하지 않다고 판단되는 경우",
-        "preferential": "",
-        "content": "[스마트전자약 사업화 종합지원센터]는 국내 스마트 전자약 산업의 기술 역량을 보유한 기업들이 사업화를 성공적으로 추진할 수 있도록 지원하는 사업입니다",
-        "integrated_name": "2026년 스마트 전자약 사업화 종합 지원 사업",
-        "apply_online": "https://smartemedicine.co.kr",
-        "apply_guide": "smartemedicine.co.kr"
-      },
-      "tier": "green",
-      "best_entity": "xcom_corp",
-      "best_tier": "yellow",
-      "domain": [
-        "budget"
-      ],
-      "entities": {},
-      "rationale_short": "2순위: 모든 축 green/yellow, 중립 매칭 — 직접 지원 가능",
-      "nogo_match": false,
-      "source_priority": 2,
-      "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
-      "note": "structured 완전 매칭 (전국/사업화)",
-      "connect": "",
-      "classify_evidence": {
-        "summary_reason": "structured 완전 매칭 (전국/사업화)",
-        "category_hints": [
-          "budget"
-        ],
-        "rule_checks": {
-          "recruiting": {
-            "pass": true,
-            "value": "True",
-            "detail": "모집 중"
-          },
-          "deadline": {
-            "pass": true,
-            "value": "2026-05-04",
-            "detail": "마감 전"
-          },
-          "region": {
-            "pass": true,
-            "value": "전국",
-            "detail": "지역 허용 (structured=전국)"
-          },
-          "biz_enyy": {
-            "pass": true,
-            "value": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
-            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
-          },
-          "exclude_target": {
-            "pass": true,
-            "value": "아래 내용 중 한개라도 해당하는 경우는 지원 불가\r\n- 부도, 화의, 법정관리중인 경우\r\n- 국세 및 지방세 체납중인 경우\r\n- 금융 불량거래처",
-            "detail": "exclude_target 장문 (201자)"
-          },
-          "industry": {
-            "pass": true,
-            "detail": "업종 제한 없음"
-          },
-          "qualification": {
-            "pass": true,
-            "detail": "exclude_target 장문 (201자)"
-          },
-          "stage": {
-            "pass": true,
-            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
-          },
-          "nature": {
-            "pass": true,
-            "detail": "직접 자금성 (사업화)"
-          },
-          "region_keyword": {
-            "pass": true,
-            "detail": "지역 허용 (structured=전국)"
-          },
-          "positive_hit": {
-            "pass": true,
-            "detail": "structured 완전 매칭 (전국/사업화)"
-          }
-        },
-        "risk_flags": [
-          {
-            "type": "exclude_target_long",
-            "severity": "low",
-            "msg": "신청 제외 대상 장문 (201자) — 정독 필수"
-          }
-        ],
-        "axis_scores": {
-          "region": {
-            "level": "green",
-            "detail": "지역 허용 (structured=전국)"
-          },
-          "stage": {
-            "level": "green",
-            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
-          },
-          "industry": {
-            "level": "green",
-            "detail": "업종 제한 없음"
-          },
-          "nature": {
-            "level": "green",
-            "detail": "직접 자금성 (사업화)"
-          },
-          "qualification": {
-            "level": "yellow",
-            "detail": "exclude_target 장문 (201자)"
-          }
-        },
-        "exclusion_flags": [],
-        "audit_flags": [],
-        "tier_logic": "1순위: 강한 긍정 매칭 + 1축만 yellow (지원 가능)",
-        "classify_version": "v8.3"
-      },
-      "last_changed_at": "2026-04-30",
-      "raw_content": "[스마트전자약종합지원센터] 2026년 스마트 전자약 사업화 종합 지원 모집\n사업안내 바로가기\n지원분야\n사업화\n대상연령\n전체\n기관구분\n민간\n담당부서\n스마트전자약종합지원센터\n지역\n전국\n접수기간\n2026-04-24 ~ 2026-05-04 23:59\n주관기관명\n건양대학교병원\n대상\n일반기업\n창업업력\n전체\n연락처\n042-600-8679\n스마트전자약종합지원센터2026-0001호\n[스마트전자약종합지원센터] 2026년 스마트 전자약 사업화 종합 지원 모집\n※(유의)해당 공고는 중소벤처기업부와 창업진흥원이 아닌 민간에서 지원하는 사업으로, 신청부터 관리까지 모든 과정을 해당기관에서 전담\n[스마트전자약 사업화 종합지원센터]는 국내 스마트 전자약 산업의 기술 역량을 보유한 기업들이 사업화를 성공적으로 추진할 수 있도록 지원하는 사업입니다\n2026년 04월 24일\n건양대병원 스마트전자약종합지원센터\n신청방법 및 대상\n신청기간\n2026.04.24(금) 00:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t~\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t2026.05.04(월) 23:59\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t까지\n신청방법\n이메일 접수 : kymed050707@gmail.com\n온라인 접수 :\n접수 바로가기\n이메일접수\n신청대상\n국내 스마트 전자약 산업의 기술 역량을 보유한 기업\n제외대상\n아래 내용 중 한개라도 해당하는 경우는 지원 불가\n- 부도, 화의, 법정관리중인 경우\n- 국세 및 지방세 체납중인 경우\n- 금융 불량거래처로 규제중인 경우\n- 수행실적 확인이 불분명하거나 허위 서류를 제출한 경우\n- 허위 또는 그 밖의 부정한 방법으로 신청 서류를 제출한 경우\n- 기타 본 사업 목적 및 지원분야 등으로 적정하지 않다고 판단되는 경우\n신청 시 요청하는 정보(개인정보포함)는 사업운영기관에서 관리되오니 이점 반드시 유의하여 주시기 바랍니다.\n제출서류\n지원 신청서 등\n지원신청서, 개인정보 수집·이용·제공 동의서, 기업소개 및 스마트전자약 세부소개자료(+지원받고자 하는 영역에 대한 설명)\n제출하신 서류는 사업운영기관에서 관리되오니 서류 반환 등 문의는 해당 기관으로 하시기 바랍니다.\n선정절차 및 평가방법\n지원신청 → 선정평가 → 협약체결 → 사업수행 → 최종보고\n지원내용\n안정적인 사업을 위한 신청 분야에 따른 다양한 지원\n문의처\n스마트전자약종합지원센터(kymed050707@gmail.com/042-600-8679)\n자세한 내용은 첨부파일 참조 및 문의처로 문의하여 주시기 바랍니다.\nK-Startup에 공고되는 정보는 해당 기관의 요청에 의해 제공됩니다. 입주, 교육, 사업 신청 시 요청하는 정보(개인정보 포함)는 해당 기관에서 관리 \t되오니\n이점 유의하여 주시기 바랍니다.\n※(유의)해당 공고는 중소벤처기업부와 창업진흥원이 아닌 민간에서 지원하는 사업으로, 신청부터 관리까지 모든 과정을 해당기관에서 전담\n첨부파일 일괄 다운로드\n00. 참여기업 모집 공고.pdf\n바로보기\n다운로드\n01. 시제품 제작 지원 신청서.hwp\n바로보기\n다운로드\n01. 지재권_특허출원 및 등록 지원 신청서.hwp\n바로보기\n다운로드\n02. 개인정보 수집·이용·제공 동의서.hwp\n바로보기\n다운로드\n본 저작물은 창업진흥원(K-Startup)이 게시한 공공누리 제1유형의 저작물이며, 공공데이터포털(www.data.go.kr)에서 공공데이터로 개방중이며 무료로 활용할 수 있습니다.\n사업신청 바로가기\n목록",
-      "raw_fetched_at": "2026-05-01"
-    },
-    {
-      "source": "kstartup",
-      "source_label": "K-Startup",
       "id": "kstartup_177202",
       "pbancSn": "177202",
       "title": "[프론티어랩스 6기] CJ제일제당 협업 스타트업 모집",
@@ -2581,7 +2444,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "structured 완전 매칭 (전국/사업화)",
       "connect": "",
       "classify_evidence": {
@@ -2714,7 +2577,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "인천 매칭 (인천창조경제혁신센터)",
       "connect": "",
       "classify_evidence": {
@@ -2848,7 +2711,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "인천 매칭 (인천창조경제혁신센터)",
       "connect": "",
       "classify_evidence": {
@@ -3363,7 +3226,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177445,
         "integrated": false,
@@ -3840,7 +3703,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "structured 완전 매칭 (전국/사업화)",
       "connect": "",
       "classify_evidence": {
@@ -4310,7 +4173,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "structured 완전 매칭 (전국/사업화)",
       "connect": "",
       "classify_evidence": {
@@ -4439,7 +4302,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "structured 완전 매칭 (전국/사업화)",
       "connect": "",
       "classify_evidence": {
@@ -4537,7 +4400,7 @@
       "deadline": "2026-05-15",
       "detail_url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177404",
       "first_seen": "2026-04-29",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177404,
         "integrated": false,
@@ -4657,7 +4520,7 @@
       "deadline": "2026-05-15",
       "detail_url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=176892",
       "first_seen": "2026-04-29",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 176892,
         "integrated": false,
@@ -5274,7 +5137,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177409,
         "integrated": false,
@@ -5416,7 +5279,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "structured 완전 매칭 (전국/사업화)",
       "connect": "",
       "classify_evidence": {
@@ -5766,7 +5629,7 @@
       "deadline": "2026-05-25",
       "detail_url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177407",
       "first_seen": "2026-04-29",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177407,
         "integrated": false,
@@ -6080,7 +5943,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "structured 완전 매칭 (전국/사업화)",
       "connect": "",
       "classify_evidence": {
@@ -6267,7 +6130,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-05-01",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177423,
         "integrated": false,
@@ -6331,7 +6194,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "structured 완전 매칭 (전국/사업화)",
       "connect": "",
       "classify_evidence": {
@@ -6460,7 +6323,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "structured 완전 매칭 (전국/사업화)",
       "connect": "",
       "classify_evidence": {
@@ -6589,7 +6452,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "structured 완전 매칭 (전국/사업화)",
       "connect": "",
       "classify_evidence": {
@@ -6776,7 +6639,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 176179,
         "integrated": false,
@@ -6840,7 +6703,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "structured 완전 매칭 (전국/융자ㆍ보증)",
       "connect": "",
       "classify_evidence": {
@@ -6928,7 +6791,9 @@
         "tier_logic": "1순위: 5축 모두 green + 강한 긍정 매칭",
         "classify_version": "v8.3"
       },
-      "last_changed_at": "2026-04-30"
+      "last_changed_at": "2026-04-30",
+      "raw_content": "2026년 사회적기업 시설·운영비 지원사업 참여기업 모집(~11/30)\n사업안내 바로가기\n지원분야\n융자ㆍ보증\n대상연령\n만 20세 이상 ~ 만 39세 이하, 만 40세 이상\n기관구분\n민간\n담당부서\n임팩트사업2팀\n지역\n전국\n접수기간\n2026-04-03 ~ 2026-11-30 23:59\n주관기관명\n열매나눔재단\n대상\n일반기업\n창업업력\n2년미만, 3년미만, 5년미만, 7년미만, 10년미만\n연락처\n02-2665-0719\n2026년 사회적기업 시설·운영비 지원사업 참여기업 모집(~11/30)\n※(유의)해당 공고는 중소벤처기업부와 창업진흥원이 아닌 민간에서 지원하는 사업으로, 신청부터 관리까지 모든 과정을 해당기관에서 전담\n사회복지법인 열매나눔재단에서는 2026년 사회적기업 시설 ·운영비 지원사업 참여기업을 모집합니다.\n자세한 내용은 첨부된 공고문을 참조하여 주시기 바라며, 성장과 도약을 준비하는 사회적기업의 많은 관심과 참여 바랍니다.\n2026년 04월 03일\n사회복지법인 열매나눔재단\n신청방법 및 대상\n신청기간\n2026.04.03(금) 09:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t~\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t2026.11.30(월) 23:59\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t까지\n신청방법\n온라인 접수 :\n접수 바로가기\n신청대상\n고용노동부 인증 사회적기업, 지역형 예비사회적기업, 부처형 예비사회적기업, 사회적협동조합\n제외대상\n- 신청일 기준 법인 설립 1년 미만인 기업\n- 전기 재무제표 기준으로 완전자본잠식 상태인 기업\n신청 시 요청하는 정보(개인정보포함)는 사업운영기관에서 관리되오니 이점 반드시 유의하여 주시기 바랍니다.\n제출서류\n신청 제출서류는 공고문을 참조 바랍니다\n제출하신 서류는 사업운영기관에서 관리되오니 서류 반환 등 문의는 해당 기관으로 하시기 바랍니다.\n선정절차 및 평가방법\n서류심사 및 현장실사 후 최종 선정\n지원내용\n기업당 최대 1억 이내 저금리 대출 지원, 컨설팅 지원\n- 최대 1억 이내 대출지원\n단기대출 : 연 2.6%(고정금리), 6개월 거치후 18개월 원리금 균등분할상환\n장기대출 : 연 3.2%(고정금리), 6개월 거치후 54개월 원리금 균등분할상환\n- 컨설팅 지원\n사업 운영에 필요한 금융 및 경영 관련 전문가 컨설팅 제공\n문의처\n열매나눔재단 임팩트사업 2팀\n- 이메일: merry_se@merryyear.org\n- 전화: 02-2038-8508 (상담 가능시간: 평일 9시~12시 / 14시~16시)\n자세한 내용은 첨부파일 참조 및 문의처로 문의하여 주시기 바랍니다.\nK-Startup에 공고되는 정보는 해당 기관의 요청에 의해 제공됩니다. 입주, 교육, 사업 신청 시 요청하는 정보(개인정보 포함)는 해당 기관에서 관리 \t되오니\n이점 유의하여 주시기 바랍니다.\n※(유의)해당 공고는 중소벤처기업부와 창업진흥원이 아닌 민간에서 지원하는 사업으로, 신청부터 관리까지 모든 과정을 해당기관에서 전담\n첨부파일 일괄 다운로드\n붙임1.2026년_사회적기업_시설운영비_지원사업_공고문.pdf\n바로보기\n다운로드\n붙임2.2026년_사회적기업_시설운영비_지원사업_신청서.hwp\n바로보기\n다운로드\n붙임3.개인신용정보_및_기업신용정보의_수집이용제공조회_동의서.hwp\n바로보기\n다운로드\n본 저작물은 창업진흥원(K-Startup)이 게시한 공공누리 제1유형의 저작물이며, 공공데이터포털(www.data.go.kr)에서 공공데이터로 개방중이며 무료로 활용할 수 있습니다.\n사업신청 바로가기\n목록",
+      "raw_fetched_at": "2026-05-05"
     },
     {
       "pbancSn": "176208",
@@ -7024,7 +6889,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 176208,
         "integrated": true,
@@ -7044,7 +6909,9 @@
         "integrated_name": "신개념 세대융합청년창업 지원",
         "apply_online": "https://ccei.creativekorea.or.kr/incheon/custom/notice_view.do?no=36945&rnum=1722&kind=my&sPtime=my",
         "apply_guide": "https://ccei.creativekorea.or.kr/incheon/custom/notice_view.do?no=36945&rnum=1722&kind=my&sPtime=my"
-      }
+      },
+      "raw_content": "2026 신개념 세대융합 청년창업 지원 멘티 상시 모집\n사업안내 바로가기\n지원분야\n멘토링ㆍ컨설팅ㆍ교육\n대상연령\n만 20세 미만, 만 20세 이상 ~ 만 39세 이하\n기관구분\n공공기관\n담당부서\n창업생태계팀\n지역\n인천광역시\n접수기간\n2026-02-04 ~ 2026-11-30 00:00\n주관기관명\n인천창조경제혁신센터\n대상\n전체\n창업업력\n예비창업자, 1년미만, 2년미만, 3년미만\n연락처\n032-458-5036\n2026 신개념 세대융합 청년창업 지원 멘티 상시 모집\n중장년 전문가들의 경험과 노하우를 활용하여, 인천광역시 청년 창업가들이 기.술.창.업 과정에서 마주하는 어려움을 해결할 수 있도록 지원하는 이번 모집에 많은 참여바랍니다.\n2026년 02월 04일\n인천창조경제혁신센터\n신청방법 및 대상\n신청기간\n2026.02.04(수) 14:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t~\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t2026.11.30(월) 00:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t까지\n신청방법\n온라인 접수 :\n접수 바로가기\n신청대상\n- 연령: 만39세 이하 (1987년 1월 1일 이후 출생)\n- 기업업력: 예비창업자 또는 3년 이내 (2023년 2월 이후 창업) 창업자\n(예비창업자) 신청자 명의의 사업자 등록이 없는 자로 주민등록상 거주지가 인천인 자\n(기창업자) 사업자등록증 기준, 사업장 소재지가 인천에 위치한 3년 이내 창업자\n제외대상\n🚫 지원 제외 업종\n소상공인 분야 (예: 도소매업, 유통업, 요식업, 미용업 프랜차이즈 등)\n신청 시 요청하는 정보(개인정보포함)는 사업운영기관에서 관리되오니 이점 반드시 유의하여 주시기 바랍니다.\n제출서류\n신청서 작성(https://forms.gle/a5T2CoFCQoAVULhe9)\n제출하신 서류는 사업운영기관에서 관리되오니 서류 반환 등 문의는 해당 기관으로 하시기 바랍니다.\n선정절차 및 평가방법\n신청서 작성(https://forms.gle/a5T2CoFCQoAVULhe9) ▶ 전문가 매칭 (일정조율) ▶ 멘토링 진행 ▶ 만족도 설문\n교육안내\n- 창업·경영, 투자, 법률, 지식재산권, 세무·회계, 글로벌, 규제 등\n상기 일정은 사업운영기관의 내부사정으로 변경될 수 있습니다.\n문의처\n인천창조경제혁신센터 ☎ 032-458-5036\n자세한 내용은 첨부파일 참조 및 문의처로 문의하여 주시기 바랍니다.\nK-Startup에 공고되는 정보는 해당 기관의 요청에 의해 제공됩니다. 입주, 교육, 사업 신청 시 요청하는 정보(개인정보 포함)는 해당 기관에서 관리 \t되오니\n이점 유의하여 주시기 바랍니다.\n첨부파일 일괄 다운로드\n붙임1. [공고] 2026년 신개념 세대융합 청년 창업지원 청년창업자(멘티) 모집 공고.hwp\n바로보기\n다운로드\n붙임2. 2026년 신개념 세대융합 청년 창업지원 멘티 상시모집.jpg\n바로보기\n다운로드\n붙임3. 2026년 신개념 세대융합 청년 창업지원 멘티 상시모집.txt\n바로보기\n다운로드\n본 저작물은 창업진흥원(K-Startup)이 게시한 공공누리 제1유형의 저작물이며, 공공데이터포털(www.data.go.kr)에서 공공데이터로 개방중이며 무료로 활용할 수 있습니다.\n사업신청 바로가기\n목록",
+      "raw_fetched_at": "2026-05-05"
     },
     {
       "source": "bizinfo",
@@ -7120,7 +6987,9 @@
       "rationale_short": "허파랑 개인 명의 추천 / 레이어: 🌉브리지 / 경로: strong_trigger / source: bizinfo / 🌉 시제품",
       "nogo_match": null,
       "source_priority": 1.0,
-      "last_seen": "2026-04-29"
+      "last_seen": "2026-04-29",
+      "raw_content": "Error>상세화면\n본문 바로가기\n주메뉴 바로가기\n에러가 발생했습니다!",
+      "raw_fetched_at": "2026-05-05"
     },
     {
       "source": "bizinfo",
@@ -7194,7 +7063,9 @@
       "rationale_short": "허파랑 개인 명의 추천 / 레이어: 🌉브리지 / 경로: strong_trigger / source: bizinfo / 🌉 테크",
       "nogo_match": null,
       "source_priority": 1.0,
-      "last_seen": "2026-04-29"
+      "last_seen": "2026-04-29",
+      "raw_content": "Error>상세화면\n본문 바로가기\n주메뉴 바로가기\n에러가 발생했습니다!",
+      "raw_fetched_at": "2026-05-05"
     },
     {
       "source": "bizinfo",
@@ -7270,7 +7141,9 @@
       "rationale_short": "허파랑 개인 명의 추천 / 레이어: 🌉브리지 / 경로: strong_trigger / source: bizinfo / 🌉 콘텐츠",
       "nogo_match": null,
       "source_priority": 1.0,
-      "last_seen": "2026-04-29"
+      "last_seen": "2026-04-29",
+      "raw_content": "Error>상세화면\n본문 바로가기\n주메뉴 바로가기\n에러가 발생했습니다!",
+      "raw_fetched_at": "2026-05-05"
     },
     {
       "source": "kstartup",
@@ -7310,7 +7183,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "structured 완전 매칭 (전국/사업화)",
       "connect": "",
       "classify_evidence": {
@@ -7397,7 +7270,9 @@
         "tier_logic": "1순위: 5축 모두 green + 강한 긍정 매칭",
         "classify_version": "v8.3"
       },
-      "last_changed_at": "2026-04-30"
+      "last_changed_at": "2026-04-30",
+      "raw_content": "2026년 소상공인 투자연계 지원사업 립스 프로그램 참여 소상공인 모집 공고\n사업안내 바로가기\n지원분야\n사업화\n대상연령\n전체\n기관구분\n공공기관\n담당부서\n기업가형소상공인육성팀\n지역\n전국\n접수기간\n2026-04-01 ~ 2026-12-31 18:00\n주관기관명\n소상공인시장진흥공단\n대상\n전체\n창업업력\n2년미만, 3년미만, 5년미만, 7년미만, 10년미만\n연락처\n1357\n2026년 소상공인 투자연계 지원사업 립스 프로그램 참여 소상공인 모집 공고\n민간투자와 연계하여 생활기반(비기술)의 창의적 아이템을 보유한 소상공인을 기업가로 성장 및 도약을 지원하는「'26년 립스(LIPS)프로그램」사업 참여 소상공인을 다음과 같이 모집합니다.\n2026년 03월 27일\n소상공인시장진흥공단\n신청방법 및 대상\n신청기간\n2026.04.01(수) 10:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t~\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t2026.12.31(목) 18:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t까지\n신청방법\n온라인 접수 :\n접수 바로가기\n신청대상\n소상공인\n제외대상\n업력 1년미만 및 업력 7년이상 소상공인 제외\n*공고문 참고\n신청 시 요청하는 정보(개인정보포함)는 사업운영기관에서 관리되오니 이점 반드시 유의하여 주시기 바랍니다.\n제출서류\n사업계획서, 선투자 추천서 등\n자세한 내용은 공고문 참고\n제출하신 서류는 사업운영기관에서 관리되오니 서류 반환 등 문의는 해당 기관으로 하시기 바랍니다.\n선정절차 및 평가방법\n서류평가 및 발표평가\n자세한 내용은 공고문 참고\n지원내용\n사업화자금 및 정책자금 지원\n자세한 내용은 공고문 참고\n문의처\n주관기관 연락처\n자세한 내용은 공고문 참고\n자세한 내용은 첨부파일 참조 및 문의처로 문의하여 주시기 바랍니다.\nK-Startup에 공고되는 정보는 해당 기관의 요청에 의해 제공됩니다. 입주, 교육, 사업 신청 시 요청하는 정보(개인정보 포함)는 해당 기관에서 관리 \t되오니\n이점 유의하여 주시기 바랍니다.\n첨부파일 일괄 다운로드\n[별첨] 2026년 립스(LIPS) 운영사 현황.hwp\n바로보기\n다운로드\n2026년 소상공인 투자연계 지원사업 립스(LIPS) 프로그램 소상공인 모집 공고.hwp\n바로보기\n다운로드\n[서식] LIPS 프로그램 운영사 투자제안서 및 사업계획서.hwp\n바로보기\n다운로드\n본 저작물은 창업진흥원(K-Startup)이 게시한 공공누리 제1유형의 저작물이며, 공공데이터포털(www.data.go.kr)에서 공공데이터로 개방중이며 무료로 활용할 수 있습니다.\n사업신청 바로가기\n목록",
+      "raw_fetched_at": "2026-05-05"
     },
     {
       "pbancSn": "176076",
@@ -7495,7 +7370,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 176076,
         "integrated": false,
@@ -7515,7 +7390,9 @@
         "integrated_name": "2026년 팁스&#40;TIPS&#41; 창업기업 지원계획 수정 공고",
         "apply_online": "K스타트업 &#40; www.k-startup.go.kr&#41; 사이트 온라인 신청",
         "apply_guide": ""
-      }
+      },
+      "raw_content": "2026년 팁스(TIPS) 창업기업 지원계획 수정 공고\n지원분야\n사업화\n대상연령\n전체\n기관구분\n공공기관\n담당부서\n민관협력실\n지역\n전국\n접수기간\n2026-03-19 ~ 2026-12-31 18:00\n주관기관명\n창업진흥원\n대상\n전체\n창업업력\n전체\n연락처\n1357\n중소벤처기업부 공고 제2026-188호\n2026년 팁스(TIPS) 창업기업 지원계획 수정 공고\n2026년 팁스(TIPS) 창업기업 지원계획을 다음과 같이 수정 공고하오니, 프로그램에 참여를 희망하는 창업기업과 운영사는 참고하시기 바랍니다.\n2026년 03월 19일\n중소벤처기업부 장관\n공고 수정 내용\n[딥테크 트랙]  운영사 추천자격 변경\n신청방법 및 대상\n신청기간\n2026.03.19(목) 09:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t~\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t2026.12.31(목) 18:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t까지\n신청방법\n온라인 접수 :\n접수 바로가기\n신청대상\n* 팁스(R&D) : 팁스 운영사로부터 투자 및 추천을 받은 (예비)창업기업\n* 딥테크팁스(R&D) : 팁스 일반트랙 최종평가 결과 '완료' 판정을 받은 '12대 신산업분야' 창업기업\n* 연계사업(비R&D)-창업사업화, 해외마케팅 : '25년까지 팁스(TIPS) R&D(일반,딥테크, 글로벌)에 협약(완료)한 창업기업\n제외대상\n공고문 및 첨부파일 확인\n신청 시 요청하는 정보(개인정보포함)는 사업운영기관에서 관리되오니 이점 반드시 유의하여 주시기 바랍니다.\n제출서류\n공고문 및 첨부파일 확인\n제출하신 서류는 사업운영기관에서 관리되오니 서류 반환 등 문의는 해당 기관으로 하시기 바랍니다.\n선정절차 및 평가방법\n공고문 및 첨부파일 확인\n지원내용\n세부사업 별 지원 내용\n*  팁스,딥테크팁스(R&D) : 지원규모 총 1,624억원\n-  팁스 : 지원기간 24개월, 지원한도 최대 8억원\n- 딥테크팁스 :  지원기간 36개월, 지원한도 최대 15억원\n* 연계사업(비R&D)-창업사업화, 해외마케팅  : 지원규모 총 650억원\n-  지원기간 각 10개월, 최대 1.5억원(합계 최대 3억원)\n문의처\n세부사업 별 문의처\n* 일반트랙\n- (업무지원기관) 한국엔젤투자협회 평가팀 02-3440-7421\n- (업무지원기관)한국벤처캐피탈협회 팁스운영팀 02-3017-7026,7029\n* 딥테크트랙\n- (전문기관)중소기업기술정보진흥원 스타트업팁스실 (국번없이)1357\n* 연계사업(창업사업화, 해외마케팅)\n-  (주관기관) 한국엔젤투자협회 연계사업팀 02-3440-7421, 7443\n-  (주관기관) 한국벤처캐피탈협회 팁스운영팀 02-3017-7027,7028\n-  (사업화 전문기관)창업진흥원 민관협력실 (국번없이)1357\n자세한 내용은 첨부파일 참조 및 문의처로 문의하여 주시기 바랍니다.\nK-Startup에 공고되는 정보는 해당 기관의 요청에 의해 제공됩니다. 입주, 교육, 사업 신청 시 요청하는 정보(개인정보 포함)는 해당 기관에서 관리 \t되오니\n이점 유의하여 주시기 바랍니다.\n첨부파일 일괄 다운로드\n2026년 팁스 창업기업 지원계획 수정 공고.hwpx\n바로보기\n다운로드\n[붙임1] 팁스 운영사 현황.hwp\n바로보기\n다운로드\n[붙임2] 창업기업 확인에 관한 유의사항.hwp\n바로보기\n다운로드\n[붙임3] 팁스 신청방법, 신청제한 및 유의사항.hwp\n바로보기\n다운로드\n[붙임4] 팁스 비R&D 연계사업(창업사업화·해외마케팅) 관련 안내.hwp\n바로보기\n다운로드\n본 저작물은 창업진흥원(K-Startup)이 게시한 공공누리 제1유형의 저작물이며, 공공데이터포털(www.data.go.kr)에서 공공데이터로 개방중이며 무료로 활용할 수 있습니다.\n사업신청 바로가기\n목록",
+      "raw_fetched_at": "2026-05-05"
     },
     {
       "pbancSn": "175783",
@@ -7610,7 +7487,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 175783,
         "integrated": false,
@@ -7630,7 +7507,9 @@
         "integrated_name": "2026년 중앙부처 및 지자체 창업지원사업 통합공고",
         "apply_online": "",
         "apply_guide": ""
-      }
+      },
+      "raw_content": "2026년 중앙부처 및 지자체 창업지원사업 통합공고\n지원분야\n사업화\n대상연령\n전체\n기관구분\n공공기관\n담당부서\n사업관리실\n지역\n전국\n접수기간\n2025-12-19 ~ 2026-12-31 23:59\n주관기관명\n창업진흥원\n대상\n전체\n창업업력\n전체\n연락처\n1357\n2026년 중앙부처 및 지자체 창업지원사업 통합공고\n「중소기업창업 지원법」 제14조(창업정책정보의 수집 및 제공)에 따라 2026년 창업지원사업을 공고하오니, 창업기업 및 예비창업자의 적극적인 참여를 바랍니다.\n2025년 12월 19일\n중소벤처기업부장관\n신청방법 및 대상\n신청기간\n2025.12.19(금) 13:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t~\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t2026.12.31(목) 23:59\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t까지\n신청방법\n각 지원사업 모집 공고문 참고\n신청대상\n각 지원사업 모집 공고문 참고\n제외대상\n각 지원사업 모집 공고문 참고\n신청 시 요청하는 정보(개인정보포함)는 사업운영기관에서 관리되오니 이점 반드시 유의하여 주시기 바랍니다.\n제출서류\n각 지원사업 모집 공고문 참고\n제출하신 서류는 사업운영기관에서 관리되오니 서류 반환 등 문의는 해당 기관으로 하시기 바랍니다.\n선정절차 및 평가방법\n각 지원사업 모집 공고문 참고\n지원내용\n각 지원사업 모집 공고문 참고\n안내사항\n하단의 첨부파일 참고 부탁드리며, 안내책자 디자인은 변경될 수 있음을 안내드립니다.\n상기 일정은 사업운영기관의 내부사정으로 변경될 수 있습니다.\n문의처\n각 지원사업 모집 공고문 참고\n자세한 내용은 첨부파일 참조 및 문의처로 문의하여 주시기 바랍니다.\nK-Startup에 공고되는 정보는 해당 기관의 요청에 의해 제공됩니다. 입주, 교육, 사업 신청 시 요청하는 정보(개인정보 포함)는 해당 기관에서 관리 \t되오니\n이점 유의하여 주시기 바랍니다.\n첨부파일 일괄 다운로드\n★(공고문) 2026년도 중앙부처 및 지자체 창업지원사업 통합공고문(제2025-648호, 2025.12.19.).pdf\n바로보기\n다운로드\n★(공고문) 2026년도 중앙부처 및 지자체 창업지원사업 통합공고문(제2025-648호, 2025.12.19.).hwpx\n바로보기\n다운로드\n(안내책자) 2026년도 중앙부처 및 지자체 창업지원사업 통합공고.pdf\n바로보기\n다운로드\n본 저작물은 창업진흥원(K-Startup)이 게시한 공공누리 제1유형의 저작물이며, 공공데이터포털(www.data.go.kr)에서 공공데이터로 개방중이며 무료로 활용할 수 있습니다.\n목록",
+      "raw_fetched_at": "2026-05-05"
     },
     {
       "source": "bizinfo",
@@ -8964,89 +8843,6 @@
       "last_seen": "2026-04-29"
     },
     {
-      "source": "bizinfo",
-      "source_label": "중소벤처기업부 BIZINFO (기업마당)",
-      "id": "bizinfo_PBLN_000000000121196",
-      "pbancSn": null,
-      "title": "2026년 섬유패션 수요-제조간 AI활용 디지털 공급망 구축 사업 수혜기업 모집 공고",
-      "agency": "산업통상부 / 한국아웃도어스포츠산업협회",
-      "url": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000121196",
-      "deadline": "2026-05-04",
-      "structured": {
-        "pblancNm": "2026년 섬유패션 수요-제조간 AI활용 디지털 공급망 구축 사업 수혜기업 모집 공고",
-        "pblancUrl": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000121196",
-        "pblancId": "PBLN_000000000121196",
-        "jrsdInsttNm": "산업통상부",
-        "excInsttNm": "한국아웃도어스포츠산업협회",
-        "bsnsSumryCn": "<p>한국아웃도어스포츠산업협회와 KOTITI 시험연구원은 산업통상부 섬유패션산업활성화기반마련사업 중 '섬유패션 수요-제조간 AI활용 디지털 공급망 구축 사업'의 수행기관으로서 다음과 같이 수혜기업 모집을 공고하고자 합니다.</p><p><br></p><p>☞&nbsp;의류, 섬유 액세서리 완제품 생산이 가능한 국내 제조기업</p><p><br></p><p style=\"line-height: 1.8;\">☞ 사업화(제품 기획, 시제품 개발 및 생산연계를 위한 비용) 지원</p><p style=\"line-height: 1.8;\">-&nbsp;시제품 및 생산연계,&nbsp;제조 DX 및 생산관리,&nbsp;매칭 플랫폼, 홍보ㆍ마케팅, 역량강화 지원</p><p style=\"line-height: 1.8;\">※ 자세한 지원내용 공고문 참조</p>",
-        "pldirSportRealmLclasCodeNm": "기술",
-        "creatPnttm": "2026-04-23 13:33:19",
-        "reqstBeginEndDe": "2026-04-20 ~ 2026-05-04",
-        "updtPnttm": "2026-04-24 16:53:38",
-        "trgetNm": "중소기업",
-        "inqireCo": 485,
-        "flpthNm": "https://www.bizinfo.go.kr/cmm/fms/getImageFile.do?atchFileId=FILE_000000000752611&fileSn=0@https://www.bizinfo.go.kr/cmm/fms/getImageFile.do?atchFileId=FILE_000000000752611&fileSn=1@https://www.bizinfo.go.kr/cmm/fms/getImageFile.do?atchFileId=FILE_000000000752611&fileSn=2@https://www.bizinfo.go.kr/cmm/fms/getImageFile.do?atchFileId=FILE_000000000752611&fileSn=3",
-        "fileNm": "[서식 제1-1호] 2026 섬유패션 수요-제조간 AI활용 디지털 공급망 구축 수혜기업 지원신청서(컨소시엄).hwp@[서식 제1-2호] 2026 섬유패션 수요-제조간 AI활용 디지털 공급망 구축 수혜기업 지원신청서(성장유망_소형).hwp@[서식 제2호] 개인정보활용동의서.hwp@2026 섬유패션 수요-제조간 AI활용 디지털 공급망 구축 참여기업 모집 포스터.jpg",
-        "printFlpthNm": "https://www.bizinfo.go.kr/cmm/fms/getImageFile.do?atchFileId=FILE_000000000752610&fileSn=1",
-        "printFileNm": "2026년 섬유패션 AI활용 디지털 공급망 구축 사업 모집공고(~5.4).hwp",
-        "hashtags": "기술,내수,서울,부산,대구,인천,광주,대전,울산,세종,경기,강원,충북,충남,전북,전남,경북,경남,제주,생산연계,산업통상부,2026,한국아웃도어스포츠산업협회,액세서리,생산관리,의류,섬유,역량강화,사업화,홍보,제조업,시제품,마케팅",
-        "reqstMthPapersCn": "이메일 접수\r\n- 의류 : 한국아웃도어스포츠산업협회 koia@koia.org\r\n- 섬유 액세서리 : KOTITI 시험연구원 kotitiedu@kr.kotiti-global.com",
-        "refrncNm": "한국아웃도어스포츠산업협회 02-3454-1614, 02-3454-1612, koia@koia.org / KOTITI 시험연구원 02-3451-7484, 02-3451-7483, kotitiedu@kr.kotiti-global.com",
-        "rceptEngnHmpgUrl": null
-      },
-      "tier": "yellow",
-      "best_entity": "heoparang_personal",
-      "best_tier": "yellow",
-      "domain": {
-        "whitelisted": true,
-        "bridgeable": true,
-        "hit_layers": [],
-        "l0_generic": [
-          "플랫폼"
-        ],
-        "bridge_hits": [
-          "시제품",
-          "사업화",
-          "플랫폼",
-          "디지털",
-          "AI",
-          "마케팅"
-        ],
-        "negative_hard": [],
-        "negative_soft": [],
-        "match_path": "L0_직접"
-      },
-      "entities": {
-        "heoparang_personal": {
-          "tier": "yellow",
-          "reason": "지역 매칭 (인천) + L0 플랫폼 직접 매칭 (플랫폼)",
-          "audit_flags": [],
-          "strong_hit": null,
-          "match_path": "L0_직접"
-        },
-        "xcom_corp": {
-          "tier": "yellow",
-          "reason": "지역 매칭 (인천) + L0 플랫폼 직접 매칭 (플랫폼)",
-          "audit_flags": [],
-          "strong_hit": null,
-          "match_path": "L0_직접"
-        },
-        "younglim_daegu": {
-          "tier": "yellow",
-          "reason": "지역 매칭 (대구) + L0 플랫폼 직접 매칭 (플랫폼)",
-          "audit_flags": [],
-          "strong_hit": null,
-          "match_path": "L0_직접"
-        }
-      },
-      "rationale_short": "허파랑 개인 명의 추천 / 레이어: L0 / 경로: L0_직접 / source: bizinfo",
-      "nogo_match": null,
-      "source_priority": 1.0,
-      "last_seen": "2026-04-29",
-      "raw_content": "Error>상세화면\n본문 바로가기\n주메뉴 바로가기\n에러가 발생했습니다!",
-      "raw_fetched_at": "2026-05-01"
-    },
-    {
       "source": "kstartup",
       "source_label": "K-Startup",
       "id": "kstartup_177224",
@@ -9084,7 +8880,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)",
       "connect": "",
       "classify_evidence": {
@@ -9219,7 +9015,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "2순위: 모든 축 green/yellow, 중립 매칭 — 직접 지원 가능",
       "connect": "",
       "classify_evidence": {
@@ -9345,7 +9141,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)",
       "connect": "",
       "classify_evidence": {
@@ -9472,7 +9268,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "2순위: 모든 축 green/yellow, 중립 매칭 — 직접 지원 가능",
       "connect": "",
       "classify_evidence": {
@@ -10848,7 +10644,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)",
       "connect": "",
       "classify_evidence": {
@@ -10977,7 +10773,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (전국/글로벌)",
       "connect": "",
       "classify_evidence": {
@@ -12389,7 +12185,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (전국/기술개발(R&amp;D))",
       "connect": "",
       "classify_evidence": {
@@ -12582,7 +12378,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177444,
         "integrated": false,
@@ -12699,7 +12495,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177411,
         "integrated": false,
@@ -12761,7 +12557,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (전국/창업교육)",
       "connect": "",
       "classify_evidence": {
@@ -12892,7 +12688,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)",
       "connect": "",
       "classify_evidence": {
@@ -13032,7 +12828,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "2순위: 모든 축 green/yellow, 중립 매칭 — 직접 지원 가능",
       "connect": "",
       "classify_evidence": {
@@ -13717,7 +13513,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-05-01",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177451,
         "integrated": true,
@@ -13748,7 +13544,7 @@
       "deadline": "2026-05-12",
       "detail_url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177408",
       "first_seen": "2026-04-29",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177408,
         "integrated": true,
@@ -13899,7 +13695,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)",
       "connect": "",
       "classify_evidence": {
@@ -14026,7 +13822,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (전국/창업교육)",
       "connect": "",
       "classify_evidence": {
@@ -14541,7 +14337,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177425,
         "integrated": false,
@@ -14658,7 +14454,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177424,
         "integrated": false,
@@ -15017,7 +14813,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177443,
         "integrated": false,
@@ -15081,7 +14877,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "2순위: 모든 축 green/yellow, 중립 매칭 — 직접 지원 가능",
       "connect": "",
       "classify_evidence": {
@@ -15215,7 +15011,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (청년창업)",
       "connect": "",
       "classify_evidence": {
@@ -15650,7 +15446,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177381,
         "integrated": false,
@@ -15712,7 +15508,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (전국/인력)",
       "connect": "",
       "classify_evidence": {
@@ -15841,7 +15637,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "인천 매칭 (남동구)",
       "connect": "",
       "classify_evidence": {
@@ -16225,7 +16021,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (전국/시설ㆍ공간ㆍ보육)",
       "connect": "",
       "classify_evidence": {
@@ -16407,7 +16203,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177422,
         "integrated": false,
@@ -16522,7 +16318,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-05-01",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177470,
         "integrated": false,
@@ -16640,7 +16436,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177426,
         "integrated": true,
@@ -16702,7 +16498,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "2순위: 모든 축 green/yellow, 중립 매칭 — 직접 지원 가능",
       "connect": "",
       "classify_evidence": {
@@ -16925,7 +16721,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)",
       "connect": "",
       "classify_evidence": {
@@ -17990,7 +17786,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 176729,
         "integrated": false,
@@ -18107,7 +17903,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-05-01",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177467,
         "integrated": true,
@@ -18169,7 +17965,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "2순위: 모든 축 green/yellow, 중립 매칭 — 직접 지원 가능",
       "connect": "",
       "classify_evidence": {
@@ -18553,7 +18349,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)",
       "connect": "",
       "classify_evidence": {
@@ -18930,7 +18726,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)",
       "connect": "",
       "classify_evidence": {
@@ -19114,7 +18910,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-05-01",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177449,
         "integrated": false,
@@ -19145,7 +18941,7 @@
       "deadline": "2026-06-04",
       "detail_url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177387",
       "first_seen": "2026-04-29",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177387,
         "integrated": true,
@@ -19376,7 +19172,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (전국/판로ㆍ해외진출)",
       "connect": "",
       "classify_evidence": {
@@ -19806,7 +19602,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 175833,
         "integrated": false,
@@ -20073,7 +19869,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (전국/인력)",
       "connect": "",
       "classify_evidence": {
@@ -20259,7 +20055,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 176296,
         "integrated": true,
@@ -20401,7 +20197,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (전국/시설ㆍ공간ㆍ보육)",
       "connect": "",
       "classify_evidence": {
@@ -20569,7 +20365,9 @@
       "rationale_short": "허파랑 개인 명의 추천 / 레이어: L0 / 경로: L0_직접 / source: bizinfo",
       "nogo_match": null,
       "source_priority": 1.0,
-      "last_seen": "2026-04-29"
+      "last_seen": "2026-04-29",
+      "raw_content": "Error>상세화면\n본문 바로가기\n주메뉴 바로가기\n에러가 발생했습니다!",
+      "raw_fetched_at": "2026-05-05"
     },
     {
       "pbancSn": "176391",
@@ -20662,7 +20460,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 176391,
         "integrated": false,
@@ -20682,7 +20480,9 @@
         "integrated_name": "창업지원사업 예비위원단 재모집 &#40;신산업분야&#41;",
         "apply_online": "https://pms.k-startup.go.kr/biz/",
         "apply_guide": ""
-      }
+      },
+      "raw_content": "창업지원사업 예비위원단 재모집 (신산업분야)\n지원분야\n멘토링ㆍ컨설팅ㆍ교육\n대상연령\n전체\n기관구분\n공공기관\n담당부서\n사업관리실\n지역\n전국\n접수기간\n2026-02-23 ~ 2026-11-30 18:00\n주관기관명\n창업진흥원\n대상\n전체\n창업업력\n전체\n연락처\n1357\n창업지원사업 예비위원단 재모집 (신산업분야)\n창업진흥원에서는 딥테크 창업기업 육성 정책에 따라 신산업 분야 사업 평가 등에 참여할 '예비위원단'을  재모집하고 있으니, 관심 있는 분들의 많은 신청 바랍니다.\n2026년 02월 23일\n창업진흥원\n신청방법 및 대상\n신청기간\n2026.02.23(월) 17:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t~\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t2026.11.30(월) 18:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t까지\n신청방법\n온라인 접수 :\n접수 바로가기\n신청대상\n신산업 분야에서 일정 경력이상을 보유하였거나 전문성을 지니고 있는자로, 아래 자격기준 중 한가지 이상 충족하는자\n- 학계 : 해당 분야에 관한 전문지식이 있는 조교수 이상의 대학교수 등\n- 산업계ㆍ연구계 : 박사학위 소지자, 석사학위 소지자로 전문분야 5년이상 경력자, 학사학위 소지자로 전문분야 7년이상 경력자 등\n- 공무원 경력자 : 5급 또는 이에 상당하는 직급 이상의 공무원 등\n- 기술사, 변리사, 기술지도사, 경영지도사, 공인회계사, 세무사, 변호사, 노무사 등 기술 및 경영 분야 전문가\n- 전문분야에서 10년 이상의 실무 경험이 있거나 5년 이상 연구개발 경력이 있는 자 등\n* 자세한 신청 자격기준은 '[붙임1] 신산업 분야 예비위원 공개모집 안내문' 참고\n제외대상\n- 법 제63조제1항 각 호 중 어느 하나에 해당하는 사유로 지원사업의 참여제한을 받았거나 받고 있는 경우\n- 현직 중소벤처기업부(소속기관을 포함한다) 및 전문기관 소속 임직원\n신청 시 요청하는 정보(개인정보포함)는 사업운영기관에서 관리되오니 이점 반드시 유의하여 주시기 바랍니다.\n제출서류\n① (중요) 경력기술서 , ② 증명사진, ③ 통장사본  ④ 자격 증빙자료\n(필수) 자격기준 별 증빙자료는 신청일 기준 3개월 이내 발급된 자료\n- 첨부파일 (붙임2) 신산업 분야 관련 경력 기술서\n- 증명사진 : 신청자의 얼굴 확인이 명확하게 가능한 증명사진\n- 통장사본 : 평가위원회 등 활동 후 수당을 지급 받을 본인 '개인명의' 통장\n* 사업자통장(개인ㆍ법인)은 제출불가\n- 자격 증빙자료 : 경력ㆍ재직증명서, 건강보험자격득실확인서, 사업자등록증 법인 등기부등본, 학위증명서, 자격증, 전문가등록증 등\n제출하신 서류는 사업운영기관에서 관리되오니 서류 반환 등 문의는 해당 기관으로 하시기 바랍니다.\n선정절차 및 평가방법\n예비위원 신청 → 자격요건 및 전문성 검증 → 예비위원단 등록(선정) → 위촉 및 활동\n* 예비위원 신청관련 세부방법은 '[붙임3] 신산업분야 예비위원 신청 가이드' 참고\n지원내용\n창업지원사업 예비위원단\n'예비위원단'에 등록될 시, 창업지원사업 평가 및 사업 운영 관련 심의ㆍ의결 등의 활동을 수행하게 됩니다.\n문의처\n국번없이 1357\n자세한 내용은 첨부파일 참조 및 문의처로 문의하여 주시기 바랍니다.\nK-Startup에 공고되는 정보는 해당 기관의 요청에 의해 제공됩니다. 입주, 교육, 사업 신청 시 요청하는 정보(개인정보 포함)는 해당 기관에서 관리 \t되오니\n이점 유의하여 주시기 바랍니다.\n첨부파일 일괄 다운로드\n[붙임1] 신산업 분야 예비위원단 재모집 안내문.pdf\n바로보기\n다운로드\n[붙임2] 신산업 분야 관련 경력기술서.hwpx\n바로보기\n다운로드\n[붙임3] 신산업분야 예비위원 신청 가이드.pdf\n바로보기\n다운로드\n본 저작물은 창업진흥원(K-Startup)이 게시한 공공누리 제1유형의 저작물이며, 공공데이터포털(www.data.go.kr)에서 공공데이터로 개방중이며 무료로 활용할 수 있습니다.\n사업신청 바로가기\n목록",
+      "raw_fetched_at": "2026-05-05"
     },
     {
       "source": "bizinfo",
@@ -20759,7 +20559,9 @@
       "rationale_short": "허파랑 개인 명의 추천 / 레이어: 결혼준비 / 경로: L1_직접 / source: bizinfo",
       "nogo_match": null,
       "source_priority": 1.0,
-      "last_seen": "2026-04-29"
+      "last_seen": "2026-04-29",
+      "raw_content": "Error>상세화면\n본문 바로가기\n주메뉴 바로가기\n에러가 발생했습니다!",
+      "raw_fetched_at": "2026-05-05"
     },
     {
       "source": "kstartup",
@@ -20799,7 +20601,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)",
       "connect": "",
       "classify_evidence": {
@@ -20886,7 +20688,9 @@
         "tier_logic": "2순위: 모든 축 green/yellow, 검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)",
         "classify_version": "v8.3"
       },
-      "last_changed_at": "2026-04-30"
+      "last_changed_at": "2026-04-30",
+      "raw_content": "2026년 스타트업  원스톱 지원센터 참여기업 모집공고\n사업안내 바로가기\n지원분야\n멘토링ㆍ컨설팅ㆍ교육\n대상연령\n전체\n기관구분\n공공기관\n담당부서\n창업진흥원 원스톱지원실\n지역\n전국\n접수기간\n2026-04-22 ~ 2026-12-31 18:00\n주관기관명\n창업진흥원\n대상\n전체\n창업업력\n전체\n연락처\n0444101744\n중소벤처기업부 공고 제2026-290호\n2026년 스타트업  원스톱 지원센터 참여기업 모집공고\n예비창업자 및 창업기업의 애로해소 지원을 위한 「2026년 스타트업 원스톱 지원센터 」지원 계획을 다음과 같이 공고합니다.\n2026년 04월 22일\n중소벤처기업부장관\n신청방법 및 대상\n신청기간\n2026.04.22(수) 20:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t~\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t2026.12.31(목) 18:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t까지\n신청방법\n방문 접수 : 17개 창조경제혁신센터\n온라인 접수 :\n접수 바로가기\n신청대상\n기술창업기반 예비창업자 및 창업기업\n제외대상\n공고문 참고\n신청 시 요청하는 정보(개인정보포함)는 사업운영기관에서 관리되오니 이점 반드시 유의하여 주시기 바랍니다.\n제출서류\n사업신청서, 개인정보 수집이용 동의서\n신청 시 온라인 작성\n사업자등록증 또는 법인등기부등본\n개인사업자일 경우 : 사업자등록증\n법인사업자일 경우 : 법인등기부등본\n(권장) 창업지원사업 선정확인서 등 사업내용 참고자료\n제출하신 서류는 사업운영기관에서 관리되오니 서류 반환 등 문의는 해당 기관으로 하시기 바랍니다.\n선정절차 및 평가방법\n상담 신청하기\n요건검토\n지원대상 신청자격 요검 검토\n전문가 매칭\n매칭 전문 약정 체결\n자문 범위, 답변 기한, 약정 금액(지원한도 내)\n자문 및 검토\n교육안내\n스타트업 원스톱 지원센터 내 이용매뉴얼 참고\n상기 일정은 사업운영기관의 내부사정으로 변경될 수 있습니다.\n문의처\n창업진흥원 원스톱지원실\n044-410-1744,1747,1748,1749 / onestop@kised.or.kr\n17개 창조경제혁신센터 내 원스톱지원실\n자세한 내용은 첨부파일 참조 및 문의처로 문의하여 주시기 바랍니다.\nK-Startup에 공고되는 정보는 해당 기관의 요청에 의해 제공됩니다. 입주, 교육, 사업 신청 시 요청하는 정보(개인정보 포함)는 해당 기관에서 관리 \t되오니\n이점 유의하여 주시기 바랍니다.\n첨부파일 일괄 다운로드\n2026년 스타트업 원스톱 지원센터 공고문.hwpx\n바로보기\n다운로드\n2026년 스타트업 원스톱 지원센터 공고문.pdf\n바로보기\n다운로드\n본 저작물은 창업진흥원(K-Startup)이 게시한 공공누리 제1유형의 저작물이며, 공공데이터포털(www.data.go.kr)에서 공공데이터로 개방중이며 무료로 활용할 수 있습니다.\n사업신청 바로가기\n목록",
+      "raw_fetched_at": "2026-05-05"
     },
     {
       "source": "kstartup",
@@ -20926,7 +20730,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)",
       "connect": "",
       "classify_evidence": {
@@ -21013,7 +20817,9 @@
         "tier_logic": "2순위: 모든 축 green/yellow, 검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)",
         "classify_version": "v8.3"
       },
-      "last_changed_at": "2026-04-30"
+      "last_changed_at": "2026-04-30",
+      "raw_content": "2026년 스타트업 법률지원사업 참여기업 모집공고(수정)\n사업안내 바로가기\n지원분야\n멘토링ㆍ컨설팅ㆍ교육\n대상연령\n전체\n기관구분\n공공기관\n담당부서\n원스톱지원실\n지역\n전국\n접수기간\n2026-03-27 ~ 2026-12-31 18:00\n주관기관명\n창업진흥원\n대상\n전체\n창업업력\n전체\n연락처\n044-410-1753\n중소벤처기업부 공고 제2026-296호\n2026년 스타트업 법률지원사업 참여기업 모집공고(수정)\n창업기업의 법률·규제 애로해소 지원을 위한 「2026년 스타트업 법률 지원」 계획을 다음과 같이 수정 공고합니다.\n※이전 공고(중소벤처기업부 공고 제2026-233호)를 본 공고로 수정 및 게시하오니 사업신청 시 유의하여주시기 바랍니다.\n2026년 04월 22일\n중소벤처기업부\n공고 수정 내용\n1.지원기업 대상 변경\n- 예비창업자 : 기술기반 예비창업자\n- 창업기업 : 전 공고와 동일\n2.필수제출 서류\n- 예비창업자 : 별도 제출 서류 없음\n- 창업기업 : 전 공고와 동일\n신청방법 및 대상\n신청기간\n2026.03.27(금) 18:20\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t~\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t2026.12.31(목) 18:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t까지\n신청방법\n온라인 접수 :\n접수 바로가기\n신청대상\n「중소기업창업지원법」제2조에 따른 창업기업 또는 예비창업자\n* 본 사업은 기술기반 창업기업과 예비창업자를 지원합니다.\n제외대상\n공고문 참조\n신청 시 요청하는 정보(개인정보포함)는 사업운영기관에서 관리되오니 이점 반드시 유의하여 주시기 바랍니다.\n제출서류\n사업신청서, 개인정보 수집이용 동의서\n신청 시 온라인 작성\n사업자등록증 또는 법인등기부등본\n개인사업자일 경우 : 사업자등록증\n법인사업자일 경우 : 법인등기부등본\n제출하신 서류는 사업운영기관에서 관리되오니 서류 반환 등 문의는 해당 기관으로 하시기 바랍니다.\n선정절차 및 평가방법\n상담 신청하기\n상담 신청 페이지에서 질의 작성 및 법률 분야 선택\n요건검토\n지원대상 신청자격 요검 검토\n스타트업 원스톱 지원센터 법률분야 자문단 매칭\n매칭 자문단 약정 체결\n자문 범위, 답변 기한, 약정 금액(지원한도 내)\n자문 및 검토\n교육안내\n스타트업 원스톱 지원센터 내 이용매뉴얼 참고\n상기 일정은 사업운영기관의 내부사정으로 변경될 수 있습니다.\n문의처\n창업진흥원 원스톱지원실\n044-410-1753, 1745 / onestop@kised.or.kr\n자세한 내용은 첨부파일 참조 및 문의처로 문의하여 주시기 바랍니다.\nK-Startup에 공고되는 정보는 해당 기관의 요청에 의해 제공됩니다. 입주, 교육, 사업 신청 시 요청하는 정보(개인정보 포함)는 해당 기관에서 관리 \t되오니\n이점 유의하여 주시기 바랍니다.\n첨부파일 일괄 다운로드\n2026년 스타트업 법률지원사업 참여기업 모집 공고(수정).pdf\n바로보기\n다운로드\n2026년 스타트업 법률지원사업 참여기업 모집 공고(수정).hwpx\n바로보기\n다운로드\n본 저작물은 창업진흥원(K-Startup)이 게시한 공공누리 제1유형의 저작물이며, 공공데이터포털(www.data.go.kr)에서 공공데이터로 개방중이며 무료로 활용할 수 있습니다.\n사업신청 바로가기\n목록",
+      "raw_fetched_at": "2026-05-05"
     },
     {
       "source": "bizinfo",
@@ -21093,7 +20899,9 @@
       "rationale_short": "허파랑 개인 명의 추천 / 레이어: L0 / 경로: L0_직접 / source: bizinfo",
       "nogo_match": null,
       "source_priority": 1.0,
-      "last_seen": "2026-04-29"
+      "last_seen": "2026-04-29",
+      "raw_content": "Error>상세화면\n본문 바로가기\n주메뉴 바로가기\n에러가 발생했습니다!",
+      "raw_fetched_at": "2026-05-05"
     },
     {
       "source": "bizinfo",
@@ -21171,7 +20979,9 @@
       "rationale_short": "허파랑 개인 명의 추천 / 레이어: 출산육아 / 경로: L1_직접 / source: bizinfo",
       "nogo_match": null,
       "source_priority": 1.0,
-      "last_seen": "2026-04-29"
+      "last_seen": "2026-04-29",
+      "raw_content": "Error>상세화면\n본문 바로가기\n주메뉴 바로가기\n에러가 발생했습니다!",
+      "raw_fetched_at": "2026-05-05"
     },
     {
       "source": "bizinfo",
@@ -21254,7 +21064,9 @@
       "rationale_short": "허파랑 개인 명의 추천 / 레이어: L0 / 경로: L0_직접 / source: bizinfo",
       "nogo_match": null,
       "source_priority": 1.0,
-      "last_seen": "2026-04-29"
+      "last_seen": "2026-04-29",
+      "raw_content": "Error>상세화면\n본문 바로가기\n주메뉴 바로가기\n에러가 발생했습니다!",
+      "raw_fetched_at": "2026-05-05"
     },
     {
       "source": "bizinfo",
@@ -21330,7 +21142,9 @@
       "rationale_short": "허파랑 개인 명의 추천 / 레이어: 출산육아 / 경로: L1_직접 / source: bizinfo",
       "nogo_match": null,
       "source_priority": 1.0,
-      "last_seen": "2026-04-29"
+      "last_seen": "2026-04-29",
+      "raw_content": "Error>상세화면\n본문 바로가기\n주메뉴 바로가기\n에러가 발생했습니다!",
+      "raw_fetched_at": "2026-05-05"
     },
     {
       "pbancSn": "176129",
@@ -21423,7 +21237,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 176129,
         "integrated": false,
@@ -21443,7 +21257,9 @@
         "integrated_name": "2026년 기업인력애로센터 활용 취업지원 사업 구인기업 및 구직자 모집 공고",
         "apply_online": "http://job.kosmes.or.kr",
         "apply_guide": "job.kosmes.or.kr"
-      }
+      },
+      "raw_content": "2026년 기업인력애로센터 활용 취업지원 사업 구인기업 및 구직자 모집 공고\n사업안내 바로가기\n지원분야\n인력\n대상연령\n전체\n기관구분\n공공기관\n담당부서\n인력지원처\n지역\n전국\n접수기간\n2026-01-01 ~ 2026-12-31 23:59\n주관기관명\n중소벤처기업진흥공단\n대상\n대학생, 일반인, 일반기업, 1인 창조기업\n창업업력\n전체\n연락처\n055-751-9792\n2026년 기업인력애로센터 활용 취업지원 사업 구인기업 및 구직자 모집 공고\n구인애로 중소기업과 취업에 어려움이 있는 구직자를 대상으로 일자리매칭을 지원하기 위해 '기업인력애로센터 활용 취업 지원 사업'에 참여할 구인기업 및 구직자 모집을 다음과 같이 공고합니다.\n2026년 01월 30일\n중소벤처기업진흥공단\n신청방법 및 대상\n신청기간\n2026.01.01(목) 00:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t~\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t2026.12.31(목) 23:59\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t까지\n신청방법\n온라인 접수 :\n접수 바로가기\n신청대상\n인력 채용에 애로가 있는 중소기업 및 중소기업에 취업할 의사가 있는 구직자\n신청 시 요청하는 정보(개인정보포함)는 사업운영기관에서 관리되오니 이점 반드시 유의하여 주시기 바랍니다.\n제출서류\n구인공고 등록, 이력서 작성 등\n일자리매칭플랫폼(http://job.kosmes.or.kr) 홈페이지를 통해 회원가입 후 신청\n제출하신 서류는 사업운영기관에서 관리되오니 서류 반환 등 문의는 해당 기관으로 하시기 바랍니다.\n선정절차 및 평가방법\n구인공고 등록 및 이력서 작성 이후 검토를 거쳐 상담 진행\n전문 상담사 상담 후 매칭 지원\n지원내용\n구인기업과 구직자간 1:1 채용 매칭 지원으로 중소기업 구인난 해소를 지원\n- (구인기업) 전문상담사 구인컨설팅, 구인공고 작성 및 게시, 인재추천 및 매칭(AI 포함) 등\n- (구직자) 자기소개서 작성 코칭, 구인기업 추천 및 매칭(AI 포함), 온라인 취업지원서비스 등\n문의처\n중진공 매칭지원센터(1899-3001)\n중진공 매칭지원센터(1899-3001)\n자세한 내용은 첨부파일 참조 및 문의처로 문의하여 주시기 바랍니다.\nK-Startup에 공고되는 정보는 해당 기관의 요청에 의해 제공됩니다. 입주, 교육, 사업 신청 시 요청하는 정보(개인정보 포함)는 해당 기관에서 관리 \t되오니\n이점 유의하여 주시기 바랍니다.\n첨부파일 일괄 다운로드\n2026년 기업인력애로센터 활용 취업 지원 사업 구인기업 및 구직자 모집 공고_수정.hwp\n바로보기\n다운로드\n2026년 기업인력애로센터 활용 취업 지원 사업 구인기업 및 구직자 모집 공고_수정.pdf\n바로보기\n다운로드\n본 저작물은 창업진흥원(K-Startup)이 게시한 공공누리 제1유형의 저작물이며, 공공데이터포털(www.data.go.kr)에서 공공데이터로 개방중이며 무료로 활용할 수 있습니다.\n사업신청 바로가기\n목록",
+      "raw_fetched_at": "2026-05-05"
     },
     {
       "pbancSn": "175366",
@@ -21538,7 +21354,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 175366,
         "integrated": false,
@@ -21558,7 +21374,9 @@
         "integrated_name": "SK하이닉스청년창업파크 입주기업 모집&#40;상시모집&#41;",
         "apply_online": "",
         "apply_guide": "spark22.co.kr/posts/contest/50"
-      }
+      },
+      "raw_content": "SK하이닉스청년창업파크 입주기업 모집(상시모집)\n사업안내 바로가기\n지원분야\n시설ㆍ공간ㆍ보육\n대상연령\n전체\n기관구분\n교육기관\n담당부서\nSK하이닉스청년창업파크\n지역\n전국\n접수기간\n2025-10-27 ~ 2026-12-31 00:00\n주관기관명\n서원대학교산학협력단\n대상\n대학생, 일반인, 일반기업\n창업업력\n예비창업자, 1년미만, 2년미만, 3년미만, 5년미만, 7년미만\n연락처\n043-716-2975\nSK하이닉스청년창업파크 입주기업 모집(상시모집)\n※(유의)해당 공고는 중소벤처기업부와 창업진흥원이 아닌 민간에서 지원하는 사업으로, 신청부터 관리까지 모든 과정을 해당기관에서 전담\nSK하이닉스청년창업파크는 지역창업 생산기지 조성으로 창업 교육,  투자 마케팅,  기술지원,  창업보육 프로그램 지원 등  소상공인 창업부터 기술창업까지 필요한 서비스를 One-Stop으로 활용할 수 있도록 창의적인 아이디어와 기술을 가진 예비창업자 및 창업기업을 모집하오니 많은 참여 부탁드립니다.\n2025년 10월 27일\n서원대학교 산학협력단\n신청방법 및 대상\n신청기간\n2025.10.27(월) 00:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t~\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t2026.12.31(목) 00:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t까지\n신청방법\n방문 접수 : 충북 청주시 서원서로 30-23,  서원대학교 SK하이닉스 창업관 2층\n우편 접수 : 충북 청주시 서원서로 30-23,  서원대학교 SK하이닉스 창업관 2층\n이메일 접수 : swspark22@naver.com\n신청대상\n만 45세 이하의 예비창업자 또는 창업기업\n- 예비창업자의 경우 스파크 주소로 사업자등록을 1개월 이내로 가능한 기업\n- 창업기업의 경우 스파크 주소로 사업장  주소지를 1개월 이내로 이전 가능한 기업(본사가 아니여도 가능)\n제외대상\n각종 법적 제재 대상자\n스파크 입주경력이 있는 기업\n신청 시 요청하는 정보(개인정보포함)는 사업운영기관에서 관리되오니 이점 반드시 유의하여 주시기 바랍니다.\n제출서류\n입주신청서, 사업계획서, 개인정보동의서, 증빙서류\n1. 입주신청서\n2. 사업계획서\n3. 개인정보동의서(대표자, 구성원 전부)\n4. 사업계획서에 있는 성과작성 부분에 관한 증빙자료(사업자등록증, 등기부등본, 4대보험, 재무제표 등)\n제출하신 서류는 사업운영기관에서 관리되오니 서류 반환 등 문의는 해당 기관으로 하시기 바랍니다.\n선정절차 및 평가방법\n서면 또는 발표 평가를 통한 입주기업 선정\n1개월 마다 서면평가 또는 발표평가를 통해  입주기업 선정\n협약 시작일은 매월 1일로 지정\n입주모집개요\n입주규모\n1. 입주규모(2인실 : 4개 / 4인실: 1개, 등록기업: 7개)\n2. 소재지 : 충북 청주시 서원서로 30-23, SK하이닉스청년창업파크\n3. 공간구성: 2평~4평\n4. 입주기간:  기본 6개월, 최대 3년\n5. 입주보증금 및 관리비용 : 첨부파일 참고\n- 2인실 : 60만원(보증금), 12만원(관리비)\n- 4인실: 80만원(보증금), 15만원(관리비)\n- 등록기업 : 20만원(보증금), 3만원(관리비)\n- 임대료는 따로 부과하지 않습니다.\n6. 입주공간 및 사용공간 사진 : 첨부파일 참고(공고문)\n상기 일정은 사업운영기관의 내부사정으로 변경될 수 있습니다.\n지원내용\n입주공간 지원\n2인실, 4인실, 등록기업\n문의처\n043-716-2975\n서원대학교 산학협력단 SK하이닉스청년창업파크\n자세한 내용은 첨부파일 참조 및 문의처로 문의하여 주시기 바랍니다.\nK-Startup에 공고되는 정보는 해당 기관의 요청에 의해 제공됩니다. 입주, 교육, 사업 신청 시 요청하는 정보(개인정보 포함)는 해당 기관에서 관리 \t되오니\n이점 유의하여 주시기 바랍니다.\n※(유의)해당 공고는 중소벤처기업부와 창업진흥원이 아닌 민간에서 지원하는 사업으로, 신청부터 관리까지 모든 과정을 해당기관에서 전담\n첨부파일 일괄 다운로드\n2025년 SK하이닉스청년창업파크 입주기업 모집 공고문(첨부).pdf\n바로보기\n다운로드\n[별지 제2호 서식] 사업계획서.hwp\n바로보기\n다운로드\n[별지 제4호 서식] 개인정보 수집·이용 및 제3자 제공동의서.hwp\n바로보기\n다운로드\n[별지 제1호 서식] 입주신청서.hwp\n바로보기\n다운로드\n본 저작물은 창업진흥원(K-Startup)이 게시한 공공누리 제1유형의 저작물이며, 공공데이터포털(www.data.go.kr)에서 공공데이터로 개방중이며 무료로 활용할 수 있습니다.\n목록",
+      "raw_fetched_at": "2026-05-05"
     },
     {
       "pbancSn": "171419",
@@ -21651,7 +21469,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 171419,
         "integrated": false,
@@ -21671,7 +21489,9 @@
         "integrated_name": "Announcement on Application for Recommendations for the “Startup Korea Special Visa”",
         "apply_online": "https://airtable.com/appkd63wQDUOCZTXj/pagfG6KRvMhurBowl/form",
         "apply_guide": ""
-      }
+      },
+      "raw_content": "[Startup Korea Special Visa] Announcement on Application for Recommendations for the “Startup Korea Special Visa”\n지원분야\n인력\n대상연령\n전체\n기관구분\n공공기관\n담당부서\n글로벌진출팀\n지역\n전국\n접수기간\n2024-12-03 ~ 2026-12-30 00:00\n주관기관명\n창업진흥원\n대상\n전체\n창업업력\n전체\n연락처\n02-3440-7348\nMinistry of SMEs and Startups Announcement No. 2024 – 592\n[Startup Korea Special Visa] Announcement on Application for Recommendations for the “Startup Korea Special Visa”\nWe are pleased to announce that applications for recommendations for the \"Startup Korea Special Visa\" will be accepted on a rolling basis, and this visa will be issued upon the recommendation of the Ministry of SMEs and Startups (“MSS”), following an evaluation of the startup’s feasibility and innovativeness.\n2024년 12월 03일\nMinister of SMEs and Startups\n신청방법 및 대상\n신청기간\n2024.12.03(화) 18:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t~\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t2026.12.30(수) 00:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t까지\n신청방법\n온라인 접수 :\n접수 바로가기\n신청대상\nRepresentative of a (prospective) startup who is not a Korean national and The (prospective) startup must meet the eligibility criteria outlined in the Support for Small and Medium Enterprise Establishment Act.\n* Reference to the Announcement\n제외대상\n* Reference to the Announcement\n신청 시 요청하는 정보(개인정보포함)는 사업운영기관에서 관리되오니 이점 반드시 유의하여 주시기 바랍니다.\n제출서류\nRecommendation application form\nBusiness plan\nA copy of passport or alien registration certificate\nA copy of corporate registration certificate or business registration certificate\nCo-representative verification document issued by the K-Scouter    (if necessary)\nConsent to provision, use and collection of personal information\n제출하신 서류는 사업운영기관에서 관리되오니 서류 반환 등 문의는 해당 기관으로 하시기 바랍니다.\n선정절차 및 평가방법\nEvaluation Process\nEvaluation will be conducted in the following order\n(1) Review of requirements → (2) Presentation evaluation → (3) The jugding committee\n지원내용\nIssuance of「Startup Korea Special Visa」recommendation letter\n문의처\n(Questions on application) Global Startup Center\n-E-mail : startup.korea.visa@gmail.com\n-Phone : +82-2-3440-7346 (Office Hour : 9am-6pm, Korean Time)\n(Other questions) KISED Global Expansion Team\n-E-mail : now@kised.or.kr\n자세한 내용은 첨부파일 참조 및 문의처로 문의하여 주시기 바랍니다.\nK-Startup에 공고되는 정보는 해당 기관의 요청에 의해 제공됩니다. 입주, 교육, 사업 신청 시 요청하는 정보(개인정보 포함)는 해당 기관에서 관리 \t되오니\n이점 유의하여 주시기 바랍니다.\n첨부파일 일괄 다운로드\n241203 스타트업 코리아 특별비자 추천 수시 신청 공고문(국문).pdf\n바로보기\n다운로드\nAnnouncement on Application for Recommendations for the “Startup Korea Special Visa”.pdf\n바로보기\n다운로드\nRecommendation application form.docx\n바로보기\n다운로드\nBusiness Plan.docx\n바로보기\n다운로드\nConsent to provision, use and co",
+      "raw_fetched_at": "2026-05-05"
     },
     {
       "source": "bizinfo",
@@ -23921,1544 +23741,6 @@
     {
       "source": "kstartup",
       "source_label": "K-Startup",
-      "id": "kstartup_177277",
-      "pbancSn": "177277",
-      "title": "2026-4회 충청권 엔젤투자 피칭룸 프로그램 참가기업 모집",
-      "agency": "한국엔젤투자협회 충청권 엔젤투자허브",
-      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177277",
-      "deadline": "2026-05-04",
-      "structured": {
-        "pbanc_sn_int": 177277,
-        "integrated": true,
-        "recruiting": true,
-        "start_date": "2026-04-20",
-        "end_date": "2026-05-04",
-        "agency_type": "민간",
-        "biz_class": "멘토링ㆍ컨설팅ㆍ교육",
-        "region": "대전",
-        "biz_enyy": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만",
-        "age_range": "만 20세 이상 ~ 만 39세 이하,만 40세 이상",
-        "apply_target": "대학생,일반인,대학,연구기관,일반기업,1인 창조기업",
-        "apply_target_desc": "- 대전/세종/충남/충북에 소재하는 기업\r\n※ 연구소 및 지사가 충청권에 해당하는 경우 신청이 가능합니다.\r\n※ 다양한 기업의 수혜를 위하여, 동일 기업은 반기별 1회 신청 가능합니다.",
-        "exclude_target": "",
-        "preferential": "",
-        "content": "『충청권 엔젤투자 피칭룸』은 한국엔젤투자협회에서 충청 소재(대전·세종·충남·충북)의 스타트업의 투자유치를 지원하는 투자 상담 프로그램입니다.\r\n투자유치에 관심있으신 충청 소재 스타트업 대표님들의 많은 관심과 참여 부탁드립니다.",
-        "integrated_name": "충청권 엔젤투자 허브 운영지원",
-        "apply_online": "https://www.kban.or.kr/jsp/ext/mrt/angelTalkTalk.jsp",
-        "apply_guide": "www.kban.or.kr/jsp/ext/mrt/angelTalkTalk.jsp"
-      },
-      "tier": "orange",
-      "best_entity": "xcom_corp",
-      "best_tier": "yellow",
-      "domain": [],
-      "entities": {},
-      "rationale_short": "2순위: 모든 축 green/yellow, 검토 매칭 (피칭)",
-      "nogo_match": false,
-      "source_priority": 2,
-      "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
-      "note": "검토 매칭 (피칭)",
-      "connect": "",
-      "classify_evidence": {
-        "summary_reason": "검토 매칭 (피칭)",
-        "category_hints": [],
-        "rule_checks": {
-          "recruiting": {
-            "pass": true,
-            "value": "True",
-            "detail": "모집 중"
-          },
-          "deadline": {
-            "pass": true,
-            "value": "2026-05-04",
-            "detail": "마감 전"
-          },
-          "region": {
-            "pass": false,
-            "value": "대전",
-            "detail": "지역 한정 (대전)"
-          },
-          "biz_enyy": {
-            "pass": true,
-            "value": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만",
-            "detail": "업력 허용 (1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
-          },
-          "exclude_target": {
-            "pass": true,
-            "value": "",
-            "detail": "자격 제한 없음"
-          },
-          "industry": {
-            "pass": true,
-            "detail": "업종 제한 없음"
-          },
-          "qualification": {
-            "pass": true,
-            "detail": "자격 제한 없음"
-          },
-          "stage": {
-            "pass": true,
-            "detail": "업력 허용 (1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
-          },
-          "nature": {
-            "pass": true,
-            "detail": "간접 지원성 (멘토링ㆍ컨설팅ㆍ교육)"
-          },
-          "region_keyword": {
-            "pass": false,
-            "detail": "지역 한정 (대전)"
-          },
-          "positive_hit": {
-            "pass": false,
-            "detail": "검토 매칭 (피칭)"
-          }
-        },
-        "risk_flags": [],
-        "axis_scores": {
-          "region": {
-            "level": "orange",
-            "detail": "지역 한정 (대전)"
-          },
-          "stage": {
-            "level": "green",
-            "detail": "업력 허용 (1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
-          },
-          "industry": {
-            "level": "green",
-            "detail": "업종 제한 없음"
-          },
-          "nature": {
-            "level": "yellow",
-            "detail": "간접 지원성 (멘토링ㆍ컨설팅ㆍ교육)"
-          },
-          "qualification": {
-            "level": "green",
-            "detail": "자격 제한 없음"
-          }
-        },
-        "exclusion_flags": [
-          {
-            "axis": "region",
-            "severity": "high",
-            "msg": "지역 한정 (대전)"
-          }
-        ],
-        "audit_flags": [],
-        "tier_logic": "3순위 (아이디어·우회 가능): 검토 매칭 (피칭)",
-        "classify_version": "v8.3"
-      },
-      "last_changed_at": "2026-04-30"
-    },
-    {
-      "source": "kstartup",
-      "source_label": "K-Startup",
-      "id": "kstartup_177346",
-      "pbancSn": "177346",
-      "title": "2026년 경기스타트업브릿지 신규 입주기업 모집",
-      "agency": "경기도경제과학진흥원",
-      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177346",
-      "deadline": "2026-05-04",
-      "structured": {
-        "pbanc_sn_int": 177346,
-        "integrated": false,
-        "recruiting": true,
-        "start_date": "2026-04-20",
-        "end_date": "2026-05-04",
-        "agency_type": "공공기관",
-        "biz_class": "시설ㆍ공간ㆍ보육",
-        "region": "전국",
-        "biz_enyy": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만",
-        "age_range": "만 20세 미만,만 20세 이상 ~ 만 39세 이하,만 40세 이상",
-        "apply_target": "청소년,대학생,일반인,대학,연구기관,일반기업,1인 창조기업",
-        "apply_target_desc": "경기도내 예비창업자 및 창업 7년이내 스타트업",
-        "exclude_target": "",
-        "preferential": "",
-        "content": "2026년 경기스타트업브릿지 신규 입주기업 모집 공고를 다음과 같이 공고하오니 참여를 희망하시는 기업은 안내에 따라 신청하시기 바랍니다.",
-        "integrated_name": "2026년 경기스타트업브릿지 신규 입주기업 모집",
-        "apply_online": "https://gsp.or.kr/supportProject/UVSD0001.do?sportSeq=6201",
-        "apply_guide": "gsp.or.kr/supportProject/UVSD0001.do?sportSeq=6201"
-      },
-      "tier": "orange",
-      "best_entity": "xcom_corp",
-      "best_tier": "orange",
-      "domain": [],
-      "entities": {},
-      "rationale_short": "3순위 (참고용): 지자체 기관 의심 (지역진흥원: 경기도경제과학진흥원)",
-      "nogo_match": false,
-      "source_priority": 2,
-      "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
-      "note": "검토 매칭 (전국/시설ㆍ공간ㆍ보육)",
-      "connect": "",
-      "classify_evidence": {
-        "summary_reason": "검토 매칭 (전국/시설ㆍ공간ㆍ보육)",
-        "category_hints": [
-          "budget"
-        ],
-        "rule_checks": {
-          "recruiting": {
-            "pass": true,
-            "value": "True",
-            "detail": "모집 중"
-          },
-          "deadline": {
-            "pass": true,
-            "value": "2026-05-04",
-            "detail": "마감 전"
-          },
-          "region": {
-            "pass": false,
-            "value": "전국",
-            "detail": "지자체 기관 의심 (지역진흥원: 경기도경제과학진흥원)"
-          },
-          "biz_enyy": {
-            "pass": true,
-            "value": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만",
-            "detail": "업력 허용 (1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
-          },
-          "exclude_target": {
-            "pass": true,
-            "value": "",
-            "detail": "자격 제한 없음"
-          },
-          "industry": {
-            "pass": true,
-            "detail": "업종 제한 없음"
-          },
-          "qualification": {
-            "pass": true,
-            "detail": "자격 제한 없음"
-          },
-          "stage": {
-            "pass": true,
-            "detail": "업력 허용 (1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
-          },
-          "nature": {
-            "pass": true,
-            "detail": "간접 지원성 (시설ㆍ공간ㆍ보육)"
-          },
-          "region_keyword": {
-            "pass": false,
-            "detail": "지자체 기관 의심 (지역진흥원: 경기도경제과학진흥원)"
-          },
-          "positive_hit": {
-            "pass": false,
-            "detail": "검토 매칭 (전국/시설ㆍ공간ㆍ보육)"
-          }
-        },
-        "risk_flags": [],
-        "axis_scores": {
-          "region": {
-            "level": "orange",
-            "detail": "지자체 기관 의심 (지역진흥원: 경기도경제과학진흥원)"
-          },
-          "stage": {
-            "level": "green",
-            "detail": "업력 허용 (1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
-          },
-          "industry": {
-            "level": "green",
-            "detail": "업종 제한 없음"
-          },
-          "nature": {
-            "level": "yellow",
-            "detail": "간접 지원성 (시설ㆍ공간ㆍ보육)"
-          },
-          "qualification": {
-            "level": "green",
-            "detail": "자격 제한 없음"
-          }
-        },
-        "exclusion_flags": [
-          {
-            "axis": "region",
-            "severity": "high",
-            "msg": "지자체 기관 의심 (지역진흥원: 경기도경제과학진흥원)"
-          }
-        ],
-        "audit_flags": [],
-        "tier_logic": "3순위 (아이디어·우회 가능): 검토 매칭 (전국/시설ㆍ공간ㆍ보육)",
-        "classify_version": "v8.3"
-      },
-      "last_changed_at": "2026-04-30"
-    },
-    {
-      "source": "kstartup",
-      "source_label": "K-Startup",
-      "id": "kstartup_177248",
-      "pbancSn": "177248",
-      "title": "2026년 소셜 임팩트 랩(Lab) 예비 창업기업 모집",
-      "agency": "(재)대전창조경제혁신센터",
-      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177248",
-      "deadline": "2026-05-04",
-      "structured": {
-        "pbanc_sn_int": 177248,
-        "integrated": true,
-        "recruiting": true,
-        "start_date": "2026-04-15",
-        "end_date": "2026-05-04",
-        "agency_type": "공공기관",
-        "biz_class": "시설ㆍ공간ㆍ보육",
-        "region": "대전",
-        "biz_enyy": "예비창업자,1년미만",
-        "age_range": "만 20세 미만,만 20세 이상 ~ 만 39세 이하,만 40세 이상",
-        "apply_target": "일반인,일반기업",
-        "apply_target_desc": "▶ 대전소재 기술기반 소셜벤처 분야 예비창업 기업\r\n\r\n(지원 시 유의사항)\r\n - 지원대상은 예비창업자 및 2026년 창업기업으로 한정\r\n\r\n - 창업일은 개인사업자의 경우 사업 개시일(사업자등록상의 개업일), 법인 기업의 경우 법인등기부 등본상의 회사설립 연월일을 기준\r\n\r\n - 공고일 기준으로 대전광역시에 사업장을 소재하거나, 소재 예정인 예비창업자\r\n   * 단, 타지역에 소재한 창업기업의 경우 사업장(본사 또는 기업부설연구소)의 주소를 3개월 이내 대전광역시로 이전을 조건으로 신청 가능함\r\n\r\n - 사업자등록이 완료된 기업만 사업화 자금 지원 가능(예비창업자는 창업 후 신청 가능)\r\n\r\n - 소셜 임팩트 랩(Lab) 수료 및 창업기업은 차년도 소셜 임팩트 체인저스 지원 시 우대혜택 부여 예정",
-        "exclude_target": "▶ 금융기관 등으로부터 채무불이행으로 규제 중인 자(기업)\r\n\r\n   * 단, 신청·접수 마감까지 채무변제 완료 후 증빙이 가능한 자(기업), 신용회복위원회의 프리워크아웃, 개인워크아웃 제도에서 채무조정합의서를 체결한 경우, 법원의 개인회생제도에서 변제계획 인가를 받거나 파산면책 선고자, 회생인가를 받은 기업은 신청 가능\r\n\r\n▶ 국세 또는 지방세 체납으로 규제중인 자(기업)\r\n\r\n   * 단, 세금 분납 계획에 따른 성실 납부기업(체납처분유예신청), 신청·접수 마감까지 국세, 지방세 등의 특수채무 변제 후 증빙이 가능한 자(기업)는 신청 가능\r\n\r\n▶ 단, 금융기관 등으로부터 채무불이행으로 규제 중인 자(기업)·국세 또는 지방세 체납으로 규제 중인 자(기업) 중 중소벤처기업진흥공단 등으로부터 재창업자금을 지원받은 자(기업), 건강관리시스템 기업구조 개선진단을 통한 정상화 의결기업 등 정부·공공기관으로부터 재기 지원 필요성을 인정받은 자(기업)는 신청 가능\r\n\r\n▶ ?중소기업창업지원법? 시행령 제4조(창업에서 제외되는 업종)의 업종으로 동 사업에 신청하고자 하는 자(기업)\r\n\r\n   * 지원제외 대상 업종: 일반유흥주점업, 무도유흥주점업, 카지노 운영업, 기타 사행시설 관리 및 운영업, 그 밖에 경제질서 및 미풍양속에 현저히 어긋나는 업종으로서 중소벤처기업부령으로 정하는 업종\r\n  ** 대상 업종의 세부사항은 제11차 한국표준산업분류코드(통계청, kssc.kostat.go.kr) 참고\r\n\r\n▶ 신청일 현재 휴업 중인 기업\r\n\r\n▶ 대전시 타 지원사업*을 수행 중인 자(기업)\r\n   * 지원사업: 창업(사업자등록)을 전제로 창업 아이템의 사업화를 위한 시제품 제작비, 기술이전료 등 사업화에 소요되는 자금을 창업자에게 지원하는 사업\r\n\r\n▶ 기타 대전창조경제혁신센터 대표이사가 참여제한의 사유가 있다고 인정하는 자(기업)",
-        "preferential": "",
-        "content": "2026년 소셜 임팩트 랩(Lab)에 참여할 소셜벤처 분야의 기술역량과 자원을 보유한 예비 창업기업을 모집하오니 많은 관심과 참여 부탁드립니다.",
-        "integrated_name": "소셜벤처 창업 플랫폼 운영 활성화",
-        "apply_online": "",
-        "apply_guide": "https://ccei.creativekorea.or.kr/daejeon/allim/allim_view.do?no=15780&div_code=1&rnum=300&pn=1&kind=my&sPtime=now&sMenuType=&pagePerContents=8&cmntySeqNum=&menuSeqNum=&storyList=&table_title=&sdate=&edate=&title=&contents="
-      },
-      "tier": "orange",
-      "best_entity": "xcom_corp",
-      "best_tier": "orange",
-      "domain": [],
-      "entities": {},
-      "rationale_short": "3순위 (아이디어·우회 가능): 검토 매칭 (임팩트)",
-      "nogo_match": false,
-      "source_priority": 2,
-      "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
-      "note": "검토 매칭 (플랫폼)",
-      "connect": "",
-      "classify_evidence": {
-        "summary_reason": "검토 매칭 (플랫폼)",
-        "category_hints": [
-          "budget"
-        ],
-        "rule_checks": {
-          "recruiting": {
-            "pass": true,
-            "value": "True",
-            "detail": "모집 중"
-          },
-          "deadline": {
-            "pass": true,
-            "value": "2026-05-04",
-            "detail": "마감 전"
-          },
-          "region": {
-            "pass": false,
-            "value": "대전",
-            "detail": "지자체 기관 의심 (재단법인 접두사: (재)대전창조경제혁신센터)"
-          },
-          "biz_enyy": {
-            "pass": true,
-            "value": "예비창업자,1년미만",
-            "detail": "업력 허용 (1년미만,예비창업자)"
-          },
-          "exclude_target": {
-            "pass": true,
-            "value": "▶ 금융기관 등으로부터 채무불이행으로 규제 중인 자(기업)\r\n\r\n   * 단, 신청·접수 마감까지 채무변제 완료 후 증빙이 가능한 자(기업), ",
-            "detail": "exclude_target 장문 (918자)"
-          },
-          "industry": {
-            "pass": true,
-            "detail": "업종 제한 없음"
-          },
-          "qualification": {
-            "pass": true,
-            "detail": "exclude_target 장문 (918자)"
-          },
-          "stage": {
-            "pass": true,
-            "detail": "업력 허용 (1년미만,예비창업자)"
-          },
-          "nature": {
-            "pass": true,
-            "detail": "간접 지원성 (시설ㆍ공간ㆍ보육)"
-          },
-          "region_keyword": {
-            "pass": false,
-            "detail": "지자체 기관 의심 (재단법인 접두사: (재)대전창조경제혁신센터)"
-          },
-          "positive_hit": {
-            "pass": false,
-            "detail": "검토 매칭 (플랫폼)"
-          }
-        },
-        "risk_flags": [
-          {
-            "type": "exclude_target_long",
-            "severity": "low",
-            "msg": "신청 제외 대상 장문 (918자) — 정독 필수"
-          }
-        ],
-        "axis_scores": {
-          "region": {
-            "level": "orange",
-            "detail": "지자체 기관 의심 (재단법인 접두사: (재)대전창조경제혁신센터)"
-          },
-          "stage": {
-            "level": "green",
-            "detail": "업력 허용 (1년미만,예비창업자)"
-          },
-          "industry": {
-            "level": "green",
-            "detail": "업종 제한 없음"
-          },
-          "nature": {
-            "level": "yellow",
-            "detail": "간접 지원성 (시설ㆍ공간ㆍ보육)"
-          },
-          "qualification": {
-            "level": "yellow",
-            "detail": "exclude_target 장문 (918자)"
-          }
-        },
-        "exclusion_flags": [
-          {
-            "axis": "region",
-            "severity": "high",
-            "msg": "지자체 기관 의심 (재단법인 접두사: (재)대전창조경제혁신센터)"
-          }
-        ],
-        "audit_flags": [],
-        "tier_logic": "3순위 (아이디어·우회 가능): 검토 매칭 (플랫폼)",
-        "classify_version": "v8.3"
-      },
-      "last_changed_at": "2026-04-30"
-    },
-    {
-      "source": "kstartup",
-      "source_label": "K-Startup",
-      "id": "kstartup_177246",
-      "pbancSn": "177246",
-      "title": "2026년 소셜 임팩트 체인저스 7기 창업기업 모집",
-      "agency": "(재)대전창조경제혁신센터",
-      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177246",
-      "deadline": "2026-05-04",
-      "structured": {
-        "pbanc_sn_int": 177246,
-        "integrated": true,
-        "recruiting": true,
-        "start_date": "2026-04-15",
-        "end_date": "2026-05-04",
-        "agency_type": "공공기관",
-        "biz_class": "시설ㆍ공간ㆍ보육",
-        "region": "대전",
-        "biz_enyy": "1년미만,2년미만,3년미만,5년미만,7년미만",
-        "age_range": "만 20세 미만,만 20세 이상 ~ 만 39세 이하,만 40세 이상",
-        "apply_target": "일반기업",
-        "apply_target_desc": "▶대전소재 창업 7년 이내의 기술기반 소셜벤처 분야 초기창업 기업( 시장 적합성에 대한 검증을 통해 시장 확장 및 성장을 목표로 하는 기업)\r\n\r\n(지원 시 유의사항)\r\n  - 공고일 기준 업력 7년 이내 창업기업(2019. 4. 14. 이후 창업)\r\n  - 창업일은 개인사업자의 경우 사업 개시일(사업자등록상의 개업일), 법인 기업의 경우 법인등기부 등본상의 회사설립 연월일을 기준\r\n  - 공고일 기준으로 대전광역시에 사업장을 소재하고 있어야 함\r\n   * 단, 타지역에 소재한 창업기업의 경우 사업장(본사 또는 기업부설연구소)의 주소를 3개월 이내 대전광역시로 이전을 조건으로 신청 가능함\r\n  - 예비창업자 및 2026년 창업기업은 소셜 임팩트 체인저스 7기 지원 불가(소셜 임팩트 랩(Lab) 지원 가능)",
-        "exclude_target": "▶ 금융기관 등으로부터 채무불이행으로 규제 중인 자(기업)\r\n\r\n   * 단, 신청·접수 마감까지 채무변제 완료 후 증빙이 가능한 자(기업), 신용회복위원회의 프리워크아웃, 개인워크아웃 제도에서 채무조정합의서를 체결한 경우, 법원의 개인회생제도에서 변제계획 인가를 받거나 파산면책 선고자, 회생인가를 받은 기업은 신청 가능\r\n\r\n▶ 국세 또는 지방세 체납으로 규제중인 자(기업)\r\n\r\n   * 단, 세금 분납 계획에 따른 성실 납부기업(체납처분유예신청), 신청·접수 마감까지 국세, 지방세 등의 특수채무 변제 후 증빙이 가능한 자(기업)는 신청 가능\r\n\r\n▶ 단, 금융기관 등으로부터 채무불이행으로 규제 중인 자(기업)·국세 또는 지방세 체납으로 규제 중인 자(기업) 중 중소벤처기업진흥공단 등으로부터 재창업자금을 지원받은 자(기업), 건강관리시스템 기업구조 개선진단을 통한 정상화 의결기업 등 정부·공공기관으로부터 재기 지원 필요성을 인정받은 자(기업)는 신청 가능\r\n\r\n▶ 중소기업창업지원법? 시행령 제4조(창업에서 제외되는 업종)의 업종으로 동 사업에 신청하고자 하는 자(기업)\r\n\r\n   * 지원제외 대상 업종: 일반유흥주점업, 무도유흥주점업, 카지노 운영업, 기타 사행시설 관리 및 운영업, 그 밖에 경제질서 및 미풍양속에 현저히 어긋나는 업종으로서 중소벤처기업부령으로 정하는 업종\r\n  ** 대상 업종의 세부사항은 제11차 한국표준산업분류코드(통계청, kssc.kostat.go.kr) 참고\r\n\r\n▶ 신청일 현재 휴업 중인 기업\r\n\r\n▶ 대전시 타 지원사업*을 수행 중인 자(기업)\r\n   * 지원사업: 창업(사업자등록)을 전제로 창업 아이템의 사업화를 위한 시제품 제작비, 기술이전료 등 사업화에 소요되는 자금을 창업자에게 지원하는 사업\r\n\r\n▶ 기타 대전창조경제혁신센터 대표이사가 참여제한의 사유가 있다고 인정하는 자(기업)",
-        "preferential": "",
-        "content": "2026년 소셜 임팩트 체인저스 7기에 참여할 소셜벤처 분야의 기술역량과 자원을 보유한 창업기업을 모집하오니 많은 관심과 참여 바랍니다.",
-        "integrated_name": "소셜벤처 창업 플랫폼 운영 활성화",
-        "apply_online": "",
-        "apply_guide": "https://ccei.creativekorea.or.kr/daejeon/allim/allim_view.do?no=15779&div_code=1&rnum=299&pn=1&kind=my&sPtime=now&sMenuType=&pagePerContents=8&cmntySeqNum=&menuSeqNum=&storyList=&table_title=&sdate=&edate=&title=&contents="
-      },
-      "tier": "orange",
-      "best_entity": "xcom_corp",
-      "best_tier": "orange",
-      "domain": [],
-      "entities": {},
-      "rationale_short": "3순위 (아이디어·우회 가능): 검토 매칭 (임팩트)",
-      "nogo_match": false,
-      "source_priority": 2,
-      "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
-      "note": "검토 매칭 (플랫폼)",
-      "connect": "",
-      "classify_evidence": {
-        "summary_reason": "검토 매칭 (플랫폼)",
-        "category_hints": [
-          "budget"
-        ],
-        "rule_checks": {
-          "recruiting": {
-            "pass": true,
-            "value": "True",
-            "detail": "모집 중"
-          },
-          "deadline": {
-            "pass": true,
-            "value": "2026-05-04",
-            "detail": "마감 전"
-          },
-          "region": {
-            "pass": false,
-            "value": "대전",
-            "detail": "지자체 기관 의심 (재단법인 접두사: (재)대전창조경제혁신센터)"
-          },
-          "biz_enyy": {
-            "pass": true,
-            "value": "1년미만,2년미만,3년미만,5년미만,7년미만",
-            "detail": "업력 허용 (1년미만,2년미만,3년미만,5년미만,7년미만)"
-          },
-          "exclude_target": {
-            "pass": true,
-            "value": "▶ 금융기관 등으로부터 채무불이행으로 규제 중인 자(기업)\r\n\r\n   * 단, 신청·접수 마감까지 채무변제 완료 후 증빙이 가능한 자(기업), ",
-            "detail": "exclude_target 장문 (917자)"
-          },
-          "industry": {
-            "pass": true,
-            "detail": "업종 제한 없음"
-          },
-          "qualification": {
-            "pass": true,
-            "detail": "exclude_target 장문 (917자)"
-          },
-          "stage": {
-            "pass": true,
-            "detail": "업력 허용 (1년미만,2년미만,3년미만,5년미만,7년미만)"
-          },
-          "nature": {
-            "pass": true,
-            "detail": "간접 지원성 (시설ㆍ공간ㆍ보육)"
-          },
-          "region_keyword": {
-            "pass": false,
-            "detail": "지자체 기관 의심 (재단법인 접두사: (재)대전창조경제혁신센터)"
-          },
-          "positive_hit": {
-            "pass": false,
-            "detail": "검토 매칭 (플랫폼)"
-          }
-        },
-        "risk_flags": [
-          {
-            "type": "exclude_target_long",
-            "severity": "low",
-            "msg": "신청 제외 대상 장문 (917자) — 정독 필수"
-          }
-        ],
-        "axis_scores": {
-          "region": {
-            "level": "orange",
-            "detail": "지자체 기관 의심 (재단법인 접두사: (재)대전창조경제혁신센터)"
-          },
-          "stage": {
-            "level": "green",
-            "detail": "업력 허용 (1년미만,2년미만,3년미만,5년미만,7년미만)"
-          },
-          "industry": {
-            "level": "green",
-            "detail": "업종 제한 없음"
-          },
-          "nature": {
-            "level": "yellow",
-            "detail": "간접 지원성 (시설ㆍ공간ㆍ보육)"
-          },
-          "qualification": {
-            "level": "yellow",
-            "detail": "exclude_target 장문 (917자)"
-          }
-        },
-        "exclusion_flags": [
-          {
-            "axis": "region",
-            "severity": "high",
-            "msg": "지자체 기관 의심 (재단법인 접두사: (재)대전창조경제혁신센터)"
-          }
-        ],
-        "audit_flags": [],
-        "tier_logic": "3순위 (아이디어·우회 가능): 검토 매칭 (플랫폼)",
-        "classify_version": "v8.3"
-      },
-      "last_changed_at": "2026-04-30"
-    },
-    {
-      "source": "kstartup",
-      "source_label": "K-Startup",
-      "id": "kstartup_177193",
-      "pbancSn": "177193",
-      "title": "2026 상생 오픈이노베이션 스타트업 모집공고(사업설명회 4.22.)",
-      "agency": "경기콘텐츠진흥원",
-      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177193",
-      "deadline": "2026-05-04",
-      "structured": {
-        "pbanc_sn_int": 177193,
-        "integrated": false,
-        "recruiting": true,
-        "start_date": "2026-04-10",
-        "end_date": "2026-05-04",
-        "agency_type": "공공기관",
-        "biz_class": "사업화",
-        "region": "전국",
-        "biz_enyy": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만",
-        "age_range": "만 20세 이상 ~ 만 39세 이하,만 40세 이상",
-        "apply_target": "일반기업,1인 창조기업",
-        "apply_target_desc": "도내 가상융합/XR/AR/AI 스타트업 4개사(프로젝트 당 1개사 지원)\r\n※ 창업 또는 가상융합/XR/AR/AI 분야 사업전환 7년 이내(공고일 기준)\r\n※ 예비창업자의 경우 협약 후 1개월 이내 경기도 내 창업 필수",
-        "exclude_target": "",
-        "preferential": "",
-        "content": "파트너사와 함께 협업 프로젝트(PoC)를 제작하며,\r\n시장 대입 컨설팅/홍보/투자연계 경험을 가져갈\r\n도내 가상융합(메타버스/VR/AR/XR) 및 신기술(AI 등) 기업의 많은 관심과 참여 바랍니다.",
-        "integrated_name": "2026 상생 오픈이노베이션 스타트업 모집공고",
-        "apply_online": "https://www.gcon.or.kr/gcon/business/gconNotice/view.do?pbancSrnm=11162&menuNo=200061",
-        "apply_guide": ""
-      },
-      "tier": "orange",
-      "best_entity": "xcom_corp",
-      "best_tier": "orange",
-      "domain": [
-        "content"
-      ],
-      "entities": {},
-      "rationale_short": "3순위 (아이디어·우회 가능): 검토 매칭 (콘텐츠)",
-      "nogo_match": false,
-      "source_priority": 2,
-      "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
-      "note": "structured 완전 매칭 (전국/사업화)",
-      "connect": "",
-      "classify_evidence": {
-        "summary_reason": "structured 완전 매칭 (전국/사업화)",
-        "category_hints": [
-          "ai",
-          "content",
-          "budget"
-        ],
-        "rule_checks": {
-          "recruiting": {
-            "pass": true,
-            "value": "True",
-            "detail": "모집 중"
-          },
-          "deadline": {
-            "pass": true,
-            "value": "2026-05-04",
-            "detail": "마감 전"
-          },
-          "region": {
-            "pass": false,
-            "value": "전국",
-            "detail": "지자체 기관 의심 (지역진흥원: 경기콘텐츠진흥원)"
-          },
-          "biz_enyy": {
-            "pass": true,
-            "value": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만",
-            "detail": "업력 허용 (1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
-          },
-          "exclude_target": {
-            "pass": true,
-            "value": "",
-            "detail": "자격 제한 없음"
-          },
-          "industry": {
-            "pass": true,
-            "detail": "업종 제한 없음"
-          },
-          "qualification": {
-            "pass": true,
-            "detail": "자격 제한 없음"
-          },
-          "stage": {
-            "pass": true,
-            "detail": "업력 허용 (1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
-          },
-          "nature": {
-            "pass": false,
-            "detail": "성격 불일치 (설명회)"
-          },
-          "region_keyword": {
-            "pass": false,
-            "detail": "지자체 기관 의심 (지역진흥원: 경기콘텐츠진흥원)"
-          },
-          "positive_hit": {
-            "pass": true,
-            "detail": "structured 완전 매칭 (전국/사업화)"
-          }
-        },
-        "risk_flags": [],
-        "axis_scores": {
-          "region": {
-            "level": "orange",
-            "detail": "지자체 기관 의심 (지역진흥원: 경기콘텐츠진흥원)"
-          },
-          "stage": {
-            "level": "green",
-            "detail": "업력 허용 (1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
-          },
-          "industry": {
-            "level": "green",
-            "detail": "업종 제한 없음"
-          },
-          "nature": {
-            "level": "orange",
-            "detail": "성격 불일치 (설명회)"
-          },
-          "qualification": {
-            "level": "green",
-            "detail": "자격 제한 없음"
-          }
-        },
-        "exclusion_flags": [
-          {
-            "axis": "region",
-            "severity": "high",
-            "msg": "지자체 기관 의심 (지역진흥원: 경기콘텐츠진흥원)"
-          },
-          {
-            "axis": "nature",
-            "severity": "high",
-            "msg": "성격 불일치 (설명회)"
-          }
-        ],
-        "audit_flags": [],
-        "tier_logic": "3순위 (AI 리포지셔닝): AI 포지셔닝 가능 (AI 스타트업)",
-        "classify_version": "v8.3"
-      },
-      "last_changed_at": "2026-04-30"
-    },
-    {
-      "source": "kstartup",
-      "source_label": "K-Startup",
-      "id": "kstartup_177186",
-      "pbancSn": "177186",
-      "title": "2026년 서울창업허브 창동 스타트업 융복합 콘텐츠 제작 영상 콘텐츠 지원 기업 모집",
-      "agency": "서울창업허브 창동",
-      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177186",
-      "deadline": "2026-05-04",
-      "structured": {
-        "pbanc_sn_int": 177186,
-        "integrated": true,
-        "recruiting": true,
-        "start_date": "2026-04-13",
-        "end_date": "2026-05-04",
-        "agency_type": "민간",
-        "biz_class": "시설ㆍ공간ㆍ보육",
-        "region": "서울",
-        "biz_enyy": "7년미만",
-        "age_range": "만 20세 미만,만 20세 이상 ~ 만 39세 이하,만 40세 이상",
-        "apply_target": "일반기업",
-        "apply_target_desc": "서울시 소재 영상·뉴미디어 콘텐츠를 활용한 사업 확장을 희망하는 중·소기업\r\n*서울창업허브 창동 입주기업 가점부여",
-        "exclude_target": "",
-        "preferential": "",
-        "content": "서울창업허브 창동에서 영상·뉴미디어 콘텐츠로 사업 확장을 희망하는 스타트업을 대상으로 융복합 콘텐츠 제작 지원금을 통해 IR/투자, 실증·PoC, 판로·마케팅, 해외진출 목적의 영상 콘텐츠 제작 지원하오니 많은 신청  바랍니다.",
-        "integrated_name": "서울창업허브 창동 운영",
-        "apply_online": "www.startup-plus.kr/project/PRJ006675",
-        "apply_guide": "www.startup-plus.kr/project/PRJ006675"
-      },
-      "tier": "orange",
-      "best_entity": "xcom_corp",
-      "best_tier": "orange",
-      "domain": [
-        "content"
-      ],
-      "entities": {},
-      "rationale_short": "3순위 (아이디어·우회 가능): 검토 매칭 (콘텐츠)",
-      "nogo_match": false,
-      "source_priority": 2,
-      "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
-      "note": "검토 매칭 (콘텐츠)",
-      "connect": "",
-      "classify_evidence": {
-        "summary_reason": "검토 매칭 (콘텐츠)",
-        "category_hints": [
-          "content"
-        ],
-        "rule_checks": {
-          "recruiting": {
-            "pass": true,
-            "value": "True",
-            "detail": "모집 중"
-          },
-          "deadline": {
-            "pass": true,
-            "value": "2026-05-04",
-            "detail": "마감 전"
-          },
-          "region": {
-            "pass": false,
-            "value": "서울",
-            "detail": "서울 시설/지자체 (서울창업허브)"
-          },
-          "biz_enyy": {
-            "pass": true,
-            "value": "7년미만",
-            "detail": "업력 허용 (7년미만)"
-          },
-          "exclude_target": {
-            "pass": true,
-            "value": "",
-            "detail": "자격 제한 없음"
-          },
-          "industry": {
-            "pass": true,
-            "detail": "업종 제한 없음"
-          },
-          "qualification": {
-            "pass": true,
-            "detail": "자격 제한 없음"
-          },
-          "stage": {
-            "pass": true,
-            "detail": "업력 허용 (7년미만)"
-          },
-          "nature": {
-            "pass": true,
-            "detail": "간접 지원성 (시설ㆍ공간ㆍ보육)"
-          },
-          "region_keyword": {
-            "pass": false,
-            "detail": "서울 시설/지자체 (서울창업허브)"
-          },
-          "positive_hit": {
-            "pass": false,
-            "detail": "검토 매칭 (콘텐츠)"
-          }
-        },
-        "risk_flags": [],
-        "axis_scores": {
-          "region": {
-            "level": "orange",
-            "detail": "서울 시설/지자체 (서울창업허브)"
-          },
-          "stage": {
-            "level": "green",
-            "detail": "업력 허용 (7년미만)"
-          },
-          "industry": {
-            "level": "green",
-            "detail": "업종 제한 없음"
-          },
-          "nature": {
-            "level": "yellow",
-            "detail": "간접 지원성 (시설ㆍ공간ㆍ보육)"
-          },
-          "qualification": {
-            "level": "green",
-            "detail": "자격 제한 없음"
-          }
-        },
-        "exclusion_flags": [
-          {
-            "axis": "region",
-            "severity": "high",
-            "msg": "서울 시설/지자체 (서울창업허브)"
-          }
-        ],
-        "audit_flags": [],
-        "tier_logic": "3순위 (아이디어·우회 가능): 검토 매칭 (콘텐츠)",
-        "classify_version": "v8.3"
-      },
-      "last_changed_at": "2026-04-30"
-    },
-    {
-      "source": "kstartup",
-      "source_label": "K-Startup",
-      "id": "kstartup_177109",
-      "pbancSn": "177109",
-      "title": "2026년 전남 스타트업 액셀러레이팅 프로그램(4기) 참여기업 모집",
-      "agency": "(재)전남창조경제혁신센터",
-      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177109",
-      "deadline": "2026-05-04",
-      "structured": {
-        "pbanc_sn_int": 177109,
-        "integrated": false,
-        "recruiting": true,
-        "start_date": "2026-04-07",
-        "end_date": "2026-05-04",
-        "agency_type": "공공기관",
-        "biz_class": "사업화",
-        "region": "전남",
-        "biz_enyy": "1년미만,2년미만,3년미만,5년미만,7년미만",
-        "age_range": "만 20세 미만,만 20세 이상 ~ 만 39세 이하,만 40세 이상",
-        "apply_target": "일반기업",
-        "apply_target_desc": "□ 사업대상: 공고일 기준 하기 조건을 충족하는 법인기업 \r\n  전남도내 본사 또는 공장, 지사, 기업부설연구소가 소재한 창업 7년 이내 기업 \r\n  전남도내 본사 또는 공장, 지사, 기업부설연구소를 이전·신규 설치 예정인 창업 7년 이내 기업\r\n\r\n ※ 필수사항\r\n  - 공고일 기준 도내 본사 또는 지점, 지사, 기업부설연구소 등이 소재하지 아니할 경우, 투자 확약 전까지 전남도로 이전 또는 신규 설치해야함 \r\n  - 이전하지 아니할 경우 투자금은 환수할 수 있음",
-        "exclude_target": "☞ 금융기관 등으로부터 채무불이행으로 규제중인 자(기업)\r\n ☞ 국세 또는 지방세 체납으로 규제중인 자(기업)\r\n ☞ 신청일 기준 휴업 중인 기업\r\n ☞ 중소기업창업지원법 시행령 제4조의 업종을 영위하고 있거나 또는 영위하고자 하는 자\r\n    (기업) ※지원제외 대상 업종 1. 일반유흥주점업, 2. 무도유흥주점업, 3. 기타 사행시설 관리 및 운영업, 4. 1~3호까지의 규정에 준하는 업종으로서 중소벤처기업부령으로 정하는 업종[업종 분류는 한국표준산업분류를 기준]\r\n ☞ 기타 중소벤처기업부 장관 또는 전남도지사가 참여제한의 사유가 있다고 인정하는 자(기업)",
-        "preferential": "",
-        "content": "전남도내 유망스타트업의 발굴 및 성장기반 마련을 위하여 추진 중인 「2026년 전남 스타트업 액셀러레이팅 프로그램 4기(전남 배치프로그램)」의 참여기업을 모집하오니 많은 관심과 참여 바랍니다.",
-        "integrated_name": "2026년 전남 스타트업 액셀러레이팅 프로그램(4기) 참여기업 모집 공고",
-        "apply_online": "",
-        "apply_guide": "ccei.creativekorea.or.kr/jeonnam/custom/notice_view.do?no=37504&rnum=1456&kind=my&sPtime=my"
-      },
-      "tier": "orange",
-      "best_entity": "xcom_corp",
-      "best_tier": "orange",
-      "domain": [],
-      "entities": {},
-      "rationale_short": "3순위 (아이디어·우회 가능): 검토 매칭 (액셀러레이팅)",
-      "nogo_match": false,
-      "source_priority": 2,
-      "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
-      "note": "검토 매칭 (액셀러레이팅)",
-      "connect": "",
-      "classify_evidence": {
-        "summary_reason": "검토 매칭 (액셀러레이팅)",
-        "category_hints": [
-          "budget"
-        ],
-        "rule_checks": {
-          "recruiting": {
-            "pass": true,
-            "value": "True",
-            "detail": "모집 중"
-          },
-          "deadline": {
-            "pass": true,
-            "value": "2026-05-04",
-            "detail": "마감 전"
-          },
-          "region": {
-            "pass": false,
-            "value": "전남",
-            "detail": "지자체 기관 의심 (재단법인 접두사: (재)전남창조경제혁신센터)"
-          },
-          "biz_enyy": {
-            "pass": true,
-            "value": "1년미만,2년미만,3년미만,5년미만,7년미만",
-            "detail": "업력 허용 (1년미만,2년미만,3년미만,5년미만,7년미만)"
-          },
-          "exclude_target": {
-            "pass": true,
-            "value": "☞ 금융기관 등으로부터 채무불이행으로 규제중인 자(기업)\r\n ☞ 국세 또는 지방세 체납으로 규제중인 자(기업)\r\n ☞ 신청일 기준 휴업 중인 기",
-            "detail": "exclude_target 장문 (315자)"
-          },
-          "industry": {
-            "pass": true,
-            "detail": "업종 제한 없음"
-          },
-          "qualification": {
-            "pass": true,
-            "detail": "exclude_target 장문 (315자)"
-          },
-          "stage": {
-            "pass": true,
-            "detail": "업력 허용 (1년미만,2년미만,3년미만,5년미만,7년미만)"
-          },
-          "nature": {
-            "pass": true,
-            "detail": "직접 자금성 (사업화)"
-          },
-          "region_keyword": {
-            "pass": false,
-            "detail": "지자체 기관 의심 (재단법인 접두사: (재)전남창조경제혁신센터)"
-          },
-          "positive_hit": {
-            "pass": false,
-            "detail": "검토 매칭 (액셀러레이팅)"
-          }
-        },
-        "risk_flags": [
-          {
-            "type": "exclude_target_long",
-            "severity": "low",
-            "msg": "신청 제외 대상 장문 (315자) — 정독 필수"
-          }
-        ],
-        "axis_scores": {
-          "region": {
-            "level": "orange",
-            "detail": "지자체 기관 의심 (재단법인 접두사: (재)전남창조경제혁신센터)"
-          },
-          "stage": {
-            "level": "green",
-            "detail": "업력 허용 (1년미만,2년미만,3년미만,5년미만,7년미만)"
-          },
-          "industry": {
-            "level": "green",
-            "detail": "업종 제한 없음"
-          },
-          "nature": {
-            "level": "green",
-            "detail": "직접 자금성 (사업화)"
-          },
-          "qualification": {
-            "level": "yellow",
-            "detail": "exclude_target 장문 (315자)"
-          }
-        },
-        "exclusion_flags": [
-          {
-            "axis": "region",
-            "severity": "high",
-            "msg": "지자체 기관 의심 (재단법인 접두사: (재)전남창조경제혁신센터)"
-          }
-        ],
-        "audit_flags": [],
-        "tier_logic": "3순위 (아이디어·우회 가능): 검토 매칭 (액셀러레이팅)",
-        "classify_version": "v8.3"
-      },
-      "last_changed_at": "2026-04-30"
-    },
-    {
-      "source": "bizinfo",
-      "source_label": "중소벤처기업부 BIZINFO (기업마당)",
-      "id": "bizinfo_PBLN_000000000121322",
-      "pbancSn": null,
-      "title": "2026년 과학기술정보통신부 차세대 특화망 융합서비스 확산 사업 재공고",
-      "agency": "과학기술정보통신부 / 한국방송통신전파진흥원",
-      "url": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000121322",
-      "deadline": "2026-05-04",
-      "structured": {
-        "pblancNm": "2026년 과학기술정보통신부 차세대 특화망 융합서비스 확산 사업 재공고",
-        "pblancUrl": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000121322",
-        "pblancId": "PBLN_000000000121322",
-        "jrsdInsttNm": "과학기술정보통신부",
-        "excInsttNm": "한국방송통신전파진흥원",
-        "bsnsSumryCn": "<p>과학기술정보통신부와 한국방송통신전파진흥원은 全산업분야의 디지털ㆍ인공지능 전환 촉진을 통한 국내 산업 경쟁력 제고를 위해「2026년 차세대 특화망 융합서비스 산업 확산」 사업을 다음과 같이 재공고하오니 많은 관심과 참여 바랍니다.</p><p><br></p><p style=\"line-height: 1.8;\">☞&nbsp;차세대 특화망을 활용하여 민간ㆍ산업 분야에 융합서비스 개발 및 선도 적용을 위한 공급기업ㆍ기관과 수요기업ㆍ기관 간 컨소시엄</p><p style=\"line-height: 1.8;\">※ 자세한 지원대상 공고문 참조</p><p><br></p><p style=\"line-height: 1.8;\">☞ 2개 과제, 총 8억원 이내 지원</p><p style=\"line-height: 1.8;\">- (코어 공유형)&nbsp;수요기업 간 코어 공유형 차세대 특화망 구축 및 운영 실증</p><p style=\"line-height: 1.8;\">- (동일 구축모델 적용형)&nbsp;2개 수요기업별 독립 코어 기반으로 동일한 망 구축모델을 적용하는 특화망 구축 및 운영 실증</p><p style=\"line-height: 1.8;\">-&nbsp;총 4억원 이내 지원(수요기업 2개 선정, 기업 당 2억원 매칭지원)</p>",
-        "pldirSportRealmLclasCodeNm": "기술",
-        "creatPnttm": "2026-04-27 14:06:25",
-        "reqstBeginEndDe": "2026-04-23 ~ 2026-05-04",
-        "updtPnttm": "2026-04-27 16:17:05",
-        "trgetNm": "중소기업",
-        "inqireCo": 133,
-        "flpthNm": "https://www.bizinfo.go.kr/cmm/fms/getImageFile.do?atchFileId=FILE_000000000753081&fileSn=2@https://www.bizinfo.go.kr/cmm/fms/getImageFile.do?atchFileId=FILE_000000000753081&fileSn=3",
-        "fileNm": "붙임파일.zip@[붙임4] [지침] 관련 지침.zip",
-        "printFlpthNm": "https://www.bizinfo.go.kr/cmm/fms/getImageFile.do?atchFileId=FILE_000000000753080&fileSn=2",
-        "printFileNm": "[붙임1] [공고서] 차세대 특화망 융합서비스 확산 사업(재공고).pdf",
-        "hashtags": "기술,서울,부산,대구,인천,광주,대전,울산,세종,경기,강원,충북,충남,전북,전남,경북,경남,제주,차세대특화망인프라구축,2026,한국방송통신전파진흥원,산업단지,디지털,융합서비스,과학기술정보통신부,인공지능,AI",
-        "reqstMthPapersCn": "온라인 접수 (KCA 이음5G지원포털)",
-        "refrncNm": "한국방송통신전파진흥원 이음5G사업팀 (사업 관련) 061-350-1453, rudqls5381@kca.kr / (접수 관련) 061-350-1455, kca1126@kca.kr",
-        "rceptEngnHmpgUrl": "https://spectrummap.kr/eum5gportal/index",
-        "region": "인천",
-        "biz_class": "공동기술개발",
-        "integrated_name": "2026년 과학기술정보통신부 차세대 특화망 융합서비스 확산 사업 재공고",
-        "apply_target_desc": "중소기업 <p>과학기술정보통신부와 한국방송통신전파진흥원은 全산업분야의 디지털ㆍ인공지능 전환 촉진을 통한 국내 산업 경쟁력 제고를 위해「2026년 차세대 특화망 융합서비스 산업 확산」 사업을 다음과 같이 재공고하오니 많은 관심과 참여 바랍니다.</p><p><br></p><p style=\"line-height: 1.8;\">☞&nbsp;차세대 특화망을 활용하여 민간ㆍ산업 분야에 융합서비스 개발 및 선도 적용을 위한 공급기업ㆍ기관과 수요기업ㆍ기관 간 컨소시엄</p><p style=\"line-height: 1.8;\">※ 자세한 지원대상 공고문 참조</p><p><br></p><p style=\"line-height: 1.8;\">☞ 2개 과제, 총 8억원 이내 지원</p><p style=\"line-height: 1.8;\">- (코어 공유형)&nbsp;수요기업 간 코어 공유형 차세대 특화망 구축 및 운영 실증</p><p style=\"line-height: 1.8;\">- (동일 구축모델 적용형)&nbsp;2개 수요기업별 독립 코어 기반으로 동일한 망 구축모델을 적용하는 특화망 구축 및 운영 실증</p><p style=\"line-height: 1.8;\">-&nbsp;총 4억원 이내 지원(수요기업 2개 선정, 기업 당 2억원 매칭지원)</p>",
-        "biz_enyy": ""
-      },
-      "first_seen": "2026-04-28",
-      "last_seen": "2026-04-29",
-      "tier": "orange",
-      "note": "검토 매칭 (디지털)",
-      "classify_evidence": {
-        "summary_reason": "검토 매칭 (디지털)",
-        "category_hints": [
-          "ai",
-          "content",
-          "rnd"
-        ],
-        "rule_checks": {
-          "recruiting": {
-            "pass": true,
-            "value": "?",
-            "detail": "모집 중"
-          },
-          "deadline": {
-            "pass": true,
-            "value": "",
-            "detail": "마감 전"
-          },
-          "region": {
-            "pass": false,
-            "value": "인천",
-            "detail": "지자체 기관 의심 (지역진흥원: 과학기술정보통신부 / 한국방송통신전파진흥원)"
-          },
-          "biz_enyy": {
-            "pass": true,
-            "value": "",
-            "detail": "단계 정보 없음"
-          },
-          "exclude_target": {
-            "pass": true,
-            "value": "",
-            "detail": "자격 제한 없음"
-          },
-          "industry": {
-            "pass": true,
-            "detail": "R&D 공고 — 하드웨어 리스크 (공동기술개발)"
-          },
-          "qualification": {
-            "pass": true,
-            "detail": "자격 제한 없음"
-          },
-          "stage": {
-            "pass": true,
-            "detail": "단계 정보 없음"
-          },
-          "nature": {
-            "pass": true,
-            "detail": "성격 분류 애매 (biz_class='공동기술개발')"
-          },
-          "region_keyword": {
-            "pass": false,
-            "detail": "지자체 기관 의심 (지역진흥원: 과학기술정보통신부 / 한국방송통신전파진흥원)"
-          },
-          "positive_hit": {
-            "pass": true,
-            "detail": "검토 매칭 (디지털)"
-          }
-        },
-        "risk_flags": [
-          {
-            "type": "rnd_hardware_risk",
-            "severity": "med",
-            "msg": "R&D 공고 — 하드웨어/제조 시제품 중심일 가능성"
-          }
-        ],
-        "axis_scores": {
-          "region": {
-            "level": "orange",
-            "detail": "지자체 기관 의심 (지역진흥원: 과학기술정보통신부 / 한국방송통신전파진흥원)"
-          },
-          "stage": {
-            "level": "yellow",
-            "detail": "단계 정보 없음"
-          },
-          "industry": {
-            "level": "yellow",
-            "detail": "R&D 공고 — 하드웨어 리스크 (공동기술개발)"
-          },
-          "nature": {
-            "level": "yellow",
-            "detail": "성격 분류 애매 (biz_class='공동기술개발')"
-          },
-          "qualification": {
-            "level": "green",
-            "detail": "자격 제한 없음"
-          }
-        },
-        "exclusion_flags": [
-          {
-            "axis": "region",
-            "severity": "high",
-            "msg": "지자체 기관 의심 (지역진흥원: 과학기술정보통신부 / 한국방송통신전파진흥원)"
-          }
-        ],
-        "audit_flags": [],
-        "tier_logic": "3순위 (AI 리포지셔닝): AI 포지셔닝 가능 (인공지능)",
-        "classify_version": "v8.3"
-      }
-    },
-    {
-      "source": "bizinfo",
-      "source_label": "중소벤처기업부 BIZINFO (기업마당)",
-      "id": "bizinfo_PBLN_000000000121299",
-      "pbancSn": null,
-      "title": "[강원] 호주(멜버른) 수출로드쇼 (수출상담회) 참가기업 모집 공고 ",
-      "agency": "강원특별자치도 / 대한무역투자진흥공사",
-      "url": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000121299",
-      "deadline": "2026-05-04",
-      "structured": {
-        "pblancNm": "[강원] 호주(멜버른) 수출로드쇼 (수출상담회) 참가기업 모집 공고 ",
-        "pblancUrl": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000121299",
-        "pblancId": "PBLN_000000000121299",
-        "jrsdInsttNm": "강원특별자치도",
-        "excInsttNm": "대한무역투자진흥공사",
-        "bsnsSumryCn": "<p>강원특별자치도와 KOTRA 강원지원본부는 도내 수출 유망 중소ㆍ중견기업의 호주 시장 판로 개척을 위하여 아래와 같이 유통망 입점 연계 호주 수출 로드쇼(수출상담회) 사업 참가기업을 모집하오니 많은 관심과 참여 바랍니다.</p><p><br></p><p>☞ 강원특별자치도 내 본사 혹은 공장 소재 기업, BuyKorea 등록 완료 기업</p><p><br></p><p>☞ 현지 바이어 섭외 및 상담 주선 등 바이어 발굴 비용, 상담장 임차, 차량 이동, 통역 등 사업운영비 지원, 선정기업 대상 AI수출부스터 활용 바이어 발굴 추가 지원, 현지 유통망 입점 지원</p>",
-        "pldirSportRealmLclasCodeNm": "수출",
-        "creatPnttm": "2026-04-27 11:12:41",
-        "reqstBeginEndDe": "2026-04-20 ~ 2026-05-04",
-        "updtPnttm": "2026-04-27 16:17:05",
-        "trgetNm": "중소기업",
-        "inqireCo": 109,
-        "flpthNm": "https://www.bizinfo.go.kr/cmm/fms/getImageFile.do?atchFileId=FILE_000000000752999&fileSn=0@https://www.bizinfo.go.kr/cmm/fms/getImageFile.do?atchFileId=FILE_000000000752999&fileSn=1@https://www.bizinfo.go.kr/cmm/fms/getImageFile.do?atchFileId=FILE_000000000752999&fileSn=2@https://www.bizinfo.go.kr/cmm/fms/getImageFile.do?atchFileId=FILE_000000000752999&fileSn=3@https://www.bizinfo.go.kr/cmm/fms/getImageFile.do?atchFileId=FILE_000000000752999&fileSn=4",
-        "fileNm": "1-3. (첨부3) 서약서(호주 수출 로드쇼).hwp@1-1. (첨부1) 참가 기업 정보 (호주 수출로드쇼).xlsx@1-2. (첨부2) E-카탈로그 회신양식_기업명(호주 수출로드쇼).xlsx@1-4. (첨부4) BuyKorea 상품등록양식서 및 위임장.hwp@1-4. (첨부4) BuyKorea 상품등록양식서 및 위임장.pdf",
-        "printFlpthNm": "https://www.bizinfo.go.kr/cmm/fms/getImageFile.do?atchFileId=FILE_000000000752998&fileSn=0",
-        "printFileNm": "[강원] 호주(멜버른) 수출로드쇼 (수출상담회).pdf",
-        "hashtags": "수출,강원,2026,강원특별자치도,멜버른,호주,수출상담회,대한무역투자진흥공사,판로개척,중견기업,KOTRA,중소기업",
-        "reqstMthPapersCn": "온라인 접수(무역투자24)",
-        "refrncNm": "대한무역투자진흥공사 강원지원본부 (사절단 및 시장성 평가) 070-8822-5311, sj_jeon@kotra.or.kr (신청서 제출) 033-261-5315, starenglish@kotra.or.kr (바이코리아 등록) 강원AI무역지원센터 033-731-0364, gw@aitc.ai.kr ",
-        "rceptEngnHmpgUrl": "https://www.kotra.or.kr/subList/20000020753/subhome/bizAply/selectBizMntInfoDetail.do?&dtlBizMntNo=26CN0BF&cpbizYn=N",
-        "region": "강원",
-        "biz_class": "해외진출준비",
-        "integrated_name": "[강원] 호주(멜버른) 수출로드쇼 (수출상담회) 참가기업 모집 공고 ",
-        "apply_target_desc": "중소기업 <p>강원특별자치도와 KOTRA 강원지원본부는 도내 수출 유망 중소ㆍ중견기업의 호주 시장 판로 개척을 위하여 아래와 같이 유통망 입점 연계 호주 수출 로드쇼(수출상담회) 사업 참가기업을 모집하오니 많은 관심과 참여 바랍니다.</p><p><br></p><p>☞ 강원특별자치도 내 본사 혹은 공장 소재 기업, BuyKorea 등록 완료 기업</p><p><br></p><p>☞ 현지 바이어 섭외 및 상담 주선 등 바이어 발굴 비용, 상담장 임차, 차량 이동, 통역 등 사업운영비 지원, 선정기업 대상 AI수출부스터 활용 바이어 발굴 추가 지원, 현지 유통망 입점 지원</p>",
-        "biz_enyy": ""
-      },
-      "first_seen": "2026-04-28",
-      "last_seen": "2026-04-29",
-      "tier": "orange",
-      "note": "3순위 (참고용): 기관 지역 한정 (agency: 강원특별자치도 / 대한무역투자진흥공사)",
-      "classify_evidence": {
-        "summary_reason": "3순위 (참고용): 기관 지역 한정 (agency: 강원특별자치도 / 대한무역투자진흥공사)",
-        "category_hints": [
-          "ai",
-          "global"
-        ],
-        "rule_checks": {
-          "recruiting": {
-            "pass": true,
-            "value": "?",
-            "detail": "모집 중"
-          },
-          "deadline": {
-            "pass": true,
-            "value": "",
-            "detail": "마감 전"
-          },
-          "region": {
-            "pass": false,
-            "value": "강원",
-            "detail": "기관 지역 한정 (agency: 강원특별자치도 / 대한무역투자진흥공사)"
-          },
-          "biz_enyy": {
-            "pass": true,
-            "value": "",
-            "detail": "단계 정보 없음"
-          },
-          "exclude_target": {
-            "pass": true,
-            "value": "",
-            "detail": "자격 제한 없음"
-          },
-          "industry": {
-            "pass": false,
-            "detail": "업종 한정 (유통)"
-          },
-          "qualification": {
-            "pass": true,
-            "detail": "자격 제한 없음"
-          },
-          "stage": {
-            "pass": true,
-            "detail": "단계 정보 없음"
-          },
-          "nature": {
-            "pass": true,
-            "detail": "성격 분류 애매 (biz_class='해외진출준비')"
-          },
-          "region_keyword": {
-            "pass": false,
-            "detail": "기관 지역 한정 (agency: 강원특별자치도 / 대한무역투자진흥공사)"
-          },
-          "positive_hit": {
-            "pass": false,
-            "detail": "3순위 (참고용): 기관 지역 한정 (agency: 강원특별자치도 / 대한무역투자진흥공사)"
-          }
-        },
-        "risk_flags": [],
-        "axis_scores": {
-          "region": {
-            "level": "orange",
-            "detail": "기관 지역 한정 (agency: 강원특별자치도 / 대한무역투자진흥공사)"
-          },
-          "stage": {
-            "level": "yellow",
-            "detail": "단계 정보 없음"
-          },
-          "industry": {
-            "level": "orange",
-            "detail": "업종 한정 (유통)"
-          },
-          "nature": {
-            "level": "yellow",
-            "detail": "성격 분류 애매 (biz_class='해외진출준비')"
-          },
-          "qualification": {
-            "level": "green",
-            "detail": "자격 제한 없음"
-          }
-        },
-        "exclusion_flags": [
-          {
-            "axis": "region",
-            "severity": "high",
-            "msg": "기관 지역 한정 (agency: 강원특별자치도 / 대한무역투자진흥공사)"
-          },
-          {
-            "axis": "industry",
-            "severity": "high",
-            "msg": "업종 한정 (유통)"
-          }
-        ],
-        "audit_flags": [],
-        "tier_logic": "3순위 (참고용): 기관 지역 한정 (agency: 강원특별자치도 / 대한무역투자진흥공사)",
-        "classify_version": "v8.3"
-      }
-    },
-    {
-      "source": "bizinfo",
-      "source_label": "중소벤처기업부 BIZINFO (기업마당)",
-      "id": "bizinfo_PBLN_000000000120840",
-      "pbancSn": null,
-      "title": "2026년 혁신 프리미어 1000 녹색산업 우수기업 모집 공고",
-      "agency": "기후에너지환경부 / 한국환경산업기술원",
-      "url": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000120840",
-      "deadline": "2026-05-04",
-      "structured": {
-        "pblancNm": "2026년 혁신 프리미어 1000 녹색산업 우수기업 모집 공고",
-        "pblancUrl": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000120840",
-        "pblancId": "PBLN_000000000120840",
-        "jrsdInsttNm": "기후에너지환경부",
-        "excInsttNm": "한국환경산업기술원",
-        "bsnsSumryCn": "<p>기후에너지환경부에서는 금융위원회 및 정책금융기관(한국산업은행, 기업은행, 수출입은행, 신용보증기금, 기술보증기금 등)과 협력하여 녹색산업 분야의 우수기업을 대상으로 금융지원 우대를 추진하기 위한 ‘혁신 프리미어 1000’ 모집을 다음과 같이 안내하오니 많은 참여 바랍니다.</p><p><br></p><p>☞&nbsp;혁신성장공동기준 품목 영위 중인 녹색산업 분야 중소ㆍ중견기업</p><p><br></p><p style=\"line-height: 1.8;\">☞ (금융지원)혁신 프리미어 기업 전용상품을 신설하여 現정책금융기관의 상품 중 최고 수준의 우대혜택 지원</p><p style=\"line-height: 1.8;\">- (비금융지원)혁신 프리미어 전용세션 마련 등을 검토하고,종합 지원반 전체 비금융 지원 프로그램을 주기적으로 안내</p><p style=\"line-height: 1.8;\">- (기후에너지환경부 특전) ‘중소환경기업 사업화 지원사업’신청 시 가점(1점)부여</p>",
-        "pldirSportRealmLclasCodeNm": "경영",
-        "creatPnttm": "2026-04-15 14:55:03",
-        "reqstBeginEndDe": "2026-04-08 ~ 2026-05-04",
-        "updtPnttm": "2026-04-15 16:18:42",
-        "trgetNm": "중소기업",
-        "inqireCo": 2439,
-        "flpthNm": "https://www.bizinfo.go.kr/cmm/fms/getImageFile.do?atchFileId=FILE_000000000751408&fileSn=0@https://www.bizinfo.go.kr/cmm/fms/getImageFile.do?atchFileId=FILE_000000000751408&fileSn=1",
-        "fileNm": "(첨부1)_혁신성장_공동기준(6차_개정)_품목_리스트_및_4대_이니셔티브_연계표_★.xlsx@[서식_1~4]_신청서_신청자격확인서_등.zip",
-        "printFlpthNm": "https://www.bizinfo.go.kr/cmm/fms/getImageFile.do?atchFileId=FILE_000000000751407&fileSn=0",
-        "printFileNm": "(공고문)_2026년_혁신_프리미어_1000_녹색산업_우수기업_모집_공고.pdf",
-        "hashtags": "경영,서울,부산,대구,인천,광주,대전,울산,세종,경기,강원,충북,충남,전북,전남,경북,경남,제주,기후에너지환경부,2026,한국환경산업기술원",
-        "reqstMthPapersCn": "이메일 접수 (sylee@keiti.re.kr 또는 iigestate@keiti.re.kr)",
-        "refrncNm": "녹색산업 한국환경산업기술원 기업육성실 032-540-2202, 2218, 2219, sylee@keiti.re.kr, iigestate@keiti.re.kr, mhkim@keiti.re.kr / 한국에너지기술평가원 기후테크육성실 02-3469-8422, johee@ketep.re.kr / 한국에너지기술평가원 에너지R&D 콜센터 1899-0784",
-        "rceptEngnHmpgUrl": null
-      },
-      "tier": "orange",
-      "best_entity": "heoparang_personal",
-      "best_tier": "orange",
-      "domain": {
-        "whitelisted": false,
-        "bridgeable": true,
-        "hit_layers": [],
-        "l0_generic": [],
-        "bridge_hits": [
-          "사업화",
-          "테크"
-        ],
-        "negative_hard": [],
-        "negative_soft": [],
-        "match_path": "🌉bridge"
-      },
-      "entities": {
-        "heoparang_personal": {
-          "tier": "orange",
-          "reason": "지역 매칭 (인천) + 🌉 스토리텔링 브리지 (사업화)",
-          "audit_flags": [],
-          "strong_hit": null,
-          "match_path": "🌉bridge"
-        },
-        "xcom_corp": {
-          "tier": "red",
-          "reason": "단계 불일치 (중견기업)",
-          "audit_flags": [],
-          "strong_hit": null,
-          "match_path": "stage_mismatch"
-        },
-        "younglim_daegu": {
-          "tier": "orange",
-          "reason": "지역 매칭 (대구) + 🌉 스토리텔링 브리지 (사업화)",
-          "audit_flags": [],
-          "strong_hit": null,
-          "match_path": "🌉bridge"
-        }
-      },
-      "rationale_short": "허파랑 개인 명의 추천 / 레이어: 🌉브리지 / 경로: 🌉bridge / source: bizinfo / 🌉 사업화",
-      "nogo_match": null,
-      "source_priority": 1.0,
-      "last_seen": "2026-04-29"
-    },
-    {
-      "source": "bizinfo",
-      "source_label": "중소벤처기업부 BIZINFO (기업마당)",
-      "id": "bizinfo_PBLN_000000000120301",
-      "pbancSn": null,
-      "title": "2026년 딥테크 챌린지 프로젝트 기술도전형 제1차 기술수요조사 시행계획 공고",
-      "agency": "중소벤처기업부 / 중소기업기술정보진흥원",
-      "url": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000120301",
-      "deadline": "2026-05-04",
-      "structured": {
-        "pblancNm": "2026년 딥테크 챌린지 프로젝트 기술도전형 제1차 기술수요조사 시행계획 공고",
-        "pblancUrl": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000120301",
-        "pblancId": "PBLN_000000000120301",
-        "jrsdInsttNm": "중소벤처기업부",
-        "excInsttNm": "중소기업기술정보진흥원",
-        "bsnsSumryCn": "<p>「2026년도 딥테크 챌린지 프로젝트(DCP) 기술도전형 제1차 기술 수요 조사」시행계획을 다음과 같이 공고하오니, 많은 참여와 신청 바랍니다.</p><p><br></p><p>☞ 중소벤처기업 주관(대학ㆍ출연연ㆍ전문연 등 컨소시엄 참여 필수)</p><p><br></p><p>☞ 프로젝트당 90억원 내외(민간 先투자 20억원 이상, 출연방식R&amp;D 최대 50억원 이내) + 지분투자(모태펀드) 지원</p>",
-        "pldirSportRealmLclasCodeNm": "기술",
-        "creatPnttm": "2026-04-02 13:55:05",
-        "reqstBeginEndDe": "2026-04-01 ~ 2026-05-04",
-        "updtPnttm": "2026-04-03 16:14:27",
-        "trgetNm": "중소기업",
-        "inqireCo": 3205,
-        "flpthNm": "https://www.bizinfo.go.kr/cmm/fms/getImageFile.do?atchFileId=FILE_000000000749635&fileSn=0@https://www.bizinfo.go.kr/cmm/fms/getImageFile.do?atchFileId=FILE_000000000749635&fileSn=1@https://www.bizinfo.go.kr/cmm/fms/getImageFile.do?atchFileId=FILE_000000000749635&fileSn=2@https://www.bizinfo.go.kr/cmm/fms/getImageFile.do?atchFileId=FILE_000000000749635&fileSn=3@https://www.bizinfo.go.kr/cmm/fms/getImageFile.do?atchFileId=FILE_000000000749635&fileSn=4",
-        "fileNm": "(붙임2)_국가과학기술표준분류.pdf@2026년도_딥테크_챌린지_프로젝트(DCP_기술도전형)_제1차_기술수요조사_시행계획_공고.hwpx@(붙임1)_2026년도_DCP(기술도전형)_1차_기술수요조사서_양식.hwpx@(붙임2)_국가과학기술표준분류.hwpx@(붙임1)_2026년도_DCP(기술도전형)_1차_기술수요조사서_양식.pdf",
-        "printFlpthNm": "https://www.bizinfo.go.kr/cmm/fms/getImageFile.do?atchFileId=FILE_000000000749634&fileSn=0",
-        "printFileNm": "2026년도_딥테크_챌린지_프로젝트(DCP_기술도전형)_제1차_기술수요조사_시행계획_공고.pdf",
-        "hashtags": "기술,경영,서울,부산,대구,인천,광주,대전,울산,세종,경기,강원,충북,충남,전북,전남,경북,경남,제주,기술 수요 조사,기술도전형,2026,딥테크,중소벤처기업,컨소시엄,중소기업기술정보진흥원,중소벤처기업부,R&D",
-        "reqstMthPapersCn": "온라인 접수(범부처통합연구지원시스템)",
-        "refrncNm": "(기술수요조사 신청ㆍ접수, 기술수요조사서 작성, 조사분야 등 기획 관련 문의) 02-3014-2021, 2011, 2012 (딥테크 챌린지 프로젝트(DCP) 사업 관련 문의) 02-2280-0428, 0431",
-        "rceptEngnHmpgUrl": "https://www.iris.go.kr/main.do"
-      },
-      "tier": "orange",
-      "best_entity": "heoparang_personal",
-      "best_tier": "orange",
-      "domain": {
-        "whitelisted": false,
-        "bridgeable": true,
-        "hit_layers": [],
-        "l0_generic": [],
-        "bridge_hits": [
-          "벤처",
-          "테크",
-          "온라인"
-        ],
-        "negative_hard": [],
-        "negative_soft": [],
-        "match_path": "🌉bridge"
-      },
-      "entities": {
-        "heoparang_personal": {
-          "tier": "orange",
-          "reason": "지역 매칭 (인천) + 🌉 스토리텔링 브리지 (벤처)",
-          "audit_flags": [],
-          "strong_hit": null,
-          "match_path": "🌉bridge"
-        },
-        "xcom_corp": {
-          "tier": "orange",
-          "reason": "지역 매칭 (인천) + 🌉 스토리텔링 브리지 (벤처)",
-          "audit_flags": [],
-          "strong_hit": null,
-          "match_path": "🌉bridge"
-        },
-        "younglim_daegu": {
-          "tier": "orange",
-          "reason": "지역 매칭 (대구) + 🌉 스토리텔링 브리지 (벤처)",
-          "audit_flags": [],
-          "strong_hit": null,
-          "match_path": "🌉bridge"
-        }
-      },
-      "rationale_short": "허파랑 개인 명의 추천 / 레이어: 🌉브리지 / 경로: 🌉bridge / source: bizinfo / 🌉 벤처",
-      "nogo_match": null,
-      "source_priority": 1.0,
-      "last_seen": "2026-04-29"
-    },
-    {
-      "source": "bizinfo",
-      "source_label": "중소벤처기업부 BIZINFO (기업마당)",
-      "id": "bizinfo_PBLN_000000000120279",
-      "pbancSn": null,
-      "title": "2026년 시니어 과학기술인 단기연구원 지원사업 공고",
-      "agency": "과학기술정보통신부 / 한국산업기술진흥협회",
-      "url": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000120279",
-      "deadline": "2026-05-04",
-      "structured": {
-        "pblancNm": "2026년 시니어 과학기술인 단기연구원 지원사업 공고",
-        "pblancUrl": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000120279",
-        "pblancId": "PBLN_000000000120279",
-        "jrsdInsttNm": "과학기술정보통신부",
-        "excInsttNm": "한국산업기술진흥협회",
-        "bsnsSumryCn": "<p>안녕하세요, 한국산업기술진흥협회입니다. 중소기업의 기술애로 해결을 지원하기 위해 「2026 시니어 과학기술인 단기연구원 지원사업」을 시행합니다.&nbsp;</p><p>본 사업은 중소기업이 보유한 기술분야 애로사항에 대해 경험과 전문성을 갖춘 시니어 과학기술인이 단기연구원으로 참여하여 문제 해결을 지원하는 사업입니다. 작년 한 해 동안 해당사업에 참여한 기업들은 매출 20% 성장, 수출 50%이상 확대, 불량률 30% 감소, 개발기간 50% 단축하는 기염을 토했으며 사업에 참여했던 50명의 시니어분들중 13명은 지원이 끝난 현재까지도 기업에서 활동 중이십니다.&nbsp;</p><p>기술애로사항으로 어려움을 겪고 있는 중소기업과, 현장 경험을 바탕으로 기술 지원이 가능한 시니어 과학기술인 분들의 많은 참여를 바랍니다. 감사합니다.</p><p><br></p><p>☞ 기업부설연구소 또는 연구개발전담부서를 보유한 중소기업</p><p><br></p><p>☞ 기술애로가 있는 중소기업이 시니어 과학기술인을 단기연구원으로 채용하여 활용할 수 있도록 인건비 지원</p>",
-        "pldirSportRealmLclasCodeNm": "인력",
-        "creatPnttm": "2026-04-02 10:40:19",
-        "reqstBeginEndDe": "2026-03-27 ~ 2026-05-04",
-        "updtPnttm": "2026-04-02 16:14:32",
-        "trgetNm": "중소기업",
-        "inqireCo": 2081,
-        "flpthNm": "https://www.bizinfo.go.kr/cmm/fms/getImageFile.do?atchFileId=FILE_000000000749575&fileSn=0@https://www.bizinfo.go.kr/cmm/fms/getImageFile.do?atchFileId=FILE_000000000749575&fileSn=1@https://www.bizinfo.go.kr/cmm/fms/getImageFile.do?atchFileId=FILE_000000000749575&fileSn=2",
-        "fileNm": "2026년도 시니어 과학기술인 단기연구원 지원사업 공고.pdf@2026년도 시니어 과학기술인 단기연구원 지원사업 붙임서류.hwpx@2026년도 시니어 과학기술인 단기연구원 지원사업 FAQ.pdf",
-        "printFlpthNm": "https://www.bizinfo.go.kr/cmm/fms/getImageFile.do?atchFileId=FILE_000000000749574&fileSn=0",
-        "printFileNm": "1. 단기연구원 사업안내 이미지.jpg",
-        "hashtags": "인력,서울,부산,대구,인천,광주,대전,울산,세종,경기,강원,충북,충남,전북,전남,경북,경남,제주,단기연구원,2026,인건비지원,시니어,한국산업기술진흥협회,기술애로,과학기술인,과학기술정보통신부,중소기업",
-        "reqstMthPapersCn": "온라인 접수 (과학기술인지원센터)",
-        "refrncNm": "한국산업기술진흥협회 02-3460-9066, 9063, 9068",
-        "rceptEngnHmpgUrl": "https://www.reseat.or.kr/portal/reqst/pblanc/view.do?pblancSn=48&pblancSeCd=S&menuNo=200181&pageIndex=1"
-      },
-      "tier": "orange",
-      "best_entity": "heoparang_personal",
-      "best_tier": "orange",
-      "domain": {
-        "whitelisted": false,
-        "bridgeable": true,
-        "hit_layers": [],
-        "l0_generic": [],
-        "bridge_hits": [
-          "온라인"
-        ],
-        "negative_hard": [],
-        "negative_soft": [],
-        "match_path": "🌉bridge"
-      },
-      "entities": {
-        "heoparang_personal": {
-          "tier": "orange",
-          "reason": "지역 매칭 (인천) + 🌉 스토리텔링 브리지 (온라인)",
-          "audit_flags": [],
-          "strong_hit": null,
-          "match_path": "🌉bridge"
-        },
-        "xcom_corp": {
-          "tier": "orange",
-          "reason": "지역 매칭 (인천) + 🌉 스토리텔링 브리지 (온라인)",
-          "audit_flags": [],
-          "strong_hit": null,
-          "match_path": "🌉bridge"
-        },
-        "younglim_daegu": {
-          "tier": "orange",
-          "reason": "지역 매칭 (대구) + 🌉 스토리텔링 브리지 (온라인)",
-          "audit_flags": [],
-          "strong_hit": null,
-          "match_path": "🌉bridge"
-        }
-      },
-      "rationale_short": "허파랑 개인 명의 추천 / 레이어: 🌉브리지 / 경로: 🌉bridge / source: bizinfo / 🌉 온라인",
-      "nogo_match": null,
-      "source_priority": 1.0,
-      "last_seen": "2026-04-29"
-    },
-    {
-      "source": "bizinfo",
-      "source_label": "중소벤처기업부 BIZINFO (기업마당)",
-      "id": "bizinfo_PBLN_000000000121443",
-      "pbancSn": null,
-      "title": "[충북] 2026년 중소기업제품전시판매장(도청점) 신규 입점업체 모집 연장 공고",
-      "agency": "충청북도 / 충청북도기업진흥원",
-      "url": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000121443",
-      "deadline": "2026-05-04",
-      "structured": {
-        "pblancNm": "[충북] 2026년 중소기업제품전시판매장(도청점) 신규 입점업체 모집 연장 공고",
-        "pblancUrl": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000121443",
-        "pblancId": "PBLN_000000000121443",
-        "jrsdInsttNm": "충청북도",
-        "excInsttNm": "충청북도기업진흥원",
-        "bsnsSumryCn": "충청북도기업진흥원에서 도내 구매력이 높은 우수 중소기업 제품을 대상으로 중소기업제품전시판매장 도청점 신규 입점 업체를 모집합니다. 많은 신청 바랍니다. ☞ 충북도 내 우수 중소기업 제품(구매력이 높은 완제품 위주) ☞ 제품전시에 따른 업체 홍보, 제품 판매 등 지원 ※ 자세한 지원내용 공고문 참조 사업신청 방법 이메일(서류) / 우편ㆍ방문(제품샘플) 접수 - 이메일 : wamk619@gmail.com - 접수처(제품샘플) : 충북 청주시 흥덕구 풍산로 50, 2층 기업지원부 문의처 충청북도기업진흥원 기업지원부 043-230-9743 / 충청북도중소기업제품전시판매장 도청점 043-220-8238 ※ 본 지원사업에 대한 문의˙신청 등의 모든 절차는 수행기관에서 전담하고 있음을 안내드립니다. [충북] 2026년 중소기업제품전시판매장(도청점) 신규 입점업체 모집 연장 공고 # 해시태그 목록 #2026 #판매행사 #제품전시 #입점지원 #제품판매 #카탈로그 #온라인쇼핑몰 #홍보 #충청북도 #충청북도기업진흥원 #중소기업 #충북 #내수",
-        "pldirSportRealmLclasCodeNm": "내수",
-        "creatPnttm": "2026-04-29 00:00:00",
-        "reqstBeginEndDe": "2026-04-27 ~ 2026-05-04",
-        "updtPnttm": null,
-        "trgetNm": "중소기업",
-        "inqireCo": 195,
-        "flpthNm": null,
-        "fileNm": null,
-        "printFlpthNm": null,
-        "printFileNm": null,
-        "hashtags": "[충북] 2026년 중소기업제품전시판매장(도청점) 신규 입점업체 모집 연장 공고,충청북도기업진흥원,2026-04-29,AI,온라인",
-        "reqstMthPapersCn": "",
-        "refrncNm": "충청북도기업진흥원 기업지원부 043-230-9743 / 충청북도중소기업제품전시판매장 도청점 043-220-8238 ※ 본 지원사업에 대한 문의˙신청 등의 모든 절차는 수행기관에서 전담하고 있음을 안내드립니다. [충북] 2026년 중소기업제품전시판매장(도청점) 신규 입점업체 모집 연장 공고 # 해시태그 목록 #2026 #판매행사 #제품전시 #입점지원 #제품판매 #카탈로그 #온라인쇼핑몰 #홍보 #충청북도 #충청북도기업진흥원 #중소기업 #충북 #내수",
-        "rceptEngnHmpgUrl": ""
-      },
-      "tier": "orange",
-      "best_entity": "heoparang_personal",
-      "domain": {
-        "whitelisted": false,
-        "bridgeable": true,
-        "hit_layers": [],
-        "l0_generic": [
-          "AI"
-        ],
-        "bridge_hits": [
-          "AI",
-          "온라인"
-        ],
-        "negative_hard": [],
-        "negative_soft": [],
-        "match_path": "🌉bridge"
-      },
-      "entities": {
-        "heoparang_personal": {
-          "tier": "orange",
-          "reason": "3순위 참고용: 직접 지역/도메인 매칭 약함",
-          "audit_flags": [],
-          "strong_hit": null,
-          "match_path": "🌉bridge"
-        },
-        "xcom_corp": {
-          "tier": "orange",
-          "reason": "3순위 참고용: 직접 지역/도메인 매칭 약함",
-          "audit_flags": [],
-          "strong_hit": null,
-          "match_path": "🌉bridge"
-        },
-        "younglim_daegu": {
-          "tier": "orange",
-          "reason": "3순위 참고용: 직접 지역/도메인 매칭 약함",
-          "audit_flags": [],
-          "strong_hit": null,
-          "match_path": "🌉bridge"
-        }
-      },
-      "rationale_short": "허파랑 개인 명의 추천 / 레이어: L0 / 경로: 🌉bridge / source: bizinfo / 🌉 AI",
-      "nogo_match": null,
-      "source_priority": 1.0,
-      "first_seen": "2026-04-30",
-      "last_seen": "2026-04-30",
-      "creatPnttm": "2026-04-29 00:00:00",
-      "verdict": ""
-    },
-    {
-      "source": "kstartup",
-      "source_label": "K-Startup",
       "id": "kstartup_177287",
       "pbancSn": "177287",
       "title": "G-SSR(Gangwon-South Startup Rise)  아카데미",
@@ -25494,7 +23776,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "3순위 (참고용): 지역 한정 (강원)",
       "connect": "",
       "classify_evidence": {
@@ -25625,7 +23907,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (청년창업)",
       "connect": "",
       "classify_evidence": {
@@ -25764,7 +24046,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "3순위 (참고용): 지자체 기관 의심 (지역진흥원: 서울경제진흥원)",
       "connect": "",
       "classify_evidence": {
@@ -25868,7 +24150,7 @@
       "deadline": "2026-05-05",
       "detail_url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177367",
       "first_seen": "2026-04-29",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177367,
         "integrated": false,
@@ -26004,7 +24286,7 @@
       "deadline": "2026-05-05",
       "detail_url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177365",
       "first_seen": "2026-04-29",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177365,
         "integrated": false,
@@ -26173,7 +24455,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "3순위 (참고용): 지자체 기관 의심 (재단법인 접두사: (재)충남창조경제혁신센터)",
       "connect": "",
       "classify_evidence": {
@@ -26312,7 +24594,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "AI 포지셔닝 가능 (AX)",
       "connect": "",
       "classify_evidence": {
@@ -26445,7 +24727,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (액셀러레이팅)",
       "connect": "",
       "classify_evidence": {
@@ -26715,7 +24997,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (피칭)",
       "connect": "",
       "classify_evidence": {
@@ -26848,7 +25130,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "3순위 (참고용): 경기 단독 (인천 미포함)",
       "connect": "",
       "classify_evidence": {
@@ -26979,7 +25261,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (액셀러레이팅)",
       "connect": "",
       "classify_evidence": {
@@ -27113,7 +25395,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (전국/판로ㆍ해외진출)",
       "connect": "",
       "classify_evidence": {
@@ -27254,7 +25536,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "structured 완전 매칭 (전국/사업화)",
       "connect": "",
       "classify_evidence": {
@@ -27363,7 +25645,7 @@
       "deadline": "2026-05-06",
       "detail_url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177401",
       "first_seen": "2026-04-29",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177401,
         "integrated": false,
@@ -27523,7 +25805,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "structured 완전 매칭 (전국/사업화)",
       "connect": "",
       "classify_evidence": {
@@ -27662,7 +25944,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "3순위 (참고용): 서울 시설/지자체 (서울특별시)",
       "connect": "",
       "classify_evidence": {
@@ -27797,7 +26079,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "structured 완전 매칭 (전국/사업화)",
       "connect": "",
       "classify_evidence": {
@@ -27938,7 +26220,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (전국/시설ㆍ공간ㆍ보육)",
       "connect": "",
       "classify_evidence": {
@@ -28073,7 +26355,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "3순위 (참고용): 지자체 기관 의심 (지역혁신센터: 경북창조경제혁신센터)",
       "connect": "",
       "classify_evidence": {
@@ -28211,7 +26493,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "structured 완전 매칭 (전국/사업화)",
       "connect": "",
       "classify_evidence": {
@@ -28350,7 +26632,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "핵심 매칭 (모두의 창업) — title",
       "connect": "",
       "classify_evidence": {
@@ -28481,7 +26763,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (청년창업)",
       "connect": "",
       "classify_evidence": {
@@ -28625,7 +26907,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "3순위 (참고용): 지자체 기관 의심 (지역혁신센터: 경북창조경제혁신센터)",
       "connect": "",
       "classify_evidence": {
@@ -28757,7 +27039,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "핵심 매칭 (초기창업) — title",
       "connect": "",
       "classify_evidence": {
@@ -28890,7 +27172,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "structured 완전 매칭 (전국/사업화)",
       "connect": "",
       "classify_evidence": {
@@ -29023,7 +27305,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "structured 완전 매칭 (전국/사업화)",
       "connect": "",
       "classify_evidence": {
@@ -30679,7 +28961,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-05-01",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177464,
         "integrated": false,
@@ -30800,7 +29082,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-05-01",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177462,
         "integrated": false,
@@ -30860,7 +29142,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "structured 완전 매칭 (전국/사업화)",
       "connect": "",
       "classify_evidence": {
@@ -31011,7 +29293,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "핵심 매칭 (예비창업) — title",
       "connect": "",
       "classify_evidence": {
@@ -31147,7 +29429,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "3순위 (참고용): 경기 단독 (인천 미포함)",
       "connect": "",
       "classify_evidence": {
@@ -31282,7 +29564,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "structured 완전 매칭 (전국/사업화)",
       "connect": "",
       "classify_evidence": {
@@ -31428,7 +29710,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "structured 완전 매칭 (전국/사업화)",
       "connect": "",
       "classify_evidence": {
@@ -31561,7 +29843,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "3순위 (참고용): 지자체 기관 의심 (창업보육센터: 중앙대학교 다빈치캠퍼스 창업보육센터장)",
       "connect": "",
       "classify_evidence": {
@@ -32574,7 +30856,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177428,
         "integrated": false,
@@ -32634,7 +30916,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "structured 완전 매칭 (전국/사업화)",
       "connect": "",
       "classify_evidence": {
@@ -32778,7 +31060,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "structured 완전 매칭 (전국/사업화)",
       "connect": "",
       "classify_evidence": {
@@ -32881,7 +31163,7 @@
       "deadline": "2026-05-08",
       "detail_url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177371",
       "first_seen": "2026-04-29",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177371,
         "integrated": false,
@@ -33038,7 +31320,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "핵심 매칭 (초기창업) — title",
       "connect": "",
       "classify_evidence": {
@@ -33171,7 +31453,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "3순위 (참고용): 지역 한정 desc: '광주 지역'",
       "connect": "",
       "classify_evidence": {
@@ -33307,7 +31589,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "3순위 (참고용): 지자체 기관 의심 (재단법인 접두사: (재)창원산업진흥원)",
       "connect": "",
       "classify_evidence": {
@@ -33439,7 +31721,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (청년창업)",
       "connect": "",
       "classify_evidence": {
@@ -33578,7 +31860,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (피칭)",
       "connect": "",
       "classify_evidence": {
@@ -33711,7 +31993,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (전국/글로벌)",
       "connect": "",
       "classify_evidence": {
@@ -33844,7 +32126,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)",
       "connect": "",
       "classify_evidence": {
@@ -33977,7 +32259,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (콘텐츠)",
       "connect": "",
       "classify_evidence": {
@@ -34118,7 +32400,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (전국/시설ㆍ공간ㆍ보육)",
       "connect": "",
       "classify_evidence": {
@@ -34264,7 +32546,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "structured 완전 매칭 (전국/사업화)",
       "connect": "",
       "classify_evidence": {
@@ -34398,7 +32680,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "3순위 (참고용): 서울 단독 (인천 미포함)",
       "connect": "",
       "classify_evidence": {
@@ -34539,7 +32821,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "AI 포지셔닝 가능 (데이터)",
       "connect": "",
       "classify_evidence": {
@@ -34680,7 +32962,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "AI 포지셔닝 가능 (AI 스타트업)",
       "connect": "",
       "classify_evidence": {
@@ -34825,7 +33107,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (전국/글로벌)",
       "connect": "",
       "classify_evidence": {
@@ -34959,7 +33241,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "structured 완전 매칭 (전국/사업화)",
       "connect": "",
       "classify_evidence": {
@@ -35092,7 +33374,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "structured 완전 매칭 (전국/사업화)",
       "connect": "",
       "classify_evidence": {
@@ -35225,7 +33507,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (전국/창업교육)",
       "connect": "",
       "classify_evidence": {
@@ -35364,7 +33646,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (전국/시설ㆍ공간ㆍ보육)",
       "connect": "",
       "classify_evidence": {
@@ -39359,7 +37641,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177144,
         "integrated": true,
@@ -39419,7 +37701,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "structured 완전 매칭 (전국/사업화)",
       "connect": "",
       "classify_evidence": {
@@ -39558,7 +37840,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "structured 완전 매칭 (전국/사업화)",
       "connect": "",
       "classify_evidence": {
@@ -39661,7 +37943,7 @@
       "deadline": "2026-05-10",
       "detail_url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177403",
       "first_seen": "2026-04-29",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177403,
         "integrated": false,
@@ -39825,7 +38107,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "structured 완전 매칭 (전국/사업화)",
       "connect": "",
       "classify_evidence": {
@@ -39958,7 +38240,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (전국/창업교육)",
       "connect": "",
       "classify_evidence": {
@@ -40091,7 +38373,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)",
       "connect": "",
       "classify_evidence": {
@@ -40237,7 +38519,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "핵심 매칭 (초기창업) — title",
       "connect": "",
       "classify_evidence": {
@@ -40376,7 +38658,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)",
       "connect": "",
       "classify_evidence": {
@@ -41120,7 +39402,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-05-01",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177460,
         "integrated": true,
@@ -41180,7 +39462,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (전국/인력)",
       "connect": "",
       "classify_evidence": {
@@ -41317,7 +39599,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "3순위 (참고용): 사업명에 지역 포함 (강원)",
       "connect": "",
       "classify_evidence": {
@@ -41448,7 +39730,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (전국/창업교육)",
       "connect": "",
       "classify_evidence": {
@@ -41583,7 +39865,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "3순위 (참고용): 지자체 기관 의심 (재단법인 접두사: (재)대전창조경제혁신센터)",
       "connect": "",
       "classify_evidence": {
@@ -41717,7 +39999,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "3순위 (참고용): 업종 한정 (농업)",
       "connect": "",
       "classify_evidence": {
@@ -41855,7 +40137,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (콘텐츠)",
       "connect": "",
       "classify_evidence": {
@@ -41997,7 +40279,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "AI 포지셔닝 가능 (클라우드)",
       "connect": "",
       "classify_evidence": {
@@ -42131,7 +40413,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "3순위 (참고용): 기관 지역 한정 (agency: 충남신용보증재단)",
       "connect": "",
       "classify_evidence": {
@@ -42263,7 +40545,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "structured 완전 매칭 (전국/사업화)",
       "connect": "",
       "classify_evidence": {
@@ -43957,7 +42239,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177417,
         "integrated": false,
@@ -44076,7 +42358,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-05-01",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177454,
         "integrated": true,
@@ -44105,7 +42387,7 @@
       "deadline": "2026-05-12",
       "detail_url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177415",
       "first_seen": "2026-04-29",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177415,
         "integrated": false,
@@ -44234,7 +42516,7 @@
       "deadline": "2026-05-12",
       "detail_url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177414",
       "first_seen": "2026-04-29",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177414,
         "integrated": false,
@@ -44392,7 +42674,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "3순위 (참고용): 지자체 기관 의심 (재단법인 접두사: (재)성동벤처밸리)",
       "connect": "",
       "classify_evidence": {
@@ -44750,7 +43032,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-05-01",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177453,
         "integrated": false,
@@ -44869,7 +43151,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-05-01",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177452,
         "integrated": false,
@@ -44929,7 +43211,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (해커톤)",
       "connect": "",
       "classify_evidence": {
@@ -45065,7 +43347,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "structured 완전 매칭 (전국/사업화)",
       "connect": "",
       "classify_evidence": {
@@ -45209,7 +43491,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "3순위 (참고용): 경기 단독 (인천 미포함)",
       "connect": "",
       "classify_evidence": {
@@ -45347,7 +43629,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "3순위 (참고용): 지자체 기관 의심 (지역진흥원: 과학기술부총리 겸 과학기술정보통신부장관 배 경 훈, 과)",
       "connect": "",
       "classify_evidence": {
@@ -45454,7 +43736,7 @@
       "deadline": "2026-05-13",
       "detail_url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177221",
       "first_seen": "2026-04-29",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177221,
         "integrated": true,
@@ -45609,7 +43891,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (청년창업)",
       "connect": "",
       "classify_evidence": {
@@ -45748,7 +44030,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (전국/기술개발(R&amp;D))",
       "connect": "",
       "classify_evidence": {
@@ -46116,7 +44398,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177448,
         "integrated": false,
@@ -46238,7 +44520,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177439,
         "integrated": false,
@@ -46359,7 +44641,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177430,
         "integrated": false,
@@ -46480,7 +44762,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177429,
         "integrated": true,
@@ -46599,7 +44881,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-05-01",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177474,
         "integrated": false,
@@ -46628,7 +44910,7 @@
       "deadline": "2026-05-14",
       "detail_url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177399",
       "first_seen": "2026-04-29",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177399,
         "integrated": false,
@@ -46800,7 +45082,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "3순위 (참고용): 서울 단독 (인천 미포함)",
       "connect": "",
       "classify_evidence": {
@@ -46932,7 +45214,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "3순위 (참고용): 지자체 기관 의심 (지역진흥원: 서울경제진흥원)",
       "connect": "",
       "classify_evidence": {
@@ -47064,7 +45346,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "3순위 (참고용): 지자체 기관 의심 (재단법인 접두사: (재)이노베이션아카데미)",
       "connect": "",
       "classify_evidence": {
@@ -47202,7 +45484,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (IP 디딤돌)",
       "connect": "",
       "classify_evidence": {
@@ -47333,7 +45615,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (IR)",
       "connect": "",
       "classify_evidence": {
@@ -48260,7 +46542,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177427,
         "integrated": true,
@@ -48381,7 +46663,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-05-01",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177472,
         "integrated": false,
@@ -48441,7 +46723,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (전국/판로ㆍ해외진출)",
       "connect": "",
       "classify_evidence": {
@@ -48544,7 +46826,7 @@
       "deadline": "2026-05-15",
       "detail_url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177355",
       "first_seen": "2026-04-29",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177355,
         "integrated": false,
@@ -48700,7 +46982,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (임팩트)",
       "connect": "",
       "classify_evidence": {
@@ -48833,7 +47115,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (전국/판로ㆍ해외진출)",
       "connect": "",
       "classify_evidence": {
@@ -48966,7 +47248,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (청년창업)",
       "connect": "",
       "classify_evidence": {
@@ -49099,7 +47381,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "structured 완전 매칭 (전국/사업화)",
       "connect": "",
       "classify_evidence": {
@@ -49232,7 +47514,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (청년창업)",
       "connect": "",
       "classify_evidence": {
@@ -49377,7 +47659,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)",
       "connect": "",
       "classify_evidence": {
@@ -51510,7 +49792,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177442,
         "integrated": true,
@@ -51632,7 +49914,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177441,
         "integrated": true,
@@ -51754,7 +50036,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177440,
         "integrated": true,
@@ -51876,7 +50158,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177438,
         "integrated": false,
@@ -51997,7 +50279,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177435,
         "integrated": false,
@@ -52125,7 +50407,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177431,
         "integrated": false,
@@ -52259,7 +50541,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177419,
         "integrated": false,
@@ -52385,7 +50667,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-05-01",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177469,
         "integrated": false,
@@ -52515,7 +50797,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-05-01",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177459,
         "integrated": true,
@@ -52637,7 +50919,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-05-01",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177458,
         "integrated": true,
@@ -52697,7 +50979,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)",
       "connect": "",
       "classify_evidence": {
@@ -52836,7 +51118,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (IT)",
       "connect": "",
       "classify_evidence": {
@@ -52943,7 +51225,7 @@
       "deadline": "2026-05-17",
       "detail_url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177416",
       "first_seen": "2026-04-29",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177416,
         "integrated": true,
@@ -53068,7 +51350,7 @@
       "deadline": "2026-05-17",
       "detail_url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177413",
       "first_seen": "2026-04-29",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177413,
         "integrated": false,
@@ -53225,7 +51507,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)",
       "connect": "",
       "classify_evidence": {
@@ -53403,7 +51685,7 @@
       "deadline": "2026-05-18",
       "detail_url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177396",
       "first_seen": "2026-04-29",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177396,
         "integrated": false,
@@ -53563,7 +51845,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (혁신창업)",
       "connect": "",
       "classify_evidence": {
@@ -53703,7 +51985,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (디지털)",
       "connect": "",
       "classify_evidence": {
@@ -53841,7 +52123,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "3순위 (참고용): 사업명에 지역 포함 (대전)",
       "connect": "",
       "classify_evidence": {
@@ -53977,7 +52259,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (디지털)",
       "connect": "",
       "classify_evidence": {
@@ -54668,7 +52950,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-05-01",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177450,
         "integrated": false,
@@ -54728,7 +53010,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (청년창업)",
       "connect": "",
       "classify_evidence": {
@@ -54863,7 +53145,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "3순위 (참고용): 업종 한정 (부동산)",
       "connect": "",
       "classify_evidence": {
@@ -55002,7 +53284,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (혁신창업)",
       "connect": "",
       "classify_evidence": {
@@ -55139,7 +53421,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (IP디딤돌)",
       "connect": "",
       "classify_evidence": {
@@ -55241,7 +53523,7 @@
       "deadline": "2026-05-20",
       "detail_url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177418",
       "first_seen": "2026-04-29",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177418,
         "integrated": false,
@@ -55701,7 +53983,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 176811,
         "integrated": true,
@@ -55825,7 +54107,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-05-01",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177473,
         "integrated": true,
@@ -55944,7 +54226,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-05-01",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177465,
         "integrated": false,
@@ -56065,7 +54347,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-05-01",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177457,
         "integrated": false,
@@ -56125,7 +54407,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "structured 완전 매칭 (전국/사업화)",
       "connect": "",
       "classify_evidence": {
@@ -56260,7 +54542,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (디지털)",
       "connect": "",
       "classify_evidence": {
@@ -56405,7 +54687,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "structured 완전 매칭 (전국/사업화)",
       "connect": "",
       "classify_evidence": {
@@ -56546,7 +54828,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "3순위 (참고용): 지자체 기관 의심 (지역진흥원: 부산정보산업진흥원)",
       "connect": "",
       "classify_evidence": {
@@ -56689,7 +54971,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "structured 완전 매칭 (전국/사업화)",
       "connect": "",
       "classify_evidence": {
@@ -56836,7 +55118,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (콘텐츠)",
       "connect": "",
       "classify_evidence": {
@@ -58008,7 +56290,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177433,
         "integrated": false,
@@ -58127,7 +56409,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177394,
         "integrated": false,
@@ -58248,7 +56530,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-05-01",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177456,
         "integrated": false,
@@ -58408,7 +56690,7 @@
       "deadline": "2026-05-25",
       "detail_url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177406",
       "first_seen": "2026-04-29",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177406,
         "integrated": false,
@@ -58565,7 +56847,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "structured 완전 매칭 (전국/사업화)",
       "connect": "",
       "classify_evidence": {
@@ -58699,7 +56981,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "structured 완전 매칭 (전국/사업화)",
       "connect": "",
       "classify_evidence": {
@@ -59052,7 +57334,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-05-01",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177447,
         "integrated": true,
@@ -59115,7 +57397,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "인천 매칭 (인천테크노파크)",
       "connect": "",
       "classify_evidence": {
@@ -59224,7 +57506,7 @@
       "deadline": "2026-05-27",
       "detail_url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177402",
       "first_seen": "2026-04-29",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177402,
         "integrated": true,
@@ -59379,7 +57661,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "structured 완전 매칭 (전국/사업화)",
       "connect": "",
       "classify_evidence": {
@@ -59512,7 +57794,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "structured 완전 매칭 (전국/사업화)",
       "connect": "",
       "classify_evidence": {
@@ -59877,7 +58159,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "structured 완전 매칭 (전국/사업화)",
       "connect": "",
       "classify_evidence": {
@@ -60138,7 +58420,7 @@
       "deadline": "2026-05-29",
       "detail_url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177400",
       "first_seen": "2026-04-29",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177400,
         "integrated": false,
@@ -60298,7 +58580,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (전국/시설ㆍ공간ㆍ보육)",
       "connect": "",
       "classify_evidence": {
@@ -60437,7 +58719,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "structured 완전 매칭 (전국/사업화)",
       "connect": "",
       "classify_evidence": {
@@ -60572,7 +58854,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "AI 포지셔닝 가능 (데이터)",
       "connect": "",
       "classify_evidence": {
@@ -61597,7 +59879,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177437,
         "integrated": false,
@@ -61724,7 +60006,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177436,
         "integrated": false,
@@ -61848,7 +60130,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 176073,
         "integrated": false,
@@ -62231,7 +60513,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-05-01",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 177475,
         "integrated": false,
@@ -62431,7 +60713,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 176737,
         "integrated": false,
@@ -62491,7 +60773,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "3순위 (참고용): 자격 한정 (OASIS)",
       "connect": "",
       "classify_evidence": {
@@ -63069,7 +61351,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 176833,
         "integrated": false,
@@ -63129,7 +61411,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (플랫폼)",
       "connect": "",
       "classify_evidence": {
@@ -63457,7 +61739,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 176814,
         "integrated": false,
@@ -63578,7 +61860,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 176520,
         "integrated": false,
@@ -63714,7 +61996,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (전국/기술개발(R&amp;D))",
       "connect": "",
       "classify_evidence": {
@@ -63931,7 +62213,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)",
       "connect": "",
       "classify_evidence": {
@@ -64075,7 +62357,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "AI 포지셔닝 가능 (AX)",
       "connect": "",
       "classify_evidence": {
@@ -64599,7 +62881,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 176692,
         "integrated": false,
@@ -64731,7 +63013,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 175975,
         "integrated": true,
@@ -64858,7 +63140,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 175949,
         "integrated": true,
@@ -64920,7 +63202,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (전국/글로벌)",
       "connect": "",
       "classify_evidence": {
@@ -65129,7 +63411,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "AI 포지셔닝 가능 (데이터)",
       "connect": "",
       "classify_evidence": {
@@ -65266,7 +63548,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "3순위 (참고용): 업종 한정 (부동산)",
       "connect": "",
       "classify_evidence": {
@@ -65405,7 +63687,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "3순위 (참고용): 경기 단독 (인천 미포함)",
       "connect": "",
       "classify_evidence": {
@@ -65603,7 +63885,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 175817,
         "integrated": false,
@@ -65663,7 +63945,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)",
       "connect": "",
       "classify_evidence": {
@@ -65796,7 +64078,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "3순위 (참고용): 지자체 기관 의심 (지역진흥원: 성남산업진흥원)",
       "connect": "",
       "classify_evidence": {
@@ -65911,7 +64193,7 @@
       "deadline": "2026-09-30",
       "detail_url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=176968",
       "first_seen": "2026-04-29",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 176968,
         "integrated": true,
@@ -66511,7 +64793,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 176645,
         "integrated": true,
@@ -66640,7 +64922,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 175808,
         "integrated": false,
@@ -67082,7 +65364,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "AI 포지셔닝 가능 (딥테크)",
       "connect": "",
       "classify_evidence": {
@@ -67358,7 +65640,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 176190,
         "integrated": false,
@@ -67485,7 +65767,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 176218,
         "integrated": true,
@@ -67604,7 +65886,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 176378,
         "integrated": false,
@@ -67797,7 +66079,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 176406,
         "integrated": false,
@@ -67924,7 +66206,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 176755,
         "integrated": false,
@@ -68043,7 +66325,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 176494,
         "integrated": false,
@@ -68682,7 +66964,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 176782,
         "integrated": false,
@@ -68809,7 +67091,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 176316,
         "integrated": false,
@@ -68940,7 +67222,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 176248,
         "integrated": true,
@@ -69061,7 +67343,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 176090,
         "integrated": false,
@@ -69121,7 +67403,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "3순위 (참고용): 서울 시설/지자체 (서울창업허브)",
       "connect": "",
       "classify_evidence": {
@@ -69465,7 +67747,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "3순위 (참고용): 지자체 기관 의심 (창업보육센터: 남서울대학교 창업보육센터)",
       "connect": "",
       "classify_evidence": {
@@ -69608,7 +67890,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "3순위 (참고용): 지자체 기관 의심 (지역진흥원: 서울경제진흥원)",
       "connect": "",
       "classify_evidence": {
@@ -69745,7 +68027,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "3순위 (참고용): 지자체 기관 의심 (재단법인 접두사: (재)충북과학기술혁신원장)",
       "connect": "",
       "classify_evidence": {
@@ -69880,7 +68162,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)",
       "connect": "",
       "classify_evidence": {
@@ -70013,7 +68295,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "3순위 (참고용): 기관 지역 한정 (agency: 대구노동권익센터)",
       "connect": "",
       "classify_evidence": {
@@ -70143,7 +68425,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "3순위 (참고용): 지자체 기관 의심 (재단법인 접두사: (재)창원산업진흥원)",
       "connect": "",
       "classify_evidence": {
@@ -70276,7 +68558,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "3순위 (참고용): 기관 지역 한정 (agency: (사)부산경영자총협회)",
       "connect": "",
       "classify_evidence": {
@@ -70414,7 +68696,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "3순위 (참고용): 기관 지역 한정 (agency: 대구노동권익센터)",
       "connect": "",
       "classify_evidence": {
@@ -71203,7 +69485,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 176856,
         "integrated": false,
@@ -71324,7 +69606,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 176855,
         "integrated": false,
@@ -71443,7 +69725,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 176810,
         "integrated": false,
@@ -71562,7 +69844,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 176741,
         "integrated": false,
@@ -71683,7 +69965,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 176739,
         "integrated": false,
@@ -71817,7 +70099,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 176685,
         "integrated": false,
@@ -71936,7 +70218,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 176566,
         "integrated": false,
@@ -72058,7 +70340,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 176563,
         "integrated": false,
@@ -72179,7 +70461,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 176497,
         "integrated": true,
@@ -72312,7 +70594,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 176442,
         "integrated": false,
@@ -72445,7 +70727,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 176224,
         "integrated": false,
@@ -72577,7 +70859,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 175849,
         "integrated": true,
@@ -72709,7 +70991,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 173424,
         "integrated": false,
@@ -72769,7 +71051,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "검토 매칭 (TIPS)",
       "connect": "",
       "classify_evidence": {
@@ -72983,7 +71265,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 176085,
         "integrated": false,
@@ -73045,7 +71327,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "note": "3순위 (참고용): 사업명에 지역 포함 (부산)",
       "connect": "",
       "classify_evidence": {
@@ -73246,7 +71528,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 176286,
         "integrated": false,
@@ -73367,7 +71649,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-05-04",
+      "last_seen": "2026-05-05",
       "structured": {
         "pbanc_sn_int": 165441,
         "integrated": true,
@@ -88270,18 +86552,34 @@
     }
   ],
   "_meta": {
-    "expired": [],
+    "expired": [
+      "[스마트전자약종합지원센터] 2026년 스마트 전자약 사업화 종합 지원 모집",
+      "2026년 섬유패션 수요-제조간 AI활용 디지털 공급망 구축 사업 수혜기업 모집 공고",
+      "2026-4회 충청권 엔젤투자 피칭룸 프로그램 참가기업 모집",
+      "2026년 경기스타트업브릿지 신규 입주기업 모집",
+      "2026년 소셜 임팩트 랩(Lab) 예비 창업기업 모집",
+      "2026년 소셜 임팩트 체인저스 7기 창업기업 모집",
+      "2026 상생 오픈이노베이션 스타트업 모집공고(사업설명회 4.22.)",
+      "2026년 서울창업허브 창동 스타트업 융복합 콘텐츠 제작 영상 콘텐츠 지원 기업 모집",
+      "2026년 전남 스타트업 액셀러레이팅 프로그램(4기) 참여기업 모집",
+      "2026년 과학기술정보통신부 차세대 특화망 융합서비스 확산 사업 재공고",
+      "[강원] 호주(멜버른) 수출로드쇼 (수출상담회) 참가기업 모집 공고 ",
+      "2026년 혁신 프리미어 1000 녹색산업 우수기업 모집 공고",
+      "2026년 딥테크 챌린지 프로젝트 기술도전형 제1차 기술수요조사 시행계획 공고",
+      "2026년 시니어 과학기술인 단기연구원 지원사업 공고",
+      "[충북] 2026년 중소기업제품전시판매장(도청점) 신규 입점업체 모집 연장 공고"
+    ],
     "new_added": [],
     "updated_today": [],
     "stats": {
-      "green": 68,
-      "yellow": 155,
-      "orange": 636,
+      "green": 67,
+      "yellow": 154,
+      "orange": 623,
       "red_excluded": 0,
-      "expired_removed": 0,
-      "total_pool": 859,
-      "rss_total": 305,
-      "raw_fetched": 159
+      "expired_removed": 15,
+      "total_pool": 844,
+      "rss_total": 297,
+      "raw_fetched": 177
     }
   },
   "history": [
@@ -88336,6 +86634,15 @@
       "updated": 0,
       "expired": 0,
       "total": 859,
+      "red_excluded": 0
+    },
+    {
+      "date": "2026-05-05",
+      "at_kst": "2026-05-05T02:20:58+09:00",
+      "new": 0,
+      "updated": 0,
+      "expired": 15,
+      "total": 844,
       "red_excluded": 0
     }
   ]
