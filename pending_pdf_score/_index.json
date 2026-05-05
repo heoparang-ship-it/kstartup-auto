@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-05T19:50:47.900742+09:00",
+  "generated_at": "2026-05-06T02:16:04.951835+09:00",
   "schema_version": 2,
   "pdf_text_cap": 15000,
-  "target_count": 216,
+  "target_count": 215,
   "pending": [
     {
       "key": "bizinfo_PBLN_000000000121219",
@@ -80,13 +80,6 @@
       "tier": "yellow",
       "deadline": "",
       "pdf_text_chars": 16918
-    },
-    {
-      "key": "bizinfo_PBLN_000000000121304",
-      "title": "[강원] 2026년 (예비)사회적기업 일자리 창출사업 참여기업 변경 공고",
-      "tier": "orange",
-      "deadline": "2026-05-05",
-      "pdf_text_chars": 15073
     },
     {
       "key": "bizinfo_PBLN_000000000121341",
@@ -1518,10 +1511,10 @@
     }
   ],
   "stats": {
-    "total_items": 865,
+    "total_items": 855,
     "red": 0,
     "expired": 0,
-    "no_pdf": 599,
+    "no_pdf": 590,
     "already_scored": 50
   }
 }
