@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-06T20:12:17.169751+09:00",
+  "generated_at": "2026-05-07T02:23:48.442898+09:00",
   "schema_version": 2,
   "pdf_text_cap": 15000,
-  "target_count": 215,
+  "target_count": 206,
   "pending": [
     {
       "key": "bizinfo_PBLN_000000000121219",
@@ -80,69 +80,6 @@
       "tier": "yellow",
       "deadline": "",
       "pdf_text_chars": 16918
-    },
-    {
-      "key": "bizinfo_PBLN_000000000121341",
-      "title": "2026년 데이터 마케팅 컨설팅 지원 사업 참여 출판사 모집 연장 공고(중소출판 도약부문 마케팅지원)",
-      "tier": "orange",
-      "deadline": "2026-05-06",
-      "pdf_text_chars": 1060
-    },
-    {
-      "key": "bizinfo_PBLN_000000000121303",
-      "title": "2026년 하반기 독립예술영화 제작지원(장편 극영화 부문) 사업 추가 접수 공고",
-      "tier": "orange",
-      "deadline": "2026-05-06",
-      "pdf_text_chars": 15085
-    },
-    {
-      "key": "bizinfo_PBLN_000000000121270",
-      "title": "2026년 하반기 독립예술영화 제작지원(다큐멘터리 (제작ㆍ후반제작)) 사업 추가 접수 공고",
-      "tier": "orange",
-      "deadline": "2026-05-06",
-      "pdf_text_chars": 15078
-    },
-    {
-      "key": "bizinfo_PBLN_000000000121230",
-      "title": "2026년 홈로봇가전 시제작 지원 기업 모집 공고",
-      "tier": "orange",
-      "deadline": "2026-05-06",
-      "pdf_text_chars": 2347
-    },
-    {
-      "key": "bizinfo_PBLN_000000000121227",
-      "title": "2026년 소상공인 도약 지원사업(로컬기업육성ㆍ강한소상공인) 참여 소상공인 모집 연장 공고",
-      "tier": "orange",
-      "deadline": "2026-05-06",
-      "pdf_text_chars": 15066
-    },
-    {
-      "key": "bizinfo_PBLN_000000000121092",
-      "title": "2026년 3차 첨단 바이오 소재 사업화 지원 사업 기업지원 통합 공고",
-      "tier": "orange",
-      "deadline": "2026-05-06",
-      "pdf_text_chars": 4782
-    },
-    {
-      "key": "bizinfo_PBLN_000000000121079",
-      "title": "[경북] 칠곡군 2026년 중소기업 성장사다리 지원사업 참여기업 모집 공고",
-      "tier": "orange",
-      "deadline": "2026-05-06",
-      "pdf_text_chars": 8239
-    },
-    {
-      "key": "bizinfo_PBLN_000000000120855",
-      "title": "2026년 1차 소모성자재(MRO) 납품 중소기업 구매상담회 참여기업 모집 공고",
-      "tier": "orange",
-      "deadline": "2026-05-06",
-      "pdf_text_chars": 3587
-    },
-    {
-      "key": "bizinfo_PBLN_000000000120633",
-      "title": "2026년 서비스로봇 AX(S-M.AX) 실증사업 지원 과제 모집 공고",
-      "tier": "orange",
-      "deadline": "2026-05-06",
-      "pdf_text_chars": 30149
     },
     {
       "key": "bizinfo_PBLN_000000000121347",
@@ -1511,10 +1448,10 @@
     }
   ],
   "stats": {
-    "total_items": 855,
+    "total_items": 799,
     "red": 0,
     "expired": 0,
-    "no_pdf": 590,
-    "already_scored": 50
+    "no_pdf": 550,
+    "already_scored": 43
   }
 }
