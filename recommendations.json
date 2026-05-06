@@ -1,7 +1,7 @@
 {
   "schema_version": 5,
   "last_updated": "2026-05-06",
-  "updated_at_kst": "2026-05-06T02:13:12+09:00",
+  "updated_at_kst": "2026-05-06T20:09:18+09:00",
   "red_count_today": 0,
   "reds_today": [
     {
@@ -23523,7 +23523,9 @@
       "rationale_short": "허파랑 개인 명의 추천 / 레이어: 이벤트체험 / 경로: L1_직접 / source: bizinfo",
       "nogo_match": null,
       "source_priority": 1.0,
-      "last_seen": "2026-04-29"
+      "last_seen": "2026-04-29",
+      "raw_content": "Error>상세화면\n본문 바로가기\n주메뉴 바로가기\n에러가 발생했습니다!",
+      "raw_fetched_at": "2026-05-06"
     },
     {
       "source": "bizinfo",
@@ -23602,7 +23604,9 @@
       "rationale_short": "허파랑 개인 명의 추천 / 레이어: L0 / 경로: L0_직접 / source: bizinfo",
       "nogo_match": null,
       "source_priority": 1.0,
-      "last_seen": "2026-04-29"
+      "last_seen": "2026-04-29",
+      "raw_content": "Error>상세화면\n본문 바로가기\n주메뉴 바로가기\n에러가 발생했습니다!",
+      "raw_fetched_at": "2026-05-06"
     },
     {
       "source": "bizinfo",
@@ -23680,7 +23684,9 @@
       "rationale_short": "이영림 대구 명의 추천 / 레이어: 출산육아 / 경로: L1_직접 / source: bizinfo",
       "nogo_match": null,
       "source_priority": 1.0,
-      "last_seen": "2026-04-29"
+      "last_seen": "2026-04-29",
+      "raw_content": "Error>상세화면\n본문 바로가기\n주메뉴 바로가기\n에러가 발생했습니다!",
+      "raw_fetched_at": "2026-05-06"
     },
     {
       "source": "bizinfo",
@@ -23760,7 +23766,9 @@
       "rationale_short": "허파랑 개인 명의 추천 / 레이어: 출산육아 / 경로: L1_직접 / source: bizinfo",
       "nogo_match": null,
       "source_priority": 1.0,
-      "last_seen": "2026-04-29"
+      "last_seen": "2026-04-29",
+      "raw_content": "Error>상세화면\n본문 바로가기\n주메뉴 바로가기\n에러가 발생했습니다!",
+      "raw_fetched_at": "2026-05-06"
     },
     {
       "source": "bizinfo",
@@ -23841,7 +23849,9 @@
       "rationale_short": "허파랑 개인 명의 추천 / 레이어: 출산육아 / 경로: L1_직접 / source: bizinfo",
       "nogo_match": null,
       "source_priority": 1.0,
-      "last_seen": "2026-04-29"
+      "last_seen": "2026-04-29",
+      "raw_content": "Error>상세화면\n본문 바로가기\n주메뉴 바로가기\n에러가 발생했습니다!",
+      "raw_fetched_at": "2026-05-06"
     },
     {
       "source": "bizinfo",
@@ -23923,7 +23933,9 @@
       "rationale_short": "허파랑 개인 명의 추천 / 레이어: L0 / 경로: L0_직접 / source: bizinfo",
       "nogo_match": null,
       "source_priority": 1.0,
-      "last_seen": "2026-04-29"
+      "last_seen": "2026-04-29",
+      "raw_content": "Error>상세화면\n본문 바로가기\n주메뉴 바로가기\n에러가 발생했습니다!",
+      "raw_fetched_at": "2026-05-06"
     },
     {
       "source": "kstartup",
@@ -38846,7 +38858,7 @@
           "region": {
             "pass": false,
             "value": "전국",
-            "detail": "기관 지역 한정 (agency: 충남신용보증재단)"
+            "detail": "지역 한정 desc: '충청남도 소재'"
           },
           "biz_enyy": {
             "pass": true,
@@ -38876,7 +38888,7 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "기관 지역 한정 (agency: 충남신용보증재단)"
+            "detail": "지역 한정 desc: '충청남도 소재'"
           },
           "positive_hit": {
             "pass": false,
@@ -38887,7 +38899,7 @@
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "기관 지역 한정 (agency: 충남신용보증재단)"
+            "detail": "지역 한정 desc: '충청남도 소재'"
           },
           "stage": {
             "level": "green",
@@ -38910,7 +38922,7 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "기관 지역 한정 (agency: 충남신용보증재단)"
+            "msg": "지역 한정 desc: '충청남도 소재'"
           }
         ],
         "audit_flags": [],
@@ -59099,9 +59111,9 @@
       "deadline": "2026-05-27",
       "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177494",
       "tier": "orange",
-      "note": "3순위 (참고용): 기관 지역 한정 (agency: 충남신용보증재단)",
+      "note": "3순위 (참고용): 지역 한정 desc: '충청남도 소재'",
       "classify_evidence": {
-        "summary_reason": "3순위 (참고용): 기관 지역 한정 (agency: 충남신용보증재단)",
+        "summary_reason": "3순위 (참고용): 지역 한정 desc: '충청남도 소재'",
         "category_hints": [
           "budget"
         ],
@@ -59119,7 +59131,7 @@
           "region": {
             "pass": false,
             "value": "충남",
-            "detail": "기관 지역 한정 (agency: 충남신용보증재단)"
+            "detail": "지역 한정 desc: '충청남도 소재'"
           },
           "biz_enyy": {
             "pass": true,
@@ -59149,18 +59161,18 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "기관 지역 한정 (agency: 충남신용보증재단)"
+            "detail": "지역 한정 desc: '충청남도 소재'"
           },
           "positive_hit": {
             "pass": false,
-            "detail": "3순위 (참고용): 기관 지역 한정 (agency: 충남신용보증재단)"
+            "detail": "3순위 (참고용): 지역 한정 desc: '충청남도 소재'"
           }
         },
         "risk_flags": [],
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "기관 지역 한정 (agency: 충남신용보증재단)"
+            "detail": "지역 한정 desc: '충청남도 소재'"
           },
           "stage": {
             "level": "green",
@@ -59183,11 +59195,11 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "기관 지역 한정 (agency: 충남신용보증재단)"
+            "msg": "지역 한정 desc: '충청남도 소재'"
           }
         ],
         "audit_flags": [],
-        "tier_logic": "3순위 (참고용): 기관 지역 한정 (agency: 충남신용보증재단)",
+        "tier_logic": "3순위 (참고용): 지역 한정 desc: '충청남도 소재'",
         "classify_version": "v8.3"
       },
       "first_seen": "2026-05-05",
@@ -59211,7 +59223,8 @@
         "integrated_name": "창업아카데미",
         "apply_online": "https://www.cnsinbo.co.kr/reservation/detail.do?code=02&m=1003&s=cnsinbo",
         "apply_guide": "www.cnsinbo.co.kr/reservation/detail.do?code=02&m=1003&s=cnsinbo"
-      }
+      },
+      "last_changed_at": "2026-05-06"
     },
     {
       "source": "kstartup",
@@ -87891,29 +87904,20 @@
     }
   ],
   "_meta": {
-    "expired": [
-      "[프론티어랩스 6기] CJ제일제당 협업 스타트업 모집",
-      "G-SSR(Gangwon-South Startup Rise)  아카데미",
-      "2026 혁신성장 청년 예비 소상공인 지원 사업 참여자 모집",
-      "한-EU 산업협력 지원(친환경 에너지·탄소저감 분야) 참여기업 모집",
-      "2026 배민스타트업스퀘어 스타트업 모집",
-      "2026 「Link-Hi」신규 입주기업 모집 공고",
-      "2026 중소기업 해외시장 홍보판촉 지원사업(호주)",
-      "[부산창조경제혁신센터] 2026 OSA AX 오픈이노베이션 밋업 데이 참여기업 모집",
-      "[부산창조경제혁신센터] 2026 OSA 스마트해양 액셀러레이팅 참여기업 모집",
-      "[강원] 2026년 (예비)사회적기업 일자리 창출사업 참여기업 변경 공고"
-    ],
+    "expired": [],
     "new_added": [],
-    "updated_today": [],
+    "updated_today": [
+      "[충남신용보증재단] 2026년 6월 창업아카데미 교육생 모집"
+    ],
     "stats": {
       "green": 68,
       "yellow": 154,
       "orange": 633,
       "red_excluded": 0,
-      "expired_removed": 10,
+      "expired_removed": 0,
       "total_pool": 855,
-      "rss_total": 309,
-      "raw_fetched": 216
+      "rss_total": 308,
+      "raw_fetched": 222
     }
   },
   "history": [
@@ -87981,10 +87985,10 @@
     },
     {
       "date": "2026-05-06",
-      "at_kst": "2026-05-06T02:13:12+09:00",
+      "at_kst": "2026-05-06T20:09:18+09:00",
       "new": 0,
-      "updated": 0,
-      "expired": 10,
+      "updated": 1,
+      "expired": 0,
       "total": 855,
       "red_excluded": 0
     }
