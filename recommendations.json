@@ -1,7 +1,7 @@
 {
   "schema_version": 5,
   "last_updated": "2026-05-08",
-  "updated_at_kst": "2026-05-08T02:31:35+09:00",
+  "updated_at_kst": "2026-05-08T02:41:40+09:00",
   "red_count_today": 0,
   "reds_today": [
     {
@@ -2740,6 +2740,125 @@
       "raw_fetched_at": "2026-05-01"
     },
     {
+      "pbancSn": "itp_10676",
+      "title": "2026년 인천스타트업파크 TRYOUT 민간 실증사업 추가모집 공고",
+      "agency": "인천테크노파크 스타트업파크센터",
+      "deadline": "2026-05-08",
+      "url": "https://itp.or.kr/intro.asp?tmid=13&seq=10676",
+      "tier": "green",
+      "note": "인천 매칭 + 스타트업파크 (엑스컴 부평 본점)",
+      "classify_evidence": {
+        "summary_reason": "인천 매칭 + 스타트업파크 (엑스컴 부평 본점)",
+        "category_hints": [
+          "incheon",
+          "itp",
+          "스타트업파크센터"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "ITP 진행중 항목"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-05-08",
+            "detail": "ITP 마감일"
+          },
+          "region": {
+            "pass": true,
+            "value": "인천",
+            "detail": "ITP=인천 거점"
+          }
+        },
+        "axis_scores": {
+          "region": "green",
+          "stage": "green",
+          "industry": "green",
+          "nature": "green",
+          "qualification": "green"
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "ITP 스타트업파크센터 부서별 룰 → green",
+        "classify_version": "v8.3-itp"
+      },
+      "first_seen": "2026-04-27",
+      "last_seen": "2026-05-08",
+      "structured": {
+        "source_kind": "itp",
+        "itp_seq": "10676",
+        "itp_dept": "스타트업파크센터",
+        "attachments": [
+          "붙임1. 2026년 인천스타트업파크 TRYOUT 민간 실증사업 추가모집 공고문.pdf\">\r\n\t\t\t\t붙임1. 2026년 인천스타트업파크 TRYOUT 민간 실증사업 추가모집 공고문.pdf(174KB)",
+          "붙임2. 2026년 인천스타트업파크 TRYOUT 민간 실증사업 추가모집 공고 안내서.pdf\">\r\n\t\t\t\t붙임2. 2026년 인천스타트업파크 TRYOUT 민간 실증사업 추가모집 공고 안내서.pdf(877KB)",
+          "붙임3. 2026년 인천스타트업파크 TRYOUT 민간 실증 프로그램 협력파트너 수요기술서_추가모집.pdf\">\r\n\t\t\t\t붙임3. 2026년 인천스타트업파크 TRYOUT 민간 실증 프로그램 협력파트너 수요기술서_추가모집.pdf(1464KB)",
+          "붙임4. 2026년 인천스타트업파크 TRYOUT 민간 실증사업 신청서 양식(민간).hwp\">\r\n\t\t\t\t붙임4. 2026년 인천스타트업파크 TRYOUT 민간 실증사업 신청서 양식(민간).hwp(68KB)",
+          "붙임5. 인천스타트업파크 TRYOUT 실증사업 운영 요령_개정판(2차).pdf\">\r\n\t\t\t\t붙임5. 인천스타트업파크 TRYOUT 실증사업 운영 요령_개정판(2차).pdf(409KB)"
+        ],
+        "recruiting": true,
+        "region": "인천"
+      }
+    },
+    {
+      "pbancSn": "itp_10646",
+      "title": "2026 우수 콘텐츠 사업화 지원 기업 모집공고",
+      "agency": "인천테크노파크 콘텐츠기업지원센터",
+      "deadline": "2026-05-08",
+      "url": "https://itp.or.kr/intro.asp?tmid=13&seq=10646",
+      "tier": "green",
+      "note": "인천 매칭 + 콘텐츠 (sinhon.life 허브 + 56만조회)",
+      "classify_evidence": {
+        "summary_reason": "인천 매칭 + 콘텐츠 (sinhon.life 허브 + 56만조회)",
+        "category_hints": [
+          "incheon",
+          "itp",
+          "콘텐츠기업지원센터"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "ITP 진행중 항목"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-05-08",
+            "detail": "ITP 마감일"
+          },
+          "region": {
+            "pass": true,
+            "value": "인천",
+            "detail": "ITP=인천 거점"
+          }
+        },
+        "axis_scores": {
+          "region": "green",
+          "stage": "green",
+          "industry": "green",
+          "nature": "green",
+          "qualification": "green"
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "ITP 콘텐츠기업지원센터 부서별 룰 → green",
+        "classify_version": "v8.3-itp"
+      },
+      "first_seen": "2026-04-20",
+      "last_seen": "2026-05-08",
+      "structured": {
+        "source_kind": "itp",
+        "itp_seq": "10646",
+        "itp_dept": "콘텐츠기업지원센터",
+        "attachments": [
+          "붙임1. 2026년 우수 콘텐츠 사업화 지원 사업 모집공고문.pdf\">\r\n\t\t\t\t붙임1. 2026년 우수 콘텐츠 사업화 지원 사업 모집공고문.pdf(272KB)",
+          "붙임2. 2026년 우수 콘텐츠 사업화 지원 사업 제출서류.hwp\">\r\n\t\t\t\t붙임2. 2026년 우수 콘텐츠 사업화 지원 사업 제출서류.hwp(182KB)"
+        ],
+        "recruiting": true,
+        "region": "인천"
+      }
+    },
+    {
       "source": "bizinfo",
       "source_label": "중소벤처기업부 BIZINFO (기업마당)",
       "id": "bizinfo_PBLN_000000000121395",
@@ -2949,6 +3068,61 @@
       "last_changed_at": "2026-04-30",
       "raw_content": "「2026 농촌융복합산업 액셀러레이터 육성지원 사업」킹고스프링 팜스프링보드 참여기업 모집공고\n사업안내 바로가기\n지원분야\n사업화\n대상연령\n전체\n기관구분\n민간\n담당부서\n기업성장본부\n지역\n전국\n접수기간\n2026-04-20 ~ 2026-05-10 23:59\n주관기관명\n주식회사 킹고스프링\n대상\n일반인, 대학, 연구기관, 일반기업, 1인 창조기업\n창업업력\n예비창업자, 1년미만, 2년미만, 3년미만, 5년미만, 7년미만\n연락처\n031-5171-5850\n공고 제 2026-2호\n「2026 농촌융복합산업 액셀러레이터 육성지원 사업」킹고스프링 팜스프링보드 참여기업 모집공고\n한국농어촌공사(농촌자원개발원)이 지원하는 「2026 농촌융복합산업 액셀러레이터 육성지원 사업」킹고스프링 팜스프링보드에 참여할\n농촌산업을 선도하고자 하는 업력 7년 미만의 (예비)농촌융복합산업 인증사업자분들의 많은 관심과 지원 바랍니다.\n2026년 04월 24일\n주식회사 킹고스프링\n신청방법 및 대상\n신청기간\n2026.04.20(월) 00:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t~\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t2026.05.10(일) 23:59\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t까지\n신청방법\n이메일 접수 : chuchu@kingospring.com\n신청대상\n업력 7년 미만*의 (예비)농촌융복합인증사업자**   대상\n* 모집공고일 기준(2026.4.20)\n** 「농촌융복합산업 육성 및 지원에 관한 법룔」제8조에 따라 인증받은 사업자\n신청 시 요청하는 정보(개인정보포함)는 사업운영기관에서 관리되오니 이점 반드시 유의하여 주시기 바랍니다.\n제출서류\n제출서류\n1. (붙임1)참여신청서 및 개인정보 수집ㆍ활용 동의서 1부\n- 공고에 첨부\n2. (붙임2)사업계획서\n- 킹고스프링 홈페이지에서 다운로드 가능\n제출하신 서류는 사업운영기관에서 관리되오니 서류 반환 등 문의는 해당 기관으로 하시기 바랍니다.\n선정절차 및 평가방법\n선정절차\n·모집공고 4.20.(월)~5.10.(일)\n- 이메일 접수\n·요건검토 5.11.(월)~5.12.(화)\n- 접수자 대상 참여요건 검토(농촌융복합인증사업자 및 업력 7년 미만 등)\n·평가일정 안내 5.13.(수)\n- 메일을 통한 평가 일정 및 방식 안내\n·발표평가 5.27.(수)\n- 발표평가를 통한 선정\n·선정안내 6.1.(월)\n- 10개사 이상 선정 후 프로그램 일정 안내 예정\n지원내용\n지원내용\n· 자금 지원\n발표평가 상위 3개사 사업화지원금 차등 지원\n· 사업 고도화\n맞춤형 컨설팅, 농촌융복합산업 관련 실무 교육\n홍보영상, 언론홍보 지원 및 팝업 스토어 운영 및 네트워킹\n· 글로벌 진출\n킹고스프링 베트남 지점 연계 현지 판로개척, 업무협약 등 지원\n· 투자유치\n투자유치 역량강화 IR 컨설팅 지원\n직접투자 3억 원 내외, TIPS/LIPS 연계 지원\n문의처\n문의처\n킹고스프링 운영사무국\n031-5171-5850\n자세한 내용은 첨부파일 참조 및 문의처로 문의하여 주시기 바랍니다.\nK-Startup에 공고되는 정보는 해당 기관의 요청에 의해 제공됩니다. 입주, 교육, 사업 신청 시 요청하는 정보(개인정보 포함)는 해당 기관에서 관리 \t되오니\n이점 유의하여 주시기 바랍니다.\n첨부파일 일괄 다운로드\n2026 농촌융복합산업 액셀러레이터 육성지원사업 대체 텍스트.txt\n바로보기\n다운로드\n2026 농촌융복합산업 액셀러레이터 육성지원사업 모집 포스터.jpg\n바로보기\n다운로드\n(공고문) 26년_농촌융복합산업 창업활성화 지원사업 경영체 모집 공고문.pdf\n바로보기\n다운로드\n붙임1. 참가신청서 및 개인정보 수집·활용 동의서_2026.hwp\n바로보기\n다운로드\n본 저작물은 창업진흥원(K-Startup)이 게시한 공공누리 제1유형의 저작물이며, 공공데이터포털(www.data.go.kr)에서 공공데이터로 개방중이며 무료로 활용할 수 있습니다.\n목록",
       "raw_fetched_at": "2026-05-02"
+    },
+    {
+      "pbancSn": "itp_10582",
+      "title": "2026년 북미진출 GATE 프로그램 참여기업 모집 공고",
+      "agency": "인천테크노파크 AI혁신센터",
+      "deadline": "2026-05-10",
+      "url": "https://itp.or.kr/intro.asp?tmid=13&seq=10582",
+      "tier": "green",
+      "note": "인천 매칭 + AI (sinhon.life Claude PWA / 엑스컴 SW)",
+      "classify_evidence": {
+        "summary_reason": "인천 매칭 + AI (sinhon.life Claude PWA / 엑스컴 SW)",
+        "category_hints": [
+          "incheon",
+          "itp",
+          "AI혁신센터"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "ITP 진행중 항목"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-05-10",
+            "detail": "ITP 마감일"
+          },
+          "region": {
+            "pass": true,
+            "value": "인천",
+            "detail": "ITP=인천 거점"
+          }
+        },
+        "axis_scores": {
+          "region": "green",
+          "stage": "green",
+          "industry": "green",
+          "nature": "green",
+          "qualification": "green"
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "ITP AI혁신센터 부서별 룰 → green",
+        "classify_version": "v8.3-itp"
+      },
+      "first_seen": "2026-04-07",
+      "last_seen": "2026-05-08",
+      "structured": {
+        "source_kind": "itp",
+        "itp_seq": "10582",
+        "itp_dept": "AI혁신센터",
+        "attachments": [],
+        "recruiting": true,
+        "region": "인천"
+      }
     },
     {
       "source": "bizinfo",
@@ -3421,6 +3595,61 @@
       "raw_fetched_at": "2026-05-02"
     },
     {
+      "pbancSn": "itp_10670",
+      "title": "2026년 인천창업카페 런치업데이 2강 참가자 모집 안내",
+      "agency": "인천테크노파크 혁신창업센터",
+      "deadline": "2026-05-11",
+      "url": "https://itp.or.kr/intro.asp?tmid=13&seq=10670",
+      "tier": "green",
+      "note": "인천 매칭 + 창업 일반",
+      "classify_evidence": {
+        "summary_reason": "인천 매칭 + 창업 일반",
+        "category_hints": [
+          "incheon",
+          "itp",
+          "혁신창업센터"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "ITP 진행중 항목"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-05-11",
+            "detail": "ITP 마감일"
+          },
+          "region": {
+            "pass": true,
+            "value": "인천",
+            "detail": "ITP=인천 거점"
+          }
+        },
+        "axis_scores": {
+          "region": "green",
+          "stage": "green",
+          "industry": "green",
+          "nature": "green",
+          "qualification": "green"
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "ITP 혁신창업센터 부서별 룰 → green",
+        "classify_version": "v8.3-itp"
+      },
+      "first_seen": "2026-04-26",
+      "last_seen": "2026-05-08",
+      "structured": {
+        "source_kind": "itp",
+        "itp_seq": "10670",
+        "itp_dept": "혁신창업센터",
+        "attachments": [],
+        "recruiting": true,
+        "region": "인천"
+      }
+    },
+    {
       "source": "kstartup",
       "source_label": "K-Startup",
       "id": "kstartup_177338",
@@ -3548,6 +3777,61 @@
       "last_changed_at": "2026-04-30",
       "raw_content": "2026년 초격차 이노웨이브 수요기업 모집 공고\n사업안내 바로가기\n지원분야\n사업화\n대상연령\n전체\n기관구분\n공공기관\n담당부서\n딥테크전략실\n지역\n전국\n접수기간\n2026-04-24 ~ 2026-05-13 16:00\n주관기관명\n창업진흥원\n대상\n대학, 연구기관, 일반기업\n창업업력\n전체\n연락처\n044-410-1695\n공고 제2026 - 029호\n2026년 초격차 이노웨이브 수요기업 모집 공고\n초격차 스타트업의 기술력과 수요기업의 실증, 사업화 역량을 결합한 개방형 혁신 활동을 지원하는「2026년 이노웨이브(Inno-wave)」수요기업을 다음과 같이 모집합니다.\n2026년 04월 24일\n창업진흥원장\n신청방법 및 대상\n신청기간\n2026.04.24(금) 10:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t~\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t2026.05.13(수) 16:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t까지\n신청방법\n온라인 접수 :\n접수 바로가기\n신청대상\n초격차 12대 기술 수요 및 개방형 혁신을 희망하는 대·중견기업, 병원, 공공기관, 지자체 등 PoC 수요처\n신청 시 요청하는 정보(개인정보포함)는 사업운영기관에서 관리되오니 이점 반드시 유의하여 주시기 바랍니다.\n제출서류\n사업신청서\n수요기업 로고 파일(AI, PNG 등)\n제출하신 서류는 사업운영기관에서 관리되오니 서류 반환 등 문의는 해당 기관으로 하시기 바랍니다.\n선정절차 및 평가방법\n스타트업과 밋업을 통해 컨소시엄으로 원팀을 구성하고, 공동 협업과제를 제안 및 발표평가를 통해 최종 10개 컨소시엄 선정\n행사안내\n수요기업 모집 공고\n상기 일정은 사업운영기관의 내부사정으로 변경될 수 있습니다.\n지원내용\n협업 자금 및 우수기업 매칭, 협업 운영 지원, 우수과제 인센티브 제공 등\n문의처\n공고문 내 문의처 참조\n1. 시스템 문의 : (국번없이) 1357\n2. 창업진흥원 : 044-410-1695\n3. 서울경제진흥원(주관기관) : 02-812-2294\n자세한 내용은 첨부파일 참조 및 문의처로 문의하여 주시기 바랍니다.\nK-Startup에 공고되는 정보는 해당 기관의 요청에 의해 제공됩니다. 입주, 교육, 사업 신청 시 요청하는 정보(개인정보 포함)는 해당 기관에서 관리 \t되오니\n이점 유의하여 주시기 바랍니다.\n첨부파일 일괄 다운로드\n2026년 이노웨이브 수요기업 모집공고.hwpx\n바로보기\n다운로드\n(양식) 참가신청서.hwp\n바로보기\n다운로드\n(참고) 사업 신청 매뉴얼.pdf\n바로보기\n다운로드\n본 저작물은 창업진흥원(K-Startup)이 게시한 공공누리 제1유형의 저작물이며, 공공데이터포털(www.data.go.kr)에서 공공데이터로 개방중이며 무료로 활용할 수 있습니다.\n사업신청 바로가기\n목록",
       "raw_fetched_at": "2026-05-03"
+    },
+    {
+      "pbancSn": "itp_10680",
+      "title": "2026년 인천공항 스타트업 육성사업 참여기업 모집 공고",
+      "agency": "인천테크노파크 혁신창업센터",
+      "deadline": "2026-05-14",
+      "url": "https://itp.or.kr/intro.asp?tmid=13&seq=10680",
+      "tier": "green",
+      "note": "인천 매칭 + 창업 일반",
+      "classify_evidence": {
+        "summary_reason": "인천 매칭 + 창업 일반",
+        "category_hints": [
+          "incheon",
+          "itp",
+          "혁신창업센터"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "ITP 진행중 항목"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-05-14",
+            "detail": "ITP 마감일"
+          },
+          "region": {
+            "pass": true,
+            "value": "인천",
+            "detail": "ITP=인천 거점"
+          }
+        },
+        "axis_scores": {
+          "region": "green",
+          "stage": "green",
+          "industry": "green",
+          "nature": "green",
+          "qualification": "green"
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "ITP 혁신창업센터 부서별 룰 → green",
+        "classify_version": "v8.3-itp"
+      },
+      "first_seen": "2026-04-28",
+      "last_seen": "2026-05-08",
+      "structured": {
+        "source_kind": "itp",
+        "itp_seq": "10680",
+        "itp_dept": "혁신창업센터",
+        "attachments": [],
+        "recruiting": true,
+        "region": "인천"
+      }
     },
     {
       "pbancSn": "177404",
@@ -4435,6 +4719,120 @@
       "raw_fetched_at": "2026-05-05"
     },
     {
+      "pbancSn": "itp_10675",
+      "title": "2026 지피지기 투자유치 지원사업 참여기업 모집",
+      "agency": "인천테크노파크 벤처투자지원센터",
+      "deadline": "2026-05-15",
+      "url": "https://itp.or.kr/intro.asp?tmid=13&seq=10675",
+      "tier": "green",
+      "note": "인천 매칭 + 투자 (IR 단계)",
+      "classify_evidence": {
+        "summary_reason": "인천 매칭 + 투자 (IR 단계)",
+        "category_hints": [
+          "incheon",
+          "itp",
+          "벤처투자지원센터"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "ITP 진행중 항목"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-05-15",
+            "detail": "ITP 마감일"
+          },
+          "region": {
+            "pass": true,
+            "value": "인천",
+            "detail": "ITP=인천 거점"
+          }
+        },
+        "axis_scores": {
+          "region": "green",
+          "stage": "green",
+          "industry": "green",
+          "nature": "green",
+          "qualification": "green"
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "ITP 벤처투자지원센터 부서별 룰 → green",
+        "classify_version": "v8.3-itp"
+      },
+      "first_seen": "2026-04-27",
+      "last_seen": "2026-05-08",
+      "structured": {
+        "source_kind": "itp",
+        "itp_seq": "10675",
+        "itp_dept": "벤처투자지원센터",
+        "attachments": [],
+        "recruiting": true,
+        "region": "인천"
+      }
+    },
+    {
+      "pbancSn": "itp_10672",
+      "title": "2026 양자컴퓨팅 인프라 활용 지원 사업 참여기업 모집공고",
+      "agency": "인천테크노파크 디지털기술융합센터",
+      "deadline": "2026-05-15",
+      "url": "https://itp.or.kr/intro.asp?tmid=13&seq=10672",
+      "tier": "green",
+      "note": "인천 매칭 + 디지털 SW (엑스컴 정보통신)",
+      "classify_evidence": {
+        "summary_reason": "인천 매칭 + 디지털 SW (엑스컴 정보통신)",
+        "category_hints": [
+          "incheon",
+          "itp",
+          "디지털기술융합센터"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "ITP 진행중 항목"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-05-15",
+            "detail": "ITP 마감일"
+          },
+          "region": {
+            "pass": true,
+            "value": "인천",
+            "detail": "ITP=인천 거점"
+          }
+        },
+        "axis_scores": {
+          "region": "green",
+          "stage": "green",
+          "industry": "green",
+          "nature": "green",
+          "qualification": "green"
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "ITP 디지털기술융합센터 부서별 룰 → green",
+        "classify_version": "v8.3-itp"
+      },
+      "first_seen": "2026-04-27",
+      "last_seen": "2026-05-08",
+      "structured": {
+        "source_kind": "itp",
+        "itp_seq": "10672",
+        "itp_dept": "디지털기술융합센터",
+        "attachments": [
+          "붙임1. 양자컴퓨터 인프라 자원 활용 지원 공고문.hwp\">\r\n\t\t\t\t붙임1. 양자컴퓨터 인프라 자원 활용 지원 공고문.hwp(196KB)",
+          "붙임2. 신청서류(서식 1, 2, 3).hwp\">\r\n\t\t\t\t붙임2. 신청서류(서식 1, 2, 3).hwp(58KB)",
+          "붙임3. 웹포스터.png\">\r\n\t\t\t\t붙임3. 웹포스터.png(3905KB)"
+        ],
+        "recruiting": true,
+        "region": "인천"
+      }
+    },
+    {
       "source": "bizinfo",
       "source_label": "중소벤처기업부 BIZINFO (기업마당)",
       "id": "bizinfo_PBLN_000000000121412",
@@ -4726,6 +5124,119 @@
       "raw_fetched_at": "2026-05-03"
     },
     {
+      "pbancSn": "itp_10687",
+      "title": "2026 인천 콘텐츠기업 국내외 역량강화 지원 참여기업 모집공고",
+      "agency": "인천테크노파크 콘텐츠기업지원센터",
+      "deadline": "2026-05-20",
+      "url": "https://itp.or.kr/intro.asp?tmid=13&seq=10687",
+      "tier": "green",
+      "note": "인천 매칭 + 콘텐츠 (sinhon.life 허브 + 56만조회)",
+      "classify_evidence": {
+        "summary_reason": "인천 매칭 + 콘텐츠 (sinhon.life 허브 + 56만조회)",
+        "category_hints": [
+          "incheon",
+          "itp",
+          "콘텐츠기업지원센터"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "ITP 진행중 항목"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-05-20",
+            "detail": "ITP 마감일"
+          },
+          "region": {
+            "pass": true,
+            "value": "인천",
+            "detail": "ITP=인천 거점"
+          }
+        },
+        "axis_scores": {
+          "region": "green",
+          "stage": "green",
+          "industry": "green",
+          "nature": "green",
+          "qualification": "green"
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "ITP 콘텐츠기업지원센터 부서별 룰 → green",
+        "classify_version": "v8.3-itp"
+      },
+      "first_seen": "2026-04-29",
+      "last_seen": "2026-05-08",
+      "structured": {
+        "source_kind": "itp",
+        "itp_seq": "10687",
+        "itp_dept": "콘텐츠기업지원센터",
+        "attachments": [
+          "붙임1. (모집공고문)2026 콘텐츠기업 국내외 역량강화 지원 기업모집 공고문.pdf\">\r\n\t\t\t\t붙임1. (모집공고문)2026 콘텐츠기업 국내외 역량강화 지원 기업모집 공고문.pdf(279KB)",
+          "붙임2. (신청서식) 2026 콘텐츠기업 국내외 역량강화 기업모집 신청서식.hwp\">\r\n\t\t\t\t붙임2. (신청서식) 2026 콘텐츠기업 국내외 역량강화 기업모집 신청서식.hwp(107KB)"
+        ],
+        "recruiting": true,
+        "region": "인천"
+      }
+    },
+    {
+      "pbancSn": "itp_10711",
+      "title": "2026 G5 OpenX 프로그램 참여 스타트업 모집 공고",
+      "agency": "인천테크노파크 혁신창업센터",
+      "deadline": "2026-05-20",
+      "url": "https://itp.or.kr/intro.asp?tmid=13&seq=10711",
+      "tier": "green",
+      "note": "인천 매칭 + 창업 일반",
+      "classify_evidence": {
+        "summary_reason": "인천 매칭 + 창업 일반",
+        "category_hints": [
+          "incheon",
+          "itp",
+          "혁신창업센터"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "ITP 진행중 항목"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-05-20",
+            "detail": "ITP 마감일"
+          },
+          "region": {
+            "pass": true,
+            "value": "인천",
+            "detail": "ITP=인천 거점"
+          }
+        },
+        "axis_scores": {
+          "region": "green",
+          "stage": "green",
+          "industry": "green",
+          "nature": "green",
+          "qualification": "green"
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "ITP 혁신창업센터 부서별 룰 → green",
+        "classify_version": "v8.3-itp"
+      },
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-08",
+      "structured": {
+        "source_kind": "itp",
+        "itp_seq": "10711",
+        "itp_dept": "혁신창업센터",
+        "attachments": [],
+        "recruiting": true,
+        "region": "인천"
+      }
+    },
+    {
       "source": "bizinfo",
       "source_label": "중소벤처기업부 BIZINFO (기업마당)",
       "id": "bizinfo_PBLN_000000000121410",
@@ -4896,6 +5407,123 @@
       "raw_fetched_at": "2026-05-03"
     },
     {
+      "pbancSn": "itp_10668",
+      "title": "2026년 인천스타트업파크 실증제품 판로지원 지원사업 참여기업 모집 공고",
+      "agency": "인천테크노파크 스타트업파크센터",
+      "deadline": "2026-05-22",
+      "url": "https://itp.or.kr/intro.asp?tmid=13&seq=10668",
+      "tier": "green",
+      "note": "인천 매칭 + 스타트업파크 (엑스컴 부평 본점)",
+      "classify_evidence": {
+        "summary_reason": "인천 매칭 + 스타트업파크 (엑스컴 부평 본점)",
+        "category_hints": [
+          "incheon",
+          "itp",
+          "스타트업파크센터"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "ITP 진행중 항목"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-05-22",
+            "detail": "ITP 마감일"
+          },
+          "region": {
+            "pass": true,
+            "value": "인천",
+            "detail": "ITP=인천 거점"
+          }
+        },
+        "axis_scores": {
+          "region": "green",
+          "stage": "green",
+          "industry": "green",
+          "nature": "green",
+          "qualification": "green"
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "ITP 스타트업파크센터 부서별 룰 → green",
+        "classify_version": "v8.3-itp"
+      },
+      "first_seen": "2026-04-24",
+      "last_seen": "2026-05-08",
+      "structured": {
+        "source_kind": "itp",
+        "itp_seq": "10668",
+        "itp_dept": "스타트업파크센터",
+        "attachments": [
+          "붙임1. 인천스타트업파크 실증제품 판로지원 지원사업 공고문.hwp\">\r\n\t\t\t\t붙임1. 인천스타트업파크 실증제품 판로지원 지원사업 공고문.hwp(83KB)",
+          "붙임2. 인천스타트업파크 실증제품 판로지원 지원사업 참가신청서.hwp\">\r\n\t\t\t\t붙임2. 인천스타트업파크 실증제품 판로지원 지원사업 참가신청서.hwp(211KB)"
+        ],
+        "recruiting": true,
+        "region": "인천"
+      }
+    },
+    {
+      "pbancSn": "itp_10652",
+      "title": "2026 인천 콘텐츠 실증 제작지원 사업 통합 재공고",
+      "agency": "인천테크노파크 콘텐츠기업지원센터",
+      "deadline": "2026-05-23",
+      "url": "https://itp.or.kr/intro.asp?tmid=13&seq=10652",
+      "tier": "green",
+      "note": "인천 매칭 + 콘텐츠 (sinhon.life 허브 + 56만조회)",
+      "classify_evidence": {
+        "summary_reason": "인천 매칭 + 콘텐츠 (sinhon.life 허브 + 56만조회)",
+        "category_hints": [
+          "incheon",
+          "itp",
+          "콘텐츠기업지원센터"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "ITP 진행중 항목"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-05-23",
+            "detail": "ITP 마감일"
+          },
+          "region": {
+            "pass": true,
+            "value": "인천",
+            "detail": "ITP=인천 거점"
+          }
+        },
+        "axis_scores": {
+          "region": "green",
+          "stage": "green",
+          "industry": "green",
+          "nature": "green",
+          "qualification": "green"
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "ITP 콘텐츠기업지원센터 부서별 룰 → green",
+        "classify_version": "v8.3-itp"
+      },
+      "first_seen": "2026-04-21",
+      "last_seen": "2026-05-08",
+      "structured": {
+        "source_kind": "itp",
+        "itp_seq": "10652",
+        "itp_dept": "콘텐츠기업지원센터",
+        "attachments": [
+          "붙임1. 2026 인천 콘텐츠 실증 제작지원 사업 통합 재공고.hwp\">\r\n\t\t\t\t붙임1. 2026 인천 콘텐츠 실증 제작지원 사업 통합 재공고.hwp(105KB)",
+          "붙임1. 2026 인천 콘텐츠 실증 제작지원 사업 통합 재공고.pdf\">\r\n\t\t\t\t붙임1. 2026 인천 콘텐츠 실증 제작지원 사업 통합 재공고.pdf(431KB)",
+          "붙임2. 과제지원 신청 관련 서식.zip\">\r\n\t\t\t\t붙임2. 과제지원 신청 관련 서식.zip(132KB)"
+        ],
+        "recruiting": true,
+        "region": "인천"
+      }
+    },
+    {
       "pbancSn": "177407",
       "title": "[삼일PwC-마크앤컴퍼니] AI Native Team Scaleup 프로그램",
       "agency": "(주)마크앤컴퍼니",
@@ -5015,6 +5643,119 @@
       },
       "raw_content": "[삼일PwC-마크앤컴퍼니] AI Native Team Scaleup 프로그램\n사업안내 바로가기\n지원분야\n사업화\n대상연령\n전체\n기관구분\n민간\n담당부서\nACC부문\n지역\n전국\n접수기간\n2026-04-28 ~ 2026-05-25 15:00\n주관기관명\n마크앤컴퍼니\n대상\n청소년, 대학생, 일반인, 일반기업, 1인 창조기업\n창업업력\n전체\n연락처\n02-587-6275\n[삼일PwC-마크앤컴퍼니] AI Native Team Scaleup 프로그램\n※(유의)해당 공고는 중소벤처기업부와 창업진흥원이 아닌 민간에서 지원하는 사업으로, 신청부터 관리까지 모든 과정을 해당기관에서 전담\nAI Native Team Scaleup 프로그램 참여팀을 다음과 같이 모집하오니 참여를 희망하는 창업팀은 안내에 따라 신청하기 바랍니다.\n2026년 04월 28일\n(주)마크앤컴퍼니\n신청방법 및 대상\n신청기간\n2026.04.28(화) 08:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t~\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t2026.05.25(월) 15:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t까지\n신청방법\n온라인 접수 :\n접수 바로가기\n신청대상\nTrack A :  MVP를 보유한 1인 창업가 및 5인 이하의 미니멈 코어 팀\nTrack B :  상용화 제품을 보유하고 시장 확장을 준비하는 팀\n※ 창업 연혁 제한 없음, 법인 설립 여부 무관, AI 역량 보유 여부 무관비하는 팀\n신청 시 요청하는 정보(개인정보포함)는 사업운영기관에서 관리되오니 이점 반드시 유의하여 주시기 바랍니다.\n제출서류\n온라인 지원 (혁신의숲 > Growth Bridge 통해 접수)\n제출하신 서류는 사업운영기관에서 관리되오니 서류 반환 등 문의는 해당 기관으로 하시기 바랍니다.\n선정절차 및 평가방법\n서류심사\n온라인 지원서 검토를 통해 트랙별 지원 자격 및 팀 역량 평가\n대면 심사\n서류심사 통과 팀 대상 발표 및 인터뷰 진행\n최종 선발\n종합 평가 결과를 바탕으로 Track A·B 별 최종 선발팀 발표\n지원내용\n① 유니콘 성장 지원\n- AI Native 컨설팅 (사업구조, 운영방안 전반)\n- AI 회계·세무 (전문 Chat-bot, RAG LLM 활용)\n- AI 솔루션 구독 (LLM 구축, API 사용료 지원)\n② Virtual Ops\n- BPO 제공 (자금집행·예측, 급여, 4대보험, 월결산, 세무신고, 원가계산, 예산 및 사업계획 수립 등 경영관리 업무 Virtual 제공)\n- 삼일 스타트업 컨시어지 (회계·세무·딜 관련 가상 CFO 서비스)\n- 경영관리 Easy View (데이터 분석 리포트 제공)\n③ 사업화 전략 지원\n- 성장 바우처 (AI 솔루션 구독, 고객 사용성 조사, 멘탈 케어, 마케팅 비용, 보도자료 배포 등)\n- 사업화 전략 컨설팅 (UX, CX, IP, 법률, 제조 등 15개 분야)\n④ 네트워킹 지원\n- 대중견기업 사업확장 네트워크 연계\n- 삼일PwC 네트워크를 통한 글로벌 진출 지원\n⑤ 후속 지원\n- Founder's Day 피칭 및 우수 기업 시상\n- 삼일회계법인·마크앤컴퍼니 직접 투자 검토 및 투자자 연결\n문의처\n마크앤컴퍼니\n이메일: acc@markncompany.co.kr\n자세한 내용은 첨부파일 참조 및 문의처로 문의하여 주시기 바랍니다.\nK-Startup에 공고되는 정보는 해당 기관의 요청에 의해 제공됩니다. 입주, 교육, 사업 신청 시 요청하는 정보(개인정보 포함)는 해당 기관에서 관리 \t되오니\n이점 유의하여 주시기 바랍니다.\n※(유의)해당 공고는 중소벤처기업부와 창업진흥원이 아닌 민간에서 지원하는 사업으로, 신청부터 관리까지 모든 과정을 해당기관에서 전담\n첨부파일 일괄 다운로드\n(붙임) 삼일PwC-마크앤컴퍼니 AI Native Team Scaleup 프로그램 포스터.txt\n바로보기\n다운로드\n(붙임) 삼일PwC-마크앤컴퍼니 AI Native Team Scaleup 프로그램 포스터.jpg\n바로보기\n다운로드\n본 저작물은 창업진흥원(K-Startup)이 게시한 공공누리 제1유형의 저작물이며, 공공데이터포털(www.data.go.kr)에서 공공데이터로 개방중이며 무료로 활용할 수 있습니다.\n사업신청 바로가기\n목록",
       "raw_fetched_at": "2026-05-04"
+    },
+    {
+      "pbancSn": "itp_10704",
+      "title": "2026년 해외진출 콘텐츠 사업화 지원 기업 선정평가 결과안내",
+      "agency": "인천테크노파크 콘텐츠기업지원센터",
+      "deadline": "2026-05-26",
+      "url": "https://itp.or.kr/intro.asp?tmid=13&seq=10704",
+      "tier": "green",
+      "note": "인천 매칭 + 콘텐츠 (sinhon.life 허브 + 56만조회)",
+      "classify_evidence": {
+        "summary_reason": "인천 매칭 + 콘텐츠 (sinhon.life 허브 + 56만조회)",
+        "category_hints": [
+          "incheon",
+          "itp",
+          "콘텐츠기업지원센터"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "ITP 진행중 항목"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-05-26",
+            "detail": "ITP 마감일"
+          },
+          "region": {
+            "pass": true,
+            "value": "인천",
+            "detail": "ITP=인천 거점"
+          }
+        },
+        "axis_scores": {
+          "region": "green",
+          "stage": "green",
+          "industry": "green",
+          "nature": "green",
+          "qualification": "green"
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "ITP 콘텐츠기업지원센터 부서별 룰 → green",
+        "classify_version": "v8.3-itp"
+      },
+      "first_seen": "2026-05-06",
+      "last_seen": "2026-05-08",
+      "structured": {
+        "source_kind": "itp",
+        "itp_seq": "10704",
+        "itp_dept": "콘텐츠기업지원센터",
+        "attachments": [],
+        "recruiting": true,
+        "region": "인천"
+      }
+    },
+    {
+      "pbancSn": "itp_10651",
+      "title": "2026년 인천콘텐츠기업지원센터 제2차 입주기업 모집공고",
+      "agency": "인천테크노파크 콘텐츠기업지원센터",
+      "deadline": "2026-05-27",
+      "url": "https://itp.or.kr/intro.asp?tmid=13&seq=10651",
+      "tier": "green",
+      "note": "인천 매칭 + 콘텐츠 (sinhon.life 허브 + 56만조회)",
+      "classify_evidence": {
+        "summary_reason": "인천 매칭 + 콘텐츠 (sinhon.life 허브 + 56만조회)",
+        "category_hints": [
+          "incheon",
+          "itp",
+          "콘텐츠기업지원센터"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "ITP 진행중 항목"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-05-27",
+            "detail": "ITP 마감일"
+          },
+          "region": {
+            "pass": true,
+            "value": "인천",
+            "detail": "ITP=인천 거점"
+          }
+        },
+        "axis_scores": {
+          "region": "green",
+          "stage": "green",
+          "industry": "green",
+          "nature": "green",
+          "qualification": "green"
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "ITP 콘텐츠기업지원센터 부서별 룰 → green",
+        "classify_version": "v8.3-itp"
+      },
+      "first_seen": "2026-04-23",
+      "last_seen": "2026-05-08",
+      "structured": {
+        "source_kind": "itp",
+        "itp_seq": "10651",
+        "itp_dept": "콘텐츠기업지원센터",
+        "attachments": [
+          "붙임1. 2026년 인천콘텐츠기업지원센터 제2차 입주기업 모집공고.pdf\">\r\n\t\t\t\t붙임1. 2026년 인천콘텐츠기업지원센터 제2차 입주기업 모집공고.pdf(248KB)",
+          "붙임2. 2026년 인천콘텐츠기업지원센터 입주신청서식.hwp\">\r\n\t\t\t\t붙임2. 2026년 인천콘텐츠기업지원센터 입주신청서식.hwp(212KB)"
+        ],
+        "recruiting": true,
+        "region": "인천"
+      }
     },
     {
       "source": "bizinfo",
@@ -5688,6 +6429,61 @@
       "raw_fetched_at": "2026-05-04"
     },
     {
+      "pbancSn": "itp_10710",
+      "title": "2026년 AX디바이스 개발·실증(정규트랙) 사업 수요기업 모집 공고",
+      "agency": "인천테크노파크 AI혁신센터",
+      "deadline": "2026-06-05",
+      "url": "https://itp.or.kr/intro.asp?tmid=13&seq=10710",
+      "tier": "green",
+      "note": "인천 매칭 + AI (sinhon.life Claude PWA / 엑스컴 SW)",
+      "classify_evidence": {
+        "summary_reason": "인천 매칭 + AI (sinhon.life Claude PWA / 엑스컴 SW)",
+        "category_hints": [
+          "incheon",
+          "itp",
+          "AI혁신센터"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "ITP 진행중 항목"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-06-05",
+            "detail": "ITP 마감일"
+          },
+          "region": {
+            "pass": true,
+            "value": "인천",
+            "detail": "ITP=인천 거점"
+          }
+        },
+        "axis_scores": {
+          "region": "green",
+          "stage": "green",
+          "industry": "green",
+          "nature": "green",
+          "qualification": "green"
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "ITP AI혁신센터 부서별 룰 → green",
+        "classify_version": "v8.3-itp"
+      },
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-08",
+      "structured": {
+        "source_kind": "itp",
+        "itp_seq": "10710",
+        "itp_dept": "AI혁신센터",
+        "attachments": [],
+        "recruiting": true,
+        "region": "인천"
+      }
+    },
+    {
       "source": "kstartup",
       "source_label": "K-Startup",
       "id": "kstartup_177304",
@@ -5938,6 +6734,61 @@
       },
       "raw_content": "2026년 하반기 「IBK창공(創工)UNIST캠프」 모집 공고\n사업안내 바로가기\n지원분야\n사업화\n대상연령\n만 20세 이상 ~ 만 39세 이하\n기관구분\n민간\n담당부서\nIBK창공&#40;創工&#41; 부산\n지역\n전국\n접수기간\n2026-05-07 ~ 2026-06-11 14:00\n주관기관명\n(주)시리즈벤처스\n대상\n대학생, 일반인\n창업업력\n예비창업자, 1년미만, 2년미만, 3년미만, 5년미만, 7년미만\n연락처\n051-638-1261\n2026년 하반기 「IBK창공(創工)UNIST캠프」 모집 공고\n※(유의)해당 공고는 중소벤처기업부와 창업진흥원이 아닌 민간에서 지원하는 사업으로, 신청부터 관리까지 모든 과정을 해당기관에서 전담\nIBK기업은행은 축적된 중소기업금융 노하우, 컨설팅 역량, 네트워크 등을 적극 활용하여 학생·예비창업기업들의 혁신 성장을 위해 2026년 상반기「IBK창공(創工) UNIST캠프」혁신창업기업을 모집합니다.\n2026년 05월 07일\nIBK기업은행\n신청방법 및 대상\n신청기간\n2026.05.07(목) 09:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t~\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t2026.06.11(목) 14:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t까지\n신청방법\n온라인 접수 :\n접수 바로가기\n신청대상\n- 공고 마감일 기준 (예비)창업팀, 업종 제한 없음\n- (학생창업) 업력 7년 이내 경상권* 소재 대학(원)생 창업기업\n- (예비창업) 대표자 소재지가 경상권*인 만 39세 이하 청년\n*경상권 : 부산/대구/울산/경상남북도\n※ 학생창업 : 사업자등록 완료 기업을 뜻함. 즉, 사업자가 존재할 경우 학생 창업 자격에 부합해야 하며, 학생 신분의 기준은 각 학교별 발급서류에 표기된 사항에 따름\n※ 예비창업자는 선정 후 3개월이내 사업자등록 필수\n제외대상\n- 부도, 휴․폐업 또는 국세·지방세 체납기업\n- 기업 및 대표자가 채무불이행, 신용불량 등으로 금융거래가 어려운 경우\n신청 시 요청하는 정보(개인정보포함)는 사업운영기관에서 관리되오니 이점 반드시 유의하여 주시기 바랍니다.\n제출서류\n아래 각각의 서류를 PDF 파일로 저장 후 온라인 신청 화면에 업로드(각 용량 10MB 이하로 제한)\n- 사업계획서 (홈페이지 內 양식 또는 자유양식)\n- 사업자등록증 (예비창업자 제외)\n- 법인등기부등본 (개인사업자 제외)\n- 최근 3개년 표준 재무제표(2023~2025년, 표준 재무제표증명 포함)*\n* 업력 3년 미만인 경우 창업 후 최근 년도까지 제출, 업력 1년 미만 또는 간편장부 대상자로 재무제표가 없는 경우에는 생략 가능\n- (선택) 사업아이템 세부 소개자료 (없는 경우 생략 가능)\n제출하신 서류는 사업운영기관에서 관리되오니 서류 반환 등 문의는 해당 기관으로 하시기 바랍니다.\n선정절차 및 평가방법\n3단계 평가를 통해 혁신 창업기업 선발\n- 1단계 : 서류심사 (제출서류 및 결격사항 등 확인/ 주요 심사기준에 따른 서류심사 진행)\n- 2단계 : 현장실사 (1단계 통과기업 대상 사업의 실제 영위여부 및 사업장상태 확인)\n- 3단계 : 대면평가 (2단계 통과기업 대상 PT 및 질의응답을 통해 기업 역량 진단)\n지원내용\n지원기간 : 2026년 7월 ~ 11월 (5개월)\n- 체계적인 액셀러레이팅 프로그램 제공\n- 공용 오피스 공간 제공\n- 투자유치 및 연계 대출지원 등 금융서비스 제공\n- IBK의 중소기업 컨설팅 노하우를 극대화한 1:1 밀착형 멘토링\n문의처\nIBK창공(創工) UNIST 캠프 운영 사무실\nT : 051-638-1261\nE : ibk_changgong_busan@s-ventures.co.kr\n자세한 내용은 첨부파일 참조 및 문의처로 문의하여 주시기 바랍니다.\nK-Startup에 공고되는 정보는 해당 기관의 요청에 의해 제공됩니다. 입주, 교육, 사업 신청 시 요청하는 정보(개인정보 포함)는 해당 기관에서 관리 \t되오니\n이점 유의하여 주시기 바랍니다.\n※(유의)해당 공고는 중소벤처기업부와 창업진흥원이 아닌 민간에서 지원하는 사업으로, 신청부터 관리까지 모든 과정을 해당기관에서 전담\n첨부파일 일괄 다운로드\n2026년 하반기 「IBK창공(創工)UNIST캠프」 모집 공고문.pdf\n바로보기\n다운로드\n2026년 하반기 「IBK창공(創工)UNIST캠프」 모집 포스터.png\n바로보기\n다운로드\n2026년 하반기 「IBK창공(創工)UNIST캠프」 모집.txt\n바로보기\n다운로드\n본 저작물은 창업진흥원(K-Startup)이 게시한 공공누리 제1유형의 저작물이며, 공공데이터포털(www.data.go.kr)에서 공공데이터로 개방중이며 무료로 활용할 수 있습니다.\n사업신청 바로가기\n목록",
       "raw_fetched_at": "2026-05-05"
+    },
+    {
+      "pbancSn": "itp_10693",
+      "title": "글로벌 실증 파트너십 지원 과제 선정 결과 공지",
+      "agency": "인천테크노파크 콘텐츠기업지원센터",
+      "deadline": "2026-06-30",
+      "url": "https://itp.or.kr/intro.asp?tmid=13&seq=10693",
+      "tier": "green",
+      "note": "인천 매칭 + 콘텐츠 (sinhon.life 허브 + 56만조회)",
+      "classify_evidence": {
+        "summary_reason": "인천 매칭 + 콘텐츠 (sinhon.life 허브 + 56만조회)",
+        "category_hints": [
+          "incheon",
+          "itp",
+          "콘텐츠기업지원센터"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "ITP 진행중 항목"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-06-30",
+            "detail": "ITP 마감일"
+          },
+          "region": {
+            "pass": true,
+            "value": "인천",
+            "detail": "ITP=인천 거점"
+          }
+        },
+        "axis_scores": {
+          "region": "green",
+          "stage": "green",
+          "industry": "green",
+          "nature": "green",
+          "qualification": "green"
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "ITP 콘텐츠기업지원센터 부서별 룰 → green",
+        "classify_version": "v8.3-itp"
+      },
+      "first_seen": "2026-04-30",
+      "last_seen": "2026-05-08",
+      "structured": {
+        "source_kind": "itp",
+        "itp_seq": "10693",
+        "itp_dept": "콘텐츠기업지원센터",
+        "attachments": [],
+        "recruiting": true,
+        "region": "인천"
+      }
     },
     {
       "pbancSn": "176179",
@@ -6308,6 +7159,61 @@
       },
       "raw_content": "2026 신개념 세대융합 청년창업 지원 멘티 상시 모집\n사업안내 바로가기\n지원분야\n멘토링ㆍ컨설팅ㆍ교육\n대상연령\n만 20세 미만, 만 20세 이상 ~ 만 39세 이하\n기관구분\n공공기관\n담당부서\n창업생태계팀\n지역\n인천광역시\n접수기간\n2026-02-04 ~ 2026-11-30 00:00\n주관기관명\n인천창조경제혁신센터\n대상\n전체\n창업업력\n예비창업자, 1년미만, 2년미만, 3년미만\n연락처\n032-458-5036\n2026 신개념 세대융합 청년창업 지원 멘티 상시 모집\n중장년 전문가들의 경험과 노하우를 활용하여, 인천광역시 청년 창업가들이 기.술.창.업 과정에서 마주하는 어려움을 해결할 수 있도록 지원하는 이번 모집에 많은 참여바랍니다.\n2026년 02월 04일\n인천창조경제혁신센터\n신청방법 및 대상\n신청기간\n2026.02.04(수) 14:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t~\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t2026.11.30(월) 00:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t까지\n신청방법\n온라인 접수 :\n접수 바로가기\n신청대상\n- 연령: 만39세 이하 (1987년 1월 1일 이후 출생)\n- 기업업력: 예비창업자 또는 3년 이내 (2023년 2월 이후 창업) 창업자\n(예비창업자) 신청자 명의의 사업자 등록이 없는 자로 주민등록상 거주지가 인천인 자\n(기창업자) 사업자등록증 기준, 사업장 소재지가 인천에 위치한 3년 이내 창업자\n제외대상\n🚫 지원 제외 업종\n소상공인 분야 (예: 도소매업, 유통업, 요식업, 미용업 프랜차이즈 등)\n신청 시 요청하는 정보(개인정보포함)는 사업운영기관에서 관리되오니 이점 반드시 유의하여 주시기 바랍니다.\n제출서류\n신청서 작성(https://forms.gle/a5T2CoFCQoAVULhe9)\n제출하신 서류는 사업운영기관에서 관리되오니 서류 반환 등 문의는 해당 기관으로 하시기 바랍니다.\n선정절차 및 평가방법\n신청서 작성(https://forms.gle/a5T2CoFCQoAVULhe9) ▶ 전문가 매칭 (일정조율) ▶ 멘토링 진행 ▶ 만족도 설문\n교육안내\n- 창업·경영, 투자, 법률, 지식재산권, 세무·회계, 글로벌, 규제 등\n상기 일정은 사업운영기관의 내부사정으로 변경될 수 있습니다.\n문의처\n인천창조경제혁신센터 ☎ 032-458-5036\n자세한 내용은 첨부파일 참조 및 문의처로 문의하여 주시기 바랍니다.\nK-Startup에 공고되는 정보는 해당 기관의 요청에 의해 제공됩니다. 입주, 교육, 사업 신청 시 요청하는 정보(개인정보 포함)는 해당 기관에서 관리 \t되오니\n이점 유의하여 주시기 바랍니다.\n첨부파일 일괄 다운로드\n붙임1. [공고] 2026년 신개념 세대융합 청년 창업지원 청년창업자(멘티) 모집 공고.hwp\n바로보기\n다운로드\n붙임2. 2026년 신개념 세대융합 청년 창업지원 멘티 상시모집.jpg\n바로보기\n다운로드\n붙임3. 2026년 신개념 세대융합 청년 창업지원 멘티 상시모집.txt\n바로보기\n다운로드\n본 저작물은 창업진흥원(K-Startup)이 게시한 공공누리 제1유형의 저작물이며, 공공데이터포털(www.data.go.kr)에서 공공데이터로 개방중이며 무료로 활용할 수 있습니다.\n사업신청 바로가기\n목록",
       "raw_fetched_at": "2026-05-05"
+    },
+    {
+      "pbancSn": "itp_10547",
+      "title": "2026년 인공지능(AI) 전문인력 양성사업 교육생 모집공고",
+      "agency": "인천테크노파크 AI혁신센터",
+      "deadline": "2026-11-30",
+      "url": "https://itp.or.kr/intro.asp?tmid=13&seq=10547",
+      "tier": "green",
+      "note": "인천 매칭 + AI (sinhon.life Claude PWA / 엑스컴 SW)",
+      "classify_evidence": {
+        "summary_reason": "인천 매칭 + AI (sinhon.life Claude PWA / 엑스컴 SW)",
+        "category_hints": [
+          "incheon",
+          "itp",
+          "AI혁신센터"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "ITP 진행중 항목"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-11-30",
+            "detail": "ITP 마감일"
+          },
+          "region": {
+            "pass": true,
+            "value": "인천",
+            "detail": "ITP=인천 거점"
+          }
+        },
+        "axis_scores": {
+          "region": "green",
+          "stage": "green",
+          "industry": "green",
+          "nature": "green",
+          "qualification": "green"
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "ITP AI혁신센터 부서별 룰 → green",
+        "classify_version": "v8.3-itp"
+      },
+      "first_seen": "2026-04-01",
+      "last_seen": "2026-05-08",
+      "structured": {
+        "source_kind": "itp",
+        "itp_seq": "10547",
+        "itp_dept": "AI혁신센터",
+        "attachments": [],
+        "recruiting": true,
+        "region": "인천"
+      }
     },
     {
       "source": "bizinfo",
@@ -10184,6 +11090,61 @@
       },
       "raw_content": "[NextRise] Airbus Advanced Air Mobility & Next-Gen Battery Solutions Open Innovation / 에어버스 첨단 항공 모빌\n사업안내 바로가기\n지원분야\n판로ㆍ해외진출\n대상연령\n전체\n기관구분\n민간\n담당부서\n스타트업글로벌성장실\n지역\n전국\n접수기간\n2026-03-20 ~ 2026-05-08 23:59\n주관기관명\n한국무역협회\n대상\n일반인, 일반기업\n창업업력\n1년미만, 2년미만, 3년미만, 5년미만, 7년미만, 10년미만\n연락처\n02-6000-5849\n[NextRise] Airbus Advanced Air Mobility & Next-Gen Battery Solutions Open Innovation / 에어버스 첨단 항공 모빌\n※(유의)해당 공고는 중소벤처기업부와 창업진흥원이 아닌 민간에서 지원하는 사업으로, 신청부터 관리까지 모든 과정을 해당기관에서 전담\n에어버스와 한국무역협회는 국내 유망 스타트업 중 오픈이노베이션 파트너를 발굴합니다.\n2026년 04월 26일\n한국무역협\n신청방법 및 대상\n신청기간\n2026.03.20(금) 00:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t~\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t2026.05.08(금) 23:59\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t까지\n신청방법\n온라인 접수 :\n접수 바로가기\n신청대상\n1. 상기 모집분야 기술을 보유한 한국 스타트업(강소기업)\n2.  영문 IR 피치 및 QA가 가능한 기업\n3.  영문 IR 피칭덱 자료를 보유한 기업\n신청 시 요청하는 정보(개인정보포함)는 사업운영기관에서 관리되오니 이점 반드시 유의하여 주시기 바랍니다.\n제출서류\n회사 사업 소개서 또는 국영문 IR 피칭덱 (Pitching Deck)\n회사 또는 보유 기술/제품에 관한 설명이 있는 IR 피칭덱 (Pitching Deck)\n제출하신 서류는 사업운영기관에서 관리되오니 서류 반환 등 문의는 해당 기관으로 하시기 바랍니다.\n선정절차 및 평가방법\n이노브랜치 플랫폼 지원 이후 넥스트라이즈 현장(6.18~19) 1:1 밋업 진행\n이노브랜치 플랫폼 지원 이후 넥스트라이즈 현장(6.18~19) 1:1 밋업 진행\n지원내용\n에어버스와의 다양한 협업 방안 검토\n추후 참여 기업에 따른 기술협력, 공동개발, PoC 및 사업화 등 다양한 협업 방안 검토\n문의처\n카카오톡플러스채널\n오픈이노베이션 전용 카카오톡 채널  http://pf.kakao.com/_tzfxhK/chat\n자세한 내용은 첨부파일 참조 및 문의처로 문의하여 주시기 바랍니다.\nK-Startup에 공고되는 정보는 해당 기관의 요청에 의해 제공됩니다. 입주, 교육, 사업 신청 시 요청하는 정보(개인정보 포함)는 해당 기관에서 관리 \t되오니\n이점 유의하여 주시기 바랍니다.\n※(유의)해당 공고는 중소벤처기업부와 창업진흥원이 아닌 민간에서 지원하는 사업으로, 신청부터 관리까지 모든 과정을 해당기관에서 전담\n본 저작물은 창업진흥원(K-Startup)이 게시한 공공누리 제1유형의 저작물이며, 공공데이터포털(www.data.go.kr)에서 공공데이터로 개방중이며 무료로 활용할 수 있습니다.\n사업신청 바로가기\n목록",
       "raw_fetched_at": "2026-05-02"
+    },
+    {
+      "pbancSn": "itp_10641",
+      "title": "2026년도 인천광역시 지역 디자인기업 역량강화 지원사업 참여기업 모집",
+      "agency": "인천테크노파크 디자인지원센터",
+      "deadline": "2026-05-08",
+      "url": "https://itp.or.kr/intro.asp?tmid=13&seq=10641",
+      "tier": "yellow",
+      "note": "인천 매칭 + 디자인 (UI/콘텐츠 부분 매칭)",
+      "classify_evidence": {
+        "summary_reason": "인천 매칭 + 디자인 (UI/콘텐츠 부분 매칭)",
+        "category_hints": [
+          "incheon",
+          "itp",
+          "디자인지원센터"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "ITP 진행중 항목"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-05-08",
+            "detail": "ITP 마감일"
+          },
+          "region": {
+            "pass": true,
+            "value": "인천",
+            "detail": "ITP=인천 거점"
+          }
+        },
+        "axis_scores": {
+          "region": "green",
+          "stage": "green",
+          "industry": "yellow",
+          "nature": "yellow",
+          "qualification": "green"
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "ITP 디자인지원센터 부서별 룰 → yellow",
+        "classify_version": "v8.3-itp"
+      },
+      "first_seen": "2026-04-20",
+      "last_seen": "2026-05-08",
+      "structured": {
+        "source_kind": "itp",
+        "itp_seq": "10641",
+        "itp_dept": "디자인지원센터",
+        "attachments": [],
+        "recruiting": true,
+        "region": "인천"
+      }
     },
     {
       "source": "kstartup",
@@ -14350,6 +15311,61 @@
       "raw_fetched_at": "2026-05-03"
     },
     {
+      "pbancSn": "itp_10686",
+      "title": "2026년도 인천광역시 중소기업 디자인개발지원사업 뷰티산업 지원분야 과제 모집(~5/19)",
+      "agency": "인천테크노파크 디자인지원센터",
+      "deadline": "2026-05-19",
+      "url": "https://itp.or.kr/intro.asp?tmid=13&seq=10686",
+      "tier": "yellow",
+      "note": "인천 매칭 + 디자인 (UI/콘텐츠 부분 매칭)",
+      "classify_evidence": {
+        "summary_reason": "인천 매칭 + 디자인 (UI/콘텐츠 부분 매칭)",
+        "category_hints": [
+          "incheon",
+          "itp",
+          "디자인지원센터"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "ITP 진행중 항목"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-05-19",
+            "detail": "ITP 마감일"
+          },
+          "region": {
+            "pass": true,
+            "value": "인천",
+            "detail": "ITP=인천 거점"
+          }
+        },
+        "axis_scores": {
+          "region": "green",
+          "stage": "green",
+          "industry": "yellow",
+          "nature": "yellow",
+          "qualification": "green"
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "ITP 디자인지원센터 부서별 룰 → yellow",
+        "classify_version": "v8.3-itp"
+      },
+      "first_seen": "2026-04-29",
+      "last_seen": "2026-05-08",
+      "structured": {
+        "source_kind": "itp",
+        "itp_seq": "10686",
+        "itp_dept": "디자인지원센터",
+        "attachments": [],
+        "recruiting": true,
+        "region": "인천"
+      }
+    },
+    {
       "source": "kstartup",
       "source_label": "K-Startup",
       "id": "kstartup_177362",
@@ -14807,6 +15823,61 @@
       "verdict": "",
       "raw_content": "Error>상세화면\n본문 바로가기\n주메뉴 바로가기\n에러가 발생했습니다!",
       "raw_fetched_at": "2026-05-03"
+    },
+    {
+      "pbancSn": "itp_10706",
+      "title": "2026년도 DFA 어워드 출품지원 참여기업 모집",
+      "agency": "인천테크노파크 디자인지원센터",
+      "deadline": "2026-05-21",
+      "url": "https://itp.or.kr/intro.asp?tmid=13&seq=10706",
+      "tier": "yellow",
+      "note": "인천 매칭 + 디자인 (UI/콘텐츠 부분 매칭)",
+      "classify_evidence": {
+        "summary_reason": "인천 매칭 + 디자인 (UI/콘텐츠 부분 매칭)",
+        "category_hints": [
+          "incheon",
+          "itp",
+          "디자인지원센터"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "ITP 진행중 항목"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-05-21",
+            "detail": "ITP 마감일"
+          },
+          "region": {
+            "pass": true,
+            "value": "인천",
+            "detail": "ITP=인천 거점"
+          }
+        },
+        "axis_scores": {
+          "region": "green",
+          "stage": "green",
+          "industry": "yellow",
+          "nature": "yellow",
+          "qualification": "green"
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "ITP 디자인지원센터 부서별 룰 → yellow",
+        "classify_version": "v8.3-itp"
+      },
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-08",
+      "structured": {
+        "source_kind": "itp",
+        "itp_seq": "10706",
+        "itp_dept": "디자인지원센터",
+        "attachments": [],
+        "recruiting": true,
+        "region": "인천"
+      }
     },
     {
       "source": "bizinfo",
@@ -18345,6 +19416,61 @@
       "raw_fetched_at": "2026-05-05"
     },
     {
+      "pbancSn": "itp_10278",
+      "title": "금융기관(NH농협은행) 협업 특별 경영안정자금 추가 지원 공고",
+      "agency": "인천테크노파크 경영지원센터",
+      "deadline": "2026-12-18",
+      "url": "https://itp.or.kr/intro.asp?tmid=13&seq=10278",
+      "tier": "yellow",
+      "note": "인천 매칭 + 경영자금",
+      "classify_evidence": {
+        "summary_reason": "인천 매칭 + 경영자금",
+        "category_hints": [
+          "incheon",
+          "itp",
+          "경영지원센터"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "ITP 진행중 항목"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-12-18",
+            "detail": "ITP 마감일"
+          },
+          "region": {
+            "pass": true,
+            "value": "인천",
+            "detail": "ITP=인천 거점"
+          }
+        },
+        "axis_scores": {
+          "region": "green",
+          "stage": "green",
+          "industry": "yellow",
+          "nature": "yellow",
+          "qualification": "green"
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "ITP 경영지원센터 부서별 룰 → yellow",
+        "classify_version": "v8.3-itp"
+      },
+      "first_seen": "2026-01-16",
+      "last_seen": "2026-05-08",
+      "structured": {
+        "source_kind": "itp",
+        "itp_seq": "10278",
+        "itp_dept": "경영지원센터",
+        "attachments": [],
+        "recruiting": true,
+        "region": "인천"
+      }
+    },
+    {
       "source": "kstartup",
       "source_label": "K-Startup",
       "id": "kstartup_177328",
@@ -19273,6 +20399,226 @@
       },
       "raw_content": "[Startup Korea Special Visa] Announcement on Application for Recommendations for the “Startup Korea Special Visa”\n지원분야\n인력\n대상연령\n전체\n기관구분\n공공기관\n담당부서\n글로벌진출팀\n지역\n전국\n접수기간\n2024-12-03 ~ 2026-12-30 00:00\n주관기관명\n창업진흥원\n대상\n전체\n창업업력\n전체\n연락처\n02-3440-7348\nMinistry of SMEs and Startups Announcement No. 2024 – 592\n[Startup Korea Special Visa] Announcement on Application for Recommendations for the “Startup Korea Special Visa”\nWe are pleased to announce that applications for recommendations for the \"Startup Korea Special Visa\" will be accepted on a rolling basis, and this visa will be issued upon the recommendation of the Ministry of SMEs and Startups (“MSS”), following an evaluation of the startup’s feasibility and innovativeness.\n2024년 12월 03일\nMinister of SMEs and Startups\n신청방법 및 대상\n신청기간\n2024.12.03(화) 18:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t~\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t2026.12.30(수) 00:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t까지\n신청방법\n온라인 접수 :\n접수 바로가기\n신청대상\nRepresentative of a (prospective) startup who is not a Korean national and The (prospective) startup must meet the eligibility criteria outlined in the Support for Small and Medium Enterprise Establishment Act.\n* Reference to the Announcement\n제외대상\n* Reference to the Announcement\n신청 시 요청하는 정보(개인정보포함)는 사업운영기관에서 관리되오니 이점 반드시 유의하여 주시기 바랍니다.\n제출서류\nRecommendation application form\nBusiness plan\nA copy of passport or alien registration certificate\nA copy of corporate registration certificate or business registration certificate\nCo-representative verification document issued by the K-Scouter    (if necessary)\nConsent to provision, use and collection of personal information\n제출하신 서류는 사업운영기관에서 관리되오니 서류 반환 등 문의는 해당 기관으로 하시기 바랍니다.\n선정절차 및 평가방법\nEvaluation Process\nEvaluation will be conducted in the following order\n(1) Review of requirements → (2) Presentation evaluation → (3) The jugding committee\n지원내용\nIssuance of「Startup Korea Special Visa」recommendation letter\n문의처\n(Questions on application) Global Startup Center\n-E-mail : startup.korea.visa@gmail.com\n-Phone : +82-2-3440-7346 (Office Hour : 9am-6pm, Korean Time)\n(Other questions) KISED Global Expansion Team\n-E-mail : now@kised.or.kr\n자세한 내용은 첨부파일 참조 및 문의처로 문의하여 주시기 바랍니다.\nK-Startup에 공고되는 정보는 해당 기관의 요청에 의해 제공됩니다. 입주, 교육, 사업 신청 시 요청하는 정보(개인정보 포함)는 해당 기관에서 관리 \t되오니\n이점 유의하여 주시기 바랍니다.\n첨부파일 일괄 다운로드\n241203 스타트업 코리아 특별비자 추천 수시 신청 공고문(국문).pdf\n바로보기\n다운로드\nAnnouncement on Application for Recommendations for the “Startup Korea Special Visa”.pdf\n바로보기\n다운로드\nRecommendation application form.docx\n바로보기\n다운로드\nBusiness Plan.docx\n바로보기\n다운로드\nConsent to provision, use and co",
       "raw_fetched_at": "2026-05-05"
+    },
+    {
+      "pbancSn": "itp_10643",
+      "title": "2026년 인천형 특별 경영안정자금(하나은행 협업) 지원 공고",
+      "agency": "인천테크노파크 경영지원센터",
+      "deadline": "2026-12-31",
+      "url": "https://itp.or.kr/intro.asp?tmid=13&seq=10643",
+      "tier": "yellow",
+      "note": "인천 매칭 + 경영자금",
+      "classify_evidence": {
+        "summary_reason": "인천 매칭 + 경영자금",
+        "category_hints": [
+          "incheon",
+          "itp",
+          "경영지원센터"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "ITP 진행중 항목"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-12-31",
+            "detail": "ITP 마감일"
+          },
+          "region": {
+            "pass": true,
+            "value": "인천",
+            "detail": "ITP=인천 거점"
+          }
+        },
+        "axis_scores": {
+          "region": "green",
+          "stage": "green",
+          "industry": "yellow",
+          "nature": "yellow",
+          "qualification": "green"
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "ITP 경영지원센터 부서별 룰 → yellow",
+        "classify_version": "v8.3-itp"
+      },
+      "first_seen": "2026-04-20",
+      "last_seen": "2026-05-08",
+      "structured": {
+        "source_kind": "itp",
+        "itp_seq": "10643",
+        "itp_dept": "경영지원센터",
+        "attachments": [],
+        "recruiting": true,
+        "region": "인천"
+      }
+    },
+    {
+      "pbancSn": "itp_10545",
+      "title": "2026년 시제품제작 장비(3D 프린팅) 공동활용 지원 안내",
+      "agency": "인천테크노파크 디자인지원센터",
+      "deadline": "2026-12-31",
+      "url": "https://itp.or.kr/intro.asp?tmid=13&seq=10545",
+      "tier": "yellow",
+      "note": "인천 매칭 + 디자인 (UI/콘텐츠 부분 매칭)",
+      "classify_evidence": {
+        "summary_reason": "인천 매칭 + 디자인 (UI/콘텐츠 부분 매칭)",
+        "category_hints": [
+          "incheon",
+          "itp",
+          "디자인지원센터"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "ITP 진행중 항목"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-12-31",
+            "detail": "ITP 마감일"
+          },
+          "region": {
+            "pass": true,
+            "value": "인천",
+            "detail": "ITP=인천 거점"
+          }
+        },
+        "axis_scores": {
+          "region": "green",
+          "stage": "green",
+          "industry": "yellow",
+          "nature": "yellow",
+          "qualification": "green"
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "ITP 디자인지원센터 부서별 룰 → yellow",
+        "classify_version": "v8.3-itp"
+      },
+      "first_seen": "2026-04-01",
+      "last_seen": "2026-05-08",
+      "structured": {
+        "source_kind": "itp",
+        "itp_seq": "10545",
+        "itp_dept": "디자인지원센터",
+        "attachments": [],
+        "recruiting": true,
+        "region": "인천"
+      }
+    },
+    {
+      "pbancSn": "itp_10407",
+      "title": "2026년 유니버설디자인리빙랩 제품 사용성조사 장비 공동활용 지원안내",
+      "agency": "인천테크노파크 디자인지원센터",
+      "deadline": "2026-12-31",
+      "url": "https://itp.or.kr/intro.asp?tmid=13&seq=10407",
+      "tier": "yellow",
+      "note": "인천 매칭 + 디자인 (UI/콘텐츠 부분 매칭)",
+      "classify_evidence": {
+        "summary_reason": "인천 매칭 + 디자인 (UI/콘텐츠 부분 매칭)",
+        "category_hints": [
+          "incheon",
+          "itp",
+          "디자인지원센터"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "ITP 진행중 항목"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-12-31",
+            "detail": "ITP 마감일"
+          },
+          "region": {
+            "pass": true,
+            "value": "인천",
+            "detail": "ITP=인천 거점"
+          }
+        },
+        "axis_scores": {
+          "region": "green",
+          "stage": "green",
+          "industry": "yellow",
+          "nature": "yellow",
+          "qualification": "green"
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "ITP 디자인지원센터 부서별 룰 → yellow",
+        "classify_version": "v8.3-itp"
+      },
+      "first_seen": "2026-03-12",
+      "last_seen": "2026-05-08",
+      "structured": {
+        "source_kind": "itp",
+        "itp_seq": "10407",
+        "itp_dept": "디자인지원센터",
+        "attachments": [],
+        "recruiting": true,
+        "region": "인천"
+      }
+    },
+    {
+      "pbancSn": "itp_10441",
+      "title": "2026년 유니버설디자인리빙랩 시설투어 프로그램 참여모집",
+      "agency": "인천테크노파크 디자인지원센터",
+      "deadline": "2026-12-31",
+      "url": "https://itp.or.kr/intro.asp?tmid=13&seq=10441",
+      "tier": "yellow",
+      "note": "인천 매칭 + 디자인 (UI/콘텐츠 부분 매칭)",
+      "classify_evidence": {
+        "summary_reason": "인천 매칭 + 디자인 (UI/콘텐츠 부분 매칭)",
+        "category_hints": [
+          "incheon",
+          "itp",
+          "디자인지원센터"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "ITP 진행중 항목"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-12-31",
+            "detail": "ITP 마감일"
+          },
+          "region": {
+            "pass": true,
+            "value": "인천",
+            "detail": "ITP=인천 거점"
+          }
+        },
+        "axis_scores": {
+          "region": "green",
+          "stage": "green",
+          "industry": "yellow",
+          "nature": "yellow",
+          "qualification": "green"
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "ITP 디자인지원센터 부서별 룰 → yellow",
+        "classify_version": "v8.3-itp"
+      },
+      "first_seen": "2026-03-17",
+      "last_seen": "2026-05-08",
+      "structured": {
+        "source_kind": "itp",
+        "itp_seq": "10441",
+        "itp_dept": "디자인지원센터",
+        "attachments": [],
+        "recruiting": true,
+        "region": "인천"
+      }
     },
     {
       "source": "bizinfo",
@@ -33827,6 +35173,65 @@
       }
     },
     {
+      "pbancSn": "itp_10682",
+      "title": "2026 청소년 창작 로봇교실 상반기 교육생 모집 공고",
+      "agency": "인천테크노파크 로봇센터",
+      "deadline": "2026-05-11",
+      "url": "https://itp.or.kr/intro.asp?tmid=13&seq=10682",
+      "tier": "orange",
+      "note": "인천 매칭이지만 로봇 불일치",
+      "classify_evidence": {
+        "summary_reason": "인천 매칭이지만 로봇 불일치",
+        "category_hints": [
+          "incheon",
+          "itp",
+          "로봇센터"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "ITP 진행중 항목"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-05-11",
+            "detail": "ITP 마감일"
+          },
+          "region": {
+            "pass": true,
+            "value": "인천",
+            "detail": "ITP=인천 거점"
+          }
+        },
+        "axis_scores": {
+          "region": "green",
+          "stage": "green",
+          "industry": "orange",
+          "nature": "orange",
+          "qualification": "green"
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "ITP 로봇센터 부서별 룰 → orange",
+        "classify_version": "v8.3-itp"
+      },
+      "first_seen": "2026-04-29",
+      "last_seen": "2026-05-08",
+      "structured": {
+        "source_kind": "itp",
+        "itp_seq": "10682",
+        "itp_dept": "로봇센터",
+        "attachments": [
+          "붙임1. 2026 청소년 창작 로봇교실 상반기 교육생 모집 공고문.pdf\">\r\n\t\t\t\t붙임1. 2026 청소년 창작 로봇교실 상반기 교육생 모집 공고문.pdf(124KB)",
+          "붙임2. 2026 청소년 창작 로봇교실 상반기 교육안내문.pdf\">\r\n\t\t\t\t붙임2. 2026 청소년 창작 로봇교실 상반기 교육안내문.pdf(206KB)",
+          "붙임3. 2026 청소년 창작 로봇교실 상반기 온라인 신청서(예).pdf\">\r\n\t\t\t\t붙임3. 2026 청소년 창작 로봇교실 상반기 온라인 신청서(예).pdf(230KB)"
+        ],
+        "recruiting": true,
+        "region": "인천"
+      }
+    },
+    {
       "pbancSn": "177415",
       "title": "「 2026 청주시 K- 바이오 글로벌 브릿지 」 참여기업 모집 공고",
       "agency": "충북창조경제혁신센터",
@@ -36603,6 +38008,65 @@
         "integrated_name": "2026 안산 스타트업 청년창업 경진대회",
         "apply_online": "",
         "apply_guide": "https://ansan.go.kr/www/common/bbs/selectBbsDetail.do?key=260&bbs_code=B0214&bbs_seq=1670244&sch_type=sj&sch_text=&currentPage=1"
+      }
+    },
+    {
+      "pbancSn": "itp_10660",
+      "title": "2026년 바이오기업 해외진출 지원사업 참여기업 모집 공고(~5/13_기한연장)",
+      "agency": "인천테크노파크 바이오센터",
+      "deadline": "2026-05-13",
+      "url": "https://itp.or.kr/intro.asp?tmid=13&seq=10660",
+      "tier": "orange",
+      "note": "인천 매칭이지만 바이오 분야 불일치",
+      "classify_evidence": {
+        "summary_reason": "인천 매칭이지만 바이오 분야 불일치",
+        "category_hints": [
+          "incheon",
+          "itp",
+          "바이오센터"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "ITP 진행중 항목"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-05-13",
+            "detail": "ITP 마감일"
+          },
+          "region": {
+            "pass": true,
+            "value": "인천",
+            "detail": "ITP=인천 거점"
+          }
+        },
+        "axis_scores": {
+          "region": "green",
+          "stage": "green",
+          "industry": "orange",
+          "nature": "orange",
+          "qualification": "green"
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "ITP 바이오센터 부서별 룰 → orange",
+        "classify_version": "v8.3-itp"
+      },
+      "first_seen": "2026-05-06",
+      "last_seen": "2026-05-08",
+      "structured": {
+        "source_kind": "itp",
+        "itp_seq": "10660",
+        "itp_dept": "바이오센터",
+        "attachments": [
+          "붙임1. 2026년 바이오기업 해외진출 지원사업 참여기업 모집 공고(기한연장).pdf\">\r\n\t\t\t\t붙임1. 2026년 바이오기업 해외진출 지원사업 참여기업 모집 공고(기한연장).pdf(445KB)",
+          "붙임2. [서식1] 국문.hwp\">\r\n\t\t\t\t붙임2. [서식1] 국문.hwp(65KB)",
+          "붙임3. [서식2] 영문.hwp\">\r\n\t\t\t\t붙임3. [서식2] 영문.hwp(56KB)"
+        ],
+        "recruiting": true,
+        "region": "인천"
       }
     },
     {
@@ -43022,6 +44486,119 @@
       }
     },
     {
+      "pbancSn": "itp_10699",
+      "title": "2026년 드림For청년통장 참여자 모집 공고",
+      "agency": "인천테크노파크 고용안정센터",
+      "deadline": "2026-05-15",
+      "url": "https://itp.or.kr/intro.asp?tmid=13&seq=10699",
+      "tier": "orange",
+      "note": "인천 매칭이지만 고용 — 사업 본체 약함",
+      "classify_evidence": {
+        "summary_reason": "인천 매칭이지만 고용 — 사업 본체 약함",
+        "category_hints": [
+          "incheon",
+          "itp",
+          "고용안정센터"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "ITP 진행중 항목"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-05-15",
+            "detail": "ITP 마감일"
+          },
+          "region": {
+            "pass": true,
+            "value": "인천",
+            "detail": "ITP=인천 거점"
+          }
+        },
+        "axis_scores": {
+          "region": "green",
+          "stage": "green",
+          "industry": "orange",
+          "nature": "orange",
+          "qualification": "green"
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "ITP 고용안정센터 부서별 룰 → orange",
+        "classify_version": "v8.3-itp"
+      },
+      "first_seen": "2026-05-04",
+      "last_seen": "2026-05-08",
+      "structured": {
+        "source_kind": "itp",
+        "itp_seq": "10699",
+        "itp_dept": "고용안정센터",
+        "attachments": [],
+        "recruiting": true,
+        "region": "인천"
+      }
+    },
+    {
+      "pbancSn": "itp_10697",
+      "title": "2026년 파브(PAV) 실증기 개발 지원사업 모집공고(본공고)",
+      "agency": "인천테크노파크 파브센터",
+      "deadline": "2026-05-15",
+      "url": "https://itp.or.kr/intro.asp?tmid=13&seq=10697",
+      "tier": "orange",
+      "note": "인천 매칭이지만 파브/PAV 불일치",
+      "classify_evidence": {
+        "summary_reason": "인천 매칭이지만 파브/PAV 불일치",
+        "category_hints": [
+          "incheon",
+          "itp",
+          "파브센터"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "ITP 진행중 항목"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-05-15",
+            "detail": "ITP 마감일"
+          },
+          "region": {
+            "pass": true,
+            "value": "인천",
+            "detail": "ITP=인천 거점"
+          }
+        },
+        "axis_scores": {
+          "region": "green",
+          "stage": "green",
+          "industry": "orange",
+          "nature": "orange",
+          "qualification": "green"
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "ITP 파브센터 부서별 룰 → orange",
+        "classify_version": "v8.3-itp"
+      },
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-08",
+      "structured": {
+        "source_kind": "itp",
+        "itp_seq": "10697",
+        "itp_dept": "파브센터",
+        "attachments": [
+          "붙임 1. 2026 (PAV) 년 파브 실증기 개발 지원사업 모집공고(본공고).pdf\">\r\n\t\t\t\t붙임 1. 2026 (PAV) 년 파브 실증기 개발 지원사업 모집공고(본공고).pdf(391KB)",
+          "붙임 2. 제출서류 및 참고자료.zip\">\r\n\t\t\t\t붙임 2. 제출서류 및 참고자료.zip(3807KB)"
+        ],
+        "recruiting": true,
+        "region": "인천"
+      }
+    },
+    {
       "source": "kstartup",
       "source_label": "K-Startup",
       "id": "kstartup_177000",
@@ -49132,6 +50709,61 @@
       }
     },
     {
+      "pbancSn": "itp_10665",
+      "title": "2026년 녹색기후산업 글로벌 사업화 지원사업 참여기업 모집 공고",
+      "agency": "인천테크노파크 녹색반도체센터",
+      "deadline": "2026-05-22",
+      "url": "https://itp.or.kr/intro.asp?tmid=13&seq=10665",
+      "tier": "orange",
+      "note": "인천 매칭이지만 반도체 분야 불일치",
+      "classify_evidence": {
+        "summary_reason": "인천 매칭이지만 반도체 분야 불일치",
+        "category_hints": [
+          "incheon",
+          "itp",
+          "녹색반도체센터"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "ITP 진행중 항목"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-05-22",
+            "detail": "ITP 마감일"
+          },
+          "region": {
+            "pass": true,
+            "value": "인천",
+            "detail": "ITP=인천 거점"
+          }
+        },
+        "axis_scores": {
+          "region": "green",
+          "stage": "green",
+          "industry": "orange",
+          "nature": "orange",
+          "qualification": "green"
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "ITP 녹색반도체센터 부서별 룰 → orange",
+        "classify_version": "v8.3-itp"
+      },
+      "first_seen": "2026-04-23",
+      "last_seen": "2026-05-08",
+      "structured": {
+        "source_kind": "itp",
+        "itp_seq": "10665",
+        "itp_dept": "녹색반도체센터",
+        "attachments": [],
+        "recruiting": true,
+        "region": "인천"
+      }
+    },
+    {
       "pbancSn": "177456",
       "title": "2026년 특허출원·등록 비용 바우처 지원사업 (상반기 / 4차)",
       "agency": "(사)한국중소기업발전협회",
@@ -49505,6 +51137,61 @@
         "audit_flags": [],
         "tier_logic": "3순위 (참고용): 업종 한정 (스포츠산업)",
         "classify_version": "v8.3"
+      }
+    },
+    {
+      "pbancSn": "itp_10657",
+      "title": "[인천디자인교육센터] 재직자 대상 디자인 교육 5월 수강생 모집",
+      "agency": "인천테크노파크 디자인교육센터",
+      "deadline": "2026-05-25",
+      "url": "https://itp.or.kr/intro.asp?tmid=13&seq=10657",
+      "tier": "orange",
+      "note": "인천 매칭이지만 디자인 교육 — 사업 매칭 약함",
+      "classify_evidence": {
+        "summary_reason": "인천 매칭이지만 디자인 교육 — 사업 매칭 약함",
+        "category_hints": [
+          "incheon",
+          "itp",
+          "디자인교육센터"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "ITP 진행중 항목"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-05-25",
+            "detail": "ITP 마감일"
+          },
+          "region": {
+            "pass": true,
+            "value": "인천",
+            "detail": "ITP=인천 거점"
+          }
+        },
+        "axis_scores": {
+          "region": "green",
+          "stage": "green",
+          "industry": "orange",
+          "nature": "orange",
+          "qualification": "green"
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "ITP 디자인교육센터 부서별 룰 → orange",
+        "classify_version": "v8.3-itp"
+      },
+      "first_seen": "2026-04-21",
+      "last_seen": "2026-05-08",
+      "structured": {
+        "source_kind": "itp",
+        "itp_seq": "10657",
+        "itp_dept": "디자인교육센터",
+        "attachments": [],
+        "recruiting": true,
+        "region": "인천"
       }
     },
     {
@@ -52436,6 +54123,66 @@
       "verdict": ""
     },
     {
+      "pbancSn": "itp_10642",
+      "title": "2026년 로봇산업진흥시설 입주기업 모집공고(2차)",
+      "agency": "인천테크노파크 로봇센터",
+      "deadline": "2026-05-29",
+      "url": "https://itp.or.kr/intro.asp?tmid=13&seq=10642",
+      "tier": "orange",
+      "note": "인천 매칭이지만 로봇 불일치",
+      "classify_evidence": {
+        "summary_reason": "인천 매칭이지만 로봇 불일치",
+        "category_hints": [
+          "incheon",
+          "itp",
+          "로봇센터"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "ITP 진행중 항목"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-05-29",
+            "detail": "ITP 마감일"
+          },
+          "region": {
+            "pass": true,
+            "value": "인천",
+            "detail": "ITP=인천 거점"
+          }
+        },
+        "axis_scores": {
+          "region": "green",
+          "stage": "green",
+          "industry": "orange",
+          "nature": "orange",
+          "qualification": "green"
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "ITP 로봇센터 부서별 룰 → orange",
+        "classify_version": "v8.3-itp"
+      },
+      "first_seen": "2026-04-20",
+      "last_seen": "2026-05-08",
+      "structured": {
+        "source_kind": "itp",
+        "itp_seq": "10642",
+        "itp_dept": "로봇센터",
+        "attachments": [
+          "붙임1.  2026년 로봇산업진흥시설 신규입주기업 모집 공고문(2차).hwp\">\r\n\t\t\t\t붙임1.  2026년 로봇산업진흥시설 신규입주기업 모집 공고문(2차).hwp(113KB)",
+          "붙임 2. 로봇산업진흥시설 입주신청 서식.hwp\">\r\n\t\t\t\t붙임 2. 로봇산업진흥시설 입주신청 서식.hwp(64KB)",
+          "붙임 3. 로봇산업 특수분류표(4차개정).xlsx\">\r\n\t\t\t\t붙임 3. 로봇산업 특수분류표(4차개정).xlsx(306KB)",
+          "붙임 4. 로봇산업진흥시설 층별 평면도.pdf\">\r\n\t\t\t\t붙임 4. 로봇산업진흥시설 층별 평면도.pdf(1977KB)"
+        ],
+        "recruiting": true,
+        "region": "인천"
+      }
+    },
+    {
       "source": "bizinfo",
       "source_label": "중소벤처기업부 BIZINFO (기업마당)",
       "id": "bizinfo_PBLN_000000000121292",
@@ -54314,6 +56061,61 @@
         "integrated_name": "2026년 상반기 화성시 벤처인증 비용 지원사업",
         "apply_online": "https://platform.hsbiz.or.kr/business/detail/N/1153",
         "apply_guide": "platform.hsbiz.or.kr/business/detail/N/1153"
+      }
+    },
+    {
+      "pbancSn": "itp_10658",
+      "title": "2026년 인천 스마트공장 교육지원사업 교육생 모집(5,6월 모집중)",
+      "agency": "인천테크노파크 제조혁신센터",
+      "deadline": "2026-06-17",
+      "url": "https://itp.or.kr/intro.asp?tmid=13&seq=10658",
+      "tier": "orange",
+      "note": "인천 매칭이지만 제조 분야 — SW 불일치",
+      "classify_evidence": {
+        "summary_reason": "인천 매칭이지만 제조 분야 — SW 불일치",
+        "category_hints": [
+          "incheon",
+          "itp",
+          "제조혁신센터"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "ITP 진행중 항목"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-06-17",
+            "detail": "ITP 마감일"
+          },
+          "region": {
+            "pass": true,
+            "value": "인천",
+            "detail": "ITP=인천 거점"
+          }
+        },
+        "axis_scores": {
+          "region": "green",
+          "stage": "green",
+          "industry": "orange",
+          "nature": "orange",
+          "qualification": "green"
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "ITP 제조혁신센터 부서별 룰 → orange",
+        "classify_version": "v8.3-itp"
+      },
+      "first_seen": "2026-04-21",
+      "last_seen": "2026-05-08",
+      "structured": {
+        "source_kind": "itp",
+        "itp_seq": "10658",
+        "itp_dept": "제조혁신센터",
+        "attachments": [],
+        "recruiting": true,
+        "region": "인천"
       }
     },
     {
@@ -58016,6 +59818,61 @@
       }
     },
     {
+      "pbancSn": "itp_10317",
+      "title": "「2026 청년도전지원사업」 참여자 모집 공고",
+      "agency": "인천테크노파크 청년일자리센터",
+      "deadline": "2026-09-30",
+      "url": "https://itp.or.kr/intro.asp?tmid=13&seq=10317",
+      "tier": "orange",
+      "note": "인천 매칭이지만 일자리 — 사업 본체 약함",
+      "classify_evidence": {
+        "summary_reason": "인천 매칭이지만 일자리 — 사업 본체 약함",
+        "category_hints": [
+          "incheon",
+          "itp",
+          "청년일자리센터"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "ITP 진행중 항목"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-09-30",
+            "detail": "ITP 마감일"
+          },
+          "region": {
+            "pass": true,
+            "value": "인천",
+            "detail": "ITP=인천 거점"
+          }
+        },
+        "axis_scores": {
+          "region": "green",
+          "stage": "green",
+          "industry": "orange",
+          "nature": "orange",
+          "qualification": "green"
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "ITP 청년일자리센터 부서별 룰 → orange",
+        "classify_version": "v8.3-itp"
+      },
+      "first_seen": "2026-02-10",
+      "last_seen": "2026-05-08",
+      "structured": {
+        "source_kind": "itp",
+        "itp_seq": "10317",
+        "itp_dept": "청년일자리센터",
+        "attachments": [],
+        "recruiting": true,
+        "region": "인천"
+      }
+    },
+    {
       "source": "bizinfo",
       "source_label": "중소벤처기업부 BIZINFO (기업마당)",
       "id": "bizinfo_PBLN_000000000121107",
@@ -58393,6 +60250,61 @@
       "last_seen": "2026-04-30",
       "creatPnttm": "2026-04-28 00:00:00",
       "verdict": ""
+    },
+    {
+      "pbancSn": "itp_10673",
+      "title": "2026 인천 소규모 제조업 중대재해 예방 안전조치 지원사업 참여기업 모집 공고",
+      "agency": "인천테크노파크 제조혁신센터",
+      "deadline": "2026-10-30",
+      "url": "https://itp.or.kr/intro.asp?tmid=13&seq=10673",
+      "tier": "orange",
+      "note": "인천 매칭이지만 제조 분야 — SW 불일치",
+      "classify_evidence": {
+        "summary_reason": "인천 매칭이지만 제조 분야 — SW 불일치",
+        "category_hints": [
+          "incheon",
+          "itp",
+          "제조혁신센터"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "ITP 진행중 항목"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-10-30",
+            "detail": "ITP 마감일"
+          },
+          "region": {
+            "pass": true,
+            "value": "인천",
+            "detail": "ITP=인천 거점"
+          }
+        },
+        "axis_scores": {
+          "region": "green",
+          "stage": "green",
+          "industry": "orange",
+          "nature": "orange",
+          "qualification": "green"
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "ITP 제조혁신센터 부서별 룰 → orange",
+        "classify_version": "v8.3-itp"
+      },
+      "first_seen": "2026-04-27",
+      "last_seen": "2026-05-08",
+      "structured": {
+        "source_kind": "itp",
+        "itp_seq": "10673",
+        "itp_dept": "제조혁신센터",
+        "attachments": [],
+        "recruiting": true,
+        "region": "인천"
+      }
     },
     {
       "source": "kstartup",
@@ -60434,6 +62346,61 @@
         "integrated_name": "2026년 용산구 청년기업 융자지원사업 신청",
         "apply_online": "",
         "apply_guide": "www.yongsan.go.kr/portal/bbs/B0000095/view.do?nttId=740685&menuNo=200233&optn1=&pageUnit=10&sdate=&edate=&deptId=&searchCnd=1&searchWrd=%EC%9C%B5%EC%9E%90&pageIndex=1"
+      }
+    },
+    {
+      "pbancSn": "itp_10443",
+      "title": "2026년 드림나래(인천청년 면접복장 지원) 사업 (수정)공고",
+      "agency": "인천테크노파크 고용안정센터",
+      "deadline": "2026-12-11",
+      "url": "https://itp.or.kr/intro.asp?tmid=13&seq=10443",
+      "tier": "orange",
+      "note": "인천 매칭이지만 고용 — 사업 본체 약함",
+      "classify_evidence": {
+        "summary_reason": "인천 매칭이지만 고용 — 사업 본체 약함",
+        "category_hints": [
+          "incheon",
+          "itp",
+          "고용안정센터"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "ITP 진행중 항목"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-12-11",
+            "detail": "ITP 마감일"
+          },
+          "region": {
+            "pass": true,
+            "value": "인천",
+            "detail": "ITP=인천 거점"
+          }
+        },
+        "axis_scores": {
+          "region": "green",
+          "stage": "green",
+          "industry": "orange",
+          "nature": "orange",
+          "qualification": "green"
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "ITP 고용안정센터 부서별 룰 → orange",
+        "classify_version": "v8.3-itp"
+      },
+      "first_seen": "2026-04-01",
+      "last_seen": "2026-05-08",
+      "structured": {
+        "source_kind": "itp",
+        "itp_seq": "10443",
+        "itp_dept": "고용안정센터",
+        "attachments": [],
+        "recruiting": true,
+        "region": "인천"
       }
     },
     {
@@ -64145,7 +66112,7 @@
           "region": {
             "pass": false,
             "value": "경남",
-            "detail": "사업명에 지역 포함 (경남)"
+            "detail": "지역 한정 desc: '경상남도 소재'"
           },
           "biz_enyy": {
             "pass": true,
@@ -64175,7 +66142,7 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "사업명에 지역 포함 (경남)"
+            "detail": "지역 한정 desc: '경상남도 소재'"
           },
           "positive_hit": {
             "pass": true,
@@ -64186,7 +66153,7 @@
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "사업명에 지역 포함 (경남)"
+            "detail": "지역 한정 desc: '경상남도 소재'"
           },
           "stage": {
             "level": "green",
@@ -64209,7 +66176,7 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "사업명에 지역 포함 (경남)"
+            "msg": "지역 한정 desc: '경상남도 소재'"
           },
           {
             "axis": "industry",
@@ -79742,42 +81709,52 @@
     }
   ],
   "_meta": {
-    "expired": [
-      "싱가포르 K-콘텐츠ㆍIP 파트너십 데이 참가기업 모집 공고",
-      "2026년 KOTRA-이베이재팬(큐텐재팬) 파워셀러 1단계 입점교육 2기 참가기업 모집 공고",
-      "2026년 AX 원스톱 바우처 지원사업수요기업 모집 공고",
-      "2026년 고흥군 청년 창업 도전 프로젝트 참여자 모집 연장 공고",
-      "[충북] 2026년 수요자 맞춤형 마케팅 통합 지원사업 참여기업 추가모집 공고",
-      "[제주] 2026년 지역특화콘텐츠 개발지원사업 참여기업 모집 재공고",
-      "2026년도 청년 블루푸드테크 패키지 지원사업",
-      "[부산] 2026년 제2기「IP디딤돌 프로그램」IP창업존 여성 예비창업자 교육생 모집 공고(27년 특허 출원 지원)",
-      "2026 경기도 Pre-Poc 시장 실증 및 사업화 연계 전략",
-      "[MYSC] 2026년 사회적경제 도약패키지 [G-Impact] 참여기업 모집 (~5/7(목) 15:00)",
-      "2026년 재도전성공패키지(추가경정예산) 예비재창업자 및 재창업기업 모집공고",
-      "[중앙대휴먼테크노창업보육센터] 중앙대학교 다빈치캠퍼스 창업보육센터 입주기업 모집공고",
-      "[경남] 2026년 소재부품 성장 잠재기업 육성사업 수요기업 모집 공고",
-      "2026년 혁신프리미어 1,000 방위산업 분야 대상기업 선정 공고",
-      "2026년 확장형 전자출판물 제작 지원 사업 신청 공고",
-      "2026년 재도전성공패키지(추경) 모집 공고",
-      "2026년 1차 신뢰성기반활용지원사업 수시형 참여기업 모집 공고",
-      "2026년 2차 장애인 창업점포 지원사업 지원대상자 모집 공고",
-      "2026년 중소기업기술혁신개발사업(도메인특화AI모델개발) 시행계획 공고",
-      "[경기] 2026년 3차 (예비)사회적기업 일자리창출사업 참여기업 모집 공고",
-      "[부산] 2026년 가상증강현실 융복합센터 마케팅 지원 사업 참여기업 모집 공고",
-      "「2026 사천 청년·전환세대 창업·창직 프로젝트 THE LANDING」 참여자 모집"
+    "expired": [],
+    "new_added": [
+      "2026년 드림For청년통장 참여자 모집 공고",
+      "글로벌 실증 파트너십 지원 과제 선정 결과 공지",
+      "2026 인천 콘텐츠기업 국내외 역량강화 지원 참여기업 모집공고",
+      "2026년 AX디바이스 개발·실증(정규트랙) 사업 수요기업 모집 공고",
+      "2026년 해외진출 콘텐츠 사업화 지원 기업 선정평가 결과안내",
+      "2026년도 DFA 어워드 출품지원 참여기업 모집",
+      "2026 G5 OpenX 프로그램 참여 스타트업 모집 공고",
+      "2026 청소년 창작 로봇교실 상반기 교육생 모집 공고",
+      "2026년도 인천광역시 중소기업 디자인개발지원사업 뷰티산업 지원분야 과제 모집(~5/19)",
+      "2026년 인천공항 스타트업 육성사업 참여기업 모집 공고",
+      "2026년 파브(PAV) 실증기 개발 지원사업 모집공고(본공고)",
+      "2026년 인천스타트업파크 TRYOUT 민간 실증사업 추가모집 공고",
+      "2026 인천 소규모 제조업 중대재해 예방 안전조치 지원사업 참여기업 모집 공고",
+      "2026 지피지기 투자유치 지원사업 참여기업 모집",
+      "2026년 인천창업카페 런치업데이 2강 참가자 모집 안내",
+      "2026년 녹색기후산업 글로벌 사업화 지원사업 참여기업 모집 공고",
+      "2026년 인천스타트업파크 실증제품 판로지원 지원사업 참여기업 모집 공고",
+      "2026년 인천 스마트공장 교육지원사업 교육생 모집(5,6월 모집중)",
+      "2026년 바이오기업 해외진출 지원사업 참여기업 모집 공고(~5/13_기한연장)",
+      "2026 양자컴퓨팅 인프라 활용 지원 사업 참여기업 모집공고",
+      "[인천디자인교육센터] 재직자 대상 디자인 교육 5월 수강생 모집",
+      "2026년 인천콘텐츠기업지원센터 제2차 입주기업 모집공고",
+      "2026 우수 콘텐츠 사업화 지원 기업 모집공고",
+      "2026년 인천형 특별 경영안정자금(하나은행 협업) 지원 공고",
+      "2026년 로봇산업진흥시설 입주기업 모집공고(2차)",
+      "2026년 북미진출 GATE 프로그램 참여기업 모집 공고",
+      "2026 인천 콘텐츠 실증 제작지원 사업 통합 재공고",
+      "2026년도 인천광역시 지역 디자인기업 역량강화 지원사업 참여기업 모집",
+      "2026년 인공지능(AI) 전문인력 양성사업 교육생 모집공고",
+      "2026년 시제품제작 장비(3D 프린팅) 공동활용 지원 안내",
+      "2026년 유니버설디자인리빙랩 제품 사용성조사 장비 공동활용 지원안내",
+      "「2026 청년도전지원사업」 참여자 모집 공고",
+      "금융기관(NH농협은행) 협업 특별 경영안정자금 추가 지원 공고",
+      "2026년 드림나래(인천청년 면접복장 지원) 사업 (수정)공고",
+      "2026년 유니버설디자인리빙랩 시설투어 프로그램 참여모집"
     ],
-    "new_added": [],
-    "updated_today": [
-      "[충남신용보증재단] 2026년 6월 창업아카데미 교육생 모집",
-      "[대전관광공사] 2026 대전세종 관광기업 네트워킹 데이 1회차 참여기업 모집"
-    ],
+    "updated_today": [],
     "stats": {
-      "green": 61,
-      "yellow": 136,
-      "orange": 582,
+      "green": 77,
+      "yellow": 144,
+      "orange": 593,
       "red_excluded": 0,
-      "expired_removed": 22,
-      "total_pool": 779,
+      "expired_removed": 0,
+      "total_pool": 814,
       "rss_total": 277,
       "raw_fetched": 197
     }
@@ -79865,11 +81842,11 @@
     },
     {
       "date": "2026-05-08",
-      "at_kst": "2026-05-08T02:31:35+09:00",
-      "new": 0,
-      "updated": 2,
-      "expired": 22,
-      "total": 779,
+      "at_kst": "2026-05-08T02:41:40+09:00",
+      "new": 35,
+      "updated": 0,
+      "expired": 0,
+      "total": 814,
       "red_excluded": 0
     }
   ]
