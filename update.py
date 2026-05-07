@@ -21,6 +21,7 @@ from bs4 import BeautifulSoup
 
 from crawl import crawl
 from classify import classify, TODAY
+from crawl_itp import crawl as crawl_itp, classify_itp
 
 KST = timezone(timedelta(hours=9))
 POOL_FILE = "recommendations.json"
@@ -71,10 +72,13 @@ def fetch_announcement_content(pbancSn: str) -> str:
 
 
 def enrich_raw_content(items: list):
-    """🟢🟡 신규 항목(raw_content 없음)에 한해 원문 fetch 후 저장."""
+    """🟢🟡 신규 항목(raw_content 없음)에 한해 원문 fetch 후 저장.
+    ITP 항목(pbancSn=itp_*)은 K-Startup URL 패턴 미적용이라 제외."""
     targets = [
         it for it in items
-        if it.get("tier") in FETCH_TIERS and not it.get("raw_content")
+        if it.get("tier") in FETCH_TIERS
+        and not it.get("raw_content")
+        and not str(it.get("pbancSn", "")).startswith("itp_")
     ]
     if not targets:
         print("[fetch] raw_content 신규 대상 없음", file=sys.stderr)
@@ -171,7 +175,10 @@ def main():
         reclassified = 0
         for item in existing_items:
             prev_tier = item.get("tier")
-            tier, evidence = classify(item)
+            if str(item.get("pbancSn", "")).startswith("itp_"):
+                tier, evidence = classify_itp(item)
+            else:
+                tier, evidence = classify(item)
             item["tier"] = tier
             item["note"] = evidence.get("summary_reason", "")
             item["classify_evidence"] = evidence
@@ -259,6 +266,57 @@ def main():
                 }
                 kept_items.append(new_item)
                 new_added.append(new_item["title"])
+
+        # ── ITP (인천테크노파크 지원사업) 추가 크롤 ──────────────
+        try:
+            itp_items = crawl_itp(known_sns)
+        except Exception as e:
+            print(f"[itp] 크롤 실패: {e}", file=sys.stderr)
+            itp_items = []
+        # kept_by_sn 갱신 (위에서 K-Startup 신규 추가됐으므로)
+        kept_by_sn = {it["pbancSn"]: it for it in kept_items if it.get("pbancSn")}
+        for itp_item in itp_items:
+            sn = itp_item["pbancSn"]  # itp_<seq>
+            tier, evidence = classify_itp(itp_item)
+            reason = evidence.get("summary_reason", "")
+            if sn in kept_by_sn:
+                existing = kept_by_sn[sn]
+                existing["last_seen"] = TODAY
+                new_deadline = itp_item.get("deadline", "") or existing.get("deadline", "")
+                changed = (
+                    existing.get("tier") != tier
+                    or existing.get("deadline") != new_deadline
+                    or existing.get("title") != itp_item.get("title", "")
+                )
+                existing.update({
+                    "tier": tier, "note": reason,
+                    "classify_evidence": evidence,
+                    "deadline": new_deadline,
+                    "title": itp_item.get("title", existing.get("title", "")),
+                    "agency": itp_item.get("agency", existing.get("agency", "")),
+                    "url": itp_item.get("url", existing.get("url", "")),
+                    "structured": itp_item.get("structured", existing.get("structured", {})),
+                })
+                if changed:
+                    existing["last_changed_at"] = TODAY
+                    updated_titles.append(existing.get("title", ""))
+            else:
+                new_item = {
+                    "pbancSn": sn,
+                    "title": itp_item["title"],
+                    "agency": itp_item.get("agency", ""),
+                    "deadline": itp_item.get("deadline", ""),
+                    "url": itp_item.get("url", ""),
+                    "tier": tier,
+                    "note": reason,
+                    "classify_evidence": evidence,
+                    "first_seen": itp_item.get("first_seen", TODAY),
+                    "last_seen": TODAY,
+                    "structured": itp_item.get("structured", {}),
+                }
+                kept_items.append(new_item)
+                new_added.append(new_item["title"])
+        print(f"[itp] {len(itp_items)}건 처리 완료", file=sys.stderr)
 
     tier_order = {"green": 0, "yellow": 1, "orange": 2}
     kept_items.sort(key=lambda x: (
