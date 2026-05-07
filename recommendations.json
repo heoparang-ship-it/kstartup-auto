@@ -1,7 +1,7 @@
 {
   "schema_version": 5,
   "last_updated": "2026-05-07",
-  "updated_at_kst": "2026-05-07T02:21:26+09:00",
+  "updated_at_kst": "2026-05-07T20:10:31+09:00",
   "red_count_today": 0,
   "reds_today": [
     {
@@ -17521,6 +17521,121 @@
       "last_seen": "2026-04-29",
       "raw_content": "Error>상세화면\n본문 바로가기\n주메뉴 바로가기\n에러가 발생했습니다!",
       "raw_fetched_at": "2026-05-04"
+    },
+    {
+      "pbancSn": "177516",
+      "title": "2026 K-Startup Grand Challenge (KSGC) Call for Applications for (Pre-)Startups",
+      "agency": "Minister of SMEs and Startups",
+      "deadline": "2026-06-17",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177516",
+      "tier": "yellow",
+      "note": "2순위: 모든 축 green/yellow, 중립 매칭 — 직접 지원 가능",
+      "classify_evidence": {
+        "summary_reason": "2순위: 모든 축 green/yellow, 중립 매칭 — 직접 지원 가능",
+        "category_hints": [],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "모집 중"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-06-17",
+            "detail": "마감 전"
+          },
+          "region": {
+            "pass": true,
+            "value": "전국",
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "biz_enyy": {
+            "pass": true,
+            "value": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
+            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "exclude_target": {
+            "pass": true,
+            "value": "",
+            "detail": "자격 제한 없음"
+          },
+          "industry": {
+            "pass": true,
+            "detail": "업종 제한 없음"
+          },
+          "qualification": {
+            "pass": true,
+            "detail": "자격 제한 없음"
+          },
+          "stage": {
+            "pass": true,
+            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "nature": {
+            "pass": true,
+            "detail": "성격 분류 애매 (biz_class='행사ㆍ네트워크')"
+          },
+          "region_keyword": {
+            "pass": true,
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "positive_hit": {
+            "pass": true,
+            "detail": "2순위: 모든 축 green/yellow, 중립 매칭 — 직접 지원 가능"
+          }
+        },
+        "risk_flags": [],
+        "axis_scores": {
+          "region": {
+            "level": "green",
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "stage": {
+            "level": "green",
+            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "industry": {
+            "level": "green",
+            "detail": "업종 제한 없음"
+          },
+          "nature": {
+            "level": "yellow",
+            "detail": "성격 분류 애매 (biz_class='행사ㆍ네트워크')"
+          },
+          "qualification": {
+            "level": "green",
+            "detail": "자격 제한 없음"
+          }
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "2순위: 모든 축 green/yellow, 중립 매칭 — 직접 지원 가능",
+        "classify_version": "v8.3"
+      },
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "structured": {
+        "pbanc_sn_int": 177516,
+        "integrated": true,
+        "recruiting": true,
+        "start_date": "2026-05-06",
+        "end_date": "2026-06-17",
+        "agency_type": "공공기관",
+        "biz_class": "행사ㆍ네트워크",
+        "region": "전국",
+        "biz_enyy": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
+        "age_range": "만 20세 미만,만 20세 이상 ~ 만 39세 이하,만 40세 이상",
+        "apply_target": "청소년,대학생,일반인,대학,연구기관,일반기업,1인 창조기업",
+        "apply_target_desc": "Overseas (pre-)startups wishing to enter the Korean market (Separate track available for international students)",
+        "exclude_target": "",
+        "preferential": "",
+        "content": "The Ministry of SMEs and Startups hereby announces the recruitment of (pre-)startups for the K-Startup Grand Challenge (KSGC), a program designed to support outstanding global startups in entering, settling, and growing in the Korean market.",
+        "integrated_name": "K-스타트업그랜드 챌린지",
+        "apply_online": "https://ksgc.global/",
+        "apply_guide": "ksgc.global"
+      },
+      "raw_content": "2026 K-Startup Grand Challenge (KSGC) Call for Applications for (Pre-)Startups\n사업안내 바로가기\n지원분야\n행사ㆍ네트워크\n대상연령\n전체\n기관구분\n공공기관\n담당부서\n글로벌허브실\n지역\n전국\n접수기간\n2026-05-06 ~ 2026-06-17 15:00\n주관기관명\n창업진흥원\n대상\n전체\n창업업력\n전체\n연락처\n02-3440-7345\nNotification of the Ministry of SMEs and Startups No. 2026 - 316\n2026 K-Startup Grand Challenge (KSGC) Call for Applications for (Pre-)Startups\nThe Ministry of SMEs and Startups hereby announces the recruitment of (pre-)startups for the K-Startup Grand Challenge (KSGC), a program designed to support outstanding global startups in entering, settling, and growing in the Korean market.\n2026년 05월 06일\nMinister of SMEs and Startups\n신청방법 및 대상\n신청기간\n2026.05.06(수) 16:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t~\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t2026.06.17(수) 15:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t까지\n신청방법\n온라인 접수 :\n접수 바로가기\n신청대상\nOverseas (pre-)startups wishing to enter the Korean market (Separate track available for international students)\n신청 시 요청하는 정보(개인정보포함)는 사업운영기관에서 관리되오니 이점 반드시 유의하여 주시기 바랍니다.\n제출서류\nOnline application via the K-Startup Grand Challenge website\n제출하신 서류는 사업운영기관에서 관리되오니 서류 반환 등 문의는 해당 기관으로 하시기 바랍니다.\n선정절차 및 평가방법\n①Eligibility Review → ②Document and Video Evaluation\n지원내용\nKSGC Program\n·Prize  Money, Grants, Business acceleration, visa&incorporation support, office space, global startup's market expansion, settlement and scale-up in Korea\nInternational Student Track\n·Business Plan Development Training, Entrepreneurship Training and Mentoring, Priza Money, Linkage with inbound policies\n문의처\nK-Startup Grand Challenge Secretariat\n·E-mail : apply@ksgc.global\n· Telephone : +82-31-780-9077\n자세한 내용은 첨부파일 참조 및 문의처로 문의하여 주시기 바랍니다.\nK-Startup에 공고되는 정보는 해당 기관의 요청에 의해 제공됩니다. 입주, 교육, 사업 신청 시 요청하는 정보(개인정보 포함)는 해당 기관에서 관리 \t되오니\n이점 유의하여 주시기 바랍니다.\n첨부파일 일괄 다운로드\nRecruitment of (Pre-) Startups for 2026 K-Startup Grand Challenge.pdf\n바로보기\n다운로드\n본 저작물은 창업진흥원(K-Startup)이 게시한 공공누리 제1유형의 저작물이며, 공공데이터포털(www.data.go.kr)에서 공공데이터로 개방중이며 무료로 활용할 수 있습니다.\n사업신청 바로가기\n목록",
+      "raw_fetched_at": "2026-05-07"
     },
     {
       "source": "bizinfo",
@@ -38658,136 +38773,6 @@
       }
     },
     {
-      "pbancSn": "177482",
-      "title": "[이화여대 캠퍼스타운] 2026 E-LIFE Challenge 창업경진대회 추가모집",
-      "agency": "이화여자대학교 캠퍼스타운사업단장",
-      "deadline": "2026-05-13",
-      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177482",
-      "tier": "orange",
-      "note": "3순위 (참고용): 서울 대학 (이화여대)",
-      "classify_evidence": {
-        "summary_reason": "3순위 (참고용): 서울 대학 (이화여대)",
-        "category_hints": [],
-        "rule_checks": {
-          "recruiting": {
-            "pass": true,
-            "value": "True",
-            "detail": "모집 중"
-          },
-          "deadline": {
-            "pass": true,
-            "value": "2026-05-13",
-            "detail": "마감 전"
-          },
-          "region": {
-            "pass": false,
-            "value": "서울",
-            "detail": "서울 대학 (이화여대)"
-          },
-          "biz_enyy": {
-            "pass": true,
-            "value": "예비창업자,7년미만,10년미만",
-            "detail": "업력 허용 (10년미만,7년미만,예비창업자)"
-          },
-          "exclude_target": {
-            "pass": true,
-            "value": "1) ｢중소기업 창업지원법 시행령｣ 제4조 각 항에 해당하는 창업기업\r\n  2) 금융기관 등으로부터 채무불이행으로 규제중인 자 또는 국세 혹은 ",
-            "detail": "exclude_target 장문 (588자)"
-          },
-          "industry": {
-            "pass": true,
-            "detail": "업종 제한 없음"
-          },
-          "qualification": {
-            "pass": true,
-            "detail": "exclude_target 장문 (588자)"
-          },
-          "stage": {
-            "pass": true,
-            "detail": "업력 허용 (10년미만,7년미만,예비창업자)"
-          },
-          "nature": {
-            "pass": true,
-            "detail": "간접 지원성 (시설ㆍ공간ㆍ보육)"
-          },
-          "region_keyword": {
-            "pass": false,
-            "detail": "서울 대학 (이화여대)"
-          },
-          "positive_hit": {
-            "pass": false,
-            "detail": "3순위 (참고용): 서울 대학 (이화여대)"
-          }
-        },
-        "risk_flags": [
-          {
-            "type": "exclude_target_long",
-            "severity": "low",
-            "msg": "신청 제외 대상 장문 (588자) — 정독 필수"
-          },
-          {
-            "type": "apply_target_narrow",
-            "severity": "med",
-            "msg": "신청 대상 좁음 (대학생,일반인)"
-          }
-        ],
-        "axis_scores": {
-          "region": {
-            "level": "orange",
-            "detail": "서울 대학 (이화여대)"
-          },
-          "stage": {
-            "level": "green",
-            "detail": "업력 허용 (10년미만,7년미만,예비창업자)"
-          },
-          "industry": {
-            "level": "green",
-            "detail": "업종 제한 없음"
-          },
-          "nature": {
-            "level": "yellow",
-            "detail": "간접 지원성 (시설ㆍ공간ㆍ보육)"
-          },
-          "qualification": {
-            "level": "yellow",
-            "detail": "exclude_target 장문 (588자)"
-          }
-        },
-        "exclusion_flags": [
-          {
-            "axis": "region",
-            "severity": "high",
-            "msg": "서울 대학 (이화여대)"
-          }
-        ],
-        "audit_flags": [],
-        "tier_logic": "3순위 (참고용): 서울 대학 (이화여대)",
-        "classify_version": "v8.3"
-      },
-      "first_seen": "2026-05-05",
-      "last_seen": "2026-05-07",
-      "structured": {
-        "pbanc_sn_int": 177482,
-        "integrated": false,
-        "recruiting": true,
-        "start_date": "2026-05-01",
-        "end_date": "2026-05-13",
-        "agency_type": "교육기관",
-        "biz_class": "시설ㆍ공간ㆍ보육",
-        "region": "서울",
-        "biz_enyy": "예비창업자,7년미만,10년미만",
-        "age_range": "만 20세 이상 ~ 만 39세 이하",
-        "apply_target": "대학생,일반인",
-        "apply_target_desc": "창업 7년 미만, 대표자 연령 만 39세 이하의 청년 (예비)창업기업",
-        "exclude_target": "1) ｢중소기업 창업지원법 시행령｣ 제4조 각 항에 해당하는 창업기업\r\n  2) 금융기관 등으로부터 채무불이행으로 규제중인 자 또는 국세 혹은 지방세를 체납 중인 자. 다만, 신용회복위원회의 사전채무조정(프리워크아웃), 개인워크아웃에서 채무조정합의서를 체결한 경우, 법원의 개인회생제도에서 변제계획인가를 받거나 파산면책 선고자, 회생인가를 받은 기업, 중소기업진흥공단 등으로부터 재창업자금을 지원받은 경우, 세금분납 계획에 따른 성실 납부기업(인), 정부지원 협약 전까지 세금완납기업(인), 정부 공공기관으로부터 재기지원 필요성을 인정받은 기업(인), 건강관리시스템기업구조 개선 진단을 통한 정상화 의결기업은 신청 가능하다.\r\n  3) 서울 캠퍼스타운 사업의 타 창업공간에 입주하여 지원사업을 수혜 중인 자. 다만, 입주개시일 이전에 사업 수혜기간이 종료되거나 사업을 중도포기한 자는 신청 가능하다.\r\n  4) 신청일 현재 휴업 중인 기업\r\n  5) 서울시 창업지원시설에서 문제가 있어 퇴거조치된 기업\r\n  6) 기타 서울시장이 참여제한의 사유가 있다고 인정하는 자\r\n  7) 제출기한 내 신청서류 일체를 제출하지 않거나 제출양식을 준수하지 않은 경우",
-        "preferential": "",
-        "content": "이화여자대학교 캠퍼스타운사업단에서는 인간 중심의 AI와 라이프테크 혁신을 위한 WAVE 분야(Wellness&life / AI Foundation / Viral Bio / Environmental)의 우수한 창업 아이템 및 아이디어를 보유하고 있는 유망 창업기업을 추가로 모집하오니 많은 참여 바랍니다.",
-        "integrated_name": "2026 E-LIFE Challenge 창업경진대회",
-        "apply_online": "https://docs.google.com/forms/d/1fR_hN_UZ2V4pRwGtoX4oMU1XCxKMOan-FgB7_r1RMXA/edit",
-        "apply_guide": ""
-      }
-    },
-    {
       "pbancSn": "177395",
       "title": "2026 안산 스타트업 청년창업 경진대회",
       "agency": "경기도 안산시",
@@ -45203,6 +45188,125 @@
       }
     },
     {
+      "pbancSn": "177234",
+      "title": "2026년 G-Star 오픈이노베이션 커넥팅 데이",
+      "agency": "경북창조경제혁신센터",
+      "deadline": "2026-05-15",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177234",
+      "tier": "orange",
+      "note": "3순위 (참고용): 지자체 기관 의심 (지역혁신센터: 경북창조경제혁신센터)",
+      "classify_evidence": {
+        "summary_reason": "3순위 (참고용): 지자체 기관 의심 (지역혁신센터: 경북창조경제혁신센터)",
+        "category_hints": [],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "모집 중"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-05-15",
+            "detail": "마감 전"
+          },
+          "region": {
+            "pass": false,
+            "value": "전국",
+            "detail": "지자체 기관 의심 (지역혁신센터: 경북창조경제혁신센터)"
+          },
+          "biz_enyy": {
+            "pass": true,
+            "value": "1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
+            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만)"
+          },
+          "exclude_target": {
+            "pass": true,
+            "value": "",
+            "detail": "자격 제한 없음"
+          },
+          "industry": {
+            "pass": true,
+            "detail": "업종 제한 없음"
+          },
+          "qualification": {
+            "pass": true,
+            "detail": "자격 제한 없음"
+          },
+          "stage": {
+            "pass": true,
+            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만)"
+          },
+          "nature": {
+            "pass": true,
+            "detail": "성격 분류 애매 (biz_class='행사ㆍ네트워크')"
+          },
+          "region_keyword": {
+            "pass": false,
+            "detail": "지자체 기관 의심 (지역혁신센터: 경북창조경제혁신센터)"
+          },
+          "positive_hit": {
+            "pass": false,
+            "detail": "3순위 (참고용): 지자체 기관 의심 (지역혁신센터: 경북창조경제혁신센터)"
+          }
+        },
+        "risk_flags": [],
+        "axis_scores": {
+          "region": {
+            "level": "orange",
+            "detail": "지자체 기관 의심 (지역혁신센터: 경북창조경제혁신센터)"
+          },
+          "stage": {
+            "level": "green",
+            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만)"
+          },
+          "industry": {
+            "level": "green",
+            "detail": "업종 제한 없음"
+          },
+          "nature": {
+            "level": "yellow",
+            "detail": "성격 분류 애매 (biz_class='행사ㆍ네트워크')"
+          },
+          "qualification": {
+            "level": "green",
+            "detail": "자격 제한 없음"
+          }
+        },
+        "exclusion_flags": [
+          {
+            "axis": "region",
+            "severity": "high",
+            "msg": "지자체 기관 의심 (지역혁신센터: 경북창조경제혁신센터)"
+          }
+        ],
+        "audit_flags": [],
+        "tier_logic": "3순위 (참고용): 지자체 기관 의심 (지역혁신센터: 경북창조경제혁신센터)",
+        "classify_version": "v8.3"
+      },
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-05-07",
+      "structured": {
+        "pbanc_sn_int": 177234,
+        "integrated": false,
+        "recruiting": true,
+        "start_date": "2026-04-15",
+        "end_date": "2026-05-15",
+        "agency_type": "민간",
+        "biz_class": "행사ㆍ네트워크",
+        "region": "전국",
+        "biz_enyy": "1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
+        "age_range": "만 20세 이상 ~ 만 39세 이하,만 40세 이상",
+        "apply_target": "일반기업",
+        "apply_target_desc": "업력 만 7년 이내 기업 또는 업력 10년 이내 신산업분야 기업",
+        "exclude_target": "",
+        "preferential": "",
+        "content": "차별화된 기술과 아이디어를 매칭하여 민간기업의 신성장동력 창출과 스타트업의 시장진입을 가속화하기 위한 동반성장 협력의 일환인「2026년 G-Star 오픈이노베이션 커넥팅 데이」참여 스타트업을 모집을 모집합니다.",
+        "integrated_name": "2026년 G-Star 오픈이노베이션 커넥팅 데이",
+        "apply_online": "https://forms.gle/2o2PjBwAy7GTPCwZ6",
+        "apply_guide": ""
+      }
+    },
+    {
       "source": "kstartup",
       "source_label": "K-Startup",
       "id": "kstartup_177000",
@@ -45938,6 +46042,137 @@
       "nogo_match": null,
       "source_priority": 1.0,
       "last_seen": "2026-04-29"
+    },
+    {
+      "pbancSn": "177482",
+      "title": "[이화여대 캠퍼스타운] 2026 E-LIFE Challenge 창업경진대회 추가모집",
+      "agency": "이화여자대학교 캠퍼스타운사업단장",
+      "deadline": "2026-05-18",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177482",
+      "tier": "orange",
+      "note": "3순위 (참고용): 서울 대학 (이화여대)",
+      "classify_evidence": {
+        "summary_reason": "3순위 (참고용): 서울 대학 (이화여대)",
+        "category_hints": [],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "모집 중"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-05-18",
+            "detail": "마감 전"
+          },
+          "region": {
+            "pass": false,
+            "value": "서울",
+            "detail": "서울 대학 (이화여대)"
+          },
+          "biz_enyy": {
+            "pass": true,
+            "value": "예비창업자,7년미만,10년미만",
+            "detail": "업력 허용 (10년미만,7년미만,예비창업자)"
+          },
+          "exclude_target": {
+            "pass": true,
+            "value": "1) ｢중소기업 창업지원법 시행령｣ 제4조 각 항에 해당하는 창업기업\r\n  2) 금융기관 등으로부터 채무불이행으로 규제중인 자 또는 국세 혹은 ",
+            "detail": "exclude_target 장문 (588자)"
+          },
+          "industry": {
+            "pass": true,
+            "detail": "업종 제한 없음"
+          },
+          "qualification": {
+            "pass": true,
+            "detail": "exclude_target 장문 (588자)"
+          },
+          "stage": {
+            "pass": true,
+            "detail": "업력 허용 (10년미만,7년미만,예비창업자)"
+          },
+          "nature": {
+            "pass": true,
+            "detail": "간접 지원성 (시설ㆍ공간ㆍ보육)"
+          },
+          "region_keyword": {
+            "pass": false,
+            "detail": "서울 대학 (이화여대)"
+          },
+          "positive_hit": {
+            "pass": false,
+            "detail": "3순위 (참고용): 서울 대학 (이화여대)"
+          }
+        },
+        "risk_flags": [
+          {
+            "type": "exclude_target_long",
+            "severity": "low",
+            "msg": "신청 제외 대상 장문 (588자) — 정독 필수"
+          },
+          {
+            "type": "apply_target_narrow",
+            "severity": "med",
+            "msg": "신청 대상 좁음 (대학생,일반인)"
+          }
+        ],
+        "axis_scores": {
+          "region": {
+            "level": "orange",
+            "detail": "서울 대학 (이화여대)"
+          },
+          "stage": {
+            "level": "green",
+            "detail": "업력 허용 (10년미만,7년미만,예비창업자)"
+          },
+          "industry": {
+            "level": "green",
+            "detail": "업종 제한 없음"
+          },
+          "nature": {
+            "level": "yellow",
+            "detail": "간접 지원성 (시설ㆍ공간ㆍ보육)"
+          },
+          "qualification": {
+            "level": "yellow",
+            "detail": "exclude_target 장문 (588자)"
+          }
+        },
+        "exclusion_flags": [
+          {
+            "axis": "region",
+            "severity": "high",
+            "msg": "서울 대학 (이화여대)"
+          }
+        ],
+        "audit_flags": [],
+        "tier_logic": "3순위 (참고용): 서울 대학 (이화여대)",
+        "classify_version": "v8.3"
+      },
+      "first_seen": "2026-05-05",
+      "last_seen": "2026-05-07",
+      "structured": {
+        "pbanc_sn_int": 177482,
+        "integrated": false,
+        "recruiting": true,
+        "start_date": "2026-05-06",
+        "end_date": "2026-05-18",
+        "agency_type": "교육기관",
+        "biz_class": "시설ㆍ공간ㆍ보육",
+        "region": "서울",
+        "biz_enyy": "예비창업자,7년미만,10년미만",
+        "age_range": "만 20세 이상 ~ 만 39세 이하",
+        "apply_target": "대학생,일반인",
+        "apply_target_desc": "창업 7년 미만, 대표자 연령 만 39세 이하의 청년 (예비)창업기업",
+        "exclude_target": "1) ｢중소기업 창업지원법 시행령｣ 제4조 각 항에 해당하는 창업기업\r\n  2) 금융기관 등으로부터 채무불이행으로 규제중인 자 또는 국세 혹은 지방세를 체납 중인 자. 다만, 신용회복위원회의 사전채무조정(프리워크아웃), 개인워크아웃에서 채무조정합의서를 체결한 경우, 법원의 개인회생제도에서 변제계획인가를 받거나 파산면책 선고자, 회생인가를 받은 기업, 중소기업진흥공단 등으로부터 재창업자금을 지원받은 경우, 세금분납 계획에 따른 성실 납부기업(인), 정부지원 협약 전까지 세금완납기업(인), 정부 공공기관으로부터 재기지원 필요성을 인정받은 기업(인), 건강관리시스템기업구조 개선 진단을 통한 정상화 의결기업은 신청 가능하다.\r\n  3) 서울 캠퍼스타운 사업의 타 창업공간에 입주하여 지원사업을 수혜 중인 자. 다만, 입주개시일 이전에 사업 수혜기간이 종료되거나 사업을 중도포기한 자는 신청 가능하다.\r\n  4) 신청일 현재 휴업 중인 기업\r\n  5) 서울시 창업지원시설에서 문제가 있어 퇴거조치된 기업\r\n  6) 기타 서울시장이 참여제한의 사유가 있다고 인정하는 자\r\n  7) 제출기한 내 신청서류 일체를 제출하지 않거나 제출양식을 준수하지 않은 경우",
+        "preferential": "",
+        "content": "이화여자대학교 캠퍼스타운사업단에서는 인간 중심의 AI와 라이프테크 혁신을 위한 WAVE 분야(Wellness&life / AI Foundation / Viral Bio / Environmental)의 우수한 창업 아이템 및 아이디어를 보유하고 있는 유망 창업기업을 추가로 모집하오니 많은 참여 바랍니다.",
+        "integrated_name": "2026 E-LIFE Challenge 창업경진대회",
+        "apply_online": "https://docs.google.com/forms/d/1fR_hN_UZ2V4pRwGtoX4oMU1XCxKMOan-FgB7_r1RMXA/edit",
+        "apply_guide": ""
+      },
+      "last_changed_at": "2026-05-07"
     },
     {
       "pbancSn": "177396",
@@ -51054,7 +51289,7 @@
         "apply_target_desc": "• 2026년 비수도권 (서울, 경기 제외) 내 본사, 지사, 공장, 연구소 중 1개 이상 소재하고 있는 *팹리스 전문* 중소기업 및 중견기업\r\n• 수도권 기업 중 (대구)지능형반도체 개발·지원센터 입주 예정인 기업",
         "exclude_target": "공고문 참조",
         "preferential": "",
-        "content": "국팹리스산업협회(KFIA)는 경북대학교, 한국산업기술시험원과 함께 산업통상자원부가 주관하고 있는 고신뢰 반도체 상용화를 위한 팹리스 검사ㆍ검증의 일환으로\r\n『고신뢰 반도체 상용화를 위한 검증ㆍ확인 지원 사업』을 수행하고 있으며, 관련 기업 대상으로 기업지원사업을 시행하고 있습니다.\r\n아래와 같이 기업지원 및 전문인력양성 사업을 공고하오니, 희망하는 비수도권 소재의 팹리스 기업의 많은 신청 바랍니다.",
+        "content": "한국팹리스산업협회(KFIA)는 경북대학교, 한국산업기술시험원과 함께 산업통상자원부가 주관하고 있는 고신뢰 반도체 상용화를 위한 팹리스 검사ㆍ검증의 일환으로\r\n『고신뢰 반도체 상용화를 위한 검증ㆍ확인 지원 사업』을 수행하고 있으며, 관련 기업 대상으로 기업지원사업을 시행하고 있습니다.\r\n아래와 같이 기업지원 및 전문인력양성 사업을 공고하오니, 희망하는 비수도권 소재의 팹리스 기업의 많은 신청 바랍니다.",
         "integrated_name": "「고신뢰 반도체 상용화를 위한 검증ㆍ확인 지원」사업 기업 지원 프로그램 2차",
         "apply_online": "",
         "apply_guide": "www.k-fabless.com/kr/business/view/7276"
@@ -66195,7 +66430,7 @@
           "region": {
             "pass": false,
             "value": "경남",
-            "detail": "사업명에 지역 포함 (경남)"
+            "detail": "지역 한정 desc: '경상남도 소재'"
           },
           "biz_enyy": {
             "pass": true,
@@ -66225,7 +66460,7 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "사업명에 지역 포함 (경남)"
+            "detail": "지역 한정 desc: '경상남도 소재'"
           },
           "positive_hit": {
             "pass": true,
@@ -66236,7 +66471,7 @@
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "사업명에 지역 포함 (경남)"
+            "detail": "지역 한정 desc: '경상남도 소재'"
           },
           "stage": {
             "level": "green",
@@ -66259,7 +66494,7 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "사업명에 지역 포함 (경남)"
+            "msg": "지역 한정 desc: '경상남도 소재'"
           },
           {
             "axis": "industry",
@@ -81792,77 +82027,23 @@
     }
   ],
   "_meta": {
-    "expired": [
-      "2026 한중싱 인공지능 창업 경진대회 참여기업 모집",
-      "2026 골든팬더 글로벌 혁신창업경진대회 동아시아예선 참여기업 모집",
-      "[경북] 2026년 글로벌 스타트업 패키지 참가기업 모집 공고",
-      "[인천] 2026년 공예산업 상품화 지원 사업 모집 공고",
-      "2026년 G-Star 오픈이노베이션 커넥팅데이 스타트업 모집 공고",
-      "2026년 바이오기업 해외진출 지원사업 참여기업 모집 공고",
-      "소담스퀘어 당산 마케팅(로고 · 디자인 제작) 지원사업 참여기업 모집",
-      "[신용보증기금] 스타트업 육성 플랫폼「Start-up NEST」제19기 일반·특별전형 참여기업 모집",
-      "여성 1인 창조기업 지원세터 신규 입주기업 모집",
-      "2026년 하반기 「IBK창공(創工)」혁신창업기업 모집",
-      "[한국기업가정신재단] 2026년 제15회 청년기업가대회 모집 공고 (~5/6)",
-      "2026년 KOTRA-월마트 파워셀러 1단계 입점교육 1기 참가기업 모집 공고",
-      "2026년 중소기업 혁신바우처(채용지원) 사업 지원계획 공고",
-      "2026년 2차 수출지원기반활용사업 참여기업 모집 수정공고(중소벤처기업부 소관 수출바우처사업)",
-      "2026년 1차 일반 물류바우처 사업 참여기업 모집 공고",
-      "2026년 K-섬유패션 협력강화 및 글로벌 브랜드 육성 공고",
-      "2026년 탄소중립 설비투자 지원 참여기업 모집 공고(공급망 트랙)",
-      "2026년 충북바이오산학융합원 K-바이오헬스 지역센터 지원기업 모집 추가 공고",
-      "[경기] 2026년 중소기업 마케팅 지원사업 국내 온라인 마케팅지원 참여기업 추가 모집공고 (네이버, 오늘의집)",
-      "[서울] 2026년 기후테크 오픈이노베이션 지원사업 참여기업 모집 공고",
-      "2026 제4회 동남권 엔젤투자피칭룸 참여기업 모집 공고",
-      "2026 3D 제품 디자인 시각화 실무 교육 : Blender 활용",
-      "K-Camp 강원 6기 액셀러레이팅 프로그램 스타트업 모집 공고",
-      "2026년 판로확대 지원사업 참여 소상공인 모집",
-      "2026년 소상공인 도약 지원 사업 공고 (舊 로컬크리에이터, 강한 소상공인) (공고연장)",
-      "2026년 서울시 기후테크 오픈이노베이션 지원사업 참여기업 모집",
-      "[길음청년희망스토어] 2026년 길음청년희망스토어 청년창업 지원사업_청년창업팀 모집 11호점",
-      "2026 서울 기후테크 컨퍼런스 전시 참가기업 모",
-      "(공고 연장) 한국해양교통안전공단 오픈이노베이션 참여 창업기업 모집",
-      "경기도 AI 멤버십 기업 모집",
-      "2026년 경북 글로벌 스타트업 패키지 참여기업 모집공고",
-      "2026년 세종시설관리공단 거브테크 오픈이노베이션 참여 스타트업 모집공고",
-      "(전북ON 프로젝트) 모두의 창업  도전을 위한 교육 참여자 모집",
-      "2026년 군위 청년(예비)창업 지원사업 (예비)청년창업자 모집 공고",
-      "2026년 G-Star 오픈이노베이션 커넥팅 데이",
-      "경북 구미 강소연구개발특구 &apos;2026년 기술창업교육&apos; 예비 및 초기창업자 모집 공고",
-      "2026 신한금융그룹 베트남 X 서울창업허브 오픈이노베이션",
-      "[서울핀테크랩 x XRPL Korea] 2026 Korea Financial Innovation Program 신청",
-      "2026년 데이터 마케팅 컨설팅 지원 사업 참여 출판사 모집 연장 공고(중소출판 도약부문 마케팅지원)",
-      "2026년 2차 뿌리산업 혁신공정장비 개발사업 신규지원 대상과제 공고",
-      "2026년 하반기 독립예술영화 제작지원(장편 극영화 부문) 사업 추가 접수 공고",
-      "[경북] 2026년 (예비)사회적기업 일자리창출사업 참여기업 추가모집 공고",
-      "2026년 하반기 독립예술영화 제작지원(다큐멘터리 (제작ㆍ후반제작)) 사업 추가 접수 공고",
-      "2026년 홈로봇가전 시제작 지원 기업 모집 공고",
-      "2026년 소상공인 도약 지원사업(로컬기업육성ㆍ강한소상공인) 참여 소상공인 모집 연장 공고",
-      "2026년 2차 시제품제작 수혜기업 모집 공고(친환경 경량소재 적용 미래차 부품산업 전환 생태계 기반구축)",
-      "2026년 3차 첨단 바이오 소재 사업화 지원 사업 기업지원 통합 공고",
-      "[경북] 칠곡군 2026년 중소기업 성장사다리 지원사업 참여기업 모집 공고",
-      "2026년 1차 소모성자재(MRO) 납품 중소기업 구매상담회 참여기업 모집 공고",
-      "2026년 서비스로봇 AX(S-M.AX) 실증사업 지원 과제 모집 공고",
-      "[경북] 구미시 2026년 강소연구개발특구 기술창업교육 사업 예비 및 초기창업자 모집 공고",
-      "[부산] 2026 화장품뷰티산업 사업화 지원사업 지원기업 모집 공고",
-      "2026년 혁신프리미어 1000 대상 기업 선정 추가모집 공고",
-      "[전남] 2026년 차 기술지원 및 수출 상품화 지원사업 신청 공고",
-      "2026년 「모두의 창업 프로젝트」설명회 및 신청서 작성 특강 안내 (5.6(수)) - YouTube Live",
-      "Korea 대표 애널리스트가 보는 &apos;좋은기술&apos; VS &apos;돈 되는 기술&apos;(2026년 제5차 벤처스타트업 아카데미)"
+    "expired": [],
+    "new_added": [
+      "2026 K-Startup Grand Challenge (KSGC) Call for Applications for (Pre-)Startups",
+      "2026년 G-Star 오픈이노베이션 커넥팅 데이"
     ],
-    "new_added": [],
     "updated_today": [
-      "[충남신용보증재단] 2026년 6월 창업아카데미 교육생 모집"
+      "[이화여대 캠퍼스타운] 2026 E-LIFE Challenge 창업경진대회 추가모집"
     ],
     "stats": {
       "green": 61,
-      "yellow": 141,
-      "orange": 597,
+      "yellow": 142,
+      "orange": 598,
       "red_excluded": 0,
-      "expired_removed": 56,
-      "total_pool": 799,
-      "rss_total": 282,
-      "raw_fetched": 202
+      "expired_removed": 0,
+      "total_pool": 801,
+      "rss_total": 283,
+      "raw_fetched": 203
     }
   },
   "history": [
@@ -81939,11 +82120,11 @@
     },
     {
       "date": "2026-05-07",
-      "at_kst": "2026-05-07T02:21:26+09:00",
-      "new": 0,
+      "at_kst": "2026-05-07T20:10:31+09:00",
+      "new": 2,
       "updated": 1,
-      "expired": 56,
-      "total": 799,
+      "expired": 0,
+      "total": 801,
       "red_excluded": 0
     }
   ]
