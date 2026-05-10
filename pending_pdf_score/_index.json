@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-10T19:21:01.460741+09:00",
+  "generated_at": "2026-05-11T01:44:49.994261+09:00",
   "schema_version": 2,
   "pdf_text_cap": 15000,
-  "target_count": 173,
+  "target_count": 171,
   "pending": [
     {
       "key": "bizinfo_PBLN_000000000121183",
@@ -59,20 +59,6 @@
       "tier": "yellow",
       "deadline": "",
       "pdf_text_chars": 16918
-    },
-    {
-      "key": "bizinfo_PBLN_000000000121307",
-      "title": "2026년 수산물 직매장 설치 및 창업지원 플랫폼 구축 관련 수산물 직매장 창업희망자 지원 모집 연장 공고",
-      "tier": "orange",
-      "deadline": "2026-05-10",
-      "pdf_text_chars": 14590
-    },
-    {
-      "key": "bizinfo_PBLN_000000000120463",
-      "title": "2026년 스타트업 AI 기술인력 양성(이어드림스쿨) 교육생 모집 공고",
-      "tier": "orange",
-      "deadline": "2026-05-10",
-      "pdf_text_chars": 12104
     },
     {
       "key": "bizinfo_PBLN_000000000121309",
@@ -1217,10 +1203,10 @@
     }
   ],
   "stats": {
-    "total_items": 775,
+    "total_items": 755,
     "red": 0,
     "expired": 0,
-    "no_pdf": 565,
+    "no_pdf": 547,
     "already_scored": 37
   }
 }
