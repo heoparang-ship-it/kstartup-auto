@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-11T21:15:59.379273+09:00",
+  "generated_at": "2026-05-12T02:52:28.957110+09:00",
   "schema_version": 2,
   "pdf_text_cap": 15000,
-  "target_count": 171,
+  "target_count": 162,
   "pending": [
     {
       "key": "bizinfo_PBLN_000000000121183",
@@ -59,69 +59,6 @@
       "tier": "yellow",
       "deadline": "",
       "pdf_text_chars": 16918
-    },
-    {
-      "key": "bizinfo_PBLN_000000000121309",
-      "title": "[부산] 2026년 히든챔피언 육성사업 지원기업 모집 공고",
-      "tier": "orange",
-      "deadline": "2026-05-11",
-      "pdf_text_chars": 8978
-    },
-    {
-      "key": "bizinfo_PBLN_000000000121297",
-      "title": "[경북] 경주시 골든기업 육성사업 참가기업 모집 공고",
-      "tier": "orange",
-      "deadline": "2026-05-11",
-      "pdf_text_chars": 5412
-    },
-    {
-      "key": "bizinfo_PBLN_000000000121156",
-      "title": "[경북] 2026년 우수 청년기업 지원사업 참여기업 모집 공고",
-      "tier": "orange",
-      "deadline": "2026-05-11",
-      "pdf_text_chars": 8523
-    },
-    {
-      "key": "bizinfo_PBLN_000000000120992",
-      "title": "2026년 제조창업활성화 제품화 올인원팩 창업기업 모집공고",
-      "tier": "orange",
-      "deadline": "2026-05-11",
-      "pdf_text_chars": 15071
-    },
-    {
-      "key": "bizinfo_PBLN_000000000120949",
-      "title": "[경북] 영천시 2026년 중소기업 혁신기술개발 지원사업 공고",
-      "tier": "orange",
-      "deadline": "2026-05-11",
-      "pdf_text_chars": 11037
-    },
-    {
-      "key": "bizinfo_PBLN_000000000120876",
-      "title": "2026년 국제 다큐멘터리 마켓 지원사업 공고",
-      "tier": "orange",
-      "deadline": "2026-05-11",
-      "pdf_text_chars": 15066
-    },
-    {
-      "key": "bizinfo_PBLN_000000000120834",
-      "title": "2026년 전통시장 및 상점가 활성화 유공 포상 계획 공고",
-      "tier": "orange",
-      "deadline": "2026-05-11",
-      "pdf_text_chars": 15073
-    },
-    {
-      "key": "bizinfo_PBLN_000000000120775",
-      "title": "2026년 초격차 스타트업 프로젝트 모두의 챌린지 팹리스 참여기업 모집 공고",
-      "tier": "orange",
-      "deadline": "2026-05-11",
-      "pdf_text_chars": 15061
-    },
-    {
-      "key": "bizinfo_PBLN_000000000120704",
-      "title": "2026년 2차 테크노파크 생산장비 고도화 지원계획 공고",
-      "tier": "orange",
-      "deadline": "2026-05-11",
-      "pdf_text_chars": 10306
     },
     {
       "key": "bizinfo_PBLN_000000000121344",
@@ -1203,10 +1140,10 @@
     }
   ],
   "stats": {
-    "total_items": 761,
+    "total_items": 710,
     "red": 0,
     "expired": 0,
-    "no_pdf": 553,
-    "already_scored": 37
+    "no_pdf": 515,
+    "already_scored": 33
   }
 }
