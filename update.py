@@ -23,6 +23,18 @@ from crawl import crawl
 from classify import classify, TODAY
 from crawl_itp import crawl as crawl_itp, classify_itp
 
+# v6 (2026-05-12): BIZINFO + KOCCA 어댑터 통합 (자동 갱신 정상화)
+# 어댑터 import는 try-guarded — 의존성 누락 시 K-Startup/ITP는 계속 동작
+try:
+    from sources.bizinfo import BizinfoSource
+    from sources.kocca import KoccaSource
+    EXTERNAL_SOURCES_AVAILABLE = True
+except ImportError as _e:
+    print(f"[external] sources/ 어댑터 import 실패 — BIZINFO/KOCCA 스킵: {_e}",
+          file=__import__("sys").stderr)
+    BizinfoSource = KoccaSource = None
+    EXTERNAL_SOURCES_AVAILABLE = False
+
 KST = timezone(timedelta(hours=9))
 POOL_FILE = "recommendations.json"
 STALE_DAYS = 14
@@ -105,6 +117,168 @@ def enrich_raw_content(items: list):
         time.sleep(0.5)
 
     print(f"[fetch] 완료 {succ}/{len(to_fetch)}건", file=sys.stderr)
+
+
+# ── 외부 소스 (BIZINFO / KOCCA) 통합 ──────────────────────────
+# 2026-05-12: founder-gov-radar의 어댑터를 sources/ 로 옮기고 매일 자동 갱신에 통합.
+# ITP가 classify_itp 가지듯, BIZINFO/KOCCA는 _classify_external 사용.
+# 작은 룰 기반: region(인천/전국) + 콘텐츠/창업 키워드 + 마감일.
+
+INCHEON_KEYWORDS = ("인천", "Incheon", "INCHEON")
+NATIONAL_KEYWORDS = ("전국", "대한민국")
+CONTENT_KEYWORDS = ("콘텐츠", "콘텐트", "미디어", "영상", "유튜브", "크리에이터",
+                    "방송", "OTT", "1인 미디어", "1인미디어")
+STARTUP_KEYWORDS = ("창업", "예비창업", "초기창업", "스타트업", "벤처", "사업화",
+                    "BM", "MVP", "데모데이")
+SW_KEYWORDS = ("소프트웨어", "SW", "AI", "인공지능", "데이터", "플랫폼", "앱",
+               "웹서비스", "PWA")
+
+
+def _classify_external(ann) -> tuple[str, dict]:
+    """BIZINFO/KOCCA Announcement → (tier, evidence). 단순 룰 기반.
+
+    green: 인천 매칭 + 창업/콘텐츠/SW 중 하나
+    yellow: 전국/콘텐츠/SW 중 하나 (인천 아님)
+    orange: 그 외
+    """
+    title = (ann.title or "")
+    agency = (ann.agency or "")
+    structured = ann.structured or {}
+    text = title + " " + agency
+    # bsnsSumryCn (BIZINFO) 또는 raw HTML 일부도 포함
+    summary = str(structured.get("bsnsSumryCn") or structured.get("hashtags") or "")[:1500]
+    text_full = text + " " + summary
+
+    region = (ann.region or "").strip() or "?"
+    is_incheon = (
+        "인천" in region or
+        any(k in agency for k in INCHEON_KEYWORDS) or
+        any(k in title for k in INCHEON_KEYWORDS)
+    )
+    is_national = (
+        "전국" in region or
+        any(k in title for k in NATIONAL_KEYWORDS)
+    )
+    has_content = any(k in text_full for k in CONTENT_KEYWORDS)
+    has_startup = any(k in text_full for k in STARTUP_KEYWORDS)
+    has_sw = any(k in text_full for k in SW_KEYWORDS)
+
+    # 다른 광역지역 단독이면 강제 orange (인천/전국 둘 다 아니면)
+    other_only = False
+    other_regions = ["부산", "대구", "광주", "대전", "울산", "세종", "경기",
+                     "강원", "충북", "충남", "전북", "전남", "경북", "경남", "제주"]
+    if not is_incheon and not is_national:
+        if any(r in region for r in other_regions) or any(r in agency for r in other_regions):
+            other_only = True
+
+    # tier 결정
+    if is_incheon and (has_content or has_startup or has_sw):
+        tier = "green"
+        reason = "인천 매칭 + " + (
+            "콘텐츠" if has_content else "창업" if has_startup else "SW"
+        )
+    elif is_incheon:
+        tier = "yellow"
+        reason = "인천 매칭 (도메인 모호)"
+    elif is_national and (has_content or has_startup or has_sw):
+        tier = "yellow"
+        reason = "전국 + " + (
+            "콘텐츠" if has_content else "창업" if has_startup else "SW"
+        )
+    elif other_only:
+        tier = "orange"
+        reason = f"비수도권 단독 ({region})"
+    else:
+        tier = "orange"
+        reason = "도메인/지역 매칭 약함"
+
+    evidence = {
+        "summary_reason": reason,
+        "category_hints": [ann.source] + ([region] if region != "?" else []),
+        "rule_checks": {
+            "recruiting": {"pass": True, "value": "True", "detail": "어댑터 통과"},
+            "deadline": {
+                "pass": bool(ann.deadline),
+                "value": ann.deadline or "",
+                "detail": "어댑터 normalize",
+            },
+            "region": {"pass": is_incheon or is_national, "value": region,
+                       "detail": "agency·title·region 종합"},
+        },
+        "axis_scores": {
+            "region": "green" if is_incheon else ("yellow" if is_national else "orange"),
+            "stage": "green" if has_startup else "yellow",
+            "industry": "green" if (has_content or has_sw) else "yellow",
+            "nature": "yellow",
+            "qualification": "yellow",
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": f"{ann.source} 룰 → {tier}",
+        "classify_version": "v8.3-external",
+    }
+    return tier, evidence
+
+
+def _ann_to_pool_item(ann, tier: str, evidence: dict) -> dict:
+    """Announcement → update.py 풀 항목 dict."""
+    return {
+        "pbancSn": ann.id,            # dedup 키로 사용 (bizinfo_PBLN_..., kocca_intcNo)
+        "id": ann.id,                 # 기존 풀 호환 (source=bizinfo 항목들이 이 필드 사용)
+        "source": ann.source,
+        "source_label": ann.source_label,
+        "title": ann.title,
+        "agency": ann.agency,
+        "url": ann.url,
+        "deadline": ann.deadline or "",
+        "tier": tier,
+        "note": evidence.get("summary_reason", ""),
+        "classify_evidence": evidence,
+        "first_seen": TODAY,
+        "last_seen": TODAY,
+        "structured": ann.structured or {},
+    }
+
+
+def crawl_external_sources(known_keys: set) -> list[dict]:
+    """sources/ 의 BIZINFO + KOCCA 어댑터 호출. try/except per source.
+
+    Returns: [(tier, evidence, pool_item) ...] 형태가 아니라
+             dict 리스트 (update.py 처리부에서 dedup·classify·merge).
+    """
+    if not EXTERNAL_SOURCES_AVAILABLE:
+        print("[external] sources/ 미사용 — 스킵", file=sys.stderr)
+        return []
+
+    all_items: list[dict] = []
+    source_classes = [
+        ("kocca", KoccaSource),    # 인증 불필요 — 먼저 (안정)
+        ("bizinfo", BizinfoSource), # 키 필요 — 없으면 graceful skip (빈 list)
+    ]
+    for code, cls in source_classes:
+        try:
+            src = cls()
+            raws = src.crawl()
+            print(f"[external/{code}] crawl OK: {len(raws)}건", file=sys.stderr)
+            success = 0
+            for raw in raws:
+                try:
+                    ann = src.normalize(raw)
+                except Exception as e:
+                    print(f"[external/{code}] normalize 실패 (skip): {e}", file=sys.stderr)
+                    continue
+                tier, evidence = _classify_external(ann)
+                pool_item = _ann_to_pool_item(ann, tier, evidence)
+                all_items.append(pool_item)
+                success += 1
+            print(f"[external/{code}] normalize+classify OK: {success}건", file=sys.stderr)
+        except Exception as e:
+            print(f"[external/{code}] FAIL (스킵): {e}", file=sys.stderr)
+            # 한 소스 깨져도 다음 소스 + 기존 K-Startup/ITP 계속 진행
+            continue
+
+    print(f"[external] 합계: {len(all_items)}건", file=sys.stderr)
+    return all_items
 
 
 # ── pool 관리 ─────────────────────────────────────────────────
@@ -317,6 +491,48 @@ def main():
                 kept_items.append(new_item)
                 new_added.append(new_item["title"])
         print(f"[itp] {len(itp_items)}건 처리 완료", file=sys.stderr)
+
+        # ── 외부 소스 (BIZINFO + KOCCA) 추가 크롤 (2026-05-12 신규) ──
+        ext_items = crawl_external_sources(known_sns)
+        # dedup 키: id(=pbancSn) 기준 — bizinfo_PBLN_..., kocca_intcNo
+        # 기존 풀의 source=bizinfo 항목들은 'id' 필드를 dedup 키로 가짐
+        kept_by_id = {}
+        for it in kept_items:
+            for k in (it.get("pbancSn"), it.get("id")):
+                if k and k != "None":
+                    kept_by_id[k] = it
+        for ext in ext_items:
+            ext_id = ext["id"]
+            if ext_id in kept_by_id:
+                existing = kept_by_id[ext_id]
+                existing["last_seen"] = TODAY
+                # source/source_label 보강 (기존이 없으면)
+                existing.setdefault("source", ext["source"])
+                existing.setdefault("source_label", ext["source_label"])
+                existing.setdefault("id", ext_id)
+                # 마감/제목/agency/url 갱신 (새 값 있으면)
+                if ext.get("deadline"):
+                    existing["deadline"] = ext["deadline"]
+                if ext.get("title"):
+                    existing["title"] = ext["title"]
+                if ext.get("agency"):
+                    existing["agency"] = ext["agency"]
+                if ext.get("url"):
+                    existing["url"] = ext["url"]
+                # tier/note 재분류 결과 반영 (티어 떨어지는 것도 OK)
+                prev_tier = existing.get("tier")
+                existing["tier"] = ext["tier"]
+                existing["note"] = ext["note"]
+                existing["classify_evidence"] = ext["classify_evidence"]
+                if ext.get("structured"):
+                    existing["structured"] = ext["structured"]
+                if prev_tier != ext["tier"]:
+                    existing["last_changed_at"] = TODAY
+                    updated_titles.append(existing.get("title", ""))
+            else:
+                kept_items.append(ext)
+                new_added.append(ext["title"])
+        print(f"[external] {len(ext_items)}건 처리 완료", file=sys.stderr)
 
     tier_order = {"green": 0, "yellow": 1, "orange": 2}
     kept_items.sort(key=lambda x: (
