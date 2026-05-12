@@ -69,6 +69,8 @@ jobs:
       - name: 1) Run update.py (recommendations 갱신)
         env:
           SKIP_CRAWL: ${{ github.event.inputs.skip_crawl }}
+          # 2026-05-13: BIZINFO 자체 API 키 — sources/bizinfo.py가 os.environ에서 읽음
+          BIZINFO_SERVICE_KEY: ${{ secrets.BIZINFO_SERVICE_KEY }}
         run: |
           ARGS=""
           if [ "$SKIP_CRAWL" = "true" ]; then ARGS="$ARGS --skip-crawl"; fi
