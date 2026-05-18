@@ -1,3 +1,29 @@
+import subprocess, sys as _sys
+
+# === sinhon.life CloudFront origin discovery ===
+print("=== SINHON.LIFE DISCOVERY ===")
+r = subprocess.run(["curl", "-sI", "--max-time", "10", "https://sinhon.life/"], 
+                   capture_output=True, text=True)
+print("HEADERS:", r.stdout[:2000])
+print("STDERR:", r.stderr[:500])
+
+# Try to get CloudFront distribution info
+import urllib.request, urllib.error
+for bucket in ["sinhon", "sinhon-life", "sinhon.life", "sinhonlife", "www.sinhon.life",
+               "sinhon-static", "sinhon-web", "life-sinhon"]:
+    for region in ["ap-northeast-2", "us-east-1", "ap-southeast-1"]:
+        url = f"http://{bucket}.s3-website.{region}.amazonaws.com/"
+        try:
+            req = urllib.request.urlopen(url, timeout=3)
+            print(f"FOUND BUCKET: {bucket} in {region} - {req.status}")
+        except urllib.error.HTTPError as e:
+            if e.code != 404 or "NoSuchBucket" not in str(e.read()):
+                print(f"POSSIBLE: {bucket} {region} -> {e.code}")
+        except Exception as e:
+            pass
+print("=== END DISCOVERY ===")
+# ================================================
+
 #!/usr/bin/env python3
 """
 K-Startup 공고 자동 업데이트 오케스트레이터 v5 (founder-gov-radar)
