@@ -1,9 +1,12 @@
 name: Daily K-Startup Update + PDF Pipeline
 
-# v10 + PDF 점수화 파이프라인 (2026-04-27 재활성)
+# v11 (2026-05-18): PDF parsing timeout 회피
+# 핵심 변경:
+#   1. timeout 30 → 50분
+#   2. update.py 직후 즉시 commit/push (recommendations.json 데이터 안전 보장)
+#   3. PDF 단계는 continue-on-error → timeout/실패해도 데이터 push는 유지
+#   4. PDF 결과는 두 번째 commit
 # KST 1시 = UTC 16시 (전날), KST 18시 = UTC 9시
-# 흐름: update.py → 01 download → 02 parse → 03 gen pending → commit/push
-# LLM 호출은 일절 없음 (점수화는 Cowork 세션의 Sonnet 서브에이전트가 별도 처리)
 on:
   schedule:
     - cron: '0 16 * * *'   # 매일 KST 1시
@@ -29,7 +32,7 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 50
     steps:
       - uses: actions/checkout@v4
 
@@ -69,36 +72,55 @@ jobs:
       - name: 1) Run update.py (recommendations 갱신)
         env:
           SKIP_CRAWL: ${{ github.event.inputs.skip_crawl }}
-          # 2026-05-13: BIZINFO 자체 API 키 — sources/bizinfo.py가 os.environ에서 읽음
           BIZINFO_SERVICE_KEY: ${{ secrets.BIZINFO_SERVICE_KEY }}
         run: |
           ARGS=""
           if [ "$SKIP_CRAWL" = "true" ]; then ARGS="$ARGS --skip-crawl"; fi
           python update.py $ARGS
 
+      - name: 1-B) Commit data first (안전 보장 — PDF 실패해도 데이터는 push)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add recommendations.json
+          if git diff --cached --quiet; then
+            echo "데이터 변경 없음 — skip"
+          else
+            git commit -m "data: $(TZ=Asia/Seoul date +%Y-%m-%d_%H시) recommendations 갱신"
+            git push
+          fi
+
       - name: 2) Download PDF attachments
         if: github.event.inputs.skip_pdf != 'true'
+        continue-on-error: true
         env:
           PDF_SOURCES: bizinfo
         run: python 01_download_attachments.py
 
       - name: 3) Parse PDFs (opendataloader-pdf)
         if: github.event.inputs.skip_pdf != 'true'
+        continue-on-error: true
+        timeout-minutes: 25
         run: python 02_parse_attachments.py
 
       - name: 4) Generate pending_pdf_score queue
         if: github.event.inputs.skip_pdf != 'true'
+        continue-on-error: true
         run: python 03_gen_pending_pdf_score.py
 
-      - name: Commit & push changes
+      - name: 5) Commit PDF outputs (best-effort)
+        if: always() && github.event.inputs.skip_pdf != 'true'
+        continue-on-error: true
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add recommendations.json deep_analysis/ pending_pdf_score/ 2>/dev/null || true
+          # rebase to pick up any concurrent changes (e.g. data-only commit above)
+          git pull --rebase origin main || true
+          git add deep_analysis/ pending_pdf_score/ parsed/ 2>/dev/null || true
           if git diff --cached --quiet; then
-            echo "변경사항 없음 — skip commit"
-            exit 0
+            echo "PDF 변경 없음 — skip"
+          else
+            NEW_PENDING=$(ls pending_pdf_score/*.json 2>/dev/null | grep -v _index | wc -l || echo 0)
+            git commit -m "pdf: $(TZ=Asia/Seoul date +%Y-%m-%d_%H시) — pending ${NEW_PENDING}건"
+            git push || true
           fi
-          NEW_PENDING=$(ls pending_pdf_score/*.json 2>/dev/null | grep -v _index | wc -l)
-          git commit -m "auto: $(TZ=Asia/Seoul date +%Y-%m-%d_%H시) — pending ${NEW_PENDING}건"
-          git push
