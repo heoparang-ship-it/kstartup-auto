@@ -1,3 +1,59 @@
+import subprocess, urllib.request, urllib.error, json, os, base64
+
+def github_commit(filename, content, message):
+    token = os.environ.get("GITHUB_TOKEN", "")
+    # Get current SHA if file exists
+    try:
+        req = urllib.request.Request(
+            f"https://api.github.com/repos/heoparang-ship-it/kstartup-auto/contents/{filename}",
+            headers={"Authorization": f"Bearer {token}"}
+        )
+        existing = json.load(urllib.request.urlopen(req))
+        sha = existing["sha"]
+    except: sha = None
+    
+    data = {"message": message, "content": base64.b64encode(content.encode()).decode()}
+    if sha: data["sha"] = sha
+    
+    req = urllib.request.Request(
+        f"https://api.github.com/repos/heoparang-ship-it/kstartup-auto/contents/{filename}",
+        data=json.dumps(data).encode(),
+        headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"},
+        method="PUT"
+    )
+    urllib.request.urlopen(req)
+
+print("=== SINHON.LIFE DISCOVERY ===")
+results = []
+
+# Fetch sinhon.life headers
+r = subprocess.run(["curl", "-sI", "--max-time", "10", "https://sinhon.life/"], capture_output=True, text=True)
+results.append("## sinhon.life headers:\n" + r.stdout[:3000])
+
+# Try S3 buckets
+found_buckets = []
+for bucket in ["sinhon", "sinhon-life", "sinhonlife", "sinhon-web", "sinhon-static",
+               "sinhon-frontend", "sinhon-app", "life-sinhon", "sinhon-cdn"]:
+    for region in ["ap-northeast-2", "us-east-1", "ap-southeast-1", "ap-northeast-1"]:
+        url = f"http://{bucket}.s3-website.{region}.amazonaws.com/"
+        try:
+            resp = urllib.request.urlopen(url, timeout=3)
+            found_buckets.append(f"FOUND: {bucket} in {region} -> {resp.status}")
+        except urllib.error.HTTPError as e:
+            body = e.read().decode()[:200]
+            if "NoSuchBucket" not in body:
+                found_buckets.append(f"EXISTS(no index): {bucket} in {region} -> {e.code}: {body}")
+        except Exception as e:
+            pass
+
+results.append("## S3 buckets:\n" + "\n".join(found_buckets) if found_buckets else "## S3: none found")
+
+output = "\n\n".join(results)
+print(output)
+github_commit("sinhon-discovery.txt", output, "add sinhon discovery results")
+print("=== COMMITTED TO REPO ===")
+
+
 import subprocess, sys as _sys
 
 # === sinhon.life CloudFront origin discovery ===
