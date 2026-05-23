@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-23T19:33:17.704310+09:00",
+  "generated_at": "2026-05-24T01:53:45.603649+09:00",
   "schema_version": 2,
   "pdf_text_cap": 15000,
-  "target_count": 789,
+  "target_count": 788,
   "pending": [
     {
       "key": "bizinfo_PBLN_000000000122004",
@@ -66,13 +66,6 @@
       "tier": "green",
       "deadline": "",
       "pdf_text_chars": 3561
-    },
-    {
-      "key": "bizinfo_PBLN_000000000121663",
-      "title": "2026년 수출 유망 디지털콘텐츠 강소기업 육성 지원기업 추가모집 공고",
-      "tier": "yellow",
-      "deadline": "2026-05-23",
-      "pdf_text_chars": 22236
     },
     {
       "key": "bizinfo_PBLN_000000000121318",
@@ -5529,10 +5522,10 @@
     }
   ],
   "stats": {
-    "total_items": 1769,
+    "total_items": 1766,
     "red": 0,
     "expired": 0,
-    "no_pdf": 948,
+    "no_pdf": 946,
     "already_scored": 32
   }
 }
