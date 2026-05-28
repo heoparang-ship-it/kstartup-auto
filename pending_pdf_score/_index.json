@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-28T21:37:27.016016+09:00",
+  "generated_at": "2026-05-29T03:34:54.375007+09:00",
   "schema_version": 2,
   "pdf_text_cap": 15000,
-  "target_count": 853,
+  "target_count": 838,
   "pending": [
     {
       "key": "bizinfo_PBLN_000000000122079",
@@ -80,27 +80,6 @@
       "tier": "green",
       "deadline": "",
       "pdf_text_chars": 3561
-    },
-    {
-      "key": "bizinfo_PBLN_000000000121766",
-      "title": "2026년 부천AI창업리그 참가기업 모집 공고",
-      "tier": "yellow",
-      "deadline": "2026-05-28",
-      "pdf_text_chars": 15431
-    },
-    {
-      "key": "bizinfo_PBLN_000000000121438",
-      "title": "2026년 2차 중소벤처기업부 혁신제품 지정기간 연장(1차연장) 공고",
-      "tier": "yellow",
-      "deadline": "2026-05-28",
-      "pdf_text_chars": 8779
-    },
-    {
-      "key": "bizinfo_PBLN_000000000122061",
-      "title": "2026년 만화웹툰 해외진출지원 KOMICS 프랑스ㆍ독일 참가기업 모집 공고",
-      "tier": "yellow",
-      "deadline": "2026-05-28",
-      "pdf_text_chars": 5373
     },
     {
       "key": "bizinfo_PBLN_000000000121834",
@@ -1606,90 +1585,6 @@
       "tier": "yellow",
       "deadline": "",
       "pdf_text_chars": 15089
-    },
-    {
-      "key": "bizinfo_PBLN_000000000122012",
-      "title": "[강원] 속초시 2026년 전시박람회 참가 지원사업 참가기업 모집 추가 공고",
-      "tier": "orange",
-      "deadline": "2026-05-28",
-      "pdf_text_chars": 6724
-    },
-    {
-      "key": "bizinfo_PBLN_000000000121850",
-      "title": "[부산] 2026년 클라우드 SaaS 개발ㆍ전환 지원사업 참여기업 모집 공고",
-      "tier": "orange",
-      "deadline": "2026-05-28",
-      "pdf_text_chars": 14602
-    },
-    {
-      "key": "bizinfo_PBLN_000000000121842",
-      "title": "[충남] 2026년 지역혁신클러스터육성(비R&D)사업 사업화 지원 수혜기업 모집 공고",
-      "tier": "orange",
-      "deadline": "2026-05-28",
-      "pdf_text_chars": 15064
-    },
-    {
-      "key": "bizinfo_PBLN_000000000121687",
-      "title": "[경기] 2026년 소공인 박람회 지원사업 모집 공고",
-      "tier": "orange",
-      "deadline": "2026-05-28",
-      "pdf_text_chars": 11502
-    },
-    {
-      "key": "bizinfo_PBLN_000000000121516",
-      "title": "[광주] 2026년 Pre-명품강소기업 모집 공고",
-      "tier": "orange",
-      "deadline": "2026-05-28",
-      "pdf_text_chars": 5246
-    },
-    {
-      "key": "bizinfo_PBLN_000000000121383",
-      "title": "[경남] 2026년 경남형 청년친화기업 지원사업 참여기업 추가 모집 공고",
-      "tier": "orange",
-      "deadline": "2026-05-28",
-      "pdf_text_chars": 12482
-    },
-    {
-      "key": "bizinfo_PBLN_000000000122111",
-      "title": "2026년 2차 오디오북 제작 지원 사업 신청 공고",
-      "tier": "orange",
-      "deadline": "2026-05-28",
-      "pdf_text_chars": 16223
-    },
-    {
-      "key": "bizinfo_PBLN_000000000122105",
-      "title": "[대구] 2026년 제조창업패키지 모집 공고",
-      "tier": "orange",
-      "deadline": "2026-05-28",
-      "pdf_text_chars": 16037
-    },
-    {
-      "key": "bizinfo_PBLN_000000000122089",
-      "title": "[부산] 2026년 온라인 전용 상품개발 지원기업 모집 연장 공고(오픈마켓 입점지원 및 활성화 사업)",
-      "tier": "orange",
-      "deadline": "2026-05-28",
-      "pdf_text_chars": 3771
-    },
-    {
-      "key": "bizinfo_PBLN_000000000122068",
-      "title": "[충북] 2026년 2차 AI 저전력ㆍ고성능 첨단반도체 기술개발 지원사업 수혜기업 모집 공고",
-      "tier": "orange",
-      "deadline": "2026-05-28",
-      "pdf_text_chars": 21791
-    },
-    {
-      "key": "bizinfo_PBLN_000000000122032",
-      "title": "[대전] 2026년 2차 바이오 혁신신약 특화단지 운영사업 지원기업 모집 공고",
-      "tier": "orange",
-      "deadline": "2026-05-28",
-      "pdf_text_chars": 3861
-    },
-    {
-      "key": "bizinfo_PBLN_000000000122179",
-      "title": "[부산] 2026년 혁신조달 패키지 지원사업 추가모집 공고(예비지원 트랙)",
-      "tier": "orange",
-      "deadline": "2026-05-28",
-      "pdf_text_chars": 3022
     },
     {
       "key": "bizinfo_PBLN_000000000121911",
@@ -5977,10 +5872,10 @@
     }
   ],
   "stats": {
-    "total_items": 1862,
+    "total_items": 1827,
     "red": 0,
     "expired": 0,
-    "no_pdf": 977,
-    "already_scored": 32
+    "no_pdf": 958,
+    "already_scored": 31
   }
 }
