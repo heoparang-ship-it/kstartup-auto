@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-30T19:53:23.240319+09:00",
+  "generated_at": "2026-05-31T01:57:16.342109+09:00",
   "schema_version": 2,
   "pdf_text_cap": 15000,
-  "target_count": 774,
+  "target_count": 771,
   "pending": [
     {
       "key": "bizinfo_PBLN_000000000122445",
@@ -73,13 +73,6 @@
       "tier": "green",
       "deadline": "",
       "pdf_text_chars": 3561
-    },
-    {
-      "key": "bizinfo_PBLN_000000000121930",
-      "title": "2026년 마이데이터 중계 인프라 실증 지원사업 공모",
-      "tier": "yellow",
-      "deadline": "2026-05-30",
-      "pdf_text_chars": 35495
     },
     {
       "key": "bizinfo_PBLN_000000000121292",
@@ -1501,20 +1494,6 @@
       "tier": "yellow",
       "deadline": "",
       "pdf_text_chars": 12709
-    },
-    {
-      "key": "bizinfo_PBLN_000000000120796",
-      "title": "[대전] 2026년 해외통상사무소 주관 해외바이어 초청 비즈니스 상담회 공고",
-      "tier": "orange",
-      "deadline": "2026-05-30",
-      "pdf_text_chars": 4458
-    },
-    {
-      "key": "bizinfo_PBLN_000000000120695",
-      "title": "[대전] 2026년 해외통상사무소 주관 해외바이어 초청 비즈니스 상담회 공고",
-      "tier": "orange",
-      "deadline": "2026-05-30",
-      "pdf_text_chars": 4478
     },
     {
       "key": "bizinfo_PBLN_000000000121555",
@@ -5424,10 +5403,10 @@
     }
   ],
   "stats": {
-    "total_items": 1764,
+    "total_items": 1759,
     "red": 0,
     "expired": 0,
-    "no_pdf": 961,
+    "no_pdf": 959,
     "already_scored": 29
   }
 }
