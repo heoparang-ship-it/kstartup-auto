@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-03T22:22:55.758256+09:00",
+  "generated_at": "2026-06-04T04:45:51.498640+09:00",
   "schema_version": 2,
   "pdf_text_cap": 15000,
-  "target_count": 809,
+  "target_count": 807,
   "pending": [
     {
       "key": "bizinfo_PBLN_000000000122445",
@@ -94,13 +94,6 @@
       "tier": "green",
       "deadline": "",
       "pdf_text_chars": 3561
-    },
-    {
-      "key": "bizinfo_PBLN_000000000122082",
-      "title": "2026년 6기 BOUNCE PIE 배치 프로그램 기업 모집 공고",
-      "tier": "yellow",
-      "deadline": "2026-06-03",
-      "pdf_text_chars": 11308
     },
     {
       "key": "bizinfo_PBLN_000000000121795",
@@ -1578,13 +1571,6 @@
       "tier": "yellow",
       "deadline": "",
       "pdf_text_chars": 12709
-    },
-    {
-      "key": "bizinfo_PBLN_000000000122272",
-      "title": "[서울] 2026년 전문기관 연계형 기술ㆍ경영 컨설팅 지원 사업 수요기업 모집 공고",
-      "tier": "orange",
-      "deadline": "2026-06-03",
-      "pdf_text_chars": 15088
     },
     {
       "key": "bizinfo_PBLN_000000000122288",
@@ -5669,10 +5655,10 @@
     }
   ],
   "stats": {
-    "total_items": 1811,
+    "total_items": 1801,
     "red": 0,
     "expired": 0,
-    "no_pdf": 973,
+    "no_pdf": 965,
     "already_scored": 29
   }
 }
