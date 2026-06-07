@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-07T20:16:22.336062+09:00",
+  "generated_at": "2026-06-08T02:11:23.076153+09:00",
   "schema_version": 2,
   "pdf_text_cap": 15000,
-  "target_count": 804,
+  "target_count": 800,
   "pending": [
     {
       "key": "bizinfo_PBLN_000000000122171",
@@ -1564,34 +1564,6 @@
       "tier": "yellow",
       "deadline": "",
       "pdf_text_chars": 12709
-    },
-    {
-      "key": "bizinfo_PBLN_000000000121796",
-      "title": "[강원] 2026년 공영홈쇼핑 혁신기업 제품 코칭 상담회 참여기업 모집 공고",
-      "tier": "orange",
-      "deadline": "2026-06-07",
-      "pdf_text_chars": 4316
-    },
-    {
-      "key": "bizinfo_PBLN_000000000122187",
-      "title": "2026년 의약품 특허대응전략 컨설팅 지원 사업 지원기업 모집 공고",
-      "tier": "orange",
-      "deadline": "2026-06-07",
-      "pdf_text_chars": 4533
-    },
-    {
-      "key": "bizinfo_PBLN_000000000122408",
-      "title": "[부산] 2026년 프랑스 메종ㆍ오브제 한국디자인관 참가기업 모집 공고(중소기업 디자인개발 지원사업)",
-      "tier": "orange",
-      "deadline": "2026-06-07",
-      "pdf_text_chars": 6314
-    },
-    {
-      "key": "bizinfo_PBLN_000000000122669",
-      "title": "[경기] 2026년 지역 기후테크 크라우드펀딩 지원사업 참여기업 모집 공고",
-      "tier": "orange",
-      "deadline": "2026-06-07",
-      "pdf_text_chars": 4403
     },
     {
       "key": "bizinfo_PBLN_000000000121979",
@@ -5634,10 +5606,10 @@
     }
   ],
   "stats": {
-    "total_items": 1794,
+    "total_items": 1783,
     "red": 0,
     "expired": 0,
-    "no_pdf": 961,
+    "no_pdf": 954,
     "already_scored": 29
   }
 }
