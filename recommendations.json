@@ -1,7 +1,7 @@
 {
   "schema_version": 5,
   "last_updated": "2026-06-07",
-  "updated_at_kst": "2026-06-07T01:58:50+09:00",
+  "updated_at_kst": "2026-06-07T20:11:13+09:00",
   "red_count_today": 0,
   "reds_today": [
     {
@@ -42407,9 +42407,9 @@
       "deadline": "2026-06-08",
       "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177912",
       "tier": "orange",
-      "note": "3순위 (참고용): 지역 한정 desc: '세종 지역'",
+      "note": "3순위 (참고용): 기관 지역 한정 (agency: 대전관광공사)",
       "classify_evidence": {
-        "summary_reason": "3순위 (참고용): 지역 한정 desc: '세종 지역'",
+        "summary_reason": "3순위 (참고용): 기관 지역 한정 (agency: 대전관광공사)",
         "category_hints": [
           "global"
         ],
@@ -42427,7 +42427,7 @@
           "region": {
             "pass": false,
             "value": "대전",
-            "detail": "지역 한정 desc: '세종 지역'"
+            "detail": "기관 지역 한정 (agency: 대전관광공사)"
           },
           "biz_enyy": {
             "pass": true,
@@ -42457,11 +42457,11 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "지역 한정 desc: '세종 지역'"
+            "detail": "기관 지역 한정 (agency: 대전관광공사)"
           },
           "positive_hit": {
             "pass": false,
-            "detail": "3순위 (참고용): 지역 한정 desc: '세종 지역'"
+            "detail": "3순위 (참고용): 기관 지역 한정 (agency: 대전관광공사)"
           }
         },
         "risk_flags": [
@@ -42474,7 +42474,7 @@
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "지역 한정 desc: '세종 지역'"
+            "detail": "기관 지역 한정 (agency: 대전관광공사)"
           },
           "stage": {
             "level": "green",
@@ -42497,7 +42497,7 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "지역 한정 desc: '세종 지역'"
+            "msg": "기관 지역 한정 (agency: 대전관광공사)"
           },
           {
             "axis": "industry",
@@ -42506,7 +42506,7 @@
           }
         ],
         "audit_flags": [],
-        "tier_logic": "3순위 (참고용): 지역 한정 desc: '세종 지역'",
+        "tier_logic": "3순위 (참고용): 기관 지역 한정 (agency: 대전관광공사)",
         "classify_version": "v8.3"
       },
       "first_seen": "2026-06-02",
@@ -42531,7 +42531,7 @@
         "apply_online": "",
         "apply_guide": "tourbiz.daejeonsejong.or.kr/kr/notice_view.php?no=722&parent_no=41"
       },
-      "last_changed_at": "2026-06-06"
+      "last_changed_at": "2026-06-07"
     },
     {
       "pbancSn": "177895",
@@ -43151,9 +43151,9 @@
       "deadline": "2026-06-09",
       "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177580",
       "tier": "orange",
-      "note": "3순위 (참고용): 기관 지역 한정 (agency: 충남신용보증재단)",
+      "note": "3순위 (참고용): 지역 한정 desc: '충청남도 소재'",
       "classify_evidence": {
-        "summary_reason": "3순위 (참고용): 기관 지역 한정 (agency: 충남신용보증재단)",
+        "summary_reason": "3순위 (참고용): 지역 한정 desc: '충청남도 소재'",
         "category_hints": [
           "budget"
         ],
@@ -43171,7 +43171,7 @@
           "region": {
             "pass": false,
             "value": "충남",
-            "detail": "기관 지역 한정 (agency: 충남신용보증재단)"
+            "detail": "지역 한정 desc: '충청남도 소재'"
           },
           "biz_enyy": {
             "pass": true,
@@ -43201,18 +43201,18 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "기관 지역 한정 (agency: 충남신용보증재단)"
+            "detail": "지역 한정 desc: '충청남도 소재'"
           },
           "positive_hit": {
             "pass": false,
-            "detail": "3순위 (참고용): 기관 지역 한정 (agency: 충남신용보증재단)"
+            "detail": "3순위 (참고용): 지역 한정 desc: '충청남도 소재'"
           }
         },
         "risk_flags": [],
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "기관 지역 한정 (agency: 충남신용보증재단)"
+            "detail": "지역 한정 desc: '충청남도 소재'"
           },
           "stage": {
             "level": "green",
@@ -43235,11 +43235,11 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "기관 지역 한정 (agency: 충남신용보증재단)"
+            "msg": "지역 한정 desc: '충청남도 소재'"
           }
         ],
         "audit_flags": [],
-        "tier_logic": "3순위 (참고용): 기관 지역 한정 (agency: 충남신용보증재단)",
+        "tier_logic": "3순위 (참고용): 지역 한정 desc: '충청남도 소재'",
         "classify_version": "v8.3"
       },
       "first_seen": "2026-05-12",
@@ -43264,7 +43264,7 @@
         "apply_online": "https://www.cnsinbo.co.kr/reservation/educationView.do?m=1003&seq=399",
         "apply_guide": "www.cnsinbo.co.kr/boardCnts/view.do?m=030101&action=view&boardID=134&boardSeq=33765&viewBoardID=134&lev=0&s=cnsinbo"
       },
-      "last_changed_at": "2026-06-06"
+      "last_changed_at": "2026-06-07"
     },
     {
       "pbancSn": "bizinfo_PBLN_000000000122100",
@@ -43662,14 +43662,14 @@
         "classify_version": "v8.3-external"
       },
       "first_seen": "2026-05-19",
-      "last_seen": "2026-06-06",
+      "last_seen": "2026-06-07",
       "structured": {
         "intcNo": "326D00101001",
         "type": "모집공모",
         "title": "2026년 관계부처 합동 한류마케팅 참가기업 모집",
         "registDate": "26.05.19",
         "period": "26.05.19 ~ 26.06.09",
-        "views": "3089",
+        "views": "3170",
         "href": "/kocca/pims/view.do?intcNo=326D00101001&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
         "_source_page": 1
       }
@@ -46421,14 +46421,14 @@
         "classify_version": "v8.3-external"
       },
       "first_seen": "2026-05-20",
-      "last_seen": "2026-06-06",
+      "last_seen": "2026-06-07",
       "structured": {
         "intcNo": "326D00110001",
         "type": "모집공모",
         "title": "2026 대중음악 해외 쇼케이스(Korea Spotlight) 뮤지션 및 비즈니스 참가기업 모집(1차)",
         "registDate": "26.05.20",
         "period": "26.05.20 ~ 26.06.10",
-        "views": "3959",
+        "views": "4077",
         "href": "/kocca/pims/view.do?intcNo=326D00110001&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
         "_source_page": 1
       }
@@ -46832,14 +46832,14 @@
         "classify_version": "v8.3-external"
       },
       "first_seen": "2026-05-27",
-      "last_seen": "2026-06-06",
+      "last_seen": "2026-06-07",
       "structured": {
         "intcNo": "226D00103004",
         "type": "지정공모",
         "title": "2026년 인공지능 콘텐츠 제작지원(협력형) 수행기업 2차 추가모집 공고",
         "registDate": "26.05.27",
         "period": "26.05.27 ~ 26.06.10",
-        "views": "3778",
+        "views": "3893",
         "href": "/kocca/pims/view.do?intcNo=226D00103004&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
         "_source_page": 1
       }
@@ -51110,14 +51110,14 @@
         "classify_version": "v8.3-external"
       },
       "first_seen": "2026-05-21",
-      "last_seen": "2026-06-06",
+      "last_seen": "2026-06-07",
       "structured": {
         "intcNo": "126D00110009",
         "type": "자유공모",
         "title": "2026년 대중음악 비즈니스 인력양성 지원",
         "registDate": "26.05.20",
         "period": "26.05.20 ~ 26.06.11",
-        "views": "2502",
+        "views": "2582",
         "href": "/kocca/pims/view.do?intcNo=126D00110009&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
         "_source_page": 1
       }
@@ -59551,9 +59551,9 @@
       "deadline": "2026-06-14",
       "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177935",
       "tier": "orange",
-      "note": "3순위 (참고용): 기관 지역 한정 (agency: 경상북도 사회적경제지원센터)",
+      "note": "3순위 (참고용): 사업명에 지역 포함 (경북)",
       "classify_evidence": {
-        "summary_reason": "3순위 (참고용): 기관 지역 한정 (agency: 경상북도 사회적경제지원센터)",
+        "summary_reason": "3순위 (참고용): 사업명에 지역 포함 (경북)",
         "category_hints": [
           "social"
         ],
@@ -59571,7 +59571,7 @@
           "region": {
             "pass": false,
             "value": "경북",
-            "detail": "기관 지역 한정 (agency: 경상북도 사회적경제지원센터)"
+            "detail": "사업명에 지역 포함 (경북)"
           },
           "biz_enyy": {
             "pass": true,
@@ -59601,18 +59601,18 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "기관 지역 한정 (agency: 경상북도 사회적경제지원센터)"
+            "detail": "사업명에 지역 포함 (경북)"
           },
           "positive_hit": {
             "pass": false,
-            "detail": "3순위 (참고용): 기관 지역 한정 (agency: 경상북도 사회적경제지원센터)"
+            "detail": "3순위 (참고용): 사업명에 지역 포함 (경북)"
           }
         },
         "risk_flags": [],
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "기관 지역 한정 (agency: 경상북도 사회적경제지원센터)"
+            "detail": "사업명에 지역 포함 (경북)"
           },
           "stage": {
             "level": "green",
@@ -59635,11 +59635,11 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "기관 지역 한정 (agency: 경상북도 사회적경제지원센터)"
+            "msg": "사업명에 지역 포함 (경북)"
           }
         ],
         "audit_flags": [],
-        "tier_logic": "3순위 (참고용): 기관 지역 한정 (agency: 경상북도 사회적경제지원센터)",
+        "tier_logic": "3순위 (참고용): 사업명에 지역 포함 (경북)",
         "classify_version": "v8.3"
       },
       "first_seen": "2026-06-05",
@@ -66412,14 +66412,14 @@
         "classify_version": "v8.3-external"
       },
       "first_seen": "2026-06-05",
-      "last_seen": "2026-06-06",
+      "last_seen": "2026-06-07",
       "structured": {
         "intcNo": "326D00092008",
         "type": "모집공모",
         "title": "2026 KOMICS 프랑스 참가기업 모집공고 2차",
         "registDate": "26.06.05",
         "period": "26.06.05 ~ 26.06.16",
-        "views": "242",
+        "views": "319",
         "href": "/kocca/pims/view.do?intcNo=326D00092008&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
         "_source_page": 1
       }
@@ -76365,14 +76365,14 @@
         "classify_version": "v8.3-external"
       },
       "first_seen": "2026-06-05",
-      "last_seen": "2026-06-06",
+      "last_seen": "2026-06-07",
       "structured": {
         "intcNo": "326D00110002",
         "type": "모집공모",
         "title": "2026 대중음악 해외 쇼케이스(Korea Spotlight) 참가뮤지션 모집 공고(2차)",
         "registDate": "26.06.05",
         "period": "26.06.05 ~ 26.06.22",
-        "views": "268",
+        "views": "371",
         "href": "/kocca/pims/view.do?intcNo=326D00110002&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
         "_source_page": 1
       }
@@ -76423,14 +76423,14 @@
         "classify_version": "v8.3-external"
       },
       "first_seen": "2026-06-05",
-      "last_seen": "2026-06-06",
+      "last_seen": "2026-06-07",
       "structured": {
         "intcNo": "126D00110008",
         "type": "자유공모",
         "title": "[추가공고] 2026년 대중음악 공연 지역개최 활성화",
         "registDate": "26.06.05",
         "period": "26.06.05 ~ 26.06.22",
-        "views": "4048",
+        "views": "4153",
         "href": "/kocca/pims/view.do?intcNo=126D00110008&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
         "_source_page": 1
       }
@@ -77387,14 +77387,14 @@
         "classify_version": "v8.3-external"
       },
       "first_seen": "2026-06-04",
-      "last_seen": "2026-06-06",
+      "last_seen": "2026-06-07",
       "structured": {
         "intcNo": "326D00089008",
         "type": "모집공모",
         "title": "K-뷰티 브랜드의 유럽 시장 진출을 위한 Pitti Fragranze 24 CODE KOREA 참여브랜드 모집",
         "registDate": "26.06.04",
         "period": "26.06.18 ~ 26.06.23",
-        "views": "290",
+        "views": "368",
         "href": "/kocca/pims/view.do?intcNo=326D00089008&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
         "_source_page": 1
       }
@@ -85982,14 +85982,14 @@
         "classify_version": "v8.3-external"
       },
       "first_seen": "2026-06-02",
-      "last_seen": "2026-06-06",
+      "last_seen": "2026-06-07",
       "structured": {
         "intcNo": "326D00107004",
         "type": "모집공모",
         "title": "2026 시리즈 온 보드 2차 참가기업 모집 공고",
         "registDate": "26.06.02",
         "period": "26.06.02 ~ 26.06.30",
-        "views": "886",
+        "views": "979",
         "href": "/kocca/pims/view.do?intcNo=326D00107004&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
         "_source_page": 1
       }
@@ -88174,14 +88174,14 @@
         "classify_version": "v8.3-external"
       },
       "first_seen": "2026-06-04",
-      "last_seen": "2026-06-06",
+      "last_seen": "2026-06-07",
       "structured": {
         "intcNo": "326D00107005",
         "type": "모집공모",
         "title": "2026년 뉴미디어 콘텐츠상 후보자(작) 모집 공고",
         "registDate": "26.06.04",
         "period": "26.06.04 ~ 26.07.03",
-        "views": "559",
+        "views": "675",
         "href": "/kocca/pims/view.do?intcNo=326D00107005&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
         "_source_page": 1
       }
@@ -100267,7 +100267,7 @@
         "title": "2026년 글로벌게임허브센터 신규 입주기업 추가모집(상시) 공고",
         "registDate": "26.04.23",
         "period": "26.04.27 ~ 26.12.31",
-        "views": "4493",
+        "views": "4541",
         "href": "/kocca/pims/view.do?intcNo=326D00034004&menuNo=204104&recptSt=&category=&pageIndex=2&search=&searchWrd=",
         "_source_page": 2
       },
@@ -100312,7 +100312,7 @@
       "rationale_short": "허파랑 개인 명의 추천 / 레이어: 🌉브리지 / 경로: partial / source: kocca / 🌉 콘텐츠",
       "nogo_match": null,
       "source_priority": 1.05,
-      "last_seen": "2026-06-06",
+      "last_seen": "2026-06-07",
       "note": "도메인/지역 매칭 약함",
       "classify_evidence": {
         "summary_reason": "도메인/지역 매칭 약함",
@@ -104314,7 +104314,7 @@
           "region": {
             "pass": false,
             "value": "경남",
-            "detail": "사업명에 지역 포함 (경남)"
+            "detail": "지역 한정 desc: '경상남도 소재'"
           },
           "biz_enyy": {
             "pass": true,
@@ -104344,7 +104344,7 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "사업명에 지역 포함 (경남)"
+            "detail": "지역 한정 desc: '경상남도 소재'"
           },
           "positive_hit": {
             "pass": true,
@@ -104355,7 +104355,7 @@
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "사업명에 지역 포함 (경남)"
+            "detail": "지역 한정 desc: '경상남도 소재'"
           },
           "stage": {
             "level": "green",
@@ -104378,7 +104378,7 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "사업명에 지역 포함 (경남)"
+            "msg": "지역 한정 desc: '경상남도 소재'"
           },
           {
             "axis": "industry",
@@ -148419,19 +148419,19 @@
     }
   ],
   "_meta": {
-    "expired": [
-      "상명대학교 식품외식 푸드테크 기술사업화 사업단 연구팀 및 (예비)창업팀 모집"
-    ],
+    "expired": [],
     "new_added": [],
     "updated_today": [
-      "2026년 경북형 사회적경제 창업학교 참가자 모집"
+      "2026년 경북형 사회적경제 창업학교 참가자 모집",
+      "2026 관광 일자리 페스타 - 대전·세종편 참가기업 모집",
+      "2026년 6월 동네창업학교 교육생 모집 공고"
     ],
     "stats": {
       "green": 61,
       "yellow": 382,
       "orange": 1351,
       "red_excluded": 0,
-      "expired_removed": 1,
+      "expired_removed": 0,
       "total_pool": 1794,
       "rss_total": 313,
       "raw_fetched": 420
@@ -148674,10 +148674,10 @@
     },
     {
       "date": "2026-06-07",
-      "at_kst": "2026-06-07T01:58:50+09:00",
+      "at_kst": "2026-06-07T20:11:13+09:00",
       "new": 0,
-      "updated": 1,
-      "expired": 1,
+      "updated": 3,
+      "expired": 0,
       "total": 1794,
       "red_excluded": 0
     }
