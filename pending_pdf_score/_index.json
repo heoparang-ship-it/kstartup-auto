@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-13T20:20:42.418556+09:00",
+  "generated_at": "2026-06-14T02:15:38.575888+09:00",
   "schema_version": 2,
   "pdf_text_cap": 15000,
-  "target_count": 837,
+  "target_count": 834,
   "pending": [
     {
       "key": "bizinfo_PBLN_000000000122763",
@@ -1536,13 +1536,6 @@
       "tier": "yellow",
       "deadline": "",
       "pdf_text_chars": 10702
-    },
-    {
-      "key": "bizinfo_PBLN_000000000122717",
-      "title": "[대구] 2026년 마을기업 사업기초 역량 강화 지원사업 모집공고",
-      "tier": "orange",
-      "deadline": "2026-06-13",
-      "pdf_text_chars": 2982
     },
     {
       "key": "bizinfo_PBLN_000000000122076",
@@ -4135,13 +4128,6 @@
       "pdf_text_chars": 5142
     },
     {
-      "key": "bizinfo_PBLN_000000000121656",
-      "title": "[전남] 여수시 2026년 석유화학산업 고용위기 대응 기업지원사업 모집 공고(지역ㆍ산업맞춤형 일자리지원 사업)",
-      "tier": "orange",
-      "deadline": "",
-      "pdf_text_chars": 12656
-    },
-    {
       "key": "bizinfo_PBLN_000000000121646",
       "title": "[경북] 안동시 2026년 소상공인 카드수수료 지원사업 참여점포 모집 공고",
       "tier": "orange",
@@ -4896,13 +4882,6 @@
       "tier": "orange",
       "deadline": "",
       "pdf_text_chars": 15070
-    },
-    {
-      "key": "bizinfo_PBLN_000000000119849",
-      "title": "[경남] 자동차부품업 플러스 일자리사업 참여자 모집 공고",
-      "tier": "orange",
-      "deadline": "",
-      "pdf_text_chars": 15063
     },
     {
       "key": "bizinfo_PBLN_000000000119836",
@@ -5865,10 +5844,10 @@
     }
   ],
   "stats": {
-    "total_items": 1864,
+    "total_items": 1859,
     "red": 0,
     "expired": 0,
-    "no_pdf": 998,
+    "no_pdf": 996,
     "already_scored": 29
   }
 }
