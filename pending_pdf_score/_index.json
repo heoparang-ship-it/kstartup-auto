@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-14T20:38:32.604824+09:00",
+  "generated_at": "2026-06-15T02:11:59.919369+09:00",
   "schema_version": 2,
   "pdf_text_cap": 15000,
-  "target_count": 834,
+  "target_count": 831,
   "pending": [
     {
       "key": "bizinfo_PBLN_000000000122763",
@@ -1536,27 +1536,6 @@
       "tier": "yellow",
       "deadline": "",
       "pdf_text_chars": 10702
-    },
-    {
-      "key": "bizinfo_PBLN_000000000122076",
-      "title": "[경남] 진주시 2026년 상반기 중소기업 단체 수출보험료 지원사업 공고",
-      "tier": "orange",
-      "deadline": "2026-06-14",
-      "pdf_text_chars": 5176
-    },
-    {
-      "key": "bizinfo_PBLN_000000000122823",
-      "title": "[충북] 2026년 수출ㆍ온라인 자문관 활용 현장지원 사업 참여기업 모집공고 (해외 부문)",
-      "tier": "orange",
-      "deadline": "2026-06-14",
-      "pdf_text_chars": 1694
-    },
-    {
-      "key": "bizinfo_PBLN_000000000122787",
-      "title": "[대전] 2026년 민간 과학문화 활동 지원사업 모집 공고(지역과학문화 역량강화사업 일환)",
-      "tier": "orange",
-      "deadline": "2026-06-14",
-      "pdf_text_chars": 18739
     },
     {
       "key": "bizinfo_PBLN_000000000122097",
@@ -5844,10 +5823,10 @@
     }
   ],
   "stats": {
-    "total_items": 1859,
+    "total_items": 1841,
     "red": 0,
     "expired": 0,
-    "no_pdf": 996,
+    "no_pdf": 981,
     "already_scored": 29
   }
 }
