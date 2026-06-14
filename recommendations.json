@@ -1,7 +1,7 @@
 {
   "schema_version": 5,
   "last_updated": "2026-06-14",
-  "updated_at_kst": "2026-06-14T02:10:08+09:00",
+  "updated_at_kst": "2026-06-14T20:32:47+09:00",
   "red_count_today": 0,
   "reds_today": [
     {
@@ -38538,7 +38538,7 @@
           "region": {
             "pass": false,
             "value": "전국",
-            "detail": "지역 한정 desc: '전남 소재'"
+            "detail": "사업명에 지역 포함 (광주)"
           },
           "biz_enyy": {
             "pass": true,
@@ -38568,7 +38568,7 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "지역 한정 desc: '전남 소재'"
+            "detail": "사업명에 지역 포함 (광주)"
           },
           "positive_hit": {
             "pass": false,
@@ -38579,7 +38579,7 @@
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "지역 한정 desc: '전남 소재'"
+            "detail": "사업명에 지역 포함 (광주)"
           },
           "stage": {
             "level": "green",
@@ -38602,7 +38602,7 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "지역 한정 desc: '전남 소재'"
+            "msg": "사업명에 지역 포함 (광주)"
           }
         ],
         "audit_flags": [],
@@ -39158,9 +39158,9 @@
       "deadline": "2026-06-14",
       "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=177935",
       "tier": "orange",
-      "note": "3순위 (참고용): 기관 지역 한정 (agency: 경상북도 사회적경제지원센터)",
+      "note": "3순위 (참고용): 사업명에 지역 포함 (경북)",
       "classify_evidence": {
-        "summary_reason": "3순위 (참고용): 기관 지역 한정 (agency: 경상북도 사회적경제지원센터)",
+        "summary_reason": "3순위 (참고용): 사업명에 지역 포함 (경북)",
         "category_hints": [
           "social"
         ],
@@ -39178,7 +39178,7 @@
           "region": {
             "pass": false,
             "value": "경북",
-            "detail": "기관 지역 한정 (agency: 경상북도 사회적경제지원센터)"
+            "detail": "사업명에 지역 포함 (경북)"
           },
           "biz_enyy": {
             "pass": true,
@@ -39208,18 +39208,18 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "기관 지역 한정 (agency: 경상북도 사회적경제지원센터)"
+            "detail": "사업명에 지역 포함 (경북)"
           },
           "positive_hit": {
             "pass": false,
-            "detail": "3순위 (참고용): 기관 지역 한정 (agency: 경상북도 사회적경제지원센터)"
+            "detail": "3순위 (참고용): 사업명에 지역 포함 (경북)"
           }
         },
         "risk_flags": [],
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "기관 지역 한정 (agency: 경상북도 사회적경제지원센터)"
+            "detail": "사업명에 지역 포함 (경북)"
           },
           "stage": {
             "level": "green",
@@ -39242,11 +39242,11 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "기관 지역 한정 (agency: 경상북도 사회적경제지원센터)"
+            "msg": "사업명에 지역 포함 (경북)"
           }
         ],
         "audit_flags": [],
-        "tier_logic": "3순위 (참고용): 기관 지역 한정 (agency: 경상북도 사회적경제지원센터)",
+        "tier_logic": "3순위 (참고용): 사업명에 지역 포함 (경북)",
         "classify_version": "v8.3"
       },
       "first_seen": "2026-06-05",
@@ -39271,7 +39271,7 @@
         "apply_online": "https://buly.kr/5q9PXN5",
         "apply_guide": "buly.kr/6MtlXVL"
       },
-      "last_changed_at": "2026-06-13"
+      "last_changed_at": "2026-06-14"
     },
     {
       "pbancSn": "bizinfo_PBLN_000000000122823",
@@ -46774,7 +46774,7 @@
         "title": "2026 KOMICS 프랑스 참가기업 모집공고 2차",
         "registDate": "26.06.05",
         "period": "26.06.05 ~ 26.06.16",
-        "views": "1163",
+        "views": "1217",
         "href": "/kocca/pims/view.do?intcNo=326D00092008&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
         "_source_page": 1
       }
@@ -65309,7 +65309,7 @@
         "title": "2026 대중음악 해외 쇼케이스(Korea Spotlight) 참가뮤지션 모집 공고(2차)",
         "registDate": "26.06.05",
         "period": "26.06.05 ~ 26.06.22",
-        "views": "1667",
+        "views": "1732",
         "href": "/kocca/pims/view.do?intcNo=326D00110002&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
         "_source_page": 1
       }
@@ -65367,7 +65367,7 @@
         "title": "[추가공고] 2026년 대중음악 공연 지역개최 활성화",
         "registDate": "26.06.05",
         "period": "26.06.05 ~ 26.06.22",
-        "views": "5278",
+        "views": "5341",
         "href": "/kocca/pims/view.do?intcNo=126D00110008&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
         "_source_page": 1
       }
@@ -65789,7 +65789,7 @@
         "title": "2026 원로 대중문화예술인 활동지원 프로그램",
         "registDate": "26.06.08",
         "period": "26.06.08 ~ 26.06.22",
-        "views": "940",
+        "views": "1010",
         "href": "/kocca/pims/view.do?intcNo=126D00110010&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
         "_source_page": 1
       }
@@ -67952,7 +67952,7 @@
         "title": "K-뷰티 브랜드의 유럽 시장 진출을 위한 Pitti Fragranze 24 CODE KOREA 참여브랜드 모집",
         "registDate": "26.06.04",
         "period": "26.06.18 ~ 26.06.23",
-        "views": "1178",
+        "views": "1233",
         "href": "/kocca/pims/view.do?intcNo=326D00089008&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
         "_source_page": 1
       }
@@ -68843,7 +68843,7 @@
         "title": "2026년 CKL스테이지 정기대관(2차) 공고",
         "registDate": "26.06.09",
         "period": "26.06.09 ~ 26.06.23",
-        "views": "776",
+        "views": "842",
         "href": "/kocca/pims/view.do?intcNo=326D00068008&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
         "_source_page": 1
       }
@@ -75769,7 +75769,7 @@
         "title": "2026년 칠레 K-콘텐츠 엑스포 참가기업 모집",
         "registDate": "26.06.08",
         "period": "26.06.08 ~ 26.06.26",
-        "views": "1087",
+        "views": "1164",
         "href": "/kocca/pims/view.do?intcNo=326D00089007&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
         "_source_page": 1
       }
@@ -84230,7 +84230,7 @@
         "title": "2026 시리즈 온 보드 2차 참가기업 모집 공고",
         "registDate": "26.06.02",
         "period": "26.06.02 ~ 26.06.30",
-        "views": "1905",
+        "views": "1954",
         "href": "/kocca/pims/view.do?intcNo=326D00107004&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
         "_source_page": 1
       }
@@ -88923,7 +88923,7 @@
         "title": "2026년 뉴미디어 콘텐츠상 후보자(작) 모집 공고",
         "registDate": "26.06.04",
         "period": "26.06.04 ~ 26.07.03",
-        "views": "2017",
+        "views": "2096",
         "href": "/kocca/pims/view.do?intcNo=326D00107005&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
         "_source_page": 1
       }
@@ -93056,7 +93056,7 @@
           "region": {
             "pass": false,
             "value": "전국",
-            "detail": "기관 지역 한정 (agency: 충남신용보증재단)"
+            "detail": "지역 한정 desc: '충청남도 소재'"
           },
           "biz_enyy": {
             "pass": true,
@@ -93086,7 +93086,7 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "기관 지역 한정 (agency: 충남신용보증재단)"
+            "detail": "지역 한정 desc: '충청남도 소재'"
           },
           "positive_hit": {
             "pass": false,
@@ -93097,7 +93097,7 @@
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "기관 지역 한정 (agency: 충남신용보증재단)"
+            "detail": "지역 한정 desc: '충청남도 소재'"
           },
           "stage": {
             "level": "green",
@@ -93120,7 +93120,7 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "기관 지역 한정 (agency: 충남신용보증재단)"
+            "msg": "지역 한정 desc: '충청남도 소재'"
           }
         ],
         "audit_flags": [],
@@ -104536,7 +104536,7 @@
         "title": "2026년 글로벌게임허브센터 신규 입주기업 추가모집(상시) 공고",
         "registDate": "26.04.23",
         "period": "26.04.27 ~ 26.12.31",
-        "views": "5093",
+        "views": "5150",
         "href": "/kocca/pims/view.do?intcNo=326D00034004&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
         "_source_page": 1
       },
@@ -154300,21 +154300,17 @@
     }
   ],
   "_meta": {
-    "expired": [
-      "[대구] 2026년 마을기업 사업기초 역량 강화 지원사업 모집공고",
-      "[경기] 2026년 드론산업 육성 지원사업 모집 공고(지역 수요기반 드론 활용 사업모델 발굴 및 실증 지원) (stale)",
-      "[전남] 여수시 2026년 석유화학산업 고용위기 대응 기업지원사업 모집 공고(지역ㆍ산업맞춤형 일자리지원 사업) (stale)",
-      "[경남] 자동차부품업 플러스 일자리사업 참여자 모집 공고 (stale)",
-      "[전북] 2026년 화학물질 환경안전(ESH) 패키지 지원사업 시행계획 및 ESH 컨설팅 신청 사업장 모집 공고 (stale)"
-    ],
+    "expired": [],
     "new_added": [],
-    "updated_today": [],
+    "updated_today": [
+      "2026년 경북형 사회적경제 창업학교 참가자 모집"
+    ],
     "stats": {
       "green": 50,
       "yellow": 387,
       "orange": 1422,
       "red_excluded": 0,
-      "expired_removed": 5,
+      "expired_removed": 0,
       "total_pool": 1859,
       "rss_total": 339,
       "raw_fetched": 418
@@ -154575,10 +154571,10 @@
     },
     {
       "date": "2026-06-14",
-      "at_kst": "2026-06-14T02:10:08+09:00",
+      "at_kst": "2026-06-14T20:32:47+09:00",
       "new": 0,
-      "updated": 0,
-      "expired": 5,
+      "updated": 1,
+      "expired": 0,
       "total": 1859,
       "red_excluded": 0
     }
