@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-20T20:27:19.796656+09:00",
+  "generated_at": "2026-06-21T02:20:05.275703+09:00",
   "schema_version": 2,
   "pdf_text_cap": 15000,
-  "target_count": 796,
+  "target_count": 795,
   "pending": [
     {
       "key": "bizinfo_PBLN_000000000123221",
@@ -1116,13 +1116,6 @@
       "tier": "yellow",
       "deadline": "",
       "pdf_text_chars": 15091
-    },
-    {
-      "key": "bizinfo_PBLN_000000000121803",
-      "title": "2026년 소공인 판로개척지원사업 모집 공고",
-      "tier": "yellow",
-      "deadline": "",
-      "pdf_text_chars": 15064
     },
     {
       "key": "bizinfo_PBLN_000000000121765",
@@ -5578,10 +5571,10 @@
     }
   ],
   "stats": {
-    "total_items": 1788,
+    "total_items": 1783,
     "red": 0,
     "expired": 0,
-    "no_pdf": 963,
+    "no_pdf": 959,
     "already_scored": 29
   }
 }
