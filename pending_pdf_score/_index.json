@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-21T20:53:29.992433+09:00",
+  "generated_at": "2026-06-22T02:23:44.329802+09:00",
   "schema_version": 2,
   "pdf_text_cap": 15000,
-  "target_count": 795,
+  "target_count": 790,
   "pending": [
     {
       "key": "bizinfo_PBLN_000000000123221",
@@ -1382,41 +1382,6 @@
       "tier": "yellow",
       "deadline": "",
       "pdf_text_chars": 3657
-    },
-    {
-      "key": "bizinfo_PBLN_000000000122711",
-      "title": "[경남] 2026년 스타트업 혁신기술 밸류업 지원사업 모집 공고",
-      "tier": "orange",
-      "deadline": "2026-06-21",
-      "pdf_text_chars": 5820
-    },
-    {
-      "key": "bizinfo_PBLN_000000000122818",
-      "title": "[광주] AI 기반 중소기업 마케팅 경쟁력 강화 기업지원사업 참여기업 모집 공고",
-      "tier": "orange",
-      "deadline": "2026-06-21",
-      "pdf_text_chars": 65
-    },
-    {
-      "key": "bizinfo_PBLN_000000000122977",
-      "title": "[경기] 2026년 경기도지정형창업혁신공간 청년창업기업 스케일업 홍보&마케팅 지원 공고",
-      "tier": "orange",
-      "deadline": "2026-06-21",
-      "pdf_text_chars": 2754
-    },
-    {
-      "key": "bizinfo_PBLN_000000000123082",
-      "title": "[경남] 2026 일본 동경 씨푸드 박람회 참가 지원사업 참가업체(수산식품) 모집 공고",
-      "tier": "orange",
-      "deadline": "2026-06-21",
-      "pdf_text_chars": 5105
-    },
-    {
-      "key": "bizinfo_PBLN_000000000123068",
-      "title": "[세종] 2026년 한글문화상품 개발지원 공고",
-      "tier": "orange",
-      "deadline": "2026-06-21",
-      "pdf_text_chars": 99
     },
     {
       "key": "bizinfo_PBLN_000000000121376",
@@ -5571,10 +5536,10 @@
     }
   ],
   "stats": {
-    "total_items": 1783,
+    "total_items": 1766,
     "red": 0,
     "expired": 0,
-    "no_pdf": 959,
+    "no_pdf": 947,
     "already_scored": 29
   }
 }
