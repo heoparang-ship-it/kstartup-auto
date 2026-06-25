@@ -1,7 +1,7 @@
 {
   "schema_version": 5,
   "last_updated": "2026-06-25",
-  "updated_at_kst": "2026-06-25T02:47:23+09:00",
+  "updated_at_kst": "2026-06-25T20:41:37+09:00",
   "red_count_today": 0,
   "reds_today": [
     {
@@ -14493,6 +14493,61 @@
       "raw_fetched_at": "2026-06-24"
     },
     {
+      "pbancSn": "itp_10887",
+      "title": "2026년 인천 과학기술혁신연구회 기획위원 모집공고",
+      "agency": "인천테크노파크 혁신정책팀",
+      "deadline": "2026-06-30",
+      "url": "https://itp.or.kr/intro.asp?tmid=13&seq=10887",
+      "tier": "yellow",
+      "note": "인천 ITP 혁신정책팀 부서",
+      "classify_evidence": {
+        "summary_reason": "인천 ITP 혁신정책팀 부서",
+        "category_hints": [
+          "incheon",
+          "itp",
+          "혁신정책팀"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "ITP 진행중 항목"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-06-30",
+            "detail": "ITP 마감일"
+          },
+          "region": {
+            "pass": true,
+            "value": "인천",
+            "detail": "ITP=인천 거점"
+          }
+        },
+        "axis_scores": {
+          "region": "green",
+          "stage": "green",
+          "industry": "yellow",
+          "nature": "yellow",
+          "qualification": "green"
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "ITP 혁신정책팀 부서별 룰 → yellow",
+        "classify_version": "v8.3-itp"
+      },
+      "first_seen": "2026-06-25",
+      "last_seen": "2026-06-25",
+      "structured": {
+        "source_kind": "itp",
+        "itp_seq": "10887",
+        "itp_dept": "혁신정책팀",
+        "attachments": [],
+        "recruiting": true,
+        "region": "인천"
+      }
+    },
+    {
       "pbancSn": "bizinfo_PBLN_000000000123149",
       "id": "bizinfo_PBLN_000000000123149",
       "source": "bizinfo",
@@ -20116,6 +20171,121 @@
       },
       "raw_content": "Error>상세화면\n본문 바로가기\n주메뉴 바로가기\n에러가 발생했습니다!",
       "raw_fetched_at": "2026-06-24"
+    },
+    {
+      "pbancSn": "178253",
+      "title": "「민관협력 오픈이노베이션 지원」2026년 제2차 전략과제 해결형(Top-Down) 창업기업 모집공고",
+      "agency": "중소벤처기업부",
+      "deadline": "2026-07-14",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178253",
+      "tier": "yellow",
+      "note": "2순위: 모든 축 green/yellow, 중립 매칭 — 직접 지원 가능",
+      "classify_evidence": {
+        "summary_reason": "2순위: 모든 축 green/yellow, 중립 매칭 — 직접 지원 가능",
+        "category_hints": [],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "모집 중"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-07-14",
+            "detail": "마감 전"
+          },
+          "region": {
+            "pass": true,
+            "value": "전국",
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "biz_enyy": {
+            "pass": true,
+            "value": "7년미만",
+            "detail": "업력 허용 (7년미만)"
+          },
+          "exclude_target": {
+            "pass": true,
+            "value": "",
+            "detail": "자격 제한 없음"
+          },
+          "industry": {
+            "pass": true,
+            "detail": "업종 제한 없음"
+          },
+          "qualification": {
+            "pass": true,
+            "detail": "자격 제한 없음"
+          },
+          "stage": {
+            "pass": true,
+            "detail": "업력 허용 (7년미만)"
+          },
+          "nature": {
+            "pass": true,
+            "detail": "성격 분류 애매 (biz_class='행사ㆍ네트워크')"
+          },
+          "region_keyword": {
+            "pass": true,
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "positive_hit": {
+            "pass": true,
+            "detail": "2순위: 모든 축 green/yellow, 중립 매칭 — 직접 지원 가능"
+          }
+        },
+        "risk_flags": [],
+        "axis_scores": {
+          "region": {
+            "level": "green",
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "stage": {
+            "level": "green",
+            "detail": "업력 허용 (7년미만)"
+          },
+          "industry": {
+            "level": "green",
+            "detail": "업종 제한 없음"
+          },
+          "nature": {
+            "level": "yellow",
+            "detail": "성격 분류 애매 (biz_class='행사ㆍ네트워크')"
+          },
+          "qualification": {
+            "level": "green",
+            "detail": "자격 제한 없음"
+          }
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "2순위: 모든 축 green/yellow, 중립 매칭 — 직접 지원 가능",
+        "classify_version": "v8.3"
+      },
+      "first_seen": "2026-06-25",
+      "last_seen": "2026-06-25",
+      "structured": {
+        "pbanc_sn_int": 178253,
+        "integrated": true,
+        "recruiting": true,
+        "start_date": "2026-06-24",
+        "end_date": "2026-07-14",
+        "agency_type": "공공기관",
+        "biz_class": "행사ㆍ네트워크",
+        "region": "전국",
+        "biz_enyy": "7년미만",
+        "age_range": "만 20세 미만,만 20세 이상 ~ 만 39세 이하,만 40세 이상",
+        "apply_target": "일반인,일반기업",
+        "apply_target_desc": "모집공고일 기준 창업 7년이내 창업기업 \r\n※ 상세내용은 공고문 내 '신청 자격' 확인",
+        "exclude_target": "",
+        "preferential": "",
+        "content": "「2026년 민관협력 오픈이노베이션 지원」전략과제 해결형 협업 과제 수행에 참여할 창업기업을 다음과 같이 모집합니다.",
+        "integrated_name": "민관협력 오픈이노베이션 지원사업",
+        "apply_online": "https://www.k-startup.go.kr/web/contents/webPMSBizUnvs.do?returnUrl=/screen/BMO0101M01?pbancId=0676501",
+        "apply_guide": ""
+      },
+      "raw_content": "「민관협력 오픈이노베이션 지원」2026년 제2차 전략과제 해결형(Top-Down) 창업기업 모집공고\n지원분야\n행사ㆍ네트워크\n대상연령\n전체\n기관구분\n공공기관\n담당부서\n민관협력실\n지역\n전국\n접수기간\n2026-06-24 ~ 2026-07-14 16:00\n주관기관명\n창업진흥원\n대상\n일반인, 일반기업\n창업업력\n7년미만\n연락처\n1357\n공고 제2026-416호\n「민관협력 오픈이노베이션 지원」2026년 제2차 전략과제 해결형(Top-Down) 창업기업 모집공고\n「2026년 민관협력 오픈이노베이션 지원」전략과제 해결형 협업 과제 수행에 참여할 창업기업을 다음과 같이 모집합니다.\n2026년 06월 24일\n중소벤처기업부\n신청방법 및 대상\n신청기간\n2026.06.24(수) 13:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t~\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t2026.07.14(화) 16:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t까지\n신청방법\n온라인 접수 :\n접수 바로가기\n신청대상\n모집공고일 기준 창업 7년이내 창업기업\n※ 상세내용은 공고문 내 '신청 자격' 확인\n신청 시 요청하는 정보(개인정보포함)는 사업운영기관에서 관리되오니 이점 반드시 유의하여 주시기 바랍니다.\n제출서류\n사업계획서 1부\n※ 별첨 양식 확인\n기타 제출 서류 각 1부\n법인등기사항전부증명서, 신분 확인 서류, 사업자등록증명, 창업기업 확인서 등\n※ 상세내용은 공고문 내 '제출 서류' 확인\n제출하신 서류는 사업운영기관에서 관리되오니 서류 반환 등 문의는 해당 기관으로 하시기 바랍니다.\n선정절차 및 평가방법\n2단계 평가\n서류평가 → 발표평가를 통해 최종 선정\n지원내용\n사업화 자금 지원 및 기술개발사업(R&D) 연계\n- 사업화 자금 : 협업 지원금 최대 1.4억원 지원\n- 후속 연계지원 : 중기부 '창업성장기술개발' 및 '민관공동기술사업화(구매연계·상생협력)' 연계 지원\n※ 상세내용은 공고문 내 '지원내용' 확인\n문의처\nK-Startup 시스템 문의\n국번없이 1357\n사업 문의\n서울창조경제혁신센터 : 02-739-7328, 9317, 8168\n자세한 내용은 첨부파일 참조 및 문의처로 문의하여 주시기 바랍니다.\nK-Startup에 공고되는 정보는 해당 기관의 요청에 의해 제공됩니다. 입주, 교육, 사업 신청 시 요청하는 정보(개인정보 포함)는 해당 기관에서 관리 \t되오니\n이점 유의하여 주시기 바랍니다.\n첨부파일 일괄 다운로드\n「민관협력 오픈이노베이션 지원」 2026년 제2차 전략과제 해결형 창업기업 모집공고.hwpx\n바로보기\n다운로드\n「민관협력 오픈이노베이션 지원」 2026년 제2차 전략과제 해결형 창업기업 모집공고.pdf\n바로보기\n다운로드\n[별첨 1] 수요기업 과제소개서.hwpx\n바로보기\n다운로드\n[별첨 2] 사업 신청 매뉴얼.pdf\n바로보기\n다운로드\n본 저작물은 창업진흥원(K-Startup)이 게시한 공공누리 제1유형의 저작물이며, 공공데이터포털(www.data.go.kr)에서 공공데이터로 개방중이며 무료로 활용할 수 있습니다.\n사업신청 바로가기\n목록",
+      "raw_fetched_at": "2026-06-25"
     },
     {
       "pbancSn": "bizinfo_PBLN_000000000122384",
@@ -37795,8 +37965,8 @@
         "preferential": "",
         "content": "서울창업허브는 서울 혁신기업의 글로벌 시장 진출을 지원하고자, 민간 전문 액셀러레이터 및 유관 기관, 현지 전문가 그룹과 협력하여 글로벌 진출 프로그램을 운영합니다. 이에 프로그램에 참여할 우수 혁신기업을 모집하오니 많은 참여 바랍니다.",
         "integrated_name": "2026 서울창업허브 글로벌 진출 「PoC·스케일업·액셀러레이팅」 참여기업 2차 모집",
-        "apply_online": "www.startup-plus.kr/project/PRJ007150",
-        "apply_guide": "www.startup-plus.kr/project/PRJ007150"
+        "apply_online": "https://www.startup-plus.kr/project/PRJ007163",
+        "apply_guide": "www.startup-plus.kr/project/PRJ007163"
       }
     },
     {
@@ -42325,7 +42495,7 @@
         "title": "2026년 칠레 K-콘텐츠 엑스포 참가기업 모집",
         "registDate": "26.06.08",
         "period": "26.06.08 ~ 26.06.26",
-        "views": "2509",
+        "views": "2556",
         "href": "/kocca/pims/view.do?intcNo=326D00089007&menuNo=204104&recptSt=&category=&pageIndex=2&search=&searchWrd=",
         "_source_page": 2
       }
@@ -55999,7 +56169,7 @@
         "title": "2026 시리즈 온 보드 2차 참가기업 모집 공고",
         "registDate": "26.06.02",
         "period": "26.06.02 ~ 26.06.30",
-        "views": "2762",
+        "views": "2797",
         "href": "/kocca/pims/view.do?intcNo=326D00107004&menuNo=204104&recptSt=&category=&pageIndex=2&search=&searchWrd=",
         "_source_page": 2
       }
@@ -59520,7 +59690,7 @@
         "title": "2027년 병역지정업체 신규선정 및 산업기능요원 필요인원 신청 접수 안내(게임 분야)",
         "registDate": "26.06.15",
         "period": "26.06.15 ~ 26.06.30",
-        "views": "1228",
+        "views": "1271",
         "href": "/kocca/pims/view.do?intcNo=326D00034005&menuNo=204104&recptSt=&category=&pageIndex=2&search=&searchWrd=",
         "_source_page": 2
       }
@@ -60684,7 +60854,7 @@
         "title": "2026년 VP 활용 콘텐츠 제작 인프라 지원 공모",
         "registDate": "26.06.18",
         "period": "26.06.18 ~ 26.06.30",
-        "views": "1506",
+        "views": "1615",
         "href": "/kocca/pims/view.do?intcNo=326D00059001&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
         "_source_page": 1
       }
@@ -64647,7 +64817,7 @@
       "source_label": "한국콘텐츠진흥원 KOCCA",
       "title": "2026 차이나 라이선싱 엑스포 참가사 모집",
       "agency": "한국콘텐츠진흥원",
-      "url": "https://www.kocca.kr/kocca/pims/view.do?intcNo=326D00091010&menuNo=204104&recptSt=&category=&pageIndex=2&search=&searchWrd=",
+      "url": "https://www.kocca.kr/kocca/pims/view.do?intcNo=326D00091010&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
       "deadline": "2026-07-01",
       "tier": "orange",
       "note": "도메인/지역 매칭 약함",
@@ -64693,9 +64863,9 @@
         "title": "2026 차이나 라이선싱 엑스포 참가사 모집",
         "registDate": "26.06.16",
         "period": "26.06.16 ~ 26.07.01",
-        "views": "1679",
-        "href": "/kocca/pims/view.do?intcNo=326D00091010&menuNo=204104&recptSt=&category=&pageIndex=2&search=&searchWrd=",
-        "_source_page": 2
+        "views": "1784",
+        "href": "/kocca/pims/view.do?intcNo=326D00091010&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
+        "_source_page": 1
       }
     },
     {
@@ -64751,7 +64921,7 @@
         "title": "2026 브랜드 라이선싱 유럽 참가사 모집",
         "registDate": "26.06.16",
         "period": "26.06.16 ~ 26.07.01",
-        "views": "1285",
+        "views": "1343",
         "href": "/kocca/pims/view.do?intcNo=326D00091009&menuNo=204104&recptSt=&category=&pageIndex=2&search=&searchWrd=",
         "_source_page": 2
       }
@@ -66110,7 +66280,7 @@
         "title": "2026년 글로벌 뮤직 페어(MU:CON 2026) 쇼케이스ㆍ비즈니스 프로그램 참가 뮤지션 모집",
         "registDate": "26.06.16",
         "period": "26.06.16 ~ 26.07.02",
-        "views": "2362",
+        "views": "2520",
         "href": "/kocca/pims/view.do?intcNo=326D00110003&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
         "_source_page": 1
       }
@@ -67997,7 +68167,7 @@
         "title": "2026년 뉴미디어 콘텐츠상 후보자(작) 모집 공고",
         "registDate": "26.06.04",
         "period": "26.06.04 ~ 26.07.03",
-        "views": "3379",
+        "views": "3466",
         "href": "/kocca/pims/view.do?intcNo=326D00107005&menuNo=204104&recptSt=&category=&pageIndex=2&search=&searchWrd=",
         "_source_page": 2
       }
@@ -68471,7 +68641,7 @@
         "title": "2026 Digicon6 Aisa 한국지역어워드 공모",
         "registDate": "26.06.15",
         "period": "26.06.15 ~ 26.07.03",
-        "views": "1659",
+        "views": "1700",
         "href": "/kocca/pims/view.do?intcNo=326D00037007&menuNo=204104&recptSt=&category=&pageIndex=2&search=&searchWrd=",
         "_source_page": 2
       }
@@ -69111,7 +69281,7 @@
         "title": "2026 만화웹툰 번역 등 해외진출 지원(수요기업) 2차 모집",
         "registDate": "26.06.17",
         "period": "26.06.17 ~ 26.07.03",
-        "views": "1226",
+        "views": "1331",
         "href": "/kocca/pims/view.do?intcNo=326D00092009&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
         "_source_page": 1
       }
@@ -72009,6 +72179,132 @@
       }
     },
     {
+      "pbancSn": "178018",
+      "title": "2026년 WoW!메이커스 글로벌 프론티어 @베트남 참여기업 모집 [베트남 시장 진출]- 모집기한 연장",
+      "agency": "수원대학교 WoW!메이커스",
+      "deadline": "2026-07-03",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178018",
+      "tier": "orange",
+      "note": "검토 매칭 (전국/시설ㆍ공간ㆍ보육)",
+      "classify_evidence": {
+        "summary_reason": "검토 매칭 (전국/시설ㆍ공간ㆍ보육)",
+        "category_hints": [
+          "global"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "모집 중"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-07-03",
+            "detail": "마감 전"
+          },
+          "region": {
+            "pass": false,
+            "value": "전국",
+            "detail": "경기 시 기관 (수원 in agency)"
+          },
+          "biz_enyy": {
+            "pass": true,
+            "value": "7년미만",
+            "detail": "업력 허용 (7년미만)"
+          },
+          "exclude_target": {
+            "pass": true,
+            "value": "SW기업 제외",
+            "detail": "자격 제한 없음"
+          },
+          "industry": {
+            "pass": false,
+            "detail": "업종 한정 (메이커)"
+          },
+          "qualification": {
+            "pass": true,
+            "detail": "자격 제한 없음"
+          },
+          "stage": {
+            "pass": true,
+            "detail": "업력 허용 (7년미만)"
+          },
+          "nature": {
+            "pass": true,
+            "detail": "간접 지원성 (시설ㆍ공간ㆍ보육)"
+          },
+          "region_keyword": {
+            "pass": false,
+            "detail": "경기 시 기관 (수원 in agency)"
+          },
+          "positive_hit": {
+            "pass": false,
+            "detail": "검토 매칭 (전국/시설ㆍ공간ㆍ보육)"
+          }
+        },
+        "risk_flags": [],
+        "axis_scores": {
+          "region": {
+            "level": "orange",
+            "detail": "경기 시 기관 (수원 in agency)"
+          },
+          "stage": {
+            "level": "green",
+            "detail": "업력 허용 (7년미만)"
+          },
+          "industry": {
+            "level": "orange",
+            "detail": "업종 한정 (메이커)"
+          },
+          "nature": {
+            "level": "yellow",
+            "detail": "간접 지원성 (시설ㆍ공간ㆍ보육)"
+          },
+          "qualification": {
+            "level": "green",
+            "detail": "자격 제한 없음"
+          }
+        },
+        "exclusion_flags": [
+          {
+            "axis": "region",
+            "severity": "high",
+            "msg": "경기 시 기관 (수원 in agency)"
+          },
+          {
+            "axis": "industry",
+            "severity": "high",
+            "msg": "업종 한정 (메이커)"
+          }
+        ],
+        "audit_flags": [],
+        "tier_logic": "3순위 (아이디어·우회 가능): 검토 매칭 (전국/시설ㆍ공간ㆍ보육)",
+        "classify_version": "v8.3"
+      },
+      "first_seen": "2026-06-25",
+      "last_seen": "2026-06-25",
+      "structured": {
+        "pbanc_sn_int": 178018,
+        "integrated": true,
+        "recruiting": true,
+        "start_date": "2026-06-08",
+        "end_date": "2026-07-03",
+        "agency_type": "교육기관",
+        "biz_class": "시설ㆍ공간ㆍ보육",
+        "region": "전국",
+        "biz_enyy": "7년미만",
+        "age_range": "만 20세 미만,만 20세 이상 ~ 만 39세 이하,만 40세 이상",
+        "apply_target": "일반기업",
+        "apply_target_desc": "글로벌 진출 희망하는 업력 7년 미만의 제조기업",
+        "exclude_target": "SW기업 제외",
+        "preferential": "",
+        "content": "수원대학교 메이커 스페이스에서는 제조 기반 창업기업의 글로벌 역량 강화 및 현지 유통 네트워크 연계로 베트남시장 진출 지원을 다음과 같이 공고하오니 참여를 희망하는 기업은 신청하여 주시기 바랍니다.",
+        "integrated_name": "메이커 스페이스",
+        "apply_online": "",
+        "apply_guide": "wowmakers.suwon.ac.kr/bbs/board.php?bo_table=d1&wr_id=55"
+      }
+    },
+    {
       "pbancSn": "177685",
       "title": "[BMC창업보육센터] 2026년 바이오·메디컬 히든스타 창업아이템 경진대회 모집 공고(~7/5(일), 자정까지)",
       "agency": "동국대학교 BMC창업보육센터",
@@ -73709,7 +74005,7 @@
         "title": "2026 방송영상콘텐츠제작지원(드라마/장편 부문)_재공고",
         "registDate": "26.06.22",
         "period": "26.06.29 ~ 26.07.06",
-        "views": "1188",
+        "views": "1415",
         "href": "/kocca/pims/view.do?intcNo=226D00107001&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
         "_source_page": 1
       }
@@ -74925,7 +75221,7 @@
         "title": "2026 밉컴(MIPCOM) 한국공동관 애니메이션 참가기업 모집",
         "registDate": "26.06.23",
         "period": "26.06.23 ~ 26.07.07",
-        "views": "286",
+        "views": "394",
         "href": "/kocca/pims/view.do?intcNo=326D00037009&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
         "_source_page": 1
       }
@@ -74983,7 +75279,7 @@
         "title": "2026 밉컴(MIPCOM) 피칭쇼케이스 참가사 모집 공고",
         "registDate": "26.06.23",
         "period": "26.06.23 ~ 26.07.07",
-        "views": "320",
+        "views": "498",
         "href": "/kocca/pims/view.do?intcNo=326D00037008&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
         "_source_page": 1
       }
@@ -80422,7 +80718,7 @@
         "title": "2026 케이녹(KNOCK) 콘텐츠가치평가 라운드 참가기업 모집 공고",
         "registDate": "26.06.24",
         "period": "26.06.24 ~ 26.07.10",
-        "views": "217",
+        "views": "409",
         "href": "/kocca/pims/view.do?intcNo=326D00067004&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
         "_source_page": 1
       }
@@ -82162,6 +82458,61 @@
       }
     },
     {
+      "pbancSn": "itp_10889",
+      "title": "[인천디자인교육센터] AI 인터랙티브 웹 디자인 실무 (전액무료/ 재직자)",
+      "agency": "인천테크노파크 디자인교육센터",
+      "deadline": "2026-07-13",
+      "url": "https://itp.or.kr/intro.asp?tmid=13&seq=10889",
+      "tier": "orange",
+      "note": "인천 매칭이지만 디자인 교육 — 사업 매칭 약함",
+      "classify_evidence": {
+        "summary_reason": "인천 매칭이지만 디자인 교육 — 사업 매칭 약함",
+        "category_hints": [
+          "incheon",
+          "itp",
+          "디자인교육센터"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "ITP 진행중 항목"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-07-13",
+            "detail": "ITP 마감일"
+          },
+          "region": {
+            "pass": true,
+            "value": "인천",
+            "detail": "ITP=인천 거점"
+          }
+        },
+        "axis_scores": {
+          "region": "green",
+          "stage": "green",
+          "industry": "orange",
+          "nature": "orange",
+          "qualification": "green"
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "ITP 디자인교육센터 부서별 룰 → orange",
+        "classify_version": "v8.3-itp"
+      },
+      "first_seen": "2026-06-25",
+      "last_seen": "2026-06-25",
+      "structured": {
+        "source_kind": "itp",
+        "itp_seq": "10889",
+        "itp_dept": "디자인교육센터",
+        "attachments": [],
+        "recruiting": true,
+        "region": "인천"
+      }
+    },
+    {
       "pbancSn": "bizinfo_PBLN_000000000123308",
       "id": "bizinfo_PBLN_000000000123308",
       "source": "bizinfo",
@@ -83070,7 +83421,7 @@
         "title": "2026년 화면해설방송 제작지원작 추가 공모",
         "registDate": "26.06.24",
         "period": "26.06.24 ~ 26.07.15",
-        "views": "197",
+        "views": "324",
         "href": "/kocca/pims/view.do?intcNo=326D00085004&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
         "_source_page": 1
       }
@@ -83508,6 +83859,61 @@
         "bsnsSumryCn": "<p>고양산업진흥원은 고양시 예비ㆍ초기 창업자 메이커 개발 역량 강화와 제조 창업 기반 조성을 위해「2026년 28청춘창업소 제품화 지원 프로그램」참가자를 아래와 같이 모집하오니 관심 있는 고양시 창업가들의 많은 참여 바랍니다.</p><p><br></p><p style=\"line-height: 1.8;\">☞&nbsp;고양시 예비ㆍ초기 제조 창업기업, 관내 소재 대학생, 고양시민 등 제품화 지원을 희망하는 예비ㆍ초기 창업자</p><p style=\"line-height: 1.8;\">- 개인 또는 팀(4인 이내) 참가 가능</p><p style=\"line-height: 1.8;\">※ 자세한 지원대상 공고문 참조</p><p><br></p><p>☞ 제품 개발 현황 진단, 디자인 컨설팅, 3D 모델링ㆍ스캐닝 및 역설계, 시제품 제작, 전문 후가공 등 제품화 과정 지원</p>",
         "pldirSportRealmMlsfcCodeNm": "기술사업화/이전/지도",
         "printFileNm": "붙임 1. 공고문(2026 28청춘창업소 제품화 지원 프로그램).hwp"
+      }
+    },
+    {
+      "pbancSn": "itp_10890",
+      "title": "2026년 인천 일하기 좋은 뿌리기업 선정 공고",
+      "agency": "인천테크노파크 뿌리산업일자리센터",
+      "deadline": "2026-07-16",
+      "url": "https://itp.or.kr/intro.asp?tmid=13&seq=10890",
+      "tier": "orange",
+      "note": "인천 매칭이지만 일자리 + 뿌리산업 불일치",
+      "classify_evidence": {
+        "summary_reason": "인천 매칭이지만 일자리 + 뿌리산업 불일치",
+        "category_hints": [
+          "incheon",
+          "itp",
+          "뿌리산업일자리센터"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "ITP 진행중 항목"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-07-16",
+            "detail": "ITP 마감일"
+          },
+          "region": {
+            "pass": true,
+            "value": "인천",
+            "detail": "ITP=인천 거점"
+          }
+        },
+        "axis_scores": {
+          "region": "green",
+          "stage": "green",
+          "industry": "orange",
+          "nature": "orange",
+          "qualification": "green"
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "ITP 뿌리산업일자리센터 부서별 룰 → orange",
+        "classify_version": "v8.3-itp"
+      },
+      "first_seen": "2026-06-25",
+      "last_seen": "2026-06-25",
+      "structured": {
+        "source_kind": "itp",
+        "itp_seq": "10890",
+        "itp_dept": "뿌리산업일자리센터",
+        "attachments": [],
+        "recruiting": true,
+        "region": "인천"
       }
     },
     {
@@ -85142,7 +85548,7 @@
         "title": "2026년 베트남 K-콘텐츠 엑스포 참가기업 모집",
         "registDate": "26.06.24",
         "period": "26.06.24 ~ 26.07.20",
-        "views": "274",
+        "views": "476",
         "href": "/kocca/pims/view.do?intcNo=326D00088004&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
         "_source_page": 1
       }
@@ -85383,7 +85789,7 @@
           "region": {
             "pass": false,
             "value": "전국",
-            "detail": "기관 지역 한정 (agency: 충남신용보증재단)"
+            "detail": "지역 한정 desc: '충청남도 소재'"
           },
           "biz_enyy": {
             "pass": true,
@@ -85413,7 +85819,7 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "기관 지역 한정 (agency: 충남신용보증재단)"
+            "detail": "지역 한정 desc: '충청남도 소재'"
           },
           "positive_hit": {
             "pass": false,
@@ -85424,7 +85830,7 @@
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "기관 지역 한정 (agency: 충남신용보증재단)"
+            "detail": "지역 한정 desc: '충청남도 소재'"
           },
           "stage": {
             "level": "green",
@@ -85447,7 +85853,7 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "기관 지역 한정 (agency: 충남신용보증재단)"
+            "msg": "지역 한정 desc: '충청남도 소재'"
           }
         ],
         "audit_flags": [],
@@ -99427,7 +99833,7 @@
         "title": "[수정/상시공고] 2026년 글로벌게임허브센터 신규 입주기업 추가모집(상시) 수정공고",
         "registDate": "26.04.23",
         "period": "26.04.27 ~ 26.12.31",
-        "views": "6055",
+        "views": "6131",
         "href": "/kocca/pims/view.do?intcNo=326D00034004&menuNo=204104&recptSt=&category=&pageIndex=2&search=&searchWrd=",
         "_source_page": 2
       },
@@ -151018,69 +151424,24 @@
     }
   ],
   "_meta": {
-    "expired": [
-      "[서초창업스테이션] 서리풀 소상공인 창업 클리닉 - 소상공인 1:1 컨설팅",
-      "2026년 서리풀 소상공인 창업 클리닉 모집 공고",
-      "2026년 판교허브 투자유치 밸류업 패키지 지원기업 모집 공고",
-      "2026년  강동 K-ISS창업멘토링센터 2차 교육 및 튜토링 과정",
-      "[인천] 2026년 2차 자동차 산업ㆍ기업 도약 패키지(공정 안전고도화 및 환경개선) 기업지원 참여기업 모집 공고(인천 자동차 업종 상생협약 확산 지원사업)",
-      "[인천] 2026년 2차 자동차 산업ㆍ기업 도약 패키지(기업역량 내재화 지원) 참여기업 모집 공고(인천 자동차 업종 상생협약 확산 지원사업)",
-      "2026 ITCEN × DRAPER OPEN INNOVATION",
-      "2026년 3차 바이오헬스소재 데이터 구축을 위한 안전성 및 유효성 실증시험 기업지원 기업모집 공고",
-      "[서초창업스테이션] 6월 1:1 전문 분야 컨설팅 - 스타트업 자금 운용 및 캐시플로우 & 정책자금 및 자금 조달",
-      "2026년 3차 경남 우주산업 혁신생태계 조성 지원 사업 수혜기업 모집 공고",
-      "2026년 대전 AI 영상콘텐츠 제작지원 사업(미디어파사드) 모집 공고",
-      "2026년 대전 AI 영상콘텐츠 제작지원 사업(공익광고) 모집 공고",
-      "2026년 2차 미래차 전자제어부품 산업 고도화 기반구축 기업지원 수혜기업 모집 공고 (stale)",
-      "[경기] 2026년 2차 ICT Product 시험인증 지원 공모",
-      "2026 경기도 ICT Product 시험인증 지원 2차공모",
-      "[경기] 안양시 2026년 유망기업 오프라인 광고매체 송출 지원사업 모집 공고",
-      "「2026 서울바이오허브-기술보증기금 글로벌 진출 성장 가속 프로그램」 참여기업  모집 공고",
-      "Korea Financial Innovation Program 2026 참관 모집",
-      "초격차 스타트업  프로젝트 모두의 챌린지 AX 참여기업 모집공고(추경)",
-      "[강원 중소기업 재직자 업무역량 강화 교육]  실무에 적용하는 AI/AX 업무 효율화 스킬",
-      "[서귀포시 스타트업베이] 2026년 서귀포시 STARTUPBAY 실전창업아카데미 교육생 모집(~6/24)",
-      "2026년 수출업체 대상 해외공동물류 지원사업 참가업체 모집 공고",
-      "[서울] 2026년 서울바이오허브-기술보증기금 글로벌 진출 성장 가속 프로그램 참여기업 모집 공고",
-      "[서울] 2026년 3차 소상공인ㆍ워라밸 포인트제 기업 민간 아이돌봄서비스 참여자 모집 공고",
-      "[부산ㆍ울산ㆍ경남] 2026년 동남권 지역혁신클러스터육성사업(비R&D) 추가모집 공고(동남권 M1형)",
-      "[세종] 2026년 지역특화콘텐츠개발지원 사업 공고 (웹툰콘텐츠분야)",
-      "[경기] 안양시 2026년 중장년 기술창업센터 선택형 지원사업 공고",
-      "[경북] 영천시 2026년 해외(태국, 말레이시아) 무역사절단 참가기업 모집 공고",
-      "2026년 고탄소배출업종 공급망 ESG 지원 시범사업 참여기업 모집 재공고",
-      "[전남ㆍ광주] 2026년 여수세계섬박람회 연계 수산가공제품 홍보관 모집 공고",
-      "2026년 클라우드 엑스포 코리아 전시기업 지원 추가 모집 공고",
-      "[경북] 포항시 2026년 3차 탄소중립기술 신산업 육성사업 탄소 저감 지원 부분 모집 수정 공고",
-      "[충남] 아산시 2026년 농공단지 물류비 지원사업 참여기업 모집 공고",
-      "[전북] 2026년 식품기업 창업프로그램 지원사업 기술이전 및 지식재산권 취득 지원 모집 공고",
-      "2026년 KOTRA-월마트 파워셀러 1단계 입점교육 2기 참가기업 모집 공고",
-      "2026년 KOTRA-이베이재팬(큐텐재팬) 파워셀러 1단계 입점교육 3기 참가기업 모집 공고",
-      "2026년 차세대 고효율 전력반도체 실증인프라 기업지원 및 기술컨설팅 모집 추가 공고",
-      "『2026년도 안양시 유망기업 방송영상 제작 지원사업』 모집공고",
-      "2026년 판교허브 투자유치 밸류업 패키지 지원기업 모집",
-      "[경기] 2026년 소공인 박람회 지원 사업 추가모집 공고",
-      "[경남] 가상융합산업 콘텐츠 상용화 고도화 제작 지원사업 모집 공고",
-      "[강원] 2026년 시ㆍ군 기업 지원 인터넷쇼핑몰 라이브커머스 운영 참가기업 모집 공고",
-      "[충남] 예산군 2026년 2차 뿌리산업 고도화를 통한 전후방산업 동반성장 모델 구축 사업 모집 공고(시군구 연고산업 육성사업)",
-      "[경기] 안양시 2026년 유망기업 방송영상 제작 지원사업 모집 공고",
-      "[충남] 공주시 2026년 2차 K-푸드 공주알밤 제품의 글로벌 사업 모집 공고(시군구 연고산업 육성사업)",
-      "2026 ZER01NE Company Builder 현대자동차그룹 사내스타트업 사외 멤버 모집",
-      "[제주] 2026년 자카르타 K-프리미엄 소비재전 제주관 참가기업 모집 공고",
-      "2026년 튀르키예 GlobeMeets 트래블마트  참가기관 모집 공고",
-      "[경남] 2026년 2차 선도 사회적경제기업 육성 지원사업 참여 시군(기업) 추가모집 공고",
-      "[서울] 2026년 중국(광저우ㆍ청두) 시장개척단 참가기업 모집 공고"
+    "expired": [],
+    "new_added": [
+      "「민관협력 오픈이노베이션 지원」2026년 제2차 전략과제 해결형(Top-Down) 창업기업 모집공고",
+      "2026년 WoW!메이커스 글로벌 프론티어 @베트남 참여기업 모집 [베트남 시장 진출]- 모집기한 연장",
+      "2026년 인천 과학기술혁신연구회 기획위원 모집공고",
+      "2026년 인천 일하기 좋은 뿌리기업 선정 공고",
+      "[인천디자인교육센터] AI 인터랙티브 웹 디자인 실무 (전액무료/ 재직자)"
     ],
-    "new_added": [],
     "updated_today": [],
     "stats": {
       "green": 56,
-      "yellow": 368,
-      "orange": 1431,
+      "yellow": 370,
+      "orange": 1434,
       "red_excluded": 0,
-      "expired_removed": 50,
-      "total_pool": 1855,
+      "expired_removed": 0,
+      "total_pool": 1860,
       "rss_total": 281,
-      "raw_fetched": 408
+      "raw_fetched": 409
     }
   },
   "history": [
@@ -151356,11 +151717,11 @@
     },
     {
       "date": "2026-06-25",
-      "at_kst": "2026-06-25T02:47:23+09:00",
-      "new": 0,
+      "at_kst": "2026-06-25T20:41:37+09:00",
+      "new": 5,
       "updated": 0,
-      "expired": 50,
-      "total": 1855,
+      "expired": 0,
+      "total": 1860,
       "red_excluded": 0
     }
   ]
