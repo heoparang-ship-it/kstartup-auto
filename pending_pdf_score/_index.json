@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-27T20:06:46.246025+09:00",
+  "generated_at": "2026-06-28T02:00:54.579499+09:00",
   "schema_version": 2,
   "pdf_text_cap": 15000,
-  "target_count": 861,
+  "target_count": 860,
   "pending": [
     {
       "key": "bizinfo_PBLN_000000000122085",
@@ -1466,13 +1466,6 @@
       "tier": "yellow",
       "deadline": "",
       "pdf_text_chars": 3657
-    },
-    {
-      "key": "bizinfo_PBLN_000000000123198",
-      "title": "[충남] 천안시 2026년 광 융합 기반 기술 특허 출원ㆍ등록 비용 지원사업 공고",
-      "tier": "orange",
-      "deadline": "2026-06-27",
-      "pdf_text_chars": 1709
     },
     {
       "key": "bizinfo_PBLN_000000000122117",
@@ -6033,10 +6026,10 @@
     }
   ],
   "stats": {
-    "total_items": 1837,
+    "total_items": 1832,
     "red": 0,
     "expired": 0,
-    "no_pdf": 947,
+    "no_pdf": 943,
     "already_scored": 29
   }
 }
