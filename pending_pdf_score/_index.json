@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-28T20:14:50.544086+09:00",
+  "generated_at": "2026-06-29T02:04:03.678610+09:00",
   "schema_version": 2,
   "pdf_text_cap": 15000,
-  "target_count": 860,
+  "target_count": 857,
   "pending": [
     {
       "key": "bizinfo_PBLN_000000000122085",
@@ -108,20 +108,6 @@
       "tier": "green",
       "deadline": "",
       "pdf_text_chars": 61
-    },
-    {
-      "key": "bizinfo_PBLN_000000000122757",
-      "title": "2026년 해양수산과학기술진흥원 x 서울창조경제혁신센터 해양수산분야 오픈이노베이션 참가 기업 모집 공고",
-      "tier": "yellow",
-      "deadline": "2026-06-28",
-      "pdf_text_chars": 109
-    },
-    {
-      "key": "bizinfo_PBLN_000000000122738",
-      "title": "2026년 강원특별자치도 첨단바이오 오픈이노베이션 프로그램 바이오신약 분야(앱티스) 지원 기업 모집 재공고",
-      "tier": "yellow",
-      "deadline": "2026-06-28",
-      "pdf_text_chars": 21628
     },
     {
       "key": "bizinfo_PBLN_000000000122425",
@@ -1466,13 +1452,6 @@
       "tier": "yellow",
       "deadline": "",
       "pdf_text_chars": 3657
-    },
-    {
-      "key": "bizinfo_PBLN_000000000122117",
-      "title": "[대구] 2026년 공공데이터ㆍAI 활용 창업경진대회 참가자 모집 공고",
-      "tier": "orange",
-      "deadline": "2026-06-28",
-      "pdf_text_chars": 5612
     },
     {
       "key": "bizinfo_PBLN_000000000121996",
@@ -6026,10 +6005,10 @@
     }
   ],
   "stats": {
-    "total_items": 1832,
+    "total_items": 1822,
     "red": 0,
     "expired": 0,
-    "no_pdf": 943,
+    "no_pdf": 936,
     "already_scored": 29
   }
 }
