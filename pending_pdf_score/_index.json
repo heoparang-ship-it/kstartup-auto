@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-01T21:16:53.572878+09:00",
+  "generated_at": "2026-07-02T02:51:58.736947+09:00",
   "schema_version": 2,
   "pdf_text_cap": 15000,
-  "target_count": 812,
+  "target_count": 801,
   "pending": [
     {
       "key": "bizinfo_PBLN_000000000123530",
@@ -94,27 +94,6 @@
       "tier": "green",
       "deadline": "",
       "pdf_text_chars": 61
-    },
-    {
-      "key": "bizinfo_PBLN_000000000123149",
-      "title": "2026년 민관협력 오픈이노베이션 지원 모두의 챌린지 바이오 창업기업 모집 공고",
-      "tier": "yellow",
-      "deadline": "2026-07-01",
-      "pdf_text_chars": 15088
-    },
-    {
-      "key": "bizinfo_PBLN_000000000123389",
-      "title": "2026년 3차 광주 차세대 지능형 반도체 적용 온디바이스 AI 스케일업 밸리 육성 사업 성장스케일업 지원 수혜기업 추가모집 통합 공고(딥테크 스케일업 밸리 육성사업)",
-      "tier": "yellow",
-      "deadline": "2026-07-01",
-      "pdf_text_chars": 9914
-    },
-    {
-      "key": "bizinfo_PBLN_000000000123604",
-      "title": "2026년 미래내일 일경험(인턴형) 참여기업 모집 공고",
-      "tier": "yellow",
-      "deadline": "2026-07-01",
-      "pdf_text_chars": 83
     },
     {
       "key": "bizinfo_PBLN_000000000122501",
@@ -1375,62 +1354,6 @@
       "tier": "yellow",
       "deadline": "",
       "pdf_text_chars": 5713
-    },
-    {
-      "key": "bizinfo_PBLN_000000000122820",
-      "title": "2026년 한국형 ARPA-H 프로젝트 신규지원 대상과제 통합 공고",
-      "tier": "orange",
-      "deadline": "2026-07-01",
-      "pdf_text_chars": 11995
-    },
-    {
-      "key": "bizinfo_PBLN_000000000123180",
-      "title": "[전북] 2026년 2차 지역기업 성장사다리 지원사업(수출새싹기업 지원사업) 공고",
-      "tier": "orange",
-      "deadline": "2026-07-01",
-      "pdf_text_chars": 15079
-    },
-    {
-      "key": "bizinfo_PBLN_000000000123526",
-      "title": "[충남] 2026년 산학연 협동프로그램 참여기업 지원사업 모집 재공고(테크노파크 생산장비 고도화)",
-      "tier": "orange",
-      "deadline": "2026-07-01",
-      "pdf_text_chars": 22174
-    },
-    {
-      "key": "bizinfo_PBLN_000000000123463",
-      "title": "[경기] 2026년 중소기업 마케팅 지원사업 알리바바닷컴 참가기업 모집 공고",
-      "tier": "orange",
-      "deadline": "2026-07-01",
-      "pdf_text_chars": 13531
-    },
-    {
-      "key": "bizinfo_PBLN_000000000123397",
-      "title": "[충북] 2026년 중소기업 산업보안 진단 컨설팅 모집 공고(산업기술단지 거점기능강화사업)",
-      "tier": "orange",
-      "deadline": "2026-07-01",
-      "pdf_text_chars": 2988
-    },
-    {
-      "key": "bizinfo_PBLN_000000000123381",
-      "title": "[강원] 2026년 2차 지역주력산업육성(지역특화 프로젝트 레전드 50+) 지원모집 공고(강원 2.0 퀀텀점프)",
-      "tier": "orange",
-      "deadline": "2026-07-01",
-      "pdf_text_chars": 4650
-    },
-    {
-      "key": "bizinfo_PBLN_000000000123610",
-      "title": "[강원] 동해시 2026년 3차 수소 전문기업 육성지원 사업 공고",
-      "tier": "orange",
-      "deadline": "2026-07-01",
-      "pdf_text_chars": 6803
-    },
-    {
-      "key": "bizinfo_PBLN_000000000123665",
-      "title": "2026년 디지털의료제품 전주기 규제 적합성 진단 및 맞춤형 컨설팅 지원 대상 모집 연장 공고",
-      "tier": "orange",
-      "deadline": "2026-07-01",
-      "pdf_text_chars": 3744
     },
     {
       "key": "bizinfo_PBLN_000000000122761",
@@ -5690,10 +5613,10 @@
     }
   ],
   "stats": {
-    "total_items": 1739,
+    "total_items": 1709,
     "red": 0,
     "expired": 0,
-    "no_pdf": 898,
+    "no_pdf": 879,
     "already_scored": 29
   }
 }
