@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-05T20:12:55.083007+09:00",
+  "generated_at": "2026-07-06T01:58:50.219443+09:00",
   "schema_version": 2,
   "pdf_text_cap": 15000,
-  "target_count": 833,
+  "target_count": 828,
   "pending": [
     {
       "key": "bizinfo_PBLN_000000000123340",
@@ -227,27 +227,6 @@
       "tier": "green",
       "deadline": "",
       "pdf_text_chars": 111
-    },
-    {
-      "key": "bizinfo_PBLN_000000000123438",
-      "title": "2026년 2차 경북 해양기업 혁신성장 R&BD 패키지 지원사업 참여기업 모집 공고",
-      "tier": "yellow",
-      "deadline": "2026-07-05",
-      "pdf_text_chars": 7824
-    },
-    {
-      "key": "bizinfo_PBLN_000000000123597",
-      "title": "2026년 브라질 친환경ㆍ미래차 K-혁신사절단 참여기업 모집 공고",
-      "tier": "yellow",
-      "deadline": "2026-07-05",
-      "pdf_text_chars": 11127
-    },
-    {
-      "key": "bizinfo_PBLN_000000000123686",
-      "title": "2026년 바이오ㆍ메디컬 히든스타 창업 아이템 경진대회 모집 공고(특화역량 BI 지원사업)",
-      "tier": "yellow",
-      "deadline": "2026-07-05",
-      "pdf_text_chars": 2528
     },
     {
       "key": "bizinfo_PBLN_000000000121522",
@@ -1494,20 +1473,6 @@
       "tier": "yellow",
       "deadline": "",
       "pdf_text_chars": 18788
-    },
-    {
-      "key": "bizinfo_PBLN_000000000122773",
-      "title": "2026년 스타트업 혁신제품 선(先)보급 지원사업 참여 스타트업 모집 공고(제품상용화 지원사업)",
-      "tier": "orange",
-      "deadline": "2026-07-05",
-      "pdf_text_chars": 14630
-    },
-    {
-      "key": "bizinfo_PBLN_000000000123569",
-      "title": "[충북] 2026년 제조 AI 현장 적용 지원 사업 수혜기업 모집 연장 공고",
-      "tier": "orange",
-      "deadline": "2026-07-05",
-      "pdf_text_chars": 16155
     },
     {
       "key": "bizinfo_PBLN_000000000122700",
@@ -5837,10 +5802,10 @@
     }
   ],
   "stats": {
-    "total_items": 1805,
+    "total_items": 1789,
     "red": 0,
     "expired": 0,
-    "no_pdf": 943,
+    "no_pdf": 932,
     "already_scored": 29
   }
 }
