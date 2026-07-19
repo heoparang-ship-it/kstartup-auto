@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-19T19:43:01.988729+09:00",
+  "generated_at": "2026-07-20T01:49:56.348573+09:00",
   "schema_version": 2,
   "pdf_text_cap": 15000,
-  "target_count": 814,
+  "target_count": 809,
   "pending": [
     {
       "key": "bizinfo_PBLN_000000000123952",
@@ -570,13 +570,6 @@
       "tier": "green",
       "deadline": "",
       "pdf_text_chars": 91
-    },
-    {
-      "key": "bizinfo_PBLN_000000000123351",
-      "title": "2026년 창원시 AI기반 슬립테크 국제협력 실증 확산 지원사업 기업지원 공고(해외 인허가 기술문서 작성 지원)",
-      "tier": "yellow",
-      "deadline": "2026-07-19",
-      "pdf_text_chars": 9204
     },
     {
       "key": "bizinfo_PBLN_000000000123614",
@@ -1676,34 +1669,6 @@
       "tier": "yellow",
       "deadline": "",
       "pdf_text_chars": 9308
-    },
-    {
-      "key": "bizinfo_PBLN_000000000123734",
-      "title": "2026년 KOTRA-이베이 파워셀러 1단계 입점교육 3기 참가기업 모집 공고",
-      "tier": "orange",
-      "deadline": "2026-07-19",
-      "pdf_text_chars": 6750
-    },
-    {
-      "key": "bizinfo_PBLN_000000000123993",
-      "title": "[경기] 2026년 2차 경기 콘텐츠코리아 랩 콘텐츠 전시 마케팅 지원 크라우드 펀딩 연계형 전시 참가자 모집 수정 공고",
-      "tier": "orange",
-      "deadline": "2026-07-19",
-      "pdf_text_chars": 1242
-    },
-    {
-      "key": "bizinfo_PBLN_000000000124351",
-      "title": "[대구] 국제전자제품박람회(CES 2027) 대구 통합공동관 조성 운영 사업 참가기업 모집 연장 공고",
-      "tier": "orange",
-      "deadline": "2026-07-19",
-      "pdf_text_chars": 4960
-    },
-    {
-      "key": "bizinfo_PBLN_000000000124350",
-      "title": "[대구] CES 혁신상 수상지원 프로그램 참가기업 모집 연장 공고(국제전자제품박람회(CES 2027) 대구 통합공동관 조성운영 사업)",
-      "tier": "orange",
-      "deadline": "2026-07-19",
-      "pdf_text_chars": 5796
     },
     {
       "key": "bizinfo_PBLN_000000000123560",
@@ -5704,10 +5669,10 @@
     }
   ],
   "stats": {
-    "total_items": 1780,
+    "total_items": 1765,
     "red": 0,
     "expired": 0,
-    "no_pdf": 938,
+    "no_pdf": 928,
     "already_scored": 28
   }
 }
