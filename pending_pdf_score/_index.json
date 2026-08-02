@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-02T19:47:49.893489+09:00",
+  "generated_at": "2026-08-03T01:49:48.692759+09:00",
   "schema_version": 2,
   "pdf_text_cap": 15000,
-  "target_count": 845,
+  "target_count": 844,
   "pending": [
     {
       "key": "bizinfo_PBLN_000000000124546",
@@ -1823,13 +1823,6 @@
       "tier": "yellow",
       "deadline": "",
       "pdf_text_chars": 15076
-    },
-    {
-      "key": "bizinfo_PBLN_000000000124569",
-      "title": "[대구] 2026년 노사상생 우수기업 발굴 및 지원 연장 공고",
-      "tier": "orange",
-      "deadline": "2026-08-02",
-      "pdf_text_chars": 3137
     },
     {
       "key": "bizinfo_PBLN_000000000124017",
@@ -5921,10 +5914,10 @@
     }
   ],
   "stats": {
-    "total_items": 1777,
+    "total_items": 1768,
     "red": 0,
     "expired": 0,
-    "no_pdf": 904,
+    "no_pdf": 896,
     "already_scored": 28
   }
 }
