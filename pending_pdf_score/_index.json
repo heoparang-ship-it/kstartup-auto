@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-15T18:32:24.948031+09:00",
+  "generated_at": "2026-08-16T01:18:05.348430+09:00",
   "schema_version": 2,
   "pdf_text_cap": 15000,
-  "target_count": 910,
+  "target_count": 906,
   "pending": [
     {
       "key": "bizinfo_PBLN_000000000124552",
@@ -1482,13 +1482,6 @@
       "pdf_text_chars": 90
     },
     {
-      "key": "bizinfo_PBLN_000000000121853",
-      "title": "2026년 업종별 임금체계 개선 지원 사업 참여기업 모집 공고",
-      "tier": "yellow",
-      "deadline": "",
-      "pdf_text_chars": 15071
-    },
-    {
       "key": "bizinfo_PBLN_000000000121291",
       "title": "2026년 비즈니스지원단(현장클리닉) 사업 운영계획 공고",
       "tier": "yellow",
@@ -2054,13 +2047,6 @@
       "tier": "yellow",
       "deadline": "",
       "pdf_text_chars": 68
-    },
-    {
-      "key": "bizinfo_PBLN_000000000124950",
-      "title": "[강원] 2026년 3차 베트남본부 추진 현지 바이어 네트워크 구축 및 수출 활성화 지원사업 모집 공고",
-      "tier": "orange",
-      "deadline": "2026-08-15",
-      "pdf_text_chars": 136
     },
     {
       "key": "bizinfo_PBLN_000000000124768",
@@ -5262,13 +5248,6 @@
       "pdf_text_chars": 4057
     },
     {
-      "key": "bizinfo_PBLN_000000000122136",
-      "title": "[충남] 2026년 1인 자영업자 고용보험료 지원사업 공고",
-      "tier": "orange",
-      "deadline": "",
-      "pdf_text_chars": 3022
-    },
-    {
       "key": "bizinfo_PBLN_000000000122128",
       "title": "[경북] 울진군 2026년 소상공인 카드수수료 지원사업 참여업체 모집 공고",
       "tier": "orange",
@@ -6081,13 +6060,6 @@
       "pdf_text_chars": 4250
     },
     {
-      "key": "bizinfo_PBLN_000000000124721",
-      "title": "[대전] 2026년 북미시장진출지원사업 KIC 실리콘밸리 K-Global 대전기업 추가모집 공고",
-      "tier": "orange",
-      "deadline": "",
-      "pdf_text_chars": 5499
-    },
-    {
       "key": "bizinfo_PBLN_000000000124717",
       "title": "[대전] 2026년 스페인 바르셀로나 스마트시티 엑스포 단체참가 참여기업 추가모집 공고",
       "tier": "orange",
@@ -6376,10 +6348,10 @@
     }
   ],
   "stats": {
-    "total_items": 1881,
+    "total_items": 1871,
     "red": 0,
     "expired": 0,
-    "no_pdf": 943,
-    "already_scored": 28
+    "no_pdf": 938,
+    "already_scored": 27
   }
 }
