@@ -1,7 +1,7 @@
 {
   "schema_version": 5,
-  "last_updated": "2026-08-29",
-  "updated_at_kst": "2026-08-29T23:14:13+09:00",
+  "last_updated": "2026-08-30",
+  "updated_at_kst": "2026-08-30T04:00:40+09:00",
   "red_count_today": 0,
   "reds_today": [
     {
@@ -2407,80 +2407,6 @@
   ],
   "items": [
     {
-      "pbancSn": "bizinfo_PBLN_000000000125002",
-      "id": "bizinfo_PBLN_000000000125002",
-      "source": "bizinfo",
-      "source_label": "중소벤처기업부 BIZINFO (기업마당)",
-      "title": "2026년 한국전력공사 에너지브릿지 오픈이노베이션 참여기업 모집 공고",
-      "agency": "전남광주통합특별시 / 전남창조경제혁신센터",
-      "url": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000125002",
-      "deadline": "2026-08-29",
-      "tier": "green",
-      "note": "인천 매칭 + 창업",
-      "classify_evidence": {
-        "summary_reason": "인천 매칭 + 창업",
-        "category_hints": [
-          "bizinfo",
-          "서울,부산,대구,인천,대전,울산,세종,경기,강원,충북,충남,전북,경북,경남,제주"
-        ],
-        "rule_checks": {
-          "recruiting": {
-            "pass": true,
-            "value": "True",
-            "detail": "어댑터 통과"
-          },
-          "deadline": {
-            "pass": true,
-            "value": "2026-08-29",
-            "detail": "어댑터 normalize"
-          },
-          "region": {
-            "pass": true,
-            "value": "서울,부산,대구,인천,대전,울산,세종,경기,강원,충북,충남,전북,경북,경남,제주",
-            "detail": "agency·title·region 종합"
-          }
-        },
-        "axis_scores": {
-          "region": "green",
-          "stage": "green",
-          "industry": "yellow",
-          "nature": "yellow",
-          "qualification": "yellow"
-        },
-        "exclusion_flags": [],
-        "audit_flags": [],
-        "tier_logic": "bizinfo 룰 → green",
-        "classify_version": "v8.3-external"
-      },
-      "first_seen": "2026-08-03",
-      "last_seen": "2026-08-28",
-      "structured": {
-        "trgetNm": "창업벤처",
-        "updtPnttm": "2026-08-03 15:36:04",
-        "hashtags": "창업,서울,부산,대구,인천,전남광주,대전,울산,세종,경기,강원,충북,충남,전북,경북,경남,제주,투자네트워크,투자연계검토,전남광주통합특별시,2026,전문가강연,IR피칭,입주,밋업,솔루션,PoC,전남창조경제혁신센터,엑셀러레이팅,스타트업",
-        "inqireCo": 3550,
-        "creatPnttm": "2026-08-03 13:11:08",
-        "pblancNm": "2026년 한국전력공사 에너지브릿지 오픈이노베이션 참여기업 모집 공고",
-        "pblancId": "PBLN_000000000125002",
-        "printFlpthNm": "https://www.bizinfo.go.kr/cmm/fms/getImageFile.do?atchFileId=FILE_000000000767243&fileSn=0",
-        "refrncNm": "전남창조경제혁신센터 061-661-1952, 1953, 1955 / qwe5359@ccei.kr",
-        "fileNm": "[붙임] 2026년 한국전력공사 에너지브릿지 오픈이노베이션 지원사업 참여기업 모집공고 및 신청서 각 1부.hwp",
-        "pblancUrl": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000125002",
-        "jrsdInsttNm": "전남광주통합특별시",
-        "excInsttNm": "전남창조경제혁신센터",
-        "totCnt": 1565,
-        "reqstMthPapersCn": "이메일 (qwe5359@ccei.kr)\r\n※ 메일 제출 후 유선으로 제출 여부 확인 必",
-        "pldirSportRealmLclasCodeNm": "창업",
-        "reqstBeginEndDe": "2026-07-31 ~ 2026-08-29",
-        "flpthNm": "https://www.bizinfo.go.kr/cmm/fms/getImageFile.do?atchFileId=FILE_000000000767244&fileSn=0",
-        "bsnsSumryCn": "<p>한국전력공사와 전남창조경제혁신센터는 대ㆍ중견기업과 스타트업의 협업 프로젝트를 통한 혁신성장을 도모하기 위하여 오픈이노베이션 프로그램에 참여할 스타트업을 다음과 같이 모집하오니 많은 관심과 참여를 바랍니다.</p><p><br></p><p style=\"line-height: 1.8;\">☞&nbsp;공고일 기준 수요분야 관련 기술 및 솔루션을 보유한 기업 누구나</p><p style=\"line-height: 1.8;\">※ 자세한 지원대상 공고문 참조&nbsp;</p><p><br></p><p style=\"line-height: 1.8;\">☞&nbsp;대ㆍ중견기업 사업 부서 밋업 연계, 사업화(PoC) 지원금, 전남창조경제혁신센터 직ㆍ간접 투자 연계 검토 등 지원(1개社 당 최대 35,000천원 내외)</p><p style=\"line-height: 1.8;\">-&nbsp;(밋업&amp;IR) 기술ㆍ시장 전문가 강연, 투자 네트워크 등 추천</p><p style=\"line-height: 1.8;\">-&nbsp;(글로벌) 전남창조경제혁신센터 글로벌 엑셀러레이팅 프로그램 연계 추천</p><p style=\"line-height: 1.8;\">- (투자) 전남창조경제혁신센터 자체 투자 검토 프로그램 추천 및 IR 피칭 기회 제공</p><p style=\"line-height: 1.8;\">- (보육) 전남창조경제혁신센터 입주 보육기업 추천</p>",
-        "pldirSportRealmMlsfcCodeNm": "사업화지원",
-        "printFileNm": "[붙임] 2026년 한국전력공사 에너지브릿지 오픈이노베이션 지원사업 참여기업 모집공고 및 신청서 각 1부+.pdf"
-      },
-      "raw_content": "Error>상세화면\n본문 바로가기\n주메뉴 바로가기\n에러가 발생했습니다!",
-      "raw_fetched_at": "2026-08-03"
-    },
-    {
       "pbancSn": "bizinfo_PBLN_000000000125204",
       "id": "bizinfo_PBLN_000000000125204",
       "source": "bizinfo",
@@ -2877,7 +2803,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-07-30",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178693,
         "integrated": false,
@@ -3069,7 +2995,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-07-31",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178719,
         "integrated": false,
@@ -3336,7 +3262,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-07",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178765,
         "integrated": false,
@@ -3603,7 +3529,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-11",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178841,
         "integrated": false,
@@ -5135,7 +5061,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-11",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178844,
         "integrated": false,
@@ -5204,7 +5130,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-08-10",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11051",
@@ -5830,7 +5756,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-22",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178985,
         "integrated": true,
@@ -6098,7 +6024,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179053,
         "integrated": false,
@@ -6289,7 +6215,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-07-21",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178575,
         "integrated": true,
@@ -6408,7 +6334,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-22",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178970,
         "integrated": true,
@@ -6749,7 +6675,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178951,
         "integrated": false,
@@ -7389,7 +7315,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-14",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178863,
         "integrated": false,
@@ -8620,7 +8546,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-25",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178994,
         "integrated": true,
@@ -8983,7 +8909,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11092",
@@ -9314,7 +9240,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-13",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178896,
         "integrated": false,
@@ -9724,7 +9650,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179073,
         "integrated": false,
@@ -10146,7 +10072,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178952,
         "integrated": false,
@@ -10485,7 +10411,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-25",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178968,
         "integrated": false,
@@ -10974,7 +10900,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-07-16",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178561,
         "integrated": false,
@@ -11390,7 +11316,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179057,
         "integrated": false,
@@ -11509,7 +11435,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179047,
         "integrated": false,
@@ -12444,7 +12370,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-06-30",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178234,
         "integrated": false,
@@ -12562,7 +12488,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 176208,
         "integrated": true,
@@ -12631,7 +12557,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-04-01",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "10547",
@@ -12901,7 +12827,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "note": "structured 완전 매칭 (전국/사업화)",
       "connect": "",
       "classify_evidence": {
@@ -13088,7 +13014,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 176076,
         "integrated": false,
@@ -13205,7 +13131,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 175783,
         "integrated": false,
@@ -16572,79 +16498,6 @@
       "raw_fetched_at": "2026-08-04"
     },
     {
-      "pbancSn": "bizinfo_PBLN_000000000125265",
-      "id": "bizinfo_PBLN_000000000125265",
-      "source": "bizinfo",
-      "source_label": "중소벤처기업부 BIZINFO (기업마당)",
-      "title": "합성생물학 기반 첨단 바이오제조 글로벌 혁신특구 기업육성 지원사업 모집 공고",
-      "agency": "중소벤처기업부 / 대전테크노파크",
-      "url": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000125265",
-      "deadline": "",
-      "tier": "green",
-      "note": "인천 매칭 + 창업",
-      "classify_evidence": {
-        "summary_reason": "인천 매칭 + 창업",
-        "category_hints": [
-          "bizinfo",
-          "서울,부산,대구,인천,대전,울산,세종,경기,강원,충북,충남,전북,경북,경남,제주"
-        ],
-        "rule_checks": {
-          "recruiting": {
-            "pass": true,
-            "value": "True",
-            "detail": "어댑터 통과"
-          },
-          "deadline": {
-            "pass": false,
-            "value": "",
-            "detail": "어댑터 normalize"
-          },
-          "region": {
-            "pass": true,
-            "value": "서울,부산,대구,인천,대전,울산,세종,경기,강원,충북,충남,전북,경북,경남,제주",
-            "detail": "agency·title·region 종합"
-          }
-        },
-        "axis_scores": {
-          "region": "green",
-          "stage": "green",
-          "industry": "yellow",
-          "nature": "yellow",
-          "qualification": "yellow"
-        },
-        "exclusion_flags": [],
-        "audit_flags": [],
-        "tier_logic": "bizinfo 룰 → green",
-        "classify_version": "v8.3-external"
-      },
-      "first_seen": "2026-08-10",
-      "last_seen": "2026-08-15",
-      "structured": {
-        "trgetNm": "중소기업",
-        "updtPnttm": "2026-08-10 16:02:16",
-        "hashtags": "기술,수출,서울,부산,대구,인천,전남광주,대전,울산,세종,경기,강원,충북,충남,전북,경북,경남,제주,2026,첨단바이오제조,합성생물학,현지실증,책임보험,해외실증,글로벌진출,규제자유특구,중소벤처기업진흥공단,해외인증,바이오,제조,대전광역시,대전테크노파크,중소벤처기업부,R&D",
-        "inqireCo": 1260,
-        "creatPnttm": "2026-08-10 11:23:37",
-        "pblancNm": "합성생물학 기반 첨단 바이오제조 글로벌 혁신특구 기업육성 지원사업 모집 공고",
-        "pblancId": "PBLN_000000000125265",
-        "printFlpthNm": "https://www.bizinfo.go.kr/cmm/fms/getImageFile.do?atchFileId=FILE_000000000768386&fileSn=1",
-        "refrncNm": "대전테크노파크 042-930-4719, 4715, yakim@djtp.or.kr, yohn06@djtp.or.kr / 대전기업정보포털(DIPS) 문의 042-930-4824",
-        "rceptEngnHmpgUrl": "https://www.dips.or.kr/",
-        "pblancUrl": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000125265",
-        "jrsdInsttNm": "중소벤처기업부",
-        "excInsttNm": "대전테크노파크",
-        "totCnt": 1545,
-        "reqstMthPapersCn": "이메일 및 온라인 접수\r\n- 신산업 책임보험 지원 : 이메일 접수 (yohn06@djtp.or.kr)\r\n- 현지실증 및 해외인증 지원 : 온라인 접수 (대전기업정보포털)",
-        "pldirSportRealmLclasCodeNm": "기술",
-        "reqstBeginEndDe": "세부사업별 상이",
-        "bsnsSumryCn": "<p>중소벤처기업부와 대전광역시의 지원으로, 합성생물학 기반 첨단 바이오제조의 실증부터 사업화까지 전 과정을 글로벌 스탠더드에 맞춰 수행할 수 있도록 신산업 책임보험, 현지 실증 및 해외 인증 프로그램을 수행할 특구사업자를 아래와 같이 모집하오니 많은 관심과 참여 바랍니다.</p><p><br></p><p style=\"line-height: 1.8;\">☞&nbsp;아래 조건을 모두 만족하는 자</p><p style=\"line-height: 1.8;\">-「글로벌 혁신특구 지정 등의 변경」(중소벤처기업부고시 제2026-41호('26.06.18))에서 지정되어 있는 대전 규제자유특구사업자</p><p style=\"line-height: 1.8;\">- 규제자유특구 재정지원사업 운영요령 제10조(수행기관 등의 자격)에 해당하는 자</p><p style=\"line-height: 1.8;\"><br></p><p style=\"line-height: 1.8;\">☞ 신산업 책임보험, 현지실증 및 해외인증 지원</p><p style=\"line-height: 1.8;\">※ 자세한 지원내용 공고문 참조</p>",
-        "pldirSportRealmMlsfcCodeNm": "기술사업화/이전/지도",
-        "printFileNm": "합성생물학 기반 첨단 바이오제조 글로벌 혁신특구 기업육성 지원사업 모집 공고.pdf"
-      },
-      "raw_content": "Error>상세화면\n본문 바로가기\n주메뉴 바로가기\n에러가 발생했습니다!",
-      "raw_fetched_at": "2026-08-10"
-    },
-    {
       "pbancSn": "bizinfo_PBLN_000000000125339",
       "id": "bizinfo_PBLN_000000000125339",
       "source": "bizinfo",
@@ -17476,7 +17329,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-06-05",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 177930,
         "integrated": false,
@@ -17667,7 +17520,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-07-17",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178543,
         "integrated": false,
@@ -17884,7 +17737,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-07-27",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11004",
@@ -18014,14 +17867,14 @@
         "classify_version": "v8.3-external"
       },
       "first_seen": "2026-07-31",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "intcNo": "326D00092010",
         "type": "모집공모",
         "title": "2026 대한민국 콘텐츠대상(만화) 정부시상 후보작 추천 공고",
         "registDate": "26.07.31",
         "period": "26.07.31 ~ 26.08.31",
-        "views": "7156",
+        "views": "7199",
         "href": "/kocca/pims/view.do?intcNo=326D00092010&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
         "_source_page": 1
       },
@@ -18074,14 +17927,14 @@
         "classify_version": "v8.3-external"
       },
       "first_seen": "2026-07-31",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "intcNo": "326D00091013",
         "type": "모집공모",
         "title": "2026 대한민국 콘텐츠대상(캐릭터 부문) 정부시상 후보작 추천 공고",
         "registDate": "26.07.31",
         "period": "26.07.31 ~ 26.08.31",
-        "views": "7572",
+        "views": "7621",
         "href": "/kocca/pims/view.do?intcNo=326D00091013&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
         "_source_page": 1
       },
@@ -18134,14 +17987,14 @@
         "classify_version": "v8.3-external"
       },
       "first_seen": "2026-07-31",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "intcNo": "326D00037012",
         "type": "모집공모",
         "title": "2026 대한민국 콘텐츠대상(애니메이션)  국민심사위원 모집 공고",
         "registDate": "26.07.31",
         "period": "26.07.31 ~ 26.08.31",
-        "views": "7198",
+        "views": "7242",
         "href": "/kocca/pims/view.do?intcNo=326D00037012&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
         "_source_page": 1
       },
@@ -18194,14 +18047,14 @@
         "classify_version": "v8.3-external"
       },
       "first_seen": "2026-07-31",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "intcNo": "326D00037011",
         "type": "모집공모",
         "title": "2026 대한민국 콘텐츠대상(애니메이션)  정부시상 후보작 추천 공고",
         "registDate": "26.07.31",
         "period": "26.07.31 ~ 26.08.31",
-        "views": "7228",
+        "views": "7272",
         "href": "/kocca/pims/view.do?intcNo=326D00037011&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
         "_source_page": 1
       },
@@ -18745,7 +18598,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-12",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178875,
         "integrated": true,
@@ -18861,7 +18714,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-12",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178873,
         "integrated": true,
@@ -19199,7 +19052,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-14",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178867,
         "integrated": false,
@@ -19759,7 +19612,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 176391,
         "integrated": false,
@@ -20025,7 +19878,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-14",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178880,
         "integrated": false,
@@ -20140,7 +19993,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-19",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178935,
         "integrated": false,
@@ -20480,7 +20333,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-25",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178991,
         "integrated": false,
@@ -20668,7 +20521,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179041,
         "integrated": false,
@@ -20783,7 +20636,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-07-30",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178709,
         "integrated": false,
@@ -20900,7 +20753,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178953,
         "integrated": false,
@@ -21908,7 +21761,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-22",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178942,
         "integrated": false,
@@ -22173,7 +22026,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-19",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178937,
         "integrated": false,
@@ -22290,7 +22143,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178999,
         "integrated": false,
@@ -22556,7 +22409,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178975,
         "integrated": true,
@@ -22672,7 +22525,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179028,
         "integrated": false,
@@ -22937,7 +22790,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-07-30",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178633,
         "integrated": false,
@@ -23432,7 +23285,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179042,
         "integrated": false,
@@ -23555,7 +23408,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179040,
         "integrated": false,
@@ -23745,7 +23598,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-14",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178885,
         "integrated": false,
@@ -24010,7 +23863,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179019,
         "integrated": false,
@@ -24127,7 +23980,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-22",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178983,
         "integrated": false,
@@ -24392,7 +24245,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179037,
         "integrated": false,
@@ -24954,7 +24807,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-25",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178997,
         "integrated": false,
@@ -25144,7 +24997,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178956,
         "integrated": false,
@@ -25337,7 +25190,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-11",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178831,
         "integrated": false,
@@ -25452,7 +25305,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179048,
         "integrated": true,
@@ -25587,7 +25440,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "note": "검토 매칭 (전국/인력)",
       "connect": "",
       "classify_evidence": {
@@ -26218,7 +26071,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-14",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178817,
         "integrated": false,
@@ -26335,7 +26188,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-20",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178948,
         "integrated": false,
@@ -26532,7 +26385,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179035,
         "integrated": false,
@@ -26647,7 +26500,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179058,
         "integrated": false,
@@ -26840,7 +26693,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 176296,
         "integrated": true,
@@ -27494,7 +27347,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "note": "검토 매칭 (전국/시설ㆍ공간ㆍ보육)",
       "connect": "",
       "classify_evidence": {
@@ -27677,7 +27530,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-05-09",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 177563,
         "integrated": false,
@@ -28018,7 +27871,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-05-30",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 177864,
         "integrated": false,
@@ -28504,7 +28357,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-07",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178803,
         "integrated": false,
@@ -28573,7 +28426,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-01-16",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "10278",
@@ -28695,7 +28548,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "note": "검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)",
       "connect": "",
       "classify_evidence": {
@@ -28824,7 +28677,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "note": "검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)",
       "connect": "",
       "classify_evidence": {
@@ -29006,7 +28859,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 176129,
         "integrated": false,
@@ -29123,7 +28976,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 175366,
         "integrated": false,
@@ -29238,7 +29091,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 171419,
         "integrated": false,
@@ -29307,7 +29160,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-04-20",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "10643",
@@ -29362,7 +29215,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-04-01",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "10545",
@@ -29417,7 +29270,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-03-12",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "10407",
@@ -29472,7 +29325,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-03-17",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "10441",
@@ -30174,7 +30027,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-06-10",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178023,
         "integrated": false,
@@ -30291,7 +30144,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-06-16",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 177844,
         "integrated": false,
@@ -30408,7 +30261,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-07-03",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178289,
         "integrated": true,
@@ -30697,7 +30550,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-07-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11010",
@@ -30798,7 +30651,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-14",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178850,
         "integrated": false,
@@ -42388,61 +42241,6 @@
       "raw_fetched_at": "2026-08-28"
     },
     {
-      "pbancSn": "itp_11060",
-      "title": "2026 미추홀구와 함께하는 뿌리기업 채용박람회",
-      "agency": "인천테크노파크 뿌리산업일자리센터",
-      "deadline": "2026-08-29",
-      "url": "https://itp.or.kr/intro.asp?tmid=13&seq=11060",
-      "tier": "orange",
-      "note": "인천 매칭이지만 일자리 + 뿌리산업 불일치",
-      "classify_evidence": {
-        "summary_reason": "인천 매칭이지만 일자리 + 뿌리산업 불일치",
-        "category_hints": [
-          "incheon",
-          "itp",
-          "뿌리산업일자리센터"
-        ],
-        "rule_checks": {
-          "recruiting": {
-            "pass": true,
-            "value": "True",
-            "detail": "ITP 진행중 항목"
-          },
-          "deadline": {
-            "pass": true,
-            "value": "2026-08-29",
-            "detail": "ITP 마감일"
-          },
-          "region": {
-            "pass": true,
-            "value": "인천",
-            "detail": "ITP=인천 거점"
-          }
-        },
-        "axis_scores": {
-          "region": "green",
-          "stage": "green",
-          "industry": "orange",
-          "nature": "orange",
-          "qualification": "green"
-        },
-        "exclusion_flags": [],
-        "audit_flags": [],
-        "tier_logic": "ITP 뿌리산업일자리센터 부서별 룰 → orange",
-        "classify_version": "v8.3-itp"
-      },
-      "first_seen": "2026-08-13",
-      "last_seen": "2026-08-29",
-      "structured": {
-        "source_kind": "itp",
-        "itp_seq": "11060",
-        "itp_dept": "뿌리산업일자리센터",
-        "attachments": [],
-        "recruiting": true,
-        "region": "인천"
-      }
-    },
-    {
       "pbancSn": "bizinfo_PBLN_000000000121794",
       "id": "bizinfo_PBLN_000000000121794",
       "source": "bizinfo",
@@ -42622,7 +42420,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-07-31",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178721,
         "integrated": false,
@@ -42749,7 +42547,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-07",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178810,
         "integrated": true,
@@ -42876,7 +42674,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-14",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178871,
         "integrated": false,
@@ -42997,7 +42795,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-14",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178858,
         "integrated": true,
@@ -43118,7 +42916,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-14",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178892,
         "integrated": false,
@@ -43179,7 +42977,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "note": "3순위 (참고용): 경기 단독 (인천 미포함)",
       "connect": "",
       "classify_evidence": {
@@ -43382,7 +43180,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-05-08",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 177505,
         "integrated": true,
@@ -43864,7 +43662,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-06-27",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178295,
         "integrated": false,
@@ -44345,7 +44143,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-07-07",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178400,
         "integrated": false,
@@ -44628,7 +44426,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-07-16",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "10969",
@@ -44831,7 +44629,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-07-17",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178519,
         "integrated": false,
@@ -45244,7 +45042,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-07-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178672,
         "integrated": false,
@@ -45511,7 +45309,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-07-31",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178731,
         "integrated": false,
@@ -45632,7 +45430,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-07-31",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178718,
         "integrated": false,
@@ -45831,7 +45629,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-01",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178745,
         "integrated": false,
@@ -46169,7 +45967,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-07",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178795,
         "integrated": false,
@@ -46302,7 +46100,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-07",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178781,
         "integrated": false,
@@ -46427,7 +46225,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-07",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178771,
         "integrated": true,
@@ -46548,7 +46346,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-07",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178740,
         "integrated": false,
@@ -46689,14 +46487,14 @@
         "classify_version": "v8.3-external"
       },
       "first_seen": "2026-08-10",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "intcNo": "326D00091014",
         "type": "모집공모",
         "title": "2026 더현대글로벌×더셀렉츠 글로벌 팝업스토어(일본 도쿄) 참가 브랜드 모집(2차)",
         "registDate": "26.08.10",
         "period": "26.08.10 ~ 26.08.31",
-        "views": "5754",
+        "views": "5792",
         "href": "/kocca/pims/view.do?intcNo=326D00091014&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
         "_source_page": 1
       }
@@ -47031,14 +46829,14 @@
         "classify_version": "v8.3-external"
       },
       "first_seen": "2026-08-13",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "intcNo": "326D00092011",
         "type": "모집공모",
         "title": "2026 KOMICS Thailand 참가기업 모집 공고",
         "registDate": "26.08.13",
         "period": "26.08.13 ~ 26.08.31",
-        "views": "4506",
+        "views": "4552",
         "href": "/kocca/pims/view.do?intcNo=326D00092011&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
         "_source_page": 1
       }
@@ -47793,7 +47591,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-14",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178894,
         "integrated": false,
@@ -47914,7 +47712,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-14",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178870,
         "integrated": false,
@@ -48177,7 +47975,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-19",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178932,
         "integrated": false,
@@ -48298,7 +48096,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-19",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178912,
         "integrated": false,
@@ -49073,7 +48871,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-20",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178946,
         "integrated": false,
@@ -49194,7 +48992,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-20",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178943,
         "integrated": false,
@@ -49315,7 +49113,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-20",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178939,
         "integrated": false,
@@ -49943,7 +49741,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-22",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178974,
         "integrated": true,
@@ -50208,7 +50006,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-25",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178995,
         "integrated": false,
@@ -50834,7 +50632,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178988,
         "integrated": false,
@@ -50971,7 +50769,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178971,
         "integrated": false,
@@ -51162,7 +50960,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179067,
         "integrated": false,
@@ -51426,7 +51224,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-19",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178934,
         "integrated": false,
@@ -51694,7 +51492,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-22",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178972,
         "integrated": false,
@@ -51813,7 +51611,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-22",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178960,
         "integrated": false,
@@ -52512,7 +52310,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179031,
         "integrated": false,
@@ -52631,7 +52429,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179022,
         "integrated": false,
@@ -52750,7 +52548,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178964,
         "integrated": true,
@@ -53015,7 +52813,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-07-22",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178571,
         "integrated": false,
@@ -53140,7 +52938,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-07",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178785,
         "integrated": false,
@@ -53330,7 +53128,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-14",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178883,
         "integrated": false,
@@ -53449,7 +53247,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-19",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178938,
         "integrated": false,
@@ -53778,7 +53576,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-22",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178973,
         "integrated": true,
@@ -53906,7 +53704,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-22",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178966,
         "integrated": false,
@@ -54025,7 +53823,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-22",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178962,
         "integrated": false,
@@ -54146,7 +53944,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-22",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178961,
         "integrated": true,
@@ -54487,7 +54285,7 @@
           "region": {
             "pass": false,
             "value": "부산",
-            "detail": "기관 지역 한정 (agency: 부산기술창업투자원)"
+            "detail": "지역 한정 desc: '경남 소재'"
           },
           "biz_enyy": {
             "pass": true,
@@ -54517,7 +54315,7 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "기관 지역 한정 (agency: 부산기술창업투자원)"
+            "detail": "지역 한정 desc: '경남 소재'"
           },
           "positive_hit": {
             "pass": false,
@@ -54528,7 +54326,7 @@
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "기관 지역 한정 (agency: 부산기술창업투자원)"
+            "detail": "지역 한정 desc: '경남 소재'"
           },
           "stage": {
             "level": "green",
@@ -54551,7 +54349,7 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "기관 지역 한정 (agency: 부산기술창업투자원)"
+            "msg": "지역 한정 desc: '경남 소재'"
           }
         ],
         "audit_flags": [],
@@ -54559,7 +54357,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179025,
         "integrated": false,
@@ -54691,7 +54489,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-07-22",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178622,
         "integrated": false,
@@ -54888,7 +54686,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-14",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178900,
         "integrated": false,
@@ -55007,7 +54805,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-14",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178888,
         "integrated": true,
@@ -55134,7 +54932,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-19",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178914,
         "integrated": false,
@@ -56042,7 +55840,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179034,
         "integrated": false,
@@ -56163,7 +55961,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179016,
         "integrated": false,
@@ -56355,7 +56153,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179065,
         "integrated": false,
@@ -56488,7 +56286,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-22",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178944,
         "integrated": false,
@@ -56899,7 +56697,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-07",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178766,
         "integrated": false,
@@ -57037,14 +56835,14 @@
         "classify_version": "v8.3-external"
       },
       "first_seen": "2026-08-11",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "intcNo": "326D00034006",
         "type": "모집공모",
         "title": "2026년 게임인재원 AI 외래 강사 Pool 2차 모집",
         "registDate": "26.08.10",
         "period": "26.08.10 ~ 26.09.04",
-        "views": "4019",
+        "views": "4053",
         "href": "/kocca/pims/view.do?intcNo=326D00034006&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
         "_source_page": 1
       }
@@ -57731,7 +57529,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-19",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178913,
         "integrated": true,
@@ -57852,7 +57650,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-19",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178911,
         "integrated": true,
@@ -58349,7 +58147,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11081",
@@ -59178,7 +58976,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-25",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178965,
         "integrated": true,
@@ -59299,7 +59097,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-25",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178593,
         "integrated": false,
@@ -60202,7 +60000,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179013,
         "integrated": false,
@@ -60546,7 +60344,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179062,
         "integrated": false,
@@ -60667,7 +60465,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179051,
         "integrated": false,
@@ -60929,7 +60727,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-07-31",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178722,
         "integrated": false,
@@ -61050,7 +60848,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-07",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178816,
         "integrated": false,
@@ -61247,7 +61045,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-14",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178902,
         "integrated": false,
@@ -61374,7 +61172,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-14",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178887,
         "integrated": false,
@@ -61501,7 +61299,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-20",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178941,
         "integrated": false,
@@ -61628,7 +61426,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179000,
         "integrated": false,
@@ -61749,7 +61547,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178987,
         "integrated": false,
@@ -62012,7 +61810,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-19",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178936,
         "integrated": false,
@@ -62203,7 +62001,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-22",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178963,
         "integrated": false,
@@ -62324,7 +62122,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-25",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178993,
         "integrated": false,
@@ -62751,14 +62549,14 @@
         "classify_version": "v8.3-external"
       },
       "first_seen": "2026-08-26",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "intcNo": "326D00088010",
         "type": "모집공모",
         "title": "K-브랜드 홍보·판촉 마켓 참가기업 모집 추가공고",
         "registDate": "26.08.26",
         "period": "26.08.26 ~ 26.09.07",
-        "views": "1156",
+        "views": "1205",
         "href": "/kocca/pims/view.do?intcNo=326D00088010&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
         "_source_page": 1
       }
@@ -63162,7 +62960,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179029,
         "integrated": false,
@@ -63304,7 +63102,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179015,
         "integrated": false,
@@ -63495,7 +63293,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179046,
         "integrated": false,
@@ -63617,7 +63415,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179023,
         "integrated": false,
@@ -63749,7 +63547,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179072,
         "integrated": false,
@@ -63868,7 +63666,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179060,
         "integrated": true,
@@ -64062,7 +63860,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-01",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178756,
         "integrated": false,
@@ -64129,7 +63927,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-08-19",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11070",
@@ -64244,7 +64042,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-20",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178949,
         "integrated": false,
@@ -64312,14 +64110,14 @@
         "classify_version": "v8.3-external"
       },
       "first_seen": "2026-08-24",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "intcNo": "326D00037013",
         "type": "모집공모",
         "title": "2026 ATF 한국공동관 애니메이션 참가기업 모집",
         "registDate": "26.08.24",
         "period": "26.08.25 ~ 26.09.08",
-        "views": "1759",
+        "views": "1795",
         "href": "/kocca/pims/view.do?intcNo=326D00037013&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
         "_source_page": 1
       }
@@ -64494,7 +64292,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179026,
         "integrated": true,
@@ -64687,7 +64485,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179044,
         "integrated": false,
@@ -65042,7 +64840,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-08-20",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11075",
@@ -65730,7 +65528,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-25",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178992,
         "integrated": true,
@@ -66140,7 +65938,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179030,
         "integrated": true,
@@ -66261,7 +66059,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179017,
         "integrated": false,
@@ -66390,7 +66188,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179008,
         "integrated": false,
@@ -66529,7 +66327,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179003,
         "integrated": false,
@@ -66661,7 +66459,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178998,
         "integrated": false,
@@ -66859,7 +66657,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179056,
         "integrated": false,
@@ -67831,7 +67629,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-20",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178924,
         "integrated": false,
@@ -68244,7 +68042,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-22",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178984,
         "integrated": false,
@@ -68509,7 +68307,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179045,
         "integrated": false,
@@ -68647,7 +68445,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179039,
         "integrated": false,
@@ -68768,7 +68566,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179061,
         "integrated": true,
@@ -69181,7 +68979,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-07",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178792,
         "integrated": true,
@@ -69381,7 +69179,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-14",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178872,
         "integrated": false,
@@ -69594,7 +69392,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-08-19",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11069",
@@ -69990,7 +69788,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-20",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178915,
         "integrated": true,
@@ -70122,7 +69920,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-20",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178660,
         "integrated": false,
@@ -70334,7 +70132,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11082",
@@ -70595,7 +70393,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-22",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178977,
         "integrated": false,
@@ -71232,7 +71030,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-25",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178996,
         "integrated": true,
@@ -71358,7 +71156,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-25",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178624,
         "integrated": false,
@@ -71711,7 +71509,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-08-26",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11088",
@@ -72190,7 +71988,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179032,
         "integrated": true,
@@ -72317,7 +72115,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179027,
         "integrated": false,
@@ -72443,7 +72241,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179010,
         "integrated": false,
@@ -72564,7 +72362,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179005,
         "integrated": false,
@@ -72631,7 +72429,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-08-27",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11089",
@@ -73033,7 +72831,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179066,
         "integrated": false,
@@ -73575,7 +73373,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-11",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178798,
         "integrated": false,
@@ -73694,7 +73492,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-19",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178930,
         "integrated": false,
@@ -73820,7 +73618,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-22",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178980,
         "integrated": false,
@@ -73941,7 +73739,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179050,
         "integrated": false,
@@ -74069,7 +73867,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179063,
         "integrated": false,
@@ -74188,7 +73986,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179036,
         "integrated": false,
@@ -74394,7 +74192,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-19",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178927,
         "integrated": false,
@@ -74661,7 +74459,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179011,
         "integrated": true,
@@ -74782,7 +74580,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179043,
         "integrated": false,
@@ -74995,7 +74793,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-08-24",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11084",
@@ -75109,7 +74907,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179068,
         "integrated": false,
@@ -75308,7 +75106,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-07-21",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178589,
         "integrated": false,
@@ -75427,7 +75225,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-19",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178931,
         "integrated": false,
@@ -75693,7 +75491,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179064,
         "integrated": false,
@@ -75956,7 +75754,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-14",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178890,
         "integrated": false,
@@ -76294,7 +76092,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-20",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178947,
         "integrated": false,
@@ -76990,7 +76788,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-07-17",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178547,
         "integrated": false,
@@ -77835,7 +77633,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179038,
         "integrated": false,
@@ -77969,7 +77767,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "note": "검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)",
       "connect": "",
       "classify_evidence": {
@@ -78102,7 +77900,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "note": "3순위 (참고용): 지자체 기관 의심 (지역진흥원: 성남산업진흥원)",
       "connect": "",
       "classify_evidence": {
@@ -78217,7 +78015,7 @@
       "deadline": "2026-09-30",
       "detail_url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=176968",
       "first_seen": "2026-04-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 176968,
         "integrated": true,
@@ -78439,7 +78237,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 176645,
         "integrated": true,
@@ -78568,7 +78366,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 175808,
         "integrated": false,
@@ -78635,7 +78433,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-02-10",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "10317",
@@ -79178,7 +78976,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-06-12",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178097,
         "integrated": false,
@@ -79386,7 +79184,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-06-23",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178200,
         "integrated": false,
@@ -79658,7 +79456,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-07-16",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178536,
         "integrated": false,
@@ -80081,7 +79879,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-07-30",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178706,
         "integrated": true,
@@ -80284,7 +80082,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-07",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178786,
         "integrated": false,
@@ -80549,7 +80347,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-25",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179002,
         "integrated": true,
@@ -80671,7 +80469,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-22",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178327,
         "integrated": false,
@@ -80791,7 +80589,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179020,
         "integrated": false,
@@ -80991,7 +80789,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179052,
         "integrated": false,
@@ -81112,7 +80910,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179049,
         "integrated": false,
@@ -81233,7 +81031,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 176286,
         "integrated": false,
@@ -81426,7 +81224,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179054,
         "integrated": false,
@@ -81770,7 +81568,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-14",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178891,
         "integrated": false,
@@ -81889,7 +81687,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179009,
         "integrated": false,
@@ -82301,7 +82099,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-07-31",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178737,
         "integrated": false,
@@ -82641,7 +82439,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-07",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178698,
         "integrated": false,
@@ -82773,7 +82571,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-22",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178976,
         "integrated": false,
@@ -82965,7 +82763,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179012,
         "integrated": false,
@@ -83086,7 +82884,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-07-22",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178597,
         "integrated": false,
@@ -83227,7 +83025,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-04-27",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "10673",
@@ -83344,7 +83142,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-05-09",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 177466,
         "integrated": false,
@@ -84328,7 +84126,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-06-26",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178247,
         "integrated": false,
@@ -84735,7 +84533,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-07-17",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178408,
         "integrated": false,
@@ -84802,7 +84600,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-07-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11014",
@@ -85215,7 +85013,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "note": "AI 포지셔닝 가능 (딥테크)",
       "connect": "",
       "classify_evidence": {
@@ -85417,7 +85215,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 176190,
         "integrated": false,
@@ -86118,7 +85916,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-06-09",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 177899,
         "integrated": false,
@@ -86390,7 +86188,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 176218,
         "integrated": true,
@@ -86509,7 +86307,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 176378,
         "integrated": false,
@@ -86988,7 +86786,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 176406,
         "integrated": false,
@@ -87258,7 +87056,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 176755,
         "integrated": false,
@@ -87377,7 +87175,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 176494,
         "integrated": false,
@@ -88008,7 +87806,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 176782,
         "integrated": false,
@@ -88135,7 +87933,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 176316,
         "integrated": false,
@@ -88266,7 +88064,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 176248,
         "integrated": true,
@@ -88387,7 +88185,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 176090,
         "integrated": false,
@@ -89022,7 +88820,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-06-09",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 177681,
         "integrated": false,
@@ -89656,7 +89454,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179024,
         "integrated": false,
@@ -90445,7 +90243,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-07-02",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "10915",
@@ -90554,7 +90352,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-07",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178802,
         "integrated": false,
@@ -90684,7 +90482,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "note": "3순위 (참고용): 서울 시설/지자체 (서울창업허브)",
       "connect": "",
       "classify_evidence": {
@@ -91319,7 +91117,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-07-10",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178453,
         "integrated": true,
@@ -91451,7 +91249,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-06-03",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 177922,
         "integrated": false,
@@ -92023,7 +91821,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "note": "3순위 (참고용): 지자체 기관 의심 (창업보육센터: 남서울대학교 창업보육센터)",
       "connect": "",
       "classify_evidence": {
@@ -92303,7 +92101,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "note": "3순위 (참고용): 지자체 기관 의심 (재단법인 접두사: (재)충북과학기술혁신원장)",
       "connect": "",
       "classify_evidence": {
@@ -92438,7 +92236,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "note": "검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)",
       "connect": "",
       "classify_evidence": {
@@ -92571,7 +92369,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "note": "3순위 (참고용): 기관 지역 한정 (agency: 대구노동권익센터)",
       "connect": "",
       "classify_evidence": {
@@ -92701,7 +92499,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "note": "3순위 (참고용): 지자체 기관 의심 (재단법인 접두사: (재)창원산업진흥원)",
       "connect": "",
       "classify_evidence": {
@@ -92834,7 +92632,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "note": "3순위 (참고용): 기관 지역 한정 (agency: (사)부산경영자총협회)",
       "connect": "",
       "classify_evidence": {
@@ -92972,7 +92770,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "note": "3순위 (참고용): 기관 지역 한정 (agency: 대구노동권익센터)",
       "connect": "",
       "classify_evidence": {
@@ -93079,7 +92877,7 @@
         "title": "[수정/상시공고] 2026년 글로벌게임허브센터 신규 입주기업 추가모집(상시) 수정공고",
         "registDate": "26.04.23",
         "period": "26.04.27 ~ 26.12.31",
-        "views": "19359",
+        "views": "19403",
         "href": "/kocca/pims/view.do?intcNo=326D00034004&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
         "_source_page": 1
       },
@@ -93124,7 +92922,7 @@
       "rationale_short": "허파랑 개인 명의 추천 / 레이어: 🌉브리지 / 경로: partial / source: kocca / 🌉 콘텐츠",
       "nogo_match": null,
       "source_priority": 1.05,
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "note": "도메인/지역 매칭 약함",
       "classify_evidence": {
         "summary_reason": "도메인/지역 매칭 약함",
@@ -93266,7 +93064,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 176856,
         "integrated": false,
@@ -93387,7 +93185,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 176855,
         "integrated": false,
@@ -93506,7 +93304,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 176810,
         "integrated": false,
@@ -93625,7 +93423,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 176741,
         "integrated": false,
@@ -93746,7 +93544,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 176739,
         "integrated": false,
@@ -93999,7 +93797,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 176566,
         "integrated": false,
@@ -94122,7 +93920,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 176563,
         "integrated": false,
@@ -94243,7 +94041,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 176497,
         "integrated": true,
@@ -94377,7 +94175,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 176442,
         "integrated": false,
@@ -94510,7 +94308,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 176224,
         "integrated": false,
@@ -94642,7 +94440,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 175849,
         "integrated": true,
@@ -94774,7 +94572,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 173424,
         "integrated": false,
@@ -96620,7 +96418,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-05-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 177837,
         "integrated": false,
@@ -96811,7 +96609,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-06-09",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178017,
         "integrated": true,
@@ -96932,7 +96730,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-06-13",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178113,
         "integrated": false,
@@ -97062,7 +96860,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-06-16",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 177957,
         "integrated": false,
@@ -97271,7 +97069,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-06-18",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 177970,
         "integrated": false,
@@ -97392,7 +97190,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-06-23",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178214,
         "integrated": true,
@@ -97663,7 +97461,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-07-10",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178445,
         "integrated": false,
@@ -97784,7 +97582,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-07-11",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178489,
         "integrated": false,
@@ -97918,7 +97716,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-07-17",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178527,
         "integrated": true,
@@ -98040,7 +97838,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-07-22",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 177432,
         "integrated": false,
@@ -98594,7 +98392,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-14",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178835,
         "integrated": false,
@@ -98713,7 +98511,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-19",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178636,
         "integrated": false,
@@ -98984,7 +98782,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 179018,
         "integrated": false,
@@ -99105,7 +98903,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 178990,
         "integrated": false,
@@ -99378,7 +99176,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "note": "검토 매칭 (TIPS)",
       "connect": "",
       "classify_evidence": {
@@ -99401,7 +99199,7 @@
           "region": {
             "pass": false,
             "value": "경남",
-            "detail": "지역 한정 desc: '경상남도 소재'"
+            "detail": "사업명에 지역 포함 (경남)"
           },
           "biz_enyy": {
             "pass": true,
@@ -99431,7 +99229,7 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "지역 한정 desc: '경상남도 소재'"
+            "detail": "사업명에 지역 포함 (경남)"
           },
           "positive_hit": {
             "pass": true,
@@ -99442,7 +99240,7 @@
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "지역 한정 desc: '경상남도 소재'"
+            "detail": "사업명에 지역 포함 (경남)"
           },
           "stage": {
             "level": "green",
@@ -99465,7 +99263,7 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "지역 한정 desc: '경상남도 소재'"
+            "msg": "사업명에 지역 포함 (경남)"
           },
           {
             "axis": "industry",
@@ -99592,7 +99390,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 176085,
         "integrated": false,
@@ -99714,7 +99512,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 175817,
         "integrated": false,
@@ -99834,7 +99632,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-06-05",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 177944,
         "integrated": false,
@@ -99953,7 +99751,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-05-05",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "structured": {
         "pbanc_sn_int": 177493,
         "integrated": false,
@@ -100085,7 +99883,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "note": "3순위 (참고용): 사업명에 지역 포함 (부산)",
       "connect": "",
       "classify_evidence": {
@@ -122082,77 +121880,6 @@
         "bsnsSumryCn": "<p>2026년도 ‘환경기업 해외 진출 전문 컨설팅 지원사업’ 모집계획을 다음과 같이 공고하오니, 본 사업 참여를 희망하는 환경산업체는 신청하여 주시기 바랍니다.&nbsp;</p><p><br></p><p>☞&nbsp;해외 진출 시 발생하는 애로사항 해소를 위하여 수출·수주 분야 전문 컨설팅을 원하는 중소ㆍ중견 환경기업으로 ’25년도 본사업에 참여하지 아니한 기업</p><p><br></p><p style=\"line-height: 1.8;\">☞&nbsp;자문 지원 범위(별첨 1)에 따라 해당 분야 자문기업을 통한 컨설팅 지원</p><p style=\"line-height: 1.8;\">-&nbsp;신청기업 당 연간 최대 1,200만 원</p>",
         "pldirSportRealmMlsfcCodeNm": "컨설팅",
         "printFileNm": "사업_공고문.hwp"
-      }
-    },
-    {
-      "pbancSn": "bizinfo_PBLN_000000000118300",
-      "id": "bizinfo_PBLN_000000000118300",
-      "source": "bizinfo",
-      "source_label": "중소벤처기업부 BIZINFO (기업마당)",
-      "title": "[전북] 남원시 2026년 온라인 유통채널 연계 프로모션 참여 기업 상시 모집 공고(온라인 플랫폼 판매 지원)",
-      "agency": "전북특별자치도 / 전북특별자치도경제통상진흥원",
-      "url": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000118300",
-      "deadline": "",
-      "tier": "orange",
-      "note": "비수도권 단독 (전북)",
-      "classify_evidence": {
-        "summary_reason": "비수도권 단독 (전북)",
-        "category_hints": [
-          "bizinfo",
-          "전북"
-        ],
-        "rule_checks": {
-          "recruiting": {
-            "pass": true,
-            "value": "True",
-            "detail": "어댑터 통과"
-          },
-          "deadline": {
-            "pass": false,
-            "value": "",
-            "detail": "어댑터 normalize"
-          },
-          "region": {
-            "pass": false,
-            "value": "전북",
-            "detail": "agency·title·region 종합"
-          }
-        },
-        "axis_scores": {
-          "region": "orange",
-          "stage": "yellow",
-          "industry": "green",
-          "nature": "yellow",
-          "qualification": "yellow"
-        },
-        "exclusion_flags": [],
-        "audit_flags": [],
-        "tier_logic": "bizinfo 룰 → orange",
-        "classify_version": "v8.3-external"
-      },
-      "first_seen": "2026-05-15",
-      "last_seen": "2026-08-15",
-      "structured": {
-        "trgetNm": "중소기업",
-        "updtPnttm": "2026-02-09 15:55:22",
-        "hashtags": "내수,경영,전북,2026,온라인유통채널,전북특별자치도,전북특별자치도경제통상진흥원,남원시,온라인 플랫폼,할인쿠폰,유통채널,기획전,프로모션,제조업,중소기업,온라인",
-        "inqireCo": 8439,
-        "creatPnttm": "2026-02-09 09:45:06",
-        "pblancNm": "[전북] 남원시 2026년 온라인 유통채널 연계 프로모션 참여 기업 상시 모집 공고(온라인 플랫폼 판매 지원)",
-        "pblancId": "PBLN_000000000118300",
-        "printFlpthNm": "https://www.bizinfo.go.kr/cmm/fms/getImageFile.do?atchFileId=FILE_000000000743230&fileSn=0",
-        "refrncNm": "경제통상진흥원 마케팅팀 063-711-2030, 2065",
-        "rceptEngnHmpgUrl": "https://jbok.kr/spWork/supportBusinessView.do?menuId=60&spSeq=e918c23db8314a01b9540ae1430c0737",
-        "pblancUrl": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000118300",
-        "jrsdInsttNm": "전북특별자치도",
-        "excInsttNm": "전북특별자치도경제통상진흥원",
-        "totCnt": 1545,
-        "reqstMthPapersCn": "온라인 접수(전북특별자치도 중소기업종합지원시스템)",
-        "pldirSportRealmLclasCodeNm": "내수",
-        "reqstBeginEndDe": "상시 접수",
-        "bsnsSumryCn": "<p>남원시와 전북특별자치도경제통상진흥원에서는 남원시 중소기업의 온라인 판매 활성화를 위해 추진하는 온라인 유통채널과 협업한 프로모션에 참여할 기업을 모집하오니, 많은 관심과 참여를 바랍니다.</p><p><br></p><p style=\"line-height: 1.8;\">☞&nbsp;남원시 소재 제조업 기반으로 중소기업확인서 보유한 중소기업</p><p style=\"line-height: 1.8;\">- 현재 온라인 유통채널에 입점하여 제품을 판매 중인 기업</p><p style=\"line-height: 1.8;\">- 유통채널 : G마켓, 옥션, 쿠팡, 11번가, 우체국 쇼핑, 전북생생장터 등</p><p><br></p><p>☞&nbsp;협업 유통채널 내 남원시 기획전 페이지 구성,&nbsp;기획전 상품 할인쿠폰 지원(최대 20%) 등 프로모션 진행 지원</p>",
-        "pldirSportRealmMlsfcCodeNm": "온라인",
-        "printFileNm": "공고문2026년 남원시 중소기업 온라인 플랫폼 판매지원 참여기업 상시 모집.hwp"
       }
     },
     {
@@ -145106,78 +144833,6 @@
       }
     },
     {
-      "pbancSn": "bizinfo_PBLN_000000000124555",
-      "id": "bizinfo_PBLN_000000000124555",
-      "source": "bizinfo",
-      "source_label": "중소벤처기업부 BIZINFO (기업마당)",
-      "title": "[대구] 가치 업고(UP-GO) 마일리지 사업 문화공간 조성 프로그램 모집 공고",
-      "agency": "대구광역시 / 대구상공회의소",
-      "url": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000124555",
-      "deadline": "",
-      "tier": "orange",
-      "note": "비수도권 단독 (대구)",
-      "classify_evidence": {
-        "summary_reason": "비수도권 단독 (대구)",
-        "category_hints": [
-          "bizinfo",
-          "대구"
-        ],
-        "rule_checks": {
-          "recruiting": {
-            "pass": true,
-            "value": "True",
-            "detail": "어댑터 통과"
-          },
-          "deadline": {
-            "pass": false,
-            "value": "",
-            "detail": "어댑터 normalize"
-          },
-          "region": {
-            "pass": false,
-            "value": "대구",
-            "detail": "agency·title·region 종합"
-          }
-        },
-        "axis_scores": {
-          "region": "orange",
-          "stage": "yellow",
-          "industry": "yellow",
-          "nature": "yellow",
-          "qualification": "yellow"
-        },
-        "exclusion_flags": [],
-        "audit_flags": [],
-        "tier_logic": "bizinfo 룰 → orange",
-        "classify_version": "v8.3-external"
-      },
-      "first_seen": "2026-07-21",
-      "last_seen": "2026-08-15",
-      "structured": {
-        "trgetNm": "중소기업",
-        "updtPnttm": "2026-07-21 15:52:25",
-        "hashtags": "인력,경영,대구,2026,휴게공간,문화공간,집기,비품,미래모빌리티,가구,근로자,개선,자동차부품,대구상공회의소,개보수,근로환경,대구광역시",
-        "inqireCo": 4539,
-        "creatPnttm": "2026-07-21 14:13:48",
-        "pblancNm": "[대구] 가치 업고(UP-GO) 마일리지 사업 문화공간 조성 프로그램 모집 공고",
-        "pblancId": "PBLN_000000000124555",
-        "printFlpthNm": "https://www.bizinfo.go.kr/cmm/fms/getImageFile.do?atchFileId=FILE_000000000765319&fileSn=0",
-        "refrncNm": "대구상공회의소 일자리창출팀 053-252-3273, 3274",
-        "fileNm": "붙임 2._가치업고(UP-GO)_마일리지_사업_신청서류.hwpx@홍보 포스터.png",
-        "pblancUrl": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000124555",
-        "jrsdInsttNm": "대구광역시",
-        "excInsttNm": "대구상공회의소",
-        "totCnt": 1545,
-        "reqstMthPapersCn": "이메일 접수 (dei3273@nate.com)",
-        "pldirSportRealmLclasCodeNm": "인력",
-        "reqstBeginEndDe": "예산 소진시까지",
-        "flpthNm": "https://www.bizinfo.go.kr/cmm/fms/getImageFile.do?atchFileId=FILE_000000000765320&fileSn=0@https://www.bizinfo.go.kr/cmm/fms/getImageFile.do?atchFileId=FILE_000000000765320&fileSn=1",
-        "bsnsSumryCn": "<p>대구광역시와 대구지역인적자원개발위원회에서는 대구지역 미래모빌리티 기업의 조직문화 개선 및 근로환경 선진화를 통한 근로자의 장기재직을 유도하고, 지역경제 발전과 기업 경쟁령 강화에 기여하고자 다음과 같이 사업을 시행하오니 기업 여러분의 많은 참여 바랍니다.</p><p><br></p><p style=\"line-height: 1.8;\">☞&nbsp;대구지역 미래모빌리티(자동차부품 등) 전ㆍ후방 기업(납품기업도 가능)</p><p style=\"line-height: 1.8;\">-&nbsp;상시근로자수 500인 미만 기업</p><p><br></p><p>☞&nbsp;사내 휴게공간, 카페, 소통공간 등 문화공간 조성 지원(최대 800만원 지원, 물품 구매가능)</p>",
-        "pldirSportRealmMlsfcCodeNm": "고용유지",
-        "printFileNm": "붙임 1. 가치업고 마일리지 프로그램 사업 공고문.pdf"
-      }
-    },
-    {
       "pbancSn": "bizinfo_PBLN_000000000124589",
       "id": "bizinfo_PBLN_000000000124589",
       "source": "bizinfo",
@@ -145896,79 +145551,6 @@
       }
     },
     {
-      "pbancSn": "bizinfo_PBLN_000000000124700",
-      "id": "bizinfo_PBLN_000000000124700",
-      "source": "bizinfo",
-      "source_label": "중소벤처기업부 BIZINFO (기업마당)",
-      "title": "[강원] High1 K-Collection 강원 쇼케이스 in 상하이 참가기업 모집 공고",
-      "agency": "강원특별자치도 / 대한무역투자진흥공사",
-      "url": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000124700",
-      "deadline": "",
-      "tier": "orange",
-      "note": "비수도권 단독 (강원)",
-      "classify_evidence": {
-        "summary_reason": "비수도권 단독 (강원)",
-        "category_hints": [
-          "bizinfo",
-          "강원"
-        ],
-        "rule_checks": {
-          "recruiting": {
-            "pass": true,
-            "value": "True",
-            "detail": "어댑터 통과"
-          },
-          "deadline": {
-            "pass": false,
-            "value": "",
-            "detail": "어댑터 normalize"
-          },
-          "region": {
-            "pass": false,
-            "value": "강원",
-            "detail": "agency·title·region 종합"
-          }
-        },
-        "axis_scores": {
-          "region": "orange",
-          "stage": "yellow",
-          "industry": "yellow",
-          "nature": "yellow",
-          "qualification": "yellow"
-        },
-        "exclusion_flags": [],
-        "audit_flags": [],
-        "tier_logic": "bizinfo 룰 → orange",
-        "classify_version": "v8.3-external"
-      },
-      "first_seen": "2026-07-24",
-      "last_seen": "2026-08-15",
-      "structured": {
-        "trgetNm": "중소기업",
-        "updtPnttm": "2026-07-24 15:42:03",
-        "hashtags": "수출,강원,2026,강원특별자치도,대한무역투자진흥공사,중국,상하이,소비재,식춤,화장품,건강기능식품,생활용품,쇼케이스,박람회,온라인,수출상담",
-        "inqireCo": 2403,
-        "creatPnttm": "2026-07-24 11:35:34",
-        "pblancNm": "[강원] High1 K-Collection 강원 쇼케이스 in 상하이 참가기업 모집 공고",
-        "pblancId": "PBLN_000000000124700",
-        "printFlpthNm": "https://www.bizinfo.go.kr/cmm/fms/getImageFile.do?atchFileId=FILE_000000000765940&fileSn=0",
-        "refrncNm": "대한무역투자진흥공사 상하이무역관 86-021-5108-8771(ex108, 107) /  lujingsh@kotra.or.kr,  chyeonjun@kotra.or.kr",
-        "rceptEngnHmpgUrl": "https://kotra.or.kr/subList/20000020753/subhome/bizAply/selectBizMntInfoDetail.do?&dtlBizMntNo=26CN0LF&cpbizYn=N",
-        "fileNm": "첨부2-2. (회사명) 샘플정보 회신양식.xlsx@첨부2-1. (회사명) 참가신청서 및 개인정보이용제공동의서.xlsx",
-        "pblancUrl": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000124700",
-        "jrsdInsttNm": "강원특별자치도",
-        "excInsttNm": "대한무역투자진흥공사",
-        "totCnt": 1545,
-        "reqstMthPapersCn": "온라인 접수(무역투자24)",
-        "pldirSportRealmLclasCodeNm": "수출",
-        "reqstBeginEndDe": "세부사업별 상이",
-        "flpthNm": "https://www.bizinfo.go.kr/cmm/fms/getImageFile.do?atchFileId=FILE_000000000765951&fileSn=0@https://www.bizinfo.go.kr/cmm/fms/getImageFile.do?atchFileId=FILE_000000000765951&fileSn=1",
-        "bsnsSumryCn": "<p>KOTRA 상하이무역관은 강원랜드와 함께 강원도 소재 우수 소비재 브랜드의 중국 시장 진출을 지원하고자 「High1 K-Collection: 강원 쇼케이스 in 상하이」를 추진합니다. 최근 중국 내 한중 협력 강화 분위기와 함께 유통업계에는 청정 원료ㆍ이미지를 활용한 프리미엄 K-소비재에 대한 수요가 지속적으로 증가하고 있습니다. 이에 따라 강원도의 우수한 식품ㆍ뷰티ㆍ생활소비재 브랜드를 중국 현지 유통망 및 바이어에게 직접 소개하고, 현지 쇼케이스 전시 및 대리 상담, 온라인 비즈니스 미팅을 통한 실질적인 수출 판로를 개척하고자 하오니 관심 있는 기업의 많은 신청 바랍니다.</p><p><br></p><p style=\"line-height: 1.8;\">☞&nbsp;중국 시장 진출을 희망하는 강원도 군 단위 소재 소비재 기업</p><p style=\"line-height: 1.8;\">- 쇼케이스 전시 및 대리 상담을 위해 필요한 샘플(약 100불 상당)을 원활하게 발송할 수 있는 브랜드</p><p style=\"line-height: 1.8;\">- 참가 분야 : 식품, 화장품, 건강기능식품, 생활용품 등 소비재 전반</p><p style=\"line-height: 1.8;\">※ 자세한 지원대상 공고문 참조</p><p>&nbsp;</p><p style=\"line-height: 1.8;\">☞ 강원도 군 단위 소재 우수 소비재 브랜드의 해외 마케팅 및 수출 판로 개척 지원</p><p style=\"line-height: 1.8;\">① China Retail Partnering Plaza(CRPP) 쇼케이스 샘플 전시 및 대리 상담(9월)</p><p style=\"line-height: 1.8;\">② 중국 바이어 1:1 온라인 수출 상담 매칭 및 한-중 통역 지원(10월)</p><p style=\"line-height: 1.8;\">③ 중국 국제수입박람회 연계 유망 K소비재 홍보관 운영 및 대리상담(11월)</p>",
-        "pldirSportRealmMlsfcCodeNm": "해외진출준비",
-        "printFileNm": "High1 K-Collection 강원 쇼케이스 in 상하이.pdf"
-      }
-    },
-    {
       "pbancSn": "bizinfo_PBLN_000000000124693",
       "id": "bizinfo_PBLN_000000000124693",
       "source": "bizinfo",
@@ -146180,78 +145762,6 @@
         "bsnsSumryCn": "<p>(재)울산창조경제혁신센터에서는 울산지역 스타트업의 정부 R&amp;D 과제 선정 경쟁력을 강화하고 AI를 활용한 사업계획서 작성 역량을 제고하기 위하여「AI 활용 기반 R&amp;D 사업계획서 작성 지원사업」 참여기업을 다음과 같이 모집하오니 많은 관심과 참여 바랍니다.</p><p><br></p><p style=\"line-height: 1.8;\">☞&nbsp; 다음 요건을 모두 충족하는 기업</p><p style=\"line-height: 1.8;\">- 울산광역시 소재 업력 7년 이내(신산업 분야 업력 10년 이내)스타트업</p><p style=\"line-height: 1.8;\">-&nbsp;연매출 20억원 미만「중소기업기본법」상 중소기업</p><p><br></p><p style=\"line-height: 1.8;\">☞ 전문가 1:1 매칭, 개발아이템 타당성 검토, AI사업계획서 고도화, 최종완성 R&amp;D 사업계획서 지원</p><p style=\"line-height: 1.8;\">- 기업당 최대 200만원 상당 지원</p>",
         "pldirSportRealmMlsfcCodeNm": "기술사업화/이전/지도",
         "printFileNm": "「AI 활용 기반 R&D 사업계획서 작성 지원사업」 참여기업 모집 공고.pdf"
-      }
-    },
-    {
-      "pbancSn": "bizinfo_PBLN_000000000124801",
-      "id": "bizinfo_PBLN_000000000124801",
-      "source": "bizinfo",
-      "source_label": "중소벤처기업부 BIZINFO (기업마당)",
-      "title": "[부산] 글로벌시장 대응 AI기반 공조부품 성능평가 인프라 고도화사업 지원사업 통합 공고",
-      "agency": "부산광역시 / 부산테크노파크",
-      "url": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000124801",
-      "deadline": "",
-      "tier": "orange",
-      "note": "비수도권 단독 (부산)",
-      "classify_evidence": {
-        "summary_reason": "비수도권 단독 (부산)",
-        "category_hints": [
-          "bizinfo",
-          "부산"
-        ],
-        "rule_checks": {
-          "recruiting": {
-            "pass": true,
-            "value": "True",
-            "detail": "어댑터 통과"
-          },
-          "deadline": {
-            "pass": false,
-            "value": "",
-            "detail": "어댑터 normalize"
-          },
-          "region": {
-            "pass": false,
-            "value": "부산",
-            "detail": "agency·title·region 종합"
-          }
-        },
-        "axis_scores": {
-          "region": "orange",
-          "stage": "yellow",
-          "industry": "green",
-          "nature": "yellow",
-          "qualification": "yellow"
-        },
-        "exclusion_flags": [],
-        "audit_flags": [],
-        "tier_logic": "bizinfo 룰 → orange",
-        "classify_version": "v8.3-external"
-      },
-      "first_seen": "2026-07-29",
-      "last_seen": "2026-08-15",
-      "structured": {
-        "trgetNm": "중소기업",
-        "updtPnttm": "2026-07-28 15:51:17",
-        "hashtags": "기술,부산,공조부품,2026,부산테크노파크,시험,인프라,성능평가,평가,부산광역시,기술지도,시제품제작,제조기업,인증,기술개발,중견기업,중소기업",
-        "inqireCo": 2251,
-        "creatPnttm": "2026-07-28 13:05:12",
-        "pblancNm": "[부산] 글로벌시장 대응 AI기반 공조부품 성능평가 인프라 고도화사업 지원사업 통합 공고",
-        "pblancId": "PBLN_000000000124801",
-        "printFlpthNm": "https://www.bizinfo.go.kr/cmm/fms/getImageFile.do?atchFileId=FILE_000000000766354&fileSn=0",
-        "refrncNm": "부산테크노파크 051-974-9178",
-        "fileNm": "작성서식_글로벌시장+대응+AI기반+공조부품+성능평가+인프라+고도화+사업+기업지원.zip",
-        "pblancUrl": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000124801",
-        "jrsdInsttNm": "부산광역시",
-        "excInsttNm": "부산테크노파크",
-        "totCnt": 1545,
-        "reqstMthPapersCn": "이메일 접수\r\n- 시험ㆍ평가ㆍ인증, 기술개발, 기술지도Ⅰ 지원 : twkoo@btp.or.kr\r\n- 기술지도Ⅱ : rnb000@ktr.or.kr\r\n- 시제품 제작 지원 : wouni83@naver.com",
-        "pldirSportRealmLclasCodeNm": "기술",
-        "reqstBeginEndDe": "세부사업별 상이",
-        "flpthNm": "https://www.bizinfo.go.kr/cmm/fms/getImageFile.do?atchFileId=FILE_000000000766355&fileSn=0",
-        "bsnsSumryCn": "<p>공조부품, 센서 및 지능형(AI) 제어 모듈 산업의 글로벌 시장경쟁력 강화를 위하여 추진하고 있는 「글로벌 시장 대응 AI기반 공조부품 성능평가 인프라 고도화 지원사업」을 아래와 같이 공고하오니, 지원 프로그램 참여를 희망하는 기업은 안내에 따라 많은 신청 바랍니다.</p><p><br></p><p style=\"line-height: 1.8;\">☞&nbsp;부산 제조기업 중「중소기업기본법」에 따른 중소기업 및「중견기업 성장촉진 및 경쟁력 강화에 관한 특별법」에 따른 중견기업</p><p style=\"line-height: 1.8;\">-&nbsp;공조부품 산업관련 기업</p><p style=\"line-height: 1.8;\">※ 프로그램별 지원대상 상이 공고문 참조&nbsp;</p><p><br></p><p style=\"line-height: 1.8;\">☞ 시험ㆍ평가ㆍ인증, 기술개발, 기술지도Ⅰ,&nbsp;기술지도Ⅱ,&nbsp;시제품 제작 지원&nbsp;</p><p style=\"line-height: 1.8;\">※ 자세한 지원내용 공고문 참조&nbsp;&nbsp;</p>",
-        "pldirSportRealmMlsfcCodeNm": "기술사업화/이전/지도",
-        "printFileNm": "글로벌시장+대응+AI기반+공조부품+성능평가+인프라+고도화+사업+기업지원+공고문+.pdf"
       }
     },
     {
@@ -146687,78 +146197,6 @@
         "bsnsSumryCn": "<p>중소벤처기업부와 전남광주통합특별시가 지원하는「2026년 중소기업 밀집지역 위기대응 체계 구축사업」하반기 Stand-up 맞춤지원을 다음과 같이 추진하오니, 참여를 희망하는 해당지역 중소기업들의 많은 신청 바랍니다.</p><p><br></p><p>☞&nbsp;전남광주통합특별시 2026년 하반기 Stand-up 맞춤지원 대상 중소기업 밀집지역 소재 중소기업</p><p><br></p><p style=\"line-height: 1.8;\">☞&nbsp;전남광주통합특별시 내 중소기업 밀집지역 상시 모니터링 및 긴급처방 지원(Stand-up 맞춤지원)&nbsp;</p><p style=\"line-height: 1.8;\">- Tech-UP (기술지원) : 기술정보 분석 지원/기술 멘토링, 국내외 지재권/인증 지원, 시험 및 성능분석 지원</p><p style=\"line-height: 1.8;\">- Biz-UP (사업화지원) : 마케팅 지원, 디자인 개발, IR자료/투자계약서 작성 지원, 물류비 지원, 경영 개선 컨설팅</p>",
         "pldirSportRealmMlsfcCodeNm": "디자인/상품화/사업화",
         "printFileNm": "1. [공고]2026년 중소기업 밀집지역 위기대응 체계 구축사업_하반기 Stand-up 맞춤지원 공고 서식.hwpx"
-      }
-    },
-    {
-      "pbancSn": "bizinfo_PBLN_000000000125087",
-      "id": "bizinfo_PBLN_000000000125087",
-      "source": "bizinfo",
-      "source_label": "중소벤처기업부 BIZINFO (기업마당)",
-      "title": "[충북] 2026년 글로벌 무역데이터 AI 플랫폼을 활용한 바이어발굴 지원사업 참여기업 모집 공고",
-      "agency": "충청북도 / 지방중소벤처기업청",
-      "url": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000125087",
-      "deadline": "",
-      "tier": "orange",
-      "note": "비수도권 단독 (충북)",
-      "classify_evidence": {
-        "summary_reason": "비수도권 단독 (충북)",
-        "category_hints": [
-          "bizinfo",
-          "충북"
-        ],
-        "rule_checks": {
-          "recruiting": {
-            "pass": true,
-            "value": "True",
-            "detail": "어댑터 통과"
-          },
-          "deadline": {
-            "pass": false,
-            "value": "",
-            "detail": "어댑터 normalize"
-          },
-          "region": {
-            "pass": false,
-            "value": "충북",
-            "detail": "agency·title·region 종합"
-          }
-        },
-        "axis_scores": {
-          "region": "orange",
-          "stage": "green",
-          "industry": "green",
-          "nature": "yellow",
-          "qualification": "yellow"
-        },
-        "exclusion_flags": [],
-        "audit_flags": [],
-        "tier_logic": "bizinfo 룰 → orange",
-        "classify_version": "v8.3-external"
-      },
-      "first_seen": "2026-08-04",
-      "last_seen": "2026-08-15",
-      "structured": {
-        "trgetNm": "중소기업",
-        "updtPnttm": "2026-08-04 15:40:54",
-        "hashtags": "수출,경영,충북,2026,충청북도,지방중소벤처기업청,중소기업,AI플랫폼,교육,AI무역데이터플랫폼,컨설팅,충북지방중소벤처기업청",
-        "inqireCo": 3942,
-        "creatPnttm": "2026-08-04 14:22:46",
-        "pblancNm": "[충북] 2026년 글로벌 무역데이터 AI 플랫폼을 활용한 바이어발굴 지원사업 참여기업 모집 공고",
-        "pblancId": "PBLN_000000000125087",
-        "printFlpthNm": "https://www.bizinfo.go.kr/cmm/fms/getImageFile.do?atchFileId=FILE_000000000767590&fileSn=0",
-        "refrncNm": "충북지방중소벤처기업청 수출지원센터 043-230-5372",
-        "fileNm": "글로벌_무역데이터_AI_플랫폼을_활용한_바이어발굴_지원사업_모집공고_및_신청서.hwpx",
-        "pblancUrl": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000125087",
-        "jrsdInsttNm": "충청북도",
-        "excInsttNm": "지방중소벤처기업청",
-        "totCnt": 1545,
-        "reqstMthPapersCn": "이메일 접수 (huiras@korea.kr)",
-        "pldirSportRealmLclasCodeNm": "수출",
-        "reqstBeginEndDe": "선착순 접수",
-        "flpthNm": "https://www.bizinfo.go.kr/cmm/fms/getImageFile.do?atchFileId=FILE_000000000767601&fileSn=0",
-        "bsnsSumryCn": "<p>최근 중동전쟁 등으로 충북 지역 중소기업의 어려움이 가중됨에 따라, 수출시장 다변화와 수출 경쟁력 강화를 위해 2026년 글로벌 무역데이터 AI 플랫폼을 활용한 바이어발굴 지원사업을 다음과 같이 공고하오니 관내 기업의 많은 관심과 참여를 바랍니다.</p><p><br></p><p>☞&nbsp;충북 소재 수출(희망) 중소기업</p><p><br></p><p style=\"line-height: 1.8;\">☞&nbsp;교육, 신규 거래선 발굴, 전문가 코칭 지원</p><p style=\"line-height: 1.8;\">- AI 무역데이터플랫폼 활용 교육, 기업 별 ID 제공(3개월 유효), 기업별 맞춤형 컨설팅</p><p style=\"line-height: 1.8;\">※ 자세한 지원내용 공고문 참조</p>",
-        "pldirSportRealmMlsfcCodeNm": "수출정보제공",
-        "printFileNm": "글로벌_무역데이터_AI_플랫폼을_활용한_바이어발굴_지원사업_모집공고_및_신청서.pdf"
       }
     },
     {
@@ -152445,30 +151883,30 @@
     }
   ],
   "_meta": {
-    "expired": [],
+    "expired": [
+      "2026년 한국전력공사 에너지브릿지 오픈이노베이션 참여기업 모집 공고",
+      "합성생물학 기반 첨단 바이오제조 글로벌 혁신특구 기업육성 지원사업 모집 공고 (stale)",
+      "2026 미추홀구와 함께하는 뿌리기업 채용박람회",
+      "[전북] 남원시 2026년 온라인 유통채널 연계 프로모션 참여 기업 상시 모집 공고(온라인 플랫폼 판매 지원) (stale)",
+      "[대구] 가치 업고(UP-GO) 마일리지 사업 문화공간 조성 프로그램 모집 공고 (stale)",
+      "[강원] High1 K-Collection 강원 쇼케이스 in 상하이 참가기업 모집 공고 (stale)",
+      "[부산] 글로벌시장 대응 AI기반 공조부품 성능평가 인프라 고도화사업 지원사업 통합 공고 (stale)",
+      "[충북] 2026년 글로벌 무역데이터 AI 플랫폼을 활용한 바이어발굴 지원사업 참여기업 모집 공고 (stale)"
+    ],
     "new_added": [],
     "updated_today": [],
     "stats": {
-      "green": 184,
+      "green": 182,
       "yellow": 316,
-      "orange": 1380,
+      "orange": 1374,
       "red_excluded": 0,
-      "expired_removed": 0,
-      "total_pool": 1880,
+      "expired_removed": 8,
+      "total_pool": 1872,
       "rss_total": 277,
-      "raw_fetched": 490
+      "raw_fetched": 488
     }
   },
   "history": [
-    {
-      "date": "2026-07-30",
-      "at_kst": "2026-07-30T20:10:25+09:00",
-      "new": 92,
-      "updated": 1,
-      "expired": 0,
-      "total": 1912,
-      "red_excluded": 0
-    },
     {
       "date": "2026-07-31",
       "at_kst": "2026-07-31T20:31:21+09:00",
@@ -152737,6 +152175,15 @@
       "updated": 0,
       "expired": 0,
       "total": 1880,
+      "red_excluded": 0
+    },
+    {
+      "date": "2026-08-30",
+      "at_kst": "2026-08-30T04:00:40+09:00",
+      "new": 0,
+      "updated": 0,
+      "expired": 8,
+      "total": 1872,
       "red_excluded": 0
     }
   ]
