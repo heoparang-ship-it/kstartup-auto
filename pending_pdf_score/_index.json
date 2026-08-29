@@ -1,16 +1,9 @@
 {
-  "generated_at": "2026-08-29T23:17:52.579973+09:00",
+  "generated_at": "2026-08-30T04:06:10.255422+09:00",
   "schema_version": 2,
   "pdf_text_cap": 15000,
-  "target_count": 884,
+  "target_count": 878,
   "pending": [
-    {
-      "key": "bizinfo_PBLN_000000000125002",
-      "title": "2026년 한국전력공사 에너지브릿지 오픈이노베이션 참여기업 모집 공고",
-      "tier": "green",
-      "deadline": "2026-08-29",
-      "pdf_text_chars": 7678
-    },
     {
       "key": "bizinfo_PBLN_000000000125204",
       "title": "2026년 하반기 고양 IR데이 참가기업 추가모집 공고",
@@ -745,13 +738,6 @@
       "tier": "green",
       "deadline": "",
       "pdf_text_chars": 4000
-    },
-    {
-      "key": "bizinfo_PBLN_000000000125265",
-      "title": "합성생물학 기반 첨단 바이오제조 글로벌 혁신특구 기업육성 지원사업 모집 공고",
-      "tier": "green",
-      "deadline": "",
-      "pdf_text_chars": 9539
     },
     {
       "key": "bizinfo_PBLN_000000000125458",
@@ -5682,13 +5668,6 @@
       "pdf_text_chars": 10064
     },
     {
-      "key": "bizinfo_PBLN_000000000124555",
-      "title": "[대구] 가치 업고(UP-GO) 마일리지 사업 문화공간 조성 프로그램 모집 공고",
-      "tier": "orange",
-      "deadline": "",
-      "pdf_text_chars": 6846
-    },
-    {
       "key": "bizinfo_PBLN_000000000124589",
       "title": "[경북] 안동시 2026년 수출기업 역량강화 지원사업 참여기업 모집 공고(수출직불금)",
       "tier": "orange",
@@ -5745,25 +5724,11 @@
       "pdf_text_chars": 7180
     },
     {
-      "key": "bizinfo_PBLN_000000000124700",
-      "title": "[강원] High1 K-Collection 강원 쇼케이스 in 상하이 참가기업 모집 공고",
-      "tier": "orange",
-      "deadline": "",
-      "pdf_text_chars": 3235
-    },
-    {
       "key": "bizinfo_PBLN_000000000124823",
       "title": "[울산] AI 활용 기반 R&D 사업계획서 작성 지원사업 참여기업 모집 공고",
       "tier": "orange",
       "deadline": "",
       "pdf_text_chars": 2093
-    },
-    {
-      "key": "bizinfo_PBLN_000000000124801",
-      "title": "[부산] 글로벌시장 대응 AI기반 공조부품 성능평가 인프라 고도화사업 지원사업 통합 공고",
-      "tier": "orange",
-      "deadline": "",
-      "pdf_text_chars": 14982
     },
     {
       "key": "bizinfo_PBLN_000000000124849",
@@ -5792,13 +5757,6 @@
       "tier": "orange",
       "deadline": "",
       "pdf_text_chars": 1318
-    },
-    {
-      "key": "bizinfo_PBLN_000000000125087",
-      "title": "[충북] 2026년 글로벌 무역데이터 AI 플랫폼을 활용한 바이어발굴 지원사업 참여기업 모집 공고",
-      "tier": "orange",
-      "deadline": "",
-      "pdf_text_chars": 3718
     },
     {
       "key": "bizinfo_PBLN_000000000125084",
@@ -6194,10 +6152,10 @@
     }
   ],
   "stats": {
-    "total_items": 1880,
+    "total_items": 1872,
     "red": 0,
     "expired": 0,
-    "no_pdf": 970,
+    "no_pdf": 968,
     "already_scored": 26
   }
 }
