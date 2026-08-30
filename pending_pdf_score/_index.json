@@ -1,16 +1,9 @@
 {
-  "generated_at": "2026-08-30T23:24:26.656306+09:00",
+  "generated_at": "2026-08-31T04:01:48.461544+09:00",
   "schema_version": 2,
   "pdf_text_cap": 15000,
-  "target_count": 878,
+  "target_count": 875,
   "pending": [
-    {
-      "key": "bizinfo_PBLN_000000000125204",
-      "title": "2026년 하반기 고양 IR데이 참가기업 추가모집 공고",
-      "tier": "green",
-      "deadline": "2026-08-30",
-      "pdf_text_chars": 6698
-    },
     {
       "key": "bizinfo_PBLN_000000000124020",
       "title": "2026년 제2차 윈윈 아너스(WIN-WIN HONORS) 프로젝트 추진계획 공고",
@@ -752,13 +745,6 @@
       "tier": "green",
       "deadline": "",
       "pdf_text_chars": 6478
-    },
-    {
-      "key": "bizinfo_PBLN_000000000125324",
-      "title": "2026년 판로확대 지원 참여 소상공인 모집(쇼핑몰 통합관리ㆍ입점ㆍ판매대행 지원(셀러허브)) 공고",
-      "tier": "yellow",
-      "deadline": "2026-08-30",
-      "pdf_text_chars": 10351
     },
     {
       "key": "bizinfo_PBLN_000000000124832",
@@ -1851,13 +1837,6 @@
       "tier": "yellow",
       "deadline": "",
       "pdf_text_chars": 20967
-    },
-    {
-      "key": "bizinfo_PBLN_000000000121794",
-      "title": "2026년 미래내일 일경험 사업 인턴형 참여기업 모집 공고",
-      "tier": "orange",
-      "deadline": "2026-08-30",
-      "pdf_text_chars": 1329
     },
     {
       "key": "bizinfo_PBLN_000000000119432",
@@ -6152,10 +6131,10 @@
     }
   ],
   "stats": {
-    "total_items": 1872,
+    "total_items": 1863,
     "red": 0,
     "expired": 0,
-    "no_pdf": 968,
+    "no_pdf": 962,
     "already_scored": 26
   }
 }
