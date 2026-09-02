@@ -1,23 +1,9 @@
 {
-  "generated_at": "2026-09-02T22:28:19.753485+09:00",
+  "generated_at": "2026-09-03T04:10:14.044943+09:00",
   "schema_version": 2,
   "pdf_text_cap": 15000,
-  "target_count": 882,
+  "target_count": 872,
   "pending": [
-    {
-      "key": "bizinfo_PBLN_000000000125178",
-      "title": "2026년 2차 ICT 비즈니스 파트너십(일본) 참가기업 모집 공고",
-      "tier": "green",
-      "deadline": "2026-09-02",
-      "pdf_text_chars": 2232
-    },
-    {
-      "key": "bizinfo_PBLN_000000000125388",
-      "title": "2026년 BOUNCE 2026 스타트업 오픈이노베이션 페스타 참여기업 모집 공고",
-      "tier": "green",
-      "deadline": "2026-09-02",
-      "pdf_text_chars": 1444
-    },
     {
       "key": "bizinfo_PBLN_000000000125096",
       "title": "2026년 2차 AI 응용제품 신속 상용화 지원사업 신규지원 대상과제 수정 공고",
@@ -780,20 +766,6 @@
       "tier": "green",
       "deadline": "",
       "pdf_text_chars": 6332
-    },
-    {
-      "key": "bizinfo_PBLN_000000000125209",
-      "title": "2026년 1차 하반기 나라장터 상생세일 참여업체 모집 공고",
-      "tier": "yellow",
-      "deadline": "2026-09-02",
-      "pdf_text_chars": 11525
-    },
-    {
-      "key": "bizinfo_PBLN_000000000125208",
-      "title": "2026년 산업융합 혁신품목 및 산업융합 선도기업 선정 계획 공고",
-      "tier": "yellow",
-      "deadline": "2026-09-02",
-      "pdf_text_chars": 15078
     },
     {
       "key": "bizinfo_PBLN_000000000125731",
@@ -1802,41 +1774,6 @@
       "tier": "yellow",
       "deadline": "",
       "pdf_text_chars": 4019
-    },
-    {
-      "key": "bizinfo_PBLN_000000000125382",
-      "title": "[대전] 2026년 베트남 D-Global 유망기업 기술교류회 참여기업 모집 공고",
-      "tier": "orange",
-      "deadline": "2026-09-02",
-      "pdf_text_chars": 8035
-    },
-    {
-      "key": "bizinfo_PBLN_000000000125779",
-      "title": "[전남광주] 2026년 우주항공기업 기술자립 연계형 지역성장 지원사업 통합 공고",
-      "tier": "orange",
-      "deadline": "2026-09-02",
-      "pdf_text_chars": 15075
-    },
-    {
-      "key": "bizinfo_PBLN_000000000125758",
-      "title": "[경남] 사천시 2026년 2차 항공기업 글로벌마케팅 지원사업 참가기업 모집 공고",
-      "tier": "orange",
-      "deadline": "2026-09-02",
-      "pdf_text_chars": 3273
-    },
-    {
-      "key": "bizinfo_PBLN_000000000125846",
-      "title": "[경북] 2026년 3차 규제샌드박스 지원사업 지원기업 모집 공고",
-      "tier": "orange",
-      "deadline": "2026-09-02",
-      "pdf_text_chars": 6896
-    },
-    {
-      "key": "bizinfo_PBLN_000000000125960",
-      "title": "[경기] 2026년 2차 규제샌드박스 지원사업 승인기업 사업화 지원 참여기업 모집 공고",
-      "tier": "orange",
-      "deadline": "2026-09-02",
-      "pdf_text_chars": 21129
     },
     {
       "key": "bizinfo_PBLN_000000000125583",
@@ -3629,13 +3566,6 @@
       "tier": "orange",
       "deadline": "",
       "pdf_text_chars": 2934
-    },
-    {
-      "key": "bizinfo_PBLN_000000000120262",
-      "title": "2026년 노사문화 우수기업 및 대상 선정 계획 공고",
-      "tier": "orange",
-      "deadline": "",
-      "pdf_text_chars": 30152
     },
     {
       "key": "bizinfo_PBLN_000000000120219",
@@ -6180,10 +6110,10 @@
     }
   ],
   "stats": {
-    "total_items": 1873,
+    "total_items": 1841,
     "red": 0,
     "expired": 0,
-    "no_pdf": 965,
+    "no_pdf": 943,
     "already_scored": 26
   }
 }
