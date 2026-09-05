@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-05T21:33:14.286220+09:00",
+  "generated_at": "2026-09-06T02:51:50.971260+09:00",
   "schema_version": 2,
   "pdf_text_cap": 15000,
-  "target_count": 875,
+  "target_count": 873,
   "pending": [
     {
       "key": "bizinfo_PBLN_000000000125294",
@@ -1725,13 +1725,6 @@
       "tier": "yellow",
       "deadline": "",
       "pdf_text_chars": 504
-    },
-    {
-      "key": "bizinfo_PBLN_000000000125228",
-      "title": "2026년 6차 해외지식재산센터 법률서비스 지원사업 정기 공고",
-      "tier": "yellow",
-      "deadline": "",
-      "pdf_text_chars": 11204
     },
     {
       "key": "bizinfo_PBLN_000000000125210",
@@ -3988,13 +3981,6 @@
       "pdf_text_chars": 15079
     },
     {
-      "key": "bizinfo_PBLN_000000000121002",
-      "title": "[경남] 2026년 방위산업 상생형 격차 완화 지원사업 참여자 모집 공고",
-      "tier": "orange",
-      "deadline": "",
-      "pdf_text_chars": 14355
-    },
-    {
       "key": "bizinfo_PBLN_000000000121001",
       "title": "[울산] 소상공인 포장재 구입비 긴급 지원 사업 공고(온라인 판로ㆍ마케팅 지원)",
       "tier": "orange",
@@ -6131,10 +6117,10 @@
     }
   ],
   "stats": {
-    "total_items": 1831,
+    "total_items": 1828,
     "red": 0,
     "expired": 0,
-    "no_pdf": 930,
+    "no_pdf": 929,
     "already_scored": 26
   }
 }
