@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-06T21:44:24.441027+09:00",
+  "generated_at": "2026-09-07T02:56:20.148368+09:00",
   "schema_version": 2,
   "pdf_text_cap": 15000,
-  "target_count": 873,
+  "target_count": 870,
   "pending": [
     {
       "key": "bizinfo_PBLN_000000000125294",
@@ -1788,27 +1788,6 @@
       "tier": "yellow",
       "deadline": "",
       "pdf_text_chars": 9215
-    },
-    {
-      "key": "bizinfo_PBLN_000000000125306",
-      "title": "[전북] 2026년 제2회 공영홈쇼핑 혁신기업 제품 코칭 상담회 참여기업 모집 공고",
-      "tier": "orange",
-      "deadline": "2026-09-06",
-      "pdf_text_chars": 4317
-    },
-    {
-      "key": "bizinfo_PBLN_000000000125937",
-      "title": "[부산] 국제수산교류협력지원사업(해외바이어초청지원) 참가업체 모집 공고",
-      "tier": "orange",
-      "deadline": "2026-09-06",
-      "pdf_text_chars": 118
-    },
-    {
-      "key": "bizinfo_PBLN_000000000126114",
-      "title": "2026년 우수 소상공인 프랜차이즈화 지원사업 사업화지원 개발회사 모집 공고",
-      "tier": "orange",
-      "deadline": "2026-09-06",
-      "pdf_text_chars": 4277
     },
     {
       "key": "bizinfo_PBLN_000000000125676",
@@ -6117,10 +6096,10 @@
     }
   ],
   "stats": {
-    "total_items": 1828,
+    "total_items": 1816,
     "red": 0,
     "expired": 0,
-    "no_pdf": 929,
+    "no_pdf": 920,
     "already_scored": 26
   }
 }
