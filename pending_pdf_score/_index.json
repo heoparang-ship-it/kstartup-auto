@@ -1,16 +1,9 @@
 {
-  "generated_at": "2026-09-13T22:48:23.133385+09:00",
+  "generated_at": "2026-09-14T03:29:15.542733+09:00",
   "schema_version": 2,
   "pdf_text_cap": 15000,
-  "target_count": 877,
+  "target_count": 873,
   "pending": [
-    {
-      "key": "bizinfo_PBLN_000000000125872",
-      "title": "2026년 경기게임커넥트 참가개발사(게임전시) 모집 공고",
-      "tier": "green",
-      "deadline": "2026-09-13",
-      "pdf_text_chars": 3702
-    },
     {
       "key": "bizinfo_PBLN_000000000124982",
       "title": "개방형 XR 협업 플랫폼 서비스 아이디어 도출 경진대회 공고",
@@ -1802,27 +1795,6 @@
       "tier": "yellow",
       "deadline": "",
       "pdf_text_chars": 7726
-    },
-    {
-      "key": "bizinfo_PBLN_000000000125284",
-      "title": "[전남광주] 2026년 광주형일자리 인증 참여기업 모집 공고",
-      "tier": "orange",
-      "deadline": "2026-09-13",
-      "pdf_text_chars": 8240
-    },
-    {
-      "key": "bizinfo_PBLN_000000000125870",
-      "title": "[경남] 2026년 경남특산물박람회 경상남도 추천상품관(QC관) 참가업체 모집 공고",
-      "tier": "orange",
-      "deadline": "2026-09-13",
-      "pdf_text_chars": 2549
-    },
-    {
-      "key": "bizinfo_PBLN_000000000126312",
-      "title": "[대전] 2026년 베트남 호치민 K-라이프 커넥트데이 수출컨소시엄 참여기업 추가 모집 공고",
-      "tier": "orange",
-      "deadline": "2026-09-13",
-      "pdf_text_chars": 4897
     },
     {
       "key": "bizinfo_PBLN_000000000126071",
@@ -6145,10 +6117,10 @@
     }
   ],
   "stats": {
-    "total_items": 1836,
+    "total_items": 1828,
     "red": 0,
     "expired": 0,
-    "no_pdf": 933,
+    "no_pdf": 929,
     "already_scored": 26
   }
 }
