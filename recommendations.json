@@ -1,7 +1,7 @@
 {
   "schema_version": 5,
   "last_updated": "2026-09-15",
-  "updated_at_kst": "2026-09-15T05:02:38+09:00",
+  "updated_at_kst": "2026-09-15T23:14:15+09:00",
   "red_count_today": 0,
   "reds_today": [
     {
@@ -54354,7 +54354,7 @@
         "title": "2027 콘텐츠 아메리카 한국공동관 및 쇼케이스 참가기업 모집공고",
         "registDate": "26.08.31",
         "period": "26.08.31 ~ 26.09.21",
-        "views": "6612",
+        "views": "7178",
         "href": "/kocca/pims/view.do?intcNo=326D00085009&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
         "_source_page": 1
       }
@@ -70506,6 +70506,119 @@
       }
     },
     {
+      "pbancSn": "itp_11126",
+      "title": "[인천디자인교육센터] 나의 업무방식을 적용하는 AI 스킬 제작 실무 (전액무료/ 재직자)",
+      "agency": "인천테크노파크 디자인교육센터",
+      "deadline": "2026-10-02",
+      "url": "https://itp.or.kr/intro.asp?tmid=13&seq=11126",
+      "tier": "orange",
+      "note": "인천 매칭이지만 디자인 교육 — 사업 매칭 약함",
+      "classify_evidence": {
+        "summary_reason": "인천 매칭이지만 디자인 교육 — 사업 매칭 약함",
+        "category_hints": [
+          "incheon",
+          "itp",
+          "디자인교육센터"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "ITP 진행중 항목"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-10-02",
+            "detail": "ITP 마감일"
+          },
+          "region": {
+            "pass": true,
+            "value": "인천",
+            "detail": "ITP=인천 거점"
+          }
+        },
+        "axis_scores": {
+          "region": "green",
+          "stage": "green",
+          "industry": "orange",
+          "nature": "orange",
+          "qualification": "green"
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "ITP 디자인교육센터 부서별 룰 → orange",
+        "classify_version": "v8.3-itp"
+      },
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "structured": {
+        "source_kind": "itp",
+        "itp_seq": "11126",
+        "itp_dept": "디자인교육센터",
+        "attachments": [],
+        "recruiting": true,
+        "region": "인천"
+      }
+    },
+    {
+      "pbancSn": "kocca_126D00070010",
+      "id": "kocca_126D00070010",
+      "source": "kocca",
+      "source_label": "한국콘텐츠진흥원 KOCCA",
+      "title": "2026년 대중음악 공연환경 개선 지원사업 추가 공고",
+      "agency": "한국콘텐츠진흥원",
+      "url": "https://www.kocca.kr/kocca/pims/view.do?intcNo=126D00070010&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
+      "deadline": "2026-10-02",
+      "tier": "orange",
+      "note": "도메인/지역 매칭 약함",
+      "classify_evidence": {
+        "summary_reason": "도메인/지역 매칭 약함",
+        "category_hints": [
+          "kocca"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "어댑터 통과"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-10-02",
+            "detail": "어댑터 normalize"
+          },
+          "region": {
+            "pass": false,
+            "value": "?",
+            "detail": "agency·title·region 종합"
+          }
+        },
+        "axis_scores": {
+          "region": "orange",
+          "stage": "yellow",
+          "industry": "green",
+          "nature": "yellow",
+          "qualification": "yellow"
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "kocca 룰 → orange",
+        "classify_version": "v8.3-external"
+      },
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "structured": {
+        "intcNo": "126D00070010",
+        "type": "자유공모",
+        "title": "2026년 대중음악 공연환경 개선 지원사업 추가 공고",
+        "registDate": "26.09.15",
+        "period": "26.09.15 ~ 26.10.02",
+        "views": "187",
+        "href": "/kocca/pims/view.do?intcNo=126D00070010&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
+        "_source_page": 1
+      }
+    },
+    {
       "pbancSn": "bizinfo_PBLN_000000000124154",
       "id": "bizinfo_PBLN_000000000124154",
       "source": "bizinfo",
@@ -73527,6 +73640,61 @@
         "integrated_name": "2026년 대한민국 물산업 혁신 창업대전&#40;Startup Water 2026&#41; 참가자&#40;팀&#41; 모집",
         "apply_online": "http://www.startupwater.net",
         "apply_guide": "startupwater.net"
+      }
+    },
+    {
+      "pbancSn": "itp_11125",
+      "title": "[인천디자인교육센터] 재직자 대상 디자인 교육 10월 수강생 모집",
+      "agency": "인천테크노파크 디자인교육센터",
+      "deadline": "2026-10-19",
+      "url": "https://itp.or.kr/intro.asp?tmid=13&seq=11125",
+      "tier": "orange",
+      "note": "인천 매칭이지만 디자인 교육 — 사업 매칭 약함",
+      "classify_evidence": {
+        "summary_reason": "인천 매칭이지만 디자인 교육 — 사업 매칭 약함",
+        "category_hints": [
+          "incheon",
+          "itp",
+          "디자인교육센터"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "ITP 진행중 항목"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-10-19",
+            "detail": "ITP 마감일"
+          },
+          "region": {
+            "pass": true,
+            "value": "인천",
+            "detail": "ITP=인천 거점"
+          }
+        },
+        "axis_scores": {
+          "region": "green",
+          "stage": "green",
+          "industry": "orange",
+          "nature": "orange",
+          "qualification": "green"
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "ITP 디자인교육센터 부서별 룰 → orange",
+        "classify_version": "v8.3-itp"
+      },
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "structured": {
+        "source_kind": "itp",
+        "itp_seq": "11125",
+        "itp_dept": "디자인교육센터",
+        "attachments": [],
+        "recruiting": true,
+        "region": "인천"
       }
     },
     {
@@ -85212,7 +85380,7 @@
         "title": "[수정/상시공고] 2026년 글로벌게임허브센터 신규 입주기업 추가모집(상시) 수정공고",
         "registDate": "26.04.23",
         "period": "26.04.27 ~ 26.12.31",
-        "views": "25071",
+        "views": "25591",
         "href": "/kocca/pims/view.do?intcNo=326D00034004&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
         "_source_page": 1
       },
@@ -91592,7 +91760,7 @@
           "region": {
             "pass": false,
             "value": "경남",
-            "detail": "지역 한정 desc: '경상남도 소재'"
+            "detail": "사업명에 지역 포함 (경남)"
           },
           "biz_enyy": {
             "pass": true,
@@ -91622,7 +91790,7 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "지역 한정 desc: '경상남도 소재'"
+            "detail": "사업명에 지역 포함 (경남)"
           },
           "positive_hit": {
             "pass": true,
@@ -91633,7 +91801,7 @@
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "지역 한정 desc: '경상남도 소재'"
+            "detail": "사업명에 지역 포함 (경남)"
           },
           "stage": {
             "level": "green",
@@ -91656,7 +91824,7 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "지역 한정 desc: '경상남도 소재'"
+            "msg": "사업명에 지역 포함 (경남)"
           },
           {
             "axis": "industry",
@@ -146059,17 +146227,18 @@
   "_meta": {
     "expired": [],
     "new_added": [
-      "「2026년 스타트업 법률지원사업 대구광역시 법률상담회」 참여기업 모집 안내",
-      "2026년 모두의 창업 글로벌 재외국민 프로그램 참여자 모집 공고"
+      "[인천디자인교육센터] 재직자 대상 디자인 교육 10월 수강생 모집",
+      "[인천디자인교육센터] 나의 업무방식을 적용하는 AI 스킬 제작 실무 (전액무료/ 재직자)",
+      "2026년 대중음악 공연환경 개선 지원사업 추가 공고"
     ],
     "updated_today": [],
     "stats": {
       "green": 171,
       "yellow": 308,
-      "orange": 1343,
+      "orange": 1346,
       "red_excluded": 0,
       "expired_removed": 0,
-      "total_pool": 1822,
+      "total_pool": 1825,
       "rss_total": 231,
       "raw_fetched": 470
     }
@@ -146347,11 +146516,11 @@
     },
     {
       "date": "2026-09-15",
-      "at_kst": "2026-09-15T05:02:38+09:00",
-      "new": 2,
+      "at_kst": "2026-09-15T23:14:15+09:00",
+      "new": 3,
       "updated": 0,
       "expired": 0,
-      "total": 1822,
+      "total": 1825,
       "red_excluded": 0
     }
   ]
