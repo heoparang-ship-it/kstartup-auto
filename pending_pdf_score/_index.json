@@ -1,30 +1,9 @@
 {
-  "generated_at": "2026-09-20T22:35:55.971496+09:00",
+  "generated_at": "2026-09-21T03:27:12.331495+09:00",
   "schema_version": 2,
   "pdf_text_cap": 15000,
-  "target_count": 886,
+  "target_count": 878,
   "pending": [
-    {
-      "key": "bizinfo_PBLN_000000000126231",
-      "title": "중동전쟁 피해기업 대상 쇼피 동남아 수출물류 지원사업 공고",
-      "tier": "green",
-      "deadline": "2026-09-20",
-      "pdf_text_chars": 4969
-    },
-    {
-      "key": "bizinfo_PBLN_000000000126417",
-      "title": "랩허브ㆍ대원제약 오픈이노베이션 프로그램 참여기업 모집 공고",
-      "tier": "green",
-      "deadline": "2026-09-20",
-      "pdf_text_chars": 9094
-    },
-    {
-      "key": "bizinfo_PBLN_000000000126458",
-      "title": "2026년 공예 온라인 유통 및 AI 활용 역량 강화 교육프로그램  교육생 모집 공고",
-      "tier": "green",
-      "deadline": "2026-09-20",
-      "pdf_text_chars": 4661
-    },
     {
       "key": "bizinfo_PBLN_000000000125681",
       "title": "2026년 GovTech 창업 경진대회 모집 공고",
@@ -759,27 +738,6 @@
       "tier": "green",
       "deadline": "",
       "pdf_text_chars": 3788
-    },
-    {
-      "key": "bizinfo_PBLN_000000000125952",
-      "title": "2026년 KOTRA-이베이 파워셀러 1단계 입점교육 4기 참가기업 모집 공고",
-      "tier": "yellow",
-      "deadline": "2026-09-20",
-      "pdf_text_chars": 6355
-    },
-    {
-      "key": "bizinfo_PBLN_000000000126329",
-      "title": "2026년 10차 해외 온라인 위조상품 유통 사전진단 서비스 공고",
-      "tier": "yellow",
-      "deadline": "2026-09-20",
-      "pdf_text_chars": 112
-    },
-    {
-      "key": "bizinfo_PBLN_000000000126327",
-      "title": "2026년 6차 해외 상표 무단선점 심층조사 지원사업 모집 공고",
-      "tier": "yellow",
-      "deadline": "2026-09-20",
-      "pdf_text_chars": 108
     },
     {
       "key": "bizinfo_PBLN_000000000126120",
@@ -1914,20 +1872,6 @@
       "tier": "yellow",
       "deadline": "",
       "pdf_text_chars": 2142
-    },
-    {
-      "key": "bizinfo_PBLN_000000000126267",
-      "title": "[경기] 고양시 2026년 고양 스타트업 팝업스토어 참가기업 모집 공고",
-      "tier": "orange",
-      "deadline": "2026-09-20",
-      "pdf_text_chars": 5339
-    },
-    {
-      "key": "bizinfo_PBLN_000000000126446",
-      "title": "[경북] 2026년 경북청년 롯데백화점 포항점 팝업스토어 참여기업 모집 공고",
-      "tier": "orange",
-      "deadline": "2026-09-20",
-      "pdf_text_chars": 3894
     },
     {
       "key": "bizinfo_PBLN_000000000125673",
@@ -6208,10 +6152,10 @@
     }
   ],
   "stats": {
-    "total_items": 1823,
+    "total_items": 1806,
     "red": 0,
     "expired": 0,
-    "no_pdf": 912,
+    "no_pdf": 903,
     "already_scored": 25
   }
 }
