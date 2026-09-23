@@ -1,7 +1,7 @@
 {
   "schema_version": 5,
   "last_updated": "2026-09-23",
-  "updated_at_kst": "2026-09-23T04:22:26+09:00",
+  "updated_at_kst": "2026-09-23T23:09:37+09:00",
   "red_count_today": 0,
   "reds_today": [
     {
@@ -7340,7 +7340,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-09-21",
-      "last_seen": "2026-09-22",
+      "last_seen": "2026-09-23",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11140",
@@ -8683,7 +8683,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-09-22",
-      "last_seen": "2026-09-22",
+      "last_seen": "2026-09-23",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11146",
@@ -11724,7 +11724,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-04-01",
-      "last_seen": "2026-09-22",
+      "last_seen": "2026-09-23",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "10547",
@@ -13007,7 +13007,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-09-21",
-      "last_seen": "2026-09-22",
+      "last_seen": "2026-09-23",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11139",
@@ -24038,7 +24038,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-09-08",
-      "last_seen": "2026-09-22",
+      "last_seen": "2026-09-23",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11116",
@@ -24196,6 +24196,123 @@
       },
       "raw_content": "Error>상세화면\n본문 바로가기\n주메뉴 바로가기\n에러가 발생했습니다!",
       "raw_fetched_at": "2026-09-19"
+    },
+    {
+      "pbancSn": "179307",
+      "title": "2026년 스마트 혁신가전 유공자 포상 모집",
+      "agency": "한국전자정보통신산업진흥회",
+      "deadline": "2026-10-23",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179307",
+      "tier": "yellow",
+      "note": "2순위: 모든 축 green/yellow, 중립 매칭 — 직접 지원 가능",
+      "classify_evidence": {
+        "summary_reason": "2순위: 모든 축 green/yellow, 중립 매칭 — 직접 지원 가능",
+        "category_hints": [
+          "global"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "모집 중"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-10-23",
+            "detail": "마감 전"
+          },
+          "region": {
+            "pass": true,
+            "value": "전국",
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "biz_enyy": {
+            "pass": true,
+            "value": "5년미만,7년미만,10년미만",
+            "detail": "업력 허용 (10년미만,5년미만,7년미만)"
+          },
+          "exclude_target": {
+            "pass": true,
+            "value": "* 자세한 포상 제한 사항은 첨부된 공고문을 참고바랍니다.",
+            "detail": "자격 제한 없음"
+          },
+          "industry": {
+            "pass": true,
+            "detail": "업종 제한 없음"
+          },
+          "qualification": {
+            "pass": true,
+            "detail": "자격 제한 없음"
+          },
+          "stage": {
+            "pass": true,
+            "detail": "업력 허용 (10년미만,5년미만,7년미만)"
+          },
+          "nature": {
+            "pass": true,
+            "detail": "성격 분류 애매 (biz_class='행사ㆍ네트워크')"
+          },
+          "region_keyword": {
+            "pass": true,
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "positive_hit": {
+            "pass": true,
+            "detail": "2순위: 모든 축 green/yellow, 중립 매칭 — 직접 지원 가능"
+          }
+        },
+        "risk_flags": [],
+        "axis_scores": {
+          "region": {
+            "level": "green",
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "stage": {
+            "level": "green",
+            "detail": "업력 허용 (10년미만,5년미만,7년미만)"
+          },
+          "industry": {
+            "level": "green",
+            "detail": "업종 제한 없음"
+          },
+          "nature": {
+            "level": "yellow",
+            "detail": "성격 분류 애매 (biz_class='행사ㆍ네트워크')"
+          },
+          "qualification": {
+            "level": "green",
+            "detail": "자격 제한 없음"
+          }
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "2순위: 모든 축 green/yellow, 중립 매칭 — 직접 지원 가능",
+        "classify_version": "v8.3"
+      },
+      "first_seen": "2026-09-23",
+      "last_seen": "2026-09-23",
+      "structured": {
+        "pbanc_sn_int": 179307,
+        "integrated": false,
+        "recruiting": true,
+        "start_date": "2026-09-16",
+        "end_date": "2026-10-23",
+        "agency_type": "민간",
+        "biz_class": "행사ㆍ네트워크",
+        "region": "전국",
+        "biz_enyy": "5년미만,7년미만,10년미만",
+        "age_range": "만 20세 이상 ~ 만 39세 이하,만 40세 이상",
+        "apply_target": "대학,연구기관,일반기업,1인 창조기업",
+        "apply_target_desc": "가전산업 관련 기업, 대학, 유관기관 등에 소속되어 혁신기술 개발, 수출 확대 및 기술 융·복합화 확산 등 스마트 혁신가전산업 발전 및 경쟁력 \r\n향상에 기여한 자  \r\n* 추천일 기준 현재 해당분야 근무경력 3년 이상(실 근무기간만 적용)\r\n** 자세한 안내사항은 첨부된 공고문을 참고바랍니다.",
+        "exclude_target": "* 자세한 포상 제한 사항은 첨부된 공고문을 참고바랍니다.",
+        "preferential": "",
+        "content": "국내 스마트 혁신가전산업 발전과 경쟁력 향상에 기여한 공이 큰 유공자를 발굴하고, \r\n포상하여 그간의 노고를 격려하고자 &apos;스마트 혁신가전 유공자 포상&apos; 후보자를 아래와 같이 모집하오니 많은 신청 바랍니다.",
+        "integrated_name": "2026년 스마트 혁신가전 유공자 포상",
+        "apply_online": "",
+        "apply_guide": "www.gokea.org/core/?cid=47&uid=52968&page=1&role=view"
+      },
+      "raw_content": "2026년 스마트 혁신가전 유공자 포상 모집\n사업안내 바로가기\n지원분야\n행사ㆍ네트워크\n대상연령\n만 20세 이상 ~ 만 39세 이하, 만 40세 이상\n기관구분\n민간\n담당부서\n디지털혁신실\n지역\n전국\n접수기간\n2026-09-16 ~ 2026-10-23 18:00\n주관기관명\n한국전자정보통신산업진흥회\n대상\n대학, 연구기관, 일반기업, 1인 창조기업\n창업업력\n5년미만, 7년미만, 10년미만\n연락처\n02-6388-6114\n2026년 스마트 혁신가전 유공자 포상 모집\n국내 스마트 혁신가전산업 발전과 경쟁력 향상에 기여한 공이 큰 유공자를 발굴하고,\n포상하여 그간의 노고를 격려하고자 '스마트 혁신가전 유공자 포상' 후보자를 아래와 같이 모집하오니 많은 신청 바랍니다.\n2026년 09월 16일\n한국전자정보통신산업진흥회\n신청방법 및 대상\n신청기간\n2026.09.16(수) 09:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t~\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t2026.10.23(금) 18:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t까지\n신청방법\n이메일 접수 : syoung@gokea.org\n신청대상\n가전산업 관련 기업, 대학, 유관기관 등에 소속되어 혁신기술 개발, 수출 확대 및 기술 융·복합화 확산 등 스마트 혁신가전산업 발전 및 경쟁력\n향상에 기여한 자\n* 추천일 기준 현재 해당분야 근무경력 3년 이상(실 근무기간만 적용)\n** 자세한 안내사항은 첨부된 공고문을 참고바랍니다.\n제외대상\n* 자세한 포상 제한 사항은 첨부된 공고문을 참고바랍니다.\n신청 시 요청하는 정보(개인정보포함)는 사업운영기관에서 관리되오니 이점 반드시 유의하여 주시기 바랍니다.\n제출서류\n추천서, 공적조서, 이력서 및 증빙자료, 동의서 등 각 1부\n* 신청서 및 공적조서는 전자파일(한글, 워드, PDF)로 이메일 제출\n** 접수된 서류는 반환하지 않으며, 포상 대상자로 선정 시 개별 통보\n*** 자세한 안내사항은 첨부된 공고문 및 별첨서식을 참고바랍니다.\n제출하신 서류는 사업운영기관에서 관리되오니 서류 반환 등 문의는 해당 기관으로 하시기 바랍니다.\n선정절차 및 평가방법\n(1차) 서류심사 ▶ (2차) 심의위원회 심사\n* 세부적인 심사절차 및 심사 기준은 첨부된 공고문을 참고바랍니다.\n행사안내\n기타 세부사항은 모집 공고문을 참고바랍니다.\n상기 일정은 사업운영기관의 내부사정으로 변경될 수 있습니다.\n지원내용\n산업통상부 장관표창 총 9점\n문의처\n한국전자정보통신산업진흥회 디지털혁신실 (syoung@gokea.org, 02-6388-6114)\n자세한 내용은 첨부파일 참조 및 문의처로 문의하여 주시기 바랍니다.\nK-Startup에 공고되는 정보는 해당 기관의 요청에 의해 제공됩니다. 입주, 교육, 사업 신청 시 요청하는 정보(개인정보 포함)는 해당 기관에서 관리 \t되오니\n이점 유의하여 주시기 바랍니다.\n첨부파일 일괄 다운로드\n첨부1. 2026년도 스마트 혁신가전 유공자 포상 공고문.pdf\n바로보기\n다운로드\n첨부2. 2026년도 스마트 혁신가전 유공자 포상_별첨서식.hwp\n바로보기\n다운로드\n본 저작물은 창업진흥원(K-Startup)이 게시한 공공누리 제1유형의 저작물이며, 공공데이터포털(www.data.go.kr)에서 공공데이터로 개방중이며 무료로 활용할 수 있습니다.\n목록",
+      "raw_fetched_at": "2026-09-23"
     },
     {
       "pbancSn": "bizinfo_PBLN_000000000126035",
@@ -27613,7 +27730,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-01-16",
-      "last_seen": "2026-09-22",
+      "last_seen": "2026-09-23",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "10278",
@@ -28347,7 +28464,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-04-20",
-      "last_seen": "2026-09-22",
+      "last_seen": "2026-09-23",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "10643",
@@ -28402,7 +28519,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-04-01",
-      "last_seen": "2026-09-22",
+      "last_seen": "2026-09-23",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "10545",
@@ -28457,7 +28574,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-03-12",
-      "last_seen": "2026-09-22",
+      "last_seen": "2026-09-23",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "10407",
@@ -28512,7 +28629,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-03-17",
-      "last_seen": "2026-09-22",
+      "last_seen": "2026-09-23",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "10441",
@@ -29737,7 +29854,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-07-28",
-      "last_seen": "2026-09-22",
+      "last_seen": "2026-09-23",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11010",
@@ -48455,7 +48572,7 @@
         "title": "<2026년 콘솔게임 공동관> 참가기업 추가 모집공고",
         "registDate": "26.09.17",
         "period": "26.09.17 ~ 26.09.29",
-        "views": "2657",
+        "views": "3128",
         "href": "/kocca/pims/view.do?intcNo=326D00108002&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
         "_source_page": 1
       }
@@ -49396,6 +49513,127 @@
       }
     },
     {
+      "pbancSn": "179308",
+      "title": "‘2026년 글로컬 창업사관학교 액셀러레이팅’ 참여기업 모집 공고",
+      "agency": "국립순천대학교 창업지원단장국립순천대학교 창업지원단장",
+      "deadline": "2026-09-29",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179308",
+      "tier": "orange",
+      "note": "검토 매칭 (액셀러레이팅)",
+      "classify_evidence": {
+        "summary_reason": "검토 매칭 (액셀러레이팅)",
+        "category_hints": [
+          "budget"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "모집 중"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-09-29",
+            "detail": "마감 전"
+          },
+          "region": {
+            "pass": false,
+            "value": "전남광주",
+            "detail": "지역 한정 desc: '광주 지역'"
+          },
+          "biz_enyy": {
+            "pass": true,
+            "value": "3년미만",
+            "detail": "업력 허용 (3년미만)"
+          },
+          "exclude_target": {
+            "pass": true,
+            "value": "",
+            "detail": "자격 제한 없음"
+          },
+          "industry": {
+            "pass": true,
+            "detail": "업종 제한 없음"
+          },
+          "qualification": {
+            "pass": true,
+            "detail": "자격 제한 없음"
+          },
+          "stage": {
+            "pass": true,
+            "detail": "업력 허용 (3년미만)"
+          },
+          "nature": {
+            "pass": true,
+            "detail": "직접 자금성 (사업화)"
+          },
+          "region_keyword": {
+            "pass": false,
+            "detail": "지역 한정 desc: '광주 지역'"
+          },
+          "positive_hit": {
+            "pass": false,
+            "detail": "검토 매칭 (액셀러레이팅)"
+          }
+        },
+        "risk_flags": [],
+        "axis_scores": {
+          "region": {
+            "level": "orange",
+            "detail": "지역 한정 desc: '광주 지역'"
+          },
+          "stage": {
+            "level": "green",
+            "detail": "업력 허용 (3년미만)"
+          },
+          "industry": {
+            "level": "green",
+            "detail": "업종 제한 없음"
+          },
+          "nature": {
+            "level": "green",
+            "detail": "직접 자금성 (사업화)"
+          },
+          "qualification": {
+            "level": "green",
+            "detail": "자격 제한 없음"
+          }
+        },
+        "exclusion_flags": [
+          {
+            "axis": "region",
+            "severity": "high",
+            "msg": "지역 한정 desc: '광주 지역'"
+          }
+        ],
+        "audit_flags": [],
+        "tier_logic": "3순위 (아이디어·우회 가능): 검토 매칭 (액셀러레이팅)",
+        "classify_version": "v8.3"
+      },
+      "first_seen": "2026-09-23",
+      "last_seen": "2026-09-23",
+      "structured": {
+        "pbanc_sn_int": 179308,
+        "integrated": false,
+        "recruiting": true,
+        "start_date": "2026-09-18",
+        "end_date": "2026-09-29",
+        "agency_type": "민간",
+        "biz_class": "사업화",
+        "region": "전남광주",
+        "biz_enyy": "3년미만",
+        "age_range": "만 20세 이상 ~ 만 39세 이하",
+        "apply_target": "일반인,일반기업",
+        "apply_target_desc": "전남/광주 지역 (예비)초기 창업기업",
+        "exclude_target": "",
+        "preferential": "",
+        "content": "국립순천대학교는 청년 창업을 활성화하고 청년의 성장과 지역 내 안정적 정착을 지원하기 위해, 창업자를 위한 아이디어부터 사업화 투자까지 대상별 맞춤형 액셀러레이팅 프로그램을 지원하는 ‘ 2026 글로컬 창업사관학교 액셀러레이팅'에 참여할 청년 창업가를 모집하오니 많은 참여 바랍니다.",
+        "integrated_name": "‘2026년 글로컬 창업사관학교 액셀러레이팅’ 참여기업 모집 공고",
+        "apply_online": "https://forms.gle/iwYr2UiRkEZBPL939",
+        "apply_guide": ""
+      }
+    },
+    {
       "pbancSn": "bizinfo_PBLN_000000000125913",
       "id": "bizinfo_PBLN_000000000125913",
       "source": "bizinfo",
@@ -50246,7 +50484,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-02-10",
-      "last_seen": "2026-09-22",
+      "last_seen": "2026-09-23",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "10317",
@@ -56810,7 +57048,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-09-14",
-      "last_seen": "2026-09-22",
+      "last_seen": "2026-09-23",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11121",
@@ -62337,7 +62575,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-09-15",
-      "last_seen": "2026-09-22",
+      "last_seen": "2026-09-23",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11126",
@@ -62400,7 +62638,7 @@
         "title": "2026년 대중음악 공연환경 개선 지원사업 추가 공고",
         "registDate": "26.09.15",
         "period": "26.09.15 ~ 26.10.02",
-        "views": "8707",
+        "views": "9672",
         "href": "/kocca/pims/view.do?intcNo=126D00070010&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
         "_source_page": 1
       }
@@ -64259,7 +64497,7 @@
         "title": "2026 월드 웹툰 페스티벌 전시 참가자 모집공고",
         "registDate": "26.09.17",
         "period": "26.09.17 ~ 26.10.06",
-        "views": "3133",
+        "views": "3623",
         "href": "/kocca/pims/view.do?intcNo=326D00092012&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
         "_source_page": 1
       }
@@ -66209,7 +66447,7 @@
         "title": "세계적인 남성복/유니섹스 수주회인 Pitti Uomo 111 CODE KOREA 참여 브랜드 모집",
         "registDate": "26.09.15",
         "period": "26.10.01 ~ 26.10.08",
-        "views": "3146",
+        "views": "3573",
         "href": "/kocca/pims/view.do?intcNo=326D00089011&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
         "_source_page": 1
       }
@@ -70725,7 +70963,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-09-15",
-      "last_seen": "2026-09-22",
+      "last_seen": "2026-09-23",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11125",
@@ -72191,7 +72429,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-04-27",
-      "last_seen": "2026-09-22",
+      "last_seen": "2026-09-23",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "10673",
@@ -73766,7 +74004,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-07-29",
-      "last_seen": "2026-09-22",
+      "last_seen": "2026-09-23",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11014",
@@ -74473,6 +74711,134 @@
         "bsnsSumryCn": "<p>인제군 관내 사회적경제기업의 운영 부담을 완화하고 경영 활성화를 지원하기 위하여 「2026년 인제군 사회적경제기업 지원사업」 참여기업을 다음과 같이 모집하오니 많은 신청 바랍니다.</p><p><br></p><p style=\"line-height: 1.8;\">☞&nbsp;인제군 관내 사회적경제기업</p><p style=\"line-height: 1.8;\">- (예비)사회적기업, 마을기업, 협동조합, 자활기업</p><p><br></p><p style=\"line-height: 1.8;\">☞ 택배비, 온라인 홍보비, 맞춤형 경영 지원</p><p style=\"line-height: 1.8;\">- 택배비 지원 : 기업 생산제품 택배 발송료 지원</p><p style=\"line-height: 1.8;\">- 온라인 홍보비 지원 : 온라인 홍보 및 마케팅 비용 지원</p><p style=\"line-height: 1.8;\">- 맞춤형 경영지원 : 맞춤형 경영인프라 비용 지원</p>",
         "pldirSportRealmMlsfcCodeNm": "디자인/상품화/사업화",
         "printFileNm": "2026년 인제군사회적경제기업 지원사업 모집 공고+.pdf"
+      }
+    },
+    {
+      "pbancSn": "179175",
+      "title": "2026 스타트업 언론홍보·미디어 콘텐츠 확산 지원사업 모집 공고",
+      "agency": "주식회사 다임",
+      "deadline": "2026-10-30",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179175",
+      "tier": "orange",
+      "note": "structured 완전 매칭 (전국/사업화)",
+      "classify_evidence": {
+        "summary_reason": "structured 완전 매칭 (전국/사업화)",
+        "category_hints": [
+          "content",
+          "budget"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "모집 중"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-10-30",
+            "detail": "마감 전"
+          },
+          "region": {
+            "pass": true,
+            "value": "전국",
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "biz_enyy": {
+            "pass": true,
+            "value": "예비창업자,7년미만",
+            "detail": "업력 허용 (7년미만,예비창업자)"
+          },
+          "exclude_target": {
+            "pass": true,
+            "value": "단순 제품 광고, 할인·이벤트 등 판촉을 주된 목적으로 하는 경우\r\n제출 내용이 허위·과장되거나 객관적인 사실확인이 어려운 경우\r\n관계 법령을 ",
+            "detail": "자격 제한 없음"
+          },
+          "industry": {
+            "pass": true,
+            "detail": "업종 제한 없음"
+          },
+          "qualification": {
+            "pass": true,
+            "detail": "자격 제한 없음"
+          },
+          "stage": {
+            "pass": true,
+            "detail": "업력 허용 (7년미만,예비창업자)"
+          },
+          "nature": {
+            "pass": false,
+            "detail": "성격 불일치 (언론홍보)"
+          },
+          "region_keyword": {
+            "pass": true,
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "positive_hit": {
+            "pass": true,
+            "detail": "structured 완전 매칭 (전국/사업화)"
+          }
+        },
+        "risk_flags": [
+          {
+            "type": "exclude_target_long",
+            "severity": "low",
+            "msg": "신청 제외 대상 장문 (119자) — 정독 필수"
+          }
+        ],
+        "axis_scores": {
+          "region": {
+            "level": "green",
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "stage": {
+            "level": "green",
+            "detail": "업력 허용 (7년미만,예비창업자)"
+          },
+          "industry": {
+            "level": "green",
+            "detail": "업종 제한 없음"
+          },
+          "nature": {
+            "level": "orange",
+            "detail": "성격 불일치 (언론홍보)"
+          },
+          "qualification": {
+            "level": "green",
+            "detail": "자격 제한 없음"
+          }
+        },
+        "exclusion_flags": [
+          {
+            "axis": "nature",
+            "severity": "high",
+            "msg": "성격 불일치 (언론홍보)"
+          }
+        ],
+        "audit_flags": [],
+        "tier_logic": "3순위 (조건 충족하나 일부 축 제약): structured 완전 매칭 (전국/사업화)",
+        "classify_version": "v8.3"
+      },
+      "first_seen": "2026-09-23",
+      "last_seen": "2026-09-23",
+      "structured": {
+        "pbanc_sn_int": 179175,
+        "integrated": false,
+        "recruiting": true,
+        "start_date": "2026-09-16",
+        "end_date": "2026-10-30",
+        "agency_type": "민간",
+        "biz_class": "사업화",
+        "region": "전국",
+        "biz_enyy": "예비창업자,7년미만",
+        "age_range": "만 20세 미만,만 20세 이상 ~ 만 39세 이하,만 40세 이상",
+        "apply_target": "청소년,대학생,일반인,대학,연구기관,일반기업,1인 창조기업",
+        "apply_target_desc": "전국 소재 예비창업자 및 7년 이내 창업기업",
+        "exclude_target": "단순 제품 광고, 할인·이벤트 등 판촉을 주된 목적으로 하는 경우\r\n제출 내용이 허위·과장되거나 객관적인 사실확인이 어려운 경우\r\n관계 법령을 위반하거나 본 사업의 취지 및 산학뉴스 편집 기준에 부합하지 않는 경우",
+        "preferential": "",
+        "content": "기술력과 사업 성과를 보유한 스타트업의 주요 소식과 성과가 보다 효과적으로 확산될 수 있도록 언론홍보 및 미디어 콘텐츠 지원을 추진하며, 이에 참여할 기업을 모집합니다.",
+        "integrated_name": "2026 스타트업 언론홍보·미디어 콘텐츠 확산 지원사업 모집 공고",
+        "apply_online": "https://www.sanhaknews.kr/news/articleView.html?idxno=21754",
+        "apply_guide": "www.sanhaknews.kr/news/articleView.html?idxno=21754"
       }
     },
     {
@@ -75559,7 +75925,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-08-31",
-      "last_seen": "2026-09-22",
+      "last_seen": "2026-09-23",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11096",
@@ -76909,6 +77275,66 @@
         "bsnsSumryCn": "<p>「지역산업위기대응 이차보전 지원사업 운영규정(산업통상부고시 제2026-008호)」(이하 “운영규정”이라 한다) 제8조에 따라 2026년도 지역산업위기대응 이차보전 지원사업을 다음과 같이 공고합니다.&nbsp;</p><div><br></div><div>☞ 산업위기지역의 주된산업 또는 이와 밀접한 전ㆍ후방 연관 산업(거래증빙必)을 영위하고 있는 중소ㆍ중견기업</div><div><br></div><div style=\"line-height: 1.8;\">☞ 산업위기지역 소재 중소ㆍ중견기업의 경영 안정을 위한 이차보전 지원</div><div style=\"line-height: 1.8;\">※ 자세한 지원내용 공고문 참조</div>",
         "pldirSportRealmMlsfcCodeNm": "융자",
         "printFileNm": "2026년도 지역산업위기대응 이차보전 지원사업 1차 변경공고(산업통상부공고 제2026-440호)_최종+.pdf"
+      }
+    },
+    {
+      "pbancSn": "itp_11148",
+      "title": "[로봇센터] 2026년 로봇산업진흥시설 입주기업 모집공고(4차)",
+      "agency": "인천테크노파크 로봇센터",
+      "deadline": "2026-11-13",
+      "url": "https://itp.or.kr/intro.asp?tmid=13&seq=11148",
+      "tier": "orange",
+      "note": "인천 매칭이지만 로봇 불일치",
+      "classify_evidence": {
+        "summary_reason": "인천 매칭이지만 로봇 불일치",
+        "category_hints": [
+          "incheon",
+          "itp",
+          "로봇센터"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "ITP 진행중 항목"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-11-13",
+            "detail": "ITP 마감일"
+          },
+          "region": {
+            "pass": true,
+            "value": "인천",
+            "detail": "ITP=인천 거점"
+          }
+        },
+        "axis_scores": {
+          "region": "green",
+          "stage": "green",
+          "industry": "orange",
+          "nature": "orange",
+          "qualification": "green"
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "ITP 로봇센터 부서별 룰 → orange",
+        "classify_version": "v8.3-itp"
+      },
+      "first_seen": "2026-09-23",
+      "last_seen": "2026-09-23",
+      "structured": {
+        "source_kind": "itp",
+        "itp_seq": "11148",
+        "itp_dept": "로봇센터",
+        "attachments": [
+          "붙임1. 2026년 로봇산업진흥시설 신규입주기업 모집 공고문(4차).pdf\">\r\n\t\t\t\t붙임1. 2026년 로봇산업진흥시설 신규입주기업 모집 공고문(4차).pdf(109KB)",
+          "붙임2. 로봇산업진흥시설 입주신청 서식.hwp\">\r\n\t\t\t\t붙임2. 로봇산업진흥시설 입주신청 서식.hwp(64KB)",
+          "붙임3. 로봇산업 특수분류표(4차개정).xlsx\">\r\n\t\t\t\t붙임3. 로봇산업 특수분류표(4차개정).xlsx(306KB)",
+          "붙임4. 로봇산업진흥시설 층별 평면도.pdf\">\r\n\t\t\t\t붙임4. 로봇산업진흥시설 층별 평면도.pdf(1977KB)"
+        ],
+        "recruiting": true,
+        "region": "인천"
       }
     },
     {
@@ -81164,7 +81590,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-07-02",
-      "last_seen": "2026-09-22",
+      "last_seen": "2026-09-23",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "10915",
@@ -83733,7 +84159,7 @@
         "title": "[수정/상시공고] 2026년 글로벌게임허브센터 신규 입주기업 추가모집(상시) 수정공고",
         "registDate": "26.04.23",
         "period": "26.04.27 ~ 26.12.31",
-        "views": "29454",
+        "views": "29933",
         "href": "/kocca/pims/view.do?intcNo=326D00034004&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
         "_source_page": 1
       },
@@ -90121,7 +90547,7 @@
           "region": {
             "pass": false,
             "value": "경남",
-            "detail": "사업명에 지역 포함 (경남)"
+            "detail": "지역 한정 desc: '경상남도 소재'"
           },
           "biz_enyy": {
             "pass": true,
@@ -90151,7 +90577,7 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "사업명에 지역 포함 (경남)"
+            "detail": "지역 한정 desc: '경상남도 소재'"
           },
           "positive_hit": {
             "pass": true,
@@ -90162,7 +90588,7 @@
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "사업명에 지역 포함 (경남)"
+            "detail": "지역 한정 desc: '경상남도 소재'"
           },
           "stage": {
             "level": "green",
@@ -90185,7 +90611,7 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "사업명에 지역 포함 (경남)"
+            "msg": "지역 한정 desc: '경상남도 소재'"
           },
           {
             "axis": "industry",
@@ -145147,58 +145573,23 @@
     }
   ],
   "_meta": {
-    "expired": [
-      "[인천] 2026년 국방기술진흥연구소 인천국방벤처센터 협약기업 모집 공고",
-      "2026년 하반기 우수발명품 우선구매 추천사업 기간연장 공고",
-      "2026년 하반기 우수발명품 우선구매 추천사업 규격추가 공고",
-      "2026년 하반기 우수발명품 우선구매 추천사업 신규지정 공고",
-      "2026년 광명시 기업박람회(GM TECH EXPO 2026) 참가기업 모집 공고",
-      "2026년 AI 융합 에스테틱 의료기기 글로벌 사업화  기반구축 사업(1차년도) 참여기업 통합모집 재공고 (바이오산업 개방형 생태계 조성 촉진)",
-      "2026년 4차 바이오글로벌 사업화지원센터 기업지원사업 공고",
-      "2026년 바이오글로벌 사업화지원센터 기업지원사업 공고",
-      "2026년 독일 국제 아이디어ㆍ발명ㆍ신제품  전시회 참가모집 공고",
-      "2026년 KOTRA-쇼피 파워셀러 1단계 입점교육 4기 참가기업 모집 공고",
-      "2026년 하반기 혁신제품 지정기간 연장(2차 연장) 공고",
-      "2026년 6차 재취업지원서비스 기업컨설팅 지원 사업장 모집 공고",
-      "[2026 SK임팩트부스터 데이]  SK와 스타트업이 만드는 협력의 시작점, 9/22 SK임팩트부스터 데이에 초대합니다",
-      "지자체 지원 중소기업중앙회 PL보험료 지원사업 공고",
-      "2026년 콘크리트 2차 제품 제조기업 및 레미콘기업 패키지 지원사업 공고(시멘트산업 이산화탄소 저감 및 종합실증센터 구축사업)",
-      "2026 광명시 기업박람회 (GM TECH EXPO 2026) 참여기업 모집 공고",
-      "2026 부산 창업기획자 전문인력 양성과정 공고",
-      "[경남] 2026년 제조전문형 메이커스페이스 지원사업 경상남도 제조 스타트업 홍보ㆍ마케팅 지원 프로그램 수혜기업 모집 공고",
-      "[울산] 울주군 2026년 소규모 사업장 방지시설 설치 지원사업 공고(우리동네 맑은공기 패키지 지원사업)",
-      "[전남광주] 완도군 2026 부산국제수산엑스포 완도군 공동 홍보관 참가기업 모집 공고",
-      "[부산] 사하구 사물인터넷 측정기기 부착 지원사업 3차 추가모집 공고",
-      "[부산] 서구 한시적 수출 수산식품 포장재 지원사업 2차 신청 공고",
-      "2026 한·독 바이오·헬스케어 온라인 사전 세미나",
-      "[경남] 산청군 2026년 하반기 농업발전기금 융자지원사업 공고",
-      "[경남] 통영시 2026년 경남 특산물박람회 참가업체 모집 공고",
-      "2026년 스타트업 96 입주 예비창업자 모집",
-      "[경북] 칠곡군 2026년 3차 소규모 사업장 방지시설 설치 지원사업 공고",
-      "[서울] 2026년 튀르키예 이스탄불 식품 박람회 참여기업 모집 공고",
-      "[울산] 글로벌 바이어 발굴 지원사업 참여기업 모집 공고",
-      "[경북] 포항시 2026년 철강산업 전환성장을 위한 사업재편 컨설팅 지원사업 지원기업(수요기업) 모집 공고",
-      "[경북] 2026년 대체식품산업 네트워크 강화 지원사업 글로벌 파일럿 테스트 참가기업 모집 공고",
-      "2026년 튀르키예 이스탄불 식품 박람회  참가기업 모집",
-      "[글로벌 인재] 2026 이공계 GKS 대학원생 산학프로젝트 및 인턴십 참여기업 모집",
-      "바이오스타 2.0  예비창업자 모집 공고 및 설명회 개최",
-      "[충남] 태안군 2026년 사회적경제기업 시설장비 지원사업 참여기업 모집 공고",
-      "2026년 전북청년창업박람회 창업기업 모집 공고",
-      "2026년 해외 상표 무단선점 심층조사 지원사업 공고 (stale)",
-      "[경남] 창원시 2026년 지식재산진흥 지원사업 기업 모집 공고 (stale)",
-      "2026년 해외 온라인 위조상품 유통 사전진단 서비스 공고 (stale)"
+    "expired": [],
+    "new_added": [
+      "‘2026년 글로컬 창업사관학교 액셀러레이팅’ 참여기업 모집 공고",
+      "2026년 스마트 혁신가전 유공자 포상 모집",
+      "2026 스타트업 언론홍보·미디어 콘텐츠 확산 지원사업 모집 공고",
+      "[로봇센터] 2026년 로봇산업진흥시설 입주기업 모집공고(4차)"
     ],
-    "new_added": [],
     "updated_today": [],
     "stats": {
       "green": 185,
-      "yellow": 308,
-      "orange": 1318,
+      "yellow": 309,
+      "orange": 1321,
       "red_excluded": 0,
-      "expired_removed": 39,
-      "total_pool": 1811,
-      "rss_total": 232,
-      "raw_fetched": 482
+      "expired_removed": 0,
+      "total_pool": 1815,
+      "rss_total": 235,
+      "raw_fetched": 483
     }
   },
   "history": [
@@ -145474,11 +145865,11 @@
     },
     {
       "date": "2026-09-23",
-      "at_kst": "2026-09-23T04:22:26+09:00",
-      "new": 0,
+      "at_kst": "2026-09-23T23:09:37+09:00",
+      "new": 4,
       "updated": 0,
-      "expired": 39,
-      "total": 1811,
+      "expired": 0,
+      "total": 1815,
       "red_excluded": 0
     }
   ]
