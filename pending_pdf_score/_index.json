@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-27T23:42:06.681931+09:00",
+  "generated_at": "2026-09-28T04:30:08.539231+09:00",
   "schema_version": 2,
   "pdf_text_cap": 15000,
-  "target_count": 882,
+  "target_count": 879,
   "pending": [
     {
       "key": "bizinfo_PBLN_000000000126155",
@@ -1893,27 +1893,6 @@
       "tier": "yellow",
       "deadline": "",
       "pdf_text_chars": 2142
-    },
-    {
-      "key": "bizinfo_PBLN_000000000126322",
-      "title": "[경기] 시흥시 2026년 해외인증 획득지원 참여기업 추가 모집 공고",
-      "tier": "orange",
-      "deadline": "2026-09-27",
-      "pdf_text_chars": 15070
-    },
-    {
-      "key": "bizinfo_PBLN_000000000126467",
-      "title": "[대구] 2026년 3차 대학ㆍ기업 협업 프로젝트 참여기업 모집 공고(경북대학교 지역전략산업혁신연구소)",
-      "tier": "orange",
-      "deadline": "2026-09-27",
-      "pdf_text_chars": 10620
-    },
-    {
-      "key": "bizinfo_PBLN_000000000126645",
-      "title": "[충남] 2026년 11월 동행축제 우수 소상공인 제품 라이브커머스 참가기업 모집 공고",
-      "tier": "orange",
-      "deadline": "2026-09-27",
-      "pdf_text_chars": 4474
     },
     {
       "key": "bizinfo_PBLN_000000000124360",
@@ -6180,10 +6159,10 @@
     }
   ],
   "stats": {
-    "total_items": 1795,
+    "total_items": 1785,
     "red": 0,
     "expired": 0,
-    "no_pdf": 888,
+    "no_pdf": 881,
     "already_scored": 25
   }
 }
