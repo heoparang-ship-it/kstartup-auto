@@ -1,7 +1,7 @@
 {
   "schema_version": 5,
   "last_updated": "2026-10-06",
-  "updated_at_kst": "2026-10-06T03:03:43+09:00",
+  "updated_at_kst": "2026-10-06T07:17:06+09:00",
   "red_count_today": 0,
   "reds_today": [
     {
@@ -46636,7 +46636,7 @@
           "region": {
             "pass": false,
             "value": "전남광주",
-            "detail": "지역 한정 desc: '광주 소재'"
+            "detail": "사업명에 지역 포함 (전남)"
           },
           "biz_enyy": {
             "pass": true,
@@ -46666,7 +46666,7 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "지역 한정 desc: '광주 소재'"
+            "detail": "사업명에 지역 포함 (전남)"
           },
           "positive_hit": {
             "pass": false,
@@ -46677,7 +46677,7 @@
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "지역 한정 desc: '광주 소재'"
+            "detail": "사업명에 지역 포함 (전남)"
           },
           "stage": {
             "level": "green",
@@ -46700,7 +46700,7 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "지역 한정 desc: '광주 소재'"
+            "msg": "사업명에 지역 포함 (전남)"
           }
         ],
         "audit_flags": [],
@@ -81458,7 +81458,7 @@
           "region": {
             "pass": false,
             "value": "경남",
-            "detail": "사업명에 지역 포함 (경남)"
+            "detail": "지역 한정 desc: '경상남도 소재'"
           },
           "biz_enyy": {
             "pass": true,
@@ -81488,7 +81488,7 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "사업명에 지역 포함 (경남)"
+            "detail": "지역 한정 desc: '경상남도 소재'"
           },
           "positive_hit": {
             "pass": true,
@@ -81499,7 +81499,7 @@
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "사업명에 지역 포함 (경남)"
+            "detail": "지역 한정 desc: '경상남도 소재'"
           },
           "stage": {
             "level": "green",
@@ -81522,7 +81522,7 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "사업명에 지역 포함 (경남)"
+            "msg": "지역 한정 desc: '경상남도 소재'"
           },
           {
             "axis": "industry",
@@ -137484,20 +137484,7 @@
     }
   ],
   "_meta": {
-    "expired": [
-      "2026년 대전 웰컴 스테이 지원사업 참가기업 모집 공고",
-      "2026년 강북창업지원센터 하반기 신규 입주기업 모집",
-      "[대구] 2026년 4차 BIT융합캠퍼스(의료ㆍ헬스ㆍ바이오) 지원사업 기업 모집 공고",
-      "2026년 10월 크립톤 IR피칭 & 오피스아워 신청 접수",
-      "2026 옥천군 로컬 크리에이터 아카데미",
-      "2026년 성북구 중장년 기술창업센터 입주기업 모집공고(3차)",
-      "[경북] 2026년 레전드50+ 기업맞춤 지능형 첨단소재 인력양성사업 지역 청년 대상 기업탐방 참여기업 추가모집 공고",
-      "「아시아 창업 엑스포 FLY ASIA 2026」참여 스타트업 모집(1:1 밋업, 전시) / 디지털 전시 모집 기간 연장(~10.5.)",
-      "[대구] 2026년 중소기업경영안정자금  지원계획 변경 공고(이자지원) (stale)",
-      "[부산] 2026년 9차 중소기업 자금지원계획 변경 공고 (stale)",
-      "[경북] 청송군 2026년 소상공인 카드수수료 지원사업 참여점포 모집 공고 (stale)",
-      "[서울] 강남구 2026년 하반기 중소기업육성기금 융자지원 계획 공고 (stale)"
-    ],
+    "expired": [],
     "new_added": [],
     "updated_today": [],
     "stats": {
@@ -137505,7 +137492,7 @@
       "yellow": 295,
       "orange": 1259,
       "red_excluded": 0,
-      "expired_removed": 12,
+      "expired_removed": 0,
       "total_pool": 1717,
       "rss_total": 221,
       "raw_fetched": 445
@@ -137784,10 +137771,10 @@
     },
     {
       "date": "2026-10-06",
-      "at_kst": "2026-10-06T03:03:43+09:00",
+      "at_kst": "2026-10-06T07:17:06+09:00",
       "new": 0,
       "updated": 0,
-      "expired": 12,
+      "expired": 0,
       "total": 1717,
       "red_excluded": 0
     }
