@@ -1,16 +1,9 @@
 {
-  "generated_at": "2026-10-05T03:57:56.971733+09:00",
+  "generated_at": "2026-10-06T03:07:13.810865+09:00",
   "schema_version": 2,
   "pdf_text_cap": 15000,
-  "target_count": 846,
+  "target_count": 840,
   "pending": [
-    {
-      "key": "bizinfo_PBLN_000000000126779",
-      "title": "2026년 대전 웰컴 스테이 지원사업 참가기업 모집 공고",
-      "tier": "green",
-      "deadline": "2026-10-05",
-      "pdf_text_chars": 15068
-    },
     {
       "key": "bizinfo_PBLN_000000000126217",
       "title": "2026년 중소기업 스마트서비스 지원사업(A/S지원) 참여기업 모집 공고",
@@ -1697,20 +1690,6 @@
       "tier": "yellow",
       "deadline": "",
       "pdf_text_chars": 2142
-    },
-    {
-      "key": "bizinfo_PBLN_000000000126572",
-      "title": "[대구] 2026년 4차 BIT융합캠퍼스(의료ㆍ헬스ㆍ바이오) 지원사업 기업 모집 공고",
-      "tier": "orange",
-      "deadline": "2026-10-05",
-      "pdf_text_chars": 9403
-    },
-    {
-      "key": "bizinfo_PBLN_000000000126861",
-      "title": "[경북] 2026년 레전드50+ 기업맞춤 지능형 첨단소재 인력양성사업 지역 청년 대상 기업탐방 참여기업 추가모집 공고",
-      "tier": "orange",
-      "deadline": "2026-10-05",
-      "pdf_text_chars": 2201
     },
     {
       "key": "bizinfo_PBLN_000000000126406",
@@ -4667,13 +4646,6 @@
       "pdf_text_chars": 95
     },
     {
-      "key": "bizinfo_PBLN_000000000123160",
-      "title": "[부산] 2026년 9차 중소기업 자금지원계획 변경 공고",
-      "tier": "orange",
-      "deadline": "",
-      "pdf_text_chars": 15082
-    },
-    {
       "key": "bizinfo_PBLN_000000000123140",
       "title": "[제주] 2026년 해양수산 국내전시회(2026 부산 국제수산 EXPO) 참가 및 바이어 초청 통합지원 참가기업 모집 재공고",
       "tier": "orange",
@@ -4798,13 +4770,6 @@
       "tier": "orange",
       "deadline": "",
       "pdf_text_chars": 7071
-    },
-    {
-      "key": "bizinfo_PBLN_000000000123725",
-      "title": "[경북] 청송군 2026년 소상공인 카드수수료 지원사업 참여점포 모집 공고",
-      "tier": "orange",
-      "deadline": "",
-      "pdf_text_chars": 3114
     },
     {
       "key": "bizinfo_PBLN_000000000123709",
@@ -5337,13 +5302,6 @@
       "tier": "orange",
       "deadline": "",
       "pdf_text_chars": 5509
-    },
-    {
-      "key": "bizinfo_PBLN_000000000125836",
-      "title": "[서울] 강남구 2026년 하반기 중소기업육성기금 융자지원 계획 공고",
-      "tier": "orange",
-      "deadline": "",
-      "pdf_text_chars": 5656
     },
     {
       "key": "bizinfo_PBLN_000000000125823",
@@ -5928,10 +5886,10 @@
     }
   ],
   "stats": {
-    "total_items": 1729,
+    "total_items": 1717,
     "red": 0,
     "expired": 0,
-    "no_pdf": 859,
+    "no_pdf": 853,
     "already_scored": 24
   }
 }
