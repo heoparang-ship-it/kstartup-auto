@@ -1,7 +1,7 @@
 {
   "schema_version": 5,
-  "last_updated": "2026-10-10",
-  "updated_at_kst": "2026-10-10T05:26:03+09:00",
+  "last_updated": "2026-10-11",
+  "updated_at_kst": "2026-10-11T00:07:07+09:00",
   "red_count_today": 0,
   "reds_today": [
     {
@@ -2407,80 +2407,6 @@
   ],
   "items": [
     {
-      "pbancSn": "bizinfo_PBLN_000000000126876",
-      "id": "bizinfo_PBLN_000000000126876",
-      "source": "bizinfo",
-      "source_label": "중소벤처기업부 BIZINFO (기업마당)",
-      "title": "2026년 한-베트남 AIㆍ디지털 포럼 참가기업 모집 공고",
-      "agency": "과학기술정보통신부 / 정보통신산업진흥원",
-      "url": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000126876",
-      "deadline": "2026-10-10",
-      "tier": "green",
-      "note": "인천 매칭 + SW",
-      "classify_evidence": {
-        "summary_reason": "인천 매칭 + SW",
-        "category_hints": [
-          "bizinfo",
-          "서울,부산,대구,인천,대전,울산,세종,경기,강원,충북,충남,전북,경북,경남,제주"
-        ],
-        "rule_checks": {
-          "recruiting": {
-            "pass": true,
-            "value": "True",
-            "detail": "어댑터 통과"
-          },
-          "deadline": {
-            "pass": true,
-            "value": "2026-10-10",
-            "detail": "어댑터 normalize"
-          },
-          "region": {
-            "pass": true,
-            "value": "서울,부산,대구,인천,대전,울산,세종,경기,강원,충북,충남,전북,경북,경남,제주",
-            "detail": "agency·title·region 종합"
-          }
-        },
-        "axis_scores": {
-          "region": "green",
-          "stage": "yellow",
-          "industry": "green",
-          "nature": "yellow",
-          "qualification": "yellow"
-        },
-        "exclusion_flags": [],
-        "audit_flags": [],
-        "tier_logic": "bizinfo 룰 → green",
-        "classify_version": "v8.3-external"
-      },
-      "first_seen": "2026-10-01",
-      "last_seen": "2026-10-03",
-      "structured": {
-        "trgetNm": "중소기업",
-        "updtPnttm": "2026-09-30 15:11:40",
-        "hashtags": "경영,서울,부산,대구,인천,전남광주,대전,울산,세종,경기,강원,충북,충남,전북,경북,경남,제주,디지털 포럼,2026,비즈니스,IT,정보통신산업진흥원,과학기술정보통신부,AI,베트남,스타트업",
-        "inqireCo": 1916,
-        "creatPnttm": "2026-09-30 10:28:07",
-        "pblancNm": "2026년 한-베트남 AIㆍ디지털 포럼 참가기업 모집 공고",
-        "pblancId": "PBLN_000000000126876",
-        "printFlpthNm": "https://www.bizinfo.go.kr/cmm/fms/getImageFile.do?atchFileId=FILE_000000000775056&fileSn=0",
-        "refrncNm": "하노이IT지원센터 +84 24 7300 0674, ravongci@nipa.kr ",
-        "fileNm": "붙임2. [참가신청서] 2026년도 한-베트남 AI·디지털 포럼 참가기업 모집_260928.hwp",
-        "pblancUrl": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000126876",
-        "jrsdInsttNm": "과학기술정보통신부",
-        "excInsttNm": "정보통신산업진흥원",
-        "totCnt": 1426,
-        "reqstMthPapersCn": "이메일 접수(ravongci@nipa.kr)",
-        "pldirSportRealmLclasCodeNm": "경영",
-        "reqstBeginEndDe": "2026-09-29 ~ 2026-10-10",
-        "flpthNm": "https://www.bizinfo.go.kr/cmm/fms/getImageFile.do?atchFileId=FILE_000000000775057&fileSn=0",
-        "bsnsSumryCn": "<p>하노이IT지원센터에서 2026년도 한국-베트남 AIㆍ디지털 포럼 참가기업을 모집하오니 많은 참여 부탁드립니다.</p><p><br></p><p>☞&nbsp;베트남 진출 활동(예정) 한국 AIㆍIT 서비스 관련기업</p><p><br></p><p>☞&nbsp;기본 부스 제공, 비즈니스 매칭 지원, 전시자료 번역, MOU 체결 세리머니 지원, 임시 사무공간 제공 등 지원</p>",
-        "pldirSportRealmMlsfcCodeNm": "디자인/상품화/사업화",
-        "printFileNm": "붙임1. [공고문] 2026년도 한-베트남 AI·디지털 포럼 참가기업 모집_260928.hwp"
-      },
-      "raw_content": "Error>상세화면\n본문 바로가기\n주메뉴 바로가기\n에러가 발생했습니다!",
-      "raw_fetched_at": "2026-10-01"
-    },
-    {
       "pbancSn": "bizinfo_PBLN_000000000126618",
       "id": "bizinfo_PBLN_000000000126618",
       "source": "bizinfo",
@@ -3019,7 +2945,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-29",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179341,
         "integrated": true,
@@ -3211,7 +3137,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179218,
         "integrated": false,
@@ -3848,7 +3774,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179221,
         "integrated": false,
@@ -4066,7 +3992,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-09-29",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11156",
@@ -4688,7 +4614,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-18",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179280,
         "integrated": false,
@@ -5206,7 +5132,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-10-06",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11177",
@@ -5489,7 +5415,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-09-28",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11151",
@@ -5668,7 +5594,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-07",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179427,
         "integrated": false,
@@ -6381,7 +6307,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-10",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179209,
         "integrated": false,
@@ -6450,7 +6376,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11163",
@@ -6629,7 +6555,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179057,
         "integrated": false,
@@ -6823,7 +6749,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179351,
         "integrated": false,
@@ -7015,7 +6941,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179387,
         "integrated": false,
@@ -7138,7 +7064,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-03",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179413,
         "integrated": false,
@@ -7409,7 +7335,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-09",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179448,
         "integrated": false,
@@ -7751,7 +7677,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-06-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 178234,
         "integrated": false,
@@ -7869,7 +7795,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 176208,
         "integrated": true,
@@ -8263,7 +8189,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179365,
         "integrated": false,
@@ -8528,7 +8454,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-18",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179267,
         "integrated": false,
@@ -8591,7 +8517,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "note": "structured 완전 매칭 (전국/사업화)",
       "connect": "",
       "classify_evidence": {
@@ -8778,7 +8704,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 176076,
         "integrated": false,
@@ -8895,7 +8821,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 175783,
         "integrated": false,
@@ -9487,7 +9413,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-09-21",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11139",
@@ -14184,7 +14110,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-22",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179295,
         "integrated": false,
@@ -14379,7 +14305,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179347,
         "integrated": true,
@@ -14496,7 +14422,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179323,
         "integrated": false,
@@ -14611,7 +14537,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179371,
         "integrated": false,
@@ -14728,7 +14654,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-03",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179399,
         "integrated": false,
@@ -14915,7 +14841,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179329,
         "integrated": false,
@@ -15033,7 +14959,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179315,
         "integrated": false,
@@ -15448,7 +15374,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-07",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179394,
         "integrated": false,
@@ -15651,7 +15577,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-03",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179121,
         "integrated": false,
@@ -15841,7 +15767,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-22",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179306,
         "integrated": false,
@@ -16033,7 +15959,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-07",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179439,
         "integrated": true,
@@ -16376,7 +16302,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-03",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179402,
         "integrated": false,
@@ -16769,7 +16695,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-03",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179414,
         "integrated": false,
@@ -16838,7 +16764,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-10-07",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11182",
@@ -16939,7 +16865,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-09",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179438,
         "integrated": false,
@@ -17056,7 +16982,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179388,
         "integrated": false,
@@ -17200,7 +17126,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11160",
@@ -17476,7 +17402,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11171",
@@ -17652,7 +17578,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-09",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179464,
         "integrated": false,
@@ -17842,7 +17768,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179370,
         "integrated": true,
@@ -17959,7 +17885,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-03",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179418,
         "integrated": false,
@@ -18150,7 +18076,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-23",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179307,
         "integrated": false,
@@ -18347,7 +18273,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-03",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179411,
         "integrated": true,
@@ -18462,7 +18388,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-03",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179393,
         "integrated": false,
@@ -18577,7 +18503,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-08",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179434,
         "integrated": true,
@@ -18701,7 +18627,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-08",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179423,
         "integrated": false,
@@ -18888,7 +18814,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-03",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179407,
         "integrated": false,
@@ -19084,7 +19010,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-18",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179241,
         "integrated": false,
@@ -19199,7 +19125,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179376,
         "integrated": false,
@@ -19314,7 +19240,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-08",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179432,
         "integrated": true,
@@ -19431,7 +19357,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-09",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179429,
         "integrated": false,
@@ -19546,7 +19472,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-16",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179245,
         "integrated": false,
@@ -19737,7 +19663,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179373,
         "integrated": false,
@@ -19856,7 +19782,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 176296,
         "integrated": true,
@@ -20417,7 +20343,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-18",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179268,
         "integrated": false,
@@ -21423,7 +21349,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-09",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179441,
         "integrated": false,
@@ -21541,7 +21467,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-07",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179430,
         "integrated": false,
@@ -21739,7 +21665,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179353,
         "integrated": false,
@@ -21874,7 +21800,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "note": "검토 매칭 (전국/시설ㆍ공간ㆍ보육)",
       "connect": "",
       "classify_evidence": {
@@ -22130,7 +22056,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-16",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179208,
         "integrated": false,
@@ -22248,7 +22174,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-05-09",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 177563,
         "integrated": false,
@@ -22589,7 +22515,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-05-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 177864,
         "integrated": false,
@@ -23150,7 +23076,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-18",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179207,
         "integrated": false,
@@ -23265,7 +23191,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-07",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 178803,
         "integrated": false,
@@ -23382,7 +23308,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-22",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179302,
         "integrated": false,
@@ -23647,7 +23573,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "note": "검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)",
       "connect": "",
       "classify_evidence": {
@@ -23776,7 +23702,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "note": "검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)",
       "connect": "",
       "classify_evidence": {
@@ -23958,7 +23884,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 176129,
         "integrated": false,
@@ -24075,7 +24001,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 175366,
         "integrated": false,
@@ -24190,7 +24116,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 171419,
         "integrated": false,
@@ -25126,7 +25052,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-06-10",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 178023,
         "integrated": false,
@@ -25243,7 +25169,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-06-16",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 177844,
         "integrated": false,
@@ -25360,7 +25286,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-07-03",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 178289,
         "integrated": true,
@@ -25649,7 +25575,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-07-28",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11010",
@@ -25750,7 +25676,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-14",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 178850,
         "integrated": false,
@@ -26018,7 +25944,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-18",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 178967,
         "integrated": false,
@@ -38058,7 +37984,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179357,
         "integrated": false,
@@ -38323,7 +38249,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179195,
         "integrated": false,
@@ -38455,7 +38381,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-16",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179118,
         "integrated": false,
@@ -38577,7 +38503,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-18",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179287,
         "integrated": false,
@@ -38980,7 +38906,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-22",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179283,
         "integrated": false,
@@ -39819,7 +39745,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179342,
         "integrated": false,
@@ -39938,7 +39864,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179319,
         "integrated": false,
@@ -40064,7 +39990,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179311,
         "integrated": false,
@@ -40416,7 +40342,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179410,
         "integrated": false,
@@ -40542,7 +40468,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-03",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179400,
         "integrated": false,
@@ -40661,7 +40587,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-03",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179398,
         "integrated": false,
@@ -40782,7 +40708,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-03",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179369,
         "integrated": false,
@@ -40982,7 +40908,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-14",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 178891,
         "integrated": false,
@@ -41101,7 +41027,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179009,
         "integrated": false,
@@ -41220,7 +41146,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-18",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179285,
         "integrated": true,
@@ -41358,7 +41284,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-22",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179284,
         "integrated": true,
@@ -41776,7 +41702,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179350,
         "integrated": true,
@@ -41896,7 +41822,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179331,
         "integrated": false,
@@ -42230,7 +42156,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179385,
         "integrated": false,
@@ -42349,7 +42275,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179378,
         "integrated": false,
@@ -42470,7 +42396,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-03",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179403,
         "integrated": false,
@@ -42661,7 +42587,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-07",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179433,
         "integrated": false,
@@ -42780,7 +42706,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-09",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179449,
         "integrated": false,
@@ -42907,7 +42833,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-02",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179094,
         "integrated": false,
@@ -43244,7 +43170,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179355,
         "integrated": false,
@@ -43651,7 +43577,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179391,
         "integrated": false,
@@ -43778,7 +43704,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179384,
         "integrated": true,
@@ -43908,7 +43834,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-03",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179412,
         "integrated": false,
@@ -44031,7 +43957,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-03",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179404,
         "integrated": true,
@@ -44222,7 +44148,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-07",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179415,
         "integrated": false,
@@ -44634,7 +44560,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-07-31",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 178737,
         "integrated": false,
@@ -45257,7 +45183,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179361,
         "integrated": false,
@@ -45378,7 +45304,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179337,
         "integrated": false,
@@ -45499,7 +45425,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179326,
         "integrated": false,
@@ -45566,7 +45492,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11161",
@@ -45747,7 +45673,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179372,
         "integrated": false,
@@ -45939,7 +45865,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-09",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179422,
         "integrated": false,
@@ -46284,7 +46210,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179217,
         "integrated": false,
@@ -47402,7 +47328,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179356,
         "integrated": false,
@@ -47523,7 +47449,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179325,
         "integrated": false,
@@ -47590,7 +47516,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11158",
@@ -48275,7 +48201,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179377,
         "integrated": true,
@@ -48394,7 +48320,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-03",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179396,
         "integrated": false,
@@ -48954,7 +48880,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179367,
         "integrated": false,
@@ -49076,7 +49002,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-07",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 178698,
         "integrated": false,
@@ -49208,7 +49134,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-22",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 178976,
         "integrated": false,
@@ -49275,7 +49201,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-09-15",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11125",
@@ -49679,7 +49605,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179358,
         "integrated": false,
@@ -49800,7 +49726,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-07",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179424,
         "integrated": false,
@@ -49927,7 +49853,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-09",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179435,
         "integrated": false,
@@ -50121,7 +50047,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-16",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179236,
         "integrated": false,
@@ -50385,7 +50311,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-07",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179426,
         "integrated": true,
@@ -50506,7 +50432,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-09",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179466,
         "integrated": false,
@@ -50632,7 +50558,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-09",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179445,
         "integrated": false,
@@ -50753,7 +50679,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-09",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179437,
         "integrated": false,
@@ -50872,7 +50798,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-09",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179425,
         "integrated": false,
@@ -50993,7 +50919,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179318,
         "integrated": false,
@@ -51112,7 +51038,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-09",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179442,
         "integrated": false,
@@ -51449,7 +51375,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179375,
         "integrated": false,
@@ -52234,7 +52160,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179338,
         "integrated": false,
@@ -52646,7 +52572,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179381,
         "integrated": true,
@@ -52767,7 +52693,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-07",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179416,
         "integrated": false,
@@ -52886,7 +52812,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179211,
         "integrated": false,
@@ -53007,7 +52933,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179366,
         "integrated": false,
@@ -53126,7 +53052,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179012,
         "integrated": false,
@@ -53245,7 +53171,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-08",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179440,
         "integrated": false,
@@ -53366,7 +53292,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-07-22",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 178597,
         "integrated": false,
@@ -53498,7 +53424,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-09",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179171,
         "integrated": false,
@@ -53694,7 +53620,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-07",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179420,
         "integrated": true,
@@ -53815,7 +53741,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179360,
         "integrated": true,
@@ -53942,7 +53868,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-07",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179431,
         "integrated": false,
@@ -54067,7 +53993,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-07",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179421,
         "integrated": true,
@@ -54189,7 +54115,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-09",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179428,
         "integrated": true,
@@ -54447,7 +54373,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-05-09",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 177466,
         "integrated": false,
@@ -55431,7 +55357,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-06-26",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 178247,
         "integrated": false,
@@ -55838,7 +55764,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-07-17",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 178408,
         "integrated": false,
@@ -55905,7 +55831,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-07-29",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11014",
@@ -56447,7 +56373,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-09",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179132,
         "integrated": false,
@@ -56720,7 +56646,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-23",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179175,
         "integrated": false,
@@ -57130,7 +57056,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179374,
         "integrated": false,
@@ -57251,7 +57177,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179281,
         "integrated": false,
@@ -57514,7 +57440,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-07",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179419,
         "integrated": false,
@@ -57577,7 +57503,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "note": "AI 포지셔닝 가능 (딥테크)",
       "connect": "",
       "classify_evidence": {
@@ -57779,7 +57705,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 176190,
         "integrated": false,
@@ -58480,7 +58406,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-06-09",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 177899,
         "integrated": false,
@@ -58620,7 +58546,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-08-31",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11096",
@@ -58800,7 +58726,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-09",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179173,
         "integrated": false,
@@ -59000,7 +58926,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-22",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179301,
         "integrated": false,
@@ -59127,7 +59053,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179382,
         "integrated": false,
@@ -59248,7 +59174,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-03",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179392,
         "integrated": false,
@@ -59520,7 +59446,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179327,
         "integrated": true,
@@ -59639,7 +59565,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179408,
         "integrated": true,
@@ -60099,7 +60025,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 176378,
         "integrated": false,
@@ -60225,7 +60151,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-09",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179447,
         "integrated": false,
@@ -60424,7 +60350,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-18",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179251,
         "integrated": false,
@@ -60780,7 +60706,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-09-23",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11148",
@@ -60840,7 +60766,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11162",
@@ -61023,7 +60949,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 176406,
         "integrated": false,
@@ -61293,7 +61219,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 176755,
         "integrated": false,
@@ -61418,7 +61344,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179348,
         "integrated": false,
@@ -61537,7 +61463,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 176494,
         "integrated": false,
@@ -62242,7 +62168,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 176782,
         "integrated": false,
@@ -62369,7 +62295,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 176316,
         "integrated": false,
@@ -62500,7 +62426,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 176248,
         "integrated": true,
@@ -62621,7 +62547,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 176090,
         "integrated": false,
@@ -63256,7 +63182,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-06-09",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 177681,
         "integrated": false,
@@ -63890,7 +63816,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179024,
         "integrated": false,
@@ -64446,7 +64372,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179184,
         "integrated": false,
@@ -64727,7 +64653,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179386,
         "integrated": false,
@@ -64848,7 +64774,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-09",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179417,
         "integrated": false,
@@ -65708,7 +65634,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-07-02",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "10915",
@@ -65817,7 +65743,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-07",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 178802,
         "integrated": false,
@@ -66017,7 +65943,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "note": "3순위 (참고용): 서울 시설/지자체 (서울창업허브)",
       "connect": "",
       "classify_evidence": {
@@ -66724,7 +66650,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-07-10",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 178453,
         "integrated": true,
@@ -66856,7 +66782,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-06-03",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 177922,
         "integrated": false,
@@ -67428,7 +67354,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "note": "3순위 (참고용): 지자체 기관 의심 (창업보육센터: 남서울대학교 창업보육센터)",
       "connect": "",
       "classify_evidence": {
@@ -67571,7 +67497,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "note": "3순위 (참고용): 지자체 기관 의심 (재단법인 접두사: (재)충북과학기술혁신원장)",
       "connect": "",
       "classify_evidence": {
@@ -67706,7 +67632,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "note": "검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)",
       "connect": "",
       "classify_evidence": {
@@ -67839,7 +67765,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "note": "3순위 (참고용): 기관 지역 한정 (agency: 대구노동권익센터)",
       "connect": "",
       "classify_evidence": {
@@ -67969,7 +67895,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "note": "3순위 (참고용): 지자체 기관 의심 (재단법인 접두사: (재)창원산업진흥원)",
       "connect": "",
       "classify_evidence": {
@@ -68102,7 +68028,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "note": "3순위 (참고용): 기관 지역 한정 (agency: (사)부산경영자총협회)",
       "connect": "",
       "classify_evidence": {
@@ -68240,7 +68166,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "note": "3순위 (참고용): 기관 지역 한정 (agency: 대구노동권익센터)",
       "connect": "",
       "classify_evidence": {
@@ -68534,7 +68460,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 176856,
         "integrated": false,
@@ -68655,7 +68581,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 176855,
         "integrated": false,
@@ -68774,7 +68700,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 176810,
         "integrated": false,
@@ -68893,7 +68819,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 176741,
         "integrated": false,
@@ -69014,7 +68940,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 176739,
         "integrated": false,
@@ -69133,7 +69059,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 176566,
         "integrated": false,
@@ -69256,7 +69182,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 176563,
         "integrated": false,
@@ -69377,7 +69303,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 176497,
         "integrated": true,
@@ -69511,7 +69437,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 176442,
         "integrated": false,
@@ -69644,7 +69570,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 176224,
         "integrated": false,
@@ -69776,7 +69702,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 175849,
         "integrated": true,
@@ -69908,7 +69834,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 173424,
         "integrated": false,
@@ -71612,7 +71538,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-05-29",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 177837,
         "integrated": false,
@@ -71803,7 +71729,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-06-09",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 178017,
         "integrated": true,
@@ -71924,7 +71850,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-06-13",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 178113,
         "integrated": false,
@@ -72054,7 +71980,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-06-16",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 177957,
         "integrated": false,
@@ -72263,7 +72189,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-06-18",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 177970,
         "integrated": false,
@@ -72384,7 +72310,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-06-23",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 178214,
         "integrated": true,
@@ -72655,7 +72581,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-07-10",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 178445,
         "integrated": false,
@@ -72776,7 +72702,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-07-11",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 178489,
         "integrated": false,
@@ -72910,7 +72836,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-07-17",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 178527,
         "integrated": true,
@@ -73032,7 +72958,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-07-22",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 177432,
         "integrated": false,
@@ -73586,7 +73512,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-14",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 178835,
         "integrated": false,
@@ -73857,7 +73783,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179018,
         "integrated": false,
@@ -73978,7 +73904,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 178990,
         "integrated": false,
@@ -74241,7 +74167,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-09",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179115,
         "integrated": false,
@@ -74439,7 +74365,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-16",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 179258,
         "integrated": false,
@@ -74640,7 +74566,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "note": "검토 매칭 (TIPS)",
       "connect": "",
       "classify_evidence": {
@@ -74663,7 +74589,7 @@
           "region": {
             "pass": false,
             "value": "경남",
-            "detail": "지역 한정 desc: '경상남도 소재'"
+            "detail": "사업명에 지역 포함 (경남)"
           },
           "biz_enyy": {
             "pass": true,
@@ -74693,7 +74619,7 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "지역 한정 desc: '경상남도 소재'"
+            "detail": "사업명에 지역 포함 (경남)"
           },
           "positive_hit": {
             "pass": true,
@@ -74704,7 +74630,7 @@
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "지역 한정 desc: '경상남도 소재'"
+            "detail": "사업명에 지역 포함 (경남)"
           },
           "stage": {
             "level": "green",
@@ -74727,7 +74653,7 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "지역 한정 desc: '경상남도 소재'"
+            "msg": "사업명에 지역 포함 (경남)"
           },
           {
             "axis": "industry",
@@ -74854,7 +74780,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 176085,
         "integrated": false,
@@ -74976,7 +74902,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 175817,
         "integrated": false,
@@ -75096,7 +75022,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-06-05",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 177944,
         "integrated": false,
@@ -75288,7 +75214,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-05-05",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "structured": {
         "pbanc_sn_int": 177493,
         "integrated": false,
@@ -75420,7 +75346,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "note": "3순위 (참고용): 사업명에 지역 포함 (부산)",
       "connect": "",
       "classify_evidence": {
@@ -114030,78 +113956,6 @@
       }
     },
     {
-      "pbancSn": "bizinfo_PBLN_000000000123901",
-      "id": "bizinfo_PBLN_000000000123901",
-      "source": "bizinfo",
-      "source_label": "중소벤처기업부 BIZINFO (기업마당)",
-      "title": "[충북] 2026년 3분기 청년 소상공인 창업응원금 지원 참여자 모집 공고",
-      "agency": "충청북도 / 충청북도기업진흥원",
-      "url": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000123901",
-      "deadline": "",
-      "tier": "orange",
-      "note": "비수도권 단독 (충북)",
-      "classify_evidence": {
-        "summary_reason": "비수도권 단독 (충북)",
-        "category_hints": [
-          "bizinfo",
-          "충북"
-        ],
-        "rule_checks": {
-          "recruiting": {
-            "pass": true,
-            "value": "True",
-            "detail": "어댑터 통과"
-          },
-          "deadline": {
-            "pass": false,
-            "value": "",
-            "detail": "어댑터 normalize"
-          },
-          "region": {
-            "pass": false,
-            "value": "충북",
-            "detail": "agency·title·region 종합"
-          }
-        },
-        "axis_scores": {
-          "region": "orange",
-          "stage": "green",
-          "industry": "yellow",
-          "nature": "yellow",
-          "qualification": "yellow"
-        },
-        "exclusion_flags": [],
-        "audit_flags": [],
-        "tier_logic": "bizinfo 룰 → orange",
-        "classify_version": "v8.3-external"
-      },
-      "first_seen": "2026-07-02",
-      "last_seen": "2026-09-26",
-      "structured": {
-        "trgetNm": "소상공인",
-        "updtPnttm": "2026-07-02 15:57:37",
-        "hashtags": "창업,경영,충북,2026,청년소상공인,창업응원금,신규창업자,세무회계,청년,충청북도,충청북도기업진흥원,마케팅,교육,소상공인,창업7년이내",
-        "inqireCo": 8896,
-        "creatPnttm": "2026-07-02 14:08:32",
-        "pblancNm": "[충북] 2026년 3분기 청년 소상공인 창업응원금 지원 참여자 모집 공고",
-        "pblancId": "PBLN_000000000123901",
-        "printFlpthNm": "https://www.bizinfo.go.kr/cmm/fms/getImageFile.do?atchFileId=FILE_000000000762693&fileSn=1",
-        "refrncNm": "충북소상공인지원센터 043-230-9766",
-        "fileNm": "2026 청년 소상공인 창업응원금 지원사업 신청 서식.hwp@2026 청년 소상공인 창업응원금 지원사업 신청 서식.pdf",
-        "pblancUrl": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000123901",
-        "jrsdInsttNm": "충청북도",
-        "excInsttNm": "충청북도기업진흥원",
-        "totCnt": 1519,
-        "reqstMthPapersCn": "이메일 및 방문 접수\r\n- 이메일 : cbsb976@naver.com\r\n- 접수처 : 충북 청주시 흥덕구 풍산로 50, 2층 충북소상공인지원센터\r\n※ 이메일 원칙, 방문 접수 가능\r\n※ 선착순 마감은 접수 도달 일시를 기준으로 하며, 우편접수는 접수불가함\r\n※ 자세한 신청방법 공고문 참조",
-        "pldirSportRealmLclasCodeNm": "창업",
-        "reqstBeginEndDe": "선착순 접수",
-        "flpthNm": "https://www.bizinfo.go.kr/cmm/fms/getImageFile.do?atchFileId=FILE_000000000762694&fileSn=1@https://www.bizinfo.go.kr/cmm/fms/getImageFile.do?atchFileId=FILE_000000000762694&fileSn=2",
-        "bsnsSumryCn": "<p>충북도내 청년 창업자의 경영의욕을 고취시키고 청년 일자리 창출 및 청년의 지역정착을 유도하고자 「청년 소상공인 창업응원금 지원」사업의 참여자를 모집하오니 도내 청년 소상공인의 많은 참여 바랍니다.</p><p><br></p><p style=\"line-height: 1.8;\">☞ 주민등록증 거주지가 충북도민인 청년(19~39세) 소상공인 중 7년이내 신규창업자</p><p style=\"line-height: 1.8;\">※ 자세한 지원대상 공고문 참조</p><p><br></p><p style=\"line-height: 1.8;\">☞&nbsp;청년 소상공인 창업응원금, 교육 지원</p><p style=\"line-height: 1.8;\">- 응원금 지급 : 도내 사업장 운영 중인 청년 소상공인에게 30만원 선착순 지급(생애1회, 3분기 300명, 분기별 선착순 모집)</p><p style=\"line-height: 1.8;\">- 교육지원 : 응원금 지원 대상자 반기별 역량강화 온라인 교육 운영(마케팅, 세무회계 등)</p>",
-        "pldirSportRealmMlsfcCodeNm": "사업화지원",
-        "printFileNm": "★2026년 청년 소상공인 창업응원금 지원사업 참여자 모집(3분기) 공고문.hwp"
-      }
-    },
-    {
       "pbancSn": "bizinfo_PBLN_000000000123863",
       "id": "bizinfo_PBLN_000000000123863",
       "source": "bizinfo",
@@ -130328,30 +130182,24 @@
     }
   ],
   "_meta": {
-    "expired": [],
+    "expired": [
+      "2026년 한-베트남 AIㆍ디지털 포럼 참가기업 모집 공고",
+      "[충북] 2026년 3분기 청년 소상공인 창업응원금 지원 참여자 모집 공고 (stale)"
+    ],
     "new_added": [],
     "updated_today": [],
     "stats": {
-      "green": 146,
+      "green": 145,
       "yellow": 291,
-      "orange": 1184,
+      "orange": 1183,
       "red_excluded": 0,
-      "expired_removed": 0,
-      "total_pool": 1621,
+      "expired_removed": 2,
+      "total_pool": 1619,
       "rss_total": 217,
-      "raw_fetched": 422
+      "raw_fetched": 421
     }
   },
   "history": [
-    {
-      "date": "2026-09-10",
-      "at_kst": "2026-09-10T22:23:12+09:00",
-      "new": 68,
-      "updated": 0,
-      "expired": 0,
-      "total": 1942,
-      "red_excluded": 0
-    },
     {
       "date": "2026-09-11",
       "at_kst": "2026-09-11T22:22:59+09:00",
@@ -130620,6 +130468,15 @@
       "updated": 0,
       "expired": 0,
       "total": 1621,
+      "red_excluded": 0
+    },
+    {
+      "date": "2026-10-11",
+      "at_kst": "2026-10-11T00:07:07+09:00",
+      "new": 0,
+      "updated": 0,
+      "expired": 2,
+      "total": 1619,
       "red_excluded": 0
     }
   ]
