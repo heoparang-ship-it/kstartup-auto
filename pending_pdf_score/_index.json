@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-10T05:28:48.623608+09:00",
+  "generated_at": "2026-10-11T00:10:46.878699+09:00",
   "schema_version": 2,
   "pdf_text_cap": 15000,
-  "target_count": 777,
+  "target_count": 776,
   "pending": [
     {
       "key": "bizinfo_PBLN_000000000126618",
@@ -4373,13 +4373,6 @@
       "pdf_text_chars": 3024
     },
     {
-      "key": "bizinfo_PBLN_000000000123901",
-      "title": "[충북] 2026년 3분기 청년 소상공인 창업응원금 지원 참여자 모집 공고",
-      "tier": "orange",
-      "deadline": "",
-      "pdf_text_chars": 4584
-    },
-    {
       "key": "bizinfo_PBLN_000000000123863",
       "title": "[경기] 디스플레이 기술개발 지원사업 기술실증 및 성능평가 지원사업 공고",
       "tier": "orange",
@@ -5445,10 +5438,10 @@
     }
   ],
   "stats": {
-    "total_items": 1621,
+    "total_items": 1619,
     "red": 0,
     "expired": 0,
-    "no_pdf": 820,
+    "no_pdf": 819,
     "already_scored": 24
   }
 }
