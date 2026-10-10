@@ -1,7 +1,7 @@
 {
   "schema_version": 5,
   "last_updated": "2026-10-11",
-  "updated_at_kst": "2026-10-11T00:07:07+09:00",
+  "updated_at_kst": "2026-10-11T04:38:40+09:00",
   "red_count_today": 0,
   "reds_today": [
     {
@@ -42324,7 +42324,7 @@
           "region": {
             "pass": false,
             "value": "전국",
-            "detail": "기관 지역 한정 (agency: 충남신용보증재단)"
+            "detail": "지역 한정 desc: '충청남도 소재'"
           },
           "biz_enyy": {
             "pass": true,
@@ -42354,7 +42354,7 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "기관 지역 한정 (agency: 충남신용보증재단)"
+            "detail": "지역 한정 desc: '충청남도 소재'"
           },
           "positive_hit": {
             "pass": false,
@@ -42365,7 +42365,7 @@
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "기관 지역 한정 (agency: 충남신용보증재단)"
+            "detail": "지역 한정 desc: '충청남도 소재'"
           },
           "stage": {
             "level": "green",
@@ -42388,7 +42388,7 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "기관 지역 한정 (agency: 충남신용보증재단)"
+            "msg": "지역 한정 desc: '충청남도 소재'"
           }
         ],
         "audit_flags": [],
@@ -130182,10 +130182,7 @@
     }
   ],
   "_meta": {
-    "expired": [
-      "2026년 한-베트남 AIㆍ디지털 포럼 참가기업 모집 공고",
-      "[충북] 2026년 3분기 청년 소상공인 창업응원금 지원 참여자 모집 공고 (stale)"
-    ],
+    "expired": [],
     "new_added": [],
     "updated_today": [],
     "stats": {
@@ -130193,7 +130190,7 @@
       "yellow": 291,
       "orange": 1183,
       "red_excluded": 0,
-      "expired_removed": 2,
+      "expired_removed": 0,
       "total_pool": 1619,
       "rss_total": 217,
       "raw_fetched": 421
@@ -130472,10 +130469,10 @@
     },
     {
       "date": "2026-10-11",
-      "at_kst": "2026-10-11T00:07:07+09:00",
+      "at_kst": "2026-10-11T04:38:40+09:00",
       "new": 0,
       "updated": 0,
-      "expired": 2,
+      "expired": 0,
       "total": 1619,
       "red_excluded": 0
     }
