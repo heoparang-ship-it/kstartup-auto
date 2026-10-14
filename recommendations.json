@@ -1,7 +1,7 @@
 {
   "schema_version": 5,
   "last_updated": "2026-10-14",
-  "updated_at_kst": "2026-10-14T05:55:08+09:00",
+  "updated_at_kst": "2026-10-14T23:25:03+09:00",
   "red_count_today": 0,
   "reds_today": [
     {
@@ -4759,6 +4759,64 @@
       },
       "raw_content": "Error>상세화면\n본문 바로가기\n주메뉴 바로가기\n에러가 발생했습니다!",
       "raw_fetched_at": "2026-09-22"
+    },
+    {
+      "pbancSn": "itp_11194",
+      "title": "2026 인천 가상융합산업 모의 해커톤 참여자 모집 공고",
+      "agency": "인천테크노파크 문화콘텐츠센터",
+      "deadline": "2026-10-28",
+      "url": "https://itp.or.kr/intro.asp?tmid=13&seq=11194",
+      "tier": "green",
+      "note": "인천 매칭 + 문화콘텐츠",
+      "classify_evidence": {
+        "summary_reason": "인천 매칭 + 문화콘텐츠",
+        "category_hints": [
+          "incheon",
+          "itp",
+          "문화콘텐츠센터"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "ITP 진행중 항목"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-10-28",
+            "detail": "ITP 마감일"
+          },
+          "region": {
+            "pass": true,
+            "value": "인천",
+            "detail": "ITP=인천 거점"
+          }
+        },
+        "axis_scores": {
+          "region": "green",
+          "stage": "green",
+          "industry": "green",
+          "nature": "green",
+          "qualification": "green"
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "ITP 문화콘텐츠센터 부서별 룰 → green",
+        "classify_version": "v8.3-itp"
+      },
+      "first_seen": "2026-10-14",
+      "last_seen": "2026-10-14",
+      "structured": {
+        "source_kind": "itp",
+        "itp_seq": "11194",
+        "itp_dept": "문화콘텐츠센터",
+        "attachments": [
+          "붙임1. 2026년 인천 가상융합산업 전문인력 양성교육(특화과정) 해커톤 교육생 모집공고문(안).pdf\">\r\n\t\t\t\t붙임1. 2026년 인천 가상융합산업 전문인력 양성교육(특화과정) 해커톤 교육생 모집공고문(안).pdf(387KB)",
+          "붙임2. 해커톤 포스터.pdf\">\r\n\t\t\t\t붙임2. 해커톤 포스터.pdf(3493KB)"
+        ],
+        "recruiting": true,
+        "region": "인천"
+      }
     },
     {
       "pbancSn": "179471",
@@ -43590,9 +43648,9 @@
       "deadline": "2026-10-20",
       "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179475",
       "tier": "orange",
-      "note": "3순위 (참고용): 사업명에 지역 포함 (광주)",
+      "note": "3순위 (참고용): 사업명에 지역 포함 (전남)",
       "classify_evidence": {
-        "summary_reason": "3순위 (참고용): 사업명에 지역 포함 (광주)",
+        "summary_reason": "3순위 (참고용): 사업명에 지역 포함 (전남)",
         "category_hints": [
           "budget"
         ],
@@ -43610,7 +43668,7 @@
           "region": {
             "pass": false,
             "value": "전국",
-            "detail": "사업명에 지역 포함 (광주)"
+            "detail": "사업명에 지역 포함 (전남)"
           },
           "biz_enyy": {
             "pass": true,
@@ -43640,18 +43698,18 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "사업명에 지역 포함 (광주)"
+            "detail": "사업명에 지역 포함 (전남)"
           },
           "positive_hit": {
             "pass": false,
-            "detail": "3순위 (참고용): 사업명에 지역 포함 (광주)"
+            "detail": "3순위 (참고용): 사업명에 지역 포함 (전남)"
           }
         },
         "risk_flags": [],
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "사업명에 지역 포함 (광주)"
+            "detail": "사업명에 지역 포함 (전남)"
           },
           "stage": {
             "level": "green",
@@ -43674,11 +43732,11 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "사업명에 지역 포함 (광주)"
+            "msg": "사업명에 지역 포함 (전남)"
           }
         ],
         "audit_flags": [],
-        "tier_logic": "3순위 (참고용): 사업명에 지역 포함 (광주)",
+        "tier_logic": "3순위 (참고용): 사업명에 지역 포함 (전남)",
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-13",
@@ -69352,7 +69410,7 @@
           "region": {
             "pass": false,
             "value": "경남",
-            "detail": "사업명에 지역 포함 (경남)"
+            "detail": "지역 한정 desc: '경상남도 소재'"
           },
           "biz_enyy": {
             "pass": true,
@@ -69382,7 +69440,7 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "사업명에 지역 포함 (경남)"
+            "detail": "지역 한정 desc: '경상남도 소재'"
           },
           "positive_hit": {
             "pass": true,
@@ -69393,7 +69451,7 @@
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "사업명에 지역 포함 (경남)"
+            "detail": "지역 한정 desc: '경상남도 소재'"
           },
           "stage": {
             "level": "green",
@@ -69416,7 +69474,7 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "사업명에 지역 포함 (경남)"
+            "msg": "지역 한정 desc: '경상남도 소재'"
           },
           {
             "axis": "industry",
@@ -124732,23 +124790,18 @@
   "_meta": {
     "expired": [],
     "new_added": [
-      "[제주창조경제혁신센터]「상시매칭 오픈이노베이션 플랫폼」&apos;에코프로 계열사&apos;&apos;수요과제 매칭 스타트업 모집 (~10/16)",
-      "2026년 남구다운 청년 창업 지원사업 통합공고(수정)",
-      "「2026 슈퍼:콘 엑셀러레이팅」 지원사업 참여기업 모집공고",
-      "Applications Now Open: 2026 OASIS-6 Global Startup Challenge 「2026 외국인 창업대전(OASIS-6)」 참가자 모집",
-      "2026년 광명 글로컬 데모데이 참관객 모집",
-      "2026년 프로젝트 창업 인큐베이팅 : 2027 모두의 창업 선정 프로젝트"
+      "2026 인천 가상융합산업 모의 해커톤 참여자 모집 공고"
     ],
     "updated_today": [
       "2026-5회 호남 엔젤리더스포럼  in 전남광주"
     ],
     "stats": {
-      "green": 130,
+      "green": 131,
       "yellow": 269,
       "orange": 1147,
       "red_excluded": 0,
       "expired_removed": 0,
-      "total_pool": 1546,
+      "total_pool": 1547,
       "rss_total": 210,
       "raw_fetched": 390
     }
@@ -125026,11 +125079,11 @@
     },
     {
       "date": "2026-10-14",
-      "at_kst": "2026-10-14T05:55:08+09:00",
-      "new": 6,
+      "at_kst": "2026-10-14T23:25:03+09:00",
+      "new": 1,
       "updated": 1,
       "expired": 0,
-      "total": 1546,
+      "total": 1547,
       "red_excluded": 0
     }
   ]
