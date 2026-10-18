@@ -290,7 +290,7 @@ Dashboard drift. Script `scratch/agent-friendly/proto_dashboard_drift.py`. `inde
 
 SyntaxError. Script `scratch/agent-friendly/proto_syntaxerror.sh`. Parent of [1bf05f4](https://github.com/heoparang-ship-it/kstartup-auto/commit/1bf05f4) fails `ast.parse`. Current `update.py` parses. Gate encodes that.
 
-Hashtag region. Script `scratch/agent-friendly/proto_hashtag_region.py`. 57 BIZINFO greens cite `인천 매칭 + 창업`. 44 of those have `인천` only in hashtags. `BizinfoSource._extract_region` on the nationwide tag list returns a city list that includes `인천`. Water-industry notice `PBLN_000000000111680` is one of them.
+Hashtag region. Script `scratch/agent-friendly/proto_hashtag_region.py`. On pool `d62868b` (2026-10-17) 57 BIZINFO greens cite `인천 매칭 + 창업`. 44 of those have `인천` only in hashtags. `BizinfoSource._extract_region` on the nationwide tag list returns a city list that includes `인천`. Water-industry notice `PBLN_000000000111680` is one of them. On `main` after 2026-10-18 the pool has 0 BIZINFO rows. The code path is unchanged.
 
 Empty-pool reset. `update.py` `load_pool` catches `ValueError` from unknown `schema_version` and returns `items=[]`. A bad or future schema wipes the live pool on the next run.
 
@@ -318,7 +318,7 @@ pstack playbooks are not vendored in this repo. `git show origin/main:pstack/...
 
 `control-ui` is absent. Live lanes use curl and python. Screenshot files may be terminal captures.
 
-`selectolax.parser` import currently fails on selectolax 1.0 (modest backend). PR-4 must switch KOCCA to lexbor or pin selectolax. Otherwise BIZINFO/KOCCA stay skipped.
+`selectolax.parser` import currently fails on selectolax 1.0 (modest backend). On 2026-10-18 the daily job skipped BIZINFO and KOCCA and rewrote the pool from 1462 rows to 254, BIZINFO 1207 to 0 (`1602a5d`). PR-4 must switch KOCCA to lexbor or pin selectolax, and must not drop other sources' stored rows when one adapter fails to import.
 
 PR-2 is the only review-gated PR. A fetch-based dashboard can fail on file:// and on Pages MIME. The owner watches that.
 

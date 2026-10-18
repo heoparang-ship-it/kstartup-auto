@@ -13,6 +13,8 @@ from sources.bizinfo import BizinfoSource  # noqa: E402
 
 def main() -> None:
     items = json.loads((REPO / "recommendations.json").read_text())["items"]
+    print("pool_items", len(items))
+    print("bizinfo_items", sum(1 for it in items if it.get("source") == "bizinfo"))
     n = 0
     tag_only = 0
     for it in items:
