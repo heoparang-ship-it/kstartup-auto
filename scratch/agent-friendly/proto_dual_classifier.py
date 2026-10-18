@@ -1,10 +1,4 @@
 #!/usr/bin/env python3
-"""Throwaway. Compare the three classifiers on the live pool.
-
-Decision this answers: do we keep per-source classifiers, or one dispatch?
-Observation: --skip-crawl re-runs classify() on BIZINFO rows and disagrees
-with the stored _classify_external tier on 244 of 1207 BIZINFO items.
-"""
 from __future__ import annotations
 
 import collections

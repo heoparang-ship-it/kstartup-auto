@@ -1,20 +1,4 @@
 #!/usr/bin/env python3
-"""Fail the build on mistakes agents have already shipped to main.
-
-gate (CI)
-    Every ``.py`` file under the repo root and ``sources/`` must compile.
-    ``classify``, ``crawl``, and ``sources._base`` must import.
-
-debt (not CI until later PRs)
-    There must be one ``classify`` entry point.
-    Documented modules that do not exist must be listed.
-    Pool items must carry ``source``.
-    Baked dashboard ``ITEMS`` must match the pool size.
-    ``CLASSIFY_VERSION`` must match profile.md.
-
-Prove a past mistake by compiling ``tests/fixtures/fstring_unescaped.txt``.
-That text is the SyntaxError from commit 1bf05f4's parent.
-"""
 from __future__ import annotations
 
 import argparse
@@ -35,6 +19,10 @@ DOCUMENTED_MISSING = (
     "classify_v10.py",
     "normalize.py",
     "crawl_v6.py",
+)
+WATER_TAGS = (
+    "창업,서울,부산,대구,인천,전남광주,대전,울산,세종,경기,"
+    "강원,충북,충남,전북,경북,경남,제주"
 )
 
 
@@ -127,6 +115,25 @@ def parse_broken_fixture() -> str | None:
     return "fixture compiled, so it no longer reproduces 1bf05f4"
 
 
+def load_pool_resets_on_error() -> bool:
+    text = (REPO / "update.py").read_text(encoding="utf-8")
+    return "except (FileNotFoundError, json.JSONDecodeError, ValueError)" in text
+
+
+def hashtag_makes_incheon() -> str | None:
+    bizinfo = REPO / "sources" / "bizinfo.py"
+    src = bizinfo.read_text(encoding="utf-8")
+    if "_extract_region(raw.get(\"hashtags\"" not in src:
+        return None
+    sys.path.insert(0, str(REPO))
+    from sources.bizinfo import BizinfoSource
+
+    region = BizinfoSource._extract_region(WATER_TAGS)
+    if region and "인천" in region:
+        return region
+    return None
+
+
 def run_gate() -> int:
     errors = compile_tree() + import_core()
     for err in errors:
@@ -170,6 +177,17 @@ def run_debt() -> int:
         failures.append(fixture_err)
     else:
         print("PASS fixture: fstring_unescaped.txt still SyntaxError (1bf05f4)")
+    if load_pool_resets_on_error():
+        failures.append(
+            "load_pool returns an empty pool on schema mismatch or bad JSON"
+        )
+        print("load_pool_resets_on_error=True")
+    region = hashtag_makes_incheon()
+    print(f"hashtag_region={region}")
+    if region is not None:
+        failures.append(
+            f"BizinfoSource._extract_region treats nationwide hashtags as Incheon ({region})"
+        )
     for err in failures:
         print(f"DEBT {err}", file=sys.stderr)
     if failures:
