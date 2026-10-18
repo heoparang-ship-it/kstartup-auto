@@ -1,6 +1,4 @@
 #!/bin/sh
-# Throwaway. Prove compileall would have caught commit 1bf05f4's parent.
-# Decision this answers: is a compile CI gate enough for the SyntaxError class?
 set -eu
 repo=$(git rev-parse --show-toplevel)
 git -C "$repo" show 1bf05f4^:update.py > /tmp/kstartup-update-broken.py

@@ -27,3 +27,4 @@ Preconditions:
 
 - BIZINFO rows in the pool were stored by `_classify_external`. Calling `classify` on those rows is not the production path today. Use a synthetic Incheon dict for this feature until PR-3.
 - `update.py --skip-crawl` currently reclassifies BIZINFO rows with `classify` and will shuffle tiers. Do not use skip-crawl as proof of classifier stability.
+- Nationwide BIZINFO hashtags include `인천` as one city in a country-wide list. `BizinfoSource._extract_region` currently returns a city list that includes `인천` for that string. 44 stored greens are hashtag-only. Do not treat a green water-industry or similar nationwide notice as a pass for `incheon-green`.

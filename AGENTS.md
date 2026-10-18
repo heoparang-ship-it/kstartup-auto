@@ -11,6 +11,9 @@ Only rules that a machine already enforces, or that a later PR will enforce. Jud
 | Pool rows have `source` | debt phase (until PR-3) |
 | `index.html` ITEMS count equals pool size | debt phase (until PR-2) |
 | `CLASSIFY_VERSION` matches `profile.md` | debt phase (until PR-3) |
+| Region is not parsed from hashtags | debt phase (until PR-3) |
+| `load_pool` does not return an empty pool on error | debt phase (until PR-3) |
+| Daily job compiles before crawl | `.github/workflows/daily.yml` Compile gate step |
 | Prove a dashboard or pipeline change | `.cursor/skills/verify-kstartup/` |
 
 Do not add a new classifier function. Route through `classify.classify`.
