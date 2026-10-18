@@ -1,0 +1,53 @@
+name: Collect sources
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Compile gate
+        run: python tools/check_invariants.py --phase gate
+
+      - name: Collect
+        env:
+          BIZINFO_SERVICE_KEY: ${{ secrets.BIZINFO_SERVICE_KEY }}
+        run: python update.py
+
+      - name: Print source counts
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from source_guard import count_by_source
+          pool = json.loads(Path("recommendations.json").read_text())
+          xcom = json.loads(Path("xcom.json").read_text())
+          print("pool", len(pool["items"]), count_by_source(pool["items"]))
+          print("xcom", xcom.get("count"), "schema", xcom.get("schema"))
+          PY
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: collection
+          path: |
+            recommendations.json
+            xcom.json
+            source_counts.json
+            source_drop_warning.txt

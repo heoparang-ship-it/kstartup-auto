@@ -54,7 +54,7 @@ def compile_tree() -> list[str]:
 def import_core() -> list[str]:
     errors: list[str] = []
     sys.path.insert(0, str(REPO))
-    for mod in ("classify", "crawl", "sources._base"):
+    for mod in ("classify", "crawl", "sources._base", "sources.bizinfo", "sources.kocca"):
         try:
             importlib.import_module(mod)
         except Exception as exc:

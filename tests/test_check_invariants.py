@@ -40,7 +40,7 @@ class GateTests(unittest.TestCase):
         self.assertIn("update.py:_classify_external", combined)
         self.assertIn("index.html ITEMS", combined)
         self.assertIn("nationwide hashtags as Incheon", combined)
-        self.assertIn("empty pool on schema mismatch", combined)
+        self.assertNotIn("empty pool on schema mismatch", combined)
 
 
 if __name__ == "__main__":

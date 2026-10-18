@@ -22,18 +22,26 @@ from bs4 import BeautifulSoup
 from crawl import crawl
 from classify import classify, TODAY
 from crawl_itp import crawl as crawl_itp, classify_itp
+from source_guard import (
+    count_by_source,
+    find_drops,
+    load_last_good,
+    save_last_good,
+    source_of,
+    write_drop_warning,
+)
+from xcom_feed import write_xcom_feed
 
-# v6 (2026-05-12): BIZINFO + KOCCA 어댑터 통합 (자동 갱신 정상화)
-# 어댑터 import는 try-guarded — 의존성 누락 시 K-Startup/ITP는 계속 동작
+BizinfoSource = None
+KoccaSource = None
 try:
     from sources.bizinfo import BizinfoSource
+except Exception as _e:
+    print(f"[external] BIZINFO import 실패: {_e}", file=sys.stderr)
+try:
     from sources.kocca import KoccaSource
-    EXTERNAL_SOURCES_AVAILABLE = True
-except ImportError as _e:
-    print(f"[external] sources/ 어댑터 import 실패 — BIZINFO/KOCCA 스킵: {_e}",
-          file=__import__("sys").stderr)
-    BizinfoSource = KoccaSource = None
-    EXTERNAL_SOURCES_AVAILABLE = False
+except Exception as _e:
+    print(f"[external] KOCCA import 실패: {_e}", file=sys.stderr)
 
 KST = timezone(timedelta(hours=9))
 POOL_FILE = "recommendations.json"
@@ -240,26 +248,26 @@ def _ann_to_pool_item(ann, tier: str, evidence: dict) -> dict:
     }
 
 
-def crawl_external_sources(known_keys: set) -> list[dict]:
-    """sources/ 의 BIZINFO + KOCCA 어댑터 호출. try/except per source.
-
-    Returns: [(tier, evidence, pool_item) ...] 형태가 아니라
-             dict 리스트 (update.py 처리부에서 dedup·classify·merge).
-    """
-    if not EXTERNAL_SOURCES_AVAILABLE:
-        print("[external] sources/ 미사용 — 스킵", file=sys.stderr)
-        return []
-
+def crawl_external_sources(known_keys: set) -> tuple[list[dict], set[str]]:
     all_items: list[dict] = []
-    source_classes = [
-        ("kocca", KoccaSource),    # 인증 불필요 — 먼저 (안정)
-        ("bizinfo", BizinfoSource), # 키 필요 — 없으면 graceful skip (빈 list)
-    ]
+    crawled_ok: set[str] = set()
+    source_classes = []
+    if KoccaSource is not None:
+        source_classes.append(("kocca", KoccaSource))
+    if BizinfoSource is not None:
+        source_classes.append(("bizinfo", BizinfoSource))
+    if not source_classes:
+        print("[external] sources/ 미사용 — 스킵", file=sys.stderr)
+        return [], crawled_ok
+
     for code, cls in source_classes:
         try:
             src = cls()
             raws = src.crawl()
             print(f"[external/{code}] crawl OK: {len(raws)}건", file=sys.stderr)
+            if code == "bizinfo" and not getattr(src, "_service_key", None):
+                print("[external/bizinfo] no key — previous rows kept", file=sys.stderr)
+                continue
             success = 0
             for raw in raws:
                 try:
@@ -271,14 +279,14 @@ def crawl_external_sources(known_keys: set) -> list[dict]:
                 pool_item = _ann_to_pool_item(ann, tier, evidence)
                 all_items.append(pool_item)
                 success += 1
+            crawled_ok.add(code)
             print(f"[external/{code}] normalize+classify OK: {success}건", file=sys.stderr)
         except Exception as e:
             print(f"[external/{code}] FAIL (스킵): {e}", file=sys.stderr)
-            # 한 소스 깨져도 다음 소스 + 기존 K-Startup/ITP 계속 진행
             continue
 
     print(f"[external] 합계: {len(all_items)}건", file=sys.stderr)
-    return all_items
+    return all_items, crawled_ok
 
 
 # ── pool 관리 ─────────────────────────────────────────────────
@@ -286,11 +294,7 @@ def load_pool() -> dict:
     try:
         with open(POOL_FILE, "r", encoding="utf-8") as f:
             data = json.load(f)
-        if data.get("schema_version") not in (2, 3, 4, 5):
-            raise ValueError("schema mismatch")
-        data.setdefault("history", [])
-        return data
-    except (FileNotFoundError, json.JSONDecodeError, ValueError):
+    except FileNotFoundError:
         return {
             "schema_version": 5,
             "last_updated": TODAY,
@@ -299,6 +303,10 @@ def load_pool() -> dict:
             "items": [],
             "red_count_today": 0,
         }
+    if data.get("schema_version") not in (2, 3, 4, 5):
+        raise ValueError("schema mismatch")
+    data.setdefault("history", [])
+    return data
 
 
 def save_pool(pool: dict, now_kst: datetime):
@@ -310,15 +318,24 @@ def save_pool(pool: dict, now_kst: datetime):
     print(f"[save] {POOL_FILE} 저장 완료 ({len(pool['items'])}건)", file=sys.stderr)
 
 
-def expire_items(items: list) -> tuple:
-    stale_cutoff = (datetime.now(KST) - timedelta(days=STALE_DAYS)).strftime("%Y-%m-%d")
+def expire_deadlines(items: list) -> tuple:
     kept, expired_titles = [], []
     for item in items:
         dl = item.get("deadline", "")
-        ls = item.get("last_seen", "")
         if dl and dl < TODAY:
             expired_titles.append(item.get("title", ""))
-        elif ls and ls < stale_cutoff:
+        else:
+            kept.append(item)
+    return kept, expired_titles
+
+
+def expire_stale(items: list, crawled_ok: set[str]) -> tuple:
+    stale_cutoff = (datetime.now(KST) - timedelta(days=STALE_DAYS)).strftime("%Y-%m-%d")
+    kept, expired_titles = [], []
+    for item in items:
+        ls = item.get("last_seen", "")
+        src = source_of(item)
+        if ls and ls < stale_cutoff and src in crawled_ok:
             expired_titles.append(item.get("title", "") + " (stale)")
         else:
             kept.append(item)
@@ -370,9 +387,9 @@ def main():
         expired_titles, new_added, updated_titles, crawled = [], [], [], []
 
     else:
-        kept_items, expired_titles = expire_items(existing_items)
+        kept_items, expired_titles = expire_deadlines(existing_items)
         if expired_titles:
-            print(f"[expire] {len(expired_titles)}건 삭제", file=sys.stderr)
+            print(f"[expire] deadline {len(expired_titles)}건 삭제", file=sys.stderr)
 
         known_sns = {it["pbancSn"] for it in kept_items if it.get("pbancSn")}
         crawled = crawl(known_sns)
@@ -441,9 +458,11 @@ def main():
                 kept_items.append(new_item)
                 new_added.append(new_item["title"])
 
+        crawled_ok: set[str] = {"kstartup"}
         # ── ITP (인천테크노파크 지원사업) 추가 크롤 ──────────────
         try:
             itp_items = crawl_itp(known_sns)
+            crawled_ok.add("itp")
         except Exception as e:
             print(f"[itp] 크롤 실패: {e}", file=sys.stderr)
             itp_items = []
@@ -493,7 +512,8 @@ def main():
         print(f"[itp] {len(itp_items)}건 처리 완료", file=sys.stderr)
 
         # ── 외부 소스 (BIZINFO + KOCCA) 추가 크롤 (2026-05-12 신규) ──
-        ext_items = crawl_external_sources(known_sns)
+        ext_items, ext_ok = crawl_external_sources(known_sns)
+        crawled_ok |= ext_ok
         # dedup 키: id(=pbancSn) 기준 — bizinfo_PBLN_..., kocca_intcNo
         # 기존 풀의 source=bizinfo 항목들은 'id' 필드를 dedup 키로 가짐
         kept_by_id = {}
@@ -533,6 +553,20 @@ def main():
                 kept_items.append(ext)
                 new_added.append(ext["title"])
         print(f"[external] {len(ext_items)}건 처리 완료", file=sys.stderr)
+
+        kept_items, stale_titles = expire_stale(kept_items, crawled_ok)
+        if stale_titles:
+            print(f"[expire] stale {len(stale_titles)}건 삭제 ({sorted(crawled_ok)})", file=sys.stderr)
+            expired_titles.extend(stale_titles)
+
+    before_counts = count_by_source(existing_items)
+    after_counts = count_by_source(kept_items)
+    baseline = load_last_good() or before_counts
+    drops = find_drops(baseline, after_counts)
+    print(f"[counts] before={before_counts} after={after_counts} baseline={baseline}", file=sys.stderr)
+    if drops:
+        write_drop_warning(drops)
+        sys.exit(2)
 
     tier_order = {"green": 0, "yellow": 1, "orange": 2}
     kept_items.sort(key=lambda x: (
@@ -576,6 +610,9 @@ def main():
         },
     }
     save_pool(pool, now_kst)
+    feed = write_xcom_feed(kept_items, now_kst)
+    save_last_good(after_counts, TODAY)
+    print(f"[xcom] {feed['count']}건 -> xcom.json", file=sys.stderr)
 
     stats = pool["_meta"]["stats"]
     print(f"\n{'='*50}", file=sys.stderr)
