@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-"""Behavior checks for tools/check_invariants.py."""
 from __future__ import annotations
 
 import ast
@@ -40,6 +39,8 @@ class GateTests(unittest.TestCase):
         self.assertIn("crawl_itp.py:classify_itp", combined)
         self.assertIn("update.py:_classify_external", combined)
         self.assertIn("index.html ITEMS", combined)
+        self.assertIn("nationwide hashtags as Incheon", combined)
+        self.assertNotIn("empty pool on schema mismatch", combined)
 
 
 if __name__ == "__main__":

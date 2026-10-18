@@ -28,3 +28,4 @@ Read this index, then the feature file for the path you changed.
 - [Browse the dashboard](./browse-dashboard.md) covers the Pages HTML and the live pool JSON.
 - [Classify one announcement](./classify-one.md) covers the CLI tier function.
 - [Run the compile gate](./compile-gate.md) covers the CI invariant script.
+- [Xcom public feed](./xcom-feed.md) covers the machine-readable 엑스컴 JSON.

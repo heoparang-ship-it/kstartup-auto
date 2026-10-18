@@ -34,7 +34,7 @@ Tests alone are not sufficient verification. A PR is verified only when its unit
   - [ ] PR-2 after PR-1.
   - [ ] PR-3 after PR-2.
   - [ ] PR-4 after PR-3.
-- [ ] Hold the file boundaries. PR-1 touches `tools/`, `tests/`, and `.github/workflows/invariants.yml`. PR-2 touches `index.html` and dashboard scripts. PR-3 touches `classify.py` and `update.py`. PR-4 touches `sources/` and `crawl*.py`.
+- [ ] Hold the file boundaries. PR-1 touches `tools/`, `tests/`, `.github/workflows/invariants.yml`, and `.github/workflows/daily.yml`. PR-2 touches `index.html` and dashboard scripts. PR-3 touches `classify.py`, `update.py`, `crawl_itp.py`, and `sources/bizinfo.py`. PR-4 touches `sources/` and `crawl*.py`.
 - [ ] Hold the review gate. PR-2 changes an interaction. It waits for the operator's review in chat with screenshots and a video before merge.
 
 ### PR mechanics, for every PR
@@ -69,12 +69,14 @@ Each live lane runs on its own cloud VM at the PR head. Drive the HTML with curl
 
 - [ ] Edit `tools/check_invariants.py`.
 - [ ] Edit `.github/workflows/invariants.yml`.
+- [ ] Edit `.github/workflows/daily.yml` so the compile gate runs before `update.py`.
 - [ ] Create `tests/test_check_invariants.py`.
 - [ ] Create `tests/fixtures/fstring_unescaped.txt`.
+- [ ] Create `scratch/agent-friendly/proto_hashtag_region.py`.
 
 **Build.**
 
-- [ ] `check_invariants.py --phase gate` compiles every root and `sources/` Python file and imports `classify`, `crawl`, and `sources._base`.
+- [ ] `check_invariants.py --phase gate` compiles every root, `sources/`, `tools/`, and `tests/` Python file and imports `classify`, `crawl`, and `sources._base`. Daily Actions runs the same gate before the crawl.
 
 **You see.**
 
@@ -92,7 +94,7 @@ Each live lane runs on its own cloud VM at the PR head. Drive the HTML with curl
 - [ ] Lane 4. Dashboard still serves. Run `curl -sf -o /tmp/i.html http://127.0.0.1:8765/index.html`. Save `pr1-html.png`. Pass when status is success and the body contains `신혼생활 공고 매칭 대시보드`.
 - [ ] Lane 5. Pool JSON still serves. Run `curl -sf http://127.0.0.1:8765/recommendations.json`. Save `pr1-json.png`. Pass when `items` is a non-empty list.
 - [ ] Lane 6. Classify still runs. Run the Incheon one-liner from `.cursor/skills/verify-kstartup/features/classify-one.md`. Save `pr1-classify.png`. Pass when stdout contains `green` or `yellow`.
-- [ ] Lane 7. Debt still reports three classifiers. Run `python tools/check_invariants.py --phase debt`. Save `pr1-debt.png`. Pass when exit 1 and stderr names `classify.py:classify` and `update.py:_classify_external`.
+- [ ] Lane 7. Debt still reports three classifiers, nationwide hashtags as Incheon, and empty-pool reset. Run `python tools/check_invariants.py --phase debt`. Save `pr1-debt.png`. Pass when exit 1 and stderr names `classify.py:classify`, `update.py:_classify_external`, `nationwide hashtags`, and `empty pool`.
 - [ ] Lane 8. Workflow file present. Run `test -f .github/workflows/invariants.yml`. Save `pr1-workflow.png`. Pass when exit 0.
 - [ ] Lane 9. Doctor helper. Run `sh .cursor/skills/verify-kstartup/scripts/doctor.sh`. Save `pr1-doctor.png`. Pass when stdout contains `doctor: gate passed`.
 - [ ] Lane 10. Pages second HTML. Run `curl -sf -o /dev/null http://127.0.0.1:8765/kstartup-dashboard.html`. Save `pr1-legacy-html.png`. Pass when curl exits 0.
@@ -178,11 +180,12 @@ Each live lane runs on its own cloud VM at the PR head. Drive the HTML with curl
 - [ ] Edit `classify.py`.
 - [ ] Edit `update.py`.
 - [ ] Edit `crawl_itp.py`.
-- [ ] Edit `tools/check_invariants.py` so debt becomes gate for one entry point and required `source`.
+- [ ] Edit `sources/bizinfo.py` so region is not parsed from hashtags.
+- [ ] Edit `tools/check_invariants.py` so debt becomes gate for one entry point, required `source`, no hashtag-region, and no empty-pool reset.
 
 **Build.**
 
-- [ ] `classify.classify(item)` is the only function that assigns a tier. Source-specific rules live as private helpers. `load_pool` parses each row into `Announcement` and rejects a missing `source`.
+- [ ] `classify.classify(item)` is the only function that assigns a tier. Source-specific rules live as private helpers. `load_pool` parses each row into `Announcement`, rejects a missing `source`, and raises on unknown schema instead of returning empty items. Region comes from agency and title, never from hashtags. Goldens encode `profile.md` storytelling-bridge plus the water-industry nationwide-hashtag case, not today's stored greens.
 
 **You see.**
 
@@ -198,7 +201,7 @@ Each live lane runs on its own cloud VM at the PR head. Drive the HTML with curl
 - [ ] Lane 2. Debt is gone. Save `pr3-debt.png`. Pass when `--phase both` exits 0.
 - [ ] Lane 3. Incheon synthetic still greens or yellows. Save `pr3-incheon.png`. Pass when the one-liner prints `green` or `yellow`.
 - [ ] Lane 4. Missing `source` fails parse. Save `pr3-nosource.png`. Pass when a row without `source` raises a parse error.
-- [ ] Lane 5. Dashboard count still matches JSON. Save `pr3-count.png`. Pass when the page total equals `len(items)`.
+- [ ] Lane 5. Nationwide hashtags do not make Incheon. Run a water-industry title with agency `환경부` and the nationwide hashtag string from `tools/check_invariants.py`. Save `pr3-hashtag.png`. Pass when stdout is not `green`.
 - [ ] Lane 6. ITP rows still classify. Save `pr3-itp.png`. Pass when an `itp_` fixture returns a tier and does not call a public `classify_itp`.
 - [ ] Lane 7. `CLASSIFY_VERSION` matches `profile.md`. Save `pr3-version.png`. Pass when both say the same version string.
 - [ ] Lane 8. Gate still compiles. Save `pr3-gate.png`. Pass when `--phase gate` exits 0.
@@ -287,6 +290,12 @@ Dashboard drift. Script `scratch/agent-friendly/proto_dashboard_drift.py`. `inde
 
 SyntaxError. Script `scratch/agent-friendly/proto_syntaxerror.sh`. Parent of [1bf05f4](https://github.com/heoparang-ship-it/kstartup-auto/commit/1bf05f4) fails `ast.parse`. Current `update.py` parses. Gate encodes that.
 
+Hashtag region. Script `scratch/agent-friendly/proto_hashtag_region.py`. On pool `d62868b` (2026-10-17) 57 BIZINFO greens cite `인천 매칭 + 창업`. 44 of those have `인천` only in hashtags. `BizinfoSource._extract_region` on the nationwide tag list returns a city list that includes `인천`. Water-industry notice `PBLN_000000000111680` is one of them. On `main` after 2026-10-18 the pool has 0 BIZINFO rows. The code path is unchanged.
+
+Empty-pool reset. `update.py` `load_pool` catches `ValueError` from unknown `schema_version` and returns `items=[]`. A bad or future schema wipes the live pool on the next run.
+
+`reds_today` residue. 300 pool rows still carry `reds_today` after the field was dropped from the writer. Dead key. Drop on rewrite. Do not classify from it.
+
 Timing. compileall 0.093 s. classify 1462 rows 0.243 s.
 
 Unproven until PR-4 executes. Artifact hosting for PDF queues (Actions artifacts vs a bucket). Exact Pages cache behavior after `ITEMS` is removed.
@@ -299,17 +308,23 @@ Extract a new service and delete this repo's pipeline. Hides more, but the found
 
 Keep three classifiers and document which to call. Prose. Agents copy the nearest function. Measured 244-row drift under `--skip-crawl`.
 
+Append-only sqlite outside git as the first cut. Needs a bucket and a fold job the founder does not run today. Graft the hashtag-region ban and the raise-on-unknown-schema behavior onto the existing JSON pool instead.
+
+Event-sourced log with a rules DSL. `audit_green` and storytelling-bridge are not DSL facts. Graft computed goldens from `profile.md` plus the 44 hashtag-only notices. Keep stored evidence. Recompute tier through `classify` on `--skip-crawl`.
+
 ## Appendix C. Risks
 
 pstack playbooks are not vendored in this repo. `git show origin/main:pstack/...` will fail until the plugin path is copied or the arm step reads the plugin. PR-1 watches that.
 
 `control-ui` is absent. Live lanes use curl and python. Screenshot files may be terminal captures.
 
-`selectolax.parser` import currently fails on selectolax 1.0 (modest backend). PR-4 must switch KOCCA to lexbor or pin selectolax. Otherwise BIZINFO/KOCCA stay skipped.
+`selectolax.parser` import currently fails on selectolax 1.0 (modest backend). On 2026-10-18 the daily job skipped BIZINFO and KOCCA and rewrote the pool from 1462 rows to 254, BIZINFO 1207 to 0 (`1602a5d`). PR-4 must switch KOCCA to lexbor or pin selectolax, and must not drop other sources' stored rows when one adapter fails to import.
 
 PR-2 is the only review-gated PR. A fetch-based dashboard can fail on file:// and on Pages MIME. The owner watches that.
 
-PR-4 dropping `pending_pdf_score/` from git deletes a 4273-file queue from history going forward. The generator script stays. If the founder still scores PDFs by hand, they need an artifact download. Default is drop from git.
+PR-4 dropping `pending_pdf_score/` from git deletes a 4273-file queue from history going forward. 3608 of those files have no matching `pbancSn` in the live pool. The generator script stays. If the founder still scores PDFs by hand, they need an artifact download. Default is drop from git.
+
+`load_pool` empty-reset is live until PR-3. A schema bump without a reader bump wipes `recommendations.json` on the next daily run.
 
 ## Appendix D. Links and reading list
 

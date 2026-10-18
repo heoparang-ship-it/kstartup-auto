@@ -1,11 +1,4 @@
 #!/usr/bin/env python3
-"""Throwaway. Compare baked dashboard rows with the live pool.
-
-Decision this answers: generate HTML from JSON at request time, or keep
-ITEMS inlined in index.html?
-Observation: index.html has 504 baked rows last touched 2026-04-30.
-recommendations.json has 1462 rows last touched 2026-10-17.
-"""
 from __future__ import annotations
 
 import json
