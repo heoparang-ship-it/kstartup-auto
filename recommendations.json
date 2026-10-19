@@ -1,7 +1,7 @@
 {
   "schema_version": 5,
   "last_updated": "2026-10-20",
-  "updated_at_kst": "2026-10-20T01:18:46+09:00",
+  "updated_at_kst": "2026-10-20T05:48:23+09:00",
   "red_count_today": 0,
   "reds_today": [
     {
@@ -21550,7 +21550,7 @@
           "region": {
             "pass": false,
             "value": "전국",
-            "detail": "기관 지역 한정 (agency: 충남신용보증재단)"
+            "detail": "지역 한정 desc: '충청남도 소재'"
           },
           "biz_enyy": {
             "pass": true,
@@ -21580,7 +21580,7 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "기관 지역 한정 (agency: 충남신용보증재단)"
+            "detail": "지역 한정 desc: '충청남도 소재'"
           },
           "positive_hit": {
             "pass": false,
@@ -21591,7 +21591,7 @@
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "기관 지역 한정 (agency: 충남신용보증재단)"
+            "detail": "지역 한정 desc: '충청남도 소재'"
           },
           "stage": {
             "level": "green",
@@ -21614,7 +21614,7 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "기관 지역 한정 (agency: 충남신용보증재단)"
+            "msg": "지역 한정 desc: '충청남도 소재'"
           }
         ],
         "audit_flags": [],
@@ -29944,7 +29944,7 @@
           "region": {
             "pass": false,
             "value": "경남",
-            "detail": "지역 한정 desc: '경상남도 소재'"
+            "detail": "사업명에 지역 포함 (경남)"
           },
           "biz_enyy": {
             "pass": true,
@@ -29974,7 +29974,7 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "지역 한정 desc: '경상남도 소재'"
+            "detail": "사업명에 지역 포함 (경남)"
           },
           "positive_hit": {
             "pass": true,
@@ -29985,7 +29985,7 @@
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "지역 한정 desc: '경상남도 소재'"
+            "detail": "사업명에 지역 포함 (경남)"
           },
           "stage": {
             "level": "green",
@@ -30008,7 +30008,7 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "지역 한정 desc: '경상남도 소재'"
+            "msg": "사업명에 지역 포함 (경남)"
           },
           {
             "axis": "industry",
@@ -30662,31 +30662,15 @@
     }
   ],
   "_meta": {
-    "expired": [
-      "(수정공고) 2027년 인천 과학기술 펠로우즈 선도연구팀 및 유망연구자 선정계획 공고",
-      "THE RIGHT SESSION: 한국투자액셀러레이터 바른동행 Info-Day",
-      "「2026년 하반기 화성특례시 사회적경제 창업아카데미」교육생 모집",
-      "2026년 대한민국 물산업 혁신 창업대전(Startup Water 2026) 참가자(팀) 모집",
-      "[인천디자인교육센터] 재직자 대상 디자인 교육 10월 수강생 모집",
-      "UNIST 연구자-예비창업자 팀빌딩 프로그램",
-      "영도 창업오피스 크립톤 1:1 멘토링 입주기업 모집",
-      "2026년「강남 취‧창업허브센터」8차 입주 기업 신규 모집",
-      "2026 Invest Seoul Partners Night",
-      "「2026 슈퍼:콘 엑셀러레이팅」 지원사업 참여기업 모집공고"
-    ],
-    "new_added": [
-      "2026년 기업공개(IPO) 맞춤형 투자지원 사업 모집공고",
-      "제25회 KOMISS 심포지엄 및 2026 WSC 연계 통합전시관 참여기업 모집 공고"
-    ],
-    "updated_today": [
-      "2026-5회 호남 엔젤리더스포럼  in 전남광주"
-    ],
+    "expired": [],
+    "new_added": [],
+    "updated_today": [],
     "stats": {
       "green": 26,
       "yellow": 62,
       "orange": 154,
       "red_excluded": 0,
-      "expired_removed": 10,
+      "expired_removed": 0,
       "total_pool": 242,
       "rss_total": 217,
       "raw_fetched": 74
@@ -30965,10 +30949,10 @@
     },
     {
       "date": "2026-10-20",
-      "at_kst": "2026-10-20T01:18:46+09:00",
-      "new": 2,
-      "updated": 1,
-      "expired": 10,
+      "at_kst": "2026-10-20T05:48:23+09:00",
+      "new": 0,
+      "updated": 0,
+      "expired": 0,
       "total": 242,
       "red_excluded": 0
     }
