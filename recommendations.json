@@ -1,7 +1,7 @@
 {
   "schema_version": 5,
   "last_updated": "2026-10-20",
-  "updated_at_kst": "2026-10-20T05:48:23+09:00",
+  "updated_at_kst": "2026-10-20T23:11:08+09:00",
   "red_count_today": 0,
   "reds_today": [
     {
@@ -15342,7 +15342,7 @@
           "region": {
             "pass": false,
             "value": "경북",
-            "detail": "지역 한정 desc: '경상북도 소재'"
+            "detail": "기관 지역 한정 (agency: 대구대학교 앵커사업단)"
           },
           "biz_enyy": {
             "pass": true,
@@ -15372,7 +15372,7 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "지역 한정 desc: '경상북도 소재'"
+            "detail": "기관 지역 한정 (agency: 대구대학교 앵커사업단)"
           },
           "positive_hit": {
             "pass": false,
@@ -15389,7 +15389,7 @@
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "지역 한정 desc: '경상북도 소재'"
+            "detail": "기관 지역 한정 (agency: 대구대학교 앵커사업단)"
           },
           "stage": {
             "level": "green",
@@ -15412,7 +15412,7 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "지역 한정 desc: '경상북도 소재'"
+            "msg": "기관 지역 한정 (agency: 대구대학교 앵커사업단)"
           }
         ],
         "audit_flags": [],
@@ -21550,7 +21550,7 @@
           "region": {
             "pass": false,
             "value": "전국",
-            "detail": "지역 한정 desc: '충청남도 소재'"
+            "detail": "기관 지역 한정 (agency: 충남신용보증재단)"
           },
           "biz_enyy": {
             "pass": true,
@@ -21580,7 +21580,7 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "지역 한정 desc: '충청남도 소재'"
+            "detail": "기관 지역 한정 (agency: 충남신용보증재단)"
           },
           "positive_hit": {
             "pass": false,
@@ -21591,7 +21591,7 @@
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "지역 한정 desc: '충청남도 소재'"
+            "detail": "기관 지역 한정 (agency: 충남신용보증재단)"
           },
           "stage": {
             "level": "green",
@@ -21614,7 +21614,7 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "지역 한정 desc: '충청남도 소재'"
+            "msg": "기관 지역 한정 (agency: 충남신용보증재단)"
           }
         ],
         "audit_flags": [],
@@ -30949,7 +30949,7 @@
     },
     {
       "date": "2026-10-20",
-      "at_kst": "2026-10-20T05:48:23+09:00",
+      "at_kst": "2026-10-20T23:11:08+09:00",
       "new": 0,
       "updated": 0,
       "expired": 0,
