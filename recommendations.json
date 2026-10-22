@@ -1,7 +1,7 @@
 {
   "schema_version": 5,
-  "last_updated": "2026-10-22",
-  "updated_at_kst": "2026-10-22T23:25:25+09:00",
+  "last_updated": "2026-10-23",
+  "updated_at_kst": "2026-10-23T04:39:37+09:00",
   "red_count_today": 0,
   "reds_today": [
     {
@@ -2407,125 +2407,6 @@
   ],
   "items": [
     {
-      "pbancSn": "179540",
-      "title": "[ 모 집 ] GVC AI Platform Startup Enabling Program 및 스마트워크·쇼핑몰 창업지원 및 AI 전환 지원",
-      "agency": "글로벌벤처센터",
-      "deadline": "2026-10-22",
-      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179540",
-      "tier": "green",
-      "note": "structured 완전 매칭 (전국/사업화)",
-      "classify_evidence": {
-        "summary_reason": "structured 완전 매칭 (전국/사업화)",
-        "category_hints": [
-          "ai",
-          "global",
-          "budget"
-        ],
-        "rule_checks": {
-          "recruiting": {
-            "pass": true,
-            "value": "True",
-            "detail": "모집 중"
-          },
-          "deadline": {
-            "pass": true,
-            "value": "2026-10-22",
-            "detail": "마감 전"
-          },
-          "region": {
-            "pass": true,
-            "value": "전국",
-            "detail": "지역 허용 (structured=전국)"
-          },
-          "biz_enyy": {
-            "pass": true,
-            "value": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
-            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
-          },
-          "exclude_target": {
-            "pass": true,
-            "value": "",
-            "detail": "자격 제한 없음"
-          },
-          "industry": {
-            "pass": true,
-            "detail": "업종 제한 없음"
-          },
-          "qualification": {
-            "pass": true,
-            "detail": "자격 제한 없음"
-          },
-          "stage": {
-            "pass": true,
-            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
-          },
-          "nature": {
-            "pass": true,
-            "detail": "직접 자금성 (사업화)"
-          },
-          "region_keyword": {
-            "pass": true,
-            "detail": "지역 허용 (structured=전국)"
-          },
-          "positive_hit": {
-            "pass": true,
-            "detail": "structured 완전 매칭 (전국/사업화)"
-          }
-        },
-        "risk_flags": [],
-        "axis_scores": {
-          "region": {
-            "level": "green",
-            "detail": "지역 허용 (structured=전국)"
-          },
-          "stage": {
-            "level": "green",
-            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
-          },
-          "industry": {
-            "level": "green",
-            "detail": "업종 제한 없음"
-          },
-          "nature": {
-            "level": "green",
-            "detail": "직접 자금성 (사업화)"
-          },
-          "qualification": {
-            "level": "green",
-            "detail": "자격 제한 없음"
-          }
-        },
-        "exclusion_flags": [],
-        "audit_flags": [],
-        "tier_logic": "1순위: 5축 모두 green + 강한 긍정 매칭",
-        "classify_version": "v8.3"
-      },
-      "first_seen": "2026-10-17",
-      "last_seen": "2026-10-22",
-      "structured": {
-        "pbanc_sn_int": 179540,
-        "integrated": false,
-        "recruiting": true,
-        "start_date": "2026-10-16",
-        "end_date": "2026-10-22",
-        "agency_type": "민간",
-        "biz_class": "사업화",
-        "region": "전국",
-        "biz_enyy": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
-        "age_range": "만 20세 미만,만 20세 이상 ~ 만 39세 이하,만 40세 이상",
-        "apply_target": "청소년,대학생,일반인,대학,연구기관,일반기업,1인 창조기업",
-        "apply_target_desc": "예비창업자 또는 창업 기업\r\nAI 기반으로 플랫폼 창업을 준비중이거나 쇼핑몰 이커머스 사업중인 사업가\r\nAI·플랫폼·SaaS·데이터 기반 서비스 아이템 보유자\r\nMVP 개발 및 서비스 출시를 목표로 하는 팀 또는 개인\r\n글로벌 시장 진출을 계획하거나 AI를 활용한 플랫폼 비즈니스를 준비 중인 창업자\r\n프로그램 기간 동안 성실하게 참여 가능한 개인 또는 팀",
-        "exclude_target": "",
-        "preferential": "",
-        "content": "글로벌벤처센터(GVC)는 AI 기반 플랫폼 서비스를 만들고 싶은 예비창업자와 초기 스타트업을 모집합니다.\r\n\r\n아이템 검증부터 MVP 개발, 글로벌 런칭, 투자 연계까지 창업 과정을 함께하는 Startup Builder 사업화 육성 프로그램입니다.",
-        "integrated_name": "AI 창업지원 프로그램",
-        "apply_online": "https://global.venture.center/launchpad",
-        "apply_guide": "global.venture.center/launchpad"
-      },
-      "raw_content": "[ 모 집 ] GVC AI Platform Startup Enabling Program 및 스마트워크·쇼핑몰 창업지원 및 AI 전환 지원\n사업안내 바로가기\n지원분야\n사업화\n대상연령\n전체\n기관구분\n민간\n담당부서\n창업지원팀\n지역\n전국\n접수기간\n2026-10-16 ~ 2026-10-22 22:20\n주관기관명\n글로벌벤처센터\n대상\n전체\n창업업력\n전체\n연락처\n0507-367-9113\n공고 26-07-29\n[ 모 집 ] GVC AI Platform Startup Enabling Program 및 스마트워크·쇼핑몰 창업지원 및 AI 전환 지원\n※(유의)해당 공고는 중소벤처기업부와 창업진흥원이 아닌 민간에서 지원하는 사업으로, 신청부터 관리까지 모든 과정을 해당기관에서 전담\n글로벌벤처센터(GVC)는 AI 기반 플랫폼 서비스를 만들고 싶은 예비창업자와 초기 스타트업을 모집합니다.\n아이템 검증부터 MVP 개발, 글로벌 런칭, 투자 연계까지 창업 과정을 함께하는 Startup Builder 사업화 육성 프로그램입니다.\n2026년 10월 16일\n글로벌벤처센터\n신청방법 및 대상\n신청기간\n2026.10.16(금) 11:25\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t~\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t2026.10.22(목) 22:20\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t까지\n신청방법\n온라인 접수 :\n접수 바로가기\n신청대상\n예비창업자 또는 창업 기업\nAI 기반으로 플랫폼 창업을 준비중이거나 쇼핑몰 이커머스 사업중인 사업가\nAI·플랫폼·SaaS·데이터 기반 서비스 아이템 보유자\nMVP 개발 및 서비스 출시를 목표로 하는 팀 또는 개인\n글로벌 시장 진출을 계획하거나 AI를 활용한 플랫폼 비즈니스를 준비 중인 창업자\n프로그램 기간 동안 성실하게 참여 가능한 개인 또는 팀\n신청 시 요청하는 정보(개인정보포함)는 사업운영기관에서 관리되오니 이점 반드시 유의하여 주시기 바랍니다.\n제출서류\n온라인으로 신청 가능합니다.\n① 참가신청서\n신청서 및 기본 정보 작성\n② 사업계획서 (선택)\n아이템 소개, 문제 정의, 비즈니스 모델, 시장 및 성장전략 등\n③ 팀 소개서 (선택)\n대표자 및 팀원 소개, 역할, 주요 경력\n④ 발표자료(선택)\nPitch Deck 또는 서비스 소개자료(PDF)\n⑤ 기타자료(선택)\nGithub, Demo URL, Figma, Notion, 포트폴리오 등\n참가신청서(온라인 작성)\n사업계획서(PDF 권장)(선택)\n팀 소개서(자유양식)(선택)\n발표자료(PDF, 최대 15페이지 이내 권장) (선택)\n개발자료 또는 시연 링크(선택)\n기타 아이템을 설명할 수 있는 참고자료(선택)\n신청 : www.synapoffice.com/@e683O\n제출하신 서류는 사업운영기관에서 관리되오니 서류 반환 등 문의는 해당 기관으로 하시기 바랍니다.\n선정절차 및 평가방법\n선정절차 및 평가방법 상세내용\n① 서류심사\n아이템 적합성 및 사업성 평가\n↓\n② 인터뷰\n대표자 인터뷰 및 아이템 검토\n↓\n③ 최종 선정\n프로그램 참여 협약\n평가항목\n문제 정의의 명확성\n시장성 및 성장 가능성\nAI 활용 가능성\n플랫폼 확장성\n팀 역량 및 실행력\n글로벌 진출 가능성\nGVC 프로그램 적합성\n지원내용\nAI 기반 창업 과정 지원\n아이템 검증부터 MVP 개발, 글로벌 런칭 및 투자 연계 단계별 창업 지원\n지원내용 상세\nAI 개발 관련 멘토링 및 심사후 소정의 AI  개발 크레딧 지원\nAI 기반 아이디어 검증 및 PMF(Product-Market Fit) 분석\n비즈니스 모델(BM) 설계 및 수익모델 고도화\nAI 활용 프로토타입 및 MVP 개발 멘토링\n플랫폼 아키텍처 및 기술 전략 자문\n센터 입주 1개월 무상 지원 AI 무상 멘토링 지원\n법인 설립 및 운영 컨설팅\n글로벌 서비스 출시 및 해외 결제 시스템 구축 지원\n마케팅 및 서비스 런칭 전략 컨설팅\n투자유치(IR) 및 후속 투자 연계\nAI 활용 독립형 온라인 쇼핑몰 구축 지원\nAI를 활용한 상품정보 작성, 콘텐츠 제작, 고객응대 및 업무자동화 등 AI Transformation 지원\n원격 스마트워크 이용자를 위한 창업지원 인프라 제공\n온라인 판매자의 상품 발송을 위한 택배 이용 지원\n온라인 이커머스 플랫폼 AI 구축 자문 및 실개발 지원\n문의처\n이메일로 문의 바랍니다.\nglobalbicenter2@gmail.com\n자세한 내용은 첨부파일 참조 및 문의처로 문의하여 주시기 바랍니다.\nK-Startup에 공고되는 정보는 해당 기관의 요청에 의해 제공됩니다. 입주, 교육, 사업 신청 시 요청하는 정보(개인정보 포함)는 해당 기관에서 관리 \t되오니\n이점 유의하여 주시기 바랍니다.\n※(유의)해당 공고는 중소벤처기업부와 창업진흥원이 아닌 민간에서 지원하는 사업으로, 신청부터 관리까지 모든 과정을 해당기관에서 전담\n본 저작물은 창업진흥원(K-Startup)이 게시한 공공누리 제1유형의 저작물이며, 공공데이터포털(www.data.go.kr)에서 공공데이터로 개방중이며 무료로 활용할 수 있습니다.\n접수 바로가기\n목록",
-      "raw_fetched_at": "2026-10-17"
-    },
-    {
       "pbancSn": "179474",
       "title": "2026년 초기창업패키지 로켓십 IR 경진대회 참가기업 모집 (3회차: 기후·ESG)",
       "agency": "씨엔티테크(주)",
@@ -2619,7 +2500,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-13",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179474,
         "integrated": true,
@@ -2736,7 +2617,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-07",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179427,
         "integrated": false,
@@ -2805,7 +2686,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-10-19",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11213",
@@ -2863,7 +2744,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-10-14",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11194",
@@ -2975,7 +2856,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-13",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179471,
         "integrated": false,
@@ -3044,7 +2925,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-09-28",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11151",
@@ -3150,7 +3031,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-10",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179209,
         "integrated": false,
@@ -3219,7 +3100,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11163",
@@ -3274,7 +3155,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-10-21",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11222",
@@ -3383,7 +3264,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179057,
         "integrated": false,
@@ -3503,7 +3384,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179351,
         "integrated": false,
@@ -3620,7 +3501,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179387,
         "integrated": false,
@@ -3743,7 +3624,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-03",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179413,
         "integrated": false,
@@ -3812,7 +3693,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-10-15",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11200",
@@ -3915,7 +3796,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-15",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179498,
         "integrated": false,
@@ -4038,7 +3919,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-09",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179448,
         "integrated": false,
@@ -4155,7 +4036,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-17",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179528,
         "integrated": false,
@@ -4273,7 +4154,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-06-30",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 178234,
         "integrated": false,
@@ -4391,7 +4272,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 176208,
         "integrated": true,
@@ -4563,7 +4444,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179365,
         "integrated": false,
@@ -4681,7 +4562,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-18",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179267,
         "integrated": false,
@@ -4744,7 +4625,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "note": "structured 완전 매칭 (전국/사업화)",
       "connect": "",
       "classify_evidence": {
@@ -4931,7 +4812,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 176076,
         "integrated": false,
@@ -5048,7 +4929,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 175783,
         "integrated": false,
@@ -5117,7 +4998,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-09-21",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11139",
@@ -5126,589 +5007,6 @@
         "recruiting": true,
         "region": "인천"
       }
-    },
-    {
-      "pbancSn": "179418",
-      "title": "2026년 강북창업지원센터 10월 창업 교육 및 그룹상담 프로그램 참가자 모집",
-      "agency": "강북청년창업마루",
-      "deadline": "2026-10-22",
-      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179418",
-      "tier": "yellow",
-      "note": "검토 매칭 (청년창업)",
-      "classify_evidence": {
-        "summary_reason": "검토 매칭 (청년창업)",
-        "category_hints": [
-          "budget"
-        ],
-        "rule_checks": {
-          "recruiting": {
-            "pass": true,
-            "value": "True",
-            "detail": "모집 중"
-          },
-          "deadline": {
-            "pass": true,
-            "value": "2026-10-22",
-            "detail": "마감 전"
-          },
-          "region": {
-            "pass": true,
-            "value": "서울",
-            "detail": "지역 정보 애매"
-          },
-          "biz_enyy": {
-            "pass": true,
-            "value": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
-            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
-          },
-          "exclude_target": {
-            "pass": true,
-            "value": "없음",
-            "detail": "자격 제한 없음"
-          },
-          "industry": {
-            "pass": true,
-            "detail": "업종 제한 없음"
-          },
-          "qualification": {
-            "pass": true,
-            "detail": "자격 제한 없음"
-          },
-          "stage": {
-            "pass": true,
-            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
-          },
-          "nature": {
-            "pass": true,
-            "detail": "간접 지원성 (창업교육)"
-          },
-          "region_keyword": {
-            "pass": true,
-            "detail": "지역 정보 애매"
-          },
-          "positive_hit": {
-            "pass": true,
-            "detail": "검토 매칭 (청년창업)"
-          }
-        },
-        "risk_flags": [],
-        "axis_scores": {
-          "region": {
-            "level": "yellow",
-            "detail": "지역 정보 애매"
-          },
-          "stage": {
-            "level": "green",
-            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
-          },
-          "industry": {
-            "level": "green",
-            "detail": "업종 제한 없음"
-          },
-          "nature": {
-            "level": "yellow",
-            "detail": "간접 지원성 (창업교육)"
-          },
-          "qualification": {
-            "level": "green",
-            "detail": "자격 제한 없음"
-          }
-        },
-        "exclusion_flags": [],
-        "audit_flags": [],
-        "tier_logic": "2순위: 모든 축 green/yellow, 검토 매칭 (청년창업)",
-        "classify_version": "v8.3"
-      },
-      "first_seen": "2026-10-03",
-      "last_seen": "2026-10-22",
-      "structured": {
-        "pbanc_sn_int": 179418,
-        "integrated": false,
-        "recruiting": true,
-        "start_date": "2026-10-02",
-        "end_date": "2026-10-22",
-        "agency_type": "교육기관",
-        "biz_class": "창업교육",
-        "region": "서울",
-        "biz_enyy": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
-        "age_range": "만 20세 미만,만 20세 이상 ~ 만 39세 이하,만 40세 이상",
-        "apply_target": "청소년,대학생,일반인,대학,연구기관,일반기업,1인 창조기업",
-        "apply_target_desc": "창업 초기에 알았더라면 좋았을 것들(선배 창업가가 전하는 초기창업 실전 노하우 : 자금조달, 마케팅, 사업운영에 관심있는 예비·초기 창업자",
-        "exclude_target": "없음",
-        "preferential": "",
-        "content": "강북청년창업마루 - 강북창업지원센터에서\r\n10월 창업 교육 및 그룹상담 프로그램을 진행합니다.\r\n\r\n관심있는 예비·초기 창업자 분들의 많은 관심과 참여 바랍니다.",
-        "integrated_name": "2026년 강북창업지원센터 10월 창업 교육 및 그룹상담 프로그램 참가자 모집",
-        "apply_online": "https://forms.gle/eHoyrNXj3NiRZvia8",
-        "apply_guide": "gbmaru.com/startup/programs/21497"
-      },
-      "raw_content": "2026년 강북창업지원센터 10월 창업 교육 및 그룹상담 프로그램 참가자 모집\n사업안내 바로가기\n지원분야\n창업교육\n대상연령\n전체\n기관구분\n교육기관\n담당부서\n강북청년창업마루\n지역\n서울특별시\n접수기간\n2026-10-02 ~ 2026-10-22 23:59\n주관기관명\n광운대학교산학협력단\n대상\n전체\n창업업력\n전체\n연락처\n029088247\n2026년 강북창업지원센터 10월 창업 교육 및 그룹상담 프로그램 참가자 모집\n강북청년창업마루 - 강북창업지원센터에서\n10월 창업 교육 및 그룹상담 프로그램을 진행합니다.\n관심있는 예비·초기 창업자 분들의 많은 관심과 참여 바랍니다.\n2026년 10월 02일\n강북청년창업마루\n신청방법 및 대상\n신청기간\n2026.10.02(금) 00:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t~\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t2026.10.22(목) 23:59\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t까지\n신청방법\n온라인 접수 :\n접수 바로가기\n신청대상\n창업 초기에 알았더라면 좋았을 것들(선배 창업가가 전하는 초기창업 실전 노하우 : 자금조달, 마케팅, 사업운영에 관심있는 예비·초기 창업자\n제외대상\n없음\n신청 시 요청하는 정보(개인정보포함)는 사업운영기관에서 관리되오니 이점 반드시 유의하여 주시기 바랍니다.\n제출서류\n구글폼 접수\n신청링크 : https://forms.gle/eHoyrNXj3NiRZvia8\n제출하신 서류는 사업운영기관에서 관리되오니 서류 반환 등 문의는 해당 기관으로 하시기 바랍니다.\n선정절차 및 평가방법\n없음\n없음(강북구 거주자 우선 선발)\n교육안내\n\"창업 초기에 알았더라면 좋았을 것들(선배 창업가가 전하는 초기창업 실전 노하우 : 자금조달, 마케팅, 사업운영\" 교육생 모집\n주제 : \"창업 초기에 알았더라면 좋았을 것들(선배 창업가가 전하는 초기창업 실전 노하우 : 자금조달, 마케팅, 사업운영\"\n교육일시 : 2026. 10. 28.(수) 19:00~21:00\n그룹상담일시 : 2026. 10. 30.(금) 19:00~21:00\n장소 : 강북청년창업마루(서울시 강북구 노해로23길 123)\n참가비 : 무료\n상기 일정은 사업운영기관의 내부사정으로 변경될 수 있습니다.\n문의처\n강북창업지원센터\n02-908-8247\n자세한 내용은 첨부파일 참조 및 문의처로 문의하여 주시기 바랍니다.\nK-Startup에 공고되는 정보는 해당 기관의 요청에 의해 제공됩니다. 입주, 교육, 사업 신청 시 요청하는 정보(개인정보 포함)는 해당 기관에서 관리 \t되오니\n이점 유의하여 주시기 바랍니다.\n본 저작물은 창업진흥원(K-Startup)이 게시한 공공누리 제1유형의 저작물이며, 공공데이터포털(www.data.go.kr)에서 공공데이터로 개방중이며 무료로 활용할 수 있습니다.\n접수 바로가기\n목록",
-      "raw_fetched_at": "2026-10-03"
-    },
-    {
-      "pbancSn": "179460",
-      "title": "[강동구 청년해냄센터] 2026 모의창업스쿨 2차 교육 참가자 모집 공고",
-      "agency": "강동구 청년해냄센터",
-      "deadline": "2026-10-22",
-      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179460",
-      "tier": "yellow",
-      "note": "검토 매칭 (전국/시설ㆍ공간ㆍ보육)",
-      "classify_evidence": {
-        "summary_reason": "검토 매칭 (전국/시설ㆍ공간ㆍ보육)",
-        "category_hints": [
-          "budget"
-        ],
-        "rule_checks": {
-          "recruiting": {
-            "pass": true,
-            "value": "True",
-            "detail": "모집 중"
-          },
-          "deadline": {
-            "pass": true,
-            "value": "2026-10-22",
-            "detail": "마감 전"
-          },
-          "region": {
-            "pass": true,
-            "value": "전국",
-            "detail": "지역 허용 (structured=전국)"
-          },
-          "biz_enyy": {
-            "pass": true,
-            "value": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
-            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
-          },
-          "exclude_target": {
-            "pass": true,
-            "value": "",
-            "detail": "자격 제한 없음"
-          },
-          "industry": {
-            "pass": true,
-            "detail": "업종 제한 없음"
-          },
-          "qualification": {
-            "pass": true,
-            "detail": "자격 제한 없음"
-          },
-          "stage": {
-            "pass": true,
-            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
-          },
-          "nature": {
-            "pass": true,
-            "detail": "간접 지원성 (시설ㆍ공간ㆍ보육)"
-          },
-          "region_keyword": {
-            "pass": true,
-            "detail": "지역 허용 (structured=전국)"
-          },
-          "positive_hit": {
-            "pass": true,
-            "detail": "검토 매칭 (전국/시설ㆍ공간ㆍ보육)"
-          }
-        },
-        "risk_flags": [],
-        "axis_scores": {
-          "region": {
-            "level": "green",
-            "detail": "지역 허용 (structured=전국)"
-          },
-          "stage": {
-            "level": "green",
-            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
-          },
-          "industry": {
-            "level": "green",
-            "detail": "업종 제한 없음"
-          },
-          "nature": {
-            "level": "yellow",
-            "detail": "간접 지원성 (시설ㆍ공간ㆍ보육)"
-          },
-          "qualification": {
-            "level": "green",
-            "detail": "자격 제한 없음"
-          }
-        },
-        "exclusion_flags": [],
-        "audit_flags": [],
-        "tier_logic": "2순위: 모든 축 green/yellow, 검토 매칭 (전국/시설ㆍ공간ㆍ보육)",
-        "classify_version": "v8.3"
-      },
-      "first_seen": "2026-10-13",
-      "last_seen": "2026-10-22",
-      "structured": {
-        "pbanc_sn_int": 179460,
-        "integrated": false,
-        "recruiting": true,
-        "start_date": "2026-10-08",
-        "end_date": "2026-10-22",
-        "agency_type": "공공기관",
-        "biz_class": "시설ㆍ공간ㆍ보육",
-        "region": "전국",
-        "biz_enyy": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
-        "age_range": "만 20세 미만,만 20세 이상 ~ 만 39세 이하,만 40세 이상",
-        "apply_target": "청소년,대학생,일반인,대학,연구기관,일반기업,1인 창조기업",
-        "apply_target_desc": "예비창업자, 창업에 관심 있는 일반인",
-        "exclude_target": "",
-        "preferential": "",
-        "content": "강동구 청년해냄센터 모의창업스쿨 2차 교육 계획을 다음과 같이 공고하오니 참여 희망자는 안내에 따라 신청하시기 바랍니다.",
-        "integrated_name": "[강동구 청년해냄센터] 2026 모의창업스쿨 2차 교육 참가자 모집 공고",
-        "apply_online": "http://www.gdhaenaem.com/?c=168&s=&gp=1&gbn=viewok&ix=11900",
-        "apply_guide": "http://www.gdhaenaem.com/?c=168&s=&gp=1&gbn=viewok&ix=11900"
-      },
-      "raw_content": "[강동구 청년해냄센터] 2026 모의창업스쿨 2차 교육 참가자 모집 공고\n사업안내 바로가기\n지원분야\n시설ㆍ공간ㆍ보육\n대상연령\n전체\n기관구분\n공공기관\n담당부서\n강동구 청년해냄센터\n지역\n전국\n접수기간\n2026-10-08 ~ 2026-10-22 14:00\n주관기관명\n강동구 청년해냄센터\n대상\n전체\n창업업력\n전체\n연락처\n02-488-6880\n[강동구 청년해냄센터] 2026 모의창업스쿨 2차 교육 참가자 모집 공고\n강동구 청년해냄센터 모의창업스쿨 2차 교육 계획을 다음과 같이 공고하오니 참여 희망자는 안내에 따라 신청하시기 바랍니다.\n2026년 10월 08일\n강동구 청년해냄센터\n신청방법 및 대상\n신청기간\n2026.10.08(목) 00:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t~\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t2026.10.22(목) 14:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t까지\n신청방법\n온라인 접수 :\n접수 바로가기\n신청대상\n예비창업자, 창업에 관심 있는 일반인\n신청 시 요청하는 정보(개인정보포함)는 사업운영기관에서 관리되오니 이점 반드시 유의하여 주시기 바랍니다.\n제출서류\n홈페이지를 통한 신청서 제출\n홈페이지 접수 (www.gdhaenaem.com) → 신청하기 → 프로그램 신청\n제출하신 서류는 사업운영기관에서 관리되오니 서류 반환 등 문의는 해당 기관으로 하시기 바랍니다.\n선정절차 및 평가방법\n홈페이지를 통한 신청서 제출\n- 신청 완료 연락은 따로 가지 않으며, 해당 교육 대상자에게 10.23.(금)에 문자 발송 예정입니다.\n- 신청 취소 시, 사전에 센터로 취소 연락을 꼭 해주세요.\n- 무단 불참 시, 추후 두 달간 모든 센터 프로그램 참여가 제한됩니다.\n선발 방법\n- 강동구민, 청년, 기술 창업 여부 고려하여 참여 인원 선발\n- 모든 교육 및 멘토링 참석 필수 (모든 프로그램 참여 가능자 우선 선발)\n- 개별 멘토링 일정은 프로그램 선정자 대상 추후 조율 예정\n교육안내\n교육 일정\n1회차 | 11.03.(화) 17:30~20:30\n- 창업팀 구성, 창업 아이덴티티 도출\n2회차 | 11.05.(목) 17:30~20:30\n- 아이디어 스크리닝, 사업 타당성 분석\n3회차 | 11.10.(화) 17:30~20:30\n- 사업 컨셉 및 사업화 플랜 수립, 가상기업 설립\n4회차 | 11.12.(목) 17:30~20:30\n- 창업정책자금 및 창업보육지원 전략적 대응, 네트워크\n★ 개별 1:1 멘토링 추가 지원: 11.09.(월), 11.13.(금), 11.16.(월), 11.17.(화) 중 1인당 1시간 ★\n- 개별 멘토링 일정은 프로그램 선정자 대상 추후 조율 예정\n강사\n손문규 센터장(강동구 청년해냄센터)\n교육 장소\n강동구 청년해냄센터 창업교육장, 비즈니스룸\n- 서울시 강동구 올림픽로 610, 천호역효성해링턴타워 B동 2층\n- 주차비 지원 불가\n비용\n무료\n상기 일정은 사업운영기관의 내부사정으로 변경될 수 있습니다.\n문의처\n강동구 청년해냄센터 운영사무실\n02-488-6880\n자세한 내용은 첨부파일 참조 및 문의처로 문의하여 주시기 바랍니다.\nK-Startup에 공고되는 정보는 해당 기관의 요청에 의해 제공됩니다. 입주, 교육, 사업 신청 시 요청하는 정보(개인정보 포함)는 해당 기관에서 관리 \t되오니\n이점 유의하여 주시기 바랍니다.\n첨부파일 일괄 다운로드\n강동구 청년 해냄센터 2026 모의 창업 스쿨 2차.png\n바로보기\n다운로드\n강동구 청년 해냄센터 2026 모의 창업 스쿨 2차.txt\n바로보기\n다운로드\n본 저작물은 창업진흥원(K-Startup)이 게시한 공공누리 제1유형의 저작물이며, 공공데이터포털(www.data.go.kr)에서 공공데이터로 개방중이며 무료로 활용할 수 있습니다.\n접수 바로가기\n목록",
-      "raw_fetched_at": "2026-10-13"
-    },
-    {
-      "pbancSn": "179443",
-      "title": "[온라인·무료] 코딩·사업자 없이 여는 내 강의·전자책 판매 사이트",
-      "agency": "스쿨모아 주식회사",
-      "deadline": "2026-10-22",
-      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179443",
-      "tier": "yellow",
-      "note": "검토 매칭 (전국/창업교육)",
-      "classify_evidence": {
-        "summary_reason": "검토 매칭 (전국/창업교육)",
-        "category_hints": [
-          "ai"
-        ],
-        "rule_checks": {
-          "recruiting": {
-            "pass": true,
-            "value": "True",
-            "detail": "모집 중"
-          },
-          "deadline": {
-            "pass": true,
-            "value": "2026-10-22",
-            "detail": "마감 전"
-          },
-          "region": {
-            "pass": true,
-            "value": "전국",
-            "detail": "지역 허용 (structured=전국)"
-          },
-          "biz_enyy": {
-            "pass": true,
-            "value": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
-            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
-          },
-          "exclude_target": {
-            "pass": true,
-            "value": "",
-            "detail": "자격 제한 없음"
-          },
-          "industry": {
-            "pass": true,
-            "detail": "업종 제한 없음"
-          },
-          "qualification": {
-            "pass": true,
-            "detail": "자격 제한 없음"
-          },
-          "stage": {
-            "pass": true,
-            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
-          },
-          "nature": {
-            "pass": true,
-            "detail": "간접 지원성 (창업교육)"
-          },
-          "region_keyword": {
-            "pass": true,
-            "detail": "지역 허용 (structured=전국)"
-          },
-          "positive_hit": {
-            "pass": true,
-            "detail": "검토 매칭 (전국/창업교육)"
-          }
-        },
-        "risk_flags": [],
-        "axis_scores": {
-          "region": {
-            "level": "green",
-            "detail": "지역 허용 (structured=전국)"
-          },
-          "stage": {
-            "level": "green",
-            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
-          },
-          "industry": {
-            "level": "green",
-            "detail": "업종 제한 없음"
-          },
-          "nature": {
-            "level": "yellow",
-            "detail": "간접 지원성 (창업교육)"
-          },
-          "qualification": {
-            "level": "green",
-            "detail": "자격 제한 없음"
-          }
-        },
-        "exclusion_flags": [],
-        "audit_flags": [],
-        "tier_logic": "2순위: 모든 축 green/yellow, 검토 매칭 (전국/창업교육)",
-        "classify_version": "v8.3"
-      },
-      "first_seen": "2026-10-13",
-      "last_seen": "2026-10-22",
-      "structured": {
-        "pbanc_sn_int": 179443,
-        "integrated": false,
-        "recruiting": true,
-        "start_date": "2026-10-07",
-        "end_date": "2026-10-22",
-        "agency_type": "민간",
-        "biz_class": "창업교육",
-        "region": "전국",
-        "biz_enyy": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
-        "age_range": "만 20세 미만,만 20세 이상 ~ 만 39세 이하,만 40세 이상",
-        "apply_target": "청소년,대학생,일반인,대학,연구기관,일반기업,1인 창조기업",
-        "apply_target_desc": "- 내 경험·지식(강의, 상담, 전자책 등)을 온라인으로 판매하고 싶은 개인\r\n- 사업자 등록 전, 먼저 판매를 시작해 보고 싶은 예비 창업자\r\n- 인스타그램·블로그 등 SNS는 운영 중이나 결제받을 공간이 없는 분\r\n- 홈페이지 제작 비용이 부담되는 1인 사업자·프리랜서\r\n- 코딩 경험이 없어도 AI로 직접 사이트를 만들어 보고 싶은 분\r\n※ 노트북 지참 및 ChatGPT 또는 Claude 계정 준비가 가능한 분",
-        "exclude_target": "",
-        "preferential": "",
-        "content": "GPT·Claude 같은 AI와 대화하며 화면을 만드는 &apos;바이브코딩&apos;으로, 코딩 몰라도 내 강의·전자책 판매 사이트를 직접 만듭니다.\r\n강의·상담·전자책 등 내 경험을 상품으로 만들고, 사업자 등록 없이도 바로 결제를 받을 수 있도록 연결합니다.\r\n1대다 실시간 비대면(구글 미트) 3시간 과정으로, 막히는 부분은 채팅으로 바로 질문하며 함께 완성합니다.\r\n교육이 끝나면 내 사이트, 첫 상품 상세페이지, 홍보 콘텐츠, 30일 운영 체크리스트가 남습니다.\r\n수강료 무료, 수료 시 200만 원 상당 사이트 제작 쿠폰을 드리며, 노트북과 ChatGPT 또는 Claude 계정만 준비하시면 됩니다.",
-        "integrated_name": "[온라인·무료] 코딩·사업자 없이 여는 내 강의·전자책 판매 사이트",
-        "apply_online": "https://academy.runmoa.com/classes/9576",
-        "apply_guide": "academy.runmoa.com/classes/9576"
-      },
-      "raw_content": "[온라인·무료] 코딩·사업자 없이 여는 내 강의·전자책 판매 사이트\n사업안내 바로가기\n지원분야\n창업교육\n대상연령\n전체\n기관구분\n민간\n담당부서\n경영지원\n지역\n전국\n접수기간\n2026-10-07 ~ 2026-10-22 18:59\n주관기관명\n스쿨모아\n대상\n전체\n창업업력\n전체\n연락처\n070-8211-3731\n[온라인·무료] 코딩·사업자 없이 여는 내 강의·전자책 판매 사이트\n※(유의)해당 공고는 중소벤처기업부와 창업진흥원이 아닌 민간에서 지원하는 사업으로, 신청부터 관리까지 모든 과정을 해당기관에서 전담\nGPT·Claude 같은 AI와 대화하며 화면을 만드는 '바이브코딩'으로, 코딩 몰라도 내 강의·전자책 판매 사이트를 직접 만듭니다.\n강의·상담·전자책 등 내 경험을 상품으로 만들고, 사업자 등록 없이도 바로 결제를 받을 수 있도록 연결합니다.\n1대다 실시간 비대면(구글 미트) 3시간 과정으로, 막히는 부분은 채팅으로 바로 질문하며 함께 완성합니다.\n교육이 끝나면 내 사이트, 첫 상품 상세페이지, 홍보 콘텐츠, 30일 운영 체크리스트가 남습니다.\n수강료 무료, 수료 시 200만 원 상당 사이트 제작 쿠폰을 드리며, 노트북과 ChatGPT 또는 Claude 계정만 준비하시면 됩니다.\n2026년 10월 07일\n스쿨모아 주식회사\n신청방법 및 대상\n신청기간\n2026.10.07(수) 00:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t~\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t2026.10.22(목) 18:59\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t까지\n신청방법\n온라인 접수 :\n접수 바로가기\n신청대상\n- 내 경험·지식(강의, 상담, 전자책 등)을 온라인으로 판매하고 싶은 개인\n- 사업자 등록 전, 먼저 판매를 시작해 보고 싶은 예비 창업자\n- 인스타그램·블로그 등 SNS는 운영 중이나 결제받을 공간이 없는 분\n- 홈페이지 제작 비용이 부담되는 1인 사업자·프리랜서\n- 코딩 경험이 없어도 AI로 직접 사이트를 만들어 보고 싶은 분\n※ 노트북 지참 및 ChatGPT 또는 Claude 계정 준비가 가능한 분\n신청 시 요청하는 정보(개인정보포함)는 사업운영기관에서 관리되오니 이점 반드시 유의하여 주시기 바랍니다.\n제출서류\n제출서류\n별도 제출서류 없음\n제출하신 서류는 사업운영기관에서 관리되오니 서류 반환 등 문의는 해당 기관으로 하시기 바랍니다.\n선정절차 및 평가방법\n선정절차 및 평가방법\n선정절차\n① 온라인 신청서 접수\n② 참여 조건 확인 (노트북, ChatGPT 또는 Claude 계정, 구글 미트 접속 환경)\n③ 선정 확정 및 개별 안내\n④ 교육 전 구글 미트 참여 링크 발송\n평가방법\n- 별도 평가 없이 회차당 선착순으로 선정합니다.\n- 참여 조건을 충족하지 못한 경우 선정에서 제외될 수 있습니다.\n- 정원 마감 시 다음 회차로 안내해 드립니다.\n- 취소는 교육 전날까지 가능하며, 사유를 묻지 않습니다.\n교육안내\n교육안내\n■ 교육명: 코딩·사업자 없이 오늘 여는 내 강의·전자책 판매 사이트 | 바이브코딩 실전 클래스\n■ 진행 방식: 1대다 실시간 비대면 교육 (구글 미트)\n■ 교육 시간: 3시간\n■ 일정: 신청 후 회차별 날짜·시간 개별 안내\n■ 수강료: 무료\n■ 수료 혜택: 200만 원 상당 사이트 제작 쿠폰 지급 (세부 조건은 수료 시 안내)\n■ 정원: 회차당 선착순 마감\n■ 준비물: 노트북(충전기 포함), 구글 계정, ChatGPT 또는 Claude 계정, 판매할 강의·전자책 자료 및 프로필 사진(선택)\n■ 커리큘럼\n- 0:00~0:20 작업 환경 세팅 (ChatGPT 또는 Claude 계정 준비, AI 코딩 도구 설치, 판매 기능 계정 개설)\n- 0:20~1:10 AI 바이브코딩으로 내 판매 사이트 만들기\n- 1:10~1:30 내 첫 상품 정하기 (강의·전자책·상담 중 선택, 가격 설정)\n- 1:30~2:05 상품 상세페이지 만들기 (목차·소개·저자 정보)\n- 2:05~2:30 사업자 없이 결제 연결 및 주문 흐름 테스트\n- 2:30~2:50 첫 홍보 콘텐츠 제작 (SNS 게시글·카드뉴스)\n- 2:50~3:00 다음 30일 운영 체크리스트\n상기 일정은 사업운영기관의 내부사정으로 변경될 수 있습니다.\n문의처\n문의처\n장진광\n070-8211-3731\njjk@thefunnel.kr\n자세한 내용은 첨부파일 참조 및 문의처로 문의하여 주시기 바랍니다.\nK-Startup에 공고되는 정보는 해당 기관의 요청에 의해 제공됩니다. 입주, 교육, 사업 신청 시 요청하는 정보(개인정보 포함)는 해당 기관에서 관리 \t되오니\n이점 유의하여 주시기 바랍니다.\n※(유의)해당 공고는 중소벤처기업부와 창업진흥원이 아닌 민간에서 지원하는 사업으로, 신청부터 관리까지 모든 과정을 해당기관에서 전담\n본 저작물은 창업진흥원(K-Startup)이 게시한 공공누리 제1유형의 저작물이며, 공공데이터포털(www.data.go.kr)에서 공공데이터로 개방중이며 무료로 활용할 수 있습니다.\n접수 바로가기\n목록",
-      "raw_fetched_at": "2026-10-13"
-    },
-    {
-      "pbancSn": "179489",
-      "title": "마포비즈니스센터 4차 신규입주기업 모집",
-      "agency": "마포비즈니스센터",
-      "deadline": "2026-10-22",
-      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179489",
-      "tier": "yellow",
-      "note": "2순위: 모든 축 green/yellow, 중립 매칭 — 직접 지원 가능",
-      "classify_evidence": {
-        "summary_reason": "2순위: 모든 축 green/yellow, 중립 매칭 — 직접 지원 가능",
-        "category_hints": [
-          "budget"
-        ],
-        "rule_checks": {
-          "recruiting": {
-            "pass": true,
-            "value": "True",
-            "detail": "모집 중"
-          },
-          "deadline": {
-            "pass": true,
-            "value": "2026-10-22",
-            "detail": "마감 전"
-          },
-          "region": {
-            "pass": true,
-            "value": "서울",
-            "detail": "지역 정보 애매"
-          },
-          "biz_enyy": {
-            "pass": true,
-            "value": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만",
-            "detail": "업력 허용 (1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
-          },
-          "exclude_target": {
-            "pass": true,
-            "value": "타 창업보육센터에서 퇴거 조치 당한 기업은 신청 불가",
-            "detail": "자격 제한 없음"
-          },
-          "industry": {
-            "pass": true,
-            "detail": "업종 제한 없음"
-          },
-          "qualification": {
-            "pass": true,
-            "detail": "자격 제한 없음"
-          },
-          "stage": {
-            "pass": true,
-            "detail": "업력 허용 (1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
-          },
-          "nature": {
-            "pass": true,
-            "detail": "간접 지원성 (시설ㆍ공간ㆍ보육)"
-          },
-          "region_keyword": {
-            "pass": true,
-            "detail": "지역 정보 애매"
-          },
-          "positive_hit": {
-            "pass": true,
-            "detail": "2순위: 모든 축 green/yellow, 중립 매칭 — 직접 지원 가능"
-          }
-        },
-        "risk_flags": [],
-        "axis_scores": {
-          "region": {
-            "level": "yellow",
-            "detail": "지역 정보 애매"
-          },
-          "stage": {
-            "level": "green",
-            "detail": "업력 허용 (1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
-          },
-          "industry": {
-            "level": "green",
-            "detail": "업종 제한 없음"
-          },
-          "nature": {
-            "level": "yellow",
-            "detail": "간접 지원성 (시설ㆍ공간ㆍ보육)"
-          },
-          "qualification": {
-            "level": "green",
-            "detail": "자격 제한 없음"
-          }
-        },
-        "exclusion_flags": [],
-        "audit_flags": [],
-        "tier_logic": "2순위: 모든 축 green/yellow, 중립 매칭 — 직접 지원 가능",
-        "classify_version": "v8.3"
-      },
-      "first_seen": "2026-10-15",
-      "last_seen": "2026-10-22",
-      "structured": {
-        "pbanc_sn_int": 179489,
-        "integrated": true,
-        "recruiting": true,
-        "start_date": "2026-10-13",
-        "end_date": "2026-10-22",
-        "agency_type": "지자체",
-        "biz_class": "시설ㆍ공간ㆍ보육",
-        "region": "서울",
-        "biz_enyy": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만",
-        "age_range": "만 20세 미만,만 20세 이상 ~ 만 39세 이하,만 40세 이상",
-        "apply_target": "청소년,대학생,일반인,대학,연구기관,일반기업,1인 창조기업",
-        "apply_target_desc": "예비창업자 또는 창업 후 7년 이내인 기업 / 개업연월일 기준\r\n※ 예비창업자의 경우 3개월 이내 창업 필수(사업자등록증 제출)\r\n중소기업창업 지원법」 제2조에 따른 ‘창업자(창업기업)",
-        "exclude_target": "타 창업보육센터에서 퇴거 조치 당한 기업은 신청 불가",
-        "preferential": "",
-        "content": "마포비즈니스센터 입주기업 모집을 아래와 같이 진행하오니 입주를 희망하시는 (예비)창업자는 안내에 따라 신청하기 바랍니다.",
-        "integrated_name": "마포비즈니스센터",
-        "apply_online": "",
-        "apply_guide": ""
-      },
-      "raw_content": "마포비즈니스센터 4차 신규입주기업 모집\n지원분야\n시설ㆍ공간ㆍ보육\n대상연령\n전체\n기관구분\n지자체\n담당부서\n마포비즈니스센터\n지역\n서울특별시\n접수기간\n2026-10-13 ~ 2026-10-22 23:59\n주관기관명\n마포비즈플라자지원센터\n대상\n전체\n창업업력\n예비창업자, 1년미만, 2년미만, 3년미만, 5년미만, 7년미만\n연락처\n02-303-2024\n마포비즈니스센터 4차 신규입주기업 모집\n마포비즈니스센터 입주기업 모집을 아래와 같이 진행하오니 입주를 희망하시는 (예비)창업자는 안내에 따라 신청하기 바랍니다.\n2026년 10월 12일\n마포비즈니스센터\n신청방법 및 대상\n신청기간\n2026.10.13(화) 09:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t~\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t2026.10.22(목) 23:59\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t까지\n신청방법\n이메일 접수 : center_mapo@hongik.ac.kr\n신청대상\n예비창업자 또는 창업 후 7년 이내인 기업 / 개업연월일 기준\n※ 예비창업자의 경우 3개월 이내 창업 필수(사업자등록증 제출)\n중소기업창업 지원법」 제2조에 따른 ‘창업자(창업기업)\n제외대상\n타 창업보육센터에서 퇴거 조치 당한 기업은 신청 불가\n신청 시 요청하는 정보(개인정보포함)는 사업운영기관에서 관리되오니 이점 반드시 유의하여 주시기 바랍니다.\n제출서류\n입주신청서 및 사업계획서\n사업계획서 첨부서류에 포함되는 관련 증빙서류\n제출하신 서류는 사업운영기관에서 관리되오니 서류 반환 등 문의는 해당 기관으로 하시기 바랍니다.\n선정절차 및 평가방법\n평가방법\n1차 서류심사\n: 사업계획서 평가\n2차 발표심사\n: 서류심사 통과자에 한해 발표평가\n입주모집개요\n개요\n1. 입주공간 모집규모\n정원제한 없는 입주 보육실 4곳\n2. 소재지(센터위치 주소)\n서울특별시 마포구 매봉산로 18 마포창업복지관 4-6층\n3. 공간구성\n총 4개실 / 403호 (60.9㎡), 411호(60.7㎡), 507호(59.9㎡), 508호(59.9㎡)\n4. 입주기간\n최초 입주 계약 2년, 이후 1년 연장 가능(최대 3년 입주가능)\n5. 입주비용\n· 임 대 료 : 월 4,440원 × ㎡ (부가세별도) / 1년 선납\n· 임대보증금 : 70,000원 × ㎡\n· 시설관리비 : 월3,400원 × ㎡\n· 공공요금 : 사용량에 따라 부과(공용+전용)\n※ 각 입주부담금은 임대면적(㎡)을 곱한 금액\n6. 입주공간을 확인 할 수 있는 자료\n첨부파일 1. 마포비즈니스센터 입주기업 모집공고에 입주공간 사진있습니다.\n상기 일정은 사업운영기관의 내부사정으로 변경될 수 있습니다.\n지원내용\n지원내용\n멘토링, 창업교육, 기업 네트워킹\n- 수요에 따른 분야별 1:1멘토링 지원\n- 비즈니스모델 고도화, IR자료고도화, 피칭, 투자 활동 등 기업 경영활동과 관련된 전반적인 교육 지원\n- 입주기업 간담회를 통해 네트워킹 기회 마련\n문의처\n문의\n전화 : 02-303-2021, 2024\n이메일 : center_mapo@hongik.ac.kr\n자세한 내용은 첨부파일 참조 및 문의처로 문의하여 주시기 바랍니다.\nK-Startup에 공고되는 정보는 해당 기관의 요청에 의해 제공됩니다. 입주, 교육, 사업 신청 시 요청하는 정보(개인정보 포함)는 해당 기관에서 관리 \t되오니\n이점 유의하여 주시기 바랍니다.\n첨부파일 일괄 다운로드\n양식1. 마포비즈니스센터 입주신청서.hwp\n바로보기\n다운로드\n양식2. 마포비즈니스센터 입주사업계획서.hwp\n바로보기\n다운로드\n첨부1. 마포비즈니스센터 입주기업 모집공고 (2026. 4차.).pdf\n바로보기\n다운로드\n본 저작물은 창업진흥원(K-Startup)이 게시한 공공누리 제1유형의 저작물이며, 공공데이터포털(www.data.go.kr)에서 공공데이터로 개방중이며 무료로 활용할 수 있습니다.\n목록",
-      "raw_fetched_at": "2026-10-15"
-    },
-    {
-      "pbancSn": "179502",
-      "title": "2026 신한퓨처스랩 스타트업 성장 포럼 &apos;인사이트랩(Insight Lab)&apos; 참관 기업 모집",
-      "agency": "신한퓨처스랩",
-      "deadline": "2026-10-22",
-      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179502",
-      "tier": "yellow",
-      "note": "2순위: 모든 축 green/yellow, 중립 매칭 — 직접 지원 가능",
-      "classify_evidence": {
-        "summary_reason": "2순위: 모든 축 green/yellow, 중립 매칭 — 직접 지원 가능",
-        "category_hints": [],
-        "rule_checks": {
-          "recruiting": {
-            "pass": true,
-            "value": "True",
-            "detail": "모집 중"
-          },
-          "deadline": {
-            "pass": true,
-            "value": "2026-10-22",
-            "detail": "마감 전"
-          },
-          "region": {
-            "pass": true,
-            "value": "서울",
-            "detail": "지역 정보 애매"
-          },
-          "biz_enyy": {
-            "pass": true,
-            "value": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
-            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
-          },
-          "exclude_target": {
-            "pass": true,
-            "value": "",
-            "detail": "자격 제한 없음"
-          },
-          "industry": {
-            "pass": true,
-            "detail": "업종 제한 없음"
-          },
-          "qualification": {
-            "pass": true,
-            "detail": "자격 제한 없음"
-          },
-          "stage": {
-            "pass": true,
-            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
-          },
-          "nature": {
-            "pass": true,
-            "detail": "성격 분류 애매 (biz_class='행사ㆍ네트워크')"
-          },
-          "region_keyword": {
-            "pass": true,
-            "detail": "지역 정보 애매"
-          },
-          "positive_hit": {
-            "pass": true,
-            "detail": "2순위: 모든 축 green/yellow, 중립 매칭 — 직접 지원 가능"
-          }
-        },
-        "risk_flags": [],
-        "axis_scores": {
-          "region": {
-            "level": "yellow",
-            "detail": "지역 정보 애매"
-          },
-          "stage": {
-            "level": "green",
-            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
-          },
-          "industry": {
-            "level": "green",
-            "detail": "업종 제한 없음"
-          },
-          "nature": {
-            "level": "yellow",
-            "detail": "성격 분류 애매 (biz_class='행사ㆍ네트워크')"
-          },
-          "qualification": {
-            "level": "green",
-            "detail": "자격 제한 없음"
-          }
-        },
-        "exclusion_flags": [],
-        "audit_flags": [],
-        "tier_logic": "2순위: 모든 축 green/yellow, 중립 매칭 — 직접 지원 가능",
-        "classify_version": "v8.3"
-      },
-      "first_seen": "2026-10-16",
-      "last_seen": "2026-10-22",
-      "structured": {
-        "pbanc_sn_int": 179502,
-        "integrated": false,
-        "recruiting": true,
-        "start_date": "2026-10-13",
-        "end_date": "2026-10-22",
-        "agency_type": "민간",
-        "biz_class": "행사ㆍ네트워크",
-        "region": "서울",
-        "biz_enyy": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
-        "age_range": "만 20세 미만,만 20세 이상 ~ 만 39세 이하,만 40세 이상",
-        "apply_target": "청소년,대학생,일반인,대학,연구기관,일반기업,1인 창조기업",
-        "apply_target_desc": "스타트업 임직원 누구나",
-        "exclude_target": "",
-        "preferential": "",
-        "content": "스타트업 임직원을 위한 강연&네트워킹 행사 계획을 다음과 같이 공고하오니 참여를 희망하는 분들은 안내에 따라 신청 바랍니다.",
-        "integrated_name": "2026 신한퓨처스랩 스타트업 성장 포럼 &apos;인사이트랩&#40;Insight Lab&#41;&apos; 참관 기업 모집",
-        "apply_online": "https://app.quotabook.com/recruitment/12d46d6c-96e4-4635-a1f9-cfbed436c518",
-        "apply_guide": ""
-      },
-      "raw_content": "2026 신한퓨처스랩 스타트업 성장 포럼 '인사이트랩(Insight Lab)' 참관 기업 모집\n지원분야\n행사ㆍ네트워크\n대상연령\n전체\n기관구분\n민간\n담당부서\n신한퓨처스랩\n지역\n서울특별시\n접수기간\n2026-10-13 ~ 2026-10-22 12:00\n주관기관명\n신한퓨처스랩\n대상\n전체\n창업업력\n전체\n연락처\n02-560-9787\n2026 신한퓨처스랩 스타트업 성장 포럼 '인사이트랩(Insight Lab)' 참관 기업 모집\n※(유의)해당 공고는 중소벤처기업부와 창업진흥원이 아닌 민간에서 지원하는 사업으로, 신청부터 관리까지 모든 과정을 해당기관에서 전담\n스타트업 임직원을 위한 강연&네트워킹 행사 계획을 다음과 같이 공고하오니 참여를 희망하는 분들은 안내에 따라 신청 바랍니다.\n2026년 10월 13일\n신한퓨처스랩\n신청방법 및 대상\n신청기간\n2026.10.13(화) 13:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t~\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t2026.10.22(목) 12:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t까지\n신청방법\n온라인 접수 :\n접수 바로가기\n신청대상\n스타트업 임직원 누구나\n신청 시 요청하는 정보(개인정보포함)는 사업운영기관에서 관리되오니 이점 반드시 유의하여 주시기 바랍니다.\n제출서류\n없음.\n제출하신 서류는 사업운영기관에서 관리되오니 서류 반환 등 문의는 해당 기관으로 하시기 바랍니다.\n선정절차 및 평가방법\n없음.\n행사안내\n2026 신한퓨처스랩 스타트업 성장 포럼 '인사이트랩(Insight Lab)'\n- 일자 : 2026. 10. 22.(목)\n- 장소 : 슈피겐홀 (강남구 봉은사로 446, 지하 2층)\n- 프로그램\n1) Session 1 : 신한금융그룹 그룹사와의 협업 기회 발굴 및 1:1 밋업\n2) Session 2 : 고객에서 시작하는 스타트업 성장 전략\n3) Session 3 : 스케일업을 위한 지속 가능한 조직 만들기\n상기 일정은 사업운영기관의 내부사정으로 변경될 수 있습니다.\n지원내용\n없음.\n문의처\napply@futureslab.kr\n자세한 내용은 첨부파일 참조 및 문의처로 문의하여 주시기 바랍니다.\nK-Startup에 공고되는 정보는 해당 기관의 요청에 의해 제공됩니다. 입주, 교육, 사업 신청 시 요청하는 정보(개인정보 포함)는 해당 기관에서 관리 \t되오니\n이점 유의하여 주시기 바랍니다.\n※(유의)해당 공고는 중소벤처기업부와 창업진흥원이 아닌 민간에서 지원하는 사업으로, 신청부터 관리까지 모든 과정을 해당기관에서 전담\n첨부파일 일괄 다운로드\n2026 신한퓨처스랩 스타트업 성장 포럼 '인사이트랩(Insight Lab)' 포스터.png\n바로보기\n다운로드\n2026 신한퓨처스랩 스타트업 성장 포럼 '인사이트랩' 포스터 내용.docx\n바로보기\n다운로드\n본 저작물은 창업진흥원(K-Startup)이 게시한 공공누리 제1유형의 저작물이며, 공공데이터포털(www.data.go.kr)에서 공공데이터로 개방중이며 무료로 활용할 수 있습니다.\n접수 바로가기\n목록",
-      "raw_fetched_at": "2026-10-16"
     },
     {
       "pbancSn": "179307",
@@ -5803,7 +5101,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-23",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179307,
         "integrated": false,
@@ -5927,7 +5225,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-03",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179411,
         "integrated": true,
@@ -6042,7 +5340,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-03",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179393,
         "integrated": false,
@@ -6157,7 +5455,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-08",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179434,
         "integrated": true,
@@ -6274,7 +5572,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-16",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179505,
         "integrated": false,
@@ -6401,7 +5699,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-16",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179483,
         "integrated": false,
@@ -6525,7 +5823,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-08",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179423,
         "integrated": false,
@@ -6640,7 +5938,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-03",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179407,
         "integrated": false,
@@ -6757,7 +6055,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-22",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179553,
         "integrated": true,
@@ -6881,7 +6179,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-18",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179241,
         "integrated": false,
@@ -6996,7 +6294,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179376,
         "integrated": false,
@@ -7111,7 +6409,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-08",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179432,
         "integrated": true,
@@ -7228,7 +6526,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-09",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179429,
         "integrated": false,
@@ -7345,7 +6643,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-14",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179456,
         "integrated": false,
@@ -7460,7 +6758,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-16",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179523,
         "integrated": false,
@@ -7575,7 +6873,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-22",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179578,
         "integrated": false,
@@ -7690,7 +6988,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-16",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179245,
         "integrated": false,
@@ -7807,7 +7105,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179373,
         "integrated": false,
@@ -7928,7 +7226,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-13",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179461,
         "integrated": false,
@@ -8049,7 +7347,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-15",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179484,
         "integrated": false,
@@ -8164,7 +7462,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-22",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179569,
         "integrated": true,
@@ -8281,7 +7579,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-17",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179534,
         "integrated": false,
@@ -8398,7 +7696,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-17",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179521,
         "integrated": false,
@@ -8517,7 +7815,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 176296,
         "integrated": true,
@@ -8634,7 +7932,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-18",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179268,
         "integrated": false,
@@ -8749,7 +8047,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-22",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179567,
         "integrated": false,
@@ -8866,7 +8164,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-13",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179295,
         "integrated": false,
@@ -8983,7 +8281,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-15",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179462,
         "integrated": false,
@@ -9100,7 +8398,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-21",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179572,
         "integrated": true,
@@ -9215,7 +8513,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-21",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179557,
         "integrated": true,
@@ -9336,7 +8634,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-16",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179499,
         "integrated": true,
@@ -9453,7 +8751,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-22",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179571,
         "integrated": false,
@@ -9568,7 +8866,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-22",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179573,
         "integrated": false,
@@ -9683,7 +8981,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-22",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179580,
         "integrated": false,
@@ -9798,7 +9096,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-09",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179441,
         "integrated": false,
@@ -9913,7 +9211,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-21",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179542,
         "integrated": false,
@@ -10031,7 +9329,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-07",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179430,
         "integrated": false,
@@ -10155,7 +9453,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179353,
         "integrated": false,
@@ -10270,7 +9568,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-22",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179530,
         "integrated": false,
@@ -10387,7 +9685,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-22",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179591,
         "integrated": false,
@@ -10502,7 +9800,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-22",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179562,
         "integrated": true,
@@ -10617,7 +9915,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-22",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179586,
         "integrated": true,
@@ -10679,7 +9977,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "note": "검토 매칭 (전국/시설ㆍ공간ㆍ보육)",
       "connect": "",
       "classify_evidence": {
@@ -10861,7 +10159,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-16",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179208,
         "integrated": false,
@@ -10978,7 +10276,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-16",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179514,
         "integrated": false,
@@ -11096,7 +10394,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-05-09",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 177563,
         "integrated": false,
@@ -11213,7 +10511,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-05-30",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 177864,
         "integrated": false,
@@ -11330,7 +10628,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-18",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179207,
         "integrated": false,
@@ -11445,7 +10743,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-07",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 178803,
         "integrated": false,
@@ -11562,7 +10860,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-22",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179302,
         "integrated": false,
@@ -11679,7 +10977,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "note": "검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)",
       "connect": "",
       "classify_evidence": {
@@ -11808,7 +11106,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "note": "검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)",
       "connect": "",
       "classify_evidence": {
@@ -11990,7 +11288,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 176129,
         "integrated": false,
@@ -12107,7 +11405,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 175366,
         "integrated": false,
@@ -12222,7 +11520,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 171419,
         "integrated": false,
@@ -12339,7 +11637,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-06-10",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 178023,
         "integrated": false,
@@ -12456,7 +11754,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-06-16",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 177844,
         "integrated": false,
@@ -12573,7 +11871,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-07-03",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 178289,
         "integrated": true,
@@ -12642,7 +11940,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-07-28",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11010",
@@ -12743,7 +12041,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-14",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 178850,
         "integrated": false,
@@ -13197,7 +12495,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-15",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 177721,
         "integrated": false,
@@ -13220,370 +12518,6 @@
       },
       "raw_content": "27년  창업지원사업대비 IR피칭 역량강화 무료특강(비대면 줌)\n사업안내 바로가기\n지원분야\n멘토링ㆍ컨설팅ㆍ교육\n대상연령\n만 20세 이상 ~ 만 39세 이하, 만 40세 이상\n기관구분\n민간\n담당부서\n교육기획 및 전략\n지역\n전국\n접수기간\n2026-10-12 ~ 2027-05-31 00:00\n주관기관명\n디지플래닛\n대상\n대학생, 일반인, 대학, 연구기관, 일반기업, 1인 창조기업\n창업업력\n예비창업자, 1년미만, 2년미만, 3년미만\n연락처\n050713434258\n공고 제 2026-5호\n27년  창업지원사업대비 IR피칭 역량강화 무료특강(비대면 줌)\n※(유의)해당 공고는 중소벤처기업부와 창업진흥원이 아닌 민간에서 지원하는 사업으로, 신청부터 관리까지 모든 과정을 해당기관에서 전담\n창업아이템의 성공적인 IR발표방법 교육계획을 다음과 같이 공고하오니 참여를 희망하는 팀은 안내따라 신청하기 바랍니다.\n2026년 05월 18일\n디지플래닛\n신청방법 및 대상\n신청기간\n2026.10.12(월) 00:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t~\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t2027.05.31(월) 00:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t까지\n신청방법\n온라인 접수 :\n접수 바로가기\n신청대상\n본인의 사업계획서를 정말 잘 발표하고 설득하고 싶은 예비~3년 미만의 창업가\n제외대상\n*정책자금 관련 컨설턴트\n신청 시 요청하는 정보(개인정보포함)는 사업운영기관에서 관리되오니 이점 반드시 유의하여 주시기 바랍니다.\n제출서류\n제출 서류\n없습니다.\n제출하신 서류는 사업운영기관에서 관리되오니 서류 반환 등 문의는 해당 기관으로 하시기 바랍니다.\n선정절차 및 평가방법\n선정절차\n1. 제출하신 온라인 폼을 기준으로 선정하여 개별 연락 드릴 예정입니다.\n교육안내\n교육안내\n1. 진행방식 : 온라인 비대면 (웨비나, Zoom)\n2. 참가비 : 무료\n3. 소요시간 : 1시간 30분\n4. 강의내용 : 심사위원을 설득시키는 강력한 IR피칭방법\n5. 진행일시 : 매 월 2회 진행 *신청인원이 모집 되는대로 일정 조율 및 안내 메시지가 전송됩니다.\n상기 일정은 사업운영기관의 내부사정으로 변경될 수 있습니다.\n문의처\n문의처\nE-mail : dgplanet.kr@gmail.com\nC/S : 0507-1343-4258\n자세한 내용은 첨부파일 참조 및 문의처로 문의하여 주시기 바랍니다.\nK-Startup에 공고되는 정보는 해당 기관의 요청에 의해 제공됩니다. 입주, 교육, 사업 신청 시 요청하는 정보(개인정보 포함)는 해당 기관에서 관리 \t되오니\n이점 유의하여 주시기 바랍니다.\n※(유의)해당 공고는 중소벤처기업부와 창업진흥원이 아닌 민간에서 지원하는 사업으로, 신청부터 관리까지 모든 과정을 해당기관에서 전담\n첨부파일 일괄 다운로드\n27년  창업지원사업대비 IR피칭 역량강화 무료특강(비대면 줌).png\n바로보기\n다운로드\n27년  창업지원사업대비 IR피칭 역량강화 무료특강(비대면 줌).hwpx\n바로보기\n다운로드\n본 저작물은 창업진흥원(K-Startup)이 게시한 공공누리 제1유형의 저작물이며, 공공데이터포털(www.data.go.kr)에서 공공데이터로 개방중이며 무료로 활용할 수 있습니다.\n접수 바로가기\n목록",
       "raw_fetched_at": "2026-10-15"
-    },
-    {
-      "pbancSn": "179375",
-      "title": "쇼미더임팩트 시즌6 참가자 모집 [IMPACT IR 경연대회]",
-      "agency": "충남사회적경제지원센터장",
-      "deadline": "2026-10-22",
-      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179375",
-      "tier": "orange",
-      "note": "검토 매칭 (IR)",
-      "classify_evidence": {
-        "summary_reason": "검토 매칭 (IR)",
-        "category_hints": [
-          "social"
-        ],
-        "rule_checks": {
-          "recruiting": {
-            "pass": true,
-            "value": "True",
-            "detail": "모집 중"
-          },
-          "deadline": {
-            "pass": true,
-            "value": "2026-10-22",
-            "detail": "마감 전"
-          },
-          "region": {
-            "pass": false,
-            "value": "충남",
-            "detail": "기관 지역 한정 (agency: 충남사회적경제지원센터장)"
-          },
-          "biz_enyy": {
-            "pass": true,
-            "value": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
-            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
-          },
-          "exclude_target": {
-            "pass": true,
-            "value": "",
-            "detail": "자격 제한 없음"
-          },
-          "industry": {
-            "pass": true,
-            "detail": "업종 제한 없음"
-          },
-          "qualification": {
-            "pass": true,
-            "detail": "자격 제한 없음"
-          },
-          "stage": {
-            "pass": true,
-            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
-          },
-          "nature": {
-            "pass": true,
-            "detail": "간접 지원성 (멘토링ㆍ컨설팅ㆍ교육)"
-          },
-          "region_keyword": {
-            "pass": false,
-            "detail": "기관 지역 한정 (agency: 충남사회적경제지원센터장)"
-          },
-          "positive_hit": {
-            "pass": false,
-            "detail": "검토 매칭 (IR)"
-          }
-        },
-        "risk_flags": [],
-        "axis_scores": {
-          "region": {
-            "level": "orange",
-            "detail": "기관 지역 한정 (agency: 충남사회적경제지원센터장)"
-          },
-          "stage": {
-            "level": "green",
-            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
-          },
-          "industry": {
-            "level": "green",
-            "detail": "업종 제한 없음"
-          },
-          "nature": {
-            "level": "yellow",
-            "detail": "간접 지원성 (멘토링ㆍ컨설팅ㆍ교육)"
-          },
-          "qualification": {
-            "level": "green",
-            "detail": "자격 제한 없음"
-          }
-        },
-        "exclusion_flags": [
-          {
-            "axis": "region",
-            "severity": "high",
-            "msg": "기관 지역 한정 (agency: 충남사회적경제지원센터장)"
-          }
-        ],
-        "audit_flags": [],
-        "tier_logic": "3순위 (아이디어·우회 가능): 검토 매칭 (IR)",
-        "classify_version": "v8.3"
-      },
-      "first_seen": "2026-10-02",
-      "last_seen": "2026-10-22",
-      "structured": {
-        "pbanc_sn_int": 179375,
-        "integrated": false,
-        "recruiting": true,
-        "start_date": "2026-09-29",
-        "end_date": "2026-10-22",
-        "agency_type": "공공기관",
-        "biz_class": "멘토링ㆍ컨설팅ㆍ교육",
-        "region": "충남",
-        "biz_enyy": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
-        "age_range": "만 20세 이상 ~ 만 39세 이하,만 40세 이상",
-        "apply_target": "대학생,일반인,대학,연구기관,일반기업,1인 창조기업",
-        "apply_target_desc": "1. 공통조건 : 임팩트 투자 유치에 관심이 있는 충남 소재의 기업, 스타트업, 창업 예정자\r\n2. 자격조건\r\nA. 충남 사회적경제기업 또는 소셜벤처\r\nB. 충남 사회적경제기업으로 진입을 희망하는 기업\r\nC. 충남 사회적경제기업으로 창업하고자 하는 팀",
-        "exclude_target": "",
-        "preferential": "",
-        "content": "충남 사회연대경제기업들의 임팩트 투자 기반을 조성하고 투자 유치를 희망하는 \r\n기업들의 IR(Investor Relation) 역량 강화를 지원하기 위해 한국서부발전(주)과 함께\r\n하는 2026 프로젝트상생 『쇼미더임팩트 시즌6』 참가자를 모집하고자 합니다.",
-        "integrated_name": "쇼미더임팩트 시즌6 참가자 모집[IMPACT IR 경연대회]",
-        "apply_online": "https://forms.gle/bxsFHahUNSzasP6T7",
-        "apply_guide": "www.cnse.kr/app/board/view?md_id=center_news&code=2383&page=1"
-      }
-    },
-    {
-      "pbancSn": "179501",
-      "title": "[중앙사회서비스원] 2026년 제3회 사회서비스 투자교류회",
-      "agency": "중앙사회서비스원",
-      "deadline": "2026-10-22",
-      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179501",
-      "tier": "orange",
-      "note": "structured 완전 매칭 (전국/사업화)",
-      "classify_evidence": {
-        "summary_reason": "structured 완전 매칭 (전국/사업화)",
-        "category_hints": [
-          "social",
-          "budget"
-        ],
-        "rule_checks": {
-          "recruiting": {
-            "pass": true,
-            "value": "True",
-            "detail": "모집 중"
-          },
-          "deadline": {
-            "pass": true,
-            "value": "2026-10-22",
-            "detail": "마감 전"
-          },
-          "region": {
-            "pass": true,
-            "value": "전국",
-            "detail": "지역 허용 (structured=전국)"
-          },
-          "biz_enyy": {
-            "pass": true,
-            "value": "10년미만",
-            "detail": "업력 허용 (10년미만)"
-          },
-          "exclude_target": {
-            "pass": true,
-            "value": "예비창업자",
-            "detail": "자격 제한 없음"
-          },
-          "industry": {
-            "pass": false,
-            "detail": "업종 한정 (의료)"
-          },
-          "qualification": {
-            "pass": true,
-            "detail": "자격 제한 없음"
-          },
-          "stage": {
-            "pass": true,
-            "detail": "업력 허용 (10년미만)"
-          },
-          "nature": {
-            "pass": true,
-            "detail": "직접 자금성 (사업화)"
-          },
-          "region_keyword": {
-            "pass": true,
-            "detail": "지역 허용 (structured=전국)"
-          },
-          "positive_hit": {
-            "pass": true,
-            "detail": "structured 완전 매칭 (전국/사업화)"
-          }
-        },
-        "risk_flags": [],
-        "axis_scores": {
-          "region": {
-            "level": "green",
-            "detail": "지역 허용 (structured=전국)"
-          },
-          "stage": {
-            "level": "green",
-            "detail": "업력 허용 (10년미만)"
-          },
-          "industry": {
-            "level": "orange",
-            "detail": "업종 한정 (의료)"
-          },
-          "nature": {
-            "level": "green",
-            "detail": "직접 자금성 (사업화)"
-          },
-          "qualification": {
-            "level": "green",
-            "detail": "자격 제한 없음"
-          }
-        },
-        "exclusion_flags": [
-          {
-            "axis": "industry",
-            "severity": "high",
-            "msg": "업종 한정 (의료)"
-          }
-        ],
-        "audit_flags": [],
-        "tier_logic": "3순위 (조건 충족하나 일부 축 제약): structured 완전 매칭 (전국/사업화)",
-        "classify_version": "v8.3"
-      },
-      "first_seen": "2026-10-15",
-      "last_seen": "2026-10-22",
-      "structured": {
-        "pbanc_sn_int": 179501,
-        "integrated": false,
-        "recruiting": true,
-        "start_date": "2026-10-13",
-        "end_date": "2026-10-22",
-        "agency_type": "민간",
-        "biz_class": "사업화",
-        "region": "전국",
-        "biz_enyy": "10년미만",
-        "age_range": "만 20세 미만,만 20세 이상 ~ 만 39세 이하,만 40세 이상",
-        "apply_target": "청소년,대학생,일반인,대학,연구기관,일반기업,1인 창조기업",
-        "apply_target_desc": "- 신청 대상 : 사회서비스 분야 기업\r\n*사회서비스 분야 : 복지, 보건·의료, 교육, 고용, 주거, 문화, 환경",
-        "exclude_target": "예비창업자",
-        "preferential": "",
-        "content": "안녕하세요. 중앙사회서비스원입니다.\r\n「2026년 제3회 사회서비스 투자 교류회」 가 2026년 11월 17일(화) 창원컨벤션센터 600홀에서 개최됩니다.\r\n\r\n보건복지부와 중앙사회서비스원, 그리고 엠와이소셜컴퍼니가 함께하는 사회서비스 투자 교류회는\r\n사회서비스 기업의 투자 유치 기회를 확대하고, 유관기관과의 교류를 통해 협업·실증을 논의하는 연결의 장입니다.\r\n\r\n올해의 마지막 교류회(누적 15회)는 지역에서의 돌봄 기술 확산을 위해 경상남도에서 개최되며, \r\n경상남도사회서비스원과 함께합니다.\r\n\r\n관련하여 우수한 돌봄 기술과 성장 가능성을 가진 사회서비스 기업과,\r\n행사 참석을 통한 교류 및 사업 연계를 희망하는 유관기관 관계자분들을 모집하오니\r\n많은 관심과 신청 부탁드립니다.",
-        "integrated_name": "[중앙사회서비스원] 2026년 제3회 사회서비스 투자교류회",
-        "apply_online": "https://ema.kr/388",
-        "apply_guide": "ema.kr/388"
-      }
-    },
-    {
-      "pbancSn": "179504",
-      "title": "제3회 판다밋업 : Inside Japan 제약·바이오·의료기기 가치사슬 기반 일본 진출 전략",
-      "agency": "경기도 4차산업혁명센터",
-      "deadline": "2026-10-22",
-      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179504",
-      "tier": "orange",
-      "note": "검토 매칭 (전국/글로벌)",
-      "classify_evidence": {
-        "summary_reason": "검토 매칭 (전국/글로벌)",
-        "category_hints": [
-          "global"
-        ],
-        "rule_checks": {
-          "recruiting": {
-            "pass": true,
-            "value": "True",
-            "detail": "모집 중"
-          },
-          "deadline": {
-            "pass": true,
-            "value": "2026-10-22",
-            "detail": "마감 전"
-          },
-          "region": {
-            "pass": true,
-            "value": "전국",
-            "detail": "지역 허용 (structured=전국)"
-          },
-          "biz_enyy": {
-            "pass": true,
-            "value": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
-            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
-          },
-          "exclude_target": {
-            "pass": true,
-            "value": "",
-            "detail": "자격 제한 없음"
-          },
-          "industry": {
-            "pass": false,
-            "detail": "업종 한정 (바이오)"
-          },
-          "qualification": {
-            "pass": true,
-            "detail": "자격 제한 없음"
-          },
-          "stage": {
-            "pass": true,
-            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
-          },
-          "nature": {
-            "pass": true,
-            "detail": "간접 지원성 (글로벌)"
-          },
-          "region_keyword": {
-            "pass": true,
-            "detail": "지역 허용 (structured=전국)"
-          },
-          "positive_hit": {
-            "pass": false,
-            "detail": "검토 매칭 (전국/글로벌)"
-          }
-        },
-        "risk_flags": [],
-        "axis_scores": {
-          "region": {
-            "level": "green",
-            "detail": "지역 허용 (structured=전국)"
-          },
-          "stage": {
-            "level": "green",
-            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
-          },
-          "industry": {
-            "level": "orange",
-            "detail": "업종 한정 (바이오)"
-          },
-          "nature": {
-            "level": "yellow",
-            "detail": "간접 지원성 (글로벌)"
-          },
-          "qualification": {
-            "level": "green",
-            "detail": "자격 제한 없음"
-          }
-        },
-        "exclusion_flags": [
-          {
-            "axis": "industry",
-            "severity": "high",
-            "msg": "업종 한정 (바이오)"
-          }
-        ],
-        "audit_flags": [],
-        "tier_logic": "3순위 (아이디어·우회 가능): 검토 매칭 (전국/글로벌)",
-        "classify_version": "v8.3"
-      },
-      "first_seen": "2026-10-16",
-      "last_seen": "2026-10-22",
-      "structured": {
-        "pbanc_sn_int": 179504,
-        "integrated": false,
-        "recruiting": true,
-        "start_date": "2026-10-13",
-        "end_date": "2026-10-22",
-        "agency_type": "공공기관",
-        "biz_class": "글로벌",
-        "region": "전국",
-        "biz_enyy": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
-        "age_range": "만 20세 미만,만 20세 이상 ~ 만 39세 이하,만 40세 이상",
-        "apply_target": "청소년,대학생,일반인,대학,연구기관,일반기업,1인 창조기업",
-        "apply_target_desc": "✅글로벌 제약·바이오 시장 진출을 앞둔 스타트업 등\r\n✅관련 분야 기업, 연구원 및 유관기관 관계자",
-        "exclude_target": "",
-        "preferential": "",
-        "content": "경기도 4차산업혁명센터는 제약·바이오 가치사슬을 기반으로 일본 시장을 중심으로 한 글로벌 진출 전략을 공유하는「제3회 판(교에서)다(보스를 만나다) 밋업」을 개최합니다.\r\n본 행사는 제약·바이오 분야 기업의 일본 시장에 대한 이해를 높이고, 기업별 특성에 맞는 시장 진출 및 안착 전략을 모색하기 위해 마련되었습니다.\r\n관심 있는 기업 및 관계자 여러분의 많은 참여를 부탁드립니다.",
-        "integrated_name": "제3회 판다밋업 : Inside Japan 제약·바이오·의료기기 가치사슬 기반 일본 진출 전략",
-        "apply_online": "https://docs.google.com/forms/d/e/1FAIpQLSfCnU_SQaJiKytbIIfieUihDxs-bdzf5iRNMD3Dg2XMEN7TDw/viewform",
-        "apply_guide": "egbiz.or.kr/pd/57335.do"
-      }
     },
     {
       "pbancSn": "179338",
@@ -13695,7 +12629,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179338,
         "integrated": false,
@@ -13821,7 +12755,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179381,
         "integrated": true,
@@ -13942,7 +12876,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-07",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179416,
         "integrated": false,
@@ -14009,7 +12943,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11188",
@@ -14118,7 +13052,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-13",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179477,
         "integrated": false,
@@ -14247,7 +13181,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-15",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179496,
         "integrated": false,
@@ -14379,7 +13313,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-16",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179519,
         "integrated": false,
@@ -14500,7 +13434,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-16",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179518,
         "integrated": false,
@@ -14619,7 +13553,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-16",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179516,
         "integrated": true,
@@ -14744,7 +13678,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-16",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179467,
         "integrated": false,
@@ -14863,7 +13797,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-21",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 177421,
         "integrated": false,
@@ -14982,7 +13916,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-15",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179480,
         "integrated": false,
@@ -15101,7 +14035,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179211,
         "integrated": false,
@@ -15222,7 +14156,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179366,
         "integrated": false,
@@ -15349,7 +14283,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-17",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179529,
         "integrated": false,
@@ -15468,7 +14402,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179012,
         "integrated": false,
@@ -15587,7 +14521,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-08",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179440,
         "integrated": false,
@@ -15713,7 +14647,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-22",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179560,
         "integrated": false,
@@ -15834,7 +14768,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-07-22",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 178597,
         "integrated": false,
@@ -15966,7 +14900,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-09",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179171,
         "integrated": false,
@@ -16090,7 +15024,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-07",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179420,
         "integrated": true,
@@ -16224,7 +15158,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-13",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179465,
         "integrated": false,
@@ -16357,7 +15291,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-14",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179459,
         "integrated": false,
@@ -16479,7 +15413,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-16",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179527,
         "integrated": false,
@@ -16546,7 +15480,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-10-19",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11210",
@@ -16655,7 +15589,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-22",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179574,
         "integrated": false,
@@ -16782,7 +15716,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-22",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179506,
         "integrated": false,
@@ -16903,7 +15837,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179360,
         "integrated": true,
@@ -17030,7 +15964,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-07",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179431,
         "integrated": false,
@@ -17155,7 +16089,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-07",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179421,
         "integrated": true,
@@ -17279,7 +16213,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-16",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179511,
         "integrated": false,
@@ -17401,7 +16335,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-17",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179535,
         "integrated": false,
@@ -17520,7 +16454,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-22",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179581,
         "integrated": false,
@@ -17642,7 +16576,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-09",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179428,
         "integrated": true,
@@ -17761,7 +16695,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-13",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179476,
         "integrated": true,
@@ -17882,7 +16816,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-13",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179473,
         "integrated": false,
@@ -18019,7 +16953,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-13",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179463,
         "integrated": true,
@@ -18158,7 +17092,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-15",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179495,
         "integrated": false,
@@ -18287,7 +17221,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-22",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179568,
         "integrated": false,
@@ -18411,7 +17345,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-22",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179566,
         "integrated": true,
@@ -18530,7 +17464,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-22",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179564,
         "integrated": false,
@@ -18659,7 +17593,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-05-09",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 177466,
         "integrated": false,
@@ -18780,7 +17714,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-06-26",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 178247,
         "integrated": false,
@@ -18901,7 +17835,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-07-17",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 178408,
         "integrated": false,
@@ -18968,7 +17902,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-07-29",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11014",
@@ -19079,7 +18013,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-09",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179132,
         "integrated": false,
@@ -19208,7 +18142,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-23",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179175,
         "integrated": false,
@@ -19329,7 +18263,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179281,
         "integrated": false,
@@ -19450,7 +18384,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-07",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179419,
         "integrated": false,
@@ -19584,7 +18518,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-15",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179500,
         "integrated": false,
@@ -19705,7 +18639,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-15",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179491,
         "integrated": false,
@@ -19826,7 +18760,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-15",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179444,
         "integrated": false,
@@ -20146,7 +19080,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 176190,
         "integrated": false,
@@ -20272,7 +19206,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-06-09",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 177899,
         "integrated": false,
@@ -20339,7 +19273,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-08-31",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11096",
@@ -20446,7 +19380,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-09",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179173,
         "integrated": false,
@@ -20573,7 +19507,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-22",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179301,
         "integrated": false,
@@ -20700,7 +19634,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179382,
         "integrated": false,
@@ -20821,7 +19755,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-03",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179392,
         "integrated": false,
@@ -20954,7 +19888,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-13",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179478,
         "integrated": false,
@@ -21075,7 +20009,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-13",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179470,
         "integrated": false,
@@ -21194,7 +20128,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-13",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179450,
         "integrated": false,
@@ -21315,7 +20249,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-16",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179526,
         "integrated": false,
@@ -21442,7 +20376,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179327,
         "integrated": true,
@@ -21561,7 +20495,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179408,
         "integrated": true,
@@ -21683,7 +20617,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-16",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179525,
         "integrated": false,
@@ -21809,7 +20743,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-17",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179531,
         "integrated": false,
@@ -21931,7 +20865,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-22",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179544,
         "integrated": false,
@@ -21980,7 +20914,7 @@
           "region": {
             "pass": false,
             "value": "전국",
-            "detail": "기관 지역 한정 (agency: 충남신용보증재단)"
+            "detail": "지역 한정 desc: '충청남도 소재'"
           },
           "biz_enyy": {
             "pass": true,
@@ -22010,7 +20944,7 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "기관 지역 한정 (agency: 충남신용보증재단)"
+            "detail": "지역 한정 desc: '충청남도 소재'"
           },
           "positive_hit": {
             "pass": false,
@@ -22021,7 +20955,7 @@
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "기관 지역 한정 (agency: 충남신용보증재단)"
+            "detail": "지역 한정 desc: '충청남도 소재'"
           },
           "stage": {
             "level": "green",
@@ -22044,7 +20978,7 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "기관 지역 한정 (agency: 충남신용보증재단)"
+            "msg": "지역 한정 desc: '충청남도 소재'"
           }
         ],
         "audit_flags": [],
@@ -22052,7 +20986,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-16",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179522,
         "integrated": false,
@@ -22171,7 +21105,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-17",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179538,
         "integrated": false,
@@ -22298,7 +21232,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-13",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179472,
         "integrated": true,
@@ -22417,7 +21351,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-17",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179536,
         "integrated": true,
@@ -22549,7 +21483,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-22",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179570,
         "integrated": false,
@@ -22668,7 +21602,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 176378,
         "integrated": false,
@@ -22794,7 +21728,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-09",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179447,
         "integrated": false,
@@ -22922,7 +21856,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-18",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179251,
         "integrated": false,
@@ -23041,7 +21975,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-13",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179455,
         "integrated": false,
@@ -23165,7 +22099,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-17",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179520,
         "integrated": false,
@@ -23284,7 +22218,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-21",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179554,
         "integrated": false,
@@ -23405,7 +22339,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-21",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179543,
         "integrated": false,
@@ -23524,7 +22458,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-22",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179590,
         "integrated": true,
@@ -23649,7 +22583,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-22",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179565,
         "integrated": false,
@@ -23770,7 +22704,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-13",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179458,
         "integrated": false,
@@ -23903,7 +22837,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-14",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179486,
         "integrated": false,
@@ -24029,7 +22963,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-17",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179533,
         "integrated": false,
@@ -24096,7 +23030,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-09-23",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11148",
@@ -24156,7 +23090,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11162",
@@ -24269,7 +23203,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-15",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179497,
         "integrated": false,
@@ -24298,9 +23232,9 @@
       "deadline": "2026-11-13",
       "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179552",
       "tier": "orange",
-      "note": "3순위 (참고용): 기관 지역 한정 (agency: 경남지방중소벤처기업청)",
+      "note": "3순위 (참고용): 지역 한정 desc: '경상남도 소재'",
       "classify_evidence": {
-        "summary_reason": "3순위 (참고용): 기관 지역 한정 (agency: 경남지방중소벤처기업청)",
+        "summary_reason": "3순위 (참고용): 지역 한정 desc: '경상남도 소재'",
         "category_hints": [
           "ai"
         ],
@@ -24318,7 +23252,7 @@
           "region": {
             "pass": false,
             "value": "경남",
-            "detail": "기관 지역 한정 (agency: 경남지방중소벤처기업청)"
+            "detail": "지역 한정 desc: '경상남도 소재'"
           },
           "biz_enyy": {
             "pass": true,
@@ -24348,18 +23282,18 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "기관 지역 한정 (agency: 경남지방중소벤처기업청)"
+            "detail": "지역 한정 desc: '경상남도 소재'"
           },
           "positive_hit": {
             "pass": false,
-            "detail": "3순위 (참고용): 기관 지역 한정 (agency: 경남지방중소벤처기업청)"
+            "detail": "3순위 (참고용): 지역 한정 desc: '경상남도 소재'"
           }
         },
         "risk_flags": [],
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "기관 지역 한정 (agency: 경남지방중소벤처기업청)"
+            "detail": "지역 한정 desc: '경상남도 소재'"
           },
           "stage": {
             "level": "green",
@@ -24382,7 +23316,7 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "기관 지역 한정 (agency: 경남지방중소벤처기업청)"
+            "msg": "지역 한정 desc: '경상남도 소재'"
           },
           {
             "axis": "industry",
@@ -24391,11 +23325,11 @@
           }
         ],
         "audit_flags": [],
-        "tier_logic": "3순위 (참고용): 기관 지역 한정 (agency: 경남지방중소벤처기업청)",
+        "tier_logic": "3순위 (참고용): 지역 한정 desc: '경상남도 소재'",
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-21",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179552,
         "integrated": false,
@@ -24416,7 +23350,7 @@
         "apply_online": "http://forms.gle/9jDmZDob7Tq8yFjY9",
         "apply_guide": "forms.gle/9jDmZDob7Tq8yFjY9"
       },
-      "last_changed_at": "2026-10-22"
+      "last_changed_at": "2026-10-23"
     },
     {
       "pbancSn": "179582",
@@ -24523,7 +23457,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-22",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179582,
         "integrated": true,
@@ -24644,7 +23578,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-21",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179555,
         "integrated": true,
@@ -24763,7 +23697,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 176406,
         "integrated": false,
@@ -24887,7 +23821,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-21",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179558,
         "integrated": false,
@@ -25014,7 +23948,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 176755,
         "integrated": false,
@@ -25139,7 +24073,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179348,
         "integrated": false,
@@ -25258,7 +24192,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 176494,
         "integrated": false,
@@ -25377,7 +24311,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 176782,
         "integrated": false,
@@ -25504,7 +24438,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 176316,
         "integrated": false,
@@ -25635,7 +24569,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 176248,
         "integrated": true,
@@ -25756,7 +24690,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 176090,
         "integrated": false,
@@ -25884,7 +24818,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-06-09",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 177681,
         "integrated": false,
@@ -26011,7 +24945,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179024,
         "integrated": false,
@@ -26132,7 +25066,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179184,
         "integrated": false,
@@ -26269,7 +25203,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179386,
         "integrated": false,
@@ -26390,7 +25324,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-09",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179417,
         "integrated": false,
@@ -26457,7 +25391,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-07-02",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "10915",
@@ -26566,7 +25500,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-07",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 178802,
         "integrated": false,
@@ -26626,7 +25560,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "note": "3순위 (참고용): 서울 시설/지자체 (서울창업허브)",
       "connect": "",
       "classify_evidence": {
@@ -26828,7 +25762,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-07-10",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 178453,
         "integrated": true,
@@ -26960,7 +25894,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-06-03",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 177922,
         "integrated": false,
@@ -27021,7 +25955,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "note": "3순위 (참고용): 지자체 기관 의심 (창업보육센터: 남서울대학교 창업보육센터)",
       "connect": "",
       "classify_evidence": {
@@ -27164,7 +26098,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "note": "3순위 (참고용): 지자체 기관 의심 (재단법인 접두사: (재)충북과학기술혁신원장)",
       "connect": "",
       "classify_evidence": {
@@ -27299,7 +26233,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "note": "검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)",
       "connect": "",
       "classify_evidence": {
@@ -27432,7 +26366,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "note": "3순위 (참고용): 기관 지역 한정 (agency: 대구노동권익센터)",
       "connect": "",
       "classify_evidence": {
@@ -27562,7 +26496,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "note": "3순위 (참고용): 지자체 기관 의심 (재단법인 접두사: (재)창원산업진흥원)",
       "connect": "",
       "classify_evidence": {
@@ -27695,7 +26629,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "note": "3순위 (참고용): 기관 지역 한정 (agency: (사)부산경영자총협회)",
       "connect": "",
       "classify_evidence": {
@@ -27833,7 +26767,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "note": "3순위 (참고용): 기관 지역 한정 (agency: 대구노동권익센터)",
       "connect": "",
       "classify_evidence": {
@@ -28030,7 +26964,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 176856,
         "integrated": false,
@@ -28151,7 +27085,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 176855,
         "integrated": false,
@@ -28270,7 +27204,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 176810,
         "integrated": false,
@@ -28389,7 +27323,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 176741,
         "integrated": false,
@@ -28510,7 +27444,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 176739,
         "integrated": false,
@@ -28629,7 +27563,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 176566,
         "integrated": false,
@@ -28752,7 +27686,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 176563,
         "integrated": false,
@@ -28873,7 +27807,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 176497,
         "integrated": true,
@@ -29007,7 +27941,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 176442,
         "integrated": false,
@@ -29140,7 +28074,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 176224,
         "integrated": false,
@@ -29272,7 +28206,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 175849,
         "integrated": true,
@@ -29404,7 +28338,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 173424,
         "integrated": false,
@@ -29532,7 +28466,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-05-29",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 177837,
         "integrated": false,
@@ -29651,7 +28585,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-06-09",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 178017,
         "integrated": true,
@@ -29772,7 +28706,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-06-13",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 178113,
         "integrated": false,
@@ -29902,7 +28836,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-06-16",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 177957,
         "integrated": false,
@@ -30039,7 +28973,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-06-18",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 177970,
         "integrated": false,
@@ -30160,7 +29094,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-06-23",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 178214,
         "integrated": true,
@@ -30286,7 +29220,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-07-10",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 178445,
         "integrated": false,
@@ -30407,7 +29341,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-07-11",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 178489,
         "integrated": false,
@@ -30541,7 +29475,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-07-17",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 178527,
         "integrated": true,
@@ -30663,7 +29597,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-07-22",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 177432,
         "integrated": false,
@@ -30786,7 +29720,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-14",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 178835,
         "integrated": false,
@@ -30912,7 +29846,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179018,
         "integrated": false,
@@ -31033,7 +29967,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-08-28",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 178990,
         "integrated": false,
@@ -31152,7 +30086,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-09",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179115,
         "integrated": false,
@@ -31278,7 +30212,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-09-16",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179258,
         "integrated": false,
@@ -31339,7 +30273,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "note": "검토 매칭 (TIPS)",
       "connect": "",
       "classify_evidence": {
@@ -31362,7 +30296,7 @@
           "region": {
             "pass": false,
             "value": "경남",
-            "detail": "사업명에 지역 포함 (경남)"
+            "detail": "지역 한정 desc: '경상남도 소재'"
           },
           "biz_enyy": {
             "pass": true,
@@ -31392,7 +30326,7 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "사업명에 지역 포함 (경남)"
+            "detail": "지역 한정 desc: '경상남도 소재'"
           },
           "positive_hit": {
             "pass": true,
@@ -31403,7 +30337,7 @@
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "사업명에 지역 포함 (경남)"
+            "detail": "지역 한정 desc: '경상남도 소재'"
           },
           "stage": {
             "level": "green",
@@ -31426,7 +30360,7 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "사업명에 지역 포함 (경남)"
+            "msg": "지역 한정 desc: '경상남도 소재'"
           },
           {
             "axis": "industry",
@@ -31553,7 +30487,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 176085,
         "integrated": false,
@@ -31675,7 +30609,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-04-30",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 175817,
         "integrated": false,
@@ -31795,7 +30729,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-22",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 179577,
         "integrated": false,
@@ -31914,7 +30848,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-06-05",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 177944,
         "integrated": false,
@@ -32033,7 +30967,7 @@
         "classify_version": "v8.3"
       },
       "first_seen": "2026-05-05",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "structured": {
         "pbanc_sn_int": 177493,
         "integrated": false,
@@ -32095,7 +31029,7 @@
       "nogo_match": false,
       "source_priority": 2,
       "first_seen": "2026-04-28",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "note": "3순위 (참고용): 사업명에 지역 포함 (부산)",
       "connect": "",
       "classify_evidence": {
@@ -32199,57 +31133,33 @@
     }
   ],
   "_meta": {
-    "expired": [],
-    "new_added": [
-      "2026 논산시 사회적경제 창업 아카데미 참여자 모집",
-      "구로구 청년창업지원센터 일반 창업교육(하반기: 6회차): 발표평가 자료 작성 및 발표 요령",
-      "[서초창업스테이션] 서리풀 소상공인 창업 클리닉(11월) - 소상공인 1:1 컨설팅",
-      "2026년 제4차 관악S밸리 창업 공간 신규 입주기업 모집 공고",
-      "2026 초격차 클리마 데이 (Clima Day) 행사 개최 안내",
-      "[롯데벤처스] LOTTE OPEN INNOVATION DAY 참관객 모집",
-      "2026 TIPS SSU Final IR Day",
-      "[LH한국토지주택공사] 판교제2테크노밸리 기업지원허브 업무지원시설(지상 1층 115호실) 임대공급 공고",
-      "2026 관광기업 동반성장 기술역량 강화교육",
-      "제11회 소상공인 쇼케이스데이 결선 참관객 모집",
+    "expired": [
+      "[ 모 집 ] GVC AI Platform Startup Enabling Program 및 스마트워크·쇼핑몰 창업지원 및 AI 전환 지원",
+      "2026년 강북창업지원센터 10월 창업 교육 및 그룹상담 프로그램 참가자 모집",
+      "[강동구 청년해냄센터] 2026 모의창업스쿨 2차 교육 참가자 모집 공고",
       "[온라인·무료] 코딩·사업자 없이 여는 내 강의·전자책 판매 사이트",
-      "대구콘텐츠기업지원센터 2026년 3차 입주기업 모집",
-      "COMEUP 2026 사전 오프라인 행사 '스타트업 커리어 TALK'",
-      "2026년도 투자기업 발굴 플랫폼 빅웨이브(BiiG WAVE) IR사업 3회차 초격차 분야 IR 참여기업 모집공고",
-      "DB손해보험 X 건국대학교 2026 DB KU Startup Match 프로그램 참가기업 모집",
-      "기업 판로 지원 프로그램 수혜기업 모집(~10/29)",
-      "2026 의왕시 청년e-Room 창업아이디어 공모전 참가자 모집",
-      "TIPS · LIPS를 준비하는 스타트업을 위한 IR 전략 - 제10차 DDM 벤처스타트업 아카데미",
-      "2026 서울창업허브 창동 데모데이 참관 신청",
-      "「2026 기업지원실 운영」 지역 환경기업 육성 프로그램 참여기업 수정 모집공고",
-      "[2026 에코스타트업 Green IR DAY] 참관 신청",
-      "[ICT창업트랙] AI를 활용한 창업팀의 일하는 방식",
-      "ENSL TECH LAB 13th 모집",
-      "2026 문화예술 창업교육의 모든 것.zip 2기 참여자 모집"
+      "마포비즈니스센터 4차 신규입주기업 모집",
+      "2026 신한퓨처스랩 스타트업 성장 포럼 &apos;인사이트랩(Insight Lab)&apos; 참관 기업 모집",
+      "쇼미더임팩트 시즌6 참가자 모집 [IMPACT IR 경연대회]",
+      "[중앙사회서비스원] 2026년 제3회 사회서비스 투자교류회",
+      "제3회 판다밋업 : Inside Japan 제약·바이오·의료기기 가치사슬 기반 일본 진출 전략"
     ],
+    "new_added": [],
     "updated_today": [
       "AI 활용 소상공인 및 전통시장 매니저  실무 역량 과정 참가자 모집"
     ],
     "stats": {
-      "green": 27,
-      "yellow": 72,
-      "orange": 156,
+      "green": 26,
+      "yellow": 67,
+      "orange": 153,
       "red_excluded": 0,
-      "expired_removed": 0,
-      "total_pool": 255,
-      "rss_total": 231,
-      "raw_fetched": 85
+      "expired_removed": 9,
+      "total_pool": 246,
+      "rss_total": 222,
+      "raw_fetched": 79
     }
   },
   "history": [
-    {
-      "date": "2026-09-22",
-      "at_kst": "2026-09-22T22:57:45+09:00",
-      "new": 47,
-      "updated": 0,
-      "expired": 0,
-      "total": 1850,
-      "red_excluded": 0
-    },
     {
       "date": "2026-09-23",
       "at_kst": "2026-09-23T23:09:37+09:00",
@@ -32518,6 +31428,15 @@
       "updated": 1,
       "expired": 0,
       "total": 255,
+      "red_excluded": 0
+    },
+    {
+      "date": "2026-10-23",
+      "at_kst": "2026-10-23T04:39:37+09:00",
+      "new": 0,
+      "updated": 1,
+      "expired": 9,
+      "total": 246,
       "red_excluded": 0
     }
   ]
