@@ -1,7 +1,7 @@
 {
   "schema_version": 5,
   "last_updated": "2026-10-24",
-  "updated_at_kst": "2026-10-24T04:45:58+09:00",
+  "updated_at_kst": "2026-10-24T22:10:35+09:00",
   "red_count_today": 0,
   "reds_today": [
     {
@@ -19456,7 +19456,7 @@
           "region": {
             "pass": false,
             "value": "전국",
-            "detail": "기관 지역 한정 (agency: 충남신용보증재단)"
+            "detail": "지역 한정 desc: '충청남도 소재'"
           },
           "biz_enyy": {
             "pass": true,
@@ -19486,7 +19486,7 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "기관 지역 한정 (agency: 충남신용보증재단)"
+            "detail": "지역 한정 desc: '충청남도 소재'"
           },
           "positive_hit": {
             "pass": false,
@@ -19497,7 +19497,7 @@
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "기관 지역 한정 (agency: 충남신용보증재단)"
+            "detail": "지역 한정 desc: '충청남도 소재'"
           },
           "stage": {
             "level": "green",
@@ -19520,7 +19520,7 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "기관 지역 한정 (agency: 충남신용보증재단)"
+            "msg": "지역 한정 desc: '충청남도 소재'"
           }
         ],
         "audit_flags": [],
@@ -22412,9 +22412,9 @@
       "deadline": "2026-11-13",
       "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179552",
       "tier": "orange",
-      "note": "3순위 (참고용): 기관 지역 한정 (agency: 경남지방중소벤처기업청)",
+      "note": "3순위 (참고용): 지역 한정 desc: '경상남도 소재'",
       "classify_evidence": {
-        "summary_reason": "3순위 (참고용): 기관 지역 한정 (agency: 경남지방중소벤처기업청)",
+        "summary_reason": "3순위 (참고용): 지역 한정 desc: '경상남도 소재'",
         "category_hints": [
           "ai"
         ],
@@ -22432,7 +22432,7 @@
           "region": {
             "pass": false,
             "value": "경남",
-            "detail": "기관 지역 한정 (agency: 경남지방중소벤처기업청)"
+            "detail": "지역 한정 desc: '경상남도 소재'"
           },
           "biz_enyy": {
             "pass": true,
@@ -22462,18 +22462,18 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "기관 지역 한정 (agency: 경남지방중소벤처기업청)"
+            "detail": "지역 한정 desc: '경상남도 소재'"
           },
           "positive_hit": {
             "pass": false,
-            "detail": "3순위 (참고용): 기관 지역 한정 (agency: 경남지방중소벤처기업청)"
+            "detail": "3순위 (참고용): 지역 한정 desc: '경상남도 소재'"
           }
         },
         "risk_flags": [],
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "기관 지역 한정 (agency: 경남지방중소벤처기업청)"
+            "detail": "지역 한정 desc: '경상남도 소재'"
           },
           "stage": {
             "level": "green",
@@ -22496,7 +22496,7 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "기관 지역 한정 (agency: 경남지방중소벤처기업청)"
+            "msg": "지역 한정 desc: '경상남도 소재'"
           },
           {
             "axis": "industry",
@@ -22505,7 +22505,7 @@
           }
         ],
         "audit_flags": [],
-        "tier_logic": "3순위 (참고용): 기관 지역 한정 (agency: 경남지방중소벤처기업청)",
+        "tier_logic": "3순위 (참고용): 지역 한정 desc: '경상남도 소재'",
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-21",
@@ -22530,7 +22530,7 @@
         "apply_online": "http://forms.gle/9jDmZDob7Tq8yFjY9",
         "apply_guide": "forms.gle/9jDmZDob7Tq8yFjY9"
       },
-      "last_changed_at": "2026-10-23"
+      "last_changed_at": "2026-10-24"
     },
     {
       "pbancSn": "179582",
@@ -29605,7 +29605,7 @@
           "region": {
             "pass": false,
             "value": "경남",
-            "detail": "사업명에 지역 포함 (경남)"
+            "detail": "지역 한정 desc: '경상남도 소재'"
           },
           "biz_enyy": {
             "pass": true,
@@ -29635,7 +29635,7 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "사업명에 지역 포함 (경남)"
+            "detail": "지역 한정 desc: '경상남도 소재'"
           },
           "positive_hit": {
             "pass": true,
@@ -29646,7 +29646,7 @@
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "사업명에 지역 포함 (경남)"
+            "detail": "지역 한정 desc: '경상남도 소재'"
           },
           "stage": {
             "level": "green",
@@ -29669,7 +29669,7 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "사업명에 지역 포함 (경남)"
+            "msg": "지역 한정 desc: '경상남도 소재'"
           },
           {
             "axis": "industry",
@@ -30442,37 +30442,17 @@
     }
   ],
   "_meta": {
-    "expired": [
-      "2026년 초기창업패키지 로켓십 IR 경진대회 참가기업 모집 (3회차: 기후·ESG)",
-      "2026년 스마트 혁신가전 유공자 포상 모집",
-      "2026년 하반기 남동구 청년창업지원센터 입주기업 모집 공고",
-      "2026년 위치정보 보호조치 교육 (6차)",
-      "[서초창업스테이션] 10월 1:1 전문 분야 컨설팅 - 지식재산권/특허 전략, 브랜딩 전략",
-      "[광운대x동국대x시립대 캠퍼스타운] AI+X Connect Forum",
-      "Tech Discovery 실험실창업 경진대회 참가자 모집",
-      "2026년 제2차 대전센터 여성BI 입주기업 모집공고",
-      "[ 칠곡군 중장년 기술창업센터]제3차  Pre-인큐베이팅 창업교육 수강생 모집",
-      "경기창업혁신공간 서부권 「스담스담」(오픈 네트워킹) 3회차",
-      "2026 제약바이오 투자대전(투자유치·수출 상담회) 참가 모집",
-      "2027년 K-water 해외시장개척단 참여기업 모집 공고",
-      "2026년 나주형 청년 에너지 창업 사관학교(직·주·락·비) 사업 1차 수행기업 모집",
-      "[서울과학기술대학교] SLA3D프린터 장비교육",
-      "2026-9회 충청권 엔젤투자 피칭룸 프로그램 참가기업 모집",
-      "2026년 G-Bridge 레전드 액셀러레이팅 패키지 프로그램",
-      "2026년 영등포구 소상공인 디지털 전환교육 교육생 모집"
-    ],
-    "new_added": [
-      "「인천혁신모펀드 제6호」2차 출자사업(일반출자) 공고"
-    ],
+    "expired": [],
+    "new_added": [],
     "updated_today": [
-      "기업 판로 지원 프로그램 수혜기업 모집(~10/29)"
+      "AI 활용 소상공인 및 전통시장 매니저  실무 역량 과정 참가자 모집"
     ],
     "stats": {
       "green": 26,
       "yellow": 62,
       "orange": 152,
       "red_excluded": 0,
-      "expired_removed": 17,
+      "expired_removed": 0,
       "total_pool": 240,
       "rss_total": 216,
       "raw_fetched": 73
@@ -30751,10 +30731,10 @@
     },
     {
       "date": "2026-10-24",
-      "at_kst": "2026-10-24T04:45:58+09:00",
-      "new": 1,
+      "at_kst": "2026-10-24T22:10:35+09:00",
+      "new": 0,
       "updated": 1,
-      "expired": 17,
+      "expired": 0,
       "total": 240,
       "red_excluded": 0
     }
