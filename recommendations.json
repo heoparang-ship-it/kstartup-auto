@@ -1,7 +1,7 @@
 {
   "schema_version": 5,
   "last_updated": "2026-10-25",
-  "updated_at_kst": "2026-10-25T03:30:12+09:00",
+  "updated_at_kst": "2026-10-25T22:38:58+09:00",
   "red_count_today": 0,
   "reds_today": [
     {
@@ -2568,7 +2568,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-10-19",
-      "last_seen": "2026-10-24",
+      "last_seen": "2026-10-25",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11213",
@@ -2626,7 +2626,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-10-14",
-      "last_seen": "2026-10-24",
+      "last_seen": "2026-10-25",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11194",
@@ -2982,7 +2982,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-24",
+      "last_seen": "2026-10-25",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11163",
@@ -3037,7 +3037,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-10-21",
-      "last_seen": "2026-10-24",
+      "last_seen": "2026-10-25",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11222",
@@ -3575,7 +3575,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-10-15",
-      "last_seen": "2026-10-24",
+      "last_seen": "2026-10-25",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11200",
@@ -3747,7 +3747,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-10-23",
-      "last_seen": "2026-10-24",
+      "last_seen": "2026-10-25",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11230",
@@ -13404,7 +13404,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-10-19",
-      "last_seen": "2026-10-24",
+      "last_seen": "2026-10-25",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11210",
@@ -19213,7 +19213,7 @@
           "region": {
             "pass": false,
             "value": "전국",
-            "detail": "기관 지역 한정 (agency: 충남신용보증재단)"
+            "detail": "지역 한정 desc: '충청남도 소재'"
           },
           "biz_enyy": {
             "pass": true,
@@ -19243,7 +19243,7 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "기관 지역 한정 (agency: 충남신용보증재단)"
+            "detail": "지역 한정 desc: '충청남도 소재'"
           },
           "positive_hit": {
             "pass": false,
@@ -19254,7 +19254,7 @@
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "기관 지역 한정 (agency: 충남신용보증재단)"
+            "detail": "지역 한정 desc: '충청남도 소재'"
           },
           "stage": {
             "level": "green",
@@ -19277,7 +19277,7 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "기관 지역 한정 (agency: 충남신용보증재단)"
+            "msg": "지역 한정 desc: '충청남도 소재'"
           }
         ],
         "audit_flags": [],
@@ -22027,7 +22027,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-24",
+      "last_seen": "2026-10-25",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11162",
@@ -22169,9 +22169,9 @@
       "deadline": "2026-11-13",
       "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179552",
       "tier": "orange",
-      "note": "3순위 (참고용): 지역 한정 desc: '경상남도 소재'",
+      "note": "3순위 (참고용): 기관 지역 한정 (agency: 경남지방중소벤처기업청)",
       "classify_evidence": {
-        "summary_reason": "3순위 (참고용): 지역 한정 desc: '경상남도 소재'",
+        "summary_reason": "3순위 (참고용): 기관 지역 한정 (agency: 경남지방중소벤처기업청)",
         "category_hints": [
           "ai"
         ],
@@ -22189,7 +22189,7 @@
           "region": {
             "pass": false,
             "value": "경남",
-            "detail": "지역 한정 desc: '경상남도 소재'"
+            "detail": "기관 지역 한정 (agency: 경남지방중소벤처기업청)"
           },
           "biz_enyy": {
             "pass": true,
@@ -22219,18 +22219,18 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "지역 한정 desc: '경상남도 소재'"
+            "detail": "기관 지역 한정 (agency: 경남지방중소벤처기업청)"
           },
           "positive_hit": {
             "pass": false,
-            "detail": "3순위 (참고용): 지역 한정 desc: '경상남도 소재'"
+            "detail": "3순위 (참고용): 기관 지역 한정 (agency: 경남지방중소벤처기업청)"
           }
         },
         "risk_flags": [],
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "지역 한정 desc: '경상남도 소재'"
+            "detail": "기관 지역 한정 (agency: 경남지방중소벤처기업청)"
           },
           "stage": {
             "level": "green",
@@ -22253,7 +22253,7 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "지역 한정 desc: '경상남도 소재'"
+            "msg": "기관 지역 한정 (agency: 경남지방중소벤처기업청)"
           },
           {
             "axis": "industry",
@@ -22262,7 +22262,7 @@
           }
         ],
         "audit_flags": [],
-        "tier_logic": "3순위 (참고용): 지역 한정 desc: '경상남도 소재'",
+        "tier_logic": "3순위 (참고용): 기관 지역 한정 (agency: 경남지방중소벤처기업청)",
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-21",
@@ -22287,7 +22287,7 @@
         "apply_online": "http://forms.gle/9jDmZDob7Tq8yFjY9",
         "apply_guide": "forms.gle/9jDmZDob7Tq8yFjY9"
       },
-      "last_changed_at": "2026-10-24"
+      "last_changed_at": "2026-10-25"
     },
     {
       "pbancSn": "179582",
@@ -29362,7 +29362,7 @@
           "region": {
             "pass": false,
             "value": "경남",
-            "detail": "지역 한정 desc: '경상남도 소재'"
+            "detail": "사업명에 지역 포함 (경남)"
           },
           "biz_enyy": {
             "pass": true,
@@ -29392,7 +29392,7 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "지역 한정 desc: '경상남도 소재'"
+            "detail": "사업명에 지역 포함 (경남)"
           },
           "positive_hit": {
             "pass": true,
@@ -29403,7 +29403,7 @@
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "지역 한정 desc: '경상남도 소재'"
+            "detail": "사업명에 지역 포함 (경남)"
           },
           "stage": {
             "level": "green",
@@ -29426,7 +29426,7 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "지역 한정 desc: '경상남도 소재'"
+            "msg": "사업명에 지역 포함 (경남)"
           },
           {
             "axis": "industry",
@@ -30199,18 +30199,17 @@
     }
   ],
   "_meta": {
-    "expired": [
-      "ANTLER | 2026 앤틀러 글로벌 리쿠르팅데이 참가자 모집(10.24.)",
-      "2026 시흥시 청년창업가 네트워킹 행사 참가자  모집"
-    ],
+    "expired": [],
     "new_added": [],
-    "updated_today": [],
+    "updated_today": [
+      "AI 활용 소상공인 및 전통시장 매니저  실무 역량 과정 참가자 모집"
+    ],
     "stats": {
       "green": 26,
       "yellow": 61,
       "orange": 151,
       "red_excluded": 0,
-      "expired_removed": 2,
+      "expired_removed": 0,
       "total_pool": 238,
       "rss_total": 214,
       "raw_fetched": 72
@@ -30489,10 +30488,10 @@
     },
     {
       "date": "2026-10-25",
-      "at_kst": "2026-10-25T03:30:12+09:00",
+      "at_kst": "2026-10-25T22:38:58+09:00",
       "new": 0,
-      "updated": 0,
-      "expired": 2,
+      "updated": 1,
+      "expired": 0,
       "total": 238,
       "red_excluded": 0
     }
