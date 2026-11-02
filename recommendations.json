@@ -1,7 +1,7 @@
 {
   "schema_version": 5,
   "last_updated": "2026-11-03",
-  "updated_at_kst": "2026-11-03T04:17:02+09:00",
+  "updated_at_kst": "2026-11-03T08:16:37+09:00",
   "red_count_today": 0,
   "reds_today": [
     {
@@ -2757,6 +2757,248 @@
       "raw_fetched_at": "2026-10-09"
     },
     {
+      "pbancSn": "179676",
+      "title": "2026 별별상상 스타트업 챌린지",
+      "agency": "주식회사 툰즈",
+      "deadline": "2026-11-08",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179676",
+      "tier": "green",
+      "note": "structured 완전 매칭 (전국/사업화)",
+      "classify_evidence": {
+        "summary_reason": "structured 완전 매칭 (전국/사업화)",
+        "category_hints": [
+          "budget"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "모집 중"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-11-08",
+            "detail": "마감 전"
+          },
+          "region": {
+            "pass": true,
+            "value": "전국",
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "biz_enyy": {
+            "pass": true,
+            "value": "예비창업자,1년미만,2년미만,3년미만",
+            "detail": "업력 허용 (1년미만,2년미만,3년미만,예비창업자)"
+          },
+          "exclude_target": {
+            "pass": true,
+            "value": "",
+            "detail": "자격 제한 없음"
+          },
+          "industry": {
+            "pass": true,
+            "detail": "업종 제한 없음"
+          },
+          "qualification": {
+            "pass": true,
+            "detail": "자격 제한 없음"
+          },
+          "stage": {
+            "pass": true,
+            "detail": "업력 허용 (1년미만,2년미만,3년미만,예비창업자)"
+          },
+          "nature": {
+            "pass": true,
+            "detail": "직접 자금성 (사업화)"
+          },
+          "region_keyword": {
+            "pass": true,
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "positive_hit": {
+            "pass": true,
+            "detail": "structured 완전 매칭 (전국/사업화)"
+          }
+        },
+        "risk_flags": [
+          {
+            "type": "apply_target_narrow",
+            "severity": "med",
+            "msg": "신청 대상 좁음 (대학생)"
+          }
+        ],
+        "axis_scores": {
+          "region": {
+            "level": "green",
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "stage": {
+            "level": "green",
+            "detail": "업력 허용 (1년미만,2년미만,3년미만,예비창업자)"
+          },
+          "industry": {
+            "level": "green",
+            "detail": "업종 제한 없음"
+          },
+          "nature": {
+            "level": "green",
+            "detail": "직접 자금성 (사업화)"
+          },
+          "qualification": {
+            "level": "green",
+            "detail": "자격 제한 없음"
+          }
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "1순위: 5축 모두 green + 강한 긍정 매칭",
+        "classify_version": "v8.3"
+      },
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03",
+      "structured": {
+        "pbanc_sn_int": 179676,
+        "integrated": false,
+        "recruiting": true,
+        "start_date": "2026-11-01",
+        "end_date": "2026-11-08",
+        "agency_type": "민간",
+        "biz_class": "사업화",
+        "region": "전국",
+        "biz_enyy": "예비창업자,1년미만,2년미만,3년미만",
+        "age_range": "만 20세 미만,만 20세 이상 ~ 만 39세 이하,만 40세 이상",
+        "apply_target": "대학생",
+        "apply_target_desc": "전국의 대학생 및 대학원생 누구나 지원 가능",
+        "exclude_target": "",
+        "preferential": "",
+        "content": "국립한국교통대학교 대학일자리개발원 창업지원교육센터에서는 충북의 다양한 자원을 활용한 창업아이디어 발굴 및 구체화 과정을 통해 청년들의 창업역량을 강화하고자 「2026학년도 별별상상 스타트업 챌린지」를 아래와 같이 운영하고자 합니다.",
+        "integrated_name": "2026 별별상상 스타트업 챌린지",
+        "apply_online": "",
+        "apply_guide": "https://www.ut.ac.kr/cop/bbs/BBSMSTR_000000000059/selectBoardArticle.do?nttId=1125705"
+      },
+      "raw_content": "2026 별별상상 스타트업 챌린지\n사업안내 바로가기\n지원분야\n사업화\n대상연령\n전체\n기관구분\n민간\n담당부서\n창업교육팀\n지역\n전국\n접수기간\n2026-11-01 ~ 2026-11-08 23:59\n주관기관명\n주식회사 툰즈\n대상\n대학생\n창업업력\n예비창업자, 1년미만, 2년미만, 3년미만\n연락처\n07077861203\n공고 제 2026-1\n2026 별별상상 스타트업 챌린지\n국립한국교통대학교 대학일자리개발원 창업지원교육센터에서는 충북의 다양한 자원을 활용한 창업아이디어 발굴 및 구체화 과정을 통해 청년들의 창업역량을 강화하고자 「2026학년도 별별상상 스타트업 챌린지」를 아래와 같이 운영하고자 합니다.\n2026년 10월 30일\n주식회사 툰즈\n신청방법 및 대상\n신청기간\n2026.11.01(일) 00:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t~\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t2026.11.08(일) 23:59\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t까지\n신청방법\n이메일 접수 : knut-startup@ut.ac.kr\n신청대상\n전국의 대학생 및 대학원생 누구나 지원 가능\n신청 시 요청하는 정보(개인정보포함)는 사업운영기관에서 관리되오니 이점 반드시 유의하여 주시기 바랍니다.\n제출서류\n제출서류 다운로드방법\n첨부파일 의 제출서류 \"[제출서류] 2026년 별별상상 스타트업 챌린지 참가 신청서\"를 다운로드하시어\n참가신청서, 개인정보제공동의서, 사업계획서, 발표자료(PPT)를  제출바랍니다.\n*발표자료의 경우 자유형식, PDF로 변환 후 제출해주세요.\n경진대회 공고문 링크\nhttps://www.ut.ac.kr/cop/bbs/BBSMSTR_000000000059/selectBoardArticle.do?nttId=1125705\n제출방법\n첨부파일 다운로드 후 제출서류 작성 후 기한 내 이메일 접수 (knut-startup@ut.ac.kr)\n제출하신 서류는 사업운영기관에서 관리되오니 서류 반환 등 문의는 해당 기관으로 하시기 바랍니다.\n선정절차 및 평가방법\n서류심사\n심사일정. 2026.11.09 월요일 서류심사 후 대표자 개별문자안내\n발표평가\n평가일정. 2026.11.13 금요일 13:00 ~ 17:00\n* 평가방법 : 발표자료(PPT)를 활용하여 발표\n* 평가시간 : 발표 5분, 질의응답 5분\n* 심사선정 팀(또는 개인)은 발표평가에 필히 참석해야함\n시상식\n시상일정. 2026.11.13 금요일 발표평가 후 시상\n지원내용\n시상내역\n대 상 / 1팀 / 국립한국교통대학교 총장상\n최우수상 / 2팀 / 충북창조경제혁신센터상\n우수상 / 3팀 / 국립한국교통대학교 대학일자리개발원장상\n문의처\n창업경진대회 문의처\n경진대회 운영사무국(툰즈 메이커스페이스)\n070-7786-1203(운영시간. 10:00 ~ 17:00)\n자세한 내용은 첨부파일 참조 및 문의처로 문의하여 주시기 바랍니다.\nK-Startup에 공고되는 정보는 해당 기관의 요청에 의해 제공됩니다. 입주, 교육, 사업 신청 시 요청하는 정보(개인정보 포함)는 해당 기관에서 관리 \t되오니\n이점 유의하여 주시기 바랍니다.\n첨부파일 일괄 다운로드\n2026학년도 별별상상 스타트업 챌린지 공고문 및 양식.hwp\n바로보기\n다운로드\n2026학년도 별별상상 스타트업 챌린지 공고문 및 양식.pdf\n바로보기\n다운로드\n2026학년도 별별상상 스타트업 챌린지_참가신청서.pdf\n바로보기\n다운로드\n2026학년도 별별상상 스타트업 챌린지_참가신청서.hwpx\n바로보기\n다운로드\n별별상상.png\n바로보기\n다운로드\n별별상상_포스터_내용.txt\n바로보기\n다운로드\n본 저작물은 창업진흥원(K-Startup)이 게시한 공공누리 제1유형의 저작물이며, 공공데이터포털(www.data.go.kr)에서 공공데이터로 개방중이며 무료로 활용할 수 있습니다.\n목록",
+      "raw_fetched_at": "2026-11-03"
+    },
+    {
+      "pbancSn": "179681",
+      "title": "[ 모 집 ] GVC AI Platform Startup Enabling Program 및 스마트워크·쇼핑몰 창업지원 및 AI 전환 지원",
+      "agency": "글로벌벤처센터",
+      "deadline": "2026-11-09",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179681",
+      "tier": "green",
+      "note": "structured 완전 매칭 (전국/사업화)",
+      "classify_evidence": {
+        "summary_reason": "structured 완전 매칭 (전국/사업화)",
+        "category_hints": [
+          "ai",
+          "global",
+          "budget"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "모집 중"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-11-09",
+            "detail": "마감 전"
+          },
+          "region": {
+            "pass": true,
+            "value": "전국",
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "biz_enyy": {
+            "pass": true,
+            "value": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
+            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "exclude_target": {
+            "pass": true,
+            "value": "",
+            "detail": "자격 제한 없음"
+          },
+          "industry": {
+            "pass": true,
+            "detail": "업종 제한 없음"
+          },
+          "qualification": {
+            "pass": true,
+            "detail": "자격 제한 없음"
+          },
+          "stage": {
+            "pass": true,
+            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "nature": {
+            "pass": true,
+            "detail": "직접 자금성 (사업화)"
+          },
+          "region_keyword": {
+            "pass": true,
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "positive_hit": {
+            "pass": true,
+            "detail": "structured 완전 매칭 (전국/사업화)"
+          }
+        },
+        "risk_flags": [],
+        "axis_scores": {
+          "region": {
+            "level": "green",
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "stage": {
+            "level": "green",
+            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "industry": {
+            "level": "green",
+            "detail": "업종 제한 없음"
+          },
+          "nature": {
+            "level": "green",
+            "detail": "직접 자금성 (사업화)"
+          },
+          "qualification": {
+            "level": "green",
+            "detail": "자격 제한 없음"
+          }
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "1순위: 5축 모두 green + 강한 긍정 매칭",
+        "classify_version": "v8.3"
+      },
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03",
+      "structured": {
+        "pbanc_sn_int": 179681,
+        "integrated": false,
+        "recruiting": true,
+        "start_date": "2026-11-02",
+        "end_date": "2026-11-09",
+        "agency_type": "민간",
+        "biz_class": "사업화",
+        "region": "전국",
+        "biz_enyy": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
+        "age_range": "만 20세 미만,만 20세 이상 ~ 만 39세 이하,만 40세 이상",
+        "apply_target": "청소년,대학생,일반인,대학,연구기관,일반기업,1인 창조기업",
+        "apply_target_desc": "예비창업자 또는 창업 기업\r\nAI 기반으로 플랫폼 창업을 준비중이거나 쇼핑몰 이커머스 사업중인 사업가\r\nAI·플랫폼·SaaS·데이터 기반 서비스 아이템 보유자\r\nMVP 개발 및 서비스 출시를 목표로 하는 팀 또는 개인\r\n글로벌 시장 진출을 계획하거나 AI를 활용한 플랫폼 비즈니스를 준비 중인 창업자\r\n프로그램 기간 동안 성실하게 참여 가능한 개인 또는 팀",
+        "exclude_target": "",
+        "preferential": "",
+        "content": "글로벌벤처센터(GVC)는 AI 기반 플랫폼 서비스를 만들고 싶은 예비창업자와 초기 스타트업을 모집합니다.\r\n\r\n아이템 검증부터 MVP 개발, 글로벌 런칭, 투자 연계까지 창업 과정을 함께하는 Startup Builder 사업화 육성 프로그램입니다.",
+        "integrated_name": "AI 창업지원 프로그램",
+        "apply_online": "https://global.venture.center/launchpad",
+        "apply_guide": "global.venture.center/launchpad"
+      },
+      "raw_content": "[ 모 집 ] GVC AI Platform Startup Enabling Program 및 스마트워크·쇼핑몰 창업지원 및 AI 전환 지원\n사업안내 바로가기\n지원분야\n사업화\n대상연령\n전체\n기관구분\n민간\n담당부서\n창업지원팀\n지역\n전국\n접수기간\n2026-11-02 ~ 2026-11-09 23:59\n주관기관명\n글로벌벤처센터\n대상\n전체\n창업업력\n전체\n연락처\n0507-367-9113\n공고 26-10-31\n[ 모 집 ] GVC AI Platform Startup Enabling Program 및 스마트워크·쇼핑몰 창업지원 및 AI 전환 지원\n※(유의)해당 공고는 중소벤처기업부와 창업진흥원이 아닌 민간에서 지원하는 사업으로, 신청부터 관리까지 모든 과정을 해당기관에서 전담\n글로벌벤처센터(GVC)는 AI 기반 플랫폼 서비스를 만들고 싶은 예비창업자와 초기 스타트업을 모집합니다.\n아이템 검증부터 MVP 개발, 글로벌 런칭, 투자 연계까지 창업 과정을 함께하는 Startup Builder 사업화 육성 프로그램입니다.\n2026년 11월 01일\n글로벌벤처센터\n신청방법 및 대상\n신청기간\n2026.11.02(월) 09:25\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t~\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t2026.11.09(월) 23:59\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t까지\n신청방법\n온라인 접수 :\n접수 바로가기\n신청대상\n예비창업자 또는 창업 기업\nAI 기반으로 플랫폼 창업을 준비중이거나 쇼핑몰 이커머스 사업중인 사업가\nAI·플랫폼·SaaS·데이터 기반 서비스 아이템 보유자\nMVP 개발 및 서비스 출시를 목표로 하는 팀 또는 개인\n글로벌 시장 진출을 계획하거나 AI를 활용한 플랫폼 비즈니스를 준비 중인 창업자\n프로그램 기간 동안 성실하게 참여 가능한 개인 또는 팀\n신청 시 요청하는 정보(개인정보포함)는 사업운영기관에서 관리되오니 이점 반드시 유의하여 주시기 바랍니다.\n제출서류\n온라인으로 신청 가능합니다.\n① 참가신청서\n신청서 및 기본 정보 작성\n② 사업계획서 (선택)\n아이템 소개, 문제 정의, 비즈니스 모델, 시장 및 성장전략 등\n③ 팀 소개서 (선택)\n대표자 및 팀원 소개, 역할, 주요 경력\n④ 발표자료(선택)\nPitch Deck 또는 서비스 소개자료(PDF)\n⑤ 기타자료(선택)\nGithub, Demo URL, Figma, Notion, 포트폴리오 등\n참가신청서(온라인 작성)\n사업계획서(PDF 권장)(선택)\n팀 소개서(자유양식)(선택)\n발표자료(PDF, 최대 15페이지 이내 권장) (선택)\n개발자료 또는 시연 링크(선택)\n기타 아이템을 설명할 수 있는 참고자료(선택)\n신청 : www.synapoffice.com/@e683O\n제출하신 서류는 사업운영기관에서 관리되오니 서류 반환 등 문의는 해당 기관으로 하시기 바랍니다.\n선정절차 및 평가방법\n선정절차 및 평가방법 상세내용\n① 서류심사\n아이템 적합성 및 사업성 평가\n↓\n② 인터뷰\n대표자 인터뷰 및 아이템 검토\n↓\n③ 최종 선정\n프로그램 참여 협약\n평가항목\n문제 정의의 명확성\n시장성 및 성장 가능성\nAI 활용 가능성\n플랫폼 확장성\n팀 역량 및 실행력\n글로벌 진출 가능성\nGVC 프로그램 적합성\n지원내용\nAI 기반 창업 과정 지원\n아이템 검증부터 MVP 개발, 글로벌 런칭 및 투자 연계 단계별 창업 지원\n지원내용 상세\nAI 개발 관련 멘토링 및 심사후 소정의 AI  개발 크레딧 지원\nAI 기반 아이디어 검증 및 PMF(Product-Market Fit) 분석\n비즈니스 모델(BM) 설계 및 수익모델 고도화\nAI 활용 프로토타입 및 MVP 개발 멘토링\n플랫폼 아키텍처 및 기술 전략 자문\n센터 입주 1개월 무상 지원 AI 무상 멘토링 지원\n법인 설립 및 운영 컨설팅\n글로벌 서비스 출시 및 해외 결제 시스템 구축 지원\n마케팅 및 서비스 런칭 전략 컨설팅\n투자유치(IR) 및 후속 투자 연계\nAI 활용 독립형 온라인 쇼핑몰 구축 지원\nAI를 활용한 상품정보 작성, 콘텐츠 제작, 고객응대 및 업무자동화 등 AI Transformation 지원\n원격 스마트워크 이용자를 위한 창업지원 인프라 제공\n온라인 판매자의 상품 발송을 위한 택배 이용 지원\n온라인 이커머스 플랫폼 AI 구축 자문 및 실개발 지원\n문의처\n이메일로 문의 바랍니다.\nglobalbicenter2@gmail.com\n자세한 내용은 첨부파일 참조 및 문의처로 문의하여 주시기 바랍니다.\nK-Startup에 공고되는 정보는 해당 기관의 요청에 의해 제공됩니다. 입주, 교육, 사업 신청 시 요청하는 정보(개인정보 포함)는 해당 기관에서 관리 \t되오니\n이점 유의하여 주시기 바랍니다.\n※(유의)해당 공고는 중소벤처기업부와 창업진흥원이 아닌 민간에서 지원하는 사업으로, 신청부터 관리까지 모든 과정을 해당기관에서 전담\n본 저작물은 창업진흥원(K-Startup)이 게시한 공공누리 제1유형의 저작물이며, 공공데이터포털(www.data.go.kr)에서 공공데이터로 개방중이며 무료로 활용할 수 있습니다.\n접수 바로가기\n목록",
+      "raw_fetched_at": "2026-11-03"
+    },
+    {
       "pbancSn": "179657",
       "title": "[ZUZU X 마크앤컴퍼니 집중검토] 딥테크·소부장 Pre-Seed ~ Pre-A 투자 검토 모집 (찾아가는 GF)",
       "agency": "(주) 코드박스 Kodebox",
@@ -2874,6 +3116,123 @@
       },
       "raw_content": "[ZUZU X 마크앤컴퍼니 집중검토] 딥테크·소부장 Pre-Seed ~ Pre-A 투자 검토 모집 (찾아가는 GF)\n사업안내 바로가기\n지원분야\n사업화\n대상연령\n전체\n기관구분\n민간\n담당부서\n사업팀\n지역\n전국\n접수기간\n2026-10-30 ~ 2026-11-11 17:00\n주관기관명\n(주) 코드박스 Kodebox\n대상\n일반인, 대학, 연구기관, 일반기업\n창업업력\n예비창업자, 1년미만, 2년미만, 3년미만\n연락처\n02667703942\n[ZUZU X 마크앤컴퍼니 집중검토] 딥테크·소부장 Pre-Seed ~ Pre-A 투자 검토 모집 (찾아가는 GF)\n※(유의)해당 공고는 중소벤처기업부와 창업진흥원이 아닌 민간에서 지원하는 사업으로, 신청부터 관리까지 모든 과정을 해당기관에서 전담\n[마크앤컴퍼니에서 Pre-Seed ~ Pre-A 스타트업을 찾습니다.]\n마크앤컴퍼니와 함께 성장할 딥테크·소부장 분야 초기 스타트업을 기다립니다.\n2026년 10월 29일\n(주) 코드박스 Kodebox\n신청방법 및 대상\n신청기간\n2026.10.30(금) 09:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t~\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t2026.11.11(수) 17:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t까지\n신청방법\n온라인 접수 :\n접수 바로가기\n신청대상\n※모집 조건\n- 산업 분야: 딥테크, 소부장(소재·부품·장비)\n- 투자 단계: Pre-Seed ~ Pre-A\n- 설립 시기: 법인 설립 3년 이내 또는 예비창업자\n신청 시 요청하는 정보(개인정보포함)는 사업운영기관에서 관리되오니 이점 반드시 유의하여 주시기 바랍니다.\n제출서류\nIR Deck\n자유 양식\n제출하신 서류는 사업운영기관에서 관리되오니 서류 반환 등 문의는 해당 기관으로 하시기 바랍니다.\n선정절차 및 평가방법\n온라인 신청 및 온라인 IR 검토\n- ZUZU 라운드업 모집 페이지(https://roundup.zuzu.network/ir/markncompany)에서 웹 신청서 작성 및 IR Deck(자유 양식) 제출\n- 참가비 무료\n지원내용\n혜택\n1. 마크앤컴퍼니 심사역의 IR 집중 검토\n2. 검토 후 관심 기업과 미팅 연결\n3. 관심 기업은 TIPS 추천 검토 및 후속투자 연계 네트워크로 이어질 수 있음\n모집일정\n모집일정\n- 모집: 2026. 10. 20.(화) ~ 11. 11.(수) 17:00\n- 마크앤컴퍼니 심사역 검토: 11. 12.(목) ~ 11. 19.(목)\n- 결과 발표: 11. 20.(금), 개별 안내\n※ 세부 일정은 운영 상황에 따라 달라질 수 있습니다.\n유의 사항\n유의 사항\n- 선정은 투자 확정을 의미하지 않습니다. 실제 투자 여부는 별도 심사와 협의를 거쳐 결정됩니다.\n문의처\nZUZU\n- 메일: hyeonseung@kodebox.io\n자세한 내용은 첨부파일 참조 및 문의처로 문의하여 주시기 바랍니다.\nK-Startup에 공고되는 정보는 해당 기관의 요청에 의해 제공됩니다. 입주, 교육, 사업 신청 시 요청하는 정보(개인정보 포함)는 해당 기관에서 관리 \t되오니\n이점 유의하여 주시기 바랍니다.\n※(유의)해당 공고는 중소벤처기업부와 창업진흥원이 아닌 민간에서 지원하는 사업으로, 신청부터 관리까지 모든 과정을 해당기관에서 전담\n본 저작물은 창업진흥원(K-Startup)이 게시한 공공누리 제1유형의 저작물이며, 공공데이터포털(www.data.go.kr)에서 공공데이터로 개방중이며 무료로 활용할 수 있습니다.\n접수 바로가기\n목록",
       "raw_fetched_at": "2026-10-30"
+    },
+    {
+      "pbancSn": "179686",
+      "title": "2026 포스코기술투자 TIPS Scout 참여 스타트업 모집",
+      "agency": "파트너스라운지(유)",
+      "deadline": "2026-11-13",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179686",
+      "tier": "green",
+      "note": "structured 완전 매칭 (전국/사업화)",
+      "classify_evidence": {
+        "summary_reason": "structured 완전 매칭 (전국/사업화)",
+        "category_hints": [
+          "budget"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "모집 중"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-11-13",
+            "detail": "마감 전"
+          },
+          "region": {
+            "pass": true,
+            "value": "전국",
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "biz_enyy": {
+            "pass": true,
+            "value": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만",
+            "detail": "업력 허용 (1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "exclude_target": {
+            "pass": true,
+            "value": "",
+            "detail": "자격 제한 없음"
+          },
+          "industry": {
+            "pass": true,
+            "detail": "업종 제한 없음"
+          },
+          "qualification": {
+            "pass": true,
+            "detail": "자격 제한 없음"
+          },
+          "stage": {
+            "pass": true,
+            "detail": "업력 허용 (1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "nature": {
+            "pass": true,
+            "detail": "직접 자금성 (사업화)"
+          },
+          "region_keyword": {
+            "pass": true,
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "positive_hit": {
+            "pass": true,
+            "detail": "structured 완전 매칭 (전국/사업화)"
+          }
+        },
+        "risk_flags": [],
+        "axis_scores": {
+          "region": {
+            "level": "green",
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "stage": {
+            "level": "green",
+            "detail": "업력 허용 (1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "industry": {
+            "level": "green",
+            "detail": "업종 제한 없음"
+          },
+          "nature": {
+            "level": "green",
+            "detail": "직접 자금성 (사업화)"
+          },
+          "qualification": {
+            "level": "green",
+            "detail": "자격 제한 없음"
+          }
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "1순위: 5축 모두 green + 강한 긍정 매칭",
+        "classify_version": "v8.3"
+      },
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03",
+      "structured": {
+        "pbanc_sn_int": 179686,
+        "integrated": false,
+        "recruiting": true,
+        "start_date": "2026-11-02",
+        "end_date": "2026-11-13",
+        "agency_type": "민간",
+        "biz_class": "사업화",
+        "region": "전국",
+        "biz_enyy": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만",
+        "age_range": "만 20세 미만,만 20세 이상 ~ 만 39세 이하,만 40세 이상",
+        "apply_target": "청소년,대학생,일반인,대학,연구기관,일반기업,1인 창조기업",
+        "apply_target_desc": "TIPS 신청 요건을 충족하거나 예정인 법인설립 7년 이내 스타트업",
+        "exclude_target": "",
+        "preferential": "",
+        "content": "포스코기술투자가 파트너스라운지와 함께 TIPS를 준비하는 기술창업기업을 찾습니다.",
+        "integrated_name": "2026 포스코기술투자 TIPS Scout 참여 스타트업 모집",
+        "apply_online": "https://forms.gle/EsZ89bfKGyhZRQWC7",
+        "apply_guide": ""
+      },
+      "raw_content": "2026 포스코기술투자 TIPS Scout 참여 스타트업 모집\n지원분야\n사업화\n대상연령\n전체\n기관구분\n민간\n담당부서\n투자부문\n지역\n전국\n접수기간\n2026-11-02 ~ 2026-11-13 18:00\n주관기관명\n파트너스라운지(유)\n대상\n전체\n창업업력\n예비창업자, 1년미만, 2년미만, 3년미만, 5년미만, 7년미만\n연락처\n0542621335\n2026 포스코기술투자 TIPS Scout 참여 스타트업 모집\n※(유의)해당 공고는 중소벤처기업부와 창업진흥원이 아닌 민간에서 지원하는 사업으로, 신청부터 관리까지 모든 과정을 해당기관에서 전담\n포스코기술투자가 파트너스라운지와 함께 TIPS를 준비하는 기술창업기업을 찾습니다.\n2026년 11월 02일\n파트너스라운지(유)\n신청방법 및 대상\n신청기간\n2026.11.02(월) 11:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t~\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t2026.11.13(금) 18:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t까지\n신청방법\n온라인 접수 :\n접수 바로가기\n신청대상\nTIPS 신청 요건을 충족하거나 예정인 법인설립 7년 이내 스타트업\n신청 시 요청하는 정보(개인정보포함)는 사업운영기관에서 관리되오니 이점 반드시 유의하여 주시기 바랍니다.\n제출서류\nIR Deck 및 기타\nIR Deck 및 기타 회사 현황을 알 수 있는 부속 자료 (접수 링크에서 상세 목록 확인)\n제출하신 서류는 사업운영기관에서 관리되오니 서류 반환 등 문의는 해당 기관으로 하시기 바랍니다.\n선정절차 및 평가방법\n서류심사, 1:1 진단, 실전 IR 발표\n지원내용\n포스코기술투자 & 파트너스라운지 1:1 IR 컨설팅, VC 대상 실전 IR, 최종 선정팀 대상 투자검토 등\n문의처\nio.jung@partnerslounge.co.kr\n자세한 내용은 첨부파일 참조 및 문의처로 문의하여 주시기 바랍니다.\nK-Startup에 공고되는 정보는 해당 기관의 요청에 의해 제공됩니다. 입주, 교육, 사업 신청 시 요청하는 정보(개인정보 포함)는 해당 기관에서 관리 \t되오니\n이점 유의하여 주시기 바랍니다.\n※(유의)해당 공고는 중소벤처기업부와 창업진흥원이 아닌 민간에서 지원하는 사업으로, 신청부터 관리까지 모든 과정을 해당기관에서 전담\n첨부파일 일괄 다운로드\n2026 포스코기술투자 TIPS Scout 포스터_vF.pdf\n바로보기\n다운로드\n본 저작물은 창업진흥원(K-Startup)이 게시한 공공누리 제1유형의 저작물이며, 공공데이터포털(www.data.go.kr)에서 공공데이터로 개방중이며 무료로 활용할 수 있습니다.\n접수 바로가기\n목록",
+      "raw_fetched_at": "2026-11-03"
     },
     {
       "pbancSn": "179528",
@@ -4120,6 +4479,125 @@
       },
       "raw_content": "2026년 중앙부처 및 지자체 창업지원사업 통합공고\n지원분야\n사업화\n대상연령\n전체\n기관구분\n공공기관\n담당부서\n사업관리실\n지역\n전국\n접수기간\n2025-12-19 ~ 2026-12-31 23:59\n주관기관명\n창업진흥원\n대상\n전체\n창업업력\n전체\n연락처\n1357\n2026년 중앙부처 및 지자체 창업지원사업 통합공고\n「중소기업창업 지원법」 제14조(창업정책정보의 수집 및 제공)에 따라 2026년 창업지원사업을 공고하오니, 창업기업 및 예비창업자의 적극적인 참여를 바랍니다.\n2025년 12월 19일\n중소벤처기업부장관\n신청방법 및 대상\n신청기간\n2025.12.19(금) 13:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t~\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t2026.12.31(목) 23:59\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t까지\n신청방법\n각 지원사업 모집 공고문 참고\n신청대상\n각 지원사업 모집 공고문 참고\n제외대상\n각 지원사업 모집 공고문 참고\n신청 시 요청하는 정보(개인정보포함)는 사업운영기관에서 관리되오니 이점 반드시 유의하여 주시기 바랍니다.\n제출서류\n각 지원사업 모집 공고문 참고\n제출하신 서류는 사업운영기관에서 관리되오니 서류 반환 등 문의는 해당 기관으로 하시기 바랍니다.\n선정절차 및 평가방법\n각 지원사업 모집 공고문 참고\n지원내용\n각 지원사업 모집 공고문 참고\n안내사항\n하단의 첨부파일 참고 부탁드리며, 안내책자 디자인은 변경될 수 있음을 안내드립니다.\n상기 일정은 사업운영기관의 내부사정으로 변경될 수 있습니다.\n문의처\n각 지원사업 모집 공고문 참고\n자세한 내용은 첨부파일 참조 및 문의처로 문의하여 주시기 바랍니다.\nK-Startup에 공고되는 정보는 해당 기관의 요청에 의해 제공됩니다. 입주, 교육, 사업 신청 시 요청하는 정보(개인정보 포함)는 해당 기관에서 관리 \t되오니\n이점 유의하여 주시기 바랍니다.\n첨부파일 일괄 다운로드\n★(공고문) 2026년도 중앙부처 및 지자체 창업지원사업 통합공고문(제2025-648호, 2025.12.19.).pdf\n바로보기\n다운로드\n★(공고문) 2026년도 중앙부처 및 지자체 창업지원사업 통합공고문(제2025-648호, 2025.12.19.).hwpx\n바로보기\n다운로드\n(안내책자) 2026년도 중앙부처 및 지자체 창업지원사업 통합공고.pdf\n바로보기\n다운로드\n본 저작물은 창업진흥원(K-Startup)이 게시한 공공누리 제1유형의 저작물이며, 공공데이터포털(www.data.go.kr)에서 공공데이터로 개방중이며 무료로 활용할 수 있습니다.\n목록",
       "raw_fetched_at": "2026-05-05"
+    },
+    {
+      "pbancSn": "179675",
+      "title": "2026 대덕특구 딥테크 혁신성장 플랫폼(전략기술 발굴 및 매칭) (11/1 ~ 12/31)",
+      "agency": "연구개발특구진흥재단",
+      "deadline": "2026-12-31",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179675",
+      "tier": "green",
+      "note": "structured 완전 매칭 (전국/사업화)",
+      "classify_evidence": {
+        "summary_reason": "structured 완전 매칭 (전국/사업화)",
+        "category_hints": [
+          "ai",
+          "rnd",
+          "budget"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "모집 중"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-12-31",
+            "detail": "마감 전"
+          },
+          "region": {
+            "pass": true,
+            "value": "전국",
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "biz_enyy": {
+            "pass": true,
+            "value": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
+            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "exclude_target": {
+            "pass": true,
+            "value": "",
+            "detail": "자격 제한 없음"
+          },
+          "industry": {
+            "pass": true,
+            "detail": "업종 제한 없음"
+          },
+          "qualification": {
+            "pass": true,
+            "detail": "자격 제한 없음"
+          },
+          "stage": {
+            "pass": true,
+            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "nature": {
+            "pass": true,
+            "detail": "직접 자금성 (사업화)"
+          },
+          "region_keyword": {
+            "pass": true,
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "positive_hit": {
+            "pass": true,
+            "detail": "structured 완전 매칭 (전국/사업화)"
+          }
+        },
+        "risk_flags": [],
+        "axis_scores": {
+          "region": {
+            "level": "green",
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "stage": {
+            "level": "green",
+            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "industry": {
+            "level": "green",
+            "detail": "업종 제한 없음"
+          },
+          "nature": {
+            "level": "green",
+            "detail": "직접 자금성 (사업화)"
+          },
+          "qualification": {
+            "level": "green",
+            "detail": "자격 제한 없음"
+          }
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "1순위: 5축 모두 green + 강한 긍정 매칭",
+        "classify_version": "v8.3"
+      },
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03",
+      "structured": {
+        "pbanc_sn_int": 179675,
+        "integrated": false,
+        "recruiting": true,
+        "start_date": "2026-11-01",
+        "end_date": "2026-12-31",
+        "agency_type": "공공기관",
+        "biz_class": "사업화",
+        "region": "전국",
+        "biz_enyy": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
+        "age_range": "만 20세 미만,만 20세 이상 ~ 만 39세 이하,만 40세 이상",
+        "apply_target": "청소년,대학생,일반인,대학,연구기관,일반기업,1인 창조기업",
+        "apply_target_desc": "1. 대중견기업 오픈이노베이션 프로그램 운영자\r\n2. 중견기업 및 중소기업 신사업 스핀오프 사업부\r\n3. 스타트업 및 중소기업\r\n4. 투자기관/지원기관",
+        "exclude_target": "",
+        "preferential": "",
+        "content": "새로운 성장동력인 국가전략기술 분야의 시장 선점을 위해 공공기술을 활용하여 신속한 사업화를 추진하는 기업을 지원합니다.",
+        "integrated_name": "2026 대덕특구 딥테크 혁신성장 플랫폼&#40;전략기술 발굴 및 매칭&#41;",
+        "apply_online": "https://forms.gle/epkv8yKEqm89DSFK7",
+        "apply_guide": "forms.gle/epkv8yKEqm89DSFK7"
+      },
+      "raw_content": "2026 대덕특구 딥테크 혁신성장 플랫폼(전략기술 발굴 및 매칭) (11/1 ~ 12/31)\n사업안내 바로가기\n지원분야\n사업화\n대상연령\n전체\n기관구분\n공공기관\n담당부서\n대덕특구본부 혁신기업지원실\n지역\n전국\n접수기간\n2026-11-01 ~ 2026-12-31 18:00\n주관기관명\n연구개발특구진흥재단\n대상\n전체\n창업업력\n전체\n연락처\n042-865-8972\n2026 대덕특구 딥테크 혁신성장 플랫폼(전략기술 발굴 및 매칭) (11/1 ~ 12/31)\n새로운 성장동력인 국가전략기술 분야의 시장 선점을 위해 공공기술을 활용하여 신속한 사업화를 추진하는 기업을 지원합니다.\n2026년 11월 01일\n연구개발특구진흥재단\n신청방법 및 대상\n신청기간\n2026.11.01(일) 09:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t~\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t2026.12.31(목) 18:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t까지\n신청방법\n온라인 접수 :\n접수 바로가기\n신청대상\n1. 대중견기업 오픈이노베이션 프로그램 운영자\n2. 중견기업 및 중소기업 신사업 스핀오프 사업부\n3. 스타트업 및 중소기업\n4. 투자기관/지원기관\n신청 시 요청하는 정보(개인정보포함)는 사업운영기관에서 관리되오니 이점 반드시 유의하여 주시기 바랍니다.\n제출서류\n온라인 구글폼 신청\n기술수요조사서 (필수제출), 기업 및 기관 소개자료 (있을 시 제출)\n제출하신 서류는 사업운영기관에서 관리되오니 서류 반환 등 문의는 해당 기관으로 하시기 바랍니다.\n선정절차 및 평가방법\n신청서 접수\n신청서 접수 후 개별 인터뷰 실시 (선착순)\n지원내용\n사업화 컨설팅\n기업 수요에 맞춰 대덕특구 사업화 연계 컨설팅 (기술발굴 및 매칭 등)\n문의처\n운영기관\n(주)티투비 윤준호 책임 042-341-0907\n자세한 내용은 첨부파일 참조 및 문의처로 문의하여 주시기 바랍니다.\nK-Startup에 공고되는 정보는 해당 기관의 요청에 의해 제공됩니다. 입주, 교육, 사업 신청 시 요청하는 정보(개인정보 포함)는 해당 기관에서 관리 \t되오니\n이점 유의하여 주시기 바랍니다.\n첨부파일 일괄 다운로드\n딥테크혁신성장플랫폼_공공기술_11월~12월.pdf\n바로보기\n다운로드\n[붙임1] 기술수요조사서_양식.hwp\n바로보기\n다운로드\n본 저작물은 창업진흥원(K-Startup)이 게시한 공공누리 제1유형의 저작물이며, 공공데이터포털(www.data.go.kr)에서 공공데이터로 개방중이며 무료로 활용할 수 있습니다.\n접수 바로가기\n목록",
+      "raw_fetched_at": "2026-11-03"
     },
     {
       "pbancSn": "itp_11139",
@@ -5809,6 +6287,121 @@
       "raw_fetched_at": "2026-10-22"
     },
     {
+      "pbancSn": "179679",
+      "title": "2026년 위치정보 보호조치 교육 (7차)",
+      "agency": "(주) 아이전스",
+      "deadline": "2026-11-11",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179679",
+      "tier": "yellow",
+      "note": "검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)",
+      "classify_evidence": {
+        "summary_reason": "검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)",
+        "category_hints": [],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "모집 중"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-11-11",
+            "detail": "마감 전"
+          },
+          "region": {
+            "pass": true,
+            "value": "전국",
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "biz_enyy": {
+            "pass": true,
+            "value": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
+            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "exclude_target": {
+            "pass": true,
+            "value": "",
+            "detail": "자격 제한 없음"
+          },
+          "industry": {
+            "pass": true,
+            "detail": "업종 제한 없음"
+          },
+          "qualification": {
+            "pass": true,
+            "detail": "자격 제한 없음"
+          },
+          "stage": {
+            "pass": true,
+            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "nature": {
+            "pass": true,
+            "detail": "간접 지원성 (멘토링ㆍ컨설팅ㆍ교육)"
+          },
+          "region_keyword": {
+            "pass": true,
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "positive_hit": {
+            "pass": true,
+            "detail": "검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)"
+          }
+        },
+        "risk_flags": [],
+        "axis_scores": {
+          "region": {
+            "level": "green",
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "stage": {
+            "level": "green",
+            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "industry": {
+            "level": "green",
+            "detail": "업종 제한 없음"
+          },
+          "nature": {
+            "level": "yellow",
+            "detail": "간접 지원성 (멘토링ㆍ컨설팅ㆍ교육)"
+          },
+          "qualification": {
+            "level": "green",
+            "detail": "자격 제한 없음"
+          }
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "2순위: 모든 축 green/yellow, 검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)",
+        "classify_version": "v8.3"
+      },
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03",
+      "structured": {
+        "pbanc_sn_int": 179679,
+        "integrated": false,
+        "recruiting": true,
+        "start_date": "2026-10-30",
+        "end_date": "2026-11-11",
+        "agency_type": "민간",
+        "biz_class": "멘토링ㆍ컨설팅ㆍ교육",
+        "region": "전국",
+        "biz_enyy": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
+        "age_range": "만 20세 미만,만 20세 이상 ~ 만 39세 이하,만 40세 이상",
+        "apply_target": "청소년,대학생,일반인,대학,연구기관,일반기업,1인 창조기업",
+        "apply_target_desc": "위치정보사업자, 위치기반서비스사업자 및 예비사업자 등 위치정보와 관련된 일을 하시는 모든 분들",
+        "exclude_target": "",
+        "preferential": "",
+        "content": "방송미디어통신위원회와 한국인터넷진흥원이 추진하는 「2026년 위치정보 보호조치 교육」을 안내드립니다.\r\n\r\n위치정보 활용 과정에서 법적 의무나 보호조치 이행 기준 등이 막연하게 느껴졌다면, 이번 교육을 통해 사업 운영에 필요한 기본 사항을 점검해보시기 바랍니다.",
+        "integrated_name": "2026년 위치정보 보호조치 교육 (7차)",
+        "apply_online": "https://forms.gle/YezXBNdVQmjfSZRK6",
+        "apply_guide": "sites.google.com/igence.co.kr/openitrun/%EA%B3%B5%EC%A7%80%EC%82%AC%ED%95%AD?authuser=2#h.tb5pthi6x3aq"
+      },
+      "raw_content": "2026년 위치정보 보호조치 교육 (7차)\n사업안내 바로가기\n지원분야\n멘토링ㆍ컨설팅ㆍ교육\n대상연령\n전체\n기관구분\n민간\n담당부서\n시스템 개발부\n지역\n전국\n접수기간\n2026-10-30 ~ 2026-11-11 15:00\n주관기관명\n(주)아이전스\n대상\n전체\n창업업력\n전체\n연락처\n1522-0667\n2026년 위치정보 보호조치 교육 (7차)\n방송미디어통신위원회와 한국인터넷진흥원이 추진하는 「2026년 위치정보 보호조치 교육」을 안내드립니다.\n위치정보 활용 과정에서 법적 의무나 보호조치 이행 기준 등이 막연하게 느껴졌다면, 이번 교육을 통해 사업 운영에 필요한 기본 사항을 점검해보시기 바랍니다.\n2026년 10월 30일\n(주) 아이전스\n신청방법 및 대상\n신청기간\n2026.10.30(금) 00:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t~\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t2026.11.11(수) 15:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t까지\n신청방법\n온라인 접수 :\n접수 바로가기\n신청대상\n위치정보사업자, 위치기반서비스사업자 및 예비사업자 등 위치정보와 관련된 일을 하시는 모든 분들\n신청 시 요청하는 정보(개인정보포함)는 사업운영기관에서 관리되오니 이점 반드시 유의하여 주시기 바랍니다.\n제출서류\n구글폼 작성\n온라인 접수 페이지 하단의 '신청하기'를 눌러서 구글폼 작성\n제출하신 서류는 사업운영기관에서 관리되오니 서류 반환 등 문의는 해당 기관으로 하시기 바랍니다.\n선정절차 및 평가방법\n선착순\n정원 500명 선착순\n수료기준\n- 교육 100분 이상 이수 + 만족도 조사 참여\n교육안내\n위치정보 보호조치 온라인 교육 (7차)\n교육 일시: 2026.11.13.(금요일) 14:00~17:00\n장소: Zoom 온라인 교육\n내용: 위치정보법 및 그에 대한 사업자 의무사항 등 위치정보 관련 교육\n교육비: 무료\n상기 일정은 사업운영기관의 내부사정으로 변경될 수 있습니다.\n문의처\n(주)아이전스\n전화: 1522-0667\n메일: help@igence.co.kr\n자세한 내용은 첨부파일 참조 및 문의처로 문의하여 주시기 바랍니다.\nK-Startup에 공고되는 정보는 해당 기관의 요청에 의해 제공됩니다. 입주, 교육, 사업 신청 시 요청하는 정보(개인정보 포함)는 해당 기관에서 관리 \t되오니\n이점 유의하여 주시기 바랍니다.\n첨부파일 일괄 다운로드\n방송미디어통신위원회 X KISA 위치정보 보호조치 비대면 이론교육7차 배너.png\n바로보기\n다운로드\n방송미디어통신위원회 X KISA 위치정보 보호조치 비대면 이론교육7차 포스터.png\n바로보기\n다운로드\n방송미디어통신위원회_X_KISA_위치정보_보호조치_비대면_이론교육7차_배너.txt\n바로보기\n다운로드\n방송미디어통신위원회_X_KISA_위치정보_보호조치_비대면_이론교육7차_포스터.txt\n바로보기\n다운로드\n본 저작물은 창업진흥원(K-Startup)이 게시한 공공누리 제1유형의 저작물이며, 공공데이터포털(www.data.go.kr)에서 공공데이터로 개방중이며 무료로 활용할 수 있습니다.\n접수 바로가기\n목록",
+      "raw_fetched_at": "2026-11-03"
+    },
+    {
       "pbancSn": "179648",
       "title": "「2026 KOSAㆍ아이티센글로벌ㆍ더존비즈온 공동 IR DAY」참가기업 모집",
       "agency": "KOSA · 아이티센글로벌 · 더존비즈온",
@@ -6397,7 +6990,7 @@
     },
     {
       "pbancSn": "179649",
-      "title": "NCI 민/관/학 창업포럼(2026 강북창업포럼) 참관객 모집",
+      "title": "&apos;AI가 바꾸는 창업의 미래&apos; NCI 민/관/학 창업포럼 참관객 모집",
       "agency": "강북청년창업마루",
       "deadline": "2026-11-13",
       "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179649",
@@ -6406,6 +6999,7 @@
       "classify_evidence": {
         "summary_reason": "검토 매칭 (청년창업)",
         "category_hints": [
+          "ai",
           "budget"
         ],
         "rule_checks": {
@@ -6505,12 +7099,13 @@
         "exclude_target": "없음",
         "preferential": "",
         "content": "강북창년창업마루 - 강북창업지원센터 에서 2026 강북창업포럼(NCI 민/관/학 창업포럼)을 개최합니다.\r\n액트투벤처스 대표 미키김, 한국창업보육협회장 송민용, 홍익대 산업디자인학과 교수 황성걸이 &apos;AI가 바꾸는 창업의 미래&apos;를 주제로 강연을 진행합니다.\r\n창업에 관심이 있는 일반인, 예비 창업자 ·기창업자 분들의 많은 관심과 신청 바랍니다.",
-        "integrated_name": "NCI 민/관/학 창업포럼&#40;2026 강북창업포럼&#41;",
+        "integrated_name": "&apos;AI가 바꾸는 창업의 미래&apos; NCI 민/관/학 창업포럼 참관객 모집",
         "apply_online": "https://forms.gle/QEF9uYMjgVh3KNSp9",
         "apply_guide": "gbmaru.com/startup/programs/21516"
       },
       "raw_content": "NCI 민/관/학 창업포럼(2026 강북창업포럼) 참관객 모집\n사업안내 바로가기\n지원분야\n행사ㆍ네트워크\n대상연령\n전체\n기관구분\n교육기관\n담당부서\n강북창업지원센터\n지역\n전국\n접수기간\n2026-10-29 ~ 2026-11-13 13:30\n주관기관명\n광운대학교산학협력단\n대상\n전체\n창업업력\n전체\n연락처\n029088247\nNCI 민/관/학 창업포럼(2026 강북창업포럼) 참관객 모집\n강북창년창업마루 - 강북창업지원센터 에서 2026 강북창업포럼(NCI 민/관/학 창업포럼)을 개최합니다.\n액트투벤처스 대표 미키김, 한국창업보육협회장 송민용, 홍익대 산업디자인학과 교수 황성걸이 'AI가 바꾸는 창업의 미래'를 주제로 강연을 진행합니다.\n창업에 관심이 있는 일반인, 예비 창업자 ·기창업자 분들의 많은 관심과 신청 바랍니다.\n2026년 10월 28일\n강북청년창업마루\n신청방법 및 대상\n신청기간\n2026.10.29(목) 00:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t~\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t2026.11.13(금) 13:30\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t까지\n신청방법\n온라인 접수 :\n접수 바로가기\n신청대상\n창업에 관심있는 일반인, 예비창업자 및 기창업자\n제외대상\n없음\n신청 시 요청하는 정보(개인정보포함)는 사업운영기관에서 관리되오니 이점 반드시 유의하여 주시기 바랍니다.\n제출서류\n구글폼 접수, 현장 접수 가능\nhttps://forms.gle/QEF9uYMjgVh3KNSp9\n제출하신 서류는 사업운영기관에서 관리되오니 서류 반환 등 문의는 해당 기관으로 하시기 바랍니다.\n선정절차 및 평가방법\n구글폼 접수 및 현장접수\n없음\n행사안내\n2026 강북창업포럼(NCI 민/관/학 창업포럼)\n- 행사명: 2026 강북창업포럼 - AI가 바꾸는 창업의 미래\n- 일시: 11월 13일(금) 13:30 ~ 16:30\n- 장소: 강북문화예술회관 소나무홀 (서울시 강북구 삼각산로 85)\n- 내용\n1.  '메가 트렌드는 어떻게 세상을 바꾸었나' - 구글 아시아 태평양 지역 하드웨어 사업 총괄 전무 출신 액트투벤처스 미키김\n2. 'AI시대의 창업 환경과 정부 지원 전략' - 한국창업보육협회장 송민용\n3. 'AI 시대의 디자인, 창의성 및 차별화 전략' - 홍익대 산업디자인학과 교수 황성걸\n*강의세부 내용은 변경될 수 있습니다.\n4. 패널 토의 : AI시대, 창업은 기회인가 생존인가? - 문화·예술 비즈니스의 생존과 성장 조건\n- 참가비 : 무료\n상기 일정은 사업운영기관의 내부사정으로 변경될 수 있습니다.\n지원내용\nAI가 바꾸는 창업의 미래를주제로 강의, 패널토의 참관 가능\n포럼 행사 종료 후 다양한 경품 추첨 및 자율 네트워킹이 예정되어 있으니 많은 신청 바랍니다.\n문의처\n강북청년창업마루\n02-908-8247\n자세한 내용은 첨부파일 참조 및 문의처로 문의하여 주시기 바랍니다.\nK-Startup에 공고되는 정보는 해당 기관의 요청에 의해 제공됩니다. 입주, 교육, 사업 신청 시 요청하는 정보(개인정보 포함)는 해당 기관에서 관리 \t되오니\n이점 유의하여 주시기 바랍니다.\n본 저작물은 창업진흥원(K-Startup)이 게시한 공공누리 제1유형의 저작물이며, 공공데이터포털(www.data.go.kr)에서 공공데이터로 개방중이며 무료로 활용할 수 있습니다.\n접수 바로가기\n목록",
-      "raw_fetched_at": "2026-10-30"
+      "raw_fetched_at": "2026-10-30",
+      "last_changed_at": "2026-11-03"
     },
     {
       "pbancSn": "179430",
@@ -7215,6 +7810,123 @@
       },
       "raw_content": "2026 서울창업허브 창동 데모데이 참관 신청\n지원분야\n시설ㆍ공간ㆍ보육\n대상연령\n전체\n기관구분\n민간\n담당부서\n창업사업부\n지역\n전국\n접수기간\n2026-10-19 ~ 2026-11-18 17:00\n주관기관명\n(주)오픈놀\n대상\n전체\n창업업력\n전체\n연락처\n02-3778-2717\n2026 서울창업허브 창동 데모데이 참관 신청\n유망 스타트업의 혁신적인 아이디어와 비즈니스 모델을 만나고, 투자 전문가의 생생한 피드백을 통해 성장 가능성을 확인할 수 있는「2026 서울창업허브 창동 데모데이」를 개최합니다.\n2026년 10월 19일\n서울창업허브 창동\n신청방법 및 대상\n신청기간\n2026.10.19(월) 09:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t~\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t2026.11.18(수) 17:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t까지\n신청방법\n온라인 접수 :\n접수 바로가기\n신청대상\n(예비)창업자, 투자자(VC/AC), 창업 유관 기관 및 창업에 관심 있는 자\n제외대상\n없음\n신청 시 요청하는 정보(개인정보포함)는 사업운영기관에서 관리되오니 이점 반드시 유의하여 주시기 바랍니다.\n제출서류\n없음\n제출하신 서류는 사업운영기관에서 관리되오니 서류 반환 등 문의는 해당 기관으로 하시기 바랍니다.\n선정절차 및 평가방법\n없음\n행사안내\n행사 개요\n- 일　　시 :  2026년 11월 19일(목) 13:00~18:00\n- 장　　소 : 서울창업허브 창동 B1 대강당   (서울특별시 도봉구 마들로13길 84)\n- 참가 기업 : 서울창업허브 창동 IR라운드 우수기업 10개사\n- 참관 대상 : (예비)창업자, 투자자(VC/AC), 창업유관기관 관계자 및 창업에 관심 있는 자\n상기 일정은 사업운영기관의 내부사정으로 변경될 수 있습니다.\n지원내용\n주요 프로그램\n[1부] 투자유치 특강\n- 연사: KC벤처스 김민혜 팀장\n- 주제: 2027 투자시장 및 투자사가 보는 핵심보인트\n[2부] 우수 스타트업 IR 피칭\n- 서울창업허브 창동 IR라운드 우수기업 10개사의 사업모델 및 성장 전략 발표\n[3부] 투자 전문가 1:1 피드백 및 네트워킹\n- 우수기업 대상 투자 전문가의 1:1 피드백 제공 및 투자·사업화 관련 네트워킹 기회 마련\n문의처\n서울창업허브 창동\nchangdonghub@gmail.com\n자세한 내용은 첨부파일 참조 및 문의처로 문의하여 주시기 바랍니다.\nK-Startup에 공고되는 정보는 해당 기관의 요청에 의해 제공됩니다. 입주, 교육, 사업 신청 시 요청하는 정보(개인정보 포함)는 해당 기관에서 관리 \t되오니\n이점 유의하여 주시기 바랍니다.\n첨부파일 일괄 다운로드\n2026 서울창업허브 창동 데모데이 포스터.jpg\n바로보기\n다운로드\n2026 서울창업허브 창동 데모데이 포스터.txt\n바로보기\n다운로드\n본 저작물은 창업진흥원(K-Startup)이 게시한 공공누리 제1유형의 저작물이며, 공공데이터포털(www.data.go.kr)에서 공공데이터로 개방중이며 무료로 활용할 수 있습니다.\n접수 바로가기\n목록",
       "raw_fetched_at": "2026-10-22"
+    },
+    {
+      "pbancSn": "179638",
+      "title": "2026 서구토탈창업아카데미 참가자 모집",
+      "agency": "온랩",
+      "deadline": "2026-11-18",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179638",
+      "tier": "yellow",
+      "note": "검토 매칭 (전국/창업교육)",
+      "classify_evidence": {
+        "summary_reason": "검토 매칭 (전국/창업교육)",
+        "category_hints": [
+          "budget"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "모집 중"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-11-18",
+            "detail": "마감 전"
+          },
+          "region": {
+            "pass": true,
+            "value": "전국",
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "biz_enyy": {
+            "pass": true,
+            "value": "예비창업자,3년미만",
+            "detail": "업력 허용 (3년미만,예비창업자)"
+          },
+          "exclude_target": {
+            "pass": true,
+            "value": "",
+            "detail": "자격 제한 없음"
+          },
+          "industry": {
+            "pass": true,
+            "detail": "업종 제한 없음"
+          },
+          "qualification": {
+            "pass": true,
+            "detail": "자격 제한 없음"
+          },
+          "stage": {
+            "pass": true,
+            "detail": "업력 허용 (3년미만,예비창업자)"
+          },
+          "nature": {
+            "pass": true,
+            "detail": "간접 지원성 (창업교육)"
+          },
+          "region_keyword": {
+            "pass": true,
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "positive_hit": {
+            "pass": true,
+            "detail": "검토 매칭 (전국/창업교육)"
+          }
+        },
+        "risk_flags": [],
+        "axis_scores": {
+          "region": {
+            "level": "green",
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "stage": {
+            "level": "green",
+            "detail": "업력 허용 (3년미만,예비창업자)"
+          },
+          "industry": {
+            "level": "green",
+            "detail": "업종 제한 없음"
+          },
+          "nature": {
+            "level": "yellow",
+            "detail": "간접 지원성 (창업교육)"
+          },
+          "qualification": {
+            "level": "green",
+            "detail": "자격 제한 없음"
+          }
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "2순위: 모든 축 green/yellow, 검토 매칭 (전국/창업교육)",
+        "classify_version": "v8.3"
+      },
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03",
+      "structured": {
+        "pbanc_sn_int": 179638,
+        "integrated": false,
+        "recruiting": true,
+        "start_date": "2026-10-27",
+        "end_date": "2026-11-18",
+        "agency_type": "민간",
+        "biz_class": "창업교육",
+        "region": "전국",
+        "biz_enyy": "예비창업자,3년미만",
+        "age_range": "만 20세 미만,만 20세 이상 ~ 만 39세 이하,만 40세 이상",
+        "apply_target": "청소년,대학생,일반인,대학,연구기관,일반기업,1인 창조기업",
+        "apply_target_desc": "예비창업자 및 업력 3년 이내 초기창업기업 관계자 등",
+        "exclude_target": "",
+        "preferential": "",
+        "content": "예비·초기창업자의 사업모델 고도화와 실전 창업역량 강화를 지원하고, 분야별 전문가 멘토링 및 창업경진대회를 통해 창업아이템의 사업화 가능성을 높이기 위한 「2026 서구토탈창업아카데미」 참가자를 다음과 같이 모집하오니 많은 관심과 참여 바랍니다.",
+        "integrated_name": "2026 서구토탈창업아카데미",
+        "apply_online": "https://docs.google.com/forms/d/e/1FAIpQLSfSf8JshcFHUXPzlBSCaz1n2jxvFAO_nsNxGdgqZohX00L6NA/viewform",
+        "apply_guide": "docs.google.com/forms/d/e/1FAIpQLSfSf8JshcFHUXPzlBSCaz1n2jxvFAO_nsNxGdgqZohX00L6NA/viewform"
+      },
+      "raw_content": "2026 서구토탈창업아카데미 참가자 모집\n사업안내 바로가기\n지원분야\n창업교육\n대상연령\n전체\n기관구분\n민간\n담당부서\n기획팀\n지역\n전국\n접수기간\n2026-10-27 ~ 2026-11-18 16:00\n주관기관명\n온랩\n대상\n전체\n창업업력\n예비창업자, 3년미만\n연락처\n07089088902\n2026 서구토탈창업아카데미 참가자 모집\n예비·초기창업자의 사업모델 고도화와 실전 창업역량 강화를 지원하고, 분야별 전문가 멘토링 및 창업경진대회를 통해 창업아이템의 사업화 가능성을 높이기 위한 「2026 서구토탈창업아카데미」 참가자를 다음과 같이 모집하오니 많은 관심과 참여 바랍니다.\n2026년 10월 27일\n온랩\n신청방법 및 대상\n신청기간\n2026.10.27(화) 16:45\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t~\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t2026.11.18(수) 16:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t까지\n신청방법\n온라인 접수 :\n접수 바로가기\n신청대상\n예비창업자 및 업력 3년 이내 초기창업기업 관계자 등\n신청 시 요청하는 정보(개인정보포함)는 사업운영기관에서 관리되오니 이점 반드시 유의하여 주시기 바랍니다.\n제출서류\n온라인 신청폼 작성\nhttps://docs.google.com/forms/d/e/1FAIpQLSfSf8JshcFHUXPzlBSCaz1n2jxvFAO_nsNxGdgqZohX00L6NA/viewform\n제출하신 서류는 사업운영기관에서 관리되오니 서류 반환 등 문의는 해당 기관으로 하시기 바랍니다.\n선정절차 및 평가방법\n선정절차 및 평가방법\n구글폼을 통한 신청서 제출\n교육안내\n교육 안내\n• 일시: 2026. 11. 24.(화) ~ 11. 25.(수) / 1박 2일\n• 장소: 대전 토요코인호텔 및 KW컨벤션 예정\n• 대상: 예비창업자 및 업력 3년 이내 초기창업기업 관계자 등\n• 규모: 20팀 / 팀별 최대 3명, 총 60명 내외\n• 신청 마감: 2026. 11. 18.(금)\n• 선정 안내: 선정 결과 및 후속 일정 개별 안내\n상기 일정은 사업운영기관의 내부사정으로 변경될 수 있습니다.\n문의처\n문의처\n운영사무국:  onlab.cyj@gmail.com\n자세한 내용은 첨부파일 참조 및 문의처로 문의하여 주시기 바랍니다.\nK-Startup에 공고되는 정보는 해당 기관의 요청에 의해 제공됩니다. 입주, 교육, 사업 신청 시 요청하는 정보(개인정보 포함)는 해당 기관에서 관리 \t되오니\n이점 유의하여 주시기 바랍니다.\n첨부파일 일괄 다운로드\n[붙임1] 2026 서구토탈창업아카데미 안내문.hwpx\n바로보기\n다운로드\n본 저작물은 창업진흥원(K-Startup)이 게시한 공공누리 제1유형의 저작물이며, 공공데이터포털(www.data.go.kr)에서 공공데이터로 개방중이며 무료로 활용할 수 있습니다.\n접수 바로가기\n목록",
+      "raw_fetched_at": "2026-11-03"
     },
     {
       "pbancSn": "179586",
@@ -10297,7 +11009,7 @@
           "region": {
             "pass": false,
             "value": "전국",
-            "detail": "기관 지역 한정 (agency: 충남신용보증재단)"
+            "detail": "지역 한정 desc: '충청남도 소재'"
           },
           "biz_enyy": {
             "pass": true,
@@ -10327,7 +11039,7 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "기관 지역 한정 (agency: 충남신용보증재단)"
+            "detail": "지역 한정 desc: '충청남도 소재'"
           },
           "positive_hit": {
             "pass": false,
@@ -10338,7 +11050,7 @@
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "기관 지역 한정 (agency: 충남신용보증재단)"
+            "detail": "지역 한정 desc: '충청남도 소재'"
           },
           "stage": {
             "level": "green",
@@ -10361,7 +11073,7 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "기관 지역 한정 (agency: 충남신용보증재단)"
+            "msg": "지역 한정 desc: '충청남도 소재'"
           }
         ],
         "audit_flags": [],
@@ -14298,6 +15010,138 @@
       }
     },
     {
+      "pbancSn": "179677",
+      "title": "2026년 대전 테스트베드 연계사업 공모",
+      "agency": "한국수자원공사",
+      "deadline": "2026-11-11",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179677",
+      "tier": "orange",
+      "note": "3순위 (참고용): 사업명에 지역 포함 (대전)",
+      "classify_evidence": {
+        "summary_reason": "3순위 (참고용): 사업명에 지역 포함 (대전)",
+        "category_hints": [
+          "rnd"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "모집 중"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-11-11",
+            "detail": "마감 전"
+          },
+          "region": {
+            "pass": false,
+            "value": "대전",
+            "detail": "사업명에 지역 포함 (대전)"
+          },
+          "biz_enyy": {
+            "pass": true,
+            "value": "1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
+            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만)"
+          },
+          "exclude_target": {
+            "pass": true,
+            "value": "현재 ’국가 K-테스트베드‘ 기술성능확인을 진행중이지 않거나 대전 소재 기업이 아닐 경우는 선정에서 제외되며, 선정평가에서 기준점수(60점) 미",
+            "detail": "자격 제한 없음"
+          },
+          "industry": {
+            "pass": true,
+            "detail": "R&D 공고 — 하드웨어 리스크 (기술개발(R&amp;D))"
+          },
+          "qualification": {
+            "pass": true,
+            "detail": "자격 제한 없음"
+          },
+          "stage": {
+            "pass": true,
+            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만)"
+          },
+          "nature": {
+            "pass": true,
+            "detail": "간접 지원성 (기술개발(R&amp;D))"
+          },
+          "region_keyword": {
+            "pass": false,
+            "detail": "사업명에 지역 포함 (대전)"
+          },
+          "positive_hit": {
+            "pass": false,
+            "detail": "3순위 (참고용): 사업명에 지역 포함 (대전)"
+          }
+        },
+        "risk_flags": [
+          {
+            "type": "rnd_hardware_risk",
+            "severity": "med",
+            "msg": "R&D 공고 — 하드웨어/제조 시제품 중심일 가능성"
+          },
+          {
+            "type": "exclude_target_long",
+            "severity": "low",
+            "msg": "신청 제외 대상 장문 (104자) — 정독 필수"
+          }
+        ],
+        "axis_scores": {
+          "region": {
+            "level": "orange",
+            "detail": "사업명에 지역 포함 (대전)"
+          },
+          "stage": {
+            "level": "green",
+            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만)"
+          },
+          "industry": {
+            "level": "yellow",
+            "detail": "R&D 공고 — 하드웨어 리스크 (기술개발(R&amp;D))"
+          },
+          "nature": {
+            "level": "yellow",
+            "detail": "간접 지원성 (기술개발(R&amp;D))"
+          },
+          "qualification": {
+            "level": "green",
+            "detail": "자격 제한 없음"
+          }
+        },
+        "exclusion_flags": [
+          {
+            "axis": "region",
+            "severity": "high",
+            "msg": "사업명에 지역 포함 (대전)"
+          }
+        ],
+        "audit_flags": [],
+        "tier_logic": "3순위 (참고용): 사업명에 지역 포함 (대전)",
+        "classify_version": "v8.3"
+      },
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03",
+      "structured": {
+        "pbanc_sn_int": 179677,
+        "integrated": false,
+        "recruiting": true,
+        "start_date": "2026-10-28",
+        "end_date": "2026-11-11",
+        "agency_type": "공공기관",
+        "biz_class": "기술개발(R&amp;D)",
+        "region": "대전",
+        "biz_enyy": "1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
+        "age_range": "만 20세 미만,만 20세 이상 ~ 만 39세 이하,만 40세 이상",
+        "apply_target": "일반기업",
+        "apply_target_desc": "현재 &apos;국가 K-테스트베드&apos; 지원 후 기술성능확인을 진행중인 대전소재 기업 5개사\r\n(창업도시 창업기업 Pool 등록 기업)",
+        "exclude_target": "현재 ’국가 K-테스트베드‘ 기술성능확인을 진행중이지 않거나 대전 소재 기업이 아닐 경우는 선정에서 제외되며, 선정평가에서 기준점수(60점) 미만일 경우도 참여기업수에 상관없이 선정 제외",
+        "preferential": "",
+        "content": "&apos;국가 K-테스트베드&apos;와 &apos;대전 창업도시 조성 프로젝트&apos;간 연계하여 공공·민간이 보유한 인프라를 개방하여 대전 소재 全 산업 분야 중소·벤처기업의 기술·제품 실증을 지원하는 \r\n「대전 테스트베드 연계사업」과제를 공모하오니 참여를 희망하는 기업은 신청하여 주시기 바랍니다.",
+        "integrated_name": "2026년 대전 테스트베드 연계사업 공모",
+        "apply_online": "https://ktb.kwater.or.kr/wis/wq/index.do?w2xPath=/wis/ui/index_ktb.xml",
+        "apply_guide": "ktb.kwater.or.kr/wis/wq/index.do?w2xPath=/wis/ui/index_ktb.xml"
+      }
+    },
+    {
       "pbancSn": "179458",
       "title": "[숭실대학교 캠퍼스타운] 생성형 AI 활용 기초 및 업무 자동화 과정 참여자 모집",
       "agency": "숭실대학교 캠퍼스타운사업단",
@@ -14797,6 +15641,127 @@
       }
     },
     {
+      "pbancSn": "179678",
+      "title": "[로컬창업트랙 2기]기억되는 브랜드가 되는 법",
+      "agency": "관악구청",
+      "deadline": "2026-11-12",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179678",
+      "tier": "orange",
+      "note": "3순위 (참고용): 서울 구 단독 (관악구)",
+      "classify_evidence": {
+        "summary_reason": "3순위 (참고용): 서울 구 단독 (관악구)",
+        "category_hints": [
+          "budget"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "모집 중"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-11-12",
+            "detail": "마감 전"
+          },
+          "region": {
+            "pass": false,
+            "value": "서울",
+            "detail": "서울 구 단독 (관악구)"
+          },
+          "biz_enyy": {
+            "pass": true,
+            "value": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만",
+            "detail": "업력 허용 (1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "exclude_target": {
+            "pass": true,
+            "value": "",
+            "detail": "자격 제한 없음"
+          },
+          "industry": {
+            "pass": true,
+            "detail": "업종 제한 없음"
+          },
+          "qualification": {
+            "pass": true,
+            "detail": "자격 제한 없음"
+          },
+          "stage": {
+            "pass": true,
+            "detail": "업력 허용 (1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "nature": {
+            "pass": true,
+            "detail": "간접 지원성 (창업교육)"
+          },
+          "region_keyword": {
+            "pass": false,
+            "detail": "서울 구 단독 (관악구)"
+          },
+          "positive_hit": {
+            "pass": false,
+            "detail": "3순위 (참고용): 서울 구 단독 (관악구)"
+          }
+        },
+        "risk_flags": [],
+        "axis_scores": {
+          "region": {
+            "level": "orange",
+            "detail": "서울 구 단독 (관악구)"
+          },
+          "stage": {
+            "level": "green",
+            "detail": "업력 허용 (1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "industry": {
+            "level": "green",
+            "detail": "업종 제한 없음"
+          },
+          "nature": {
+            "level": "yellow",
+            "detail": "간접 지원성 (창업교육)"
+          },
+          "qualification": {
+            "level": "green",
+            "detail": "자격 제한 없음"
+          }
+        },
+        "exclusion_flags": [
+          {
+            "axis": "region",
+            "severity": "high",
+            "msg": "서울 구 단독 (관악구)"
+          }
+        ],
+        "audit_flags": [],
+        "tier_logic": "3순위 (참고용): 서울 구 단독 (관악구)",
+        "classify_version": "v8.3"
+      },
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03",
+      "structured": {
+        "pbanc_sn_int": 179678,
+        "integrated": false,
+        "recruiting": true,
+        "start_date": "2026-10-19",
+        "end_date": "2026-11-12",
+        "agency_type": "지자체",
+        "biz_class": "창업교육",
+        "region": "서울",
+        "biz_enyy": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만",
+        "age_range": "만 20세 이상 ~ 만 39세 이하",
+        "apply_target": "대학생,일반인,대학,연구기관,일반기업,1인 창조기업",
+        "apply_target_desc": "청년 예비 및 초기창업자(1987년 이후 출생자)",
+        "exclude_target": "",
+        "preferential": "",
+        "content": "청년 예비·초기 창업자를 위해 로컬창업트랙을 운영하오니 많은 관심 바랍니다.",
+        "integrated_name": "로컬창업트랙",
+        "apply_online": "https://www.checkin-gwanak.or.kr/core/?cid=58&role=programvopn&pSeq=1255&tab=",
+        "apply_guide": "www.checkin-gwanak.or.kr/core/?cid=58&role=programvopn&pSeq=1255&tab="
+      }
+    },
+    {
       "pbancSn": "itp_11148",
       "title": "[로봇센터] 2026년 로봇산업진흥시설 입주기업 모집공고(4차)",
       "agency": "인천테크노파크 로봇센터",
@@ -15043,9 +16008,9 @@
       "deadline": "2026-11-13",
       "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179552",
       "tier": "orange",
-      "note": "3순위 (참고용): 기관 지역 한정 (agency: 경남지방중소벤처기업청)",
+      "note": "3순위 (참고용): 지역 한정 desc: '경상남도 소재'",
       "classify_evidence": {
-        "summary_reason": "3순위 (참고용): 기관 지역 한정 (agency: 경남지방중소벤처기업청)",
+        "summary_reason": "3순위 (참고용): 지역 한정 desc: '경상남도 소재'",
         "category_hints": [
           "ai"
         ],
@@ -15063,7 +16028,7 @@
           "region": {
             "pass": false,
             "value": "경남",
-            "detail": "기관 지역 한정 (agency: 경남지방중소벤처기업청)"
+            "detail": "지역 한정 desc: '경상남도 소재'"
           },
           "biz_enyy": {
             "pass": true,
@@ -15093,18 +16058,18 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "기관 지역 한정 (agency: 경남지방중소벤처기업청)"
+            "detail": "지역 한정 desc: '경상남도 소재'"
           },
           "positive_hit": {
             "pass": false,
-            "detail": "3순위 (참고용): 기관 지역 한정 (agency: 경남지방중소벤처기업청)"
+            "detail": "3순위 (참고용): 지역 한정 desc: '경상남도 소재'"
           }
         },
         "risk_flags": [],
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "기관 지역 한정 (agency: 경남지방중소벤처기업청)"
+            "detail": "지역 한정 desc: '경상남도 소재'"
           },
           "stage": {
             "level": "green",
@@ -15127,7 +16092,7 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "기관 지역 한정 (agency: 경남지방중소벤처기업청)"
+            "msg": "지역 한정 desc: '경상남도 소재'"
           },
           {
             "axis": "industry",
@@ -15136,7 +16101,7 @@
           }
         ],
         "audit_flags": [],
-        "tier_logic": "3순위 (참고용): 기관 지역 한정 (agency: 경남지방중소벤처기업청)",
+        "tier_logic": "3순위 (참고용): 지역 한정 desc: '경상남도 소재'",
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-21",
@@ -15438,6 +16403,143 @@
         "integrated_name": "창업보육센터 지원",
         "apply_online": "https://www.smes.go.kr/binet/mngr/board/editView.do?boardID=RECRUIT&mid=04#",
         "apply_guide": ""
+      }
+    },
+    {
+      "pbancSn": "179691",
+      "title": "2026년 5차 국립공주대학교 창업보육센터 입주기업 모집 연장공고",
+      "agency": "국립공주대학교 산학협력단",
+      "deadline": "2026-11-13",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179691",
+      "tier": "orange",
+      "note": "3순위 (참고용): 지역 한정 (충남)",
+      "classify_evidence": {
+        "summary_reason": "3순위 (참고용): 지역 한정 (충남)",
+        "category_hints": [
+          "budget"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "모집 중"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-11-13",
+            "detail": "마감 전"
+          },
+          "region": {
+            "pass": false,
+            "value": "충남",
+            "detail": "지역 한정 (충남)"
+          },
+          "biz_enyy": {
+            "pass": true,
+            "value": "예비창업자,7년미만",
+            "detail": "업력 허용 (7년미만,예비창업자)"
+          },
+          "exclude_target": {
+            "pass": true,
+            "value": "- 기업부설연구소 입주시 본사가 정부나 지자체 지원 공간에 입주한 경우\r\n- 금융기관으로부터 채무불이행 및 국세·지방세 체납으로 규제 중인 자 ",
+            "detail": "exclude_target 장문 (142자)"
+          },
+          "industry": {
+            "pass": false,
+            "detail": "업종 한정 (반도체)"
+          },
+          "qualification": {
+            "pass": true,
+            "detail": "exclude_target 장문 (142자)"
+          },
+          "stage": {
+            "pass": true,
+            "detail": "업력 허용 (7년미만,예비창업자)"
+          },
+          "nature": {
+            "pass": true,
+            "detail": "간접 지원성 (시설ㆍ공간ㆍ보육)"
+          },
+          "region_keyword": {
+            "pass": false,
+            "detail": "지역 한정 (충남)"
+          },
+          "positive_hit": {
+            "pass": false,
+            "detail": "3순위 (참고용): 지역 한정 (충남)"
+          }
+        },
+        "risk_flags": [
+          {
+            "type": "exclude_target_long",
+            "severity": "low",
+            "msg": "신청 제외 대상 장문 (142자) — 정독 필수"
+          },
+          {
+            "type": "apply_target_narrow",
+            "severity": "med",
+            "msg": "신청 대상 좁음 (청소년,대학생,일반인)"
+          }
+        ],
+        "axis_scores": {
+          "region": {
+            "level": "orange",
+            "detail": "지역 한정 (충남)"
+          },
+          "stage": {
+            "level": "green",
+            "detail": "업력 허용 (7년미만,예비창업자)"
+          },
+          "industry": {
+            "level": "orange",
+            "detail": "업종 한정 (반도체)"
+          },
+          "nature": {
+            "level": "yellow",
+            "detail": "간접 지원성 (시설ㆍ공간ㆍ보육)"
+          },
+          "qualification": {
+            "level": "yellow",
+            "detail": "exclude_target 장문 (142자)"
+          }
+        },
+        "exclusion_flags": [
+          {
+            "axis": "region",
+            "severity": "high",
+            "msg": "지역 한정 (충남)"
+          },
+          {
+            "axis": "industry",
+            "severity": "high",
+            "msg": "업종 한정 (반도체)"
+          }
+        ],
+        "audit_flags": [],
+        "tier_logic": "3순위 (참고용): 지역 한정 (충남)",
+        "classify_version": "v8.3"
+      },
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03",
+      "structured": {
+        "pbanc_sn_int": 179691,
+        "integrated": true,
+        "recruiting": true,
+        "start_date": "2026-11-02",
+        "end_date": "2026-11-13",
+        "agency_type": "교육기관",
+        "biz_class": "시설ㆍ공간ㆍ보육",
+        "region": "충남",
+        "biz_enyy": "예비창업자,7년미만",
+        "age_range": "만 20세 미만,만 20세 이상 ~ 만 39세 이하,만 40세 이상",
+        "apply_target": "청소년,대학생,일반인",
+        "apply_target_desc": "[ 예비창업자]\r\n￭ 잠재력 높은 기술의 개발 단계에 있는 창업 준비자\r\n￭ 기술적 아이디어를 바탕으로 구체적 사업화 목적이 있는 자\r\n￭ 입주 후 3개월 이내 창업(사업자등록)이 가능한 자\r\n\r\n[기창업자]\r\n￭ 기술집약형 업종의 창업 기업으로 공고일 기준 업력 7년 이내의 기업\r\n￭ 입주 확정 시 3개월 이내 본점 소재지 이전이 가능한 기업\r\n※ 기업부설연구소 입주 가능(자격요건 관련 상세 내용 확인 필수)\r\n\r\n[공통]\r\n- 대학과의 산학협력을 통한 성장 가능성이 높은 예비창업자 또는 기업\r\n- 창업보육센터 입주 확정 기업은 주사업장(본점)이 입주하여야 함\r\n- 산학협력 공동연구 사업을 위한 기업부설연구소 입주 가능\r\n※ 단, 연구소 입주 시 본사가 정부나 지자체에서 지원하는 공간에 입주하지 않아야 함\r\n- 우대사항: 국립공주대학교 학생·교원창업자 / 공주 지역 특성화 알밤 사업 관련 / 지역주력산업 및 전･후방산업 분야* 등\r\n* 충남 주력산업: (주축산업) 디스플레이부품장비, 탄소저감자동차부품, 고기능성그린바이오\r\n(미래신산업) 수소연료전지 및 발전, 반도체첨단패키징",
+        "exclude_target": "- 기업부설연구소 입주시 본사가 정부나 지자체 지원 공간에 입주한 경우\r\n- 금융기관으로부터 채무불이행 및 국세·지방세 체납으로 규제 중인 자 또는 기업\r\n- 폐수, 소음, 진동 등 공해 다발업종 영위 자\r\n- 기타 운영위원회에서 부적당하다고 인정하는 자",
+        "preferential": "",
+        "content": "국립공주대학교 산학협력단(창업보육센터)에서는 기술집약형 중소기업의 창업 촉진을 위하여 우수한 기술력을 바탕으로 도전적이고 창의적인 입주기업을 모집하오니, 입주를 희망하시는 분들의 많은 지원 바랍니다.",
+        "integrated_name": "창업보육센터및 기업 지원",
+        "apply_online": "",
+        "apply_guide": "sanhak.kongju.ac.kr/bbs/M00015/562/433649/artclView.do?layout=unknown"
       }
     },
     {
@@ -16538,6 +17640,132 @@
       }
     },
     {
+      "pbancSn": "179680",
+      "title": "<2026년 AI 활용 온라인 플랫폼 제작 교육> 참여자 모집",
+      "agency": "충북Pro메이커센터",
+      "deadline": "2026-11-18",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179680",
+      "tier": "orange",
+      "note": "검토 매칭 (플랫폼)",
+      "classify_evidence": {
+        "summary_reason": "검토 매칭 (플랫폼)",
+        "category_hints": [
+          "ai"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "모집 중"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-11-18",
+            "detail": "마감 전"
+          },
+          "region": {
+            "pass": false,
+            "value": "충북",
+            "detail": "기관 지역 한정 (agency: 충북Pro메이커센터)"
+          },
+          "biz_enyy": {
+            "pass": true,
+            "value": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
+            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "exclude_target": {
+            "pass": true,
+            "value": "",
+            "detail": "자격 제한 없음"
+          },
+          "industry": {
+            "pass": false,
+            "detail": "업종 한정 (메이커)"
+          },
+          "qualification": {
+            "pass": true,
+            "detail": "자격 제한 없음"
+          },
+          "stage": {
+            "pass": true,
+            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "nature": {
+            "pass": true,
+            "detail": "간접 지원성 (창업교육)"
+          },
+          "region_keyword": {
+            "pass": false,
+            "detail": "기관 지역 한정 (agency: 충북Pro메이커센터)"
+          },
+          "positive_hit": {
+            "pass": false,
+            "detail": "검토 매칭 (플랫폼)"
+          }
+        },
+        "risk_flags": [],
+        "axis_scores": {
+          "region": {
+            "level": "orange",
+            "detail": "기관 지역 한정 (agency: 충북Pro메이커센터)"
+          },
+          "stage": {
+            "level": "green",
+            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "industry": {
+            "level": "orange",
+            "detail": "업종 한정 (메이커)"
+          },
+          "nature": {
+            "level": "yellow",
+            "detail": "간접 지원성 (창업교육)"
+          },
+          "qualification": {
+            "level": "green",
+            "detail": "자격 제한 없음"
+          }
+        },
+        "exclusion_flags": [
+          {
+            "axis": "region",
+            "severity": "high",
+            "msg": "기관 지역 한정 (agency: 충북Pro메이커센터)"
+          },
+          {
+            "axis": "industry",
+            "severity": "high",
+            "msg": "업종 한정 (메이커)"
+          }
+        ],
+        "audit_flags": [],
+        "tier_logic": "3순위 (아이디어·우회 가능): 검토 매칭 (플랫폼)",
+        "classify_version": "v8.3"
+      },
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03",
+      "structured": {
+        "pbanc_sn_int": 179680,
+        "integrated": false,
+        "recruiting": true,
+        "start_date": "2026-10-30",
+        "end_date": "2026-11-18",
+        "agency_type": "교육기관",
+        "biz_class": "창업교육",
+        "region": "충북",
+        "biz_enyy": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
+        "age_range": "만 20세 미만,만 20세 이상 ~ 만 39세 이하,만 40세 이상",
+        "apply_target": "청소년,대학생,일반인,대학,연구기관,일반기업,1인 창조기업",
+        "apply_target_desc": "- AI를 활용해 온라인 플랫폼을 제작하고자 하는 (예비)창업자\r\n- AI를 활용한 웹페이지 제작에 관심 있는 일반인 등",
+        "exclude_target": "",
+        "preferential": "",
+        "content": "충북Pro메이커센터에서는 다음과 같이 AI를 활용한 온라인 플랫폼 제작 교육을 진행합니다.\r\n관심있는 분들의 많은 참여 신청 바랍니다.",
+        "integrated_name": "&lt;2026년 AI 활용 온라인 플랫폼 제작 교육&gt; 참여자 모집",
+        "apply_online": "https://forms.gle/UbLPVojyhPL9fTx28",
+        "apply_guide": "cbpm.cbnu.ac.kr/notice/notice/?mod=document&uid=1262"
+      }
+    },
+    {
       "pbancSn": "179559",
       "title": "국민대학교 청년도약 인재양성 부트캠프 참가자 모집(AI 실무교육)",
       "agency": "국민대학교 글로벌창업벤처대학원",
@@ -17152,6 +18380,125 @@
       }
     },
     {
+      "pbancSn": "179693",
+      "title": "[1:1 무료 코칭데이] 하드웨어 스타트업 디자인·설계·금형·양산, 현직 엔지니어 상담",
+      "agency": "인탑스 주식회사",
+      "deadline": "2026-11-22",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179693",
+      "tier": "orange",
+      "note": "검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)",
+      "classify_evidence": {
+        "summary_reason": "검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)",
+        "category_hints": [],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "모집 중"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-11-22",
+            "detail": "마감 전"
+          },
+          "region": {
+            "pass": true,
+            "value": "전국",
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "biz_enyy": {
+            "pass": true,
+            "value": "1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
+            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만)"
+          },
+          "exclude_target": {
+            "pass": true,
+            "value": "",
+            "detail": "자격 제한 없음"
+          },
+          "industry": {
+            "pass": false,
+            "detail": "업종 한정 (금형)"
+          },
+          "qualification": {
+            "pass": true,
+            "detail": "자격 제한 없음"
+          },
+          "stage": {
+            "pass": true,
+            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만)"
+          },
+          "nature": {
+            "pass": true,
+            "detail": "간접 지원성 (멘토링ㆍ컨설팅ㆍ교육)"
+          },
+          "region_keyword": {
+            "pass": true,
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "positive_hit": {
+            "pass": false,
+            "detail": "검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)"
+          }
+        },
+        "risk_flags": [],
+        "axis_scores": {
+          "region": {
+            "level": "green",
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "stage": {
+            "level": "green",
+            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만)"
+          },
+          "industry": {
+            "level": "orange",
+            "detail": "업종 한정 (금형)"
+          },
+          "nature": {
+            "level": "yellow",
+            "detail": "간접 지원성 (멘토링ㆍ컨설팅ㆍ교육)"
+          },
+          "qualification": {
+            "level": "green",
+            "detail": "자격 제한 없음"
+          }
+        },
+        "exclusion_flags": [
+          {
+            "axis": "industry",
+            "severity": "high",
+            "msg": "업종 한정 (금형)"
+          }
+        ],
+        "audit_flags": [],
+        "tier_logic": "3순위 (아이디어·우회 가능): 검토 매칭 (전국/멘토링ㆍ컨설팅ㆍ교육)",
+        "classify_version": "v8.3"
+      },
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03",
+      "structured": {
+        "pbanc_sn_int": 179693,
+        "integrated": false,
+        "recruiting": true,
+        "start_date": "2026-11-02",
+        "end_date": "2026-11-22",
+        "agency_type": "민간",
+        "biz_class": "멘토링ㆍ컨설팅ㆍ교육",
+        "region": "전국",
+        "biz_enyy": "1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
+        "age_range": "만 20세 이상 ~ 만 39세 이하,만 40세 이상",
+        "apply_target": "일반인,대학,연구기관,일반기업,1인 창조기업",
+        "apply_target_desc": "국내외 중소벤처기업 , 제품 관련 제조 컨설팅이 필요한 전 분야 스타트업",
+        "exclude_target": "",
+        "preferential": "",
+        "content": "인탑스 주식회사는 모바일, 자동차, 가전, 의료기기, 로봇 등 다양한 분야의 부품과 완제품을 제조하는 글로벌 전문 기업입니다.\r\n\r\n풍부한 CMF 경험을 바탕으로 플라스틱 사출, 금속 표면처리, 패브릭 및 복합 소재 활용, 초경도·박막 코팅 등 다양한 기술을 제공하여 고객이 창의적인 제품을 디자인하고 생산할 수 있도록 지원합니다. 삼성전자, 현대차그룹, 베어로보틱스, KT 등 국내외 주요 기업과 협력해 온 45년 경력의 제조 파트너로 디자인부터 설계, 양산까지 이어지는 원스톱 제조 시스템을 갖추고 있습니다.\r\n\r\n인탑스가 운영하는 &apos;페이퍼프로그램’은 하드웨어 스타트업의 아이디어가 성공적인 제품으로 양산될 수 있도록 돕는 제조사 주도 성장 파트너입니다.\r\n\r\n반세기 가까이 축적된 인탑스의 제조 노하우와 현직 전문가의 밀착 멘토링을 통해 기획부터 양산까지 완벽한 제품화를 지원합니다.\r\n\r\n페이퍼프로그램에서 현직 전문가와 함께하는 &apos;코칭데이&apos;를 개최합니다.\r\n\r\n수많은 컨설팅 경험을 통해 축적된 인사이트로 개별 제품을 정확히 진단하며, 단순한 양산 검토를 넘어 비즈니스 스케일업까지 아우르는 밀착 멘토링을 통해 스타트업의 막막한 제조 고민을 해결해 드립니다.",
+        "integrated_name": "[1:1 무료 코칭데이] 하드웨어 스타트업 디자인·설계·금형·양산, 현직 엔지니어 상담",
+        "apply_online": "https://paper-program.com/program-coachingday?utm_source=startupsite&utm_medium=kstartup&utm_campaign=coaching2611",
+        "apply_guide": "paper-program.com/program-coachingday?utm_source=startupsite&utm_medium=kstartup&utm_campaign=coaching2611"
+      }
+    },
+    {
       "pbancSn": "176755",
       "title": "「2026년 경남창조경제혁신센터 창업-BuS 프로그램」참여 스타트업 모집 공고",
       "agency": "(재)경남창조경제혁신센터",
@@ -17276,6 +18623,127 @@
         "integrated_name": "「2026년 경남창조경제혁신센터 창업-BuS 프로그램」참여 스타트업 모집 공고",
         "apply_online": "https://forms.gle/nGJnhuRdWxzGJob17",
         "apply_guide": "https://ccei.creativekorea.or.kr/gyeongnam/allim/allim_view.do?div_code=1&no=37252"
+      }
+    },
+    {
+      "pbancSn": "179673",
+      "title": "경기대학교 2026년 예비창업패키지 KGU 창업준비 아카데미 모집 신청 공고",
+      "agency": "경기대학교 창업지원단",
+      "deadline": "2026-11-23",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179673",
+      "tier": "orange",
+      "note": "핵심 매칭 (예비창업패키지) — title",
+      "classify_evidence": {
+        "summary_reason": "핵심 매칭 (예비창업패키지) — title",
+        "category_hints": [
+          "budget"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "모집 중"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-11-23",
+            "detail": "마감 전"
+          },
+          "region": {
+            "pass": false,
+            "value": "경기",
+            "detail": "경기 단독 (인천 미포함)"
+          },
+          "biz_enyy": {
+            "pass": true,
+            "value": "예비창업자",
+            "detail": "업력 허용 (예비창업자)"
+          },
+          "exclude_target": {
+            "pass": true,
+            "value": "없음",
+            "detail": "자격 제한 없음"
+          },
+          "industry": {
+            "pass": true,
+            "detail": "업종 제한 없음"
+          },
+          "qualification": {
+            "pass": true,
+            "detail": "자격 제한 없음"
+          },
+          "stage": {
+            "pass": true,
+            "detail": "업력 허용 (예비창업자)"
+          },
+          "nature": {
+            "pass": true,
+            "detail": "직접 자금성 (사업화)"
+          },
+          "region_keyword": {
+            "pass": false,
+            "detail": "경기 단독 (인천 미포함)"
+          },
+          "positive_hit": {
+            "pass": true,
+            "detail": "핵심 매칭 (예비창업패키지) — title"
+          }
+        },
+        "risk_flags": [],
+        "axis_scores": {
+          "region": {
+            "level": "orange",
+            "detail": "경기 단독 (인천 미포함)"
+          },
+          "stage": {
+            "level": "green",
+            "detail": "업력 허용 (예비창업자)"
+          },
+          "industry": {
+            "level": "green",
+            "detail": "업종 제한 없음"
+          },
+          "nature": {
+            "level": "green",
+            "detail": "직접 자금성 (사업화)"
+          },
+          "qualification": {
+            "level": "green",
+            "detail": "자격 제한 없음"
+          }
+        },
+        "exclusion_flags": [
+          {
+            "axis": "region",
+            "severity": "high",
+            "msg": "경기 단독 (인천 미포함)"
+          }
+        ],
+        "audit_flags": [],
+        "tier_logic": "3순위 (조건 충족하나 일부 축 제약): 핵심 매칭 (예비창업패키지) — title",
+        "classify_version": "v8.3"
+      },
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03",
+      "structured": {
+        "pbanc_sn_int": 179673,
+        "integrated": true,
+        "recruiting": true,
+        "start_date": "2026-10-30",
+        "end_date": "2026-11-23",
+        "agency_type": "교육기관",
+        "biz_class": "사업화",
+        "region": "경기",
+        "biz_enyy": "예비창업자",
+        "age_range": "만 20세 미만,만 20세 이상 ~ 만 39세 이하,만 40세 이상",
+        "apply_target": "청소년,대학생,일반인,대학,연구기관,일반기업,1인 창조기업",
+        "apply_target_desc": "혁신적인 기술 또는 아이디어로 창업을 준비 중인 예비창업자",
+        "exclude_target": "없음",
+        "preferential": "",
+        "content": "경기대학교 창업지원단에서 2026 예비창업패키지 KGU 창업준비 아카데미 모집 계획을 공고하오니, 창업을 준비하시는 예비창업자 분들의 많은 관심과 참여 바랍니다.",
+        "integrated_name": "예비창업패키지",
+        "apply_online": "https://forms.gle/ij95oNbcrqMxXXX56",
+        "apply_guide": "www.kyonggi.ac.kr/startup/selectBbsNttView.do?key=1244&bbsNo=528&nttNo=626917&pageUnit=10&searchCnd=all"
       }
     },
     {
@@ -24703,7 +26171,7 @@
           "region": {
             "pass": false,
             "value": "경남",
-            "detail": "사업명에 지역 포함 (경남)"
+            "detail": "지역 한정 desc: '경상남도 소재'"
           },
           "biz_enyy": {
             "pass": true,
@@ -24733,7 +26201,7 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "사업명에 지역 포함 (경남)"
+            "detail": "지역 한정 desc: '경상남도 소재'"
           },
           "positive_hit": {
             "pass": true,
@@ -24744,7 +26212,7 @@
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "사업명에 지역 포함 (경남)"
+            "detail": "지역 한정 desc: '경상남도 소재'"
           },
           "stage": {
             "level": "green",
@@ -24767,7 +26235,7 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "사업명에 지역 포함 (경남)"
+            "msg": "지역 한정 desc: '경상남도 소재'"
           },
           {
             "axis": "industry",
@@ -25283,6 +26751,131 @@
       }
     },
     {
+      "pbancSn": "179685",
+      "title": "2027년 청년농산업 창업지원센터 보육생  모집",
+      "agency": "경북대학교 상주캠퍼스 청년농산업 창업지원센터",
+      "deadline": "2027-03-31",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179685",
+      "tier": "orange",
+      "note": "3순위 (참고용): 지자체 기관 의심 (지자체 창업센터: 경북대학교 상주캠퍼스 청년농산업 창업지원센터)",
+      "classify_evidence": {
+        "summary_reason": "3순위 (참고용): 지자체 기관 의심 (지자체 창업센터: 경북대학교 상주캠퍼스 청년농산업 창업지원센터)",
+        "category_hints": [],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "모집 중"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2027-03-31",
+            "detail": "마감 전"
+          },
+          "region": {
+            "pass": false,
+            "value": "경북",
+            "detail": "지자체 기관 의심 (지자체 창업센터: 경북대학교 상주캠퍼스 청년농산업 창업지원센터)"
+          },
+          "biz_enyy": {
+            "pass": true,
+            "value": "7년미만",
+            "detail": "업력 허용 (7년미만)"
+          },
+          "exclude_target": {
+            "pass": true,
+            "value": "",
+            "detail": "자격 제한 없음"
+          },
+          "industry": {
+            "pass": true,
+            "detail": "업종 제한 없음"
+          },
+          "qualification": {
+            "pass": true,
+            "detail": "자격 제한 없음"
+          },
+          "stage": {
+            "pass": true,
+            "detail": "업력 허용 (7년미만)"
+          },
+          "nature": {
+            "pass": true,
+            "detail": "간접 지원성 (시설ㆍ공간ㆍ보육)"
+          },
+          "region_keyword": {
+            "pass": false,
+            "detail": "지자체 기관 의심 (지자체 창업센터: 경북대학교 상주캠퍼스 청년농산업 창업지원센터)"
+          },
+          "positive_hit": {
+            "pass": false,
+            "detail": "3순위 (참고용): 지자체 기관 의심 (지자체 창업센터: 경북대학교 상주캠퍼스 청년농산업 창업지원센터)"
+          }
+        },
+        "risk_flags": [
+          {
+            "type": "apply_target_narrow",
+            "severity": "med",
+            "msg": "신청 대상 좁음 (일반인)"
+          }
+        ],
+        "axis_scores": {
+          "region": {
+            "level": "orange",
+            "detail": "지자체 기관 의심 (지자체 창업센터: 경북대학교 상주캠퍼스 청년농산업 창업지원센터)"
+          },
+          "stage": {
+            "level": "green",
+            "detail": "업력 허용 (7년미만)"
+          },
+          "industry": {
+            "level": "green",
+            "detail": "업종 제한 없음"
+          },
+          "nature": {
+            "level": "yellow",
+            "detail": "간접 지원성 (시설ㆍ공간ㆍ보육)"
+          },
+          "qualification": {
+            "level": "green",
+            "detail": "자격 제한 없음"
+          }
+        },
+        "exclusion_flags": [
+          {
+            "axis": "region",
+            "severity": "high",
+            "msg": "지자체 기관 의심 (지자체 창업센터: 경북대학교 상주캠퍼스 청년농산업 창업지원센터)"
+          }
+        ],
+        "audit_flags": [],
+        "tier_logic": "3순위 (참고용): 지자체 기관 의심 (지자체 창업센터: 경북대학교 상주캠퍼스 청년농산업 창업지원센터)",
+        "classify_version": "v8.3"
+      },
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03",
+      "structured": {
+        "pbanc_sn_int": 179685,
+        "integrated": true,
+        "recruiting": true,
+        "start_date": "2026-11-02",
+        "end_date": "2027-03-31",
+        "agency_type": "교육기관",
+        "biz_class": "시설ㆍ공간ㆍ보육",
+        "region": "경북",
+        "biz_enyy": "7년미만",
+        "age_range": "만 20세 이상 ~ 만 39세 이하",
+        "apply_target": "일반인",
+        "apply_target_desc": "18세 이상 ~ 39세 이하로 경북권역 내 농산업 분야 창업 희망자(거주지 제한 없음)\r\n(※ 상제자격 요건은 공고문 참조 )",
+        "exclude_target": "",
+        "preferential": "",
+        "content": "경북대학교 상주캠퍼스 청년농산업 창업지원센터에서는농산업 분야의 창업에 관심이 있는 우수 청년인력의 창업을 종합적으로 지원하기 위해 「2027년 청년농산업 창업지원센터 」 교육에 참여할 (예비)청년창업자 모집을 다음과 같이 공고하오니 안내에 따라 신청하시기 바랍니다.",
+        "integrated_name": "경북 청년농산업  창업지원센터 운영",
+        "apply_online": "",
+        "apply_guide": "www.knusjagri.or.kr/29/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=175372043&t=board"
+      }
+    },
+    {
       "pbancSn": "179577",
       "title": "[LH한국토지주택공사] 판교제2테크노밸리 기업지원허브 업무지원시설(지상 1층 115호실) 임대공급 공고",
       "agency": "한국토지주택공사",
@@ -25783,31 +27376,35 @@
     }
   ],
   "_meta": {
-    "expired": [
-      "대학생 예비 창업가의 아이디어를 검증할 실전 무대, 2026 『신한 스퀘어브릿지』 HERO IR 참가자 모집(~11/2)",
-      "'애자일 피보팅: 시장의 변화를 기회로 만드는 기술창업 전략'",
-      "2026 여성벤처활성화사업 「여성벤처CEO 경영혁신아카데미」",
-      "2026년 스타트업 법률지원사업 울산광역시 법률상담회 참여 기업 모집 안내",
-      "[창업행사] 2026 마포청년 창업데이",
-      "[제2서울핀테크랩] 2027년 제2서울핀테크랩 입주ㆍ멤버십 기업 모집공고",
-      "「민관협력 오픈이노베이션 지원」2026년 제2차 상호 자율탐색형(바이오 분야) 참여기업 모집공고",
-      "2026년 워터라운드(wateRound) 제5기 협약파트너사 모집 공고",
-      "2026년 서울핀테크랩 FIN-오픈이노베이션 Meep-up Day 10회차 - DB손해보험",
-      "[ICT창업트랙] AI를 활용한 창업팀의 일하는 방식"
+    "expired": [],
+    "new_added": [
+      "[1:1 무료 코칭데이] 하드웨어 스타트업 디자인·설계·금형·양산, 현직 엔지니어 상담",
+      "2026년 5차 국립공주대학교 창업보육센터 입주기업 모집 연장공고",
+      "2026 포스코기술투자 TIPS Scout 참여 스타트업 모집",
+      "2027년 청년농산업 창업지원센터 보육생  모집",
+      "[ 모 집 ] GVC AI Platform Startup Enabling Program 및 스마트워크·쇼핑몰 창업지원 및 AI 전환 지원",
+      "<2026년 AI 활용 온라인 플랫폼 제작 교육> 참여자 모집",
+      "2026년 위치정보 보호조치 교육 (7차)",
+      "[로컬창업트랙 2기]기억되는 브랜드가 되는 법",
+      "2026년 대전 테스트베드 연계사업 공모",
+      "2026 별별상상 스타트업 챌린지",
+      "2026 대덕특구 딥테크 혁신성장 플랫폼(전략기술 발굴 및 매칭) (11/1 ~ 12/31)",
+      "경기대학교 2026년 예비창업패키지 KGU 창업준비 아카데미 모집 신청 공고",
+      "2026 서구토탈창업아카데미 참가자 모집"
     ],
-    "new_added": [],
     "updated_today": [
+      "&apos;AI가 바꾸는 창업의 미래&apos; NCI 민/관/학 창업포럼 참관객 모집",
       "AI 활용 소상공인 및 전통시장 매니저  실무 역량 과정 참가자 모집"
     ],
     "stats": {
-      "green": 17,
-      "yellow": 47,
-      "orange": 131,
+      "green": 21,
+      "yellow": 49,
+      "orange": 138,
       "red_excluded": 0,
-      "expired_removed": 10,
-      "total_pool": 195,
-      "rss_total": 186,
-      "raw_fetched": 59
+      "expired_removed": 0,
+      "total_pool": 208,
+      "rss_total": 198,
+      "raw_fetched": 65
     }
   },
   "history": [
@@ -26083,11 +27680,11 @@
     },
     {
       "date": "2026-11-03",
-      "at_kst": "2026-11-03T04:17:02+09:00",
-      "new": 0,
-      "updated": 1,
-      "expired": 10,
-      "total": 195,
+      "at_kst": "2026-11-03T08:16:37+09:00",
+      "new": 13,
+      "updated": 2,
+      "expired": 0,
+      "total": 208,
       "red_excluded": 0
     }
   ]
