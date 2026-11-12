@@ -1,7 +1,7 @@
 {
   "schema_version": 5,
   "last_updated": "2026-11-13",
-  "updated_at_kst": "2026-11-13T02:26:14+09:00",
+  "updated_at_kst": "2026-11-13T06:59:09+09:00",
   "red_count_today": 0,
   "reds_today": [
     {
@@ -2804,7 +2804,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-12",
+      "last_seen": "2026-11-13",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11262",
@@ -3094,7 +3094,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-10-30",
-      "last_seen": "2026-11-12",
+      "last_seen": "2026-11-13",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11250",
@@ -3676,7 +3676,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-11-06",
-      "last_seen": "2026-11-12",
+      "last_seen": "2026-11-13",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11275",
@@ -4570,7 +4570,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-09-21",
-      "last_seen": "2026-11-12",
+      "last_seen": "2026-11-13",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11139",
@@ -6802,6 +6802,123 @@
       "raw_fetched_at": "2026-11-10"
     },
     {
+      "pbancSn": "179795",
+      "title": "[창업 디자이너 양성과정] 마포 디자인 크리에이터 스쿨",
+      "agency": "마포청년창업취업지원센터 나루",
+      "deadline": "2026-11-20",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179795",
+      "tier": "yellow",
+      "note": "검토 매칭 (전국/창업교육)",
+      "classify_evidence": {
+        "summary_reason": "검토 매칭 (전국/창업교육)",
+        "category_hints": [
+          "content"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "모집 중"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-11-20",
+            "detail": "마감 전"
+          },
+          "region": {
+            "pass": true,
+            "value": "전국",
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "biz_enyy": {
+            "pass": true,
+            "value": "예비창업자,1년미만,2년미만,3년미만",
+            "detail": "업력 허용 (1년미만,2년미만,3년미만,예비창업자)"
+          },
+          "exclude_target": {
+            "pass": true,
+            "value": "",
+            "detail": "자격 제한 없음"
+          },
+          "industry": {
+            "pass": true,
+            "detail": "업종 제한 없음"
+          },
+          "qualification": {
+            "pass": true,
+            "detail": "자격 제한 없음"
+          },
+          "stage": {
+            "pass": true,
+            "detail": "업력 허용 (1년미만,2년미만,3년미만,예비창업자)"
+          },
+          "nature": {
+            "pass": true,
+            "detail": "간접 지원성 (창업교육)"
+          },
+          "region_keyword": {
+            "pass": true,
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "positive_hit": {
+            "pass": true,
+            "detail": "검토 매칭 (전국/창업교육)"
+          }
+        },
+        "risk_flags": [],
+        "axis_scores": {
+          "region": {
+            "level": "green",
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "stage": {
+            "level": "green",
+            "detail": "업력 허용 (1년미만,2년미만,3년미만,예비창업자)"
+          },
+          "industry": {
+            "level": "green",
+            "detail": "업종 제한 없음"
+          },
+          "nature": {
+            "level": "yellow",
+            "detail": "간접 지원성 (창업교육)"
+          },
+          "qualification": {
+            "level": "green",
+            "detail": "자격 제한 없음"
+          }
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "2순위: 모든 축 green/yellow, 검토 매칭 (전국/창업교육)",
+        "classify_version": "v8.3"
+      },
+      "first_seen": "2026-11-13",
+      "last_seen": "2026-11-13",
+      "structured": {
+        "pbanc_sn_int": 179795,
+        "integrated": false,
+        "recruiting": true,
+        "start_date": "2026-11-11",
+        "end_date": "2026-11-20",
+        "agency_type": "공공기관",
+        "biz_class": "창업교육",
+        "region": "전국",
+        "biz_enyy": "예비창업자,1년미만,2년미만,3년미만",
+        "age_range": "만 20세 이상 ~ 만 39세 이하",
+        "apply_target": "대학생,일반인,대학,연구기관,일반기업,1인 창조기업",
+        "apply_target_desc": "예비 및 신입 청년 디자이너",
+        "exclude_target": "",
+        "preferential": "",
+        "content": "[창업 디자이너 양성과정] 마포 디자인 크리에이터 스쿨 창업교육을 진행하오니, 많은 관심과 지원 부탁드립니다.",
+        "integrated_name": "마포청년창업취업지원센터 나루 2026",
+        "apply_online": "https://www.naroo.or.kr/bbs/content.php?co_id=program_view&np_seq=1315",
+        "apply_guide": "https://www.naroo.or.kr/bbs/content.php?co_id=program_view&np_seq=1315"
+      },
+      "raw_content": "[창업 디자이너 양성과정] 마포 디자인 크리에이터 스쿨\n사업안내 바로가기\n지원분야\n창업교육\n대상연령\n만 20세 이상 ~ 만 39세 이하\n기관구분\n공공기관\n담당부서\n취창업지원\n지역\n전국\n접수기간\n2026-11-11 ~ 2026-11-20 14:00\n주관기관명\n마포청년창업취업지원센터 나루\n대상\n대학생, 일반인, 대학, 연구기관, 일반기업, 1인 창조기업\n창업업력\n예비창업자, 1년미만, 2년미만, 3년미만\n연락처\n02-6261-1939\n[창업 디자이너 양성과정] 마포 디자인 크리에이터 스쿨\n[창업 디자이너 양성과정] 마포 디자인 크리에이터 스쿨 창업교육을 진행하오니, 많은 관심과 지원 부탁드립니다.\n2026년 11월 12일\n마포청년창업취업지원센터 나루\n신청방법 및 대상\n신청기간\n2026.11.11(수) 10:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t~\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t2026.11.20(금) 14:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t까지\n신청방법\n온라인 접수 :\n접수 바로가기\n신청대상\n예비 및 신입 청년 디자이너\n신청 시 요청하는 정보(개인정보포함)는 사업운영기관에서 관리되오니 이점 반드시 유의하여 주시기 바랍니다.\n제출서류\n온라인 신청서 제출(링크 접속)\n제출하신 서류는 사업운영기관에서 관리되오니 서류 반환 등 문의는 해당 기관으로 하시기 바랍니다.\n선정절차 및 평가방법\n온라인 신청서 제출(링크 접속)\n■ 신청방법: [마포청년나루 홈페이지] > [이용안내] > [프로그램 안내·신청] > [신청서 작성]\n■ 선정절차: 신청 인원 초과 시, 활동지역 마포구 청년(19세~39세) 우선 선발\n■ 평가방법: 없음\n교육안내\n[창업 디자이너 양성과정] 마포 디자인 크리에이터 스쿨\n■ 교육일시\n1회차 | 2026. 11. 24.(화) 17:00~20:00\n2회차 | 2026. 11. 26.(목) 17:00~20:00\n3회차 | 2026. 12. 01.(화) 17:00~20:00\n4회차 | 2026. 12. 03.(목) 17:00~20:00\n■ 교육장소: 마포청년창업취업지원센터 나루 3층 및 온라인\n■ 교육내용\n1회차 | AI를 활용한 브랜드 기획 및 로고 디자인\n2회차 | 브랜드 홍보 리플렛 기획 및 디자인 ①\n3회차 | 브랜드 홍보 리플렛 디자인 ②\n4회차 | 인쇄 제작 및 실무 발주\n■ 참여 혜택\n배우는 것에서 끝나지 않는 실전 프로젝트!\n1. 실물 포트폴리오 제공\n직접 디자인한 결과물을 실제 인쇄물로 제작하여 소장\n2. 마포구 로컬 브랜드 연계 프로젝트\n실제 마포구 내 청년소상공인과 매칭하여 홍보 팸플릿 제작 참여\n3. 브랜드 디자인 실무 경험\n기획부터 디자인, 인쇄 제작까지 전 과정 경험\n■ 참가비: 무료\n상기 일정은 사업운영기관의 내부사정으로 변경될 수 있습니다.\n문의처\n마포청년창업취업지원센터 나루 ☎ 02-6261-1939\n자세한 내용은 첨부파일 참조 및 문의처로 문의하여 주시기 바랍니다.\nK-Startup에 공고되는 정보는 해당 기관의 요청에 의해 제공됩니다. 입주, 교육, 사업 신청 시 요청하는 정보(개인정보 포함)는 해당 기관에서 관리 \t되오니\n이점 유의하여 주시기 바랍니다.\n첨부파일 일괄 다운로드\n[마포청년나루] 창업교육_마포 디자인 크리에이터 스쿨.pdf\n바로보기\n다운로드\n본 저작물은 창업진흥원(K-Startup)이 게시한 공공누리 제1유형의 저작물이며, 공공데이터포털(www.data.go.kr)에서 공공데이터로 개방중이며 무료로 활용할 수 있습니다.\n접수 바로가기\n목록",
+      "raw_fetched_at": "2026-11-13"
+    },
+    {
       "pbancSn": "179709",
       "title": "한국외국어대학교 창업보육센터 입주기업 모집",
       "agency": "한국외국어대학교연구산학협력단",
@@ -7310,7 +7427,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-11-09",
-      "last_seen": "2026-11-12",
+      "last_seen": "2026-11-13",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11280",
@@ -7729,7 +7846,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-12",
+      "last_seen": "2026-11-13",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11283",
@@ -7855,6 +7972,123 @@
       },
       "raw_content": "2026 여성벤처활성화사업 「여성벤처&스타트업 혁신성장 포럼」참여자 모집\n사업안내 바로가기\n지원분야\n창업교육\n대상연령\n전체\n기관구분\n민간\n담당부서\n기업지원본부\n지역\n전국\n접수기간\n2026-11-11 ~ 2026-11-26 23:59\n주관기관명\n(사)한국여성벤처협회\n대상\n전체\n창업업력\n전체\n연락처\n02-3440-7467\n2026 여성벤처활성화사업 「여성벤처&스타트업 혁신성장 포럼」참여자 모집\n여성벤처·스타트업의 경쟁력 강화를 위한 혁신성장 아카데미를 통해 지식 및 경험 공유, 여성벤처 CEO간의 네트워크 구축 및 협력기반 마련 도모를 위해 2026년 여성벤처&스타트업 혁신성장 포럼을 개최합니다.\n2026년 11월 11일\n(사)한국여성벤처협회\n신청방법 및 대상\n신청기간\n2026.11.11(수) 09:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t~\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t2026.11.26(목) 23:59\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t까지\n신청방법\n온라인 접수 :\n접수 바로가기\n신청대상\n여성 벤처·스타트업 대표, 예비창업자 등\n신청 시 요청하는 정보(개인정보포함)는 사업운영기관에서 관리되오니 이점 반드시 유의하여 주시기 바랍니다.\n제출서류\n구글폼을 통한 온라인 신청서 제출\nhttps://forms.gle/uTjVyDLqaQ4PFHS36\n제출하신 서류는 사업운영기관에서 관리되오니 서류 반환 등 문의는 해당 기관으로 하시기 바랍니다.\n선정절차 및 평가방법\n없음\n교육안내\n교육정보\n- 교육 일시 : 2026.11.04(수) 10:30~17:00\n- 교육 내용\n1. 11/30(월)\n①  글로벌 진출을 위한 법률 실무(법인 설립과 기술 Licensing)\n②  B2B 사업 이해와 Case Study\n③  광고비는 줄이고 구매는 늘리는 실전 SNS 및 디지털 마케팅 전략\n2. 12/1(화)\n①  동기부여-실패를 두려워하지 않는 법\n②  고객이 선택하는 브랜드 : 고객 데이터로 찾는 차별화 전략\n③  2027 트렌드 전망 : 소비 변화에서 찾는 새로운 사업 기회\n- 교육비 : 무료\n온라인 라이브 스트리밍(Youtube)를 통한 강의 진행\n강의 참여 링크는 강의 11/27(금)에 신청서에 작성한 이메일과 연락처로 안내 예정 (누락 및 오타 주의)\n상기 일정은 사업운영기관의 내부사정으로 변경될 수 있습니다.\n문의처\n한국여성벤처협회 기업지원본부\n02-3440-7467, 7469\n자세한 내용은 첨부파일 참조 및 문의처로 문의하여 주시기 바랍니다.\nK-Startup에 공고되는 정보는 해당 기관의 요청에 의해 제공됩니다. 입주, 교육, 사업 신청 시 요청하는 정보(개인정보 포함)는 해당 기관에서 관리 \t되오니\n이점 유의하여 주시기 바랍니다.\n첨부파일 일괄 다운로드\n★ 2026 여성벤처&스타트업 혁신성장 포럼 포스터.jpg\n바로보기\n다운로드\n★ 2026 여성벤처&스타트업 혁신성장 포럼 포스터.hwp\n바로보기\n다운로드\n본 저작물은 창업진흥원(K-Startup)이 게시한 공공누리 제1유형의 저작물이며, 공공데이터포털(www.data.go.kr)에서 공공데이터로 개방중이며 무료로 활용할 수 있습니다.\n접수 바로가기\n목록",
       "raw_fetched_at": "2026-11-12"
+    },
+    {
+      "pbancSn": "179792",
+      "title": "[성동구사회적경제지원센터·KT&G상상플래닛 ] 스타트업(소셜벤처) 현장 사례 공유 <&apos;외로움은 사업이 될 수 있을까?&apos;>",
+      "agency": "KT&G 상상플래닛 운영",
+      "deadline": "2026-11-26",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179792",
+      "tier": "yellow",
+      "note": "검토 매칭 (임팩트)",
+      "classify_evidence": {
+        "summary_reason": "검토 매칭 (임팩트)",
+        "category_hints": [
+          "social"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "모집 중"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-11-26",
+            "detail": "마감 전"
+          },
+          "region": {
+            "pass": true,
+            "value": "전국",
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "biz_enyy": {
+            "pass": true,
+            "value": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
+            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "exclude_target": {
+            "pass": true,
+            "value": "",
+            "detail": "자격 제한 없음"
+          },
+          "industry": {
+            "pass": true,
+            "detail": "업종 제한 없음"
+          },
+          "qualification": {
+            "pass": true,
+            "detail": "자격 제한 없음"
+          },
+          "stage": {
+            "pass": true,
+            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "nature": {
+            "pass": true,
+            "detail": "성격 분류 애매 (biz_class='행사ㆍ네트워크')"
+          },
+          "region_keyword": {
+            "pass": true,
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "positive_hit": {
+            "pass": true,
+            "detail": "검토 매칭 (임팩트)"
+          }
+        },
+        "risk_flags": [],
+        "axis_scores": {
+          "region": {
+            "level": "green",
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "stage": {
+            "level": "green",
+            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "industry": {
+            "level": "green",
+            "detail": "업종 제한 없음"
+          },
+          "nature": {
+            "level": "yellow",
+            "detail": "성격 분류 애매 (biz_class='행사ㆍ네트워크')"
+          },
+          "qualification": {
+            "level": "green",
+            "detail": "자격 제한 없음"
+          }
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "2순위: 모든 축 green/yellow, 검토 매칭 (임팩트)",
+        "classify_version": "v8.3"
+      },
+      "first_seen": "2026-11-13",
+      "last_seen": "2026-11-13",
+      "structured": {
+        "pbanc_sn_int": 179792,
+        "integrated": false,
+        "recruiting": true,
+        "start_date": "2026-11-12",
+        "end_date": "2026-11-26",
+        "agency_type": "민간",
+        "biz_class": "행사ㆍ네트워크",
+        "region": "전국",
+        "biz_enyy": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
+        "age_range": "만 20세 미만,만 20세 이상 ~ 만 39세 이하,만 40세 이상",
+        "apply_target": "청소년,대학생,일반인,대학,연구기관,일반기업,1인 창조기업",
+        "apply_target_desc": "- 사회문제 해결에 관심 있는 모든 시민\r\n  - 기업 사회공헌·ESG 및 공공기관 사업 담당자\r\n  - 변화를 만들어가는 임팩트 생태계 종사자 \r\n  - 사회적기업 · 소셜벤처 · 협동조합 관계자\r\n  - 문화예술로 사회적 가치를 만들고 싶은 예술가와 기획자\r\n  - 예비 창업가 · 창업에 관심 있는 청년\r\n  - 변화를 만들어가는 임팩트 생태계 종사자\r\n  - 지역과 사람을 연결하는 커뮤니티·로컬브랜드·공간 운영자",
+        "exclude_target": "",
+        "preferential": "",
+        "content": "2026년 현장사례 아카데미 with 커넥트플래닛 2차를 개최 합니다.\r\n  - 외로움과 고립이라는 사회문제에서 사업의 가능성을 발견한 블루버드씨 스토리\r\n  - 문화예술로 사회문제를 풀기위한 기획과 실행\r\n  - 지속 가능한 사업으로 이어가기 위한 도전과 시행착오, 그리고 현재의 고민",
+        "integrated_name": "[성동구사회적경제지원센터·KT&G상상플래닛 ] 스타트업&#40;소셜벤처&#41; 현장 사례 공유 &lt;&apos;외로움은 사업이 될 수 있을까?&apos;&gt;",
+        "apply_online": "https://forms.gle/3D52dAFFLAWwf5xM7",
+        "apply_guide": "https://forms.gle/3D52dAFFLAWwf5xM7"
+      },
+      "raw_content": "[성동구사회적경제지원센터·KT&G상상플래닛 ] 스타트업(소셜벤처) 현장 사례 공유 <'외로움은 사업이 될 수 있을까?'>\n사업안내 바로가기\n지원분야\n행사ㆍ네트워크\n대상연령\n전체\n기관구분\n민간\n담당부서\nKT&G 상상플래닛 운영팀\n지역\n전국\n접수기간\n2026-11-12 ~ 2026-11-26 14:00\n주관기관명\n임팩트스퀘어\n대상\n전체\n창업업력\n전체\n연락처\n0507-1467-2368\n[성동구사회적경제지원센터·KT&G상상플래닛 ] 스타트업(소셜벤처) 현장 사례 공유\n※(유의)해당 공고는 중소벤처기업부와 창업진흥원이 아닌 민간에서 지원하는 사업으로, 신청부터 관리까지 모든 과정을 해당기관에서 전담\n2026년 현장사례 아카데미 with 커넥트플래닛 2차를 개최 합니다.\n- 외로움과 고립이라는 사회문제에서 사업의 가능성을 발견한 블루버드씨 스토리\n- 문화예술로 사회문제를 풀기위한 기획과 실행\n- 지속 가능한 사업으로 이어가기 위한 도전과 시행착오, 그리고 현재의 고민\n2026년 11월 12일\nKT&G 상상플래닛 운영\n신청방법 및 대상\n신청기간\n2026.11.12(목) 00:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t~\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t2026.11.26(목) 14:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t까지\n신청방법\n온라인 접수 :\n접수 바로가기\n신청대상\n- 사회문제 해결에 관심 있는 모든 시민\n- 기업 사회공헌·ESG 및 공공기관 사업 담당자\n- 변화를 만들어가는 임팩트 생태계 종사자\n- 사회적기업 · 소셜벤처 · 협동조합 관계자\n- 문화예술로 사회적 가치를 만들고 싶은 예술가와 기획자\n- 예비 창업가 · 창업에 관심 있는 청년\n- 변화를 만들어가는 임팩트 생태계 종사자\n- 지역과 사람을 연결하는 커뮤니티·로컬브랜드·공간 운영자\n신청 시 요청하는 정보(개인정보포함)는 사업운영기관에서 관리되오니 이점 반드시 유의하여 주시기 바랍니다.\n제출서류\n신청 방법\n온라인 사전 신청 https://forms.gle/3D52dAFFLAWwf5xM7\n제출하신 서류는 사업운영기관에서 관리되오니 서류 반환 등 문의는 해당 기관으로 하시기 바랍니다.\n선정절차 및 평가방법\n선정절차\n선착순\n행사안내\n일시\n2026년 11월 26일 (목) 15:00 ~ 17:30\n장소\n성동구 KT&G 상상플래닛 1층 커넥트홀\n(서울시 성동구 뚝섬로13길 38) [성수역 도보 7분]\n* 주차장 이용이 어려워 대중교통 이용을 부탁드립니다.\n내용\n소셜벤처의 성공담도 실패담도 아닌 '진해담'\n- 외로움과 고립이라는 사회문제에서 사업의 가능성을 발견한 블루버드씨 스토리\n- 문화예술로 사회문제를 풀기위한 기획과 실행\n- 지속 가능한 사업으로 이어가기 위한 도전과 시행착오, 그리고 현재의 고민\n강연자\n문화예술로 외로움을 풀어가는 (주)블루버드씨 (https://www.bluebirdc.co.kr) 김상미 대표\n참가비\n없음(무료)\n주관\n1) 성동구 사회적경제지원센터:\n사회적경제기업 창업/전환과 성장을 위해 상담/컨설팅, 교육 등 프로그램을 운영하고, 공정무역/기후변화 등 지역 특화 사업을 운영하고 있어요. '현장사례 아카데미'를 통해 성동구 내 활발히 활동 중인 사회적기업을 소개하고, 이들의 성장 과정과 노하우를 공유하여 사회적경제 네트워킹을 조성해요.\n2) KT&G 상상플래닛:\n사회혁신 청년 창업가들의 상상력을 마음껏 펼칠 수 있도록 프로그램/공유오피스/대관 공간을 운영하고 있어요. 임팩트 생태계 속 관계를 쌓을 수 있도록 '커넥트 플래닛' 프로그램으로 교류를 지원해요.\n상기 일정은 사업운영기관의 내부사정으로 변경될 수 있습니다.\n지원내용\n지원 내용\n- 소셜벤처(스타트업) 현장 사례 공유\n- 사회적경제 분야 창업가 및 관계자 자율 네트워킹\n- 참여자 대상  다과 제공\n문의처\n문의처\n성동구 사회적경제지원센터 02-2291-2323 / soco2012@hanmail.net\n자세한 내용은 첨부파일 참조 및 문의처로 문의하여 주시기 바랍니다.\nK-Startup에 공고되는 정보는 해당 기관의 요청에 의해 제공됩니다. 입주, 교육, 사업 신청 시 요청하는 정보(개인정보 포함)는 해당 기관에서 관리 \t되오니\n이점 유의하여 주시기 바랍니다.\n※(유의)해당 공고는 중소벤처기업부와 창업진흥원이 아닌 민간에서 지원하는 사업으로, 신청부터 관리까지 모든 과정을 해당기관에서 전담\n첨부파일 일괄 다운로드\n2026 현장사례 아카데미 2회차 포스터.png\n바로보기\n다운로드\n2026 현장사례 아카데미 2회차 포스터.txt\n바로보기\n다운로드\n본 저작물은 창업진흥원(K-Startup)이 게시한 공공누리 제1유형의 저작물이며, 공공데이터포털(www.data.go.kr)에서 공공데이터로 개방중이며 무료로 활용할 수 있습니다.\n접수 바로가기\n목록",
+      "raw_fetched_at": "2026-11-13"
     },
     {
       "source": "kstartup",
@@ -8568,6 +8802,121 @@
       },
       "raw_content": "[무료 세미나] 글로벌 진출 초기 챙겨야 할 GEO 전략\n지원분야\n멘토링ㆍ컨설팅ㆍ교육\n대상연령\n만 20세 이상 ~ 만 39세 이하, 만 40세 이상\n기관구분\n민간\n담당부서\nB2B 마케팅팀\n지역\n전국\n접수기간\n2026-11-03 ~ 2026-11-30 00:00\n주관기관명\n토스페이먼츠\n대상\n대학생, 일반인, 대학, 연구기관, 일반기업, 1인 창조기업\n창업업력\n전체\n연락처\n1544-7772\n[무료 세미나] 글로벌 진출 초기 챙겨야 할 GEO 전략\n※(유의)해당 공고는 중소벤처기업부와 창업진흥원이 아닌 민간에서 지원하는 사업으로, 신청부터 관리까지 모든 과정을 해당기관에서 전담\n해외 시장 진출을 준비하거나 글로벌 고객을 대상으로 사업을 운영하는 기업이라면, 현지 고객이 우리 브랜드와 상품을 어떤 경로로 발견하는지가 중요합니다. 최근에는 Google 등 기존 검색엔진뿐 아니라 ChatGPT, Gemini와 같은 생성형 AI를 통해 상품과 서비스를 탐색하는 이용자가 늘어나면서, 해외 고객의 AI 검색 결과에 브랜드가 어떻게 노출되고 추천되는지를 관리하는 GEO(Generative Engine Optimization)의 중요성도 커지고 있습니다.\n본 웨비나에서는 해외 진출 기업을 대상으로 AI를 활용해 현지 시장성을 검증하는 방법, 글로벌 고객의 AI 검색 결과에서 브랜드 노출 가능성을 높이는 GEO 전략, 그리고 실제 적용 사례까지 실무에 활용할 수 있는 내용을 소개합니다. 해외 시장 진출을 준비 중이거나 글로벌 마케팅 및 신규 고객 유입 전략을 고민하고 있는 사업자·마케팅 담당자 여러분의 많은 참여 바랍니다.\n2026년 11월 03일\n토스페이먼츠\n신청방법 및 대상\n신청기간\n2026.11.03(화) 00:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t~\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t2026.11.30(월) 00:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t까지\n신청방법\n온라인 접수 :\n접수 바로가기\n신청대상\n- 글로벌 진출을 준비하는 사업자\n- 글로벌 마케팅을 실행하는 마케터\n- GEO에 대한 기본 이해를 갖추고 있어 글로벌 시장에 맞는 GEO 전략까지 확장하고 싶은 사업자\n신청 시 요청하는 정보(개인정보포함)는 사업운영기관에서 관리되오니 이점 반드시 유의하여 주시기 바랍니다.\n제출서류\n별도 제출 서류 없습니다\n제출하신 서류는 사업운영기관에서 관리되오니 서류 반환 등 문의는 해당 기관으로 하시기 바랍니다.\n선정절차 및 평가방법\n온라인 접수\n※ 본 행사는 온라인 라이브(Zoom)로 진행되며, 신청이 완료된 분들께는 참석 안내를 별도로 드릴 예정입니다.\n■참가비 무료\n교육안내\n[무료 세미나] 글로벌 진출 초기 챙겨야 할 GEO 전략\n■ 교육일시\n2026년 11월 30일(월) 오전 11시\n■ 교육방식\n온라인 라이브(Zoom)\n■ 교육내용\nChatGPT, Gemini와 같은 생성형 AI를 통해 해외 시장의 가능성을 살펴보는 방법부터 글로벌 고객에게 우리 브랜드를 알리는 GEO 전략을 소개합니다. AI를 활용해 현지 시장성을 검증하는 방법, 글로벌 고객의 AI 검색 결과에서 브랜드 노출 가능성을 높이는 GEO 전략, 그리고 실제 적용 사례까지 실무에 활용할 수 있는 내용을 공유합니다.\n■ 참가비\n무료\n※ 안내사항\n오프라인 세미나는 한정된 좌석으로 운영되며, 참여가 확정된 분께 별도로 참가 안내를 드립니다.\n오프라인 참석 신청은 사전 마감될 수 있으며 신청 현황에 따라 기업당 참석 인원이 1명으로 제한될 수 있습니다.\n상기 일정은 사업운영기관의 내부사정으로 변경될 수 있습니다.\n문의처\n1544-7772\n자세한 내용은 첨부파일 참조 및 문의처로 문의하여 주시기 바랍니다.\nK-Startup에 공고되는 정보는 해당 기관의 요청에 의해 제공됩니다. 입주, 교육, 사업 신청 시 요청하는 정보(개인정보 포함)는 해당 기관에서 관리 \t되오니\n이점 유의하여 주시기 바랍니다.\n※(유의)해당 공고는 중소벤처기업부와 창업진흥원이 아닌 민간에서 지원하는 사업으로, 신청부터 관리까지 모든 과정을 해당기관에서 전담\n첨부파일 일괄 다운로드\n[무료 세미나] 글로벌 진출 초기 챙겨야 할 GEO 전략.txt\n바로보기\n다운로드\n[무료 세미나] 글로벌 진출 초기 챙겨야 할 GEO 전략.png\n바로보기\n다운로드\n본 저작물은 창업진흥원(K-Startup)이 게시한 공공누리 제1유형의 저작물이며, 공공데이터포털(www.data.go.kr)에서 공공데이터로 개방중이며 무료로 활용할 수 있습니다.\n접수 바로가기\n목록",
       "raw_fetched_at": "2026-11-05"
+    },
+    {
+      "pbancSn": "179779",
+      "title": "[경험 공유/네트워킹] KT&G 상상플래닛 <11월 오픈마이크: 멈추지 않기 위해, 멈춰 섰던 순간들> @성수동",
+      "agency": "KT&G 상상플래닛 운영",
+      "deadline": "2026-11-30",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179779",
+      "tier": "yellow",
+      "note": "검토 매칭 (소셜벤처)",
+      "classify_evidence": {
+        "summary_reason": "검토 매칭 (소셜벤처)",
+        "category_hints": [],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "모집 중"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-11-30",
+            "detail": "마감 전"
+          },
+          "region": {
+            "pass": true,
+            "value": "전국",
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "biz_enyy": {
+            "pass": true,
+            "value": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
+            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "exclude_target": {
+            "pass": true,
+            "value": "",
+            "detail": "자격 제한 없음"
+          },
+          "industry": {
+            "pass": true,
+            "detail": "업종 제한 없음"
+          },
+          "qualification": {
+            "pass": true,
+            "detail": "자격 제한 없음"
+          },
+          "stage": {
+            "pass": true,
+            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "nature": {
+            "pass": true,
+            "detail": "성격 분류 애매 (biz_class='행사ㆍ네트워크')"
+          },
+          "region_keyword": {
+            "pass": true,
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "positive_hit": {
+            "pass": true,
+            "detail": "검토 매칭 (소셜벤처)"
+          }
+        },
+        "risk_flags": [],
+        "axis_scores": {
+          "region": {
+            "level": "green",
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "stage": {
+            "level": "green",
+            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "industry": {
+            "level": "green",
+            "detail": "업종 제한 없음"
+          },
+          "nature": {
+            "level": "yellow",
+            "detail": "성격 분류 애매 (biz_class='행사ㆍ네트워크')"
+          },
+          "qualification": {
+            "level": "green",
+            "detail": "자격 제한 없음"
+          }
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "2순위: 모든 축 green/yellow, 검토 매칭 (소셜벤처)",
+        "classify_version": "v8.3"
+      },
+      "first_seen": "2026-11-13",
+      "last_seen": "2026-11-13",
+      "structured": {
+        "pbanc_sn_int": 179779,
+        "integrated": false,
+        "recruiting": true,
+        "start_date": "2026-11-11",
+        "end_date": "2026-11-30",
+        "agency_type": "민간",
+        "biz_class": "행사ㆍ네트워크",
+        "region": "전국",
+        "biz_enyy": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
+        "age_range": "만 20세 미만,만 20세 이상 ~ 만 39세 이하,만 40세 이상",
+        "apply_target": "청소년,대학생,일반인,대학,연구기관,일반기업,1인 창조기업",
+        "apply_target_desc": "소셜벤처 및 스타트업 창업가·임직원 (30명 이내)\r\n - 방향 전환이나 사업 정리처럼 쉽지 않은 선택 앞에서 먼저 그 길을 지나온 이야기가 필요한,\r\n - 한 해를 돌아보며 회사의 언어가 아닌 나의 언어로 회고하고 싶은 창업가에게 더욱 추천해요-!",
+        "exclude_target": "",
+        "preferential": "",
+        "content": "안녕하세요, KT&G 상상플래닛입니다!\r\n한 해를 마무리하는 11월, 방향을 바꾸고 사업을 정리하며 &apos;계속&apos;을 택해 온 창업가들의 경험을 나누려고 해요.\r\n\r\n계속한다는 건, 무엇을 내려놓고 무엇을 끝내 지켜내는 일일까요?\r\n멈추지 않기 위해 멈춰 섰던 순간들, 소셜벤처(스타트업) 세 곳이 지나온 선택의 기록을 함께 펼쳐 봅니다.",
+        "integrated_name": "[경험 공유/네트워킹] KT&G 상상플래닛 &lt;11월 오픈마이크: 멈추지 않기 위해, 멈춰 섰던 순간들&gt; @성수동",
+        "apply_online": "https://naver.me/GfrQOpuR",
+        "apply_guide": "https://naver.me/GfrQOpuR"
+      },
+      "raw_content": "[경험 공유/네트워킹] KT&G 상상플래닛 <11월 오픈마이크: 멈추지 않기 위해, 멈춰 섰던 순간들> @성수동\n사업안내 바로가기\n지원분야\n행사ㆍ네트워크\n대상연령\n전체\n기관구분\n민간\n담당부서\nKT&G 상상플래닛 운영팀\n지역\n전국\n접수기간\n2026-11-11 ~ 2026-11-30 15:00\n주관기관명\n임팩트스퀘어\n대상\n전체\n창업업력\n전체\n연락처\n0507-1467-2368\n[경험 공유/네트워킹] KT&G 상상플래닛 <11월 오픈마이크: 멈추지 않기 위해, 멈춰 섰던 순간들> @성수동\n※(유의)해당 공고는 중소벤처기업부와 창업진흥원이 아닌 민간에서 지원하는 사업으로, 신청부터 관리까지 모든 과정을 해당기관에서 전담\n안녕하세요, KT&G 상상플래닛입니다!\n한 해를 마무리하는 11월, 방향을 바꾸고 사업을 정리하며 '계속'을 택해 온 창업가들의 경험을 나누려고 해요.\n계속한다는 건, 무엇을 내려놓고 무엇을 끝내 지켜내는 일일까요?\n멈추지 않기 위해 멈춰 섰던 순간들, 소셜벤처(스타트업) 세 곳이 지나온 선택의 기록을 함께 펼쳐 봅니다.\n2026년 11월 11일\nKT&G 상상플래닛 운영\n신청방법 및 대상\n신청기간\n2026.11.11(수) 00:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t~\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t2026.11.30(월) 15:00\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t까지\n신청방법\n온라인 접수 :\n접수 바로가기\n신청대상\n소셜벤처 및 스타트업 창업가·임직원 (30명 이내)\n- 방향 전환이나 사업 정리처럼 쉽지 않은 선택 앞에서 먼저 그 길을 지나온 이야기가 필요한,\n- 한 해를 돌아보며 회사의 언어가 아닌 나의 언어로 회고하고 싶은 창업가에게 더욱 추천해요-!\n신청 시 요청하는 정보(개인정보포함)는 사업운영기관에서 관리되오니 이점 반드시 유의하여 주시기 바랍니다.\n제출서류\n온라인 신청폼 제출\nhttps://naver.me/GfrQOpuR\n제출하신 서류는 사업운영기관에서 관리되오니 서류 반환 등 문의는 해당 기관으로 하시기 바랍니다.\n선정절차 및 평가방법\n선정절차\n입주사가 아니어도, 주제에 관심 있는 누구나 신청 가능해요!\n※ 본 프로그램은 '입주사' 및 '사회적 경제 분야 종사자'를 우선 모집하고 있습니다.\n※ 우선 모집 후 남은 여석에 대해서는 선착순 기준으로 참여 확정 안내 드릴 예정입니다. (11/23(월) 오후 중)\n행사안내\n일시\n11월 30일(월) 오후 3시~5시 20분 (5시 20분 이후 자율 네트워킹)\n장소\nKT&G 상상플래닛 8층 (성수역 도보 7분) / 서울시 성동구 뚝섬로13길 38 (성수동)\n프로그램 내용(1)\n< (1부: 발제) 주제별 진행담 공유 > - 모더레이터: 임팩트스퀘어 이영인\n계속을 위한 선택을 먼저 지나온 플래닛 멤버(상상플래닛 입주사) 3명의 진행담을 전해요.\n- 애프터컴퍼니: 타깃을 좁히자, 매출도 팀도 따라왔다\n- 한수코퍼레이션: 사회적기업으로 오래 남기 위해, 첫 사업을 접었다\n- 딱따구리: 팀과 함께한 두 번째 피벗 - 고객 목소리를 따라 큐레이션 서비스에서 자체 제작 상품까지\n프로그램 내용(2)\n< (2부: 네트워킹) 테이블 토크 >\n관심 주제가 같은 창업가끼리 한 테이블에 모여앉아, 올해 우리 팀이 멈추고 다시 숨 고른 순간을 나눠요.\n#테이블토크 #연말회고 #피어러닝 #네트워크\nKT&G 상상플래닛은?\n사회혁신 청년 창업가들의 상상력을 마음껏 펼치는 공간이에요.\n성수동에 위치한 공유 오피스로, 성장/교류 지원 프로그램과 대관 공간도 운영하고 있어요.\n참가비\n없음(무료)\n상기 일정은 사업운영기관의 내부사정으로 변경될 수 있습니다.\n지원내용\n지원내용\n- 서울숲을 보며 회고 도구로 경험·감정을 정리하는 '밑미 리추얼 숲' 이용권을 드려요.\n- 더 즐거운 네트워킹을 위해 다과가 제공돼요.\n- 주차 지원이 어려워 대중교통을 이용해주세요!\n문의처\n문의처\n채널톡 https://sangsangplanet.channel.io/home\n자세한 내용은 첨부파일 참조 및 문의처로 문의하여 주시기 바랍니다.\nK-Startup에 공고되는 정보는 해당 기관의 요청에 의해 제공됩니다. 입주, 교육, 사업 신청 시 요청하는 정보(개인정보 포함)는 해당 기관에서 관리 \t되오니\n이점 유의하여 주시기 바랍니다.\n※(유의)해당 공고는 중소벤처기업부와 창업진흥원이 아닌 민간에서 지원하는 사업으로, 신청부터 관리까지 모든 과정을 해당기관에서 전담\n첨부파일 일괄 다운로드\n[오픈마이크] 11월 포스터.png\n바로보기\n다운로드\n[오픈마이크] 11월 포스터.txt\n바로보기\n다운로드\n본 저작물은 창업진흥원(K-Startup)이 게시한 공공누리 제1유형의 저작물이며, 공공데이터포털(www.data.go.kr)에서 공공데이터로 개방중이며 무료로 활용할 수 있습니다.\n접수 바로가기\n목록",
+      "raw_fetched_at": "2026-11-13"
     },
     {
       "pbancSn": "179684",
@@ -10319,7 +10668,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-07-28",
-      "last_seen": "2026-11-12",
+      "last_seen": "2026-11-13",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11010",
@@ -10824,7 +11173,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-09-23",
-      "last_seen": "2026-11-12",
+      "last_seen": "2026-11-13",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11148",
@@ -10884,7 +11233,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-09-30",
-      "last_seen": "2026-11-12",
+      "last_seen": "2026-11-13",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11162",
@@ -11026,9 +11375,9 @@
       "deadline": "2026-11-13",
       "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179552",
       "tier": "orange",
-      "note": "3순위 (참고용): 지역 한정 desc: '경상남도 소재'",
+      "note": "3순위 (참고용): 기관 지역 한정 (agency: 경남지방중소벤처기업청)",
       "classify_evidence": {
-        "summary_reason": "3순위 (참고용): 지역 한정 desc: '경상남도 소재'",
+        "summary_reason": "3순위 (참고용): 기관 지역 한정 (agency: 경남지방중소벤처기업청)",
         "category_hints": [
           "ai"
         ],
@@ -11046,7 +11395,7 @@
           "region": {
             "pass": false,
             "value": "경남",
-            "detail": "지역 한정 desc: '경상남도 소재'"
+            "detail": "기관 지역 한정 (agency: 경남지방중소벤처기업청)"
           },
           "biz_enyy": {
             "pass": true,
@@ -11076,18 +11425,18 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "지역 한정 desc: '경상남도 소재'"
+            "detail": "기관 지역 한정 (agency: 경남지방중소벤처기업청)"
           },
           "positive_hit": {
             "pass": false,
-            "detail": "3순위 (참고용): 지역 한정 desc: '경상남도 소재'"
+            "detail": "3순위 (참고용): 기관 지역 한정 (agency: 경남지방중소벤처기업청)"
           }
         },
         "risk_flags": [],
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "지역 한정 desc: '경상남도 소재'"
+            "detail": "기관 지역 한정 (agency: 경남지방중소벤처기업청)"
           },
           "stage": {
             "level": "green",
@@ -11110,7 +11459,7 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "지역 한정 desc: '경상남도 소재'"
+            "msg": "기관 지역 한정 (agency: 경남지방중소벤처기업청)"
           },
           {
             "axis": "industry",
@@ -11119,7 +11468,7 @@
           }
         ],
         "audit_flags": [],
-        "tier_logic": "3순위 (참고용): 지역 한정 desc: '경상남도 소재'",
+        "tier_logic": "3순위 (참고용): 기관 지역 한정 (agency: 경남지방중소벤처기업청)",
         "classify_version": "v8.3"
       },
       "first_seen": "2026-10-21",
@@ -12419,6 +12768,143 @@
       }
     },
     {
+      "pbancSn": "179788",
+      "title": "<2026년 베트남 제조창업 스케일업 프로그램> 참여기업 모집 공고",
+      "agency": "충북대학교 충북Pro메이커센터",
+      "deadline": "2026-11-13",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179788",
+      "tier": "orange",
+      "note": "3순위 (참고용): 기관 지역 한정 (agency: 충북대학교 충북Pro메이커센터)",
+      "classify_evidence": {
+        "summary_reason": "3순위 (참고용): 기관 지역 한정 (agency: 충북대학교 충북Pro메이커센터)",
+        "category_hints": [
+          "global"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "모집 중"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-11-13",
+            "detail": "마감 전"
+          },
+          "region": {
+            "pass": false,
+            "value": "충북",
+            "detail": "기관 지역 한정 (agency: 충북대학교 충북Pro메이커센터)"
+          },
+          "biz_enyy": {
+            "pass": false,
+            "value": "7년미만",
+            "detail": "단계 불일치 (스케일업)"
+          },
+          "exclude_target": {
+            "pass": true,
+            "value": "- 국세 또는 지방세를 체납 중인 자\r\n- 개인신용정보상 채무불이행자 또는 신용도판단정보 등 이상이 있는 자\r\n- 신용보증기관 신용보증사고 및 ",
+            "detail": "exclude_target 장문 (174자)"
+          },
+          "industry": {
+            "pass": false,
+            "detail": "업종 한정 (메이커)"
+          },
+          "qualification": {
+            "pass": true,
+            "detail": "exclude_target 장문 (174자)"
+          },
+          "stage": {
+            "pass": false,
+            "detail": "단계 불일치 (스케일업)"
+          },
+          "nature": {
+            "pass": true,
+            "detail": "간접 지원성 (글로벌)"
+          },
+          "region_keyword": {
+            "pass": false,
+            "detail": "기관 지역 한정 (agency: 충북대학교 충북Pro메이커센터)"
+          },
+          "positive_hit": {
+            "pass": false,
+            "detail": "3순위 (참고용): 기관 지역 한정 (agency: 충북대학교 충북Pro메이커센터)"
+          }
+        },
+        "risk_flags": [
+          {
+            "type": "exclude_target_long",
+            "severity": "low",
+            "msg": "신청 제외 대상 장문 (174자) — 정독 필수"
+          }
+        ],
+        "axis_scores": {
+          "region": {
+            "level": "orange",
+            "detail": "기관 지역 한정 (agency: 충북대학교 충북Pro메이커센터)"
+          },
+          "stage": {
+            "level": "orange",
+            "detail": "단계 불일치 (스케일업)"
+          },
+          "industry": {
+            "level": "orange",
+            "detail": "업종 한정 (메이커)"
+          },
+          "nature": {
+            "level": "yellow",
+            "detail": "간접 지원성 (글로벌)"
+          },
+          "qualification": {
+            "level": "yellow",
+            "detail": "exclude_target 장문 (174자)"
+          }
+        },
+        "exclusion_flags": [
+          {
+            "axis": "region",
+            "severity": "high",
+            "msg": "기관 지역 한정 (agency: 충북대학교 충북Pro메이커센터)"
+          },
+          {
+            "axis": "stage",
+            "severity": "high",
+            "msg": "단계 불일치 (스케일업)"
+          },
+          {
+            "axis": "industry",
+            "severity": "high",
+            "msg": "업종 한정 (메이커)"
+          }
+        ],
+        "audit_flags": [],
+        "tier_logic": "3순위 (참고용): 기관 지역 한정 (agency: 충북대학교 충북Pro메이커센터)",
+        "classify_version": "v8.3"
+      },
+      "first_seen": "2026-11-13",
+      "last_seen": "2026-11-13",
+      "structured": {
+        "pbanc_sn_int": 179788,
+        "integrated": false,
+        "recruiting": true,
+        "start_date": "2026-11-12",
+        "end_date": "2026-11-13",
+        "agency_type": "교육기관",
+        "biz_class": "글로벌",
+        "region": "충북",
+        "biz_enyy": "7년미만",
+        "age_range": "만 20세 미만,만 20세 이상 ~ 만 39세 이하,만 40세 이상",
+        "apply_target": "일반기업,1인 창조기업",
+        "apply_target_desc": "충북에 주소지(본점, 지점, 연구소 중 1개 이상)를 두고 있는 업력 7년 미만 창업기업",
+        "exclude_target": "- 국세 또는 지방세를 체납 중인 자\r\n- 개인신용정보상 채무불이행자 또는 신용도판단정보 등 이상이 있는 자\r\n- 신용보증기관 신용보증사고 및 대위변제 관계자에 해당되는 자\r\n- 기타 주관기관이 참여 제한의 사유가 있다고 인정하는 자\r\n- 해외 출국 시 기내 반입 및 위탁수하물 금지 물품과 관련한 아이템인 경우",
+        "preferential": "",
+        "content": "베트남 판로개척 및 제조·양산 네트워크 형성을 희망하는 기업의 많은 참여 부탁드립니다.",
+        "integrated_name": "&lt;2026년 베트남 제조창업 스케일업 프로그램&gt; 참여기업 모집 공고",
+        "apply_online": "",
+        "apply_guide": ""
+      }
+    },
+    {
       "pbancSn": "179658",
       "title": "[ZUZU X 삼성화재 집중검토] 헬스케어·모빌리티·AI·홈/라이프 Seed·Pre-A 투자 검토 모집",
       "agency": "(주) 코드박스 Kodebox",
@@ -13030,6 +13516,134 @@
         "integrated_name": "창업보육센터 지원",
         "apply_online": "",
         "apply_guide": ""
+      }
+    },
+    {
+      "pbancSn": "179781",
+      "title": "[창업중심대학]2026 대학연합 지역관광 창업경진대회(K-TOURISM STARTUP CHALLENGE)",
+      "agency": "한양대 창업지원단",
+      "deadline": "2026-11-15",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179781",
+      "tier": "orange",
+      "note": "3순위 (참고용): 업종 한정 (관광)",
+      "classify_evidence": {
+        "summary_reason": "3순위 (참고용): 업종 한정 (관광)",
+        "category_hints": [
+          "global",
+          "budget"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "모집 중"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-11-15",
+            "detail": "마감 전"
+          },
+          "region": {
+            "pass": true,
+            "value": "서울",
+            "detail": "지역 정보 애매"
+          },
+          "biz_enyy": {
+            "pass": true,
+            "value": "예비창업자",
+            "detail": "업력 허용 (예비창업자)"
+          },
+          "exclude_target": {
+            "pass": true,
+            "value": "기창업자",
+            "detail": "자격 제한 없음"
+          },
+          "industry": {
+            "pass": false,
+            "detail": "업종 한정 (관광)"
+          },
+          "qualification": {
+            "pass": true,
+            "detail": "자격 제한 없음"
+          },
+          "stage": {
+            "pass": true,
+            "detail": "업력 허용 (예비창업자)"
+          },
+          "nature": {
+            "pass": true,
+            "detail": "직접 자금성 (사업화)"
+          },
+          "region_keyword": {
+            "pass": true,
+            "detail": "지역 정보 애매"
+          },
+          "positive_hit": {
+            "pass": false,
+            "detail": "3순위 (참고용): 업종 한정 (관광)"
+          }
+        },
+        "risk_flags": [
+          {
+            "type": "apply_target_narrow",
+            "severity": "med",
+            "msg": "신청 대상 좁음 (청소년,대학생,일반인)"
+          }
+        ],
+        "axis_scores": {
+          "region": {
+            "level": "yellow",
+            "detail": "지역 정보 애매"
+          },
+          "stage": {
+            "level": "green",
+            "detail": "업력 허용 (예비창업자)"
+          },
+          "industry": {
+            "level": "orange",
+            "detail": "업종 한정 (관광)"
+          },
+          "nature": {
+            "level": "green",
+            "detail": "직접 자금성 (사업화)"
+          },
+          "qualification": {
+            "level": "green",
+            "detail": "자격 제한 없음"
+          }
+        },
+        "exclusion_flags": [
+          {
+            "axis": "industry",
+            "severity": "high",
+            "msg": "업종 한정 (관광)"
+          }
+        ],
+        "audit_flags": [],
+        "tier_logic": "3순위 (참고용): 업종 한정 (관광)",
+        "classify_version": "v8.3"
+      },
+      "first_seen": "2026-11-13",
+      "last_seen": "2026-11-13",
+      "structured": {
+        "pbanc_sn_int": 179781,
+        "integrated": false,
+        "recruiting": true,
+        "start_date": "2026-11-11",
+        "end_date": "2026-11-15",
+        "agency_type": "교육기관",
+        "biz_class": "사업화",
+        "region": "서울",
+        "biz_enyy": "예비창업자",
+        "age_range": "만 20세 미만,만 20세 이상 ~ 만 39세 이하,만 40세 이상",
+        "apply_target": "청소년,대학생,일반인",
+        "apply_target_desc": "예비창업자",
+        "exclude_target": "기창업자",
+        "preferential": "",
+        "content": "2026 대학연합 지역관광 창업경진대회(K-TOURISM STARTUP CHALLENGE)를 개최하오니 관광분야 아이템을 가진 예비창업자들의 많은 관심 부탁드립니다.",
+        "integrated_name": "2026 대학연합 지역관광 창업경진대회(K-TOURISM STARTUP CHALLENGE)",
+        "apply_online": "https://hyu-tour-contest.netlify.app",
+        "apply_guide": "startup.hanyang.ac.kr/board/notice/view/4477?boardName=notice"
       }
     },
     {
@@ -16755,7 +17369,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-11-11",
-      "last_seen": "2026-11-12",
+      "last_seen": "2026-11-13",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11291",
@@ -16889,6 +17503,64 @@
         "integrated_name": "창업보육센터 지원",
         "apply_online": "",
         "apply_guide": ""
+      }
+    },
+    {
+      "pbancSn": "itp_11300",
+      "title": "2026 로봇 스타트업 스페이스 신규 입주자 모집 공고(연장)",
+      "agency": "인천테크노파크 로봇센터",
+      "deadline": "2026-11-20",
+      "url": "https://itp.or.kr/intro.asp?tmid=13&seq=11300",
+      "tier": "orange",
+      "note": "인천 매칭이지만 로봇 불일치",
+      "classify_evidence": {
+        "summary_reason": "인천 매칭이지만 로봇 불일치",
+        "category_hints": [
+          "incheon",
+          "itp",
+          "로봇센터"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "ITP 진행중 항목"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-11-20",
+            "detail": "ITP 마감일"
+          },
+          "region": {
+            "pass": true,
+            "value": "인천",
+            "detail": "ITP=인천 거점"
+          }
+        },
+        "axis_scores": {
+          "region": "green",
+          "stage": "green",
+          "industry": "orange",
+          "nature": "orange",
+          "qualification": "green"
+        },
+        "exclusion_flags": [],
+        "audit_flags": [],
+        "tier_logic": "ITP 로봇센터 부서별 룰 → orange",
+        "classify_version": "v8.3-itp"
+      },
+      "first_seen": "2026-11-12",
+      "last_seen": "2026-11-13",
+      "structured": {
+        "source_kind": "itp",
+        "itp_seq": "11300",
+        "itp_dept": "로봇센터",
+        "attachments": [
+          "붙임 1. [공고문] 2026 로봇 스타트업 스페이스 신규 입주자 모집 공고(연장).pdf\">\r\n\t\t\t\t붙임 1. [공고문] 2026 로봇 스타트업 스페이스 신규 입주자 모집 공고(연장).pdf(380KB)",
+          "붙임 2. [서식1~3] 입주신청서, 창업계획서, 동의서.hwp\">\r\n\t\t\t\t붙임 2. [서식1~3] 입주신청서, 창업계획서, 동의서.hwp(29KB)"
+        ],
+        "recruiting": true,
+        "region": "인천"
       }
     },
     {
@@ -17251,6 +17923,127 @@
         "integrated_name": "대전 스타트업 원스톱 지원센터 아카데미 프로그램",
         "apply_online": "https://moaform.com/q/m1RhhZ",
         "apply_guide": ""
+      }
+    },
+    {
+      "pbancSn": "179791",
+      "title": "경기창업혁신공간 서부권 「스담스담」(오픈 네트워킹) 4회차",
+      "agency": "경기도경제과학진흥원",
+      "deadline": "2026-11-22",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179791",
+      "tier": "orange",
+      "note": "3순위 (참고용): 지자체 기관 의심 (지역진흥원: 경기도경제과학진흥원)",
+      "classify_evidence": {
+        "summary_reason": "3순위 (참고용): 지자체 기관 의심 (지역진흥원: 경기도경제과학진흥원)",
+        "category_hints": [
+          "budget"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "모집 중"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-11-22",
+            "detail": "마감 전"
+          },
+          "region": {
+            "pass": false,
+            "value": "경기",
+            "detail": "지자체 기관 의심 (지역진흥원: 경기도경제과학진흥원)"
+          },
+          "biz_enyy": {
+            "pass": true,
+            "value": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만",
+            "detail": "업력 허용 (1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "exclude_target": {
+            "pass": true,
+            "value": "",
+            "detail": "자격 제한 없음"
+          },
+          "industry": {
+            "pass": true,
+            "detail": "업종 제한 없음"
+          },
+          "qualification": {
+            "pass": true,
+            "detail": "자격 제한 없음"
+          },
+          "stage": {
+            "pass": true,
+            "detail": "업력 허용 (1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "nature": {
+            "pass": true,
+            "detail": "성격 분류 애매 (biz_class='행사ㆍ네트워크')"
+          },
+          "region_keyword": {
+            "pass": false,
+            "detail": "지자체 기관 의심 (지역진흥원: 경기도경제과학진흥원)"
+          },
+          "positive_hit": {
+            "pass": false,
+            "detail": "3순위 (참고용): 지자체 기관 의심 (지역진흥원: 경기도경제과학진흥원)"
+          }
+        },
+        "risk_flags": [],
+        "axis_scores": {
+          "region": {
+            "level": "orange",
+            "detail": "지자체 기관 의심 (지역진흥원: 경기도경제과학진흥원)"
+          },
+          "stage": {
+            "level": "green",
+            "detail": "업력 허용 (1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "industry": {
+            "level": "green",
+            "detail": "업종 제한 없음"
+          },
+          "nature": {
+            "level": "yellow",
+            "detail": "성격 분류 애매 (biz_class='행사ㆍ네트워크')"
+          },
+          "qualification": {
+            "level": "green",
+            "detail": "자격 제한 없음"
+          }
+        },
+        "exclusion_flags": [
+          {
+            "axis": "region",
+            "severity": "high",
+            "msg": "지자체 기관 의심 (지역진흥원: 경기도경제과학진흥원)"
+          }
+        ],
+        "audit_flags": [],
+        "tier_logic": "3순위 (참고용): 지자체 기관 의심 (지역진흥원: 경기도경제과학진흥원)",
+        "classify_version": "v8.3"
+      },
+      "first_seen": "2026-11-13",
+      "last_seen": "2026-11-13",
+      "structured": {
+        "pbanc_sn_int": 179791,
+        "integrated": false,
+        "recruiting": true,
+        "start_date": "2026-11-12",
+        "end_date": "2026-11-22",
+        "agency_type": "공공기관",
+        "biz_class": "행사ㆍ네트워크",
+        "region": "경기",
+        "biz_enyy": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만",
+        "age_range": "만 20세 미만,만 20세 이상 ~ 만 39세 이하,만 40세 이상",
+        "apply_target": "청소년,대학생,일반인,대학,연구기관,일반기업,1인 창조기업",
+        "apply_target_desc": "경기도 내 예비창업자 및 스타트업 임직원",
+        "exclude_target": "",
+        "preferential": "",
+        "content": "경기창업혁신공간 서부권에서는 스타트업의 성장 역량 강화와 전문가와의 교류 활성화를 위해 브라운백 네트워킹 프로그램 「스담스담」을 운영하고 있습니다.\r\n\r\n이번 4회차에서는 「스타트업의 성장과 글로벌 진출, 어떻게 준비할까?」를 주제로, 글로벌 확장을 위한 스타트업 스케일업 전략부터 해외시장 진출을 위한 핵심 준비사항, 글로벌 진출 사례 및 현지 시장 진입 전략까지 함께 살펴봅니다.\r\n\r\n스케일업 및 글로벌 진출에 관심 있는  스타트업 대표 및 임직원 여러분의 많은 관심과 참여 바랍니다.",
+        "integrated_name": "경기창업혁신공간 서부권 「스담스담」&#40;오픈 네트워킹&#41; 4회차",
+        "apply_online": "https://forms.gle/nZnY9A8RUwFHQs8j9",
+        "apply_guide": "forms.gle/nZnY9A8RUwFHQs8j9"
       }
     },
     {
@@ -18364,6 +19157,375 @@
       }
     },
     {
+      "pbancSn": "179794",
+      "title": "2026 서울게임콘텐츠센터 프라이빗 IR 참가기업 모집",
+      "agency": "서울경제진흥원",
+      "deadline": "2026-11-23",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179794",
+      "tier": "orange",
+      "note": "검토 매칭 (콘텐츠)",
+      "classify_evidence": {
+        "summary_reason": "검토 매칭 (콘텐츠)",
+        "category_hints": [
+          "content"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "모집 중"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-11-23",
+            "detail": "마감 전"
+          },
+          "region": {
+            "pass": false,
+            "value": "서울",
+            "detail": "지자체 기관 의심 (지역진흥원: 서울경제진흥원)"
+          },
+          "biz_enyy": {
+            "pass": true,
+            "value": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
+            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "exclude_target": {
+            "pass": true,
+            "value": "공고문 참조",
+            "detail": "자격 제한 없음"
+          },
+          "industry": {
+            "pass": false,
+            "detail": "업종 한정 (게임)"
+          },
+          "qualification": {
+            "pass": true,
+            "detail": "자격 제한 없음"
+          },
+          "stage": {
+            "pass": true,
+            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "nature": {
+            "pass": true,
+            "detail": "간접 지원성 (멘토링ㆍ컨설팅ㆍ교육)"
+          },
+          "region_keyword": {
+            "pass": false,
+            "detail": "지자체 기관 의심 (지역진흥원: 서울경제진흥원)"
+          },
+          "positive_hit": {
+            "pass": false,
+            "detail": "검토 매칭 (콘텐츠)"
+          }
+        },
+        "risk_flags": [],
+        "axis_scores": {
+          "region": {
+            "level": "orange",
+            "detail": "지자체 기관 의심 (지역진흥원: 서울경제진흥원)"
+          },
+          "stage": {
+            "level": "green",
+            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "industry": {
+            "level": "orange",
+            "detail": "업종 한정 (게임)"
+          },
+          "nature": {
+            "level": "yellow",
+            "detail": "간접 지원성 (멘토링ㆍ컨설팅ㆍ교육)"
+          },
+          "qualification": {
+            "level": "green",
+            "detail": "자격 제한 없음"
+          }
+        },
+        "exclusion_flags": [
+          {
+            "axis": "region",
+            "severity": "high",
+            "msg": "지자체 기관 의심 (지역진흥원: 서울경제진흥원)"
+          },
+          {
+            "axis": "industry",
+            "severity": "high",
+            "msg": "업종 한정 (게임)"
+          }
+        ],
+        "audit_flags": [],
+        "tier_logic": "3순위 (아이디어·우회 가능): 검토 매칭 (콘텐츠)",
+        "classify_version": "v8.3"
+      },
+      "first_seen": "2026-11-13",
+      "last_seen": "2026-11-13",
+      "structured": {
+        "pbanc_sn_int": 179794,
+        "integrated": false,
+        "recruiting": true,
+        "start_date": "2026-11-12",
+        "end_date": "2026-11-23",
+        "agency_type": "공공기관",
+        "biz_class": "멘토링ㆍ컨설팅ㆍ교육",
+        "region": "서울",
+        "biz_enyy": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
+        "age_range": "만 20세 미만,만 20세 이상 ~ 만 39세 이하,만 40세 이상",
+        "apply_target": "일반기업",
+        "apply_target_desc": "투자 유치를 희망하는 서울 소재 게임개발사(법인/개인사업자)",
+        "exclude_target": "공고문 참조",
+        "preferential": "",
+        "content": "서울경제진흥원(SBA)은 서울 소재 게임개발사의 투자유치를 지원하기 위해 전문가 1:1 IR 컨설팅 및 투자자 대상 프라이빗 IR에 참여할 기업을 모집합니다.",
+        "integrated_name": "2026 서울게임콘텐츠센터 프라이빗 IR 참가기업 모집",
+        "apply_online": "https://www.sba.seoul.kr/Pages/ContentsMenu/Company_Support_Detail.aspx?RID=34b1cae4-88dd-f111-b404-d4f5ef4a1e33",
+        "apply_guide": "www.sba.seoul.kr/Pages/ContentsMenu/Company_Support_Detail.aspx?RID=34b1cae4-88dd-f111-b404-d4f5ef4a1e33"
+      }
+    },
+    {
+      "pbancSn": "179784",
+      "title": "2026년 서울지식재산센터 IP창업클럽: 스타트업 IP:ON (~11/23까지, 선착순)",
+      "agency": "서울경제진흥원",
+      "deadline": "2026-11-23",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179784",
+      "tier": "orange",
+      "note": "3순위 (참고용): 지자체 기관 의심 (지역진흥원: 서울경제진흥원)",
+      "classify_evidence": {
+        "summary_reason": "3순위 (참고용): 지자체 기관 의심 (지역진흥원: 서울경제진흥원)",
+        "category_hints": [],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "모집 중"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-11-23",
+            "detail": "마감 전"
+          },
+          "region": {
+            "pass": false,
+            "value": "서울",
+            "detail": "지자체 기관 의심 (지역진흥원: 서울경제진흥원)"
+          },
+          "biz_enyy": {
+            "pass": true,
+            "value": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
+            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "exclude_target": {
+            "pass": true,
+            "value": "",
+            "detail": "자격 제한 없음"
+          },
+          "industry": {
+            "pass": true,
+            "detail": "업종 제한 없음"
+          },
+          "qualification": {
+            "pass": true,
+            "detail": "자격 제한 없음"
+          },
+          "stage": {
+            "pass": true,
+            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "nature": {
+            "pass": true,
+            "detail": "성격 분류 애매 (biz_class='행사ㆍ네트워크')"
+          },
+          "region_keyword": {
+            "pass": false,
+            "detail": "지자체 기관 의심 (지역진흥원: 서울경제진흥원)"
+          },
+          "positive_hit": {
+            "pass": false,
+            "detail": "3순위 (참고용): 지자체 기관 의심 (지역진흥원: 서울경제진흥원)"
+          }
+        },
+        "risk_flags": [],
+        "axis_scores": {
+          "region": {
+            "level": "orange",
+            "detail": "지자체 기관 의심 (지역진흥원: 서울경제진흥원)"
+          },
+          "stage": {
+            "level": "green",
+            "detail": "업력 허용 (10년미만,1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "industry": {
+            "level": "green",
+            "detail": "업종 제한 없음"
+          },
+          "nature": {
+            "level": "yellow",
+            "detail": "성격 분류 애매 (biz_class='행사ㆍ네트워크')"
+          },
+          "qualification": {
+            "level": "green",
+            "detail": "자격 제한 없음"
+          }
+        },
+        "exclusion_flags": [
+          {
+            "axis": "region",
+            "severity": "high",
+            "msg": "지자체 기관 의심 (지역진흥원: 서울경제진흥원)"
+          }
+        ],
+        "audit_flags": [],
+        "tier_logic": "3순위 (참고용): 지자체 기관 의심 (지역진흥원: 서울경제진흥원)",
+        "classify_version": "v8.3"
+      },
+      "first_seen": "2026-11-13",
+      "last_seen": "2026-11-13",
+      "structured": {
+        "pbanc_sn_int": 179784,
+        "integrated": false,
+        "recruiting": true,
+        "start_date": "2026-11-12",
+        "end_date": "2026-11-23",
+        "agency_type": "공공기관",
+        "biz_class": "행사ㆍ네트워크",
+        "region": "서울",
+        "biz_enyy": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
+        "age_range": "만 20세 미만,만 20세 이상 ~ 만 39세 이하,만 40세 이상",
+        "apply_target": "청소년,대학생,일반인,대학,연구기관,일반기업,1인 창조기업",
+        "apply_target_desc": "서울 소재 예비(초기)창업자 및 지식재산권(IP) 기반 창업을 희망하는 서울 시민 누구나",
+        "exclude_target": "",
+        "preferential": "",
+        "content": "서울 소재 예비(초기)창업자 및 지식재산권(IP) 기반 창업을 희망하는 서울 시민을 위한 IP창업클럽 참가자를 모집하오니 많은 신청 바랍니다.",
+        "integrated_name": "2026 서울지식재산센터 IP창업클럽: 스타트업 IP:ON",
+        "apply_online": "https://linktr.ee/ipseoul",
+        "apply_guide": "linktr.ee/ipseoul"
+      }
+    },
+    {
+      "pbancSn": "179778",
+      "title": "2026년 기업공개(IPO) 상장지원 인사이트데이 참가자 모집(~11.23)",
+      "agency": "(재)부산기술창업투자원",
+      "deadline": "2026-11-23",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179778",
+      "tier": "orange",
+      "note": "검토 매칭 (기술창업)",
+      "classify_evidence": {
+        "summary_reason": "검토 매칭 (기술창업)",
+        "category_hints": [],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "모집 중"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-11-23",
+            "detail": "마감 전"
+          },
+          "region": {
+            "pass": false,
+            "value": "부산",
+            "detail": "지자체 기관 의심 (재단법인 접두사: (재)부산기술창업투자원)"
+          },
+          "biz_enyy": {
+            "pass": false,
+            "value": "1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
+            "detail": "단계 불일치 (IPO)"
+          },
+          "exclude_target": {
+            "pass": true,
+            "value": "",
+            "detail": "자격 제한 없음"
+          },
+          "industry": {
+            "pass": true,
+            "detail": "업종 제한 없음"
+          },
+          "qualification": {
+            "pass": true,
+            "detail": "자격 제한 없음"
+          },
+          "stage": {
+            "pass": false,
+            "detail": "단계 불일치 (IPO)"
+          },
+          "nature": {
+            "pass": true,
+            "detail": "간접 지원성 (멘토링ㆍ컨설팅ㆍ교육)"
+          },
+          "region_keyword": {
+            "pass": false,
+            "detail": "지자체 기관 의심 (재단법인 접두사: (재)부산기술창업투자원)"
+          },
+          "positive_hit": {
+            "pass": false,
+            "detail": "검토 매칭 (기술창업)"
+          }
+        },
+        "risk_flags": [],
+        "axis_scores": {
+          "region": {
+            "level": "orange",
+            "detail": "지자체 기관 의심 (재단법인 접두사: (재)부산기술창업투자원)"
+          },
+          "stage": {
+            "level": "orange",
+            "detail": "단계 불일치 (IPO)"
+          },
+          "industry": {
+            "level": "green",
+            "detail": "업종 제한 없음"
+          },
+          "nature": {
+            "level": "yellow",
+            "detail": "간접 지원성 (멘토링ㆍ컨설팅ㆍ교육)"
+          },
+          "qualification": {
+            "level": "green",
+            "detail": "자격 제한 없음"
+          }
+        },
+        "exclusion_flags": [
+          {
+            "axis": "region",
+            "severity": "high",
+            "msg": "지자체 기관 의심 (재단법인 접두사: (재)부산기술창업투자원)"
+          },
+          {
+            "axis": "stage",
+            "severity": "high",
+            "msg": "단계 불일치 (IPO)"
+          }
+        ],
+        "audit_flags": [],
+        "tier_logic": "3순위 (아이디어·우회 가능): 검토 매칭 (기술창업)",
+        "classify_version": "v8.3"
+      },
+      "first_seen": "2026-11-13",
+      "last_seen": "2026-11-13",
+      "structured": {
+        "pbanc_sn_int": 179778,
+        "integrated": false,
+        "recruiting": true,
+        "start_date": "2026-11-10",
+        "end_date": "2026-11-23",
+        "agency_type": "공공기관",
+        "biz_class": "멘토링ㆍ컨설팅ㆍ교육",
+        "region": "부산",
+        "biz_enyy": "1년미만,2년미만,3년미만,5년미만,7년미만,10년미만",
+        "age_range": "만 20세 미만,만 20세 이상 ~ 만 39세 이하,만 40세 이상",
+        "apply_target": "일반기업",
+        "apply_target_desc": "IPO에 관심 있는 창업·성장기업, 투자자, 증권사 및 유관기관 관계자 등",
+        "exclude_target": "",
+        "preferential": "",
+        "content": "IPO 시장동향, 제도 안내부터 기술특례상장 준비전략, IR대화법과 자료작성, 전자증권제도 도입 안내까지 상장준비에 꼭 필요한 정보를 알차게 만나보실 수 있습니다.",
+        "integrated_name": "2026년 기업공개&#40;IPO&#41; 상장지원 인사이트데이 참가자 모집&#40;~11.23&#41;",
+        "apply_online": "https://docs.google.com/forms/d/1MuLefYzqgXQyGyQwHdGaByfJ2UqwRKhIBZNCj9xiX9k/viewform?edit_requested=true",
+        "apply_guide": "docs.google.com/forms/d/1MuLefYzqgXQyGyQwHdGaByfJ2UqwRKhIBZNCj9xiX9k/viewform?edit_requested=true"
+      }
+    },
+    {
       "pbancSn": "179348",
       "title": "「2026년 대구스타트업 리더스포럼」제65차 IR피칭 참여기업 모집",
       "agency": "(재) 대구창조경제혁신센터  대표이사",
@@ -18858,6 +20020,132 @@
       }
     },
     {
+      "pbancSn": "179793",
+      "title": "[경과원 X 나이스디앤비] 스타트업 공공시장 진출 실전 특강 - 공공입찰부터 기업·기술평가까지 한번에!",
+      "agency": "경기도·경기도경제과학진흥원",
+      "deadline": "2026-11-24",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179793",
+      "tier": "orange",
+      "note": "3순위 (참고용): 지자체 기관 의심 (지역진흥원: 경기도·경기도경제과학진흥원)",
+      "classify_evidence": {
+        "summary_reason": "3순위 (참고용): 지자체 기관 의심 (지역진흥원: 경기도·경기도경제과학진흥원)",
+        "category_hints": [
+          "budget"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "모집 중"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-11-24",
+            "detail": "마감 전"
+          },
+          "region": {
+            "pass": false,
+            "value": "경기",
+            "detail": "지자체 기관 의심 (지역진흥원: 경기도·경기도경제과학진흥원)"
+          },
+          "biz_enyy": {
+            "pass": true,
+            "value": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만",
+            "detail": "업력 허용 (1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "exclude_target": {
+            "pass": true,
+            "value": "",
+            "detail": "자격 제한 없음"
+          },
+          "industry": {
+            "pass": true,
+            "detail": "업종 제한 없음"
+          },
+          "qualification": {
+            "pass": true,
+            "detail": "자격 제한 없음"
+          },
+          "stage": {
+            "pass": true,
+            "detail": "업력 허용 (1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "nature": {
+            "pass": false,
+            "detail": "성격 불일치 (공공시장 진출)"
+          },
+          "region_keyword": {
+            "pass": false,
+            "detail": "지자체 기관 의심 (지역진흥원: 경기도·경기도경제과학진흥원)"
+          },
+          "positive_hit": {
+            "pass": false,
+            "detail": "3순위 (참고용): 지자체 기관 의심 (지역진흥원: 경기도·경기도경제과학진흥원)"
+          }
+        },
+        "risk_flags": [],
+        "axis_scores": {
+          "region": {
+            "level": "orange",
+            "detail": "지자체 기관 의심 (지역진흥원: 경기도·경기도경제과학진흥원)"
+          },
+          "stage": {
+            "level": "green",
+            "detail": "업력 허용 (1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "industry": {
+            "level": "green",
+            "detail": "업종 제한 없음"
+          },
+          "nature": {
+            "level": "orange",
+            "detail": "성격 불일치 (공공시장 진출)"
+          },
+          "qualification": {
+            "level": "green",
+            "detail": "자격 제한 없음"
+          }
+        },
+        "exclusion_flags": [
+          {
+            "axis": "region",
+            "severity": "high",
+            "msg": "지자체 기관 의심 (지역진흥원: 경기도·경기도경제과학진흥원)"
+          },
+          {
+            "axis": "nature",
+            "severity": "high",
+            "msg": "성격 불일치 (공공시장 진출)"
+          }
+        ],
+        "audit_flags": [],
+        "tier_logic": "3순위 (참고용): 지자체 기관 의심 (지역진흥원: 경기도·경기도경제과학진흥원)",
+        "classify_version": "v8.3"
+      },
+      "first_seen": "2026-11-13",
+      "last_seen": "2026-11-13",
+      "structured": {
+        "pbanc_sn_int": 179793,
+        "integrated": true,
+        "recruiting": true,
+        "start_date": "2026-11-12",
+        "end_date": "2026-11-24",
+        "agency_type": "공공기관",
+        "biz_class": "멘토링ㆍ컨설팅ㆍ교육",
+        "region": "경기",
+        "biz_enyy": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만",
+        "age_range": "만 20세 미만,만 20세 이상 ~ 만 39세 이하,만 40세 이상",
+        "apply_target": "청소년,대학생,일반인,대학,연구기관,일반기업,1인 창조기업",
+        "apply_target_desc": "예비창업자, 창업기업 대표 및 임직원, 대학(원)생, 유관기관 등",
+        "exclude_target": "",
+        "preferential": "",
+        "content": "경기도와 경기도경제과학진흥원에서는 스타트업의 공공입찰 참여 및 기업·기술평가 대응 역량 강화를 위한 「스타트업 공공시장 진출 실전 특강 - 공공입찰부터 기업·기술평가까지 한번에!」 실무 특강을 개최하오니 많은 관심과 참여 바랍니다.",
+        "integrated_name": "경기 스타트업 아카데미 운영",
+        "apply_online": "https://forms.gle/8oUFZJUa4CukXS1N7",
+        "apply_guide": "forms.gle/8oUFZJUa4CukXS1N7"
+      }
+    },
+    {
       "pbancSn": "176494",
       "title": "경기 스타트업 지원센터 일반상담 모집",
       "agency": "경기도경제과학진흥원",
@@ -19254,6 +20542,125 @@
       }
     },
     {
+      "pbancSn": "179790",
+      "title": "구로구 청년창업지원센터 일반 창업교육(하반기: 7회차): 사업계획서 작성 요령",
+      "agency": "구로구 청년창업지원센터",
+      "deadline": "2026-11-25",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179790",
+      "tier": "orange",
+      "note": "검토 매칭 (청년창업)",
+      "classify_evidence": {
+        "summary_reason": "검토 매칭 (청년창업)",
+        "category_hints": [],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "모집 중"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-11-25",
+            "detail": "마감 전"
+          },
+          "region": {
+            "pass": false,
+            "value": "서울",
+            "detail": "지자체 기관 의심 (지자체 창업센터: 구로구 청년창업지원센터)"
+          },
+          "biz_enyy": {
+            "pass": true,
+            "value": "예비창업자,1년미만,2년미만,3년미만",
+            "detail": "업력 허용 (1년미만,2년미만,3년미만,예비창업자)"
+          },
+          "exclude_target": {
+            "pass": true,
+            "value": "",
+            "detail": "자격 제한 없음"
+          },
+          "industry": {
+            "pass": true,
+            "detail": "업종 제한 없음"
+          },
+          "qualification": {
+            "pass": true,
+            "detail": "자격 제한 없음"
+          },
+          "stage": {
+            "pass": true,
+            "detail": "업력 허용 (1년미만,2년미만,3년미만,예비창업자)"
+          },
+          "nature": {
+            "pass": true,
+            "detail": "간접 지원성 (시설ㆍ공간ㆍ보육)"
+          },
+          "region_keyword": {
+            "pass": false,
+            "detail": "지자체 기관 의심 (지자체 창업센터: 구로구 청년창업지원센터)"
+          },
+          "positive_hit": {
+            "pass": false,
+            "detail": "검토 매칭 (청년창업)"
+          }
+        },
+        "risk_flags": [],
+        "axis_scores": {
+          "region": {
+            "level": "orange",
+            "detail": "지자체 기관 의심 (지자체 창업센터: 구로구 청년창업지원센터)"
+          },
+          "stage": {
+            "level": "green",
+            "detail": "업력 허용 (1년미만,2년미만,3년미만,예비창업자)"
+          },
+          "industry": {
+            "level": "green",
+            "detail": "업종 제한 없음"
+          },
+          "nature": {
+            "level": "yellow",
+            "detail": "간접 지원성 (시설ㆍ공간ㆍ보육)"
+          },
+          "qualification": {
+            "level": "green",
+            "detail": "자격 제한 없음"
+          }
+        },
+        "exclusion_flags": [
+          {
+            "axis": "region",
+            "severity": "high",
+            "msg": "지자체 기관 의심 (지자체 창업센터: 구로구 청년창업지원센터)"
+          }
+        ],
+        "audit_flags": [],
+        "tier_logic": "3순위 (아이디어·우회 가능): 검토 매칭 (청년창업)",
+        "classify_version": "v8.3"
+      },
+      "first_seen": "2026-11-13",
+      "last_seen": "2026-11-13",
+      "structured": {
+        "pbanc_sn_int": 179790,
+        "integrated": true,
+        "recruiting": true,
+        "start_date": "2026-11-12",
+        "end_date": "2026-11-25",
+        "agency_type": "지자체",
+        "biz_class": "시설ㆍ공간ㆍ보육",
+        "region": "서울",
+        "biz_enyy": "예비창업자,1년미만,2년미만,3년미만",
+        "age_range": "만 20세 이상 ~ 만 39세 이하",
+        "apply_target": "대학생,일반인,대학,연구기관,일반기업,1인 창조기업",
+        "apply_target_desc": "19 ~ 39세 서울시 거주 청년 중 (예비)창업희망자 및 일반인",
+        "exclude_target": "",
+        "preferential": "",
+        "content": "예비창업자 및 초기 창업자를 대상으로 사업계획서의 기본 구성과 작성 방법을 이해하고, 창업 아이템의 사업화 가능성을 효과적으로 전달할 수 있는 사업계획서 작성 요령을 학습하는 교육입니다.",
+        "integrated_name": "청년창업지원센터 운영",
+        "apply_online": "https://lifelong.dongyang.ac.kr/lecture/list.do?menu_idx=10",
+        "apply_guide": "lifelong.dongyang.ac.kr/lecture/list.do?menu_idx=10"
+      }
+    },
+    {
       "pbancSn": "179653",
       "title": "2026년도 키친인큐베이터 개별·공유주방 25기 및 제조주방 13기 모집",
       "agency": "(재)서울경제진흥원",
@@ -19541,7 +20948,7 @@
         "classify_version": "v8.3-itp"
       },
       "first_seen": "2026-11-09",
-      "last_seen": "2026-11-12",
+      "last_seen": "2026-11-13",
       "structured": {
         "source_kind": "itp",
         "itp_seq": "11281",
@@ -22537,6 +23944,260 @@
         "integrated_name": "2026 방탈출 공간 게임 제작 지원사업",
         "apply_online": "m.site.naver.com/2jfQV",
         "apply_guide": "modle.run/blog/?bmode=view&idx=175361536"
+      }
+    },
+    {
+      "pbancSn": "179789",
+      "title": "26년 11월 스타트업 언론 홍보 지원사업 참가사 모집 공고(2차)",
+      "agency": "스타트업 데일리",
+      "deadline": "2026-11-30",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179789",
+      "tier": "orange",
+      "note": "structured 완전 매칭 (전국/사업화)",
+      "classify_evidence": {
+        "summary_reason": "structured 완전 매칭 (전국/사업화)",
+        "category_hints": [
+          "budget"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "모집 중"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-11-30",
+            "detail": "마감 전"
+          },
+          "region": {
+            "pass": true,
+            "value": "전국",
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "biz_enyy": {
+            "pass": true,
+            "value": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만",
+            "detail": "업력 허용 (1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "exclude_target": {
+            "pass": true,
+            "value": "1. 이미 배포된 보도자료(중복)·동일한 내용으로 재보도(반복) 배포 불가\r\n2. 단순 제품 홍보(건강기능식품, 화장품 등), 프로모션 홍보 등",
+            "detail": "자격 제한 없음"
+          },
+          "industry": {
+            "pass": true,
+            "detail": "업종 제한 없음"
+          },
+          "qualification": {
+            "pass": true,
+            "detail": "자격 제한 없음"
+          },
+          "stage": {
+            "pass": true,
+            "detail": "업력 허용 (1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "nature": {
+            "pass": false,
+            "detail": "성격 불일치 (언론 홍보)"
+          },
+          "region_keyword": {
+            "pass": true,
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "positive_hit": {
+            "pass": true,
+            "detail": "structured 완전 매칭 (전국/사업화)"
+          }
+        },
+        "risk_flags": [],
+        "axis_scores": {
+          "region": {
+            "level": "green",
+            "detail": "지역 허용 (structured=전국)"
+          },
+          "stage": {
+            "level": "green",
+            "detail": "업력 허용 (1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "industry": {
+            "level": "green",
+            "detail": "업종 제한 없음"
+          },
+          "nature": {
+            "level": "orange",
+            "detail": "성격 불일치 (언론 홍보)"
+          },
+          "qualification": {
+            "level": "green",
+            "detail": "자격 제한 없음"
+          }
+        },
+        "exclusion_flags": [
+          {
+            "axis": "nature",
+            "severity": "high",
+            "msg": "성격 불일치 (언론 홍보)"
+          }
+        ],
+        "audit_flags": [],
+        "tier_logic": "3순위 (조건 충족하나 일부 축 제약): structured 완전 매칭 (전국/사업화)",
+        "classify_version": "v8.3"
+      },
+      "first_seen": "2026-11-13",
+      "last_seen": "2026-11-13",
+      "structured": {
+        "pbanc_sn_int": 179789,
+        "integrated": false,
+        "recruiting": true,
+        "start_date": "2026-11-16",
+        "end_date": "2026-11-30",
+        "agency_type": "민간",
+        "biz_class": "사업화",
+        "region": "전국",
+        "biz_enyy": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만",
+        "age_range": "만 20세 미만,만 20세 이상 ~ 만 39세 이하,만 40세 이상",
+        "apply_target": "청소년,대학생,일반인,대학,연구기관,일반기업,1인 창조기업",
+        "apply_target_desc": "1. 예비창업자\r\n2. 창업 7년 이내 초기 기업",
+        "exclude_target": "1. 이미 배포된 보도자료(중복)·동일한 내용으로 재보도(반복) 배포 불가\r\n2. 단순 제품 홍보(건강기능식품, 화장품 등), 프로모션 홍보 등 과도한 광고성 문안 게재 불가",
+        "preferential": "",
+        "content": "스타트업 전문 매체 『스타트업데일리』에서 홍보에 어려움을 겪는 예비창업자/스타트업의 홍보 지원을 위해 다음과 같이 공고하오니 많은 참여 바랍니다.",
+        "integrated_name": "26년 11월 스타트업 언론 홍보 지원사업 참가사 모집 공고(2차)",
+        "apply_online": "",
+        "apply_guide": ""
+      }
+    },
+    {
+      "pbancSn": "179786",
+      "title": "충북대학교 『글로벌(G)테크벤처센터(BI) 』 입주기업 모집",
+      "agency": "충북대학교 글로벌(G)테크벤처센터",
+      "deadline": "2026-11-30",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179786",
+      "tier": "orange",
+      "note": "검토 매칭 (청년창업)",
+      "classify_evidence": {
+        "summary_reason": "검토 매칭 (청년창업)",
+        "category_hints": [
+          "global",
+          "social"
+        ],
+        "rule_checks": {
+          "recruiting": {
+            "pass": true,
+            "value": "True",
+            "detail": "모집 중"
+          },
+          "deadline": {
+            "pass": true,
+            "value": "2026-11-30",
+            "detail": "마감 전"
+          },
+          "region": {
+            "pass": false,
+            "value": "충북",
+            "detail": "기관 지역 한정 (agency: 충북대학교 글로벌(G)테크벤처센터)"
+          },
+          "biz_enyy": {
+            "pass": true,
+            "value": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만",
+            "detail": "업력 허용 (1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "exclude_target": {
+            "pass": false,
+            "value": "1. 중소기업창업지원법 제43조 제4항 제4호에 의거 입주 제외대상 업종\r\n2. 소음, 진동, 약품, 악취, 폐기물 발생 등 환경 침해 및 공해",
+            "detail": "자격 한정 (여성기업)"
+          },
+          "industry": {
+            "pass": true,
+            "detail": "업종 제한 없음"
+          },
+          "qualification": {
+            "pass": false,
+            "detail": "자격 한정 (여성기업)"
+          },
+          "stage": {
+            "pass": true,
+            "detail": "업력 허용 (1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "nature": {
+            "pass": true,
+            "detail": "간접 지원성 (시설ㆍ공간ㆍ보육)"
+          },
+          "region_keyword": {
+            "pass": false,
+            "detail": "기관 지역 한정 (agency: 충북대학교 글로벌(G)테크벤처센터)"
+          },
+          "positive_hit": {
+            "pass": false,
+            "detail": "검토 매칭 (청년창업)"
+          }
+        },
+        "risk_flags": [
+          {
+            "type": "exclude_target_long",
+            "severity": "low",
+            "msg": "신청 제외 대상 장문 (148자) — 정독 필수"
+          }
+        ],
+        "axis_scores": {
+          "region": {
+            "level": "orange",
+            "detail": "기관 지역 한정 (agency: 충북대학교 글로벌(G)테크벤처센터)"
+          },
+          "stage": {
+            "level": "green",
+            "detail": "업력 허용 (1년미만,2년미만,3년미만,5년미만,7년미만,예비창업자)"
+          },
+          "industry": {
+            "level": "green",
+            "detail": "업종 제한 없음"
+          },
+          "nature": {
+            "level": "yellow",
+            "detail": "간접 지원성 (시설ㆍ공간ㆍ보육)"
+          },
+          "qualification": {
+            "level": "orange",
+            "detail": "자격 한정 (여성기업)"
+          }
+        },
+        "exclusion_flags": [
+          {
+            "axis": "region",
+            "severity": "high",
+            "msg": "기관 지역 한정 (agency: 충북대학교 글로벌(G)테크벤처센터)"
+          },
+          {
+            "axis": "qualification",
+            "severity": "high",
+            "msg": "자격 한정 (여성기업)"
+          }
+        ],
+        "audit_flags": [],
+        "tier_logic": "3순위 (아이디어·우회 가능): 검토 매칭 (청년창업)",
+        "classify_version": "v8.3"
+      },
+      "first_seen": "2026-11-13",
+      "last_seen": "2026-11-13",
+      "structured": {
+        "pbanc_sn_int": 179786,
+        "integrated": false,
+        "recruiting": true,
+        "start_date": "2026-11-11",
+        "end_date": "2026-11-30",
+        "agency_type": "교육기관",
+        "biz_class": "시설ㆍ공간ㆍ보육",
+        "region": "충북",
+        "biz_enyy": "예비창업자,1년미만,2년미만,3년미만,5년미만,7년미만",
+        "age_range": "만 20세 미만,만 20세 이상 ~ 만 39세 이하,만 40세 이상",
+        "apply_target": "청소년,대학생,일반인,대학,연구기관,일반기업,1인 창조기업",
+        "apply_target_desc": "- 본사 or 연구소 or 지점사업자 or 창업보육센터 졸업기업 입주 가능\r\n- (창업자) 창업 후 7년이 경과 되지 않은 기업(창업일자기준)\r\n- 우대 가점기업 : 여성기업, 사회적기업, 협동조합, 장애인기업, 내일채움공제가입기업, 창조경제혁신센터 및 청년창업사관학교 학생창업기업 등 우대",
+        "exclude_target": "1. 중소기업창업지원법 제43조 제4항 제4호에 의거 입주 제외대상 업종\r\n2. 소음, 진동, 약품, 악취, 폐기물 발생 등 환경 침해 및 공해 유발 업체\r\n3. 금융기관으로부터 신용불량으로 규제중인 자\r\n4. 기타, 입주선정심의위원회에서 부적절하다고 판단되는 기업",
+        "preferential": "",
+        "content": "국립거점대학 충북대학교와 충북중소벤처기업청에서는 지역 유망 중소․벤처기업의 발굴 육성을 통해 지역경제 활성화 기여 및 고용창출을 선도하기 위하여 글로벌테크벤처센터(POST-BI)에 입주 할, 우수한 기술력과 사업 역량을 가진 유망 벤처기업 및 신기술 창업자를 아래와 같이 모집 공고합니다",
+        "integrated_name": "충북대학교 『글로벌&#40;G&#41;테크벤처센터&#40;BI&#41; 』 입주기업 모집",
+        "apply_online": "https://cb-postbi.cbnu.ac.kr/community_06_06",
+        "apply_guide": ""
       }
     },
     {
@@ -27918,7 +29579,7 @@
           "region": {
             "pass": false,
             "value": "경남",
-            "detail": "지역 한정 desc: '경상남도 소재'"
+            "detail": "사업명에 지역 포함 (경남)"
           },
           "biz_enyy": {
             "pass": true,
@@ -27948,7 +29609,7 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "지역 한정 desc: '경상남도 소재'"
+            "detail": "사업명에 지역 포함 (경남)"
           },
           "positive_hit": {
             "pass": true,
@@ -27959,7 +29620,7 @@
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "지역 한정 desc: '경상남도 소재'"
+            "detail": "사업명에 지역 포함 (경남)"
           },
           "stage": {
             "level": "green",
@@ -27982,7 +29643,7 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "지역 한정 desc: '경상남도 소재'"
+            "msg": "사업명에 지역 포함 (경남)"
           },
           {
             "axis": "industry",
@@ -29123,29 +30784,35 @@
     }
   ],
   "_meta": {
-    "expired": [
-      "「2026 KOSAㆍ아이티센글로벌ㆍ더존비즈온 공동 IR DAY」참가기업 모집",
-      "[온라인·무료] 재고·코딩·PG심사 없이, 오늘 여는 내 쇼핑몰",
-      "[숭실대학교 캠퍼스타운] 생성형 AI 활용 기초 및 업무 자동화 과정 참여자 모집",
-      "2026년 남구다운 청년 창업 지원사업 통합공고(수정)",
-      "[해수부] 2026년 해양수산 통합데모데이 참가자 모집",
-      "[도봉구청년창업센터]  2026  도봉 오픈 창업 스쿨 -  2027 NEXT STAGE",
-      "[로컬창업트랙 2기]기억되는 브랜드가 되는 법",
-      "전북핀테크지원센터 「핀테크 라이징 스타 챌린지」참가자 모집"
+    "expired": [],
+    "new_added": [
+      "[창업 디자이너 양성과정] 마포 디자인 크리에이터 스쿨",
+      "2026 서울게임콘텐츠센터 프라이빗 IR 참가기업 모집",
+      "[경과원 X 나이스디앤비] 스타트업 공공시장 진출 실전 특강 - 공공입찰부터 기업·기술평가까지 한번에!",
+      "[성동구사회적경제지원센터·KT&G상상플래닛 ] 스타트업(소셜벤처) 현장 사례 공유 <&apos;외로움은 사업이 될 수 있을까?&apos;>",
+      "경기창업혁신공간 서부권 「스담스담」(오픈 네트워킹) 4회차",
+      "구로구 청년창업지원센터 일반 창업교육(하반기: 7회차): 사업계획서 작성 요령",
+      "26년 11월 스타트업 언론 홍보 지원사업 참가사 모집 공고(2차)",
+      "<2026년 베트남 제조창업 스케일업 프로그램> 참여기업 모집 공고",
+      "충북대학교 『글로벌(G)테크벤처센터(BI) 』 입주기업 모집",
+      "2026년 서울지식재산센터 IP창업클럽: 스타트업 IP:ON (~11/23까지, 선착순)",
+      "[창업중심대학]2026 대학연합 지역관광 창업경진대회(K-TOURISM STARTUP CHALLENGE)",
+      "[경험 공유/네트워킹] KT&G 상상플래닛 <11월 오픈마이크: 멈추지 않기 위해, 멈춰 섰던 순간들> @성수동",
+      "2026년 기업공개(IPO) 상장지원 인사이트데이 참가자 모집(~11.23)",
+      "2026 로봇 스타트업 스페이스 신규 입주자 모집 공고(연장)"
     ],
-    "new_added": [],
     "updated_today": [
       "AI 활용 소상공인 및 전통시장 매니저  실무 역량 과정 참가자 모집"
     ],
     "stats": {
       "green": 21,
-      "yellow": 57,
-      "orange": 149,
+      "yellow": 60,
+      "orange": 160,
       "red_excluded": 0,
-      "expired_removed": 8,
-      "total_pool": 227,
-      "rss_total": 209,
-      "raw_fetched": 65
+      "expired_removed": 0,
+      "total_pool": 241,
+      "rss_total": 222,
+      "raw_fetched": 68
     }
   },
   "history": [
@@ -29421,11 +31088,11 @@
     },
     {
       "date": "2026-11-13",
-      "at_kst": "2026-11-13T02:26:14+09:00",
-      "new": 0,
+      "at_kst": "2026-11-13T06:59:09+09:00",
+      "new": 14,
       "updated": 1,
-      "expired": 8,
-      "total": 227,
+      "expired": 0,
+      "total": 241,
       "red_excluded": 0
     }
   ]
