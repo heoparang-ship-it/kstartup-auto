@@ -1,7 +1,7 @@
 {
   "schema_version": 5,
   "last_updated": "2026-11-20",
-  "updated_at_kst": "2026-11-20T03:01:34+09:00",
+  "updated_at_kst": "2026-11-20T07:50:41+09:00",
   "red_count_today": 0,
   "reds_today": [
     {
@@ -20064,7 +20064,7 @@
           "region": {
             "pass": false,
             "value": "전국",
-            "detail": "사업명에 지역 포함 (부산)"
+            "detail": "사업명에 지역 포함 (경남)"
           },
           "biz_enyy": {
             "pass": true,
@@ -20094,7 +20094,7 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "사업명에 지역 포함 (부산)"
+            "detail": "사업명에 지역 포함 (경남)"
           },
           "positive_hit": {
             "pass": true,
@@ -20105,7 +20105,7 @@
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "사업명에 지역 포함 (부산)"
+            "detail": "사업명에 지역 포함 (경남)"
           },
           "stage": {
             "level": "green",
@@ -20128,7 +20128,7 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "사업명에 지역 포함 (부산)"
+            "msg": "사업명에 지역 포함 (경남)"
           }
         ],
         "audit_flags": [],
@@ -26462,7 +26462,7 @@
           "region": {
             "pass": false,
             "value": "경남",
-            "detail": "지역 한정 desc: '경상남도 소재'"
+            "detail": "사업명에 지역 포함 (경남)"
           },
           "biz_enyy": {
             "pass": true,
@@ -26492,7 +26492,7 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "지역 한정 desc: '경상남도 소재'"
+            "detail": "사업명에 지역 포함 (경남)"
           },
           "positive_hit": {
             "pass": true,
@@ -26503,7 +26503,7 @@
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "지역 한정 desc: '경상남도 소재'"
+            "detail": "사업명에 지역 포함 (경남)"
           },
           "stage": {
             "level": "green",
@@ -26526,7 +26526,7 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "지역 한정 desc: '경상남도 소재'"
+            "msg": "사업명에 지역 포함 (경남)"
           },
           {
             "axis": "industry",
@@ -27650,19 +27650,7 @@
     }
   ],
   "_meta": {
-    "expired": [
-      "[서초창업스테이션] 서리풀 소상공인 창업 클리닉(11월) - 소상공인 1:1 컨설팅",
-      "[온라인·무료] 코딩·사업자 없이 여는 내 강의·전자책 판매 사이트",
-      "\"딸깍 한 번으로 완성하는 AI 업무 자동화\" 실전 워크숍 참여자 모집 (『신한 스퀘어브릿지』 11월 브릿지 클럽)",
-      "2026 강남구 미래산업 기반 기업 활성화 지원사업 데모데이 참관",
-      "국민대학교 청년도약 인재양성 부트캠프 참가자 모집(AI 실무교육)",
-      "2027년 팁스 추천 화성산업진흥원 성장 자원 확보 패키지 지원 프로그램 신청 안내",
-      "제79회 단디벤처포럼 [2026 단디벤처 투자로드쇼] 1:1 투자상담회·IR 피칭기업 모집",
-      "2026년 경희대학교 캠퍼스타운 제6회 데모데이: 刮目相對괄목상대",
-      "2026 인수창업 설명회 - 당신의 성장을 지원합니다.",
-      "제79회 단디벤처포럼 [2026 단디벤처 투자로드쇼] 일반참가자 모집",
-      "2026 광명시 기업박람회 (GM TECH EXPO 2026)"
-    ],
+    "expired": [],
     "new_added": [],
     "updated_today": [],
     "stats": {
@@ -27670,7 +27658,7 @@
       "yellow": 51,
       "orange": 145,
       "red_excluded": 0,
-      "expired_removed": 11,
+      "expired_removed": 0,
       "total_pool": 218,
       "rss_total": 196,
       "raw_fetched": 57
@@ -27949,10 +27937,10 @@
     },
     {
       "date": "2026-11-20",
-      "at_kst": "2026-11-20T03:01:34+09:00",
+      "at_kst": "2026-11-20T07:50:41+09:00",
       "new": 0,
       "updated": 0,
-      "expired": 11,
+      "expired": 0,
       "total": 218,
       "red_excluded": 0
     }
