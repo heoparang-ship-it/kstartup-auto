@@ -1,7 +1,7 @@
 {
   "schema_version": 5,
   "last_updated": "2026-11-22",
-  "updated_at_kst": "2026-11-22T01:40:16+09:00",
+  "updated_at_kst": "2026-11-22T06:18:12+09:00",
   "red_count_today": 0,
   "reds_today": [
     {
@@ -17992,7 +17992,7 @@
           "region": {
             "pass": false,
             "value": "전국",
-            "detail": "사업명에 지역 포함 (경남)"
+            "detail": "사업명에 지역 포함 (부산)"
           },
           "biz_enyy": {
             "pass": true,
@@ -18022,7 +18022,7 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "사업명에 지역 포함 (경남)"
+            "detail": "사업명에 지역 포함 (부산)"
           },
           "positive_hit": {
             "pass": true,
@@ -18033,7 +18033,7 @@
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "사업명에 지역 포함 (경남)"
+            "detail": "사업명에 지역 포함 (부산)"
           },
           "stage": {
             "level": "green",
@@ -18056,7 +18056,7 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "사업명에 지역 포함 (경남)"
+            "msg": "사업명에 지역 포함 (부산)"
           }
         ],
         "audit_flags": [],
@@ -24390,7 +24390,7 @@
           "region": {
             "pass": false,
             "value": "경남",
-            "detail": "사업명에 지역 포함 (경남)"
+            "detail": "지역 한정 desc: '경상남도 소재'"
           },
           "biz_enyy": {
             "pass": true,
@@ -24420,7 +24420,7 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "사업명에 지역 포함 (경남)"
+            "detail": "지역 한정 desc: '경상남도 소재'"
           },
           "positive_hit": {
             "pass": true,
@@ -24431,7 +24431,7 @@
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "사업명에 지역 포함 (경남)"
+            "detail": "지역 한정 desc: '경상남도 소재'"
           },
           "stage": {
             "level": "green",
@@ -24454,7 +24454,7 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "사업명에 지역 포함 (경남)"
+            "msg": "지역 한정 desc: '경상남도 소재'"
           },
           {
             "axis": "industry",
@@ -25865,7 +25865,7 @@
     },
     {
       "date": "2026-11-22",
-      "at_kst": "2026-11-22T01:40:16+09:00",
+      "at_kst": "2026-11-22T06:18:12+09:00",
       "new": 0,
       "updated": 0,
       "expired": 0,
