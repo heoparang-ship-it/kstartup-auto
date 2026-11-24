@@ -1,7 +1,7 @@
 {
   "schema_version": 5,
   "last_updated": "2026-11-24",
-  "updated_at_kst": "2026-11-24T05:57:09+09:00",
+  "updated_at_kst": "2026-11-24T11:40:46+09:00",
   "red_count_today": 0,
   "reds_today": [
     {
@@ -21696,7 +21696,7 @@
           "region": {
             "pass": false,
             "value": "경남",
-            "detail": "사업명에 지역 포함 (경남)"
+            "detail": "지역 한정 desc: '경상남도 소재'"
           },
           "biz_enyy": {
             "pass": true,
@@ -21726,7 +21726,7 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "사업명에 지역 포함 (경남)"
+            "detail": "지역 한정 desc: '경상남도 소재'"
           },
           "positive_hit": {
             "pass": true,
@@ -21737,7 +21737,7 @@
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "사업명에 지역 포함 (경남)"
+            "detail": "지역 한정 desc: '경상남도 소재'"
           },
           "stage": {
             "level": "green",
@@ -21760,7 +21760,7 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "사업명에 지역 포함 (경남)"
+            "msg": "지역 한정 desc: '경상남도 소재'"
           },
           {
             "axis": "industry",
@@ -22884,36 +22884,15 @@
     }
   ],
   "_meta": {
-    "expired": [
-      "「인천혁신모펀드 제6호」 3차 출자사업(지역 투자조합) 공고",
-      "2027 Global Startup Center Workspace Call for Applications",
-      "[창업] 실패하지 않는 내 매장 자리 찾기",
-      "[강동구 청년해냄센터] 2027년 정부 지원 사업 대비 성공 창업 스쿨 참가자 모집 공고",
-      "2026년 인공지능산업융합사업단「AI 창업동」 입주기업 모집 공고",
-      "「올해의 K-스타트업 2026」 창업경진대회 왕중왕전 청중평가단 모집",
-      "2026 펨테크 산업 육성사업 DEMO DAY",
-      "「2026년 경남창조경제혁신센터 창업-BuS 프로그램」참여 스타트업 모집 공고",
-      "경기대학교 2026년 예비창업패키지 KGU 창업준비 아카데미 모집 신청 공고",
-      "2027년도 초기창업·창업도약 패키지 사업 신규 주관기관 모집  수정공고",
-      "제9회 원주권 스타트업 커뮤니티 데이 참가자 모집",
-      "(부산센터) 2026년 제10회 제대군인 창업 워크숍 개최 안내",
-      "2027년 고양인쇄문화허브센터  입주기업 모집 공고 ( ~ 2026.11.23.(월)까지)",
-      "세종창업키움센터 운영 민간위탁 수탁기관 모집 재공고",
-      "2026 전북콘텐츠코리아랩 AI 활용 콘텐츠(캐릭터) 아이디어 발굴 캠프",
-      "2026 서울게임콘텐츠센터 프라이빗 IR 참가기업 모집",
-      "2026년 서울지식재산센터 IP창업클럽: 스타트업 IP:ON (~11/23까지, 선착순)",
-      "2026년 기업공개(IPO) 상장지원 인사이트데이 참가자 모집(~11.23)"
-    ],
-    "new_added": [
-      "'2026 Shinhan Future's Lab Demo Day' 참관 기업 모집"
-    ],
+    "expired": [],
+    "new_added": [],
     "updated_today": [],
     "stats": {
       "green": 19,
       "yellow": 42,
       "orange": 116,
       "red_excluded": 0,
-      "expired_removed": 18,
+      "expired_removed": 0,
       "total_pool": 177,
       "rss_total": 158,
       "raw_fetched": 46
@@ -23192,10 +23171,10 @@
     },
     {
       "date": "2026-11-24",
-      "at_kst": "2026-11-24T05:57:09+09:00",
-      "new": 1,
+      "at_kst": "2026-11-24T11:40:46+09:00",
+      "new": 0,
       "updated": 0,
-      "expired": 18,
+      "expired": 0,
       "total": 177,
       "red_excluded": 0
     }
