@@ -1,7 +1,7 @@
 {
   "schema_version": 5,
   "last_updated": "2026-11-27",
-  "updated_at_kst": "2026-11-27T03:53:20+09:00",
+  "updated_at_kst": "2026-11-27T09:10:23+09:00",
   "red_count_today": 0,
   "reds_today": [
     {
@@ -15230,7 +15230,7 @@
           "region": {
             "pass": false,
             "value": "전국",
-            "detail": "사업명에 지역 포함 (경남)"
+            "detail": "사업명에 지역 포함 (부산)"
           },
           "biz_enyy": {
             "pass": true,
@@ -15260,7 +15260,7 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "사업명에 지역 포함 (경남)"
+            "detail": "사업명에 지역 포함 (부산)"
           },
           "positive_hit": {
             "pass": true,
@@ -15271,7 +15271,7 @@
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "사업명에 지역 포함 (경남)"
+            "detail": "사업명에 지역 포함 (부산)"
           },
           "stage": {
             "level": "green",
@@ -15294,7 +15294,7 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "사업명에 지역 포함 (경남)"
+            "msg": "사업명에 지역 포함 (부산)"
           }
         ],
         "audit_flags": [],
@@ -22611,7 +22611,7 @@
           "region": {
             "pass": false,
             "value": "경남",
-            "detail": "사업명에 지역 포함 (경남)"
+            "detail": "지역 한정 desc: '경상남도 소재'"
           },
           "biz_enyy": {
             "pass": true,
@@ -22641,7 +22641,7 @@
           },
           "region_keyword": {
             "pass": false,
-            "detail": "사업명에 지역 포함 (경남)"
+            "detail": "지역 한정 desc: '경상남도 소재'"
           },
           "positive_hit": {
             "pass": true,
@@ -22652,7 +22652,7 @@
         "axis_scores": {
           "region": {
             "level": "orange",
-            "detail": "사업명에 지역 포함 (경남)"
+            "detail": "지역 한정 desc: '경상남도 소재'"
           },
           "stage": {
             "level": "green",
@@ -22675,7 +22675,7 @@
           {
             "axis": "region",
             "severity": "high",
-            "msg": "사업명에 지역 포함 (경남)"
+            "msg": "지역 한정 desc: '경상남도 소재'"
           },
           {
             "axis": "industry",
@@ -23920,24 +23920,7 @@
     }
   ],
   "_meta": {
-    "expired": [
-      "「인천 대학 청년 창업펀드 2호」UniVest Scale-Up 참여기업 모집 공고",
-      "(인천 대학 청년 창업펀드 2호) UniVest Scale-up 참여기업 모집",
-      "양자 기술활용 기업 세미나 개최 안내",
-      "한국공항공사 창업보육센터 입주기업 모집 공고",
-      "2026 여성벤처 글로벌 컨퍼런스",
-      "「2026 인천 창의X디자인 위크」 개최 안내",
-      "2026 여성벤처활성화사업 「여성벤처&스타트업 혁신성장 포럼」참여자 모집",
-      "[성동구사회적경제지원센터·KT&G상상플래닛 ] 스타트업(소셜벤처) 현장 사례 공유 <'외로움은 사업이 될 수 있을까?'>",
-      "2026년도 키친인큐베이터 개별·공유주방 25기 및 제조주방 13기 모집",
-      "2026 재도전˙혁신캠퍼스 성과공유회",
-      "2026년 인천 항공 소재부품 기술개발 지원사업 신규과제 모집 공고",
-      "[창업행사] KOBIA와 함께하는 마포 청년 창업 재도전(모두의 창업 Re:Boot)",
-      "「Next OI 기술 커넥트(Pre-meetup)」 참여 스타트업 모집",
-      "2026 강원권 LIPS 민간운영사 연합 INVESTOR DAY 12월",
-      "2026년 여성창업기업 네트워킹 DAY 참여자 모집",
-      "[보도자료 = 기획] 창업기업을 위한 언론 홍보 실전 전략ㆍAI 활용 보도자료 작성 교육"
-    ],
+    "expired": [],
     "new_added": [],
     "updated_today": [],
     "stats": {
@@ -23945,7 +23928,7 @@
       "yellow": 45,
       "orange": 120,
       "red_excluded": 0,
-      "expired_removed": 16,
+      "expired_removed": 0,
       "total_pool": 183,
       "rss_total": 169,
       "raw_fetched": 52
@@ -24224,10 +24207,10 @@
     },
     {
       "date": "2026-11-27",
-      "at_kst": "2026-11-27T03:53:20+09:00",
+      "at_kst": "2026-11-27T09:10:23+09:00",
       "new": 0,
       "updated": 0,
-      "expired": 16,
+      "expired": 0,
       "total": 183,
       "red_excluded": 0
     }
